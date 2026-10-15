@@ -50,6 +50,8 @@ co-loc|producer|https://gregsgourmetgreens.com/contact/,co-loc-000046
 co-loc|producer|https://www.pennandcordsgarden.com/store.html,co-loc-000047
 co-loc|producer|https://www.palisadepeachshack.com/,co-loc-000048
 co-loc|producer|https://www.westcliffehoneyco.com/,co-loc-000049
+co-loc|producer|https://www.foodshedalliance.com/meet-our-vendors,co-loc-000050
+co-loc|loc|microgreencreationsllc|pickup|breckenridgesundaymarket,co-loc-000051
 co-m|309028,co-m-000001
 co-m|309117,co-m-000002
 co-o|eddyline-restaurant-at-southmain,co-o-000001
@@ -94,6 +96,7 @@ co-p|https://gregsgourmetgreens.com/contact/,co-p-000035
 co-p|https://www.pennandcordsgarden.com/store.html,co-p-000036
 co-p|https://www.palisadepeachshack.com/,co-p-000037
 co-p|https://www.westcliffehoneyco.com/,co-p-000038
+co-p|https://www.foodshedalliance.com/meet-our-vendors,co-p-000039
 co-ploc|arrowpoint-cattle-company|home,co-ploc-000001
 co-ploc|badger-creek-ranch|home,co-ploc-000002
 co-ploc|https://banyanbreads.com/|home,co-ploc-000003
@@ -144,3 +147,6 @@ co-ploc|loc|gregsgourmetgreens|pickup|market|salidafarmersmarket,co-ploc-000047
 co-ploc|loc|misspennsmountainseeds|pickup|market|salidafarmersmarket,co-ploc-000048
 co-ploc|loc|palisadepeachshack|pickup|market|salidafarmersmarket,co-ploc-000049
 co-ploc|loc|westcliffehoneycompany|pickup|market|salidafarmersmarket,co-ploc-000050
+co-ploc|https://www.foodshedalliance.com/meet-our-vendors|home,co-ploc-000051
+co-ploc|loc|microgreencreationsllc|pickup|breckenridgesundaymarket,co-ploc-000052
+co-ploc|loc|microgreencreationsllc|pickup|market|salidafarmersmarket,co-ploc-000053

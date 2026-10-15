@@ -20,6 +20,8 @@ co-ploc-000033,co-p-000030,co-loc-000041,home_base,,Tue: 4:00pm - 6:00pm,,,liste
 co-ploc-000012,co-p-000012,co-loc-000014,home_base,,,,,listed
 co-ploc-000013,co-p-000013,co-loc-000015,home_base,,,,,listed
 co-ploc-000014,co-p-000014,co-loc-000016,home_base,,,,,listed
+co-ploc-000051,co-p-000039,co-loc-000050,home_base,,,,,listed
+co-ploc-000052,co-p-000039,co-loc-000051,pickup,Sun,Sundays,,,listed
 co-ploc-000041,co-p-000036,co-loc-000047,home_base,,,,,listed
 co-ploc-000017,co-p-000017,co-loc-000020,home_base,,,,,listed
 co-ploc-000018,co-p-000018,co-loc-000021,home_base,,,,,listed
@@ -40,6 +42,7 @@ co-ploc-000035,co-p-000002,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (throu
 co-ploc-000045,co-p-000033,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
 co-ploc-000046,co-p-000034,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
 co-ploc-000047,co-p-000035,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
+co-ploc-000053,co-p-000039,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
 co-ploc-000048,co-p-000036,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
 co-ploc-000049,co-p-000037,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
 co-ploc-000036,co-p-000021,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19,,,listed
