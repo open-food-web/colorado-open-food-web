@@ -23,18 +23,20 @@ Everything below is reproducible: `inputs/overrides.csv`, `inputs/curated_record
 
 Every field Alycen confirmed is recorded as **partner-verified** with the date, so a later automatic check can flag a conflict but cannot overwrite it.
 
-## Resulting changes in the Chaffee data
+## Resulting changes
+
+The tables are now statewide, so the counts below are for all of Colorado; the Chaffee Provides site lines are the app export for Chaffee County.
 
 ### Counts
 
 | | Before | After |
 |---|---|---|
-| Producers | 29 | 28 |
-| Locations | 37 | 39 |
-| Markets | 2 | 2 |
+| Producers | 1228 | 1227 |
+| Locations | 1491 | 1493 |
+| Markets | 153 | 153 |
 | Food access points | 2 | 2 |
-| Producers on the Chaffee Provides site | 29 | 27 |
-| Map pins on the Chaffee Provides site | 31 | 33 |
+| Producers on the Chaffee Provides site | 36 | 34 |
+| Map pins on the Chaffee Provides site | 37 | 39 |
 
 ### Added
 
@@ -70,7 +72,6 @@ Every field Alycen confirmed is recorded as **partner-verified** with the date, 
 - **Sweet Pea Farm’s Wildflower Honey**
   - facebook: (blank) → https://www.facebook.com/SweetPeaFarmHoney
 
-
 ## Still waiting (not applied)
 
 | Item | Waiting on |
@@ -83,17 +84,13 @@ Every field Alycen confirmed is recorded as **partner-verified** with the date, 
 | Chaffee Cares (not food access), Colorado Mountain Lavender (online only) | Alycen is following up with both |
 | Emma's map flag: "Market on Main St" drawn in Buena Vista where Josh's Market is, and Josh's Market missing | Check on the new map |
 | Caring & Sharing, The Grainery and the Resource Center are food banks | Their confirmed fields are saved but they stay out of the site until food banks join the food access list |
-| Sales channels for most producers | 21 of 27 producers on the site still have none confirmed; their home-base pins are marked unconfirmed |
+| Sales channels for most producers | 27 of 34 producers on the site still have none confirmed; their home-base pins are marked unconfirmed |
 
 ## How this was produced
 
 ```
 python scripts/scrape/build.py
-python scripts/build_tables.py --raw .cache/build/co_farmers_markets_all_raw.csv --county Chaffee \
-    --out data/chaffee-county --additions data/partner-additions/guidestone_2026-10-13.csv \
-    --locations inputs/locations.csv --overrides inputs/overrides.csv
-python scripts/export_app.py --tables data/chaffee-county --out exports/chaffee-provides.json \
-    --release 2026-10 --county-fips 08015 --include-source chaffee_provides \
-    --config exports/chaffee-provides.config.json
-python scripts/change_report.py --before <tables built from main> --after data/chaffee-county
+python scripts/build_tables.py --raw .cache/build/co_farmers_markets_all_raw.csv --out data/colorado     --additions data/partner-additions/guidestone_2026-10-13.csv     --locations inputs/locations.csv --overrides inputs/overrides.csv
+python scripts/export_app.py --tables data/colorado --out exports/chaffee-provides.json     --release 2026-10 --county-fips 08015 --include-source chaffee_provides     --config exports/chaffee-provides.config.json
+python scripts/change_report.py --before <tables built from main> --after data/colorado     --export-before <export built from main> --export-after exports/chaffee-provides.json
 ```

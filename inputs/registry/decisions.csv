@@ -288,3 +288,6 @@
 2026-10-15,Offbeat Family Farm,"Aztec, NM",,,,not_listed,not_colorado,Real active farm but located in NM; sells at Colorado market. Human decides on out-of-state vendors.,,,,research,,prospect_status.csv
 2026-10-15,Uncompahgre Valley Alliance (aka Western Colorado Alliance),Montrose,,,,not_listed,not_food_system,"Advocacy nonprofit, not a producer.",,,,research,,prospect_status.csv
 2026-10-15,Vital Beauty Gardening,Durango,,,,not_listed,not_food_system,"Landscaping service, not a food producer.",,,,research,,prospect_status.csv
+2026-10-13,Meadows Edge Farm,Buena Vista,,,,not_listed,changed_business,"partner:guidestone Alycen Quattrocchi, Oct 13 review: no longer in business",,,,review,,overrides.csv (remove)
+2026-10-13,Moonstone Farm,Salida,,,,not_listed,changed_business,"partner:guidestone Alycen Quattrocchi, Oct 13 review: no reply; no longer public-facing per Andrea",,,,review,,overrides.csv (remove)
+2026-10-13,Guidestone Colorado,Salida,,,,not_listed,not_food_system,"partner:guidestone Alycen Quattrocchi, Oct 13 review: replaced by Guidestone Colorado Community and School Farm (one listing, Holman Ave); homestead not listed",,,,review,,overrides.csv (remove)

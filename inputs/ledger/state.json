@@ -2191,6 +2191,22 @@
 "name": "Grey Hawk Greenhouse and Farm Inc",
 "source": "curated"
 },
+"and farm guidestone school|salida": {
+"Address": "1455 Holman Ave",
+"Category": "Roadside Market, Agritourism, Sells to Schools",
+"County": "Chaffee",
+"Email": "info@guidestonecolorado.org",
+"Hours": "Tue: 4:00pm - 6:00pm",
+"Months Open": "",
+"Phone": "",
+"Products": "",
+"Status": "Open",
+"Website": "https://www.GuidestoneColorado.org",
+"Year Opened": "",
+"city": "Salida",
+"name": "Guidestone Colorado Community and School Farm",
+"source": "curated"
+},
 "and farm hope ranch|livermore": {
 "Address": "156 Cherokee Trail Rd",
 "Category": "On-Farm / Ranch Sales",
@@ -2758,7 +2774,7 @@
 "Email": "",
 "Hours": "",
 "Months Open": "",
-"Phone": "(719) 221-3158",
+"Phone": "(719) 530-7111",
 "Products": "Spices/Garlic",
 "Status": "Open",
 "Website": "",
@@ -3679,8 +3695,8 @@
 "name": "The Backyard Market in Black Forest",
 "source": "colorado_proud+colorado_proud_farm_fresh+cfma+usda+colorado_proud_finder"
 },
-"badger creek ranch|cañon city": {
-"Address": "5795 County Road 2",
+"badger creek ranch|coaldale": {
+"Address": "364 County Road 40",
 "Category": "On-Farm / Ranch Sales",
 "County": "Fremont",
 "Email": "info@badgercreekranch.com",
@@ -3691,7 +3707,7 @@
 "Status": "Open",
 "Website": "https://www.badgercreekranch.com/",
 "Year Opened": "",
-"city": "Cañon City",
+"city": "Coaldale",
 "name": "Badger Creek Ranch",
 "source": "official-site+chaffee_provides"
 },
@@ -5286,7 +5302,7 @@
 "Email": "",
 "Hours": "",
 "Months Open": "",
-"Phone": "",
+"Phone": "(719) 530-1597",
 "Products": "Beef/Meat",
 "Status": "Open",
 "Website": "",
@@ -8644,7 +8660,7 @@
 "Category": "Food Bank",
 "County": "Chaffee",
 "Email": "",
-"Hours": "",
+"Hours": "Tue, Thu: 10:00am - 1:00pm",
 "Months Open": "",
 "Phone": "(719) 539-4849",
 "Products": "Beef/Meat, Dairy, Veggies, Staples",
@@ -13135,22 +13151,6 @@
 "name": "Edfoodyo LLC",
 "source": "colorado_proud_finder"
 },
-"edge farm meadows|buena vista": {
-"Address": "29135 Co Rd 331",
-"Category": "On-Farm / Ranch Sales",
-"County": "Chaffee",
-"Email": "meadowsedgefarmbv@gmail.com",
-"Hours": "",
-"Months Open": "",
-"Phone": "(401) 714-1489",
-"Products": "Veggies, Spices/Garlic",
-"Status": "Open",
-"Website": "",
-"Year Opened": "",
-"city": "Buena Vista",
-"name": "Meadows Edge Farm",
-"source": "official-site+chaffee_provides"
-},
 "edible farms forest rivendell|glenwood springs": {
 "Address": "3961 County Road 114",
 "Category": "On-Farm / Ranch Sales",
@@ -15423,22 +15423,6 @@
 "name": "Moon Farm Pumpkin Patch",
 "source": "usda"
 },
-"farm moonstone|salida": {
-"Address": "",
-"Category": "On-Farm / Ranch Sales",
-"County": "Chaffee",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "(719) 239-2021",
-"Products": "Flowers, Poultry/Eggs, Spices/Garlic, Veggies",
-"Status": "Open",
-"Website": "",
-"Year Opened": "",
-"city": "Salida",
-"name": "Moonstone Farm",
-"source": "chaffee_provides"
-},
 "farm mountains shining|snowmass": {
 "Address": "99 N River Road",
 "Category": "On-Farm / Ranch Sales",
@@ -16654,6 +16638,22 @@
 "city": "Rocky Ford, CO",
 "name": "KNAPP FARMS LLC",
 "source": "colorado_proud_farm_fresh"
+},
+"farms knows who|nathrop": {
+"Address": "19235 US Highway 285",
+"Category": "Roadside Market, On-Farm / Ranch Sales",
+"County": "Chaffee",
+"Email": "isaiah@whoknowsfarms.com",
+"Hours": "Tue-Sun: 8:00am - 6:00pm",
+"Months Open": "",
+"Phone": "(719) 398-3306",
+"Products": "Vegetables, fruit, pasture-raised lamb, pork, poultry",
+"Status": "Open",
+"Website": "https://www.whoknowsfarms.com",
+"Year Opened": "",
+"city": "Nathrop",
+"name": "Who Knows? Farms",
+"source": "curated"
 },
 "farms koelle ltd tiny|lafayette": {
 "Address": "2401 North 119th Street",
@@ -19326,22 +19326,6 @@
 "city": "Gardner",
 "name": "GroAway LLC",
 "source": "colorado_proud_finder"
-},
-"guidestone|salida": {
-"Address": "8913 West Hwy 50",
-"Category": "Agritourism, On-Farm / Ranch Sales, Sells to Schools, Organization",
-"County": "Chaffee",
-"Email": "info@guidestonecolorado.org",
-"Hours": "",
-"Months Open": "May, June, July, August, September, October, February, March, April, November",
-"Phone": "(719) 239-0955",
-"Products": "Beets, Bell Peppers, Broccoli, Brussels Sprouts, Cabbage, Carrots, Cauliflower, Celery, Cucumbers, Eggplant, Garlic, Green Beans, Herbs, Kale, Leeks, Lettuce, Microgreens, Onions, Peas, Potatoes, Pumpkins, Radishes, Rhubarb, Spinach, Squash, Tomatoes, Turnips, Zucchini, Beef, Cider, The cider is specifically in conjunction with our annual Pumpkin Patch & Harvest Festival in October",
-"Status": "Open",
-"Website": "https://www.GuidestoneColorado.org",
-"Year Opened": "",
-"city": "Salida",
-"name": "Guidestone Colorado",
-"source": "official-site+colorado_proud_farm_fresh+chaffee_provides+usda"
 },
 "gunnison jerky|gunnison": {
 "Address": "235 N Main St",

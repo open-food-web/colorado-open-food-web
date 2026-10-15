@@ -6,7 +6,7 @@ request's description is built from it. It reads two table folders and, optional
 app exports, and prints Markdown.
 
 Usage:
-  python scripts/change_report.py --before <old tables dir> --after data/chaffee-county \
+  python scripts/change_report.py --before <old tables dir> --after data/colorado \
       [--export-before old.json --export-after exports/chaffee-provides.json]
 """
 from __future__ import annotations

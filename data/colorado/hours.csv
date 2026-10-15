@@ -357,6 +357,7 @@ market,co-m-000072,sat,08:00,12:00,false,false
 producer,co-p-000452,sat,10:00,12:00,false,true
 market,co-m-000074,wed,17:00,20:00,false,false
 producer,co-p-000462,sat,09:00,15:00,false,false
+producer,co-p-001230,tue,16:00,18:00,false,false
 access_point,co-ap-000001,mon,00:00,24:00,false,false
 access_point,co-ap-000001,tue,00:00,24:00,false,false
 access_point,co-ap-000001,wed,00:00,24:00,false,false
@@ -819,6 +820,12 @@ producer,co-p-001187,thu,10:00,17:45,false,false
 producer,co-p-001187,fri,10:00,17:45,false,false
 producer,co-p-001187,sat,10:00,17:45,false,false
 producer,co-p-001187,sun,10:00,17:45,false,false
+producer,co-p-001231,tue,08:00,18:00,false,false
+producer,co-p-001231,wed,08:00,18:00,false,false
+producer,co-p-001231,thu,08:00,18:00,false,false
+producer,co-p-001231,fri,08:00,18:00,false,false
+producer,co-p-001231,sat,08:00,18:00,false,false
+producer,co-p-001231,sun,08:00,18:00,false,false
 producer,co-p-001189,fri,16:00,21:00,false,false
 producer,co-p-001189,sat,12:00,21:00,false,false
 producer,co-p-001189,sun,12:00,19:00,false,false

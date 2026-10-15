@@ -743,10 +743,7 @@ producer,co-p-000462,colorado_proud,,,,unchecked
 producer,co-p-000463,colorado_proud,,,,unchecked
 producer,co-p-000463,usda_lfd,,,,unchecked
 producer,co-p-000464,colorado_proud,,,,unchecked
-producer,co-p-000011,producer_site,https://www.GuidestoneColorado.org,,,unchecked
-producer,co-p-000011,colorado_proud,,,,unchecked
-producer,co-p-000011,chaffee_provides,,guidestone-colorado,,unchecked
-producer,co-p-000011,usda_lfd,,,,unchecked
+producer,co-p-001230,curated,,,,unchecked
 access_point,co-ap-000001,guidestone,,,,unchecked
 access_point,co-ap-000002,guidestone,,,,unchecked
 producer,co-p-000465,curated,,,,unchecked
@@ -1076,8 +1073,6 @@ producer,co-p-000682,colorado_proud,,,,unchecked
 producer,co-p-000683,colorado_proud,,,,unchecked
 producer,co-p-000684,colorado_proud,,,,unchecked
 outlet,co-o-000086,colorado_proud,,,,unchecked
-producer,co-p-000015,producer_site,,,,unchecked
-producer,co-p-000015,chaffee_provides,,meadows-edge-farm,,unchecked
 producer,co-p-000685,colorado_proud,,,,unchecked
 outlet,co-o-000087,colorado_proud,,,,unchecked
 producer,co-p-000686,colorado_proud,,,,unchecked
@@ -1141,7 +1136,6 @@ market,co-m-000110,producer_site,,,,unchecked
 market,co-m-000110,usda_lfd,,,,unchecked
 producer,co-p-000719,usda_lfd,,,,unchecked
 producer,co-p-000720,curated,,,,unchecked
-producer,co-p-000016,chaffee_provides,,moonstone-farm,,unchecked
 producer,co-p-000721,colorado_proud,,,,unchecked
 producer,co-p-000722,colorado_proud,,,,unchecked
 producer,co-p-000723,usda_lfd,,,,unchecked
@@ -1855,6 +1849,7 @@ producer,co-p-001185,colorado_proud,,,,unchecked
 producer,co-p-001186,colorado_proud,,,,unchecked
 producer,co-p-001187,colorado_proud,,,,unchecked
 producer,co-p-001187,colorado_proud,,,,unchecked
+producer,co-p-001231,curated,,,,unchecked
 producer,co-p-001188,colorado_proud,,,,unchecked
 producer,co-p-001189,colorado_proud,,,,unchecked
 producer,co-p-001190,colorado_proud,,,,unchecked
