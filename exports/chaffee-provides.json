@@ -79,6 +79,14 @@
    "product_groups": [
     "mushrooms"
    ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -537,6 +545,14 @@
    "product_groups": [
     "baked-goods"
    ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
    "months_open": [],
    "hours_text": "Wed–Sat 7am–2pm; Sun 7am–12pm",
    "hours": [
@@ -1067,6 +1083,14 @@
    "product_groups": [
     "mushrooms"
    ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
    "months_open": [],
    "hours_text": "No storefront; online support Mon-Thu 8-3 MT",
    "hours": [
@@ -1842,6 +1866,14 @@
     "dairy",
     "drinks"
    ],
+   "dropin_visits": true,
+   "dropin_hours": "U-pick orchard tours in summer season",
+   "farm_pickup": true,
+   "visit_basis": {
+    "dropin": "listing",
+    "pickup": "listing"
+   },
+   "visit_note": null,
    "months_open": [],
    "hours_text": "U-pick orchard tours in summer season",
    "hours": [],
@@ -2155,6 +2187,14 @@
     "baked-goods",
     "drinks"
    ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -2582,6 +2622,14 @@
     "poultry-eggs",
     "honey"
    ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -3288,6 +3336,14 @@
    "product_groups": [
     "baked-goods"
    ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
    "months_open": [],
    "hours_text": null,
    "hours": [],
