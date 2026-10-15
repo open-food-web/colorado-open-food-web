@@ -5,7 +5,7 @@ keeps a copy of it. This document is the contract between the two. Build it with
 `scripts/export_app.py`; the first consumer is the Chaffee Provides site (`exports/chaffee-provides.json`).
 
 ```
-python scripts/export_app.py --tables data/chaffee-county --out exports/chaffee-provides.json \
+python scripts/export_app.py --tables data/colorado --out exports/chaffee-provides.json \
     --release 2026-11 --county-fips 08015 --include-source chaffee_provides
 ```
 

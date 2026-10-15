@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the canonical CSV tables (docs/SCHEMA.md) for one county from the Phase 2 raw CSV.
+"""Build the canonical CSV tables (docs/SCHEMA.md) for all of Colorado (or one county) from the raw build.
 
 The Phase 2 raw CSV is one flat row per business. This splits it into the schema's record
 types: producers, markets, outlets (each with a location), producer locations, service areas, source
@@ -9,9 +9,14 @@ _deferred_organizations.csv so nothing is lost.
 IDs come from data/id_registry.csv: once a business has an ID it keeps it, and IDs are never
 reused. Re-running only adds rows for new businesses.
 
+Statewide is the default; `--county Chaffee` builds one county (plus anything from the Chaffee Provides
+directory). The raw CSV comes from `python scripts/scrape/build.py` (.cache/build/). Emails are kept only
+when the business lists them itself (scrape/contact_policy.py).
+
 Usage:
-  python scripts/build_tables.py --raw ../colorado-farm-trail/source-data/phase2/co_farmers_markets_all_raw.csv \
-      --county Chaffee --out data/chaffee-county
+  python scripts/scrape/build.py
+  python scripts/build_tables.py --raw .cache/build/co_farmers_markets_all_raw.csv --out data/colorado \
+      --additions data/partner-additions/guidestone_2026-10-13.csv
 """
 from __future__ import annotations
 
@@ -20,8 +25,12 @@ import csv
 import json
 import os
 import re
+import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+from scrape import contact_policy as cp  # noqa: E402
+
 REGISTRY = os.path.join(HERE, "..", "data", "id_registry.csv")
 
 # Colorado county FIPS (state 08).
@@ -55,6 +64,9 @@ BADGES = {"Sells to Schools"}
 # is, not how it sells. Blank sales_channels means unconfirmed.
 CHANNEL = {"Roadside Market": "farm_stand", "U-Pick": "u_pick", "CSA Farm": "csa",
            "Farm Products (online)": "online", "Wholesale Grower": "wholesale"}
+RAW_CHANNEL = {"on_farm": "farm_stand", "farm_stand": "farm_stand", "farmers_market": "farmers_market", "csa": "csa",
+               "delivery": "delivery", "wholesale": "wholesale", "retail_partners": "retail_partners",
+               "online": "online", "u_pick": "u_pick", "pickup": "pickup"}
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
           "October", "November", "December"]
 SOURCE_NAME = {"chaffee_provides": "chaffee_provides", "colorado_proud": "colorado_proud",
@@ -108,6 +120,7 @@ class Registry:
             with open(path, encoding="utf-8", newline="") as f:
                 for r in csv.DictReader(f):
                     self.rows[r["key"]] = r["id"]
+        self.known = {k.split("|", 1)[1] for k in self.rows}
         self.next = {}
         for i in self.rows.values():
             pre, n = i.rsplit("-", 1)
@@ -127,6 +140,13 @@ class Registry:
             w.writerow(["key", "id"])
             for k, v in sorted(self.rows.items(), key=lambda kv: kv[1]):
                 w.writerow([k, v])
+
+
+def channels(r, cats):
+    """Sales channels: what the raw row states (the Sales Channels column) plus what its categories state outright."""
+    stated = [RAW_CHANNEL[c.strip()] for c in (r.get("Sales Channels") or "").split(";") if c.strip() in RAW_CHANNEL]
+    derived = [CHANNEL[c] for c in cats if c in CHANNEL]
+    return ";".join(sorted(set(stated) | set(derived)))
 
 
 def classify(cats):
@@ -154,16 +174,18 @@ def producer_kind(name, cats):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--raw", required=True)
-    ap.add_argument("--county", default="Chaffee")
+    ap.add_argument("--county", default=None, help="limit to one county (default: all of Colorado)")
     ap.add_argument("--out", required=True)
     ap.add_argument("--additions", nargs="*", default=[],
                     help="partner CSVs in the raw layout; a row replaces the raw row with the same Source ID")
     ap.add_argument("--registry", default=REGISTRY, help="ID registry CSV (default: data/id_registry.csv)")
     a = ap.parse_args()
-    fips = FIPS[a.county]
+    fips = FIPS[a.county] if a.county else ""
+    emails = cp.Table()
 
     with open(a.raw, encoding="utf-8-sig", newline="") as f:
-        raw = [r for r in csv.DictReader(f) if (r["County"] or "").strip().lower() == a.county.lower()
+        raw = [r for r in csv.DictReader(f)
+               if not a.county or (r["County"] or "").strip().lower() == a.county.lower()
                or "chaffee_provides" in (r["Source"] or "")]
     for path in a.additions:
         with open(path, encoding="utf-8-sig", newline="") as f:
@@ -171,7 +193,37 @@ def main():
         raw = [r for r in raw if r["Source ID"] not in {x["Source ID"] for x in add}] + add
     reg = Registry(a.registry)
     out = {k: [] for k in COLS}
-    deferred, slugs = [], set()
+    deferred, slugs, used = [], set(), set()
+
+    def prefixes_for(typ, cats_main):
+        """The ID prefixes a row will take, so two rows only collide when they would share an actual ID."""
+        if typ == "market":
+            return ["co-m"]
+        if typ == "access":
+            return ["co-ap"]
+        out_ = ["co-p"] if typ == "producer" else []
+        if any(c in OUTLET_KIND and (typ == "outlet" or c != "Garden Center / Greenhouse") for c in cats_main):
+            out_.append("co-o")
+        return out_ or ["co-p"]
+
+    def entity_key(r, name, prefixes):
+        """A permanent key for the registry. A source ID when there is one; otherwise the name, plus the town
+        when the plain name is new (two "Farmers Market"s in different towns are different businesses).
+        A key already in the registry keeps its ID, and a repeated key within one run gets a suffix."""
+        base = r["Source ID"] or slugify(name)
+        key = base
+        if not r["Source ID"] and base not in reg.known:
+            key = base + "|" + slugify(r["City"] or "")
+        n = 1
+        while any((p_, key) in used for p_ in prefixes):
+            n += 1
+            key = "%s|%d" % (base, n)
+        used.update((p_, key) for p_ in prefixes)
+        return key
+
+    def publishable_email(r):
+        kept = [e for e in cp.split_emails(r["Email"]) if cp.publishable(e, r["Website"], emails)]
+        return "; ".join(kept)
 
     def new_slug(name):
         base = slugify(name)
@@ -185,7 +237,10 @@ def main():
         name = r["Business Name"].replace("�", "'").strip()
         cats = [c.strip() for c in r["Category"].split(",") if c.strip()]
         cats_main = [c for c in cats if c not in BADGES]
-        sid = r["Source ID"] or slugify(name)
+        sid = entity_key(r, name, prefixes_for(classify(cats_main), cats_main))
+        if "guidestone_review" not in (r["Source"] or ""):   # a partner file states its own contact details
+            r["Email"] = publishable_email(r)
+        status = "closed" if (r.get("Status") or "").strip().lower() == "closed" else "unverified"
         typ = classify(cats_main)
         prov = json.loads(r["Provenance"]) if r["Provenance"] else {}
         srcs = [SOURCE_NAME.get(s, s) for s in (r["Source"] or "").split("+") if s]
@@ -197,7 +252,8 @@ def main():
 
         # One location per business. A business with coordinates but no street address is a hidden
         # address (Chaffee Provides' "hide address" flag): keep county, round the pin to the town.
-        hidden = bool(r["Latitude"]) and not r["Address"].strip() and "chaffee_provides" in (r["Source"] or "")
+        hidden = ((r.get("Hide Address") or "").strip().lower() == "yes"
+                  or (bool(r["Latitude"]) and not r["Address"].strip() and "chaffee_provides" in (r["Source"] or "")))
         rfips = FIPS.get((r["County"] or "").strip(), fips if not r["County"].strip() else "")
         lkind = {"market": "market_site", "producer": "farm", "outlet": "outlet_site", "access": "access_site"}[typ]
         location_id = reg.get("co-loc", "%s|%s" % (typ, sid))
@@ -217,14 +273,14 @@ def main():
             out["markets"].append({"market_id": mid, "slug": new_slug(name), "name": name, "location_id": location_id,
                                    "operator": "", "days": "", "hours_text": r["Hours"], "email": r["Email"],
                                    "accepts_snap": tri(r["SNAP"]), "ada_accessible": tri(r["ADA Accessible"]),
-                                   "status": "unverified", "first_seen": "", "last_verified": "", **common})
+                                   "status": status, "first_seen": "", "last_verified": "", **common})
             rec_ids.append(("market", mid))
         elif typ == "access":
             kind = next(ACCESS_KIND[c] for c in cats_main if c in ACCESS_KIND)
             apid = reg.get("co-ap", sid)
             out["access_points"].append({"access_point_id": apid, "slug": new_slug(name), "name": name, "kind": kind,
                                          "location_id": location_id, "hours_text": r["Hours"], "email": r["Email"],
-                                         "status": "unverified", "first_seen": "", "last_verified": "", **common})
+                                         "status": status, "first_seen": "", "last_verified": "", **common})
             rec_ids.append(("access_point", apid))
         else:
             if typ == "producer":
@@ -235,10 +291,10 @@ def main():
                     "categories": ";".join(c for c in cats if c in PRODUCER_CATS),
                     "products": r["Products"].replace(", ", ";"),
                     "seasonal_months": ";".join(months), "hours_text": r["Hours"], "email": r["Email"],
-                    "sales_channels": ";".join(sorted({CHANNEL[c] for c in cats if c in CHANNEL})),
+                    "sales_channels": channels(r, cats),
                     "certified_organic": tri(r["Certified Organic"]), "accepts_snap": tri(r["SNAP"]),
                     "ada_accessible": tri(r["ADA Accessible"]), "call_first": tri(r["Call first?"]),
-                    "status": "unverified", "claimed": "false", "opted_out_fields": "",
+                    "status": status, "claimed": "false", "opted_out_fields": "",
                     "first_seen": "", "last_verified": "", **common})
                 out["producer_locations"].append({"producer_location_id": reg.get("co-ploc", sid + "|home"), "producer_id": pid,
                                          "location_id": location_id, "role": "home_base", "days": "",
@@ -254,7 +310,7 @@ def main():
                 oid = reg.get("co-o", sid)
                 out["outlets"].append({"outlet_id": oid, "slug": new_slug(name + " outlet"), "name": name,
                                        "kind": kinds[0], "brand": "", "location_id": location_id,
-                                       "status": "unverified", "first_seen": "", "last_verified": "", **common})
+                                       "status": status, "first_seen": "", "last_verified": "", **common})
                 rec_ids.append(("outlet", oid))
 
         partner = "guidestone" in srcs

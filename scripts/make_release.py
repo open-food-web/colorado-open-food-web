@@ -9,6 +9,7 @@ Writes, in --out:
                     read, with the release rules applied (closed businesses left out, hidden addresses
                     withheld, descriptions not included, emails only if the business lists them)
   csa.json          confirmed CSAs (season, sign-up link, pickup sites, delivery), facts only
+  tables.zip        the canonical tables (producers, markets, outlets, locations and the link tables)
   places.json       Census place and ZIP centre points, for "near a town or ZIP" searches (public domain)
   supply-network-nodes.csv, supply-network-edges.csv   who supplies which restaurant or store, with sources
   MANIFEST.json     version, date, record counts, per-source counts, the sha256 of each file, and the schema
@@ -36,6 +37,7 @@ REPO = os.path.normpath(os.path.join(HERE, ".."))
 BUILD = os.path.join(REPO, ".cache", "build")
 FORMAT_VERSION = 1
 PLACES = os.path.join(REPO, "inputs", "places", "co_places.json")
+TABLES = os.path.join(REPO, "data", "colorado")
 SUPPLY = os.path.join(REPO, "inputs", "supply-network")
 
 
@@ -90,6 +92,14 @@ def main():
     for name, path in assets.items():
         shutil.copyfile(path, os.path.join(a.out, name))
 
+    import zipfile
+    tables_zip = os.path.join(a.out, "tables.zip")
+    with zipfile.ZipFile(tables_zip, "w", zipfile.ZIP_DEFLATED) as z:
+        for fn in sorted(os.listdir(TABLES)):
+            if fn.endswith(".csv"):
+                z.write(os.path.join(TABLES, fn), fn)
+    assets["tables.zip"] = tables_zip
+
     by_source = {}
     for r in read(raw):
         for s in (r.get("Source") or "").split("+"):
@@ -124,7 +134,7 @@ Released {manifest['released']}. Data CC BY 4.0: credit "Colorado Open Food Web"
 
 - `directory.csv`: {len(rows)} listings ({manifest['counts']['with_email']} with a confirmed email,
   {manifest['counts']['with_website']} with a website).
-- `csa.json`, `places.json`, `supply-network-nodes.csv`, `supply-network-edges.csv`.
+- `tables.zip` (the canonical tables), `csa.json`, `places.json`, `supply-network-nodes.csv`, `supply-network-edges.csv`.
 - `MANIFEST.json`: counts, sources, and the sha256 of each file.
 
 Rules applied: facts only (no descriptions), closed businesses and hidden addresses left out, emails only

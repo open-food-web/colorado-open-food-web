@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Build the public app export (docs/EXPORTS.md) for one app from a county's canonical tables.
+"""Build the public app export (docs/EXPORTS.md) for one app from the statewide canonical tables.
 
 This is where the public release rules are applied: hidden addresses are withheld and the pin
 moves to the nearest town centre, opted-out fields are dropped, closed and removed records leave
 the file (removed ones appear as an ID only). Apps never read the canonical tables.
 
 Usage:
-  python scripts/export_app.py --tables data/chaffee-county --out exports/chaffee-provides.json \
+  python scripts/export_app.py --tables data/colorado --out exports/chaffee-provides.json \
       --release 2026-11 --county-fips 08015 --include-source chaffee_provides
 """
 from __future__ import annotations
