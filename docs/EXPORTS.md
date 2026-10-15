@@ -61,6 +61,7 @@ python scripts/export_app.py --tables data/chaffee-county --out exports/chaffee-
 | `last_verified` | date/null | |
 | `locations` | list | See below. May be empty (an online-only producer) |
 | `sources` | list | `{source, label, url}` for the "where this came from" line |
+| `confirmed_by` | list | Who stands behind which details: `{by, fields, url, date}`. `by` is a partner such as Guidestone Colorado, or the business's own website or Facebook page. Shown on the listing as "Phone confirmed by Guidestone Colorado, Oct 13, 2026" |
 
 ### `locations[]` (producers), `location` (markets and access points)
 

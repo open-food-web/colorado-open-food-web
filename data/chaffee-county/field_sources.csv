@@ -233,7 +233,7 @@ producer,co-p-000023,county_fips,census_geocoder,,source,
 producer,co-p-000023,categories,maintainer,,source,
 producer,co-p-000024,phone,chaffee_provides,,source,
 producer,co-p-000024,facebook,guidestone,,partner,2026-10-13
-producer,co-p-000024,products,maintainer,,source,
+producer,co-p-000024,products,producer_facebook,https://www.facebook.com/SweetPeaFarmHoney/,source,2026-10-15
 producer,co-p-000024,address,chaffee_provides,,source,
 producer,co-p-000024,zip,chaffee_provides,,source,
 producer,co-p-000024,county_fips,census_geocoder,,source,

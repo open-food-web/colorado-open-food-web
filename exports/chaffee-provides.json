@@ -132,6 +132,18 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "email",
+      "phone",
+      "products"
+     ],
+     "url": "https://www.arrowpointcattle.com",
+     "date": null
+    }
    ]
   },
   {
@@ -284,6 +296,27 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "Guidestone Colorado",
+     "fields": [
+      "ZIP",
+      "address",
+      "town"
+     ],
+     "url": null,
+     "date": "2026-10-13"
+    },
+    {
+     "by": "the business's own website",
+     "fields": [
+      "email",
+      "products"
+     ],
+     "url": "https://www.badgercreekranch.com/",
+     "date": null
+    }
    ]
   },
   {
@@ -347,7 +380,8 @@
      "label": "Farmers market vendor lists, checked by hand",
      "url": null
     }
-   ]
+   ],
+   "confirmed_by": []
   },
   {
    "id": "co-p-000004",
@@ -418,7 +452,8 @@
      "label": "Colorado Proud",
      "url": null
     }
-   ]
+   ],
+   "confirmed_by": []
   },
   {
    "id": "co-p-000005",
@@ -484,6 +519,18 @@
      "source": "chaffee_provides",
      "label": "Chaffee Provides",
      "url": null
+    }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "email",
+      "phone",
+      "products"
+     ],
+     "url": "http://coloradofarmtotable.org/",
+     "date": null
     }
    ]
   },
@@ -555,6 +602,18 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "email",
+      "phone",
+      "products"
+     ],
+     "url": "https://co-mtn-lav.com/",
+     "date": null
+    }
    ]
   },
   {
@@ -618,6 +677,16 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "Guidestone Colorado",
+     "fields": [
+      "phone"
+     ],
+     "url": null,
+     "date": "2026-10-13"
+    }
    ]
   },
   {
@@ -680,7 +749,8 @@
      "label": "Colorado Proud",
      "url": null
     }
-   ]
+   ],
+   "confirmed_by": []
   },
   {
    "id": "co-p-000010",
@@ -743,6 +813,16 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "Guidestone Colorado",
+     "fields": [
+      "phone"
+     ],
+     "url": null,
+     "date": "2026-10-13"
+    }
    ]
   },
   {
@@ -800,7 +880,8 @@
      "label": "Farmers market vendor lists, checked by hand",
      "url": null
     }
-   ]
+   ],
+   "confirmed_by": []
   },
   {
    "id": "co-p-000012",
@@ -866,6 +947,18 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "email",
+      "phone",
+      "products"
+     ],
+     "url": "https://www.headwaterfarmco.com/",
+     "date": null
+    }
    ]
   },
   {
@@ -928,6 +1021,19 @@
      "source": "chaffee_provides",
      "label": "Chaffee Provides",
      "url": null
+    }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "address",
+      "email",
+      "phone",
+      "products"
+     ],
+     "url": "https://www.hutchranchsalida.com",
+     "date": null
     }
    ]
   },
@@ -992,7 +1098,8 @@
      "label": "Chaffee Provides",
      "url": null
     }
-   ]
+   ],
+   "confirmed_by": []
   },
   {
    "id": "co-p-000017",
@@ -1054,6 +1161,17 @@
      "source": "chaffee_provides",
      "label": "Chaffee Provides",
      "url": null
+    }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "email",
+      "phone"
+     ],
+     "url": "https://mountaingoatlodge.com",
+     "date": null
     }
    ]
   },
@@ -1122,6 +1240,16 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "products"
+     ],
+     "url": "http://www.mushroomloveco.com",
+     "date": null
+    }
    ]
   },
   {
@@ -1188,6 +1316,17 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "hours",
+      "products"
+     ],
+     "url": "https://www.phytologyflowers.com",
+     "date": null
+    }
    ]
   },
   {
@@ -1253,6 +1392,19 @@
      "source": "chaffee_provides",
      "label": "Chaffee Provides",
      "url": null
+    }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "email",
+      "hours",
+      "phone",
+      "products"
+     ],
+     "url": "https://ponchacreekgardens.wordpress.com/our-products/",
+     "date": null
     }
    ]
   },
@@ -1360,6 +1512,16 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "products"
+     ],
+     "url": "https://www.rockymountaingarlic.net/",
+     "date": null
+    }
    ]
   },
   {
@@ -1425,6 +1587,16 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "products"
+     ],
+     "url": "http://www.salidacattlecompany.com",
+     "date": null
+    }
    ]
   },
   {
@@ -1489,6 +1661,17 @@
      "source": "chaffee_provides",
      "label": "Chaffee Provides",
      "url": null
+    }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "address",
+      "phone"
+     ],
+     "url": "http://www.scangameat.com/",
+     "date": null
     }
    ]
   },
@@ -1558,6 +1741,24 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "Guidestone Colorado",
+     "fields": [
+      "Facebook"
+     ],
+     "url": null,
+     "date": "2026-10-13"
+    },
+    {
+     "by": "the business's Facebook page",
+     "fields": [
+      "products"
+     ],
+     "url": "https://www.facebook.com/SweetPeaFarmHoney/",
+     "date": "2026-10-15"
+    }
    ]
   },
   {
@@ -1617,7 +1818,8 @@
      "label": "Colorado Proud",
      "url": null
     }
-   ]
+   ],
+   "confirmed_by": []
   },
   {
    "id": "co-p-000026",
@@ -1690,7 +1892,8 @@
      "label": "Farmers market vendor lists, checked by hand",
      "url": null
     }
-   ]
+   ],
+   "confirmed_by": []
   },
   {
    "id": "co-p-000027",
@@ -1754,6 +1957,19 @@
      "source": "chaffee_provides",
      "label": "Chaffee Provides",
      "url": null
+    }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "address",
+      "email",
+      "phone",
+      "products"
+     ],
+     "url": "https://www.troutcreekfarm.com",
+     "date": null
     }
    ]
   },
@@ -1824,6 +2040,18 @@
      "label": "Chaffee Provides",
      "url": null
     }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "address",
+      "phone",
+      "products"
+     ],
+     "url": "https://www.valleyrootsfoodhub.com/",
+     "date": null
+    }
    ]
   },
   {
@@ -1884,7 +2112,8 @@
      "label": "Colorado Proud",
      "url": null
     }
-   ]
+   ],
+   "confirmed_by": []
   },
   {
    "id": "co-p-000031",
@@ -1952,7 +2181,8 @@
      "label": "Farmers market vendor lists, checked by hand",
      "url": null
     }
-   ]
+   ],
+   "confirmed_by": []
   }
  ],
  "markets": [
