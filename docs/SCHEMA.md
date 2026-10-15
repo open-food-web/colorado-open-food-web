@@ -249,7 +249,7 @@ A place to get food that is not a sale. Version 1 holds community fridges; pantr
 |---|---|---|---|
 | `producer_id` | string | fact | FK |
 | `county_fips` | string | fact | |
-| `basis` | enum | fact | `home_base`, `market`, `store`, `delivery`, `manual` (`market` comes from `market_vendors` through the market's location, `store` from `outlet_suppliers` through the outlet's location) |
+| `basis` | enum | fact | `home_base`, `pickup`, `market`, `store`, `delivery`, `manual` (`pickup` comes from a producer's pickup points; `market` comes from `market_vendors` through the market's location, `store` from `outlet_suppliers` through the outlet's location) |
 | `derived` | bool | fact | True when computed from producer locations. Rebuilt on every release |
 
 A county filter matches a producer when any `service_areas` row for that county exists.

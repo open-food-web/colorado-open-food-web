@@ -75,9 +75,12 @@ def main():
                     help="also include records that this source lists, even outside the county")
     ap.add_argument("--unconfirmed-home-pins", choices=["show", "hide"], default="show",
                     help="draw a home-base pin for producers whose sales channels are not confirmed yet")
+    ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}} for the app's own scope choices")
     ap.add_argument("--generated", default=dt.date.today().isoformat())
     a = ap.parse_args()
     T = lambda n: read(os.path.join(a.tables, n + ".csv"))
+    cfg = json.load(open(a.config, encoding="utf-8")) if a.config else {}
+    exclude_slugs = set((cfg.get("exclude_slugs") or {}).keys())
 
     locations = {r["location_id"]: r for r in T("locations")}
     towns = [(r["name"], float(r["lat"]), float(r["lon"])) for r in read(TOWNS) if r["county_fips"] in a.county_fips]
@@ -146,7 +149,7 @@ def main():
                "city": L["city"] or (town[0] if town else None), "zip": None if hidden else (L["zip"] or None),
                "county_fips": L["county_fips"] or None,
                "lat": None if lat is None else round(lat, 6), "lon": None if lon is None else round(lon, 6),
-               "precision": "none" if lat is None else ("town" if hidden else ("exact" if street else "approximate")),
+               "precision": "none" if lat is None else ("town" if hidden else ("exact" if street and L["geo_source"] != "town_centre" else "approximate")),
                "pin": bool(pin and lat is not None), "pin_basis": pin_basis}
         out.update(extra or {})
         return out
@@ -158,6 +161,8 @@ def main():
             removed.append(pid)
             continue
         locs = plocs.get(pid, [])
+        if p["slug"] in exclude_slugs:
+            continue
         if p["status"] in HIDDEN_STATUS or not in_area("producer", pid, [l["location_id"] for l in locs]):
             continue
         channels = lst(p["sales_channels"])
