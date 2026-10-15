@@ -17247,6 +17247,22 @@
 "name": "Zion Farms, LLC",
 "source": "colorado_proud_finder"
 },
+"farmstand|buena vista": {
+"Address": "County Road 306",
+"Category": "Roadside Market",
+"County": "",
+"Email": "",
+"Hours": "",
+"Months Open": "",
+"Phone": "",
+"Products": "Eggs, honey, flowers, produce, baked goods, jams, tallow balms, soaps",
+"Status": "Open",
+"Website": "",
+"Year Opened": "",
+"city": "Buena Vista",
+"name": "The Farmstand",
+"source": "curated"
+},
 "farmstead green junction|clifton": {
 "Address": "3449 Front St",
 "Category": "CSA Farm, Roadside Market",
