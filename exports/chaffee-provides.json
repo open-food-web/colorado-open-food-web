@@ -10,11 +10,11 @@
   ],
   "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
   "counts": {
-   "producers": 32,
+   "producers": 31,
    "markets": 2,
    "access_points": 2,
    "market_links": 26,
-   "pins": 37
+   "pins": 29
   }
  },
  "vocab": {
@@ -96,7 +96,10 @@
    "email": null,
    "facebook": "https://www.facebook.com/alpinevalleymushrooms?mibextid=LQQJ4d",
    "instagram": "https://instagram.com/alpinevalleymushrooms?igshid=NTc4MTIwNjQ2YQ==",
-   "sales_channels": [],
+   "sales_channels": [
+    "farmers_market",
+    "wholesale"
+   ],
    "sells_at": [
     {
      "market_id": "co-m-000002",
@@ -127,7 +130,7 @@
      "lat": 38.08641,
      "lon": -106.136452,
      "precision": "exact",
-     "pin": true,
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": null,
@@ -478,7 +481,11 @@
    "email": null,
    "facebook": null,
    "instagram": "https://www.instagram.com/banyan_breads/",
-   "sales_channels": [],
+   "sales_channels": [
+    "farm_stand",
+    "farmers_market",
+    "pickup"
+   ],
    "sells_at": [
     {
      "market_id": "co-m-000002",
@@ -510,7 +517,7 @@
      "lon": -105.991583,
      "precision": "exact",
      "pin": true,
-     "pin_basis": "unconfirmed",
+     "pin_basis": "confirmed",
      "days": [],
      "hours_text": "Shop open mornings; preorder pickup Thu, Fri, Sun",
      "season_start": null,
@@ -682,7 +689,11 @@
    "email": "buckandbloomcheese@gmail.com",
    "facebook": "https://www.facebook.com/people/Buck-Bloom-Cheese-Co/61578967916917/",
    "instagram": "https://www.instagram.com/buckandbloomcheese/",
-   "sales_channels": [],
+   "sales_channels": [
+    "farm_stand",
+    "farmers_market",
+    "wholesale"
+   ],
    "sells_at": [
     {
      "market_id": "co-m-000017",
@@ -777,7 +788,7 @@
      "lon": -106.162631,
      "precision": "exact",
      "pin": true,
-     "pin_basis": "unconfirmed",
+     "pin_basis": "confirmed",
      "days": [],
      "hours_text": null,
      "season_start": null,
@@ -996,14 +1007,14 @@
    "product_groups": [
     "garlic-herbs"
    ],
-   "dropin_visits": null,
+   "dropin_visits": true,
    "dropin_hours": null,
-   "farm_pickup": null,
+   "farm_pickup": true,
    "visit_basis": {
-    "dropin": null,
-    "pickup": null
+    "dropin": "set",
+    "pickup": "listing"
    },
-   "visit_note": null,
+   "visit_note": "Retail shop selling bulk herbs",
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -1125,7 +1136,11 @@
    "email": null,
    "facebook": null,
    "instagram": null,
-   "sales_channels": [],
+   "sales_channels": [
+    "online",
+    "retail_partners",
+    "wholesale"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -1146,7 +1161,7 @@
      "lat": 38.52991,
      "lon": -105.99802,
      "precision": "approximate",
-     "pin": true,
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [
       "mon",
@@ -1164,80 +1179,6 @@
     {
      "source": "curated",
      "label": "Farmers market vendor lists, checked by hand",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
-  },
-  {
-   "id": "co-p-000009",
-   "slug": "elements-mountain-compost",
-   "name": "Elements Mountain Compost",
-   "kind": "farm",
-   "categories": [
-    "On-Farm / Ranch Sales",
-    "Food Maker"
-   ],
-   "products": [
-    "Crops & Agricultural Products",
-    "Processing",
-    "Production & Manufacturing",
-    "School Tours",
-    "Tours",
-    "Value-Added Non-Food Products"
-   ],
-   "product_groups": [],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": "http://elementscompost.com",
-   "phone": "(719) 207-2207",
-   "email": "sales@elementscompost.com",
-   "facebook": "https://www.facebook.com/elementsmountaincompost",
-   "instagram": "https://www.instagram.com/elementscompost/",
-   "sales_channels": [],
-   "sells_at": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000011",
-     "role": "home_base",
-     "name": null,
-     "address": "9255 County Road 140",
-     "city": "Salida",
-     "zip": "81201",
-     "county_fips": "08015",
-     "lat": 38.534553,
-     "lon": -106.050589,
-     "precision": "exact",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "colorado_proud",
-     "label": "Colorado Proud",
      "url": null
     }
    ],
@@ -1438,7 +1379,13 @@
    "email": "maddychance@headwaterfarmco.com",
    "facebook": null,
    "instagram": "https://instagram.com/headwater_farms",
-   "sales_channels": [],
+   "sales_channels": [
+    "csa",
+    "farmers_market",
+    "online",
+    "retail_partners",
+    "wholesale"
+   ],
    "sells_at": [
     {
      "market_id": "co-m-000002",
@@ -1469,7 +1416,7 @@
      "lat": 38.8422,
      "lon": -106.1311,
      "precision": "town",
-     "pin": true,
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": null,
@@ -1611,7 +1558,7 @@
     "dropin": null,
     "pickup": null
    },
-   "visit_note": null,
+   "visit_note": "Beef shares and cuts for sale or delivery",
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -1621,7 +1568,10 @@
    "email": null,
    "facebook": "https://www.facebook.com/myredcows/",
    "instagram": null,
-   "sales_channels": [],
+   "sales_channels": [
+    "delivery",
+    "pickup"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -1642,7 +1592,7 @@
      "lat": 38.53126,
      "lon": -106.117607,
      "precision": "exact",
-     "pin": true,
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": null,
@@ -1768,14 +1718,14 @@
    "product_groups": [
     "mushrooms"
    ],
-   "dropin_visits": null,
+   "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": null,
    "visit_basis": {
-    "dropin": null,
+    "dropin": "set",
     "pickup": null
    },
-   "visit_note": null,
+   "visit_note": "No farm stand; farm tours by request",
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -1785,7 +1735,12 @@
    "email": "morgan.tristana@gmail.com",
    "facebook": "https://www.facebook.com/Mushroom-Love-Co-334280667437315/",
    "instagram": null,
-   "sales_channels": [],
+   "sales_channels": [
+    "csa",
+    "farmers_market",
+    "online",
+    "wholesale"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -1806,7 +1761,7 @@
      "lat": 38.8422,
      "lon": -106.1311,
      "precision": "town",
-     "pin": true,
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": null,
@@ -2006,14 +1961,14 @@
    "product_groups": [
     "flowers"
    ],
-   "dropin_visits": null,
+   "dropin_visits": false,
    "dropin_hours": null,
-   "farm_pickup": null,
+   "farm_pickup": true,
    "visit_basis": {
-    "dropin": null,
-    "pickup": null
+    "dropin": "set",
+    "pickup": "set"
    },
-   "visit_note": null,
+   "visit_note": "Not open to the public; visits by appointment. Order online or by phone, or buy bouquets at Salida Garden Supply",
    "months_open": [],
    "hours_text": "By appointment",
    "hours": [],
@@ -2023,7 +1978,12 @@
    "email": "hannah@phytologyflowers.com",
    "facebook": "https://www.facebook.com/phytologyflowers",
    "instagram": "https://www.instagram.com/phytologyflowers/",
-   "sales_channels": [],
+   "sales_channels": [
+    "csa",
+    "online",
+    "pickup",
+    "retail_partners"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -2044,7 +2004,7 @@
      "lat": 38.5136,
      "lon": -106.0783,
      "precision": "town",
-     "pin": true,
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": "By appointment",
@@ -2094,14 +2054,14 @@
     "veggies",
     "flowers"
    ],
-   "dropin_visits": null,
+   "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": true,
    "visit_basis": {
-    "dropin": null,
+    "dropin": "set",
     "pickup": "set"
    },
-   "visit_note": "On-farm pickup by arrangement (also delivers in Salida and Poncha Springs)",
+   "visit_note": "On-farm pickup by arrangement; visits by appointment; also delivers in Salida and Poncha Springs",
    "months_open": [],
    "hours_text": "By appointment",
    "hours": [],
@@ -2111,7 +2071,11 @@
    "email": "ponchacreekgardens@gmail.com",
    "facebook": "http://www.facebook.com/ponchacreekgardens",
    "instagram": "https://www.instagram.com/salidaholidaymakersmarket",
-   "sales_channels": [],
+   "sales_channels": [
+    "delivery",
+    "online",
+    "pickup"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -2132,7 +2096,7 @@
      "lat": 38.51396,
      "lon": -106.076895,
      "precision": "approximate",
-     "pin": true,
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": "By appointment",
@@ -2187,14 +2151,14 @@
     "baked-goods",
     "drinks"
    ],
-   "dropin_visits": null,
+   "dropin_visits": true,
    "dropin_hours": null,
-   "farm_pickup": null,
+   "farm_pickup": true,
    "visit_basis": {
-    "dropin": null,
-    "pickup": null
+    "dropin": "set",
+    "pickup": "listing"
    },
-   "visit_note": null,
+   "visit_note": "Walk-in bakery at 675 Grand Ave, Del Norte (weekday and Saturday hours differ by source)",
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -2204,7 +2168,9 @@
    "email": null,
    "facebook": "https://www.facebook.com/raisinrye/",
    "instagram": "https://www.instagram.com/raisinryebakery/",
-   "sales_channels": [],
+   "sales_channels": [
+    "farm_stand"
+   ],
    "sells_at": [
     {
      "market_id": "co-m-000002",
@@ -2236,7 +2202,7 @@
      "lon": -106.353694,
      "precision": "exact",
      "pin": true,
-     "pin_basis": "unconfirmed",
+     "pin_basis": "confirmed",
      "days": [],
      "hours_text": null,
      "season_start": null,
@@ -2530,14 +2496,14 @@
     "beef-meat",
     "poultry-eggs"
    ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
+   "dropin_visits": true,
+   "dropin_hours": "Mon-Sat 8:30am - 5:00pm",
+   "farm_pickup": true,
    "visit_basis": {
-    "dropin": null,
-    "pickup": null
+    "dropin": "set",
+    "pickup": "listing"
    },
-   "visit_note": null,
+   "visit_note": "Retail meat shop at the plant, open Mon-Sat (hours from a business directory)",
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -2547,7 +2513,10 @@
    "email": null,
    "facebook": null,
    "instagram": null,
-   "sales_channels": [],
+   "sales_channels": [
+    "farm_stand",
+    "wholesale"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -2569,7 +2538,7 @@
      "lon": -106.00867,
      "precision": "exact",
      "pin": true,
-     "pin_basis": "unconfirmed",
+     "pin_basis": "confirmed",
      "days": [],
      "hours_text": null,
      "season_start": null,
@@ -2989,14 +2958,14 @@
     "poultry-eggs",
     "dairy"
    ],
-   "dropin_visits": null,
+   "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": null,
    "visit_basis": {
-    "dropin": null,
+    "dropin": "set",
     "pickup": null
    },
-   "visit_note": null,
+   "visit_note": "Delivery food hub; not a place to visit",
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -3006,7 +2975,11 @@
    "email": null,
    "facebook": null,
    "instagram": null,
-   "sales_channels": [],
+   "sales_channels": [
+    "delivery",
+    "online",
+    "wholesale"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
