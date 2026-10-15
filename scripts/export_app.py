@@ -39,6 +39,12 @@ SOURCE_LABELS = {
     "census_geocoder": "US Census geocoder", "reviewed": "Reviewed by hand", "maintainer": "Maintainer"}
 # What a producer calls itself (producers.kind). Farms and ranches are different things to a shopper.
 KIND_LABELS = {"farm": "Farms", "ranch": "Ranches", "orchard": "Orchards", "maker": "Food makers", "winery": "Wineries"}
+FIELD_LABEL = {"phone": "phone", "email": "email", "website": "website", "facebook": "Facebook", "instagram": "Instagram",
+               "hours_text": "hours", "seasonal_months": "season", "products": "products", "address": "address",
+               "city": "town", "zip": "ZIP", "categories": "type", "certified_organic": "organic status",
+               "accepts_snap": "SNAP", "ada_accessible": "accessibility"}
+BY_LABEL = {"guidestone": "Guidestone Colorado", "producer_site": "the business's own website",
+            "producer_facebook": "the business's Facebook page"}
 # Records with these statuses are not published. "removed" is listed by ID only.
 HIDDEN_STATUS = {"closed", "removed"}
 
@@ -120,6 +126,29 @@ def main():
             "basis": r["match_basis"], "source_url": r["source_url"] or None}
         vendors_of.setdefault(r["market_id"], set()).add(r["producer_id"])
 
+    fsrc = {}
+    for r in T("field_sources"):
+        fsrc.setdefault((r["record_type"], r["record_id"]), []).append(r)
+
+    def confirmed_by(rtype, rid, website=""):
+        """Who stands behind which details: a partner, or the business's own website or Facebook page."""
+        groups = {}
+        for r in fsrc.get((rtype, rid), []):
+            src = r["source"]
+            if src == "producer_site" and "facebook.com" in (r["source_url"] or ""):
+                src = "producer_facebook"   # found on the business's Facebook page, not a website
+            if not (r["verified_by"] == "partner" or src in ("producer_site", "producer_facebook")):
+                continue
+            if r["field"] not in FIELD_LABEL:
+                continue
+            if src != "guidestone" and r["field"] in ("facebook", "instagram", "website"):
+                continue   # a page "confirming" its own link says nothing
+            url = r["source_url"] if src == "producer_facebook" else (website if src == "producer_site" else "")
+            g = groups.setdefault((src, url, r["verified_on"] if src != "producer_site" else ""), [])
+            g.append(FIELD_LABEL[r["field"]])
+        return [{"by": BY_LABEL.get(k[0], k[0]), "fields": sorted(set(v)), "url": k[1] or None, "date": k[2] or None}
+                for k, v in sorted(groups.items(), key=lambda kv: (kv[0][0] != "guidestone", kv[0]))]
+
     def sources(rtype, rid):
         out, seen = [], set()
         for l in links.get((rtype, rid), []):
@@ -200,7 +229,7 @@ def main():
             "accepts_snap": boolish(p["accepts_snap"]), "ada_accessible": boolish(p["ada_accessible"]),
             "call_first": boolish(p["call_first"]), "status": p["status"], "claimed": boolish(p["claimed"]) is True,
             "last_verified": p["last_verified"] or None, "locations": out_locs,
-            "sources": sources("producer", pid)}
+            "sources": sources("producer", pid), "confirmed_by": confirmed_by("producer", pid, p["website"])}
         for f in opted:  # fields the producer asked to have removed
             if f in rec:
                 rec[f] = None if not isinstance(rec[f], list) else []
