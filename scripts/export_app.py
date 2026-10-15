@@ -219,6 +219,13 @@ def main():
             "id": pid, "slug": p["slug"], "name": p["name"], "kind": p["kind"],
             "categories": lst(p["categories"]), "products": lst(p["products"]),
             "product_groups": lst(p.get("product_groups", "")),
+            # Two different questions. dropin_visits: can a customer just show up? (An explicit answer wins; a
+            # stated farm stand or u-pick means yes; anything else stays unknown, never assumed.)
+            # farm_pickup: can a customer collect an order at the farm, by arrangement? (explicit only)
+            "dropin_visits": (boolish(p.get("dropin_visits")) if p.get("dropin_visits") not in (None, "")
+                              else (True if sells_at_farm else None)),
+            "farm_pickup": boolish(p.get("farm_pickup")) if p.get("farm_pickup") not in (None, "") else None,
+            "visit_note": p.get("visit_note") or None,
             "months_open": [MONTHS[int(m) - 1] for m in lst(p["seasonal_months"])],
             "hours_text": p["hours_text"] or None, "hours": hours_by.get(("producer", pid), []),
             "hours_status": p.get("hours_status") or "none",
