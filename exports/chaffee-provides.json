@@ -1501,16 +1501,15 @@
     "On-Farm / Ranch Sales"
    ],
    "products": [
-    "Beef/Meat",
-    "Poultry/Eggs",
-    "Staples",
-    "Flowers"
+    "Wildflower honey",
+    "free-range meat chickens",
+    "eggs",
+    "pork"
    ],
    "product_groups": [
     "beef-meat",
     "poultry-eggs",
-    "honey",
-    "flowers"
+    "honey"
    ],
    "months_open": [],
    "hours_text": null,
