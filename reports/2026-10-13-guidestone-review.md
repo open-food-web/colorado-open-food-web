@@ -84,6 +84,7 @@ The tables are now statewide, so the counts below are for all of Colorado; the C
 | Chaffee Cares (not food access), Colorado Mountain Lavender (online only) | Alycen is following up with both |
 | Emma's map flag: "Market on Main St" drawn in Buena Vista where Josh's Market is, and Josh's Market missing | Check on the new map |
 | Caring & Sharing, The Grainery and the Resource Center are food banks | Their confirmed fields are saved but they stay out of the site until food banks join the food access list |
+| **Question for Emma and Alycen:** should businesses that grow or operate outside Chaffee County, but sell here (so far at the Salida Farmers Market), get their own listing? Today they do, with no pin of their own. Palisade Peach Shack (Palisade, with a farm tour that is not in the county) is the clearest case; the others are Alpine Valley Mushrooms (Saguache), Feedsack Flowers (Center), Miss Penn's Mountain Seeds and Westcliffe Honey Company (Westcliffe), and Raisin' Rye (Del Norte) | Guidestone's decision. If not, they could appear only on the market's vendor list, or be left off |
 | Sales channels for most producers | 27 of 34 producers on the site still have none confirmed; their home-base pins are marked unconfirmed |
 
 ## How this was produced
