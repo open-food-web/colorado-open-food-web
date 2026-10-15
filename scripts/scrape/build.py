@@ -21,7 +21,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from scrape import geocode, ledger, normalize, snapshots
+from scrape import geocode, ledger, normalize, registry, snapshots
 from scrape.merge import (apply_decisions, apply_overrides, flag_possible_dups,
                           load_decisions, load_overrides, merge)
 from scrape.normalize import in_colorado
@@ -191,6 +191,12 @@ def main() -> None:
     apply_overrides(markets, overrides)
     if overrides:
         print(f"Applied {len(overrides)} curated overrides.")
+    # Entity registry: businesses we decided not to list, or that closed or were folded into
+    # another, must not come back from a source as if they were new.
+    added = registry.sync()   # capture decisions made in the curated, overrides and dedup files
+    if added:
+        print(f"Registry: {added} new decisions recorded (inputs/registry/decisions.csv).")
+    markets = registry.guard(markets)
     flag_possible_dups(markets, distinct=distinct)
     markets.sort(key=lambda m: (m.city.lower(), m.business_name.lower()))
     write(markets)
