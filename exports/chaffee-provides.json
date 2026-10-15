@@ -159,7 +159,12 @@
     "beef-meat"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -252,7 +257,12 @@
     "poultry-eggs"
    ],
    "dropin_visits": false,
+   "dropin_hours": null,
    "farm_pickup": true,
+   "visit_basis": {
+    "dropin": "set",
+    "pickup": "set"
+   },
    "visit_note": "Pick up an order at the Coaldale ranch annex by arrangement, or at the Tuesday pickup points, or ask about delivery",
    "months_open": [],
    "hours_text": null,
@@ -444,7 +454,12 @@
     "baked-goods"
    ],
    "dropin_visits": true,
-   "farm_pickup": null,
+   "dropin_hours": "Mornings, until sold out",
+   "farm_pickup": true,
+   "visit_basis": {
+    "dropin": "set",
+    "pickup": "listing"
+   },
    "visit_note": "Shop at 110 E 1st St, Salida, open mornings until sold out",
    "months_open": [],
    "hours_text": "Shop open mornings; preorder pickup Thu, Fri, Sun",
@@ -635,7 +650,12 @@
     "dairy"
    ],
    "dropin_visits": true,
-   "farm_pickup": null,
+   "dropin_hours": null,
+   "farm_pickup": true,
+   "visit_basis": {
+    "dropin": "set",
+    "pickup": "listing"
+   },
    "visit_note": "Self-serve farm general store; farm tours by booking",
    "months_open": [],
    "hours_text": null,
@@ -782,7 +802,12 @@
     "veggies"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -868,7 +893,12 @@
     "flowers"
    ],
    "dropin_visits": false,
+   "dropin_hours": null,
    "farm_pickup": false,
+   "visit_basis": {
+    "dropin": "set",
+    "pickup": "set"
+   },
    "visit_note": "The farm and shop are closed to the public; online orders only",
    "months_open": [],
    "hours_text": "Not open to the public. Order online.",
@@ -951,7 +981,12 @@
     "garlic-herbs"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -1129,7 +1164,12 @@
    ],
    "product_groups": [],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -1194,7 +1234,12 @@
     "beef-meat"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -1270,7 +1315,12 @@
    "products": [],
    "product_groups": [],
    "dropin_visits": true,
-   "farm_pickup": null,
+   "dropin_hours": "Tue: 4:00pm - 6:00pm (closing for the season soon)",
+   "farm_pickup": true,
+   "visit_basis": {
+    "dropin": "set",
+    "pickup": "listing"
+   },
    "visit_note": "Farm stand every Tuesday 4-6 (season ending soon)",
    "months_open": [],
    "hours_text": "Tue: 4:00pm - 6:00pm",
@@ -1348,7 +1398,12 @@
     "veggies"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -1439,7 +1494,12 @@
     "beef-meat"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -1521,7 +1581,12 @@
     "beef-meat"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -1591,7 +1656,12 @@
     "dairy"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -1675,7 +1745,12 @@
     "mushrooms"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -1900,7 +1975,12 @@
     "flowers"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": "By appointment",
@@ -1983,7 +2063,12 @@
     "flowers"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": true,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": "set"
+   },
    "visit_note": "On-farm pickup by arrangement (also delivers in Salida and Poncha Springs)",
    "months_open": [],
    "hours_text": "By appointment",
@@ -2147,7 +2232,12 @@
     "garlic-herbs"
    ],
    "dropin_visits": true,
-   "farm_pickup": null,
+   "dropin_hours": "Mon-Sat: 8 am - 6 pm",
+   "farm_pickup": true,
+   "visit_basis": {
+    "dropin": "set",
+    "pickup": "listing"
+   },
    "visit_note": "Self-serve honor-system farm stand, Mon-Sat 8-6, May-Nov",
    "months_open": [
     "May",
@@ -2315,7 +2405,12 @@
     "beef-meat"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -2396,7 +2491,12 @@
     "poultry-eggs"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -2560,7 +2660,12 @@
     "honey"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -2648,7 +2753,12 @@
     "baked-goods"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -2725,7 +2835,12 @@
     "garlic-herbs"
    ],
    "dropin_visits": true,
-   "farm_pickup": null,
+   "dropin_hours": null,
+   "farm_pickup": true,
+   "visit_basis": {
+    "dropin": "set",
+    "pickup": "listing"
+   },
    "visit_note": "On-farm store; pick-your-own flowers by appointment, June-October",
    "months_open": [],
    "hours_text": "Pick-your-own flowers by appointment, June–October",
@@ -2805,7 +2920,12 @@
     "flowers"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -2893,7 +3013,12 @@
     "dairy"
    ],
    "dropin_visits": null,
+   "dropin_hours": null,
    "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -2976,7 +3101,12 @@
     "drinks"
    ],
    "dropin_visits": null,
-   "farm_pickup": null,
+   "dropin_hours": null,
+   "farm_pickup": true,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": "listing"
+   },
    "visit_note": null,
    "months_open": [],
    "hours_text": null,
@@ -3049,7 +3179,12 @@
     "poultry-eggs"
    ],
    "dropin_visits": true,
-   "farm_pickup": null,
+   "dropin_hours": "Tue-Sun: 8:00am - 6:00pm",
+   "farm_pickup": true,
+   "visit_basis": {
+    "dropin": "set",
+    "pickup": "listing"
+   },
    "visit_note": "Farm stand, Tue-Sun",
    "months_open": [],
    "hours_text": "Tue-Sun: 8:00am - 6:00pm",

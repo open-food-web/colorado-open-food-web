@@ -68,8 +68,9 @@ Every field has a class that decides whether it appears in the public release.
 | `categories` | list | controlled | From the category vocabulary below. Primary first |
 | `products` | list | controlled | From the product vocabulary |
 | `product_groups` | list | controlled | The short list people search by: `veggies`, `fruit`, `beef-meat`, `poultry-eggs`, `dairy`, `honey`, `flowers`, `garlic-herbs`, `mushrooms`, `baked-goods`, `drinks`. Found from the products text, categories and name, plus what the business itself ticked (`inputs/producer_kinds.csv`). `products` keeps the source's own words |
-| `dropin_visits` | bool/null | fact | Can a customer just show up? Set by a person (`inputs/producer_kinds.csv`); a stated farm stand or u-pick also counts as yes in the export. Null = not confirmed, never assumed |
-| `farm_pickup` | bool/null | fact | Can a customer collect an order at the farm, by arrangement? A different question from `dropin_visits`: a ranch can refuse drop-ins and still hand over pre-ordered beef at its annex |
+| `dropin_visits` | bool/null | fact | Can a customer just show up? A person's answer (`inputs/producer_kinds.csv`) wins; otherwise the export infers yes from a stated farm stand, roadside market or u-pick. Null = no evidence, never guessed |
+| `dropin_hours` | string | fact | When drop-ins are welcome: the hours. Taken from the farm stand or store hours unless a person sets them. "By appointment" is never drop-in time |
+| `farm_pickup` | bool/null | fact | Can a customer collect an order at the farm, by arrangement? A person's answer wins; otherwise the export infers yes when the farm is listed as a pickup, farm stand or CSA spot, or any visit is advertised (drop-ins, u-pick, farm tours). A ranch can refuse drop-ins and still hand over pre-ordered beef |
 | `visit_note` | string | owned | One plain sentence about visiting or pickup, written by us or the business |
 | `seasonal_months` | list | fact | Months operating, 1–12. Empty if unknown |
 | `hours_text` | string | fact | The hours as the business states them. Verbatim and short; always kept |
