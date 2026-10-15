@@ -1,0 +1,57 @@
+{
+ "id": "belafonte-farm__fort-collins",
+ "name": "Belafonte Farm",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://belafontefarm.com/csa/",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [],
+ "frequency": null,
+ "price": "Flexible market-credit eGift cards from $100 (suggested $100-$200 trial up to $1,000-$2,000+ for multiple families); 10% off with code CSA2026",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Larimer County Farmers' Market",
+   "address": "200 W Oak St, Fort Collins, CO",
+   "town": "Fort Collins",
+   "day": "Sat",
+   "time": "morning",
+   "on_farm": false
+  },
+  {
+   "name": "City of Loveland Farmers Market",
+   "address": "Fairgrounds Park, Loveland, CO",
+   "town": "Loveland",
+   "day": "Sun",
+   "time": "morning",
+   "on_farm": false
+  },
+  {
+   "name": "Boulder County Farmers Market",
+   "address": "13th St, Boulder, CO",
+   "town": "Boulder",
+   "day": "Wed",
+   "time": "afternoon",
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "No delivery mentioned; members shop at farmers markets"
+ },
+ "evidence": [
+  {
+   "field": "signup_url",
+   "url": "https://belafontefarm.com/csa/"
+  }
+ ]
+}

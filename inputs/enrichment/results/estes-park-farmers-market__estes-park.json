@@ -1,0 +1,32 @@
+{
+ "id": "estes-park-farmers-market__estes-park",
+ "name": "Estes Park Farmers Market",
+ "city": "Estes Park",
+ "official_website": "https://www.facebook.com/EstesValleyFarmersMarket/",
+ "fields": {
+  "Hours": {
+   "value": "Thu: 8:00am - 1:00pm",
+   "source_url": "https://estesvalleyvoice.com/2025/06/06/estes-park-farmers-market-kicks-off-its-29th-year/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://estesvalleyvoice.com/2025/06/06/estes-park-farmers-market-kicks-off-its-29th-year/"
+  },
+  "Products": {
+   "value": "Fresh produce (heirloom tomatoes, mushrooms, cucumbers, greens), specialty teas, French pastries, jams, jellies, honey, European cheeses, artisan bread, pickles, salsas, smoked salmon, coffee, candles, woven baskets, pet treats, and jewelry from local vendors",
+   "source_url": "https://estesvalleyvoice.com/2025/06/06/estes-park-farmers-market-kicks-off-its-29th-year/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://estesvalleyvoice.com/2025/06/06/estes-park-farmers-market-kicks-off-its-29th-year/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/EstesValleyFarmersMarket/",
+   "source_url": "https://www.facebook.com/EstesValleyFarmersMarket/"
+  },
+  "Address": {
+   "value": "Estes Park Visitor Center parking lot, 500 Big Thompson Ave, Estes Park, CO 80517",
+   "source_url": "https://www.visitestespark.com/blog/post/how-to-farmers-market-in-estes-park/"
+  }
+ }
+}

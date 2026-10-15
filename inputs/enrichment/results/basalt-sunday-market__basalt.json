@@ -1,0 +1,32 @@
+{
+ "id": "basalt-sunday-market__basalt",
+ "name": "Basalt Sunday Market",
+ "city": "Basalt",
+ "official_website": "https://www.basalt.net/606/Basalt-Sunday-Market",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 10:00am - 2:00pm",
+   "source_url": "https://www.basalt.net/606/Basalt-Sunday-Market"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://www.basalt.net/606/Basalt-Sunday-Market"
+  },
+  "Email": {
+   "value": "sundaymarket@basalt.net",
+   "source_url": "https://www.basalt.net/606/Basalt-Sunday-Market"
+  },
+  "Phone": {
+   "value": "(970) 279-2319",
+   "source_url": "https://www.basalt.net/606/Basalt-Sunday-Market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/BasaltSundayMarket/",
+   "source_url": "https://www.facebook.com/BasaltSundayMarket/"
+  },
+  "Website": {
+   "value": "https://www.basalt.net/606/Basalt-Sunday-Market",
+   "source_url": "https://www.basalt.net/606/Basalt-Sunday-Market"
+  }
+ }
+}

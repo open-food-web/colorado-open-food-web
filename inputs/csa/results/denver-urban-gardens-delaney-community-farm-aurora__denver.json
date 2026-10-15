@@ -1,0 +1,35 @@
+{
+ "id": "denver-urban-gardens-delaney-community-farm-aurora__denver",
+ "name": "Denver Urban Gardens DeLaney Community Farm (Aurora)",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://projectworthmore.org/farmshares/",
+ "signup_opens": null,
+ "season_start": "2026-06-01",
+ "season_end": "2026-10-31",
+ "season_year": 2026,
+ "season_precision": "month",
+ "share_types": [
+  "Vegetables",
+  "Other"
+ ],
+ "frequency": "Weekly",
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://projectworthmore.org/programs/delaney-community-farm/"
+  }
+ ]
+}

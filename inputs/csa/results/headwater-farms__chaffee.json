@@ -1,0 +1,61 @@
+{
+ "id": "headwater-farms__chaffee",
+ "name": "Headwater Farms",
+ "offers_csa": true,
+ "csa_status": "full",
+ "signup_url": "https://www.headwaterfarmco.com/csa",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [],
+ "frequency": "Weekly",
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Farm",
+   "address": null,
+   "town": "Buena Vista",
+   "day": null,
+   "time": null,
+   "on_farm": true
+  },
+  {
+   "name": "Greenhouse",
+   "address": null,
+   "town": "Nathrop",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Salida pickup location",
+   "address": null,
+   "town": "Salida",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://www.headwaterfarmco.com/csa"
+  },
+  {
+   "field": "pickup_sites",
+   "url": "https://www.headwaterfarmco.com/purchase"
+  }
+ ]
+}

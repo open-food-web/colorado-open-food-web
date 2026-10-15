@@ -1,0 +1,32 @@
+{
+ "id": "cedaredge-main-street-farmer-s-market__cedaredge",
+ "name": "Cedaredge Main Street Farmer's Market",
+ "city": "Cedaredge",
+ "official_website": "https://www.cedaredgecolorado.com/",
+ "fields": {
+  "Hours": {
+   "value": "Wed: 4:00pm - 7:00pm",
+   "source_url": "https://deltacountycolorado.com/event/cedaredge-main-street-farmers-market/2026-07-15/"
+  },
+  "Months Open": {
+   "value": "July, August, September",
+   "source_url": "https://deltacountycolorado.com/event/cedaredge-main-street-farmers-market/2026-07-15/"
+  },
+  "Products": {
+   "value": "Local produce, baked goods, and handmade artisan/craft goods from local growers, backyard gardeners, bakers, crafters, and makers",
+   "source_url": "https://deltacountycolorado.com/event/cedaredge-main-street-farmers-market/2026-07-15/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://deltacountycolorado.com/event/cedaredge-main-street-farmers-market/2026-07-15/"
+  },
+  "Phone": {
+   "value": "970-856-3123",
+   "source_url": "https://deltacountycolorado.com/event/cedaredge-main-street-farmers-market/2026-07-15/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/CedaredgeMainStreetMarket/",
+   "source_url": "https://www.facebook.com/CedaredgeMainStreetMarket/"
+  }
+ }
+}

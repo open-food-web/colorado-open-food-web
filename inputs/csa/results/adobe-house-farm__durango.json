@@ -1,0 +1,34 @@
+{
+ "id": "adobe-house-farm__durango",
+ "name": "Adobe House Farm",
+ "offers_csa": false,
+ "csa_status": "unknown",
+ "signup_url": null,
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [],
+ "frequency": null,
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": true,
+  "kind": "other",
+  "radius_miles": null,
+  "zips": [],
+  "towns": [
+   "Durango"
+  ],
+  "fee": null,
+  "details": "Bulk produce delivery to restaurants, grocery stores and organizations (B2B), not consumer shares"
+ },
+ "evidence": [
+  {
+   "field": "offers_csa",
+   "url": "http://www.adobehousefarm.com/produce-delivery"
+  }
+ ]
+}

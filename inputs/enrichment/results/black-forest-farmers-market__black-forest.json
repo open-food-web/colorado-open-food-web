@@ -1,0 +1,44 @@
+{
+ "id": "black-forest-farmers-market__black-forest",
+ "name": "Black Forest Farmers Market",
+ "city": "Black Forest",
+ "official_website": "https://www.thebackyardmarkets.com/black-forest-market",
+ "fields": {
+  "Hours": {
+   "value": "Saturday 9am-1pm",
+   "source_url": "https://www.thebackyardmarkets.com/black-forest-market"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://www.thebackyardmarkets.com/black-forest-market"
+  },
+  "Products": {
+   "value": "Over 70 producers-only vendors selling Colorado-grown produce, baked goods, prepared foods, coffee, honey, flowers, crafts, and artisanal products; each vendor makes, bakes, grows, or raises what they sell",
+   "source_url": "https://www.thebackyardmarkets.com/black-forest-market"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.thebackyardmarkets.com/black-forest-market"
+  },
+  "Phone": {
+   "value": "719-747-2586",
+   "source_url": "https://www.thebackyardmarkets.com/black-forest-market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/backyardfarmshop",
+   "source_url": "https://www.thebackyardmarkets.com/black-forest-market"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/backyardfarmshop",
+   "source_url": "https://www.thebackyardmarkets.com/black-forest-market"
+  },
+  "Address": {
+   "value": "6845 Shoup Rd, Black Forest, CO 80908",
+   "source_url": "https://www.thebackyardmarkets.com/black-forest-market"
+  },
+  "Website": {
+   "value": "https://www.thebackyardmarkets.com/black-forest-market",
+   "source_url": "https://www.thebackyardmarkets.com/black-forest-market"
+  }
+ }
+}

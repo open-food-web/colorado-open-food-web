@@ -1,0 +1,32 @@
+{
+ "id": "westcliffe-farmers-market__westcliffe",
+ "name": "Westcliffe Farmers Market",
+ "city": "Westcliffe",
+ "official_website": "https://www.westcliffefarmersmarket.com/",
+ "fields": {
+  "Hours": {
+   "value": "Fri: 9:00am - 1:00pm",
+   "source_url": "https://www.westcliffefarmersmarket.com/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://www.westcliffefarmersmarket.com/about"
+  },
+  "Products": {
+   "value": "Local produce, local art and handcrafted artisan goods, herbal products, honey, fresh baked goods, locally raised meat, Amish foods/crafts",
+   "source_url": "https://www.westcliffefarmersmarket.com/about"
+  },
+  "Email": {
+   "value": "WestcliffeFarmersMarket@gmail.com",
+   "source_url": "https://www.westcliffefarmersmarket.com/contact"
+  },
+  "Address": {
+   "value": "Jess Price Park, 315 Main St, Westcliffe, CO 81252",
+   "source_url": "https://www.westcliffefarmersmarket.com/contact"
+  },
+  "Website": {
+   "value": "https://www.westcliffefarmersmarket.com/",
+   "source_url": "https://www.westcliffefarmersmarket.com/"
+  }
+ }
+}

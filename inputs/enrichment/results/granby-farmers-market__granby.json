@@ -1,0 +1,44 @@
+{
+ "id": "granby-farmers-market__granby",
+ "name": "Granby Farmers Market",
+ "city": "Granby",
+ "official_website": "https://www.destinationgranby.com/events/music-market/",
+ "fields": {
+  "Website": {
+   "value": "https://www.destinationgranby.com/events/music-market/",
+   "source_url": "https://www.destinationgranby.com/events/music-market/"
+  },
+  "Hours": {
+   "value": "Thu: 5:30pm - 8:00pm",
+   "source_url": "https://www.destinationgranby.com/events/music-market/"
+  },
+  "Months Open": {
+   "value": "June, July, August",
+   "source_url": "https://www.destinationgranby.com/events/music-market/"
+  },
+  "Products": {
+   "value": "Honey, meat, eggs, art, fresh produce, baked goods, and more (plus food trucks and live music)",
+   "source_url": "https://www.destinationgranby.com/events/music-market/"
+  },
+  "Email": {
+   "value": "wiki@destinationgranby.com",
+   "source_url": "https://www.destinationgranby.com/events/music-market/"
+  },
+  "Phone": {
+   "value": "(970) 887-2311",
+   "source_url": "https://www.destinationgranby.com/events/music-market/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/VisitGranbyCO/",
+   "source_url": "https://www.destinationgranby.com/events/music-market/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/visitgranbyco/",
+   "source_url": "https://www.destinationgranby.com/events/music-market/"
+  },
+  "Address": {
+   "value": "Polhamus Park, 99 W Jasper Ave, Granby, CO 80446",
+   "source_url": "https://www.destinationgranby.com/events/music-market/"
+  }
+ }
+}

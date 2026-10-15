@@ -1,0 +1,43 @@
+{
+ "id": "mountain-roots-produce__mancos",
+ "name": "Mountain Roots Produce",
+ "offers_csa": true,
+ "csa_status": "closed_season",
+ "signup_url": "https://mountainrootsproduce.com/farm-membership",
+ "signup_opens": "2026-02-24",
+ "season_start": "2026-06-03",
+ "season_end": "2026-10-31",
+ "season_year": 2026,
+ "season_precision": "month",
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "$500 or $300 prepaid farm-stand membership (10% bonus credit)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Spruce Park Farm Stand",
+   "address": "Spruce Park, next to The Butcher and The Baker",
+   "town": "Telluride",
+   "day": "Wed",
+   "time": "11am-2pm",
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "In-person shopping only"
+ },
+ "evidence": [
+  {
+   "field": "status",
+   "url": "https://mountainrootsproduce.com/farm-membership"
+  }
+ ]
+}

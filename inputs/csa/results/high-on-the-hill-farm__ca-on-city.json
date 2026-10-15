@@ -1,0 +1,35 @@
+{
+ "id": "high-on-the-hill-farm__ca-on-city",
+ "name": "High On The Hill Farm",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://www.highonthehillfarm.com/csa.html",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables",
+  "Fruit"
+ ],
+ "frequency": "Weekly",
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://www.highonthehillfarm.com/csa.html"
+  }
+ ]
+}

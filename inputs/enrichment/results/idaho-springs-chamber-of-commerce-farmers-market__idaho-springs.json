@@ -1,0 +1,28 @@
+{
+ "id": "idaho-springs-chamber-of-commerce-farmers-market__idaho-springs",
+ "name": "Idaho Springs Chamber Of Commerce Farmers Market",
+ "city": "Idaho Springs",
+ "official_website": "https://idaho-springs-chamber-of-commerce.square.site/",
+ "fields": {
+  "Website": {
+   "value": "https://idaho-springs-chamber-of-commerce.square.site/",
+   "source_url": "https://idaho-springs-chamber-of-commerce.square.site/"
+  },
+  "Phone": {
+   "value": "303-567-0387",
+   "source_url": "https://idaho-springs-chamber-of-commerce.square.site/"
+  },
+  "Email": {
+   "value": "director@idahospringschamber.org",
+   "source_url": "https://idaho-springs-chamber-of-commerce.square.site/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/idahospringschamber/",
+   "source_url": "https://www.facebook.com/idahospringschamber/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/idahospringschamber/",
+   "source_url": "https://www.instagram.com/idahospringschamber/"
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "id": "phytology-flowers-farm__chaffee-county",
+ "name": "Phytology Flowers Farm",
+ "city": "",
+ "official_website": "https://www.phytologyflowers.com",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Hours": {
+   "value": "By appointment",
+   "source_url": "https://www.phytologyflowers.com"
+  },
+  "Products": {
+   "value": "Flowers, wedding and event florals, summer flower subscriptions, bouquets",
+   "source_url": "https://www.phytologyflowers.com"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/phytologyflowers/",
+   "source_url": "https://www.instagram.com/phytologyflowers/"
+  }
+ }
+}

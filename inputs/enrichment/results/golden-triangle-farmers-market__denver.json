@@ -1,0 +1,20 @@
+{
+ "id": "golden-triangle-farmers-market__denver",
+ "name": "Golden Triangle Farmers Market",
+ "city": "Denver",
+ "official_website": "https://goldentrianglefm.com",
+ "fields": {
+  "Website": {
+   "value": "https://goldentrianglefm.com",
+   "source_url": "https://goldentrianglefm.com"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/goldentrianglefm/",
+   "source_url": "https://www.facebook.com/goldentrianglefm/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/goldentrianglefm/",
+   "source_url": "https://www.instagram.com/goldentrianglefm/"
+  }
+ }
+}

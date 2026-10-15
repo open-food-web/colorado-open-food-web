@@ -1,0 +1,3084 @@
+{
+ "vendors": [
+  {
+   "id": "795c54c4b64434eaeeadc57c467421cf",
+   "name": "Royal Gorge Farmers Market",
+   "contact": "Brenda McKay",
+   "email": "contact6@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-03T21:45:31.537Z",
+   "updatedAt": "2026-02-11T19:17:08.939Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 120,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 120,
+      "taxPercent": 0,
+      "created_at": "2026-02-10T19:42:29.578Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-10T19:42:29.593Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "6ea3584d8c6b8fb81a3393276cc5a05e",
+      "vendorId": "795c54c4b64434eaeeadc57c467421cf",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 120,
+        "taxPercent": 0,
+        "created_at": "2026-02-10T19:42:29.578Z"
+       },
+       {
+        "id": "df6e6523302570a1948bf7530f528b03",
+        "type": "payment",
+        "transaction_id": "0db3e8d628ef461e9a1c6a94910d4ad6",
+        "created_at": "2026-02-10T20:27:38.664Z",
+        "amount": 12000,
+        "currency": "USD",
+        "paymentType": "mastercard",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "6ea3584d8c6b8fb81a3393276cc5a05e"
+       }
+      ],
+      "totalPrice": 120,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-10T19:42:29.578Z",
+      "invoiceNumber": "1000"
+     }
+    ],
+    "modified_at": "2026-02-10T19:42:29.589Z"
+   }
+  },
+  {
+   "id": "36ce0938e0f3e488633615856aaef9aa",
+   "name": "Glenwood Springs Downtown Market on 7th",
+   "contact": "Jillian Sutherland",
+   "email": "contact7@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-05T17:51:35.216Z",
+   "updatedAt": "2026-02-11T19:17:31.782Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 180,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 180,
+      "taxPercent": 0,
+      "created_at": "2026-02-10T19:47:01.571Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-10T19:47:01.584Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "aa381451501a1d2697cd3ee6467bac13",
+      "vendorId": "36ce0938e0f3e488633615856aaef9aa",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 180,
+        "taxPercent": 0,
+        "created_at": "2026-02-10T19:47:01.571Z"
+       },
+       {
+        "id": "f1d4006cce18d7d25473eca8f32a70b9",
+        "type": "payment",
+        "transaction_id": "ded3f52cdac942eb8a78daf162a4b966",
+        "created_at": "2026-02-11T18:41:38.317Z",
+        "amount": 18000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "aa381451501a1d2697cd3ee6467bac13"
+       }
+      ],
+      "totalPrice": 180,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-10T19:47:01.571Z",
+      "invoiceNumber": "1009"
+     }
+    ],
+    "modified_at": "2026-02-10T19:47:01.581Z"
+   }
+  },
+  {
+   "id": "f48dfbbf455bac1cfcbdd49934259392",
+   "name": "Woodland Park Farmers Market",
+   "contact": "Amanda Styninger",
+   "email": "contact8@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-05T18:08:58.310Z",
+   "updatedAt": "2026-02-13T16:57:24.501Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-10T19:47:02.229Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-10T19:47:02.240Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "a942cdf919821d86e904dc0632c0aff7",
+      "vendorId": "f48dfbbf455bac1cfcbdd49934259392",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-10T19:47:02.229Z"
+       },
+       {
+        "id": "6d4292288335117c652c997cc09ba75e",
+        "type": "payment",
+        "transaction_id": "524c0cc96f3b4ab69c5c2440b975cb3d",
+        "created_at": "2026-02-13T13:15:51.346Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "a942cdf919821d86e904dc0632c0aff7"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-10T19:47:02.229Z",
+      "invoiceNumber": "1010"
+     }
+    ],
+    "modified_at": "2026-02-10T19:47:02.236Z"
+   }
+  },
+  {
+   "id": "d914d37d27b03865e87b27ca1e898284",
+   "name": "Highlands Ranch Farmers' Market",
+   "contact": "Toni Starner",
+   "email": "contact9@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-07T00:14:49.444Z",
+   "updatedAt": "2026-02-11T19:17:43.900Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-10T19:47:00.997Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-10T19:47:01.013Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "0aed9dd1cb10ea0b6f9189696caa32c3",
+      "vendorId": "d914d37d27b03865e87b27ca1e898284",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-10T19:47:00.997Z"
+       },
+       {
+        "id": "8356e664f107288303a1d1c9eea8c938",
+        "type": "payment",
+        "transaction_id": "c83d32f56e204edb962265d213c8978e",
+        "created_at": "2026-02-10T23:45:09.624Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "0aed9dd1cb10ea0b6f9189696caa32c3"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-10T19:47:00.997Z",
+      "invoiceNumber": "1008"
+     }
+    ],
+    "modified_at": "2026-02-10T19:47:01.007Z"
+   }
+  },
+  {
+   "id": "2634acdb3a1ff2a2b119ee605cc80c6e",
+   "name": "Southwest Plaza Farmers Market",
+   "contact": "Toni Starner",
+   "email": "contact10@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-07T00:30:27.259Z",
+   "updatedAt": "2026-02-11T19:17:51.572Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-10T19:47:00.426Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-10T19:47:00.438Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "3bede2bc58452702ac529e984c0b0a29",
+      "vendorId": "2634acdb3a1ff2a2b119ee605cc80c6e",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-10T19:47:00.426Z"
+       },
+       {
+        "id": "9829db01c458db3d8883b24f50dc9afd",
+        "type": "payment",
+        "transaction_id": "94df64076bfb4fe9a915c077713164b5",
+        "created_at": "2026-02-10T23:45:22.491Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "3bede2bc58452702ac529e984c0b0a29"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-10T19:47:00.426Z",
+      "invoiceNumber": "1007"
+     }
+    ],
+    "modified_at": "2026-02-10T19:47:00.434Z"
+   }
+  },
+  {
+   "id": "0eea117c42066c9d6545ce5404291cdf",
+   "name": "Lakewood Farmers' Market",
+   "contact": "contact11@example.test",
+   "email": "contact12@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-07T02:16:31.770Z",
+   "updatedAt": "2026-02-11T19:17:58.978Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 180,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 180,
+      "taxPercent": 0,
+      "created_at": "2026-02-10T19:46:59.833Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-10T19:46:59.845Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "eb1b16cf85fc237893895fd3f82529db",
+      "vendorId": "0eea117c42066c9d6545ce5404291cdf",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 180,
+        "taxPercent": 0,
+        "created_at": "2026-02-10T19:46:59.833Z"
+       },
+       {
+        "id": "4ecb15bbdf7185b484dedd23344062f8",
+        "type": "payment",
+        "transaction_id": "533f404f7c4b4656a05653dbeadf88be",
+        "created_at": "2026-02-10T23:45:31.789Z",
+        "amount": 18000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "eb1b16cf85fc237893895fd3f82529db"
+       }
+      ],
+      "totalPrice": 180,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-10T19:46:59.833Z",
+      "invoiceNumber": "1006"
+     }
+    ],
+    "modified_at": "2026-02-10T19:46:59.842Z"
+   }
+  },
+  {
+   "id": "69e85d52c0cb2b47628f5878845a2615",
+   "name": "Sterling Ranch Farmers' Market",
+   "contact": "Toni Starner",
+   "email": "contact13@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-07T04:41:02.447Z",
+   "updatedAt": "2026-02-11T19:18:10.072Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 180,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 180,
+      "taxPercent": 0,
+      "created_at": "2026-02-10T19:46:59.239Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-10T19:46:59.255Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "649aa663931e014ee1ec580544be5ebb",
+      "vendorId": "69e85d52c0cb2b47628f5878845a2615",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 180,
+        "taxPercent": 0,
+        "created_at": "2026-02-10T19:46:59.239Z"
+       },
+       {
+        "id": "a151bc3fea2ba39f0dbaf61cd239bf29",
+        "type": "payment",
+        "transaction_id": "a912fe987ff8473790cbefeab22cb8af",
+        "created_at": "2026-02-10T23:44:54.562Z",
+        "amount": 18000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "649aa663931e014ee1ec580544be5ebb"
+       }
+      ],
+      "totalPrice": 180,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-10T19:46:59.239Z",
+      "invoiceNumber": "1005"
+     }
+    ],
+    "modified_at": "2026-02-10T19:46:59.248Z"
+   }
+  },
+  {
+   "id": "49ad07ae56c038fddc7b3065c7d04629",
+   "name": "Mancos Valley Farmers Market",
+   "contact": "Nancy Strother",
+   "email": "contact14@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-10T14:31:51.730Z",
+   "updatedAt": "2026-02-11T19:18:18.603Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 120,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 120,
+      "taxPercent": 0,
+      "created_at": "2026-02-10T19:46:58.576Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-10T19:46:58.589Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "78f4b1a330afafdb1dcdc46899b6e20b",
+      "vendorId": "49ad07ae56c038fddc7b3065c7d04629",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 120,
+        "taxPercent": 0,
+        "created_at": "2026-02-10T19:46:58.576Z"
+       },
+       {
+        "id": "350e1cd7ea91f9183ec81182f30e7eca",
+        "type": "payment",
+        "transaction_id": "1a13d954a5fa4f6da3f2f5280d9aff7c",
+        "created_at": "2026-02-11T13:27:44.667Z",
+        "amount": 12000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "78f4b1a330afafdb1dcdc46899b6e20b"
+       }
+      ],
+      "totalPrice": 120,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-10T19:46:58.576Z",
+      "invoiceNumber": "1004"
+     }
+    ],
+    "modified_at": "2026-02-10T19:46:58.585Z"
+   }
+  },
+  {
+   "id": "572bec792a7c0699da2a19db71b198f0",
+   "name": "City Park Farmers Market",
+   "contact": "Margo and Peter Wanberg",
+   "email": "contact15@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-10T17:51:58.321Z",
+   "updatedAt": "2026-04-20T15:10:26.909Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 340,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-10T19:46:58.005Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-10T19:46:58.018Z"
+     },
+     {
+      "name": "Market Fees",
+      "marketId": "c191d43329f05795af4cdcad8d1af4dd",
+      "dates": [
+       "2026-01-01T00:00:00.000Z"
+      ],
+      "amount": 100,
+      "taxPercent": 0,
+      "created_at": "2026-02-18T19:51:06.395Z"
+     },
+     {
+      "name": "Contribution for SNAP & Market Bucks added 1 Jan 2026 (1 day).",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-18T19:51:06.407Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "0638390efcf0fd56c4a53647be1bfbef",
+      "vendorId": "572bec792a7c0699da2a19db71b198f0",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-10T19:46:58.005Z"
+       },
+       {
+        "id": "a8a193edcefea0054ee0db1fc70face5",
+        "type": "payment",
+        "transaction_id": "bda00a5a98d14296ac93a60843f3ba22",
+        "created_at": "2026-02-11T20:10:52.331Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "0638390efcf0fd56c4a53647be1bfbef"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-10T19:46:58.005Z",
+      "invoiceNumber": "1003"
+     },
+     {
+      "id": "ca67e86c01c8948ec17301de7e2223a7",
+      "vendorId": "572bec792a7c0699da2a19db71b198f0",
+      "invoicedLineItems": [
+       {
+        "name": "Market Fees",
+        "marketId": "c191d43329f05795af4cdcad8d1af4dd",
+        "dates": [
+         "2026-01-01T00:00:00.000Z"
+        ],
+        "amount": 100,
+        "taxPercent": 0,
+        "created_at": "2026-02-18T19:51:06.395Z"
+       },
+       {
+        "id": "f59ec1680468096efd150e79a189e4b6",
+        "type": "payment",
+        "transaction_id": "7c42bb581df34017846b63dadbf95833",
+        "created_at": "2026-03-19T15:39:25.439Z",
+        "amount": 10000,
+        "currency": "USD",
+        "paymentType": "mastercard",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "ca67e86c01c8948ec17301de7e2223a7"
+       }
+      ],
+      "totalPrice": 100,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-18T19:51:06.395Z",
+      "invoiceNumber": "1027"
+     }
+    ],
+    "modified_at": "2026-02-18T19:51:06.403Z"
+   }
+  },
+  {
+   "id": "669799fe60e4bb5b0cfe034aa1a16702",
+   "name": "Mercadillo en el Rio",
+   "contact": "Fernando Herrera",
+   "email": "contact16@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-10T17:58:34.261Z",
+   "updatedAt": "2026-02-13T16:57:45.465Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 60,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 60,
+      "taxPercent": 0,
+      "created_at": "2026-02-10T19:46:57.338Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-10T19:46:57.351Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "338f8525fc3932bd652b9092e01f6699",
+      "vendorId": "669799fe60e4bb5b0cfe034aa1a16702",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 60,
+        "taxPercent": 0,
+        "created_at": "2026-02-10T19:46:57.338Z"
+       },
+       {
+        "id": "15e4288c100826e78e69fa41d85f7476",
+        "type": "payment",
+        "transaction_id": "d2ee1ce743f64b79a9b2dc8752fe8e9e",
+        "created_at": "2026-02-12T17:18:53.669Z",
+        "amount": 6000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "338f8525fc3932bd652b9092e01f6699"
+       }
+      ],
+      "totalPrice": 60,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-10T19:46:57.338Z",
+      "invoiceNumber": "1002"
+     }
+    ],
+    "modified_at": "2026-02-10T19:46:57.348Z"
+   }
+  },
+  {
+   "id": "52eb42817557845b93e0186f6433dccb",
+   "name": "Lafayette Colorado Farmers Market",
+   "contact": "Peter Wanberg",
+   "email": "contact17@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-10T18:08:49.075Z",
+   "updatedAt": "2026-02-11T20:10:00.075Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 340,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-10T19:46:56.742Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-10T19:46:56.754Z"
+     },
+     {
+      "name": "Market Fees",
+      "marketId": "c191d43329f05795af4cdcad8d1af4dd",
+      "dates": [
+       "2026-01-01T00:00:00.000Z"
+      ],
+      "amount": 100,
+      "taxPercent": 0,
+      "created_at": "2026-02-11T19:48:19.006Z"
+     },
+     {
+      "name": "Contribution for SNAP & Market Bucks added 1 Jan 2026 (1 day).",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-11T19:48:19.020Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "e3781b9f164c1b593323959036987b26",
+      "vendorId": "52eb42817557845b93e0186f6433dccb",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-10T19:46:56.742Z"
+       },
+       {
+        "id": "bc86ed0049ea98038bcef4fcecdecffc",
+        "type": "payment",
+        "transaction_id": "31e40f06ac224ec183576dbc1f114d7c",
+        "created_at": "2026-02-11T19:44:51.397Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "mastercard",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "e3781b9f164c1b593323959036987b26"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-10T19:46:56.742Z",
+      "invoiceNumber": "1001"
+     },
+     {
+      "id": "7b7db8247ace0a6ae7f0014a3474819d",
+      "vendorId": "52eb42817557845b93e0186f6433dccb",
+      "invoicedLineItems": [
+       {
+        "name": "Market Fees",
+        "marketId": "c191d43329f05795af4cdcad8d1af4dd",
+        "dates": [
+         "2026-01-01T00:00:00.000Z"
+        ],
+        "amount": 100,
+        "taxPercent": 0,
+        "created_at": "2026-02-11T19:48:19.006Z"
+       },
+       {
+        "id": "e917f017898207be8a89a03687054c61",
+        "type": "payment",
+        "transaction_id": "50f1eb4ff00d4df5b67f9db85fd82056",
+        "created_at": "2026-02-11T20:09:57.477Z",
+        "amount": 10000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "7b7db8247ace0a6ae7f0014a3474819d"
+       }
+      ],
+      "totalPrice": 100,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-11T19:48:19.006Z",
+      "invoiceNumber": "1015"
+     }
+    ],
+    "modified_at": "2026-02-11T19:48:19.015Z"
+   }
+  },
+  {
+   "id": "4abcc7671f16a33ad044878a7cf60479",
+   "name": "Alamosa Farmers' Market",
+   "contact": "Mandy Pittman",
+   "email": "contact18@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-10T20:51:00.055Z",
+   "updatedAt": "2026-05-03T23:21:40.776Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 210,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 180,
+      "taxPercent": 0,
+      "created_at": "2026-02-11T19:19:22.887Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-11T19:19:22.900Z"
+     },
+     {
+      "name": "Market Fees",
+      "marketId": "c191d43329f05795af4cdcad8d1af4dd",
+      "dates": [
+       "2026-01-01T00:00:00.000Z"
+      ],
+      "amount": 30,
+      "taxPercent": 0,
+      "created_at": "2026-02-18T19:49:47.190Z"
+     },
+     {
+      "name": "Contribution for SNAP & Market Bucks added 1 Jan 2026 (1 day).",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-18T19:49:47.204Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "11c80edefc91a67db1d71756aa41bb82",
+      "vendorId": "4abcc7671f16a33ad044878a7cf60479",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 180,
+        "taxPercent": 0,
+        "created_at": "2026-02-11T19:19:22.887Z"
+       },
+       {
+        "id": "9f9717e0265a8ade06b89bd26bd3cf6d",
+        "type": "payment",
+        "transaction_id": "4a2c3d1c2fb94ca4a405f3a31f556004",
+        "created_at": "2026-02-17T14:38:37.107Z",
+        "amount": 18000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "11c80edefc91a67db1d71756aa41bb82"
+       }
+      ],
+      "totalPrice": 180,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-11T19:19:22.887Z",
+      "invoiceNumber": "1014"
+     },
+     {
+      "id": "85a9a13ed372947319e7fbb12852e706",
+      "vendorId": "4abcc7671f16a33ad044878a7cf60479",
+      "invoicedLineItems": [
+       {
+        "name": "Market Fees",
+        "marketId": "c191d43329f05795af4cdcad8d1af4dd",
+        "dates": [
+         "2026-01-01T00:00:00.000Z"
+        ],
+        "amount": 30,
+        "taxPercent": 0,
+        "created_at": "2026-02-18T19:49:47.190Z"
+       },
+       {
+        "id": "74724df820d09d8f321dda2f9554219d",
+        "type": "payment",
+        "transaction_id": "258b08f314ca411baf5872a61999b74a",
+        "created_at": "2026-05-03T23:21:38.365Z",
+        "amount": 3000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "85a9a13ed372947319e7fbb12852e706"
+       }
+      ],
+      "totalPrice": 30,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-18T19:49:47.190Z",
+      "invoiceNumber": "1026"
+     }
+    ],
+    "modified_at": "2026-02-18T19:49:47.200Z"
+   }
+  },
+  {
+   "id": "ee3fdc600512150cf686a0b507339e39",
+   "name": "Arbol Farmers Market",
+   "contact": "Alicia Michelsen",
+   "email": "contact19@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-10T22:11:56.499Z",
+   "updatedAt": "2026-02-13T16:58:03.165Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 120,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 120,
+      "taxPercent": 0,
+      "created_at": "2026-02-11T19:19:22.284Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-11T19:19:22.296Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "d1278af27f4a2672e9ad5a03f346fce5",
+      "vendorId": "ee3fdc600512150cf686a0b507339e39",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 120,
+        "taxPercent": 0,
+        "created_at": "2026-02-11T19:19:22.284Z"
+       },
+       {
+        "id": "979c8cccdd6387dc73ad24ae0444c24c",
+        "type": "payment",
+        "transaction_id": "25bf8eadc26942ac86bc71b5b5ef93c4",
+        "created_at": "2026-02-12T22:04:44.051Z",
+        "amount": 12000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "d1278af27f4a2672e9ad5a03f346fce5"
+       }
+      ],
+      "totalPrice": 120,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-11T19:19:22.284Z",
+      "invoiceNumber": "1013"
+     }
+    ],
+    "modified_at": "2026-02-11T19:19:22.293Z"
+   }
+  },
+  {
+   "id": "ae83706a9300f16931b66bcb018c1d53",
+   "name": "Downtown Grand Junction Market on Main",
+   "contact": "Jed Willis",
+   "email": "contact20@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-10T22:16:51.434Z",
+   "updatedAt": "2026-02-20T01:22:47.766Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-11T19:19:21.629Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-11T19:19:21.641Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "5bd45e8af6143d48b3c5ddfa7456d710",
+      "vendorId": "ae83706a9300f16931b66bcb018c1d53",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-11T19:19:21.629Z"
+       },
+       {
+        "id": "2e343abd2d7432d32a48e2f47fc57dec",
+        "type": "payment",
+        "transaction_id": "c742cf8e484f483da36c1687d644f3e1",
+        "created_at": "2026-02-18T23:21:42.974Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "5bd45e8af6143d48b3c5ddfa7456d710"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-11T19:19:21.629Z",
+      "invoiceNumber": "1012"
+     }
+    ],
+    "modified_at": "2026-02-11T19:19:21.637Z"
+   }
+  },
+  {
+   "id": "73847c6d850fff5865c7289ba4cc49b5",
+   "name": "Fort Collins Winter Farmers Market",
+   "contact": "Sari Kimbell",
+   "email": "contact21@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-11T16:52:50.814Z",
+   "updatedAt": "2026-02-13T16:58:12.067Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-11T19:19:20.975Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-11T19:19:20.988Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "30da27a776ab6b33ea7f45d9b3ee1ec7",
+      "vendorId": "73847c6d850fff5865c7289ba4cc49b5",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-11T19:19:20.975Z"
+       },
+       {
+        "id": "1b2624c986d0c24132fb4888ed5ff17d",
+        "type": "payment",
+        "transaction_id": "2837f2fd5bf546d6aea386560340ac57",
+        "created_at": "2026-02-12T20:14:58.140Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "30da27a776ab6b33ea7f45d9b3ee1ec7"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-11T19:19:20.975Z",
+      "invoiceNumber": "1011"
+     }
+    ],
+    "modified_at": "2026-02-11T19:19:20.984Z"
+   }
+  },
+  {
+   "id": "9152465889eab32a05f55769056a3d47",
+   "name": "Golden Farmers Market",
+   "contact": "Nola Krajewski",
+   "email": "contact22@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-11T20:27:10.446Z",
+   "updatedAt": "2026-07-02T17:15:00.575Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 240,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-13T16:59:08.767Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-13T16:59:08.780Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "0600fcad2d660b52ea03ed81d4802c0d",
+      "vendorId": "9152465889eab32a05f55769056a3d47",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-13T16:59:08.767Z"
+       },
+       {
+        "id": "9179f0cd1852552ba126494e7c4d8e86",
+        "type": "payment",
+        "invoiceId": "0600fcad2d660b52ea03ed81d4802c0d",
+        "transaction_id": "9179f0cd1852552ba126494e7c4d8e86",
+        "created_at": "2026-07-02T17:15:00.568Z",
+        "amount": 24000,
+        "currency": "USD",
+        "provider": "MANUAL",
+        "note": "Check received"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-13T16:59:08.767Z",
+      "invoiceNumber": "1017"
+     }
+    ],
+    "modified_at": "2026-07-02T17:15:00.568Z"
+   }
+  },
+  {
+   "id": "00bcdede48ab35c514ce33eee453f870",
+   "name": "Ridgway Farmers Market",
+   "contact": "Jessie Bergman",
+   "email": "contact23@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-12T22:31:21.589Z",
+   "updatedAt": "2026-02-17T20:04:40.754Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 180,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 180,
+      "taxPercent": 0,
+      "created_at": "2026-02-13T16:59:07.997Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-13T16:59:08.012Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "0778d9eac47122c669d04ba603a66171",
+      "vendorId": "00bcdede48ab35c514ce33eee453f870",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 180,
+        "taxPercent": 0,
+        "created_at": "2026-02-13T16:59:07.997Z"
+       },
+       {
+        "id": "c03dc6c87ef47dbfb1a882dcfa63cfdf",
+        "type": "payment",
+        "transaction_id": "5456584e523d48e780bd371525de2d12",
+        "created_at": "2026-02-16T15:26:13.025Z",
+        "amount": 18000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "0778d9eac47122c669d04ba603a66171"
+       }
+      ],
+      "totalPrice": 180,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-13T16:59:07.997Z",
+      "invoiceNumber": "1016"
+     }
+    ],
+    "modified_at": "2026-02-13T16:59:08.007Z"
+   }
+  },
+  {
+   "id": "7f46520bea1e69afe23a8dc4b49d753d",
+   "name": "Fort Morgan Farmers Market",
+   "contact": "Julie Stiewig",
+   "email": "contact24@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-13T17:07:11.053Z",
+   "updatedAt": "2026-03-10T19:00:10.168Z",
+   "tags": [],
+   "pendingFieldChanges": [],
+   "requestDate": "2026-03-10T18:59:29.976Z",
+   "billing": {
+    "runningTotal": 120,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 120,
+      "taxPercent": 0,
+      "created_at": "2026-02-13T17:10:27.761Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-13T17:10:27.775Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "6c6fe1fb6e6979ac1f39c0e75fab5e33",
+      "vendorId": "7f46520bea1e69afe23a8dc4b49d753d",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 120,
+        "taxPercent": 0,
+        "created_at": "2026-02-13T17:10:27.761Z"
+       },
+       {
+        "id": "5ce86505cc908c150bbe6e0ff8ea1165",
+        "type": "payment",
+        "transaction_id": "feea74b8c3684222acff10065fdf90a9",
+        "created_at": "2026-02-13T17:16:15.138Z",
+        "amount": 12000,
+        "currency": "USD",
+        "paymentType": "mastercard",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "6c6fe1fb6e6979ac1f39c0e75fab5e33"
+       }
+      ],
+      "totalPrice": 120,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-13T17:10:27.761Z",
+      "invoiceNumber": "1018"
+     }
+    ],
+    "modified_at": "2026-02-13T17:10:27.771Z"
+   }
+  },
+  {
+   "id": "7316cdbaaa161e467cc04d660680c298",
+   "name": "Salida Farmers Market",
+   "contact": "Sofia Adinolfi",
+   "email": "contact25@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-16T18:41:55.203Z",
+   "updatedAt": "2026-04-28T16:18:22.772Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 180,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 180,
+      "taxPercent": 0,
+      "created_at": "2026-02-17T20:04:17.977Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-17T20:04:17.991Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "fa109a73d7f578e17ab4a89b03fbd68e",
+      "vendorId": "7316cdbaaa161e467cc04d660680c298",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 180,
+        "taxPercent": 0,
+        "created_at": "2026-02-17T20:04:17.977Z"
+       },
+       {
+        "id": "dc510d0a64d5bf8265bc4ec81b3a9e89",
+        "type": "payment",
+        "transaction_id": "92c0c9c1267c479bab266416d98cd76a",
+        "created_at": "2026-02-18T18:35:36.632Z",
+        "amount": 18000,
+        "currency": "USD",
+        "paymentType": "mastercard",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "fa109a73d7f578e17ab4a89b03fbd68e"
+       }
+      ],
+      "totalPrice": 180,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-17T20:04:17.977Z",
+      "invoiceNumber": "1019"
+     }
+    ],
+    "modified_at": "2026-02-17T20:04:17.986Z"
+   }
+  },
+  {
+   "id": "ecc1b0bac2debac30670534fc697e016",
+   "name": "Monte Vista Farmers Market",
+   "contact": "Chelsea McNerney-Martinez",
+   "email": "contact26@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-17T04:38:40.594Z",
+   "updatedAt": "2026-04-28T16:18:22.774Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 120,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 120,
+      "taxPercent": 0,
+      "created_at": "2026-02-17T20:04:18.578Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-17T20:04:18.591Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "afe3a49a4a49d660fa84599c39d70716",
+      "vendorId": "ecc1b0bac2debac30670534fc697e016",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 120,
+        "taxPercent": 0,
+        "created_at": "2026-02-17T20:04:18.578Z"
+       },
+       {
+        "id": "21d89d9b834e7ac5be6b919320c477fe",
+        "type": "payment",
+        "transaction_id": "e2d100e3ffd04a89bafb0dedb3d3219b",
+        "created_at": "2026-02-18T22:15:25.812Z",
+        "amount": 12000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "afe3a49a4a49d660fa84599c39d70716"
+       }
+      ],
+      "totalPrice": 120,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-17T20:04:18.578Z",
+      "invoiceNumber": "1020"
+     }
+    ],
+    "modified_at": "2026-02-17T20:04:18.587Z"
+   }
+  },
+  {
+   "id": "64f7b927b43e5b9c983f9a3269d76dea",
+   "name": "Backyard Market in Black Forest Farmers Market",
+   "contact": "Theda Stone",
+   "email": "contact27@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-17T16:13:33.893Z",
+   "updatedAt": "2026-04-28T16:18:22.777Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-17T20:04:19.244Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-17T20:04:19.257Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "f49af8590cb78aec4008b8ad06da28fc",
+      "vendorId": "64f7b927b43e5b9c983f9a3269d76dea",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-17T20:04:19.244Z"
+       },
+       {
+        "id": "f41dd11a0ea2bb197b5f6a42e08162db",
+        "type": "payment",
+        "transaction_id": "6a65d3096a064324aa1b25a99def937b",
+        "created_at": "2026-02-17T20:10:28.796Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "f49af8590cb78aec4008b8ad06da28fc"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-17T20:04:19.244Z",
+      "invoiceNumber": "1021"
+     }
+    ],
+    "modified_at": "2026-02-17T20:04:19.254Z"
+   }
+  },
+  {
+   "id": "33f2ac4c1eead42df1eba90e64eef020",
+   "name": "Loveland West Farmers Market at JAX",
+   "contact": "Agnes Juhasz",
+   "email": "contact28@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-17T19:23:08.348Z",
+   "updatedAt": "2026-04-28T16:18:22.780Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 120,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 120,
+      "taxPercent": 0,
+      "created_at": "2026-02-17T20:04:19.974Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-17T20:04:19.988Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "db2a6a187c09469b96968ba866b0bd01",
+      "vendorId": "33f2ac4c1eead42df1eba90e64eef020",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 120,
+        "taxPercent": 0,
+        "created_at": "2026-02-17T20:04:19.974Z"
+       },
+       {
+        "id": "47b5a1659fc7333ba3048459a143cd48",
+        "type": "payment",
+        "transaction_id": "859019f209cc4209aabe27d0fb44c7d8",
+        "created_at": "2026-02-17T20:40:15.442Z",
+        "amount": 12000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "db2a6a187c09469b96968ba866b0bd01"
+       }
+      ],
+      "totalPrice": 120,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-17T20:04:19.974Z",
+      "invoiceNumber": "1022"
+     }
+    ],
+    "modified_at": "2026-02-17T20:04:19.984Z"
+   }
+  },
+  {
+   "id": "5e33d0b916f6309c93c26cad5c36e51e",
+   "name": "Larimer County Farmers' Market",
+   "contact": "Maggie Switzer",
+   "email": "contact29@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-18T02:53:31.004Z",
+   "updatedAt": "2026-04-28T16:18:22.787Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-18T18:50:21.983Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-18T18:50:21.996Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "ce9e9dfffc9b7d53a27aa52db876c78b",
+      "vendorId": "5e33d0b916f6309c93c26cad5c36e51e",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-18T18:50:21.983Z"
+       },
+       {
+        "id": "fa471e80a3720733c3ae0296cccabe4e",
+        "type": "payment",
+        "transaction_id": "8586597fefcd48759c3016dc9b48c650",
+        "created_at": "2026-02-18T22:38:24.163Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "ce9e9dfffc9b7d53a27aa52db876c78b"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-18T18:50:21.983Z",
+      "invoiceNumber": "1025"
+     }
+    ],
+    "modified_at": "2026-02-18T18:50:21.992Z"
+   }
+  },
+  {
+   "id": "0d3c61815bf74d94dad940674ee60c9a",
+   "name": "Green Valley Ranch Farmers Market",
+   "contact": "Katrina Karczewski",
+   "email": "contact30@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-18T08:01:12.050Z",
+   "updatedAt": "2026-04-28T16:18:22.789Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-18T18:50:21.345Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-18T18:50:21.358Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "f474b53cb6e47d34a3220d1c96342f15",
+      "vendorId": "0d3c61815bf74d94dad940674ee60c9a",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-18T18:50:21.345Z"
+       },
+       {
+        "id": "1c65abb93a868283651365b15460129b",
+        "type": "payment",
+        "transaction_id": "8a9ae5bcbdbd47cea91a19a6c0ceb863",
+        "created_at": "2026-02-18T20:11:17.125Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "f474b53cb6e47d34a3220d1c96342f15"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-18T18:50:21.345Z",
+      "invoiceNumber": "1024"
+     }
+    ],
+    "modified_at": "2026-02-18T18:50:21.354Z"
+   }
+  },
+  {
+   "id": "bda0dfd02543905d3a76ecb7b794aacd",
+   "name": "Boulder Farmers Market",
+   "contact": "Liz Thomas",
+   "email": "contact31@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-18T18:40:36.514Z",
+   "updatedAt": "2026-04-28T16:18:22.792Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-18T18:50:20.680Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-18T18:50:20.693Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "44576218e357a60c833443be80db59af",
+      "vendorId": "bda0dfd02543905d3a76ecb7b794aacd",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-18T18:50:20.680Z"
+       },
+       {
+        "id": "5648ecddb6ef75a7a98673466be2d677",
+        "type": "payment",
+        "transaction_id": "51a5698ef7d9479f968e5395459ca034",
+        "created_at": "2026-02-18T19:02:56.332Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "mastercard",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "44576218e357a60c833443be80db59af"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-18T18:50:20.680Z",
+      "invoiceNumber": "1023"
+     }
+    ],
+    "modified_at": "2026-02-18T18:50:20.689Z"
+   }
+  },
+  {
+   "id": "e9ce40ad576c64f4798a6c7a1833eaaf",
+   "name": "Nederland Farmers Market",
+   "contact": "Kipp Nash",
+   "email": "contact32@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-19T18:19:35.689Z",
+   "updatedAt": "2026-04-28T16:18:22.797Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-20T01:22:22.180Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-20T01:22:22.193Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "f1e656b1b8b29423b77a7bf773f3f68a",
+      "vendorId": "e9ce40ad576c64f4798a6c7a1833eaaf",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-20T01:22:22.180Z"
+       },
+       {
+        "id": "052e6f79acf75fe5a7e9dec619ec520c",
+        "type": "payment",
+        "transaction_id": "fbadfa12008a4848afab375a39cda758",
+        "created_at": "2026-02-24T18:35:46.953Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "f1e656b1b8b29423b77a7bf773f3f68a"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-20T01:22:22.180Z",
+      "invoiceNumber": "1029"
+     }
+    ],
+    "modified_at": "2026-02-20T01:22:22.189Z"
+   }
+  },
+  {
+   "id": "745a8bc915480d1b2567217d1fd0c524",
+   "name": "Trinidad Community Farmers Market",
+   "contact": "Carol Potter",
+   "email": "contact33@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-20T00:26:45.958Z",
+   "updatedAt": "2026-04-28T16:18:22.799Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 120,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 120,
+      "taxPercent": 0,
+      "created_at": "2026-02-20T01:22:21.530Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-20T01:22:21.543Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "99cbf5910252e3e3834ce609ebac6b96",
+      "vendorId": "745a8bc915480d1b2567217d1fd0c524",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 120,
+        "taxPercent": 0,
+        "created_at": "2026-02-20T01:22:21.530Z"
+       },
+       {
+        "id": "860976708f9a5b978998a7754226ed1d",
+        "type": "payment",
+        "transaction_id": "a83505130c4f4a2098ea6d35ceac1912",
+        "created_at": "2026-02-21T01:44:03.895Z",
+        "amount": 12000,
+        "currency": "USD",
+        "paymentType": "mastercard",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "99cbf5910252e3e3834ce609ebac6b96"
+       }
+      ],
+      "totalPrice": 120,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-20T01:22:21.530Z",
+      "invoiceNumber": "1028"
+     }
+    ],
+    "modified_at": "2026-02-20T01:22:21.539Z"
+   }
+  },
+  {
+   "id": "260126248d2b5ba4847a9a224c3d13c2",
+   "name": "Crested Butte Farmers Market",
+   "contact": "Allison Pugh",
+   "email": "contact34@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-23T22:32:10.584Z",
+   "updatedAt": "2026-04-28T16:18:22.801Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 180,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 180,
+      "taxPercent": 0,
+      "created_at": "2026-02-24T21:17:35.237Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-24T21:17:35.250Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "f2ca6e7eaeb65b2031aef64730340648",
+      "vendorId": "260126248d2b5ba4847a9a224c3d13c2",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 180,
+        "taxPercent": 0,
+        "created_at": "2026-02-24T21:17:35.237Z"
+       },
+       {
+        "id": "19b1aa1569fef314a603699e3a30835f",
+        "type": "payment",
+        "transaction_id": "e4e5301f1f984e0096ab99def2081694",
+        "created_at": "2026-02-26T20:02:08.526Z",
+        "amount": 18000,
+        "currency": "USD",
+        "paymentType": "mastercard",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "f2ca6e7eaeb65b2031aef64730340648"
+       }
+      ],
+      "totalPrice": 180,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-24T21:17:35.237Z",
+      "invoiceNumber": "1031"
+     }
+    ],
+    "modified_at": "2026-02-24T21:17:35.246Z"
+   }
+  },
+  {
+   "id": "7c7a64201328e548bf16476276f88960",
+   "name": "Cortez Farmers Market",
+   "contact": "Julie Periman",
+   "email": "contact35@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-25T15:55:32.203Z",
+   "updatedAt": "2026-04-28T16:18:22.804Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 180,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 180,
+      "taxPercent": 0,
+      "created_at": "2026-02-26T00:10:07.547Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-26T00:10:07.559Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "c727cf64809ba2143ec0fdfda54cdf97",
+      "vendorId": "7c7a64201328e548bf16476276f88960",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 180,
+        "taxPercent": 0,
+        "created_at": "2026-02-26T00:10:07.547Z"
+       },
+       {
+        "id": "adb9832e96bd0365d05c66e3c5a64e54",
+        "type": "payment",
+        "transaction_id": "ab023162246c4da5a02bc1b14eefd5bc",
+        "created_at": "2026-03-23T21:57:23.772Z",
+        "amount": 18000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "c727cf64809ba2143ec0fdfda54cdf97"
+       }
+      ],
+      "totalPrice": 180,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-26T00:10:07.547Z",
+      "invoiceNumber": "1033"
+     }
+    ],
+    "modified_at": "2026-02-26T00:10:07.556Z"
+   }
+  },
+  {
+   "id": "44f195cb7f5848c575333da9e4a4cc0e",
+   "name": "Durango Farmers Market",
+   "contact": "Anna Knowles",
+   "email": "contact36@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-02-25T18:17:48.731Z",
+   "updatedAt": "2026-04-28T16:18:22.807Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-02-26T00:10:06.917Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-02-26T00:10:06.930Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "5a7c947326cd34a408cfb07dc3778e88",
+      "vendorId": "44f195cb7f5848c575333da9e4a4cc0e",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-02-26T00:10:06.917Z"
+       },
+       {
+        "id": "7c5084aad21c62015397013983d0d96f",
+        "type": "payment",
+        "transaction_id": "c772cbc8d4fe4ab6ab0e2037770b9865",
+        "created_at": "2026-03-05T17:03:39.747Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "5a7c947326cd34a408cfb07dc3778e88"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-02-26T00:10:06.917Z",
+      "invoiceNumber": "1032"
+     }
+    ],
+    "modified_at": "2026-02-26T00:10:06.926Z"
+   }
+  },
+  {
+   "id": "7e18c4cb2e8468ef12001b80311ab933",
+   "name": "Gunnison Farmers Market",
+   "contact": "Beth Coop",
+   "email": "contact37@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-03-03T20:34:44.170Z",
+   "updatedAt": "2026-04-28T16:18:22.809Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 60,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 60,
+      "taxPercent": 0,
+      "created_at": "2026-03-04T16:59:46.753Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-03-04T16:59:46.766Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "f9772e2e06653b416c46015e698c3439",
+      "vendorId": "7e18c4cb2e8468ef12001b80311ab933",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 60,
+        "taxPercent": 0,
+        "created_at": "2026-03-04T16:59:46.753Z"
+       },
+       {
+        "id": "56336af34ef4191b1337b4891f525cf5",
+        "type": "payment",
+        "transaction_id": "53c5063488d74256ad1329370307f455",
+        "created_at": "2026-03-09T15:11:21.448Z",
+        "amount": 6000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "f9772e2e06653b416c46015e698c3439"
+       }
+      ],
+      "totalPrice": 60,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-03-04T16:59:46.753Z",
+      "invoiceNumber": "1034"
+     }
+    ],
+    "modified_at": "2026-03-04T16:59:46.762Z"
+   }
+  },
+  {
+   "id": "e5ea0631db2441ccafbe815f4b48767e",
+   "name": "Pueblo Farmers Market",
+   "contact": "Marci Cochran",
+   "email": "contact38@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": []
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "REQUESTED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-03-16T23:25:19.581Z",
+   "updatedAt": "2026-04-28T15:49:05.396Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-03-18T18:51:12.223Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-03-18T18:51:12.241Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "8cf6a8cab6eb889a1ee2fc0bffcd3f72",
+      "vendorId": "e5ea0631db2441ccafbe815f4b48767e",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-03-18T18:51:12.223Z"
+       },
+       {
+        "id": "7509b7ca1c25fe93245bc7bafcfb3b06",
+        "type": "payment",
+        "transaction_id": "5a658c5943dc4c5cbaa4132b1b1e48f7",
+        "created_at": "2026-03-19T18:32:49.030Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "8cf6a8cab6eb889a1ee2fc0bffcd3f72"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-03-18T18:51:12.223Z",
+      "invoiceNumber": "1035"
+     }
+    ],
+    "modified_at": "2026-03-18T18:51:12.234Z"
+   }
+  },
+  {
+   "id": "ab0df6b4b7762bec3dcf1e3d0c31224c",
+   "name": "Harvey Park Farmers Market",
+   "contact": "Allie Bronston",
+   "email": "contact39@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-03-31T13:32:15.687Z",
+   "updatedAt": "2026-04-28T16:18:22.811Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-04-20T18:10:33.651Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-04-20T18:10:33.663Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "996b68be34e9889934375e818d99e9e9",
+      "vendorId": "ab0df6b4b7762bec3dcf1e3d0c31224c",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-04-20T18:10:33.651Z"
+       },
+       {
+        "id": "a9e85235b5e9b91278bd66b77da4340d",
+        "type": "payment",
+        "transaction_id": "6a02d2002cd64a4eaebfad64823be78a",
+        "created_at": "2026-04-21T13:27:38.094Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "996b68be34e9889934375e818d99e9e9"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-04-20T18:10:33.651Z",
+      "invoiceNumber": "1038"
+     }
+    ],
+    "modified_at": "2026-04-20T18:10:33.659Z"
+   }
+  },
+  {
+   "id": "2d267dfabfe6a01815f5ab1a18ff521e",
+   "name": "Loveland Farmers Market at Fairgrounds Park",
+   "contact": "Kerry Helke",
+   "email": "contact40@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-04-06T22:46:29.806Z",
+   "updatedAt": "2026-04-28T16:18:22.814Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-04-20T18:10:33.068Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-04-20T18:10:33.077Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "86dc0f798fd35b49e2695d701fa418dc",
+      "vendorId": "2d267dfabfe6a01815f5ab1a18ff521e",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-04-20T18:10:33.068Z"
+       },
+       {
+        "id": "fe53579e62d9c07a214c3382c9b3f7bc",
+        "type": "payment",
+        "transaction_id": "b7ec4f0fd81e4b07bbac5a231860dfe7",
+        "created_at": "2026-04-20T21:53:33.546Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "86dc0f798fd35b49e2695d701fa418dc"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-04-20T18:10:33.068Z",
+      "invoiceNumber": "1037"
+     }
+    ],
+    "modified_at": "2026-04-20T18:10:33.074Z"
+   }
+  },
+  {
+   "id": "17001a0feb4e6ec35c2b0172d0b01b54",
+   "name": "Rifle Farmers Market",
+   "contact": "Elissa Nye",
+   "email": "contact41@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-04-10T22:01:39.571Z",
+   "updatedAt": "2026-05-20T17:57:24.516Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 60,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 60,
+      "taxPercent": 0,
+      "created_at": "2026-04-20T18:10:32.200Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-04-20T18:10:32.209Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "1593705b239bd7e3f5e5f25a6ccabd46",
+      "vendorId": "17001a0feb4e6ec35c2b0172d0b01b54",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 60,
+        "taxPercent": 0,
+        "created_at": "2026-04-20T18:10:32.200Z"
+       },
+       {
+        "id": "7c4d0ba12277d23021843455b1e39da0",
+        "type": "payment",
+        "transaction_id": "4be6e0f9370740b6ac0b6f9b49179431",
+        "created_at": "2026-05-01T20:01:26.214Z",
+        "amount": 6000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "1593705b239bd7e3f5e5f25a6ccabd46"
+       }
+      ],
+      "totalPrice": 60,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-04-20T18:10:32.200Z",
+      "invoiceNumber": "1036"
+     }
+    ],
+    "modified_at": "2026-04-20T18:10:32.207Z"
+   }
+  },
+  {
+   "id": "fc4e0524371594251b6318199c86b5fd",
+   "name": "Florence Farmers Market",
+   "contact": "Joanne Mohr",
+   "email": "contact42@example.test",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-04-20T20:05:22.176Z",
+   "updatedAt": "2026-05-20T17:57:13.471Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 120,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 120,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 120,
+      "taxPercent": 0,
+      "created_at": "2026-04-28T15:48:12.986Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-04-28T15:48:12.998Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "f1b23add29647bd406866c9fce8828e5",
+      "vendorId": "fc4e0524371594251b6318199c86b5fd",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 120,
+        "taxPercent": 0,
+        "created_at": "2026-04-28T15:48:12.986Z"
+       },
+       {
+        "id": "fae96615382128cc60e92026b12ec194",
+        "type": "payment",
+        "invoiceId": "f1b23add29647bd406866c9fce8828e5",
+        "transaction_id": "fae96615382128cc60e92026b12ec194",
+        "created_at": "2026-05-20T17:57:00.133Z",
+        "amount": 12000,
+        "currency": "USD",
+        "provider": "MANUAL",
+        "note": "received mailed check 5/20"
+       }
+      ],
+      "totalPrice": 120,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-04-28T15:48:12.986Z",
+      "invoiceNumber": "1039"
+     }
+    ],
+    "modified_at": "2026-05-20T17:57:00.133Z"
+   }
+  },
+  {
+   "id": "9a8d6b163b195741e23c4040f7134906",
+   "name": "Gluten Free Farmers Market",
+   "contact": "Kelsey Dolezal",
+   "email": "contact43@example.test",
+   "category": [
+    "1"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "dateSelectionByMarket": {
+    "c191d43329f05795af4cdcad8d1af4dd": {
+     "2026-01-01T00:00:00.000Z": "APPROVED"
+    }
+   },
+   "status": "Active",
+   "notes": "",
+   "createdAt": "2026-05-19T01:51:41.701Z",
+   "updatedAt": "2026-06-30T19:04:41.692Z",
+   "tags": [],
+   "billing": {
+    "runningTotal": 240,
+    "runningTotalTaxAmount": 0,
+    "amountPaid": 0,
+    "invoicedItems": [
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 240,
+      "taxPercent": 0,
+      "created_at": "2026-05-20T18:00:45.327Z"
+     },
+     {
+      "name": "Signup/Membership Fee",
+      "amount": 0,
+      "taxPercent": 0,
+      "type": "note",
+      "created_at": "2026-05-20T18:00:45.336Z"
+     }
+    ],
+    "invoices": [
+     {
+      "id": "90f58f91bd3c0eb3cde4b8bd32a7cef5",
+      "vendorId": "9a8d6b163b195741e23c4040f7134906",
+      "invoicedLineItems": [
+       {
+        "name": "Signup/Membership Fee",
+        "amount": 240,
+        "taxPercent": 0,
+        "created_at": "2026-05-20T18:00:45.327Z"
+       },
+       {
+        "id": "9ff0a410ed3fe2c3a01de9a83c6c2d28",
+        "type": "payment",
+        "transaction_id": "7436a128f4634112a1ca7830dd2100c1",
+        "created_at": "2026-05-21T01:06:34.097Z",
+        "amount": 24000,
+        "currency": "USD",
+        "paymentType": "visa",
+        "provider": "PAYMENTSPRING",
+        "note": "PAYMENTSPRING",
+        "invoiceId": "90f58f91bd3c0eb3cde4b8bd32a7cef5"
+       }
+      ],
+      "totalPrice": 240,
+      "taxAmount": 0,
+      "taxPercent": 0,
+      "adjustmentAmount": 0,
+      "adjustmentReason": "",
+      "isAdjustmentTaxable": false,
+      "created_at": "2026-05-20T18:00:45.327Z",
+      "invoiceNumber": "1040"
+     }
+    ],
+    "modified_at": "2026-05-20T18:00:45.334Z"
+   }
+  }
+ ]
+}

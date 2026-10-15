@@ -1,0 +1,63 @@
+{
+ "id": "frontline-farming__denver",
+ "name": "FrontLine Farming",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://www.frontlinefarming.org/csa-form",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "2026: Single share (1-2 people) $496; Double share (3-5 people) $988; 16 weeks",
+ "snap_accepted": true,
+ "pickup_sites": [
+  {
+   "name": "Majestic View Farm",
+   "address": "7000 Garrison St, Arvada, CO 80004",
+   "town": "Arvada",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Celebration Garden",
+   "address": "1650 South Birch St, Denver, CO 80222",
+   "town": "Denver",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Sisters Gardens",
+   "address": "2861 52nd Ave, Denver, CO 80221",
+   "town": "Denver",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": true,
+  "kind": "other",
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": "$15/week",
+  "details": "Home delivery available for limited spots; area not stated"
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://www.frontlinefarming.org/csa"
+  },
+  {
+   "field": "snap_accepted",
+   "url": "https://www.frontlinefarming.org/csa"
+  }
+ ]
+}

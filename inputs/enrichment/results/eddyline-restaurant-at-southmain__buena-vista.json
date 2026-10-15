@@ -1,0 +1,38 @@
+{
+ "id": "eddyline-restaurant-at-southmain__buena-vista",
+ "name": "Eddyline Restaurant at Southmain",
+ "city": "Buena Vista",
+ "official_website": "https://eddylinebrewery.com/pages/restaurant-menu-board",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Hours": {
+   "value": "Sun, Tue-Thu: 11:00am - 8:00pm; Fri-Sat: 11:00am - 9:00pm; Mon: Closed",
+   "source_url": "https://eddylinebrewery.com/pages/restaurant-menu-board"
+  },
+  "Address": {
+   "value": "926 Southmain, Buena Vista, CO 81211",
+   "source_url": "https://eddylinebrewery.com/pages/restaurant-menu-board"
+  },
+  "Phone": {
+   "value": "(719) 966-6000",
+   "source_url": "https://eddylinebrewery.com/pages/restaurant-menu-board"
+  },
+  "Email": {
+   "value": "info@eddylinebrewing.com",
+   "source_url": "https://eddylinebrewery.com/pages/restaurant-menu-board"
+  },
+  "Website": {
+   "value": "https://eddylinebrewery.com/pages/restaurant-menu-board",
+   "source_url": "https://eddylinebrewing.com/restaurant-menu-boards/"
+  },
+  "Facebook": {
+   "value": "https://facebook.com/eddylinebrewery",
+   "source_url": "https://eddylinebrewery.com/pages/restaurant-menu-board"
+  },
+  "Instagram": {
+   "value": "https://instagram.com/EddylineBrewery",
+   "source_url": "https://eddylinebrewery.com/pages/restaurant-menu-board"
+  }
+ }
+}

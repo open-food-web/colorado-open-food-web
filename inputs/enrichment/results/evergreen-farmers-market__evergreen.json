@@ -1,0 +1,44 @@
+{
+ "id": "evergreen-farmers-market__evergreen",
+ "name": "Evergreen Farmers Market",
+ "city": "Evergreen",
+ "official_website": "https://evergreenarts.org/cae/evergreen-farmers-market/",
+ "fields": {
+  "Hours": {
+   "value": "Tue: 10:00am - 2:00pm",
+   "source_url": "https://www.facebook.com/farmersmarketevergreen/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September",
+   "source_url": "https://www.facebook.com/farmersmarketevergreen/"
+  },
+  "Products": {
+   "value": "Fresh produce, local goodies, and handmade treats from Colorado growers and makers",
+   "source_url": "https://evergreenarts.org/cae/evergreen-farmers-market/"
+  },
+  "Email": {
+   "value": "info@evergreenarts.org",
+   "source_url": "https://evergreenarts.org/cae/evergreen-farmers-market/"
+  },
+  "Phone": {
+   "value": "(303) 674-0056",
+   "source_url": "https://evergreenarts.org/cae/evergreen-farmers-market/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/farmersmarketevergreen/",
+   "source_url": "https://www.facebook.com/farmersmarketevergreen/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/evergreenfarmersmarket/",
+   "source_url": "https://evergreenarts.org/cae/evergreen-farmers-market/"
+  },
+  "Address": {
+   "value": "31880 Rocky Village Dr",
+   "source_url": "https://evergreenarts.org/cae/evergreen-farmers-market/"
+  },
+  "Website": {
+   "value": "https://evergreenarts.org/cae/evergreen-farmers-market/",
+   "source_url": "https://evergreenarts.org/cae/evergreen-farmers-market/"
+  }
+ }
+}

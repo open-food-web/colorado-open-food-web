@@ -1,0 +1,44 @@
+{
+ "id": "knapp-farms-llc__rocky-ford-co",
+ "name": "KNAPP FARMS LLC",
+ "offers_csa": true,
+ "csa_status": "closed_season",
+ "signup_url": "https://www.knappsfarmmarket.com/csa",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables",
+  "Fruit"
+ ],
+ "frequency": "Other",
+ "price": "Prepaid account balance: Option A from $500; Option C $440 balance; Option D $550 value (10% bonus)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Knapp's Farm Market",
+   "address": "29742 State Highway 71",
+   "town": "Rocky Ford",
+   "day": null,
+   "time": null,
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "signup_url",
+   "url": "https://www.knappsfarmmarket.com/csa"
+  }
+ ]
+}

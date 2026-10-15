@@ -1,0 +1,44 @@
+{
+ "id": "trujillo-family-farm__broomfield",
+ "name": "Trujillo Family Farm",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://www.trujillofamilyfarmCO.com/producebox-csa-membership",
+ "signup_opens": null,
+ "season_start": "2027-06-04",
+ "season_end": "2027-09-24",
+ "season_year": 2027,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables",
+  "Eggs",
+  "Meat"
+ ],
+ "frequency": "Weekly",
+ "price": "$900 full share; $450 half share",
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://www.trujillofamilyfarmCO.com/producebox-csa-membership"
+  },
+  {
+   "field": "season_start",
+   "url": "https://www.trujillofamilyfarmCO.com/producebox-csa-membership"
+  },
+  {
+   "field": "price",
+   "url": "https://www.trujillofamilyfarmCO.com/producebox-csa-membership"
+  }
+ ]
+}

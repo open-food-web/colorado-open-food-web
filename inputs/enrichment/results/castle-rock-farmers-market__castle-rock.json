@@ -1,0 +1,32 @@
+{
+ "id": "castle-rock-farmers-market__castle-rock",
+ "name": "Castle Rock Farmers Market",
+ "city": "Castle Rock",
+ "official_website": "https://originalcastlerockfarmersmarket.com/",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 8:00am - 12:30pm",
+   "source_url": "https://originalcastlerockfarmersmarket.com/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://originalcastlerockfarmersmarket.com/"
+  },
+  "Products": {
+   "value": "Fresh fruits, vegetables, and other products from local farmers, ranchers, bakers and other vendors, including meats, dairy, baked goods, prepared foods, coffee, specialty items, and health products",
+   "source_url": "https://originalcastlerockfarmersmarket.com/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://originalcastlerockfarmersmarket.com/"
+  },
+  "Phone": {
+   "value": "719-401-1495",
+   "source_url": "https://originalcastlerockfarmersmarket.com/"
+  },
+  "Address": {
+   "value": "500 Fairgrounds Drive, Upper Parking Lot, Castle Rock, CO 80104",
+   "source_url": "https://originalcastlerockfarmersmarket.com/"
+  }
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "id": "homegrown-farm__bayfield",
+ "name": "Homegrown Farm",
+ "offers_csa": true,
+ "csa_status": "full",
+ "signup_url": "https://homegrownbiodynamics.com/csa/",
+ "signup_opens": "2026-02-10",
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "$650 full season plus county sales tax (returning member discount)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Homegrown Farm",
+   "address": "2930 CR 526, Bayfield, CO",
+   "town": "Bayfield",
+   "day": "Tue",
+   "time": "4pm-6pm",
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Market-style on-farm pickup; no delivery stated"
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://homegrownbiodynamics.com/csa/"
+  }
+ ]
+}

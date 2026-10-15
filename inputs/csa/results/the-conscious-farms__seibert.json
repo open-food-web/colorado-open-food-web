@@ -1,0 +1,56 @@
+{
+ "id": "the-conscious-farms__seibert",
+ "name": "The Conscious Farms",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://theconsciousfarms.com/store",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Meat",
+  "Eggs"
+ ],
+ "frequency": "Weekly",
+ "price": "Chicken/Egg CSA $250 (sold out); Chicken CSA $200; Winter Egg CSA $50",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "South Pearl St",
+   "address": null,
+   "town": null,
+   "day": "Sat",
+   "time": "9-10am",
+   "on_farm": false
+  },
+  {
+   "name": "York Yards",
+   "address": null,
+   "town": null,
+   "day": "Sat",
+   "time": "11am-12:30pm",
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://theconsciousfarms.com"
+  },
+  {
+   "field": "price",
+   "url": "https://theconsciousfarms.com/store/p/chickenegg-csa-membership"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+name: Correction
+description: Something in a record is wrong or out of date
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the data accurate. Please only share business information that is
+        already public. Do not include personal details.
+  - type: input
+    id: record
+    attributes:
+      label: Which record?
+      description: Name of the producer, market or outlet, and its ID if you have it.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong, and what is right?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where can this be confirmed?
+      description: A link to the business's own page, or another public source.
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your connection to this record
+      options:
+        - I run this business
+        - I run this market or organization
+        - Partner or agency
+        - Customer or other

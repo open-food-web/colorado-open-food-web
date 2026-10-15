@@ -1,0 +1,14 @@
+{
+ "id": "everett-ranch-beef__salida",
+ "name": "Everett Ranch Beef",
+ "city": "Salida",
+ "official_website": "",
+ "status": "unknown",
+ "checked": "2026-10-03",
+ "fields": {
+  "Facebook": {
+   "value": "https://www.facebook.com/everettranchbeef/",
+   "source_url": "https://www.facebook.com/everettranchbeef/"
+  }
+ }
+}

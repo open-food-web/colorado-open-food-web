@@ -1,0 +1,40 @@
+{
+ "id": "creede-farmers-local-artisan-and-antique-market__creede",
+ "name": "Creede Farmers, Local Artisan and Antique Market",
+ "city": "Creede",
+ "official_website": "https://creedefarmersmarket.com/",
+ "fields": {
+  "Website": {
+   "value": "https://creedefarmersmarket.com/",
+   "source_url": "https://creedefarmersmarket.com/"
+  },
+  "Hours": {
+   "value": "Fri: 8:00am - 2:00pm (some days to 3:00pm); Sat & Sun (select dates near July 4th): 8:00am - 2:00pm (some days to 3:00pm)",
+   "source_url": "https://creedefarmersmarket.com/wp-content/uploads/2024/05/Creede-FARMERS-MARKET-rules-regs-2024-second-and-final.pdf"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September",
+   "source_url": "https://creedefarmersmarket.com/wp-content/uploads/2024/05/Creede-FARMERS-MARKET-rules-regs-2024-second-and-final.pdf"
+  },
+  "Products": {
+   "value": "Local produce, baked goods, handcrafted jewelry, artisan crafts, agricultural crafts, antiques, and some prepared/food vendors (including chili roasting)",
+   "source_url": "https://creedefarmersmarket.com/wp-content/uploads/2024/05/Creede-FARMERS-MARKET-rules-regs-2024-second-and-final.pdf"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://creedefarmersmarket.com/wp-content/uploads/2024/05/Creede-FARMERS-MARKET-rules-regs-2024-second-and-final.pdf"
+  },
+  "Phone": {
+   "value": "855-411-7669",
+   "source_url": "https://creedefarmersmarket.com/wp-content/uploads/2024/05/Creede-FARMERS-MARKET-rules-regs-2024-second-and-final.pdf"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/creedefarmersmarket/",
+   "source_url": "https://creedefarmersmarket.com/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/creedefarmersmarket/",
+   "source_url": "https://creedefarmersmarket.com/"
+  }
+ }
+}

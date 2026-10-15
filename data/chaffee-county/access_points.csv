@@ -1,0 +1,3 @@
+access_point_id,slug,name,kind,location_id,hours_text,website,phone,email,facebook,instagram,status,first_seen,last_verified
+co-ap-000001,guidestone-colorados-free-community-fridge-buena-vista,Guidestone Colorado's Free Community Fridge: Buena Vista,community_fridge,co-loc-000036,Open 24/7,,,info@guidestonecolorado.org,,https://www.instagram.com/salidacommunityfridge,unverified,,
+co-ap-000002,guidestone-colorados-free-community-fridge-salida,Guidestone Colorado's Free Community Fridge: Salida,community_fridge,co-loc-000037,Open 24/7,,,info@guidestonecolorado.org,,https://www.instagram.com/salidacommunityfridge,unverified,,

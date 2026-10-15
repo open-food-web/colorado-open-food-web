@@ -1,0 +1,14 @@
+{
+ "id": "copper-kettle-apothecary__salida",
+ "name": "Copper Kettle Apothecary",
+ "city": "Salida",
+ "official_website": "",
+ "status": "unknown",
+ "checked": "2026-10-03",
+ "fields": {
+  "Facebook": {
+   "value": "https://www.facebook.com/copperkettleapothecary/",
+   "source_url": "https://www.facebook.com/copperkettleapothecary/"
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "id": "florence-farmers-market__florence",
+ "name": "Florence Farmers Market",
+ "city": "Florence",
+ "official_website": "https://www.facebook.com/MarketinFlorence/",
+ "fields": {
+  "Hours": {
+   "value": "Thu: 8:00am - 1:00pm",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Florence-Farmers-Market/40484"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://www.facebook.com/MarketinFlorence/"
+  },
+  "Products": {
+   "value": "Fresh fruit and vegetables, crafts, bakery items, stained glass, wood items, flowers, herbs, jams & jellies, honey, eggs, grass-fed beef, tamales, hot dogs and sausages",
+   "source_url": "https://www.colorado.com/florence/florence-farmers'-market"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Florence-Farmers-Market/40484"
+  },
+  "Phone": {
+   "value": "(719) 784-6489",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Florence-Farmers-Market/40484"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/MarketinFlorence/",
+   "source_url": "https://www.facebook.com/MarketinFlorence/"
+  }
+ }
+}

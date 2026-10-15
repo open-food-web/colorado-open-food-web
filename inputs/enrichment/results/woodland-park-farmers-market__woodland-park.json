@@ -1,0 +1,44 @@
+{
+ "id": "woodland-park-farmers-market__woodland-park",
+ "name": "Woodland Park Farmers Market",
+ "city": "Woodland Park",
+ "official_website": "https://wpfarmersmarket.com",
+ "fields": {
+  "Hours": {
+   "value": "Fri: 8:00am - 1:00pm",
+   "source_url": "https://wpfarmersmarket.com/faq"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://wpfarmersmarket.com/faq"
+  },
+  "Products": {
+   "value": "Local and regionally grown fruits & vegetables, local and regionally raised meats, plants, flowers & herbs, farm-fresh eggs & dairy products, baked goods, snacks, spices",
+   "source_url": "https://wpfarmersmarket.com/faq"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://wpfarmersmarket.com/faq"
+  },
+  "Email": {
+   "value": "info@wpfarmersmarket.com",
+   "source_url": "https://wpfarmersmarket.com/contact-us"
+  },
+  "Phone": {
+   "value": "(719) 229-3767",
+   "source_url": "https://wpfarmersmarket.com/contact-us"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/wpfarmersmarket",
+   "source_url": "https://wpfarmersmarket.com"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/wpfarmersmarket",
+   "source_url": "https://wpfarmersmarket.com"
+  },
+  "Website": {
+   "value": "https://wpfarmersmarket.com",
+   "source_url": "https://wpfarmersmarket.com"
+  }
+ }
+}

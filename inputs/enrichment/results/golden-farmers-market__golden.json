@@ -1,0 +1,32 @@
+{
+ "id": "golden-farmers-market__golden",
+ "name": "Golden Farmers Market",
+ "city": "Golden",
+ "official_website": "https://www.goldenfarmersmarket.org",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 8:00am - 1:00pm; Wed: 3:00pm - 6:00pm",
+   "source_url": "https://www.goldenfarmersmarket.org"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://www.goldenfarmersmarket.org"
+  },
+  "Products": {
+   "value": "Fresh produce, artisan foods, hand-crafted drinks, artwork, and clothing items",
+   "source_url": "https://www.goldenfarmersmarket.org"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.goldenfarmersmarket.org"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/goldenfarmersmarket/",
+   "source_url": "https://www.goldenfarmersmarket.org/contact"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/goldenfarmersmarket/",
+   "source_url": "https://www.goldenfarmersmarket.org/contact"
+  }
+ }
+}

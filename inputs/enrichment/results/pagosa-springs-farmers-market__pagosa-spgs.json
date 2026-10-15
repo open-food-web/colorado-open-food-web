@@ -1,0 +1,48 @@
+{
+ "id": "pagosa-springs-farmers-market__pagosa-spgs",
+ "name": "Pagosa Springs Farmers Market",
+ "city": "Pagosa Spgs",
+ "official_website": "https://www.pagosafarmersmarket.net/",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 9:00am - 1:00pm",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Products": {
+   "value": "Garden-fresh vegetables, mushrooms, fruit, and plant starts from growers; artisan breads, prepared foods, grass-fed meat, eggs, and coffee from producers; jewelry, cards, and fabric goods from makers",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Email": {
+   "value": "Info@PagosaFarmersMarket.net",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Phone": {
+   "value": "970-264-5232",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/PagosaFarmersMarket/",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/pagosafarmersmarket/",
+   "source_url": "https://www.instagram.com/pagosafarmersmarket/"
+  },
+  "Address": {
+   "value": "225 S. Pagosa Blvd, Pagosa Springs, CO 81147",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Website": {
+   "value": "https://www.pagosafarmersmarket.net/",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  }
+ }
+}

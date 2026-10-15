@@ -1,0 +1,24 @@
+{
+ "id": "estes-valley-farmers-market__estes-park",
+ "name": "Estes Valley Farmers Market",
+ "city": "Estes Park",
+ "official_website": "https://www.facebook.com/EstesValleyFarmersMarket/",
+ "fields": {
+  "Hours": {
+   "value": "Thu: 8:00am - 1:00pm",
+   "source_url": "https://dms.estes.org/WebLink/ElectronicFile.aspx?docid=322898&dbid=0"
+  },
+  "Products": {
+   "value": "Traditional farmers market with consumable products",
+   "source_url": "https://dms.estes.org/WebLink/ElectronicFile.aspx?docid=322898&dbid=0"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://dms.estes.org/WebLink/ElectronicFile.aspx?docid=322898&dbid=0"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/EstesValleyFarmersMarket/",
+   "source_url": "https://dms.estes.org/WebLink/ElectronicFile.aspx?docid=322898&dbid=0"
+  }
+ }
+}

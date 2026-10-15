@@ -1,0 +1,59 @@
+{
+ "id": "dooley-creek-farm__carbondale",
+ "name": "Dooley Creek Farm",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://www.dooleycreekfarm.com/shop-csa",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Meat"
+ ],
+ "frequency": "Monthly",
+ "price": "$125/month or $1,500 full year",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Carbondale drop site",
+   "address": null,
+   "town": "Carbondale",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Dooley Creek Farm",
+   "address": "349 Dooley Lane, Carbondale",
+   "town": "Carbondale",
+   "day": null,
+   "time": null,
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": true,
+  "kind": "other",
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Greater Roaring Fork valley, deliveries from Glenwood to Aspen and everything in between"
+ },
+ "evidence": [
+  {
+   "field": "price",
+   "url": "https://www.dooleycreekfarm.com/shop-csa"
+  },
+  {
+   "field": "delivery",
+   "url": "https://www.dooleycreekfarm.com/csa"
+  },
+  {
+   "field": "pickup_sites",
+   "url": "http://www.dooleycreekfarm.com"
+  }
+ ]
+}

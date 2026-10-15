@@ -1,0 +1,75 @@
+name: Refresh one source
+
+# Reusable: called by the per-source schedules (refresh-<source>.yml) and runnable by hand.
+# Pulls one source, writes its snapshot and change report, and opens a PR with the diff.
+# Nothing is applied until a person merges the PR (the review step in docs/UPDATE_ENGINE.md).
+
+on:
+  workflow_call:
+    inputs:
+      source:
+        required: true
+        type: string
+    secrets:
+      USDA_API_KEY:
+        required: false
+  workflow_dispatch:
+    inputs:
+      source:
+        description: Source to refresh (see sources.json)
+        required: true
+        type: choice
+        options: [colorado_proud, usda_api, usda_datashare, cfma, colorado_proud_finder]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      SOURCE: ${{ inputs.source }}
+      USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Restore profile cache (Colorado Proud Finder)
+        if: env.SOURCE == 'colorado_proud_finder'
+        uses: actions/cache@v4
+        with:
+          path: .cache/colorado_proud_finder
+          key: cpf-profiles-${{ github.run_id }}
+          restore-keys: cpf-profiles-
+
+      - name: Pull the source
+        run: python scripts/scrape/refresh_sources.py "$SOURCE"
+
+      - name: Open a PR if anything changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          report="snapshots/changes/${SOURCE}.csv"
+          # The snapshot's fetched-at stamp changes on every run, so look at the report, not git status.
+          if [ ! -f "$report" ] || [ "$(($(wc -l < "$report") - 1))" -le 0 ]; then
+            echo "No change in $SOURCE."
+            exit 0
+          fi
+          branch="auto/refresh-${SOURCE}-$(date -u +%Y%m%d)"
+          git config user.name "food-web-bot"
+          git config user.email "food-web-bot@users.noreply.github.com"
+          git switch -c "$branch"
+          git add snapshots inputs/email_verification.csv
+          git commit -m "data: refresh ${SOURCE} snapshot"
+          git push -u origin "$branch"
+          new=$(grep -c '^new,' "$report" || true)
+          chg=$(grep -c '^changed,' "$report" || true)
+          rem=$(grep -c '^removed,' "$report" || true)
+          gh pr create --base main --head "$branch" \
+            --title "data: refresh ${SOURCE} (${new} new, ${chg} changed, ${rem} removed)" \
+            --body "Scheduled pull of \`${SOURCE}\`. Review \`${report}\` for exactly what changed; a removed listing is a review item, not a deletion. Merging approves the snapshot; the tables are rebuilt separately."

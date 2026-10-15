@@ -1,0 +1,30 @@
+{
+ "id": "salida-first-presbyterian-church__salida",
+ "name": "Salida First Presbyterian Church",
+ "city": "Salida",
+ "official_website": "https://www.salidapresbyterian.org/",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Website": {
+   "value": "https://www.salidapresbyterian.org/",
+   "source_url": "https://www.salidapresbyterian.org/ministries/serving-our-community/"
+  },
+  "Hours": {
+   "value": "Thu: 1:00pm - 3:30pm",
+   "source_url": "https://www.salidapresbyterian.org/ministries/serving-our-community/"
+  },
+  "Address": {
+   "value": "7 Poncha Blvd, Salida, CO 81201",
+   "source_url": "https://www.salidapresbyterian.org/ministries/serving-our-community/"
+  },
+  "Phone": {
+   "value": "(719) 539-6422",
+   "source_url": "https://www.salidapresbyterian.org/ministries/serving-our-community/"
+  },
+  "Products": {
+   "value": "Non-perishable pantry staples",
+   "source_url": "https://www.salidapresbyterian.org/ministries/serving-our-community/"
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "id": "urban-farmers-market__denver",
+ "name": "Urban Farmers' Market",
+ "city": "Denver",
+ "official_website": "https://coloradoevents.org/urbanmarket",
+ "fields": {
+  "Hours": {
+   "value": "Sat-Sun: 12:00pm - 6:00pm",
+   "source_url": "https://coloradoevents.org/urbanmarket"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://coloradoevents.org/urbanmarket"
+  },
+  "Products": {
+   "value": "Art, handmade crafts, antiques, clothing, jewelry, home decor, and other unique treasures from local artists and small businesses",
+   "source_url": "https://coloradoevents.org/urbanmarket"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.coloradoevents.org/contact"
+  },
+  "Phone": {
+   "value": "720-272-7467",
+   "source_url": "https://www.coloradoevents.org/contact"
+  }
+ }
+}

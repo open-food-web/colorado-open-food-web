@@ -1,0 +1,26 @@
+{
+ "id": "colorado-mountain-lavender__buena-vista",
+ "name": "Colorado Mountain Lavender",
+ "city": "Buena Vista",
+ "official_website": "https://co-mtn-lav.com/",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Website": {
+   "value": "https://co-mtn-lav.com/",
+   "source_url": "https://co-mtn-lav.com/"
+  },
+  "Phone": {
+   "value": "719-371-2828",
+   "source_url": "https://co-mtn-lav.com/"
+  },
+  "Email": {
+   "value": "connect@co-mtn-lav.com",
+   "source_url": "https://co-mtn-lav.com/"
+  },
+  "Products": {
+   "value": "Lavender essential oil, skin care, bath salts, hydrosol, culinary vinegars, dried lavender bouquets",
+   "source_url": "https://co-mtn-lav.com/"
+  }
+ }
+}

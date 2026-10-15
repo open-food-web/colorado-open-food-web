@@ -1,0 +1,28 @@
+{
+ "id": "loveland-farmers-market-at-fairgrounds-park__loveland",
+ "name": "Loveland Farmers Market at Fairgrounds Park",
+ "city": "Loveland",
+ "official_website": "https://www.lovgov.org/services/parks-recreation/events/farmers-market",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 9:00am - 1:00pm",
+   "source_url": "https://www.lovgov.org/services/parks-recreation/events/farmers-market"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://www.lovgov.org/services/parks-recreation/events/farmers-market"
+  },
+  "Products": {
+   "value": "Local produce, dairy, meat, poultry, baked goods, craft beer, bath and body care, artisan goods, and concessions",
+   "source_url": "https://www.lovgov.org/services/parks-recreation/events/farmers-market"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.lovgov.org/services/parks-recreation/events/farmers-market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/CityofLovelandFarmersMarket/",
+   "source_url": "https://www.facebook.com/CityofLovelandFarmersMarket/"
+  }
+ }
+}

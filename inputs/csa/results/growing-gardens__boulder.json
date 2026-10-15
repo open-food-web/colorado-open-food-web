@@ -1,0 +1,47 @@
+{
+ "id": "growing-gardens__boulder",
+ "name": "Growing Gardens",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://growinggardens.org/csa/",
+ "signup_opens": null,
+ "season_start": "2026-10-28",
+ "season_end": "2026-12-16",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "Fall share $450 for 8 weeks ($225 half upfront, balance due Oct 21)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Growing Gardens farm",
+   "address": "1630 Hawthorn Avenue, Boulder, CO 80304",
+   "town": "Boulder",
+   "day": "Wed",
+   "time": "3:30pm-6:00pm",
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://growinggardens.org/csa/"
+  },
+  {
+   "field": "season",
+   "url": "https://growinggardens.org/csa/"
+  }
+ ]
+}

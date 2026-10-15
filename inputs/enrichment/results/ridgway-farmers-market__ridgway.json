@@ -1,0 +1,40 @@
+{
+ "id": "ridgway-farmers-market__ridgway",
+ "name": "Ridgway Farmers Market",
+ "city": "Ridgway",
+ "official_website": "https://www.ridgwayfarmersmarket.com",
+ "fields": {
+  "Hours": {
+   "value": "Fri: 10:00am - 2:00pm",
+   "source_url": "https://www.ridgwayfarmersmarket.com"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://www.ridgwayfarmersmarket.com"
+  },
+  "Products": {
+   "value": "Fresh produce and handcrafted goods from local farmers, ranchers, bakers, and artisans",
+   "source_url": "https://www.ridgwayfarmersmarket.com"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.ridgwayfarmersmarket.com"
+  },
+  "Email": {
+   "value": "manager@ridgwayfarmersmarket.com",
+   "source_url": "https://www.ridgwayfarmersmarket.com"
+  },
+  "Phone": {
+   "value": "970-497-0755",
+   "source_url": "https://www.ridgwayfarmersmarket.com"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/RidgwayFarmersMarket",
+   "source_url": "https://www.ridgwayfarmersmarket.com"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/ridgway_farmersmarket",
+   "source_url": "https://www.ridgwayfarmersmarket.com"
+  }
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "id": "cannolo-family-farms__greenwood-village",
+ "name": "Cannolo Family Farms",
+ "offers_csa": true,
+ "csa_status": "full",
+ "signup_url": "https://cannolofarms.com/pages/farmers-market",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Mushrooms"
+ ],
+ "frequency": "Weekly",
+ "price": "$198 for 22 weeks",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Hot Shot Coffee",
+   "address": null,
+   "town": null,
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Golden Farm",
+   "address": null,
+   "town": null,
+   "day": null,
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://cannolofarms.com/pages/farmers-market"
+  },
+  {
+   "field": "price",
+   "url": "https://cannolofarms.com/pages/farmers-market"
+  }
+ ]
+}

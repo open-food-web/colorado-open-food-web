@@ -1,0 +1,53 @@
+{
+ "id": "sprout-city-farms__denver",
+ "name": "Sprout City Farms",
+ "offers_csa": true,
+ "csa_status": "waitlist",
+ "signup_url": "https://sproutcityfarms.org/csa-signup",
+ "signup_opens": null,
+ "season_start": "2026-06-17",
+ "season_end": "2026-10-14",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables",
+  "Flowers",
+  "Fruit",
+  "Eggs",
+  "Bread/Baked",
+  "Mushrooms",
+  "Other"
+ ],
+ "frequency": "Weekly",
+ "price": null,
+ "snap_accepted": true,
+ "pickup_sites": [
+  {
+   "name": "Denver Green School Community Farm",
+   "address": "6700 E Virginia Ave, Denver, CO 80224",
+   "town": "Denver",
+   "day": "Wed",
+   "time": "4pm-6pm",
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Only pickup mentioned"
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://crimson-springtail-kp3b.squarespace.com/csa-signup"
+  },
+  {
+   "field": "csa_status",
+   "url": "https://crimson-springtail-kp3b.squarespace.com/csa-signup"
+  }
+ ]
+}

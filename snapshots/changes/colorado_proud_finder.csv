@@ -1,0 +1,7 @@
+change,key,business_name,city,field,old,new
+new,business_profile_1653,"Carey's Cottage, LLC",Longmont,,,
+new,business_profile_1650,JC ranch and livestock llc,Sterling,,,
+new,business_profile_1652,Peak & Petal,Bayfield,,,
+changed,business_profile_1606,Wildcraft Markets,Fort Collins,business_name,Wildcraft Farmers Markets,Wildcraft Markets
+changed,business_profile_1606,Wildcraft Markets,Fort Collins,latitude,40.5423483,
+changed,business_profile_1606,Wildcraft Markets,Fort Collins,longitude,-105.0725465,

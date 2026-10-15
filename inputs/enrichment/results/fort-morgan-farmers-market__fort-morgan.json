@@ -1,0 +1,44 @@
+{
+ "id": "fort-morgan-farmers-market__fort-morgan",
+ "name": "Fort Morgan Farmers Market",
+ "city": "Fort Morgan",
+ "official_website": "https://www.theblock-mc.com/the-block-farmers-market",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 9:00am - 1:00pm",
+   "source_url": "https://visitmorgancountycolorado.com/events/fort-morgan-farmers-market/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://visitmorgancountycolorado.com/events/fort-morgan-farmers-market/"
+  },
+  "Products": {
+   "value": "Locally-grown produce, flowers, coffee, honey, canned goods, and baked items from regional vendors",
+   "source_url": "https://visitmorgancountycolorado.com/events/fort-morgan-farmers-market/"
+  },
+  "Email": {
+   "value": "julie@theblock-mc.com",
+   "source_url": "https://www.theblock-mc.com/contact"
+  },
+  "Phone": {
+   "value": "(970) 867-7887",
+   "source_url": "https://www.theblock-mc.com/contact"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/theblockfortmorgan/",
+   "source_url": "https://www.theblock-mc.com/contact"
+  },
+  "Instagram": {
+   "value": "http://www.instagram.com/theblockfortmorgan",
+   "source_url": "https://www.theblock-mc.com/contact"
+  },
+  "Address": {
+   "value": "19592 E 8th Ave, Fort Morgan, CO 80701",
+   "source_url": "https://www.theblock-mc.com/contact"
+  },
+  "Website": {
+   "value": "https://www.theblock-mc.com/the-block-farmers-market",
+   "source_url": "https://www.theblock-mc.com/the-block-farmers-market"
+  }
+ }
+}

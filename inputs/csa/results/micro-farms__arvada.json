@@ -1,0 +1,55 @@
+{
+ "id": "micro-farms__arvada",
+ "name": "Micro Farms",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://microfarmscolorado.com/csa/",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Arvada",
+   "address": "7020 W. 61 Ave, Arvada, CO 80003",
+   "town": "Arvada",
+   "day": "Thu",
+   "time": "3-7pm",
+   "on_farm": true
+  },
+  {
+   "name": "Lakewood",
+   "address": "8090 W. 19 Ave, Lakewood, CO 80214",
+   "town": "Lakewood",
+   "day": "Thu",
+   "time": "3-7pm",
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Customer pickup only."
+ },
+ "evidence": [
+  {
+   "field": "pickup",
+   "url": "https://microfarmscolorado.com/csa/"
+  },
+  {
+   "field": "season",
+   "url": "https://microfarmscolorado.com/csa/"
+  }
+ ]
+}

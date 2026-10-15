@@ -1,0 +1,66 @@
+{
+ "_comment": "Real records fetched live from the keyless data_share endpoint on 2026-07-21, a few per directory (CO totals then: onfarmmarket 37, csa 41, foodhub 12, agritourism 12). Same field set for every directory.",
+ "onfarmmarket": [
+  {
+   "Listing_Name": "RK Creations Farm",
+   "Contact_Name": "Michelle Riha",
+   "Contact_Email": "contact91@example.test",
+   "Contact_Phone": "4026069283",
+   "Media_Website": "",
+   "Location_State": "CO",
+   "Location_City": "Elizabeth",
+   "Location_Street": "33784 County Road 21",
+   "Location_Zipcode": "80107"
+  }
+ ],
+ "csa": [
+  {
+   "Listing_Name": "Two Roots Farm",
+   "Contact_Name": "Harper Kaufman",
+   "Contact_Email": "contact92@example.test",
+   "Contact_Phone": "9703766039",
+   "Media_Website": "www.tworootsfarm.com",
+   "Location_State": "CO",
+   "Location_City": "Basalt",
+   "Location_Street": "100 Sopris Creek Road",
+   "Location_Zipcode": "81621"
+  },
+  {
+   "Listing_Name": "Sunshine Greens Farm",
+   "Contact_Name": null,
+   "Contact_Email": null,
+   "Contact_Phone": "(714) 869-4753",
+   "Media_Website": "http://www.sunshinegreensfarm.com",
+   "Location_State": "CO",
+   "Location_City": "Colorado Springs",
+   "Location_Street": null,
+   "Location_Zipcode": "80903"
+  }
+ ],
+ "foodhub": [
+  {
+   "Listing_Name": "Food to Power",
+   "Contact_Name": null,
+   "Contact_Email": "contact93@example.test",
+   "Contact_Phone": "719-470-27",
+   "Media_Website": "https://foodtopowerco.org/hillside-hub",
+   "Location_State": "CO",
+   "Location_City": " Colorado Springs",
+   "Location_Street": "1090 S Institute St",
+   "Location_Zipcode": "80903"
+  }
+ ],
+ "agritourism": [
+  {
+   "Listing_Name": "Colorado Aromatics",
+   "Contact_Name": "Cindy Jones",
+   "Contact_Email": "contact94@example.test",
+   "Contact_Phone": null,
+   "Media_Website": "https://sagescript.com/",
+   "Location_State": "CO",
+   "Location_City": "Unit 220 Longmont",
+   "Location_Street": "340 Lashley St",
+   "Location_Zipcode": "80504.0"
+  }
+ ]
+}

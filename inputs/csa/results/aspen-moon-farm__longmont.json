@@ -1,0 +1,67 @@
+{
+ "id": "aspen-moon-farm__longmont",
+ "name": "Aspen Moon Farm",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://aspenmoonfarm.csaware.com/store/",
+ "signup_opens": null,
+ "season_start": "2026-05-20",
+ "season_end": "2026-12-02",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables",
+  "Flowers",
+  "Eggs",
+  "Fruit",
+  "Other"
+ ],
+ "frequency": null,
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Farm Stand",
+   "address": "7940 Hygiene Rd, Longmont, CO",
+   "town": "Longmont",
+   "day": "Wed/Thu",
+   "time": "2pm-6pm (choose one day; fall same, Thanksgiving week Wed only)",
+   "on_farm": true
+  },
+  {
+   "name": "Boulder - Upslope Brewing, Flatiron Park",
+   "address": "1898 S Flatiron Ct, Boulder, CO",
+   "town": "Boulder",
+   "day": "Wed",
+   "time": "Summer 2pm-6pm; fall 3pm-6pm",
+   "on_farm": false
+  },
+  {
+   "name": "Denver - Novo Coffee (Congress Park)",
+   "address": "1200 Clayton St, Denver, CO",
+   "town": "Denver",
+   "day": "Thu",
+   "time": "4pm-6pm (summer only)",
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Service area stated: Boulder County, Denver and surrounding areas including Lafayette, Superior, Louisville, Lyons, Johnstown (pickup-based; no home delivery stated)."
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://www.aspenmoonfarm.com/"
+  },
+  {
+   "field": "share_types",
+   "url": "https://www.aspenmoonfarm.com/"
+  }
+ ]
+}

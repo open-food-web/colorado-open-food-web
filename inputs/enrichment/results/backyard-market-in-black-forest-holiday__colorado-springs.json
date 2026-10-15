@@ -1,0 +1,32 @@
+{
+ "id": "backyard-market-in-black-forest-holiday__colorado-springs",
+ "name": "Backyard Market in Black Forest - Holiday",
+ "city": "Colorado Springs",
+ "official_website": "https://www.thebackyardmarkets.com",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 10:00am - 3:00pm",
+   "source_url": "https://www.thebackyardmarkets.com/upcoming-events/black-forest-holiday-market"
+  },
+  "Months Open": {
+   "value": "December",
+   "source_url": "https://www.thebackyardmarkets.com/upcoming-events/black-forest-holiday-market"
+  },
+  "Products": {
+   "value": "Over 45 local food and artisan vendors selling holiday gifts; food trucks, Campfire Coffee, WisCo Cheese fried curds, s'mores, and knife sharpening services",
+   "source_url": "https://www.thebackyardmarkets.com/upcoming-events/black-forest-holiday-market"
+  },
+  "Phone": {
+   "value": "719-747-2586",
+   "source_url": "https://www.thebackyardmarkets.com/upcoming-events/black-forest-holiday-market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/BackyardMarketinBF/",
+   "source_url": "https://www.thebackyardmarkets.com/upcoming-events"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/backyardmarketinbf/",
+   "source_url": "https://www.instagram.com/backyardmarketinbf/"
+  }
+ }
+}

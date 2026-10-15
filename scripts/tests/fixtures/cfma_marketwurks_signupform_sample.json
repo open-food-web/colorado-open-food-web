@@ -1,0 +1,1672 @@
+{
+ "id": "signup",
+ "name": "Market Membership Form",
+ "enabled": true,
+ "fields": [
+  {
+   "id": "bdf5e7055d227f07df7baa513ee7a033",
+   "type": "MultichoiceElement",
+   "name": "Application Status",
+   "label": "Application Status",
+   "options": [
+    {
+     "id": "0",
+     "name": "New Application"
+    },
+    {
+     "id": "1",
+     "name": "Renewing Application"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "e050581d84f74724f91614315af7320b",
+   "type": "MultichoiceElement",
+   "name": "Sponsor",
+   "label": "Are you applying as a sponsor ?",
+   "options": [
+    {
+     "id": "0",
+     "name": "No"
+    },
+    {
+     "id": "1",
+     "name": "Yes"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "6b35d8e11378f9e8ad2c96ee75bb9883",
+   "type": "HeadingElement",
+   "text": "Market Organization and Contacts"
+  },
+  {
+   "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+   "type": "TextElement",
+   "name": "Market name",
+   "label": "Sample text.",
+   "hidden": false,
+   "is_required": true,
+   "is_public": true
+  },
+  {
+   "id": "77021070db1952714cead930b1aa602b",
+   "type": "TextElement",
+   "name": "Market Organization",
+   "label": "Name of organization that manages this farmers market(s). Note: may be the same name as the farmers market. ",
+   "placeholder": null,
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "336e6b5987c7d08f56aab6dc33a21333",
+   "type": "MultichoiceElement",
+   "name": "Type of organization",
+   "label": "What type of entity is the Market Organization? Please select one from the list below.",
+   "options": [
+    {
+     "id": "0",
+     "name": "Municipal or County Government "
+    },
+    {
+     "id": "1",
+     "name": "Tribal Government"
+    },
+    {
+     "id": "2",
+     "name": "Co-operative"
+    },
+    {
+     "id": "3",
+     "name": "Private company (LLC/LLLC, S Corp, C Corp, or any other)"
+    },
+    {
+     "id": "4",
+     "name": "Unincorporated or informal group"
+    },
+    {
+     "id": "5",
+     "name": "Anchor institution  (Healthcare/Hospital, University, Extension) "
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": false
+  },
+  {
+   "id": "17842059b76764f97f2955caaccd9a76",
+   "type": "HeadingElement",
+   "text": "Primary Contact"
+  },
+  {
+   "id": "0002009da13505e1ece0064fcc73e28a",
+   "type": "TextElement",
+   "name": "Primary Contact",
+   "label": "Sample text.",
+   "hidden": false,
+   "is_required": true,
+   "is_public": false,
+   "auto_linking": false
+  },
+  {
+   "id": "00030085e3dc06d6c57fe7a51c55813e",
+   "type": "TextElement",
+   "name": "Email",
+   "label": "Email Address: This is the PRIMARY email address and will be used for all member communications.",
+   "placeholder": "Enter an email such as contact1@example.test",
+   "hidden": false,
+   "is_required": true,
+   "is_public": false,
+   "auto_linking": true,
+   "field_validation": "Email"
+  },
+  {
+   "id": "912542d1e24fffce02ee17fb6374527c",
+   "type": "TextElement",
+   "name": "Phone",
+   "label": "Phone - cell/direct phone number",
+   "placeholder": "Enter numeric characters",
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": "Numeric"
+  },
+  {
+   "id": "684f8eff3df327169b02ed8cb244031e",
+   "type": "TextElement",
+   "name": "Phone - work phone",
+   "label": "Phone - work phone",
+   "placeholder": "Enter numeric characters",
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": "Numeric"
+  },
+  {
+   "id": "fc3c20359fb03acdc5ef46d9596af5e3",
+   "type": "MultichoiceElement",
+   "name": "Share primary - directory",
+   "label": "Could we share the Primary Contact's phone number and e-mail with other CFMA members through a member directory?",
+   "options": [
+    {
+     "id": "0",
+     "name": "Yes"
+    },
+    {
+     "id": "1",
+     "name": "No"
+    },
+    {
+     "id": "2",
+     "name": "Phone only"
+    },
+    {
+     "id": "3",
+     "name": "E-mail only"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "819f433eaa70676b0bfc4f1f9faeef95",
+   "type": "HeadingElement",
+   "text": "Alternative Market Contact"
+  },
+  {
+   "id": "abeaea7669afc39d04e624182e353041",
+   "type": "ContentElement",
+   "text": "<p>Please provide name of an Alternative Contact in case the Primary Contact is not available.</p>",
+   "format": "html"
+  },
+  {
+   "id": "18367d34782ccd0743b5ab6daa2d9e70",
+   "type": "TextElement",
+   "name": "Alternative ",
+   "label": "Alternative market contact name:",
+   "placeholder": null,
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "123d6aaea481ffbd7bcdd5e0d2bf0c34",
+   "type": "TextElement",
+   "name": "Alternative Title",
+   "label": "Title or Role",
+   "placeholder": null,
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "3f6407364dbb18f042c613a0f26243c3",
+   "type": "TextElement",
+   "name": "Alternative Phone",
+   "label": "Phone",
+   "placeholder": "Enter numeric characters",
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": "Numeric"
+  },
+  {
+   "id": "4c1cce796cf733c89d826c75d7e59d19",
+   "type": "TextElement",
+   "name": "Alternative E-mail ",
+   "label": "E-mail address",
+   "placeholder": "Enter an email such as contact2@example.test",
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": true,
+   "field_validation": "Email"
+  },
+  {
+   "id": "8b73a4d0d620f035e2a62173eb3a16e6",
+   "type": "MultichoiceElement",
+   "name": "Alternative - directory",
+   "label": "Could we share the alternative contact's phone number and e-mail with other CFMA market members through a member directory?",
+   "options": [
+    {
+     "id": "0",
+     "name": "Yes"
+    },
+    {
+     "id": "1",
+     "name": "No"
+    },
+    {
+     "id": "2",
+     "name": "Phone only"
+    },
+    {
+     "id": "3",
+     "name": "E-mail only"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "0a3d5d292069298eb004a53d0a38b912",
+   "type": "HeadingElement",
+   "text": "Market Manager Contact"
+  },
+  {
+   "id": "6b434d98d85be3f3d750adcb382f2de3",
+   "type": "MultichoiceElement",
+   "name": "Check if same as Primary",
+   "label": "Please check if same as: ",
+   "options": [
+    {
+     "id": "0",
+     "name": "Primary Contact"
+    },
+    {
+     "id": "1",
+     "name": "Alternative Contact"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "6bed3122e4c064d285d6577879546bcc",
+   "type": "TextElement",
+   "name": "Manager name",
+   "label": "Name",
+   "placeholder": null,
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "fd50106e2b405d51fae39b06e77d0bae",
+   "type": "TextElement",
+   "name": "Manager phone",
+   "label": "Market Manager's direct phone",
+   "placeholder": null,
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "761606268f9b29edcc58be771ab455b3",
+   "type": "TextElement",
+   "name": "Manager e-mail ",
+   "label": "Market Manager's direct email:",
+   "placeholder": "Enter an email such as contact3@example.test",
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": true,
+   "field_validation": "Email"
+  },
+  {
+   "id": "97d7cca2aeb555b7c4eb408a94c445a9",
+   "type": "MultichoiceElement",
+   "name": "Manager - share Directory",
+   "label": "Could we share the market manager's phone number and e-mail with other CFMA members through a member directory?",
+   "options": [
+    {
+     "id": "0",
+     "name": "Yes"
+    },
+    {
+     "id": "1",
+     "name": "No"
+    },
+    {
+     "id": "2",
+     "name": "Phone only"
+    },
+    {
+     "id": "3",
+     "name": "E-mail only"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": false
+  },
+  {
+   "id": "8a15e87bf03737d17622833291e01bea",
+   "type": "TextElement",
+   "name": "Mailing Address",
+   "label": "Market Mailing Address",
+   "placeholder": "(Name, Address, City, State, Zip)",
+   "multiline": true,
+   "hidden": false,
+   "is_required": true,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "fb0aa09048120bdacd7c98e66beb973a",
+   "type": "ContentElement",
+   "text": "Sample text.",
+   "format": "html"
+  },
+  {
+   "id": "3f5763c68c47f23d9cb50ff0a4c657fc",
+   "type": "MultichoiceElement",
+   "name": "County",
+   "label": "County",
+   "options": [
+    {
+     "id": "0",
+     "name": "Select a County from the drop down list "
+    },
+    {
+     "id": "1",
+     "name": "Adams"
+    },
+    {
+     "id": "2",
+     "name": "Alamosa"
+    },
+    {
+     "id": "3",
+     "name": "Arapahoe"
+    },
+    {
+     "id": "4",
+     "name": "Archuleta"
+    },
+    {
+     "id": "5",
+     "name": "Baca"
+    },
+    {
+     "id": "6",
+     "name": "Bent"
+    },
+    {
+     "id": "7",
+     "name": "Boulder"
+    },
+    {
+     "id": "8",
+     "name": "Broomfield"
+    },
+    {
+     "id": "9",
+     "name": "Chaffee"
+    },
+    {
+     "id": "10",
+     "name": "Cheyenne"
+    },
+    {
+     "id": "11",
+     "name": "Clear Creek"
+    },
+    {
+     "id": "12",
+     "name": "Conejos"
+    },
+    {
+     "id": "13",
+     "name": "Costilla "
+    },
+    {
+     "id": "14",
+     "name": "Crowley"
+    },
+    {
+     "id": "15",
+     "name": "Delta"
+    },
+    {
+     "id": "16",
+     "name": "Denver"
+    },
+    {
+     "id": "17",
+     "name": "Dolores"
+    },
+    {
+     "id": "18",
+     "name": "Douglas"
+    },
+    {
+     "id": "19",
+     "name": "Eagle"
+    },
+    {
+     "id": "20",
+     "name": "El Paso"
+    },
+    {
+     "id": "21",
+     "name": "Elbert"
+    },
+    {
+     "id": "22",
+     "name": "Fremont"
+    },
+    {
+     "id": "23",
+     "name": "Garfield"
+    },
+    {
+     "id": "24",
+     "name": "Gilpin"
+    },
+    {
+     "id": "25",
+     "name": "Grand "
+    },
+    {
+     "id": "26",
+     "name": "Gunnison"
+    },
+    {
+     "id": "27",
+     "name": "Hinsdale"
+    },
+    {
+     "id": "28",
+     "name": "Huerfano"
+    },
+    {
+     "id": "29",
+     "name": "Jackson"
+    },
+    {
+     "id": "30",
+     "name": "Jefferson"
+    },
+    {
+     "id": "31",
+     "name": "Kiowa"
+    },
+    {
+     "id": "32",
+     "name": "Kit Carson"
+    },
+    {
+     "id": "33",
+     "name": "La Plata"
+    },
+    {
+     "id": "34",
+     "name": "Lake"
+    },
+    {
+     "id": "35",
+     "name": "Larimer"
+    },
+    {
+     "id": "36",
+     "name": "Las Animas"
+    },
+    {
+     "id": "37",
+     "name": "Lincoln"
+    },
+    {
+     "id": "38",
+     "name": "Logan"
+    },
+    {
+     "id": "39",
+     "name": "Mesa"
+    },
+    {
+     "id": "40",
+     "name": "Mineral"
+    },
+    {
+     "id": "41",
+     "name": "Moffat"
+    },
+    {
+     "id": "42",
+     "name": "Montezuma"
+    },
+    {
+     "id": "43",
+     "name": "Montrose"
+    },
+    {
+     "id": "44",
+     "name": "Morgan"
+    },
+    {
+     "id": "45",
+     "name": "Otero"
+    },
+    {
+     "id": "46",
+     "name": "Ouray"
+    },
+    {
+     "id": "47",
+     "name": "Park"
+    },
+    {
+     "id": "48",
+     "name": "Phillips"
+    },
+    {
+     "id": "49",
+     "name": "Pitkin"
+    },
+    {
+     "id": "50",
+     "name": "Prowers"
+    },
+    {
+     "id": "51",
+     "name": "Pueblo"
+    },
+    {
+     "id": "52",
+     "name": "Rio Blanco"
+    },
+    {
+     "id": "53",
+     "name": "Rio Grande"
+    },
+    {
+     "id": "54",
+     "name": "Routt"
+    },
+    {
+     "id": "55",
+     "name": "Saguache"
+    },
+    {
+     "id": "56",
+     "name": "San Juan"
+    },
+    {
+     "id": "57",
+     "name": "San Miguel"
+    },
+    {
+     "id": "58",
+     "name": "Sedgwick"
+    },
+    {
+     "id": "59",
+     "name": "Summit"
+    },
+    {
+     "id": "60",
+     "name": "Teller"
+    },
+    {
+     "id": "61",
+     "name": "Washington"
+    },
+    {
+     "id": "62",
+     "name": "Weld"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": true,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "1276fc283c90746940b2e36b0c98d995",
+   "type": "HeadingElement",
+   "text": "CFMA Member Market listserv/google group "
+  },
+  {
+   "id": "6b21f49f715d1ff00c328e9b4667cf6a",
+   "type": "ContentElement",
+   "text": "Sample text.",
+   "format": "html"
+  },
+  {
+   "id": "97a2cfd1efe04caef6cdc10c5c7aa623",
+   "type": "HeadingElement",
+   "text": "Market Locations: This information goes onto our 2026 CFMA Member Market Map"
+  },
+  {
+   "id": "d6436e6f282446eef61cf3102547a210",
+   "type": "ContentElement",
+   "text": "Sample text.",
+   "format": "html"
+  },
+  {
+   "id": "83235b3265e509e972a2983044651123",
+   "type": "LocationInput",
+   "name": "Market Location",
+   "label": "Sample text.",
+   "placeholder": "Type this in as your address and a google maps match will appear",
+   "hidden": false,
+   "is_required": true,
+   "is_public": true
+  },
+  {
+   "id": "0005b5220f6b5c8d1a8be40ab34cd082",
+   "type": "MultichoiceElement",
+   "name": "CFMA Membership",
+   "label": "Please select \"CFMA Farmers Market Members\"",
+   "options": [
+    {
+     "id": "0",
+     "name": "CFMA Farmers Market Members"
+    },
+    {
+     "id": "1",
+     "name": "Non-CFMA Members"
+    }
+   ],
+   "allow_multi": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": false
+  },
+  {
+   "id": "e176d270b08e2dcd1cafd7cc880e747e",
+   "type": "ContentElement",
+   "text": "Sample text.",
+   "format": "html"
+  },
+  {
+   "id": "3f21e1026219a717d0dc52fbd1305f0a",
+   "type": "MultichoiceElement",
+   "name": "Single/Multiple Locations",
+   "label": "Do you operate markets in more than one location?",
+   "options": [
+    {
+     "id": "1",
+     "name": "No"
+    },
+    {
+     "id": "0",
+     "name": "Yes"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "218d6307734d740411a89d6e3f61f0c6",
+   "type": "ContentElement",
+   "text": "Sample text.",
+   "format": "html"
+  },
+  {
+   "id": "512b7056248e314fa701e2ba804fe2d1",
+   "type": "MultichoiceElement",
+   "name": "Number of Markets",
+   "label": "In how many locations do you operate a market?",
+   "options": [
+    {
+     "id": "0",
+     "name": "One"
+    },
+    {
+     "id": "1",
+     "name": "Two"
+    },
+    {
+     "id": "2",
+     "name": "Three"
+    },
+    {
+     "id": "3",
+     "name": "Four"
+    },
+    {
+     "id": "4",
+     "name": "Five"
+    },
+    {
+     "id": "5",
+     "name": "Six"
+    },
+    {
+     "id": "6",
+     "name": "Seven"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": false
+  },
+  {
+   "id": "09ff1ab5ec777d8c841dd765934c9ccc",
+   "type": "MultichoiceElement",
+   "name": "Unique Vendors",
+   "label": "Membership dues:  How many unique vendors do you have at all of your markets combined? (how many different vendors total)?",
+   "options": [
+    {
+     "id": "0",
+     "name": "1-10 unique vendors* $60 annual dues"
+    },
+    {
+     "id": "1",
+     "name": "11-25 unique vendors* $120 annual dues"
+    },
+    {
+     "id": "2",
+     "name": "26-50 unique vendors* $180 annual dues"
+    },
+    {
+     "id": "3",
+     "name": "51+ unique vendors* $240 annual dues"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": false
+  },
+  {
+   "id": "9319f7e9a7b98ccefdd2e2a1d7c40225",
+   "type": "ContentElement",
+   "text": "<h3><strong>Marketing Platforms</strong></h3><p></p><p></p>",
+   "format": "html"
+  },
+  {
+   "id": "13272fae68f2624a84081aea7f751c98",
+   "type": "MultichoiceElement",
+   "name": "Other Marketing ",
+   "label": "How do you promote your market? ",
+   "options": [
+    {
+     "id": "0",
+     "name": "Website"
+    },
+    {
+     "id": "1",
+     "name": "E-Newsletter"
+    },
+    {
+     "id": "2",
+     "name": "Social Media"
+    },
+    {
+     "id": "3",
+     "name": "Word of Mouth"
+    },
+    {
+     "id": "4",
+     "name": "Signs "
+    },
+    {
+     "id": "5",
+     "name": "Flyers "
+    },
+    {
+     "id": "6",
+     "name": "Radio"
+    },
+    {
+     "id": "7",
+     "name": "Other"
+    }
+   ],
+   "allow_multi": true,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "f62e965db00442a348d9135bd305bed5",
+   "type": "TextElement",
+   "name": "Website   ",
+   "label": "Website    ",
+   "placeholder": "www.yourmarket.org",
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": true,
+   "auto_linking": true,
+   "field_validation": null
+  },
+  {
+   "id": "370864dddf9e37fab5ad68edf591d6c7",
+   "type": "TextElement",
+   "name": "Facebook",
+   "label": "Facebook",
+   "placeholder": "copy and paste your URL (list for all markets you operate)    For example, www.facebook.com/coloradofarmers",
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": true,
+   "auto_linking": true,
+   "field_validation": null
+  },
+  {
+   "id": "39daa4c2f590f264c5da90dbeffeebac",
+   "type": "TextElement",
+   "name": "Instagram",
+   "label": "Instagram",
+   "placeholder": "list your handle \"@\" (list for all markets you operate)  For example, @cofarmersmarkets",
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": true,
+   "auto_linking": true,
+   "field_validation": null
+  },
+  {
+   "id": "61b251d5dd9ba85d367550bbe4c5fb9c",
+   "type": "TextElement",
+   "name": "Twitter",
+   "label": "Twitter",
+   "placeholder": "list your handle \"@\"  (list for all markets you operate)",
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": true,
+   "field_validation": null
+  },
+  {
+   "id": "8a8089f041938626f267766037ddc776",
+   "type": "TextElement",
+   "name": "Other Social Media",
+   "label": "Other Social Media",
+   "placeholder": null,
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": true,
+   "field_validation": null
+  },
+  {
+   "id": "ca8c0aa5944f5dcd7eaaedf2409a0b1e",
+   "type": "HeadingElement",
+   "text": "Market Details"
+  },
+  {
+   "id": "000700cb606f0d8c2f5e8da176d8c19c",
+   "type": "TextElement",
+   "name": "Market Description",
+   "label": "Please provide a robust Market Description. Write what you want the public to read about your market! This will be on your market profile on CFMA's website. ",
+   "multiline": true,
+   "hidden": false,
+   "is_required": true,
+   "is_public": false
+  },
+  {
+   "id": "2b21f0a4ce0a2fd585b95a478a91ef52",
+   "type": "TextElement",
+   "name": "Number Vendors",
+   "label": "Average Number of Vendors at Height of Season",
+   "placeholder": null,
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "5aa28393ecfcf817cd9d691849ecf82b",
+   "type": "TextElement",
+   "name": "Farm vendors",
+   "label": "Total number of farm vendors - vegetables, fruit, meat, eggs, dairy, fiber – all vendors selling raw agricultural products",
+   "placeholder": null,
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "ede36bd11adbf23c029fe33863a623de",
+   "type": "HeadingElement",
+   "text": "Info that is searchable on CFMA Market Map"
+  },
+  {
+   "id": "ee4b315d73f276469346c08d6a277d52",
+   "type": "MultichoiceElement",
+   "name": "Market Day(s)",
+   "label": "Please select DAY(s) of the Week when this Farmers Market is Open",
+   "options": [
+    {
+     "id": "0",
+     "name": "Monday"
+    },
+    {
+     "id": "1",
+     "name": "Tuesday"
+    },
+    {
+     "id": "2",
+     "name": "Wednesday"
+    },
+    {
+     "id": "3",
+     "name": "Thursday"
+    },
+    {
+     "id": "4",
+     "name": "Friday"
+    },
+    {
+     "id": "5",
+     "name": "Saturday"
+    },
+    {
+     "id": "6",
+     "name": "Sunday"
+    }
+   ],
+   "allow_multi": true,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": true
+  },
+  {
+   "id": "ec5841e3ea42d31142d0c3836780da19",
+   "type": "MultichoiceElement",
+   "name": "Months Open",
+   "label": "Please select any MONTH when Farmers Market is Open at this location. If the market is only open for part of the month, please include that month. ",
+   "options": [
+    {
+     "id": "0",
+     "name": "January"
+    },
+    {
+     "id": "1",
+     "name": "February"
+    },
+    {
+     "id": "2",
+     "name": "March"
+    },
+    {
+     "id": "3",
+     "name": "April"
+    },
+    {
+     "id": "4",
+     "name": "May"
+    },
+    {
+     "id": "5",
+     "name": "June"
+    },
+    {
+     "id": "6",
+     "name": "July"
+    },
+    {
+     "id": "7",
+     "name": "August"
+    },
+    {
+     "id": "8",
+     "name": "September"
+    },
+    {
+     "id": "9",
+     "name": "October"
+    },
+    {
+     "id": "10",
+     "name": "November"
+    },
+    {
+     "id": "11",
+     "name": "December"
+    }
+   ],
+   "allow_multi": true,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": true
+  },
+  {
+   "id": "e6062673a70b2c14560c76fa0c785f21",
+   "type": "TextElement",
+   "name": "Market Starts",
+   "label": "Date that this Farmers Market's Season starts",
+   "placeholder": "Enter date as MM/DD/YYYY",
+   "multiline": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": true,
+   "auto_linking": false,
+   "field_validation": "Date_USA"
+  },
+  {
+   "id": "bd528314748443ce6918b54223377e47",
+   "type": "TextElement",
+   "name": "Market Ends",
+   "label": "Date that this Farmers Market's Season ends",
+   "placeholder": "Enter date as MM/DD/YYYY",
+   "multiline": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": true,
+   "auto_linking": false,
+   "field_validation": "Date_USA"
+  },
+  {
+   "id": "feeae8003d238e59e7d8231026ac08f2",
+   "type": "TextElement",
+   "name": "Market Opens",
+   "label": "Time that this Farmers Market opens",
+   "placeholder": "Enter time such as 11:41am",
+   "multiline": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": true,
+   "auto_linking": false,
+   "field_validation": "Time_12h"
+  },
+  {
+   "id": "60fac8c64b5dd65cad318156e8e312de",
+   "type": "TextElement",
+   "name": "Market Closes",
+   "label": "Time that this Farmers Market closes",
+   "placeholder": "Enter time such as 11:41am",
+   "multiline": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": true,
+   "auto_linking": false,
+   "field_validation": "Time_12h"
+  },
+  {
+   "id": "d220b580afea92e01b66620254b9c0f4",
+   "type": "MultichoiceElement",
+   "name": "Programs",
+   "label": "Which of the following programs do you offer at your market?",
+   "options": [
+    {
+     "id": "0",
+     "name": "SNAP"
+    },
+    {
+     "id": "1",
+     "name": "Double Up"
+    },
+    {
+     "id": "2",
+     "name": "CO Produce Bonus "
+    },
+    {
+     "id": "3",
+     "name": "County WIC incentive program"
+    },
+    {
+     "id": "4",
+     "name": "Senior incentive program"
+    }
+   ],
+   "allow_multi": true,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": true
+  },
+  {
+   "id": "26aa09dc15d4ce767f61e9cf88709523",
+   "type": "HeadingElement",
+   "text": "CFMA Membership"
+  },
+  {
+   "id": "ade6b11bdd39fcbda832bfc776321cdb",
+   "type": "TextElement",
+   "name": "2025 Testimonials",
+   "label": "Returning members: What did you value most about being a member of CFMA in 2025? What do you find most helpful? ",
+   "placeholder": null,
+   "multiline": true,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "6ecb22755cd57bbae94eef41f06ca225",
+   "type": "TextElement",
+   "name": "Testimonials New",
+   "label": "New members: Why did you decide to join CFMA as a member?",
+   "placeholder": null,
+   "multiline": true,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "a2813a946d45baf697e5a0873d746400",
+   "type": "TextElement",
+   "name": "Challenges and Opps",
+   "label": "What challenges and opportunities do you anticipate for your farmers market(s) in 2026?",
+   "placeholder": null,
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "d9a6857a454c62bedf8089023368bed9",
+   "type": "MultichoiceElement",
+   "name": "Assitance Needed ",
+   "label": "What do you need support for in the upcoming year?",
+   "options": [
+    {
+     "id": "0",
+     "name": "Marketing/Outreach"
+    },
+    {
+     "id": "1",
+     "name": "Market Insurance information"
+    },
+    {
+     "id": "2",
+     "name": "SNAP"
+    },
+    {
+     "id": "3",
+     "name": "Double-Up Food Bucks"
+    },
+    {
+     "id": "4",
+     "name": "Market management best practices"
+    },
+    {
+     "id": "5",
+     "name": "Food Safety"
+    },
+    {
+     "id": "6",
+     "name": "Resource-sharing and networking with other markets"
+    },
+    {
+     "id": "7",
+     "name": "CBD/hemp products guidance"
+    },
+    {
+     "id": "8",
+     "name": "Market/vendor business development"
+    },
+    {
+     "id": "9",
+     "name": "Market safety"
+    },
+    {
+     "id": "10",
+     "name": "Equity, diversity and inclusion at farmers markets"
+    },
+    {
+     "id": "11",
+     "name": "Financial/accounting training"
+    },
+    {
+     "id": "12",
+     "name": "Other"
+    }
+   ],
+   "allow_multi": true,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "59323b1137491d6fbaa2c921245b76da",
+   "type": "TextElement",
+   "name": "Other Assistance ",
+   "label": "What other assistance might you need?",
+   "placeholder": null,
+   "multiline": true,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "d63ed5f581ee6f30ae6536926d634b08",
+   "type": "HeadingElement",
+   "text": "Market Images"
+  },
+  {
+   "id": "26a28bf58e7948fd0694d9101e1e832a",
+   "type": "MultichoiceElement",
+   "name": "Image permission",
+   "label": "Sample text.",
+   "options": [
+    {
+     "id": "0",
+     "name": "Yes"
+    },
+    {
+     "id": "1",
+     "name": "No"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": false
+  },
+  {
+   "id": "21be3f84601ce2a5d1ded0f1894eae95",
+   "type": "MultichoiceElement",
+   "name": "Social media image permission",
+   "label": "Sample text.",
+   "options": [
+    {
+     "id": "0",
+     "name": "Yes"
+    },
+    {
+     "id": "1",
+     "name": "No"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "0008002da6674272a68e0565e2491535",
+   "type": "FileUploadElement",
+   "name": "Feature Market Image",
+   "label": "Sample text.",
+   "image_only": true,
+   "hidden": false,
+   "is_required": true,
+   "is_public": true
+  },
+  {
+   "id": "000900fefc04c45226e0e336d992515b",
+   "type": "FileUploadElement",
+   "name": "Market Image #2",
+   "label": "Market Image #2",
+   "image_only": true,
+   "hidden": false,
+   "is_required": false,
+   "is_public": true
+  },
+  {
+   "id": "0010003414b4c75356a5857158a00112",
+   "type": "FileUploadElement",
+   "name": "Market Image #3",
+   "label": "Market Image #3",
+   "image_only": true,
+   "hidden": false,
+   "is_required": false,
+   "is_public": true
+  },
+  {
+   "id": "00110022c1e99bc62dee47a291ce6b7c",
+   "type": "FileUploadElement",
+   "name": "Market Image #4",
+   "label": "Market Image #4",
+   "image_only": true,
+   "hidden": false,
+   "is_required": false,
+   "is_public": true
+  },
+  {
+   "id": "918c0db06deda4375cd8c617ea577826",
+   "type": "FileUploadElement",
+   "name": "Logo",
+   "label": "Upload your market logo here ",
+   "image_only": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "5a412ccf72b213211636d05a21c86707",
+   "type": "ContentElement",
+   "text": "Sample text.",
+   "format": "html"
+  },
+  {
+   "id": "37b46e8b540e9b49402bdfb53e1deb98",
+   "type": "MultichoiceElement",
+   "name": "SNAP, Yes",
+   "label": "Do you need SNAP Bucks?  ",
+   "options": [
+    {
+     "id": "0",
+     "name": "No"
+    },
+    {
+     "id": "1",
+     "name": "Yes"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "a47922edd66edc52dd15cedd6a97a60d",
+   "type": "TextElement",
+   "name": "SNAP Requested",
+   "label": "Sample text.",
+   "placeholder": null,
+   "multiline": true,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "bc8cb5924322c9f25526d5c0a62ed954",
+   "type": "MultichoiceElement",
+   "name": "Market Bucks needed",
+   "label": "Do you need Market Bucks? ",
+   "options": [
+    {
+     "id": "0",
+     "name": "No"
+    },
+    {
+     "id": "1",
+     "name": "Yes"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": false,
+   "condensed": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false
+  },
+  {
+   "id": "9f638657d7d8a4872a2f8de1b9a71473",
+   "type": "TextElement",
+   "name": "Market Bucks Needed ",
+   "label": "Sample text.",
+   "placeholder": null,
+   "multiline": false,
+   "hidden": false,
+   "is_required": false,
+   "is_public": false,
+   "auto_linking": false,
+   "field_validation": null
+  },
+  {
+   "id": "a7e35dfad7a6d9ceb164b13b99ec5ef0",
+   "type": "ContentElement",
+   "text": "Sample text.",
+   "format": "html"
+  },
+  {
+   "id": "75449587a48f74ce841806c9d878c98b",
+   "type": "MultichoiceElement",
+   "name": "Cost recovery ",
+   "label": "How much would you like to contribute towards your SNAP and Market Bucks this year? ",
+   "options": [
+    {
+     "id": "0",
+     "name": "Please select from one of the following options:"
+    },
+    {
+     "id": "1",
+     "name": "Contribute +4"
+    },
+    {
+     "id": "2",
+     "name": "Contribute +7.50"
+    },
+    {
+     "id": "3",
+     "name": "Contribute +15"
+    },
+    {
+     "id": "4",
+     "name": "Contribute +20"
+    },
+    {
+     "id": "5",
+     "name": "Contribute +25"
+    },
+    {
+     "id": "6",
+     "name": "Contribute +30"
+    },
+    {
+     "id": "7",
+     "name": "Contribute +40"
+    },
+    {
+     "id": "8",
+     "name": "Contribute +50"
+    },
+    {
+     "id": "9",
+     "name": "Contribute +60"
+    },
+    {
+     "id": "10",
+     "name": "Contribtue +70"
+    },
+    {
+     "id": "11",
+     "name": "Contribute +80"
+    },
+    {
+     "id": "12",
+     "name": "Contribute +90"
+    },
+    {
+     "id": "13",
+     "name": "Contribute +100"
+    },
+    {
+     "id": "14",
+     "name": "Need bucks for free"
+    },
+    {
+     "id": "15",
+     "name": "Not ordering bucks this year"
+    }
+   ],
+   "allow_multi": false,
+   "disable_select_all": true,
+   "condensed": false,
+   "hidden": false,
+   "is_required": true,
+   "is_public": false
+  },
+  {
+   "id": "000400c4beab3e757e2cf519c3d21cde",
+   "type": "MarketSelectorElement",
+   "name": "Market(s)",
+   "label": "Please check the box below to allow registration and selected SNAP or Market Bucks contribution",
+   "hidden": false,
+   "is_required": true,
+   "is_public": false,
+   "disableSelectAll": false,
+   "calendarView": false,
+   "hiddenInForm": false
+  },
+  {
+   "id": "ebcf07ec222b4284d9363f1c3e2a5327",
+   "type": "ContentElement",
+   "text": "Sample text.",
+   "format": "html"
+  },
+  {
+   "id": "001300167bacf314455fcdc43c8c6978",
+   "type": "BooleanElement",
+   "name": "Agree",
+   "label": "I agree that all information on this form that I have submitted is correct to the best of my knowledge.",
+   "default_value": false,
+   "use_checkbox": false,
+   "hidden": false,
+   "require_acceptance": true,
+   "is_public": false
+  }
+ ],
+ "display_price": true,
+ "post_submit_content": "<p>Thank you. Your information has been submitted successfully. Look for an e-mail with next steps regarding your membership. </p>",
+ "revision": 0,
+ "groups": [
+  {
+   "id": "e796e76c9e7b83eeb670ed083d967d17",
+   "title": "Other APP Status",
+   "fields": [
+    "0eab79fb006514600d3be5357f8a3dae"
+   ],
+   "criteria": {
+    "field_id": "bdf5e7055d227f07df7baa513ee7a033",
+    "field_value": "Other"
+   }
+  },
+  {
+   "id": "551ff76d3f4093a2b7504e25bb239c3a",
+   "title": "Other Assistance ",
+   "fields": [
+    "59323b1137491d6fbaa2c921245b76da"
+   ],
+   "criteria": {
+    "field_id": "d9a6857a454c62bedf8089023368bed9",
+    "field_value": "12"
+   }
+  },
+  {
+   "id": "5b621af39df40e1dafa9e83ef4e82ea4",
+   "title": "SNAP Bucks needed",
+   "fields": [
+    "a47922edd66edc52dd15cedd6a97a60d"
+   ],
+   "criteria": {
+    "field_id": "37b46e8b540e9b49402bdfb53e1deb98",
+    "field_value": "1"
+   }
+  },
+  {
+   "id": "0659fdb3a5342c07eb401945ad897826",
+   "title": "Market Bucks",
+   "fields": [
+    "9f638657d7d8a4872a2f8de1b9a71473"
+   ],
+   "criteria": {
+    "field_id": "bc8cb5924322c9f25526d5c0a62ed954",
+    "field_value": "1"
+   }
+  },
+  {
+   "id": "dc0ca91eb8b44ce2b34cf33173ab1877",
+   "title": "Multiple Market locations",
+   "fields": [
+    "218d6307734d740411a89d6e3f61f0c6"
+   ],
+   "criteria": {
+    "field_id": "3f21e1026219a717d0dc52fbd1305f0a",
+    "field_value": "0"
+   }
+  }
+ ],
+ "allow_renewal": true,
+ "feeOption": "percentage",
+ "feeValue": 0,
+ "show_preamble": true,
+ "preamble_content": "Sample text.",
+ "send_post_submit_email": true,
+ "admin_notify": true,
+ "filter_fields": [
+  "3f5763c68c47f23d9cb50ff0a4c657fc",
+  "ee4b315d73f276469346c08d6a277d52",
+  "ec5841e3ea42d31142d0c3836780da19",
+  "d220b580afea92e01b66620254b9c0f4"
+ ],
+ "created_at": "2022-11-17T22:10:15.943Z",
+ "modified_at": "2026-02-13T17:09:45.671Z",
+ "post_submit_email_subject": "Thank you for your membership with CFMA! ",
+ "post_submit_email_content": "Sample text."
+}

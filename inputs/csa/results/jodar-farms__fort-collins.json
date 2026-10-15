@@ -1,0 +1,72 @@
+{
+ "id": "jodar-farms__fort-collins",
+ "name": "Jodar Farms",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://www.Jodarfarms.com/csamemberships",
+ "signup_opens": null,
+ "season_start": "2026-12-01",
+ "season_end": "2027-04-30",
+ "season_year": 2027,
+ "season_precision": "month",
+ "share_types": [
+  "Meat",
+  "Eggs"
+ ],
+ "frequency": "Other",
+ "price": "Prepaid store credit: XS $240, S $345, M $455, L $675, plus $15 membership fee",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Front Range pickup location",
+   "address": null,
+   "town": "Fort Collins",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Front Range pickup location",
+   "address": null,
+   "town": "Longmont",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Front Range pickup location",
+   "address": null,
+   "town": "Denver",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Front Range pickup location",
+   "address": null,
+   "town": "Boulder",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Weekly drop-offs at Front Range pickup locations; no home delivery stated"
+ },
+ "evidence": [
+  {
+   "field": "signup",
+   "url": "https://www.Jodarfarms.com/csamemberships"
+  },
+  {
+   "field": "price",
+   "url": "https://www.Jodarfarms.com/csamemberships"
+  }
+ ]
+}

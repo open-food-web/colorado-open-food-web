@@ -1,0 +1,22 @@
+{
+ "id": "the-lettucehead-food-company__buena-vista",
+ "name": "The Lettucehead Food Company",
+ "city": "Buena Vista",
+ "official_website": "http://www.thelettucehead.com",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Hours": {
+   "value": "Mon-Sat: 9:00am - 6:00pm; Sun: 10:00am - 4:00pm",
+   "source_url": "http://www.thelettucehead.com"
+  },
+  "Address": {
+   "value": "545 US Highway 24 N, Buena Vista, CO",
+   "source_url": "http://www.thelettucehead.com"
+  },
+  "Phone": {
+   "value": "(719) 395-2649",
+   "source_url": "http://www.thelettucehead.com"
+  }
+ }
+}

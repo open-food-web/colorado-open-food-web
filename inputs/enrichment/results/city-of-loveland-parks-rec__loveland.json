@@ -1,0 +1,48 @@
+{
+ "id": "city-of-loveland-parks-rec__loveland",
+ "name": "City of Loveland Parks & Rec",
+ "city": "Loveland",
+ "official_website": "https://www.lovgov.org/farmersmarket",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 9:00am - 1:00pm",
+   "source_url": "https://www.lovgov.org/farmersmarket"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://www.lovgov.org/farmersmarket"
+  },
+  "Products": {
+   "value": "Fresh, locally grown or raised produce, meats, poultry, dairy, and artisan goods; last Sunday of each month adds an Artist Market with 15 additional local artist vendors",
+   "source_url": "https://www.lovgov.org/farmersmarket"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.lovgov.org/farmersmarket"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.lovgov.org/farmersmarket"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/CityofLovelandFarmersMarket/",
+   "source_url": "https://www.facebook.com/CityofLovelandFarmersMarket/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/lovelandcofarmersmarket/",
+   "source_url": "https://www.instagram.com/lovelandcofarmersmarket/"
+  },
+  "ADA Accessible": {
+   "value": "Yes",
+   "source_url": "https://www.lovgov.org/farmersmarket"
+  },
+  "Address": {
+   "value": "700 S. Railroad Ave.",
+   "source_url": "https://www.lovgov.org/farmersmarket"
+  },
+  "Website": {
+   "value": "https://www.lovgov.org/farmersmarket",
+   "source_url": "https://www.lovgov.org/farmersmarket"
+  }
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "id": "guidestone-colorado__salida",
+ "name": "Guidestone Colorado",
+ "city": "Salida",
+ "official_website": "http://www.GuidestoneColorado.org",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Phone": {
+   "value": "719.239.0955",
+   "source_url": "https://www.guidestonecolorado.org/"
+  },
+  "Email": {
+   "value": "info@guidestonecolorado.org",
+   "source_url": "https://www.guidestonecolorado.org/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/guidestonecolorado/",
+   "source_url": "https://www.guidestonecolorado.org/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/guidestonecolorado/",
+   "source_url": "https://www.guidestonecolorado.org/"
+  }
+ }
+}

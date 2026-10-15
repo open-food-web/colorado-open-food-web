@@ -1,0 +1,32 @@
+{
+ "id": "rocky-mountain-garlic__salida",
+ "name": "Rocky Mountain Garlic",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "http://www.rockymountaingarlic.net/csa",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [],
+ "frequency": null,
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "http://www.rockymountaingarlic.net/csa"
+  }
+ ]
+}

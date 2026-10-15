@@ -1,0 +1,16 @@
+{
+ "id": "downtown-mead-farmers-market__mead",
+ "name": "Downtown Mead Farmers' Market",
+ "city": "Mead",
+ "official_website": "https://www.townofmead.org/parksandrec/page/downtown-mead-farmers-market",
+ "fields": {
+  "Website": {
+   "value": "https://www.townofmead.org/parksandrec/page/downtown-mead-farmers-market",
+   "source_url": "https://www.townofmead.org/parksandrec/page/downtown-mead-farmers-market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/DMFM2017/",
+   "source_url": "https://www.facebook.com/DMFM2017/"
+  }
+ }
+}

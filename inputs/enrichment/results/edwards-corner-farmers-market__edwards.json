@@ -1,0 +1,40 @@
+{
+ "id": "edwards-corner-farmers-market__edwards",
+ "name": "Edwards Corner Farmers' Market",
+ "city": "Edwards",
+ "official_website": "",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 9:00am - 1:00pm",
+   "source_url": "https://www.edwards-colorado.com/farmer-s-market"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://www.edwards-colorado.com/farmer-s-market"
+  },
+  "Products": {
+   "value": "Fresh, local and organic foods, crafts and other products from more than 30 vendors",
+   "source_url": "https://www.edwards-colorado.com/farmer-s-market"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.edwards-colorado.com/farmer-s-market"
+  },
+  "Phone": {
+   "value": "414-975-5952",
+   "source_url": "https://www.edwards-colorado.com/farmer-s-market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/edwardsfarmersmarket/",
+   "source_url": "https://www.edwards-colorado.com/farmer-s-market"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/edwardsfarmersmarket/",
+   "source_url": "https://www.edwards-colorado.com/farmer-s-market"
+  },
+  "Address": {
+   "value": "57 Edwards Access Rd, Edwards, CO 81632 (Edwards West Plaza)",
+   "source_url": "https://www.edwards-colorado.com/farmer-s-market"
+  }
+ }
+}

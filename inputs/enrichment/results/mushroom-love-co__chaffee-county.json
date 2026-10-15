@@ -1,0 +1,18 @@
+{
+ "id": "mushroom-love-co__chaffee-county",
+ "name": "Mushroom Love Co",
+ "city": "",
+ "official_website": "http://www.mushroomloveco.com",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Products": {
+   "value": "Gourmet mushrooms (lion's mane, king oyster), mushroom growing supplies, classes, CSA membership",
+   "source_url": "https://www.mushroomloveco.com/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/Mushroom-Love-Co-334280667437315/",
+   "source_url": "https://www.mushroomloveco.com/"
+  }
+ }
+}

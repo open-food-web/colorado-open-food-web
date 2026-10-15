@@ -1,0 +1,26 @@
+{
+ "id": "headwater-farms__chaffee-county",
+ "name": "Headwater Farms",
+ "city": "",
+ "official_website": "https://www.headwaterfarmco.com/",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Phone": {
+   "value": "(719) 322-8737",
+   "source_url": "https://www.headwaterfarmco.com/contactus"
+  },
+  "Email": {
+   "value": "maddychance@headwaterfarmco.com",
+   "source_url": "https://www.headwaterfarmco.com/contactus"
+  },
+  "Instagram": {
+   "value": "headwater_farms",
+   "source_url": "https://www.headwaterfarmco.com/"
+  },
+  "Products": {
+   "value": "Fresh produce, wildflowers, pumpkins (pumpkin patch), CSA shares",
+   "source_url": "https://www.headwaterfarmco.com/"
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "id": "orchard-valley-farms-market-black-bridge-winery__paonia",
+ "name": "Orchard Valley Farms & Market.   Black Bridge Winery",
+ "city": "Paonia",
+ "official_website": "https://orchardvalleyfarms.com",
+ "fields": {
+  "Hours": {
+   "value": "Daily: 10:00am - 6:00pm",
+   "source_url": "https://orchardvalleyfarms.com/visit"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://orchardvalleyfarms.com/visit"
+  },
+  "Products": {
+   "value": "U-pick raspberries, cherries, peaches, pumpkins, fresh fruits and vegetables, wine grapes, Black Bridge wines, balsamic vinegars, infused olive oils, jams, salsas, mustards, chutneys, honey, jerky, cheese, pickles, Black Bridge Beef, jewelry, decor and yard sculpture",
+   "source_url": "https://orchardvalleyfarms.com/farm-market"
+  },
+  "Phone": {
+   "value": "970-527-6838",
+   "source_url": "https://orchardvalleyfarms.com"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/OrchardValleyFarms/",
+   "source_url": "https://www.facebook.com/OrchardValleyFarms/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/orchardvalleyfarms/",
+   "source_url": "https://www.instagram.com/orchardvalleyfarms/"
+  }
+ }
+}

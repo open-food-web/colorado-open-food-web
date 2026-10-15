@@ -1,0 +1,32 @@
+{
+ "id": "downtown-sunday-market__colorado-springs",
+ "name": "Downtown Sunday Market",
+ "city": "Colorado Springs",
+ "official_website": "https://huntandgathercos.com/pages/sunday-market",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 9:00am - 2:00pm",
+   "source_url": "https://www.downtowncs.com/event/sunday-market-in-acacia-park/2026-05-10/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://huntandgathercos.com/pages/sunday-market"
+  },
+  "Products": {
+   "value": "Farm-fresh food, handcrafted goods, and small-batch creations from local makers, bakers, growers, and doers",
+   "source_url": "https://huntandgathercos.com/pages/sunday-market"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.downtowncs.com/event/sunday-market-in-acacia-park/2026-05-10/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/profile.php?id=61574759233647",
+   "source_url": "https://www.downtowncs.com/event/sunday-market-in-acacia-park/2026-05-10/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/huntandgathercos",
+   "source_url": "https://huntandgathercos.com/pages/sunday-market"
+  }
+ }
+}

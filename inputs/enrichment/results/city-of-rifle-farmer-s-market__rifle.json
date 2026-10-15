@@ -1,0 +1,40 @@
+{
+ "id": "city-of-rifle-farmer-s-market__rifle",
+ "name": "City of Rifle Farmer's Market",
+ "city": "Rifle",
+ "official_website": "https://riflefarmersmarket.com/",
+ "fields": {
+  "Hours": {
+   "value": "Fri: 4:00pm - 8:00pm",
+   "source_url": "https://riflefarmersmarket.com/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://riflefarmersmarket.com/"
+  },
+  "Products": {
+   "value": "Fresh produce and artisan goods from Western Slope vendors, including local farms, artisan vendors, arts & crafts, food trucks, and beer & wine",
+   "source_url": "https://riflefarmersmarket.com/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://riflefarmersmarket.com/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/riflefarmersmarket",
+   "source_url": "https://riflefarmersmarket.com/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/riflefarmersmarket",
+   "source_url": "https://riflefarmersmarket.com/"
+  },
+  "Address": {
+   "value": "Heinze Park, 600 Railroad Avenue, Rifle, CO 81650",
+   "source_url": "https://riflefarmersmarket.com/"
+  },
+  "Website": {
+   "value": "https://riflefarmersmarket.com/",
+   "source_url": "https://riflefarmersmarket.com/"
+  }
+ }
+}

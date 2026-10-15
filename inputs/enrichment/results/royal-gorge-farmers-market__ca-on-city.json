@@ -1,0 +1,32 @@
+{
+ "id": "royal-gorge-farmers-market__ca-on-city",
+ "name": "Royal Gorge Farmers Market",
+ "city": "Cañon City",
+ "official_website": "https://www.royalgorgechamberalliance.org/royal-gorge-farmers-market/",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 9:00am - 1:00pm",
+   "source_url": "https://www.royalgorgechamberalliance.org/royal-gorge-farmers-market/"
+  },
+  "Months Open": {
+   "value": "July, August, September",
+   "source_url": "https://www.royalgorgechamberalliance.org/royal-gorge-farmers-market/"
+  },
+  "Products": {
+   "value": "Fresh produce, handmade goods, and unique crafts (local produce, baked goods, specialty foods, farm products)",
+   "source_url": "https://www.royalgorgechamberalliance.org/royal-gorge-farmers-market/"
+  },
+  "Email": {
+   "value": "foundation@royalgorgechamberalliance.org",
+   "source_url": "https://www.royalgorgechamberalliance.org/royal-gorge-farmers-market/"
+  },
+  "Phone": {
+   "value": "(719) 275-2331",
+   "source_url": "https://www.royalgorgechamberalliance.org/royal-gorge-farmers-market/"
+  },
+  "Address": {
+   "value": "816 Royal Gorge Blvd, Cañon City, CO 81212 (Gateway Depot and Plaza, corner of US Hwy 50 and Hwy 115)",
+   "source_url": "https://marketspread.com/market/30698/royal-gorge-farmers-market/"
+  }
+ }
+}

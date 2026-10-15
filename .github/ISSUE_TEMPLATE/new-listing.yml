@@ -1,0 +1,43 @@
+name: New listing
+description: Suggest a producer, market or outlet that is missing
+title: "New listing: "
+labels: ["new-listing"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please only share business information that is already public. Do not include personal
+        details or private addresses.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Producer (farm, ranch, orchard, maker, winery)
+        - Market
+        - Outlet (restaurant, grocer, farm store, garden center)
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Town or county
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Public link
+      description: The business's website, social page or a directory listing.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else we should know?

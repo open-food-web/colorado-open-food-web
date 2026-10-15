@@ -1,0 +1,44 @@
+{
+ "id": "aspen-saturday-market__aspen",
+ "name": "Aspen Saturday Market",
+ "city": "Aspen",
+ "official_website": "https://aspen.gov/180/Aspen-Saturday-Market",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 8:30am - 2:00pm (Jun 6 - Sep 4); Sat: 9:00am - 2:00pm (Sep 5 - Oct 3)",
+   "source_url": "https://aspen.gov/180/Aspen-Saturday-Market"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://aspen.gov/180/Aspen-Saturday-Market"
+  },
+  "Products": {
+   "value": "Only Colorado made, grown and produced items (no brokers): produce, fruits, vegetables, bread, meats, jams, artisan products, sculptures, paintings, plus a food court and petting zoo",
+   "source_url": "https://aspenspecialevents.com/events/saturday-market"
+  },
+  "Email": {
+   "value": "aspensaturdaymarket@gmail.com",
+   "source_url": "https://aspenspecialevents.com/events/saturday-market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/AspenSaturdayMarket/",
+   "source_url": "https://www.facebook.com/AspenSaturdayMarket/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/aspensaturdaymarket/",
+   "source_url": "https://www.instagram.com/aspensaturdaymarket/"
+  },
+  "Phone": {
+   "value": "(970) 429-2093",
+   "source_url": "https://aspenspecialevents.com/events/saturday-market"
+  },
+  "Address": {
+   "value": "Downtown Aspen: between S. Hunter St, E. Hopkins Ave & E. Hyman Ave, Aspen, CO 81611",
+   "source_url": "https://aspenspecialevents.com/events/saturday-market"
+  },
+  "Website": {
+   "value": "https://aspen.gov/180/Aspen-Saturday-Market",
+   "source_url": "https://aspen.gov/180/Aspen-Saturday-Market"
+  }
+ }
+}

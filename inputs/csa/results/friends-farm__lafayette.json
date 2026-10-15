@@ -1,0 +1,38 @@
+{
+ "id": "friends-farm__lafayette",
+ "name": "Friends Farm",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://form.jotform.com/241163913848057",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": null,
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "offers_csa",
+   "url": "https://www.friendsfarm.org"
+  },
+  {
+   "field": "signup_url",
+   "url": "https://www.friendsfarm.org/food/"
+  }
+ ]
+}

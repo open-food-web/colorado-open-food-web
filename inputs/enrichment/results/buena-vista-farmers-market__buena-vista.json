@@ -1,0 +1,44 @@
+{
+ "id": "buena-vista-farmers-market__buena-vista",
+ "name": "Buena Vista Farmers' Market",
+ "city": "Buena Vista",
+ "official_website": "https://www.foodshedalliance.com/",
+ "fields": {
+  "Website": {
+   "value": "https://www.foodshedalliance.com/",
+   "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/FoodshedAllianceCO/",
+   "source_url": "https://www.facebook.com/FoodshedAllianceCO/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/buena_vista_farmers_market/",
+   "source_url": "https://www.instagram.com/buena_vista_farmers_market/"
+  },
+  "Email": {
+   "value": "info@foodshedalliance.com",
+   "source_url": "https://www.foodshedalliance.com/contact"
+  },
+  "Phone": {
+   "value": "(913) 904-8207",
+   "source_url": "https://www.foodshedalliance.com/contact"
+  },
+  "Address": {
+   "value": "Columbine Park, 51 Linderman Ave, Buena Vista, CO 81211",
+   "source_url": "https://arkvalleyvoice.com/first-buena-vista-farmers-market-of-the-season-is-coming-to-columbine-park-on-june-7/"
+  },
+  "Hours": {
+   "value": "Sat: 9:00am - 1:00pm",
+   "source_url": "https://arkvalleyvoice.com/first-buena-vista-farmers-market-of-the-season-is-coming-to-columbine-park-on-june-7/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://arkvalleyvoice.com/first-buena-vista-farmers-market-of-the-season-is-coming-to-columbine-park-on-june-7/"
+  },
+  "Products": {
+   "value": "Locally grown produce, jewelry, breakfast/prepared food, pottery, art, crafts",
+   "source_url": "https://arkvalleyvoice.com/first-buena-vista-farmers-market-of-the-season-is-coming-to-columbine-park-on-june-7/"
+  }
+ }
+}

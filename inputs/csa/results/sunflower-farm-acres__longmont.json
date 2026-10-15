@@ -1,0 +1,64 @@
+{
+ "id": "sunflower-farm-acres__longmont",
+ "name": "Sunflower Farm Acres",
+ "offers_csa": true,
+ "csa_status": "full",
+ "signup_url": "https://www.sunflowerfarmacres.com/store/csa",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables",
+  "Flowers",
+  "Mushrooms",
+  "Bread/Baked",
+  "Fruit",
+  "Meat"
+ ],
+ "frequency": null,
+ "price": "Fall 8-week veg share: $320 regular / $416 family (2026)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "SF Longmont (farm)",
+   "address": "11150 Prospect Rd, Longmont, CO",
+   "town": "Longmont",
+   "day": null,
+   "time": null,
+   "on_farm": true
+  },
+  {
+   "name": "Moxie Louisville",
+   "address": null,
+   "town": "Louisville",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Moxie Feed + Seed North Boulder",
+   "address": null,
+   "town": "Boulder",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://www.sunflowerfarmacres.com/store/fall-csa"
+  }
+ ]
+}

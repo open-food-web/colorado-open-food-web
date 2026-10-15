@@ -1,0 +1,44 @@
+{
+ "id": "telluride-farmers-market__telluride",
+ "name": "Telluride Farmers' Market",
+ "city": "Telluride",
+ "official_website": "http://www.thetelluridefarmersmarket.com/",
+ "fields": {
+  "Hours": {
+   "value": "Fri: 10:30am - 3:30pm",
+   "source_url": "http://www.thetelluridefarmersmarket.com/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "http://www.thetelluridefarmersmarket.com/"
+  },
+  "Products": {
+   "value": "Produce, animal products, prepared food, and artisan goods produced within 100 miles of Telluride; organic focus (vendors require minimum 75% organic ingredients)",
+   "source_url": "http://www.thetelluridefarmersmarket.com/our-market"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.telluridenews.com/news/article_223fc0fa-1ed8-11ef-af94-ff303a58f723.html"
+  },
+  "Email": {
+   "value": "telluridefarmersmarket@gmail.com",
+   "source_url": "http://www.thetelluridefarmersmarket.com/contact"
+  },
+  "Phone": {
+   "value": "646.245.6580",
+   "source_url": "http://www.thetelluridefarmersmarket.com/contact"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/telluridefarmersmarket/",
+   "source_url": "http://www.thetelluridefarmersmarket.com/contact"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/thetelluridefarmersmarket/",
+   "source_url": "https://www.facebook.com/thetelluridefarmersmarket/"
+  },
+  "Website": {
+   "value": "http://www.thetelluridefarmersmarket.com/",
+   "source_url": "http://www.thetelluridefarmersmarket.com/"
+  }
+ }
+}

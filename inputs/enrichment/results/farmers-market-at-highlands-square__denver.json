@@ -1,0 +1,36 @@
+{
+ "id": "farmers-market-at-highlands-square__denver",
+ "name": "Farmers' Market at Highlands Square",
+ "city": "Denver",
+ "official_website": "https://thehighlandsfarmersmarket.com/",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 9:00am - 1:00pm",
+   "source_url": "https://thehighlandsfarmersmarket.com/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://thehighlandsfarmersmarket.com/"
+  },
+  "Products": {
+   "value": "Colorado-grown produce, locally made goods, and ready-to-eat breakfast and lunch; flowers; live music",
+   "source_url": "https://thehighlandsfarmersmarket.com/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://visitdenverhighlands.com/contact"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/profile.php?id=100077076291644",
+   "source_url": "https://visitdenverhighlands.com/highlands-farmers-market"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/visitdenverhighlands/",
+   "source_url": "https://visitdenverhighlands.com/highlands-farmers-market"
+  },
+  "Website": {
+   "value": "https://thehighlandsfarmersmarket.com/",
+   "source_url": "https://thehighlandsfarmersmarket.com/"
+  }
+ }
+}

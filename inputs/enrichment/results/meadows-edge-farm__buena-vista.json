@@ -1,0 +1,18 @@
+{
+ "id": "meadows-edge-farm__buena-vista",
+ "name": "Meadows Edge Farm",
+ "city": "Buena Vista",
+ "official_website": "",
+ "status": "unknown",
+ "checked": "2026-10-03",
+ "fields": {
+  "Facebook": {
+   "value": "https://www.facebook.com/meadowsedgefarmbv/",
+   "source_url": "https://www.facebook.com/meadowsedgefarmbv/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/meadowsedgefarmbv/",
+   "source_url": "https://www.instagram.com/meadowsedgefarmbv/"
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "id": "lulu-s-farm-roadside-market__brighton",
+ "name": "Lulu's Farm Roadside Market",
+ "city": "Brighton",
+ "official_website": "http://lulusfarm.com",
+ "fields": {
+  "Hours": {
+   "value": "Mon-Sun: 9:00am - 6:00pm",
+   "source_url": "http://lulusfarm.com"
+  },
+  "Products": {
+   "value": "Fresh produce (peaches, sweet corn, chiles, tomatoes, vegetables, fruit, herbs), roasted green chile, naturally raised beef, frozen chili and spice blends, smokers/grills, propane, outdoor furniture and storage",
+   "source_url": "http://lulusfarm.com"
+  },
+  "Email": {
+   "value": "info@lulusfarm.com",
+   "source_url": "http://lulusfarm.com"
+  },
+  "Phone": {
+   "value": "303-659-3300",
+   "source_url": "http://lulusfarm.com"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/Lulusfarm/",
+   "source_url": "http://lulusfarm.com"
+  },
+  "Website": {
+   "value": "http://lulusfarm.com",
+   "source_url": "http://lulusfarm.com"
+  }
+ }
+}

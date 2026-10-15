@@ -1,0 +1,16 @@
+{
+ "id": "the-saturday-market-at-tagawa-gardens__centennial",
+ "name": "The Saturday Market at Tagawa Gardens",
+ "city": "Centennial",
+ "official_website": "https://www.tagawagardens.com/",
+ "fields": {
+  "Hours": {
+   "value": "Mon-Sat: 9:00am - 5:00pm; Sun: 9:00am - 5:00pm",
+   "source_url": "https://shop.tagawagardens.com/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://shop.tagawagardens.com/"
+  }
+ }
+}

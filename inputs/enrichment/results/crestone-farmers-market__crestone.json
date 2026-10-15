@@ -1,0 +1,28 @@
+{
+ "id": "crestone-farmers-market__crestone",
+ "name": "Crestone Farmers Market",
+ "city": "Crestone",
+ "official_website": "https://www.facebook.com/saturdaymarketcrestone",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 10:00am - 4:00pm",
+   "source_url": "https://www.mixconsciously.com/saturday-market"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://www.mixconsciously.com/saturday-market"
+  },
+  "Products": {
+   "value": "Handmade goods and locally-made items from local artisans",
+   "source_url": "https://www.mixconsciously.com/saturday-market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/saturdaymarketcrestone",
+   "source_url": "https://www.mixconsciously.com/saturday-market"
+  },
+  "Website": {
+   "value": "https://www.facebook.com/saturdaymarketcrestone",
+   "source_url": "https://www.mixconsciously.com/saturday-market"
+  }
+ }
+}

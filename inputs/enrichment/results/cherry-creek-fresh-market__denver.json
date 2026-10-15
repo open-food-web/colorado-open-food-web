@@ -1,0 +1,36 @@
+{
+ "id": "cherry-creek-fresh-market__denver",
+ "name": "Cherry Creek Fresh Market",
+ "city": "Denver",
+ "official_website": "https://www.coloradofreshmarkets.com",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 9:00am - 2:00pm",
+   "source_url": "https://www.coloradofreshmarkets.com/visit"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://www.coloradofreshmarkets.com/visit"
+  },
+  "Products": {
+   "value": "Fresh in-season produce, prepared foods, flowers, baked goods, local meats and dairy, and handcrafted/artisan goods",
+   "source_url": "https://www.coloradofreshmarkets.com/vendors"
+  },
+  "Address": {
+   "value": "Cherry Creek Shopping Center, east side, on Steele St. next to Macy's, Denver, CO",
+   "source_url": "https://www.coloradofreshmarkets.com/visit"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/ColoradoFreshMarkets",
+   "source_url": "https://www.facebook.com/ColoradoFreshMarkets"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/coloradofreshmarkets/",
+   "source_url": "https://www.coloradofreshmarkets.com/visit"
+  },
+  "Website": {
+   "value": "https://www.coloradofreshmarkets.com",
+   "source_url": "https://www.coloradofreshmarkets.com"
+  }
+ }
+}

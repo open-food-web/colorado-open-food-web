@@ -1,0 +1,14 @@
+{
+ "id": "salida-cattle-company__chaffee-county",
+ "name": "Salida Cattle Company",
+ "city": "",
+ "official_website": "http://www.salidacattlecompany.com",
+ "status": "unknown",
+ "checked": "2026-10-03",
+ "fields": {
+  "Products": {
+   "value": "Beef (steaks, hamburger), grass-fed and corn-finished cattle",
+   "source_url": "http://www.salidacattlecompany.com"
+  }
+ }
+}

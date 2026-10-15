@@ -1,0 +1,58 @@
+{
+ "id": "valley-roots-food-hub__",
+ "name": "Valley Roots Food Hub",
+ "offers_csa": "unknown",
+ "csa_status": "unknown",
+ "signup_url": "https://valleyroots.localfoodmarketplace.com/Subscriptions",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables",
+  "Meat",
+  "Dairy",
+  "Eggs"
+ ],
+ "frequency": null,
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": true,
+  "kind": "towns",
+  "radius_miles": null,
+  "zips": [],
+  "towns": [
+   "Alamosa",
+   "Buena Vista",
+   "Colorado Springs",
+   "Creede",
+   "Crestone",
+   "Del Norte",
+   "Denver",
+   "Durango",
+   "Leadville",
+   "Moffat",
+   "Pagosa Springs",
+   "Pueblo",
+   "Saguache",
+   "Salida",
+   "South Fork",
+   "Villa Grove"
+  ],
+  "fee": null,
+  "details": "Subscriptions page lets customers choose a pickup/delivery location from these towns; homepage says weekly delivery of Colorado-grown food."
+ },
+ "evidence": [
+  {
+   "field": "subscription",
+   "url": "https://www.valleyrootsfoodhub.com/"
+  },
+  {
+   "field": "towns",
+   "url": "https://valleyroots.localfoodmarketplace.com/Subscriptions"
+  }
+ ]
+}

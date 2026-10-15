@@ -1,0 +1,35 @@
+{
+ "id": "hillbilly-farms__colorado-springs",
+ "name": "Hillbilly Farms",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": null,
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Eggs",
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "Egg share $140 for 1 dozen/week over 26 weeks",
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "price",
+   "url": "http://Hillbillyfarms.net"
+  }
+ ]
+}

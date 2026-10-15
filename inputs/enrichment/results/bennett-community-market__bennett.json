@@ -1,0 +1,24 @@
+{
+ "id": "bennett-community-market__bennett",
+ "name": "Bennett Community Market",
+ "city": "Bennett",
+ "official_website": "",
+ "fields": {
+  "Hours": {
+   "value": "Saturdays (alternating), 9 a.m. - 2 p.m.",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Bennett-Community-Market/40417"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Bennett-Community-Market/40417"
+  },
+  "Products": {
+   "value": "Seasonal organic vegetables, fruit, frozen meats (beef, buffalo, lamb, pork, yak, poultry - USDA-inspected retail packages), dry goods, artisan crafts, cheese, eggs, honey, pickles, popcorn, baked goods",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Bennett-Community-Market/40417"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Bennett-Community-Market/40417"
+  }
+ }
+}

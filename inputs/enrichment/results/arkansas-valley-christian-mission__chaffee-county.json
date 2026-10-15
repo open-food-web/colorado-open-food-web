@@ -1,0 +1,30 @@
+{
+ "id": "arkansas-valley-christian-mission__chaffee-county",
+ "name": "Arkansas Valley Christian Mission",
+ "city": "",
+ "official_website": "https://www.avcmbv.org/",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Hours": {
+   "value": "Tue, Wed, Fri: 11:00am - 2:00pm",
+   "source_url": "https://www.avcmbv.org/"
+  },
+  "Address": {
+   "value": "122 Cottonwood Ave, Buena Vista, CO 81211",
+   "source_url": "https://www.avcmbv.org/"
+  },
+  "Phone": {
+   "value": "(719) 395-9321",
+   "source_url": "https://www.avcmbv.org/"
+  },
+  "Email": {
+   "value": "ark.christian.mission@gmail.com",
+   "source_url": "https://www.avcmbv.org/"
+  },
+  "Products": {
+   "value": "Groceries, client pantry",
+   "source_url": "https://www.avcmbv.org/"
+  }
+ }
+}

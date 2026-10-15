@@ -1,0 +1,16 @@
+name: Refresh colorado_proud_finder (monthly)
+
+on:
+  schedule:
+    - cron: "47 9 1 * *"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    uses: ./.github/workflows/refresh-source.yml
+    with:
+      source: colorado_proud_finder
+    secrets: inherit
+    permissions:
+      contents: write
+      pull-requests: write

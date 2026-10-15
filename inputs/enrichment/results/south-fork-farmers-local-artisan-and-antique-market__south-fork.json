@@ -1,0 +1,32 @@
+{
+ "id": "south-fork-farmers-local-artisan-and-antique-market__south-fork",
+ "name": "South Fork Farmers, Local Artisan and Antique Market",
+ "city": "South Fork",
+ "official_website": "https://www.southfork.org/market-at-south-fork",
+ "fields": {
+  "Hours": {
+   "value": "Fri-Sat: 9:00am - 1:00pm",
+   "source_url": "https://www.southfork.org/market-at-south-fork"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://www.southfork.org/market-at-south-fork"
+  },
+  "Products": {
+   "value": "Artisans, farmers and vendors offering items grown or produced in Colorado, New Mexico and other nearby states, including fine art, crafts, culinary items, and handmade goods",
+   "source_url": "https://www.southfork.org/market-at-south-fork"
+  },
+  "Phone": {
+   "value": "719-873-5512",
+   "source_url": "https://www.southfork.org/market-at-south-fork"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/SouthForkCOFarmersMarket/",
+   "source_url": "https://www.facebook.com/SouthForkCOFarmersMarket/"
+  },
+  "Website": {
+   "value": "https://www.southfork.org/market-at-south-fork",
+   "source_url": "https://www.southfork.org/market-at-south-fork"
+  }
+ }
+}

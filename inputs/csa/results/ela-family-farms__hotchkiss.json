@@ -1,0 +1,99 @@
+{
+ "id": "ela-family-farms__hotchkiss",
+ "name": "Ela Family Farms",
+ "offers_csa": true,
+ "csa_status": "closed_season",
+ "signup_url": "https://elafamilyfarms.com/csa-fruit-shares/",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [
+  "Fruit"
+ ],
+ "frequency": "Weekly",
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Boulder Farmers' Market",
+   "address": null,
+   "town": "Boulder",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "City Park Esplanade",
+   "address": null,
+   "town": "Denver",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Old Towne Market",
+   "address": null,
+   "town": "Fort Collins",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Harvey Park Farmers Market",
+   "address": null,
+   "town": "Denver",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Lafayette Farmers Market",
+   "address": null,
+   "town": "Lafayette",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Longmont Farmers Market",
+   "address": null,
+   "town": "Longmont",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Old South Pearl Street Market",
+   "address": null,
+   "town": "Denver",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Ela Family Farms",
+   "address": "30753 L Rd, Hotchkiss, CO",
+   "town": "Hotchkiss",
+   "day": null,
+   "time": null,
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Pickup at markets or farm"
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://elafamilyfarms.com/csa-fruit-shares/"
+  }
+ ]
+}

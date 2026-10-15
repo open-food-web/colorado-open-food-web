@@ -1,0 +1,44 @@
+{
+ "id": "fruita-farmers-market__fruita",
+ "name": "Fruita Farmers' Market",
+ "city": "Fruita",
+ "official_website": "https://www.fruitachamber.org/events/farmers-market",
+ "fields": {
+  "Website": {
+   "value": "https://www.fruitachamber.org/events/farmers-market",
+   "source_url": "https://www.fruitachamber.org/events/farmers-market"
+  },
+  "Hours": {
+   "value": "Sat: 8:30am - 12:00pm",
+   "source_url": "https://thebusinesstimes.com/fruita-farmers-market-returns-june-13-with-family-fun-day/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://thebusinesstimes.com/fruita-farmers-market-returns-june-13-with-family-fun-day/"
+  },
+  "Products": {
+   "value": "Local agriculture, artisan goods, fresh foods, and live entertainment",
+   "source_url": "https://thebusinesstimes.com/fruita-farmers-market-returns-june-13-with-family-fun-day/"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://thebusinesstimes.com/fruita-farmers-market-returns-june-13-with-family-fun-day/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://gofruita.com/event/farmers-market/2026-10-03/"
+  },
+  "Phone": {
+   "value": "970-858-3894",
+   "source_url": "https://gofruita.com/event/farmers-market/2026-10-03/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/GoFruita/",
+   "source_url": "https://gofruita.com/event/farmers-market/2026-10-03/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/gofruita/",
+   "source_url": "https://gofruita.com/event/farmers-market/2026-10-03/"
+  }
+ }
+}

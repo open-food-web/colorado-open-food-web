@@ -1,0 +1,36 @@
+{
+ "id": "city-of-edgewater-farmers-market__edgewater",
+ "name": "City of Edgewater Farmers Market",
+ "city": "Edgewater",
+ "official_website": "https://www.edgewaterco.gov/",
+ "fields": {
+  "Hours": {
+   "value": "Thu: 5:00pm - 8:00pm",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Edgewater-Market-and-Music/75948"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Edgewater-Farmers-Market/47831"
+  },
+  "Products": {
+   "value": "Produce (apples, berries, vegetables, herbs), meats (beef, buffalo, lamb, pork, poultry), dairy (cheese, eggs), baked goods, honey, jams, pickles, jerky, sausage",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Edgewater-Market-and-Music/75948"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Edgewater-Market-and-Music/75948"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Edgewater-Market-and-Music/75948"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/cityofedgewatermarketandmusic/",
+   "source_url": "https://www.facebook.com/cityofedgewatermarketandmusic/"
+  },
+  "Address": {
+   "value": "Historic West 25th Ave. (between Benton/Chase St. and Ames St.), Edgewater, CO 80214",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Edgewater-Market-and-Music/75948"
+  }
+ }
+}

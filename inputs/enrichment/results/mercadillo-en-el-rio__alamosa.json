@@ -1,0 +1,40 @@
+{
+ "id": "mercadillo-en-el-rio__alamosa",
+ "name": "Mercadillo en el Rio",
+ "city": "Alamosa",
+ "official_website": "https://www.riograndefarmpark.org/mercadillo",
+ "fields": {
+  "Hours": {
+   "value": "Wed: 3:00pm - 7:00pm",
+   "source_url": "https://www.riograndefarmpark.org/mercadillo"
+  },
+  "Months Open": {
+   "value": "July, August, September",
+   "source_url": "https://www.riograndefarmpark.org/mercadillo"
+  },
+  "Products": {
+   "value": "Produce, Herbs, Prepared Food (food trucks), Regional Vendor Goods",
+   "source_url": "https://www.riograndefarmpark.org/mercadillo"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.riograndefarmpark.org/mercadillo"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/riograndefarmpark/",
+   "source_url": "https://www.riograndefarmpark.org/mercadillo"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/riograndefarmpark/",
+   "source_url": "https://www.riograndefarmpark.org/mercadillo"
+  },
+  "Phone": {
+   "value": "(719) 937-2319",
+   "source_url": "https://www.riograndefarmpark.org/mercadillo"
+  },
+  "Address": {
+   "value": "6935 CO-17, Alamosa, CO 81101",
+   "source_url": "https://www.riograndefarmpark.org/mercadillo"
+  }
+ }
+}

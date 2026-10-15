@@ -1,0 +1,38 @@
+{
+ "id": "blaine-s-farm-store__clifton",
+ "name": "Blaine's Farm Store",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://blainesfarmstore.com/csa-memberships",
+ "signup_opens": "2026-01-01",
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": "month",
+ "share_types": [
+  "Other"
+ ],
+ "frequency": null,
+ "price": "$150 upfront membership (20% off farm-grown items)",
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "price",
+   "url": "https://blainesfarmstore.com/csa-memberships"
+  },
+  {
+   "field": "signup_opens",
+   "url": "https://blainesfarmstore.com/csa-memberships"
+  }
+ ]
+}

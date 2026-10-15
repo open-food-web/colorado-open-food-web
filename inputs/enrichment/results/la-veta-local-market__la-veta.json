@@ -1,0 +1,16 @@
+{
+ "id": "la-veta-local-market__la-veta",
+ "name": "La Veta Local Market",
+ "city": "La Veta",
+ "official_website": "https://www.facebook.com/p/La-Veta-Farmers-Market-100081771473675/",
+ "fields": {
+  "Hours": {
+   "value": "Thu: 3:00pm - 5:00pm",
+   "source_url": "https://lvpl.org/events/la-veta-farmers-market/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/p/La-Veta-Farmers-Market-100081771473675/",
+   "source_url": "https://spanishpeakscountry.com/spc-event/la-veta-farmers-market/2025-03-27/"
+  }
+ }
+}

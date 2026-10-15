@@ -1,0 +1,28 @@
+{
+ "id": "erie-farmers-market__erie",
+ "name": "Erie Farmers Market",
+ "city": "Erie",
+ "official_website": "https://realfarmersmarketco.com/erie-farmers-market/",
+ "fields": {
+  "Hours": {
+   "value": "Thu: 5:00pm - 8:00pm",
+   "source_url": "https://realfarmersmarketco.com/erie-farmers-market/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September",
+   "source_url": "https://realfarmersmarketco.com/erie-farmers-market/"
+  },
+  "Products": {
+   "value": "Organic, transitional, and pesticide-free vegetables; fruit from Palisade, CO; meats; eggs; artisan breads; honey; cheese; coffee; baked goods; natural body care; massage services; flowers; plants; jewelry; art; packaged goods",
+   "source_url": "https://realfarmersmarketco.com/erie-farmers-market/"
+  },
+  "Email": {
+   "value": "kellyenterprisesltd@gmail.com",
+   "source_url": "https://realfarmersmarketco.com/contact/"
+  },
+  "Phone": {
+   "value": "(303) 902-2451",
+   "source_url": "https://realfarmersmarketco.com/contact/"
+  }
+ }
+}

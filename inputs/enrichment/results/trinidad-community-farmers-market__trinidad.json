@@ -1,0 +1,36 @@
+{
+ "id": "trinidad-community-farmers-market__trinidad",
+ "name": "Trinidad Community Farmers Market",
+ "city": "Trinidad",
+ "official_website": "https://trinidadcofarmersmarket.com/",
+ "fields": {
+  "Website": {
+   "value": "https://trinidadcofarmersmarket.com/",
+   "source_url": "https://trinidadcofarmersmarket.com/"
+  },
+  "Hours": {
+   "value": "Sat: 8:00am - 12:00pm",
+   "source_url": "https://trinidadcofarmersmarket.com/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://trinidadcofarmersmarket.com/"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://trinidadcofarmersmarket.com/"
+  },
+  "Email": {
+   "value": "theteam@trinidadcofarmersmarket.com",
+   "source_url": "https://trinidadcofarmersmarket.com/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/TrinidadFarmersMktColorado",
+   "source_url": "https://trinidadcofarmersmarket.com/"
+  },
+  "Address": {
+   "value": "Cimino Park, Trinidad, Colorado 81082",
+   "source_url": "https://trinidadcofarmersmarket.com/"
+  }
+ }
+}

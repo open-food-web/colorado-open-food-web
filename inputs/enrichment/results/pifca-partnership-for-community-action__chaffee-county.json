@@ -1,0 +1,22 @@
+{
+ "id": "pifca-partnership-for-community-action__chaffee-county",
+ "name": "PIFCA – Partnership for Community Action",
+ "city": "",
+ "official_website": "https://www.gopfca.com/",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Phone": {
+   "value": "(719) 398-0363",
+   "source_url": "https://www.gopfca.com/"
+  },
+  "Email": {
+   "value": "hello@goPfCA.com",
+   "source_url": "https://www.gopfca.com/"
+  },
+  "Products": {
+   "value": "Food pantry, health & beauty aids, Rainbow Closet",
+   "source_url": "https://www.gopfca.com/"
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "id": "arriola-sunshine-farm__dolores",
+ "name": "Arriola Sunshine Farm",
+ "offers_csa": false,
+ "csa_status": "unknown",
+ "signup_url": null,
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [],
+ "frequency": null,
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "offers_csa",
+   "url": "https://arriolasunshinefarm.com"
+  }
+ ]
+}

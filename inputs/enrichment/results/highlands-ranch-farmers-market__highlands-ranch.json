@@ -1,0 +1,36 @@
+{
+ "id": "highlands-ranch-farmers-market__highlands-ranch",
+ "name": "Highlands Ranch Farmers' Market",
+ "city": "Highlands Ranch",
+ "official_website": "https://denverfarmersmarket.com/",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 10:00am - 2:00pm (or sellout)",
+   "source_url": "https://denverfarmersmarket.com/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October, November",
+   "source_url": "https://denverfarmersmarket.com/"
+  },
+  "Products": {
+   "value": "Fresh produce and locally-grown items",
+   "source_url": "https://denverfarmersmarket.com/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://denverfarmersmarket.com/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/denverfarmersmarket",
+   "source_url": "https://denverfarmersmarket.com/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/metro_denver_farmers_market",
+   "source_url": "https://denverfarmersmarket.com/"
+  },
+  "Address": {
+   "value": "9288 Dorchester St, Highlands Ranch, CO (Highlands Ranch Town Center)",
+   "source_url": "https://denverfarmersmarket.com/"
+  }
+ }
+}

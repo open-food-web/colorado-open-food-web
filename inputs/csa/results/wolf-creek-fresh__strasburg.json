@@ -1,0 +1,43 @@
+{
+ "id": "wolf-creek-fresh__strasburg",
+ "name": "Wolf Creek Fresh",
+ "offers_csa": true,
+ "csa_status": "closed_season",
+ "signup_url": "https://www.wolfcreekfresh.com/csa",
+ "signup_opens": null,
+ "season_start": "2026-06-20",
+ "season_end": "2026-10-03",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "Full share $500/season ($39/week); Half share $250/season ($20/week)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "The Gift Shop",
+   "address": "56781 E Colfax Ave, Strasburg, CO 80136",
+   "town": "Strasburg",
+   "day": "Sat",
+   "time": "10:00am-11:30am",
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://www.wolfcreekfresh.com/csa"
+  }
+ ]
+}

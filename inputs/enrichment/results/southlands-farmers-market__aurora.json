@@ -1,0 +1,32 @@
+{
+ "id": "southlands-farmers-market__aurora",
+ "name": "Southlands Farmers' Market",
+ "city": "Aurora",
+ "official_website": "https://www.shopsouthlands.com/eventprograms/farmers-market/",
+ "fields": {
+  "Website": {
+   "value": "https://www.shopsouthlands.com/eventprograms/farmers-market/",
+   "source_url": "https://www.shopsouthlands.com/eventprograms/farmers-market/"
+  },
+  "Hours": {
+   "value": "Saturday 8AM-1PM",
+   "source_url": "https://www.shopsouthlands.com/eventprograms/farmers-market/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September",
+   "source_url": "https://www.shopsouthlands.com/eventprograms/farmers-market/"
+  },
+  "Products": {
+   "value": "Organic, pesticide-free produce, fresh dairy products, baked goods, salsas, honey, and more",
+   "source_url": "https://www.shopsouthlands.com/eventprograms/farmers-market/"
+  },
+  "ADA Accessible": {
+   "value": "Yes",
+   "source_url": "https://www.shopsouthlands.com/eventprograms/farmers-market/"
+  },
+  "Phone": {
+   "value": "(303) 627-5000",
+   "source_url": "https://www.shopsouthlands.com/eventprograms/farmers-market/"
+  }
+ }
+}

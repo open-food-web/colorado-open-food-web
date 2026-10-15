@@ -1,0 +1,22 @@
+{
+ "id": "valley-roots-food-hub__chaffee-county",
+ "name": "Valley Roots Food Hub",
+ "city": "",
+ "official_website": "https://www.valleyrootsfoodhub.com/",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Phone": {
+   "value": "719-206-2839",
+   "source_url": "https://www.valleyrootsfoodhub.com/contact"
+  },
+  "Address": {
+   "value": "5401 Terry Street, Mosca, CO 81146",
+   "source_url": "https://www.valleyrootsfoodhub.com/contact"
+  },
+  "Products": {
+   "value": "Produce, meat, cheese, eggs",
+   "source_url": "https://www.valleyrootsfoodhub.com/"
+  }
+ }
+}

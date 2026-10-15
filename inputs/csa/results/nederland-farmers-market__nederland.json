@@ -1,0 +1,52 @@
+{
+ "id": "nederland-farmers-market__nederland",
+ "name": "Nederland Farmers Market",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://www.nederlandfarmersmarket.org/nedcsa",
+ "signup_opens": null,
+ "season_start": "2026-05-10",
+ "season_end": "2026-10-18",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables",
+  "Fruit",
+  "Eggs",
+  "Dairy",
+  "Meat",
+  "Other"
+ ],
+ "frequency": "Weekly",
+ "price": "$30/week",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Nederland Farmers Market",
+   "address": "80 E. Second St, Nederland",
+   "town": "Nederland",
+   "day": "Sun",
+   "time": "10am-1pm",
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "price",
+   "url": "https://www.nederlandfarmersmarket.org/nedcsa"
+  },
+  {
+   "field": "season_start",
+   "url": "https://www.nederlandfarmersmarket.org/nedcsa"
+  }
+ ]
+}

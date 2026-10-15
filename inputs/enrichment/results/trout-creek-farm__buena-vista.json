@@ -1,0 +1,26 @@
+{
+ "id": "trout-creek-farm__buena-vista",
+ "name": "Trout Creek Farm",
+ "city": "Buena Vista",
+ "official_website": "https://www.troutcreekfarm.com",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Address": {
+   "value": "28872 CR 330, Buena Vista, CO 81211",
+   "source_url": "https://www.troutcreekfarm.com"
+  },
+  "Phone": {
+   "value": "719.207.0230",
+   "source_url": "https://www.troutcreekfarm.com"
+  },
+  "Email": {
+   "value": "Beth@TroutCreekFarm.com",
+   "source_url": "https://www.troutcreekfarm.com"
+  },
+  "Products": {
+   "value": "Specialty cut flowers, produce",
+   "source_url": "https://www.troutcreekfarm.com"
+  }
+ }
+}

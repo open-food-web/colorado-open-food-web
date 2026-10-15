@@ -1,0 +1,30 @@
+{
+ "id": "badger-creek-ranch__ca-on-city",
+ "name": "Badger Creek Ranch",
+ "city": "Cañon City",
+ "official_website": "https://www.badgercreekranch.com/",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Website": {
+   "value": "https://www.badgercreekranch.com/",
+   "source_url": "https://www.badgercreekranch.com/"
+  },
+  "Email": {
+   "value": "info@badgercreekranch.com",
+   "source_url": "https://www.badgercreekranch.com/"
+  },
+  "Products": {
+   "value": "Grass-fed beef, eggs",
+   "source_url": "https://www.badgercreekranch.com/"
+  },
+  "Facebook": {
+   "value": "https://facebook.com/badgercreekranch",
+   "source_url": "https://www.badgercreekranch.com/"
+  },
+  "Instagram": {
+   "value": "https://instagram.com/badgercreekranch",
+   "source_url": "https://www.badgercreekranch.com/"
+  }
+ }
+}

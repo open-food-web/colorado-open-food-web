@@ -1,0 +1,44 @@
+{
+ "id": "pagosa-farmers-market__pagosa-springs",
+ "name": "Pagosa Farmers Market",
+ "city": "Pagosa Springs",
+ "official_website": "https://www.pagosafarmersmarket.net/",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 9:00am - 1:00pm",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Products": {
+   "value": "Garden fresh vegetables, mushrooms, fruit and plant starts; artisan breads; grass-fed meats; farm eggs; coffee; honey; jewelry and crafts",
+   "source_url": "https://www.pagosafarmersmarket.net/market/"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Email": {
+   "value": "pagosafarmersmarket@gmail.com",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/PagosaFarmersMarket/",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Phone": {
+   "value": "970-264-5232",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Address": {
+   "value": "225 S. Pagosa Blvd, Pagosa Springs, CO 81147 (at St. Patrick's Episcopal Church)",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  },
+  "Website": {
+   "value": "https://www.pagosafarmersmarket.net/",
+   "source_url": "https://www.pagosafarmersmarket.net/"
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "id": "meadows-edge-farm__buena-vista",
+ "name": "Meadows Edge Farm",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": null,
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Buena Vista pickup (location not specified)",
+   "address": null,
+   "town": "Buena Vista",
+   "day": null,
+   "time": null,
+   "on_farm": null
+  },
+  {
+   "name": "Salida pickup (location not specified)",
+   "address": null,
+   "town": "Salida",
+   "day": null,
+   "time": null,
+   "on_farm": null
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "offers_csa",
+   "url": "https://www.facebook.com/meadowsedgefarmbv/"
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "id": "gluten-free-farmers-market__englewood",
+ "name": "Gluten Free Farmers Market",
+ "city": "Englewood",
+ "official_website": "https://www.denverceliacs.org",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 9:00am - 1:00pm",
+   "source_url": "https://denverceliacs.org/event/gluten-free-farmers-market-2/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://denverceliacs.org/event/gluten-free-farmers-market-2/"
+  },
+  "Products": {
+   "value": "Farm produce, prepared foods and baked goods, food trucks, crafts and art, beauty products, herbs, house plants, canned goods, dog treats, flowers",
+   "source_url": "https://denverceliacs.org/event/gluten-free-farmers-market-2/"
+  },
+  "Address": {
+   "value": "333 W Hampden Ave (North Parking lot next to Chase Tower), Englewood, CO 80110",
+   "source_url": "https://denverceliacs.org/event/gluten-free-farmers-market-2/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/DenverCeliacs",
+   "source_url": "https://sites.google.com/view/gf-farmers-market-denverceliac/home"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/denverceliacs",
+   "source_url": "https://sites.google.com/view/gf-farmers-market-denverceliac/home"
+  },
+  "Website": {
+   "value": "https://www.denverceliacs.org",
+   "source_url": "https://www.denverceliacs.org"
+  }
+ }
+}

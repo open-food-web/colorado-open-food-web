@@ -1,0 +1,67 @@
+{
+ "id": "cure-organic-farm__boulder",
+ "name": "Cure Organic Farm",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://www.cureorganicfarm.com/csa-program",
+ "signup_opens": null,
+ "season_start": "2026-06-01",
+ "season_end": "2026-10-31",
+ "season_year": 2026,
+ "season_precision": "month",
+ "share_types": [
+  "Vegetables",
+  "Fruit",
+  "Eggs",
+  "Flowers",
+  "Other"
+ ],
+ "frequency": "Weekly",
+ "price": "Traditional veg share $700 (20 wks); CSA Card $500 ($550 to spend); Fruit share $300 (15 wks); Egg share $175 (20 wks); Flower share $300 (15 wks)",
+ "snap_accepted": true,
+ "pickup_sites": [
+  {
+   "name": "Cure Organic Farm",
+   "address": "7416 Valmont Road, Boulder, CO 80301",
+   "town": "Boulder",
+   "day": "Wed, Sat",
+   "time": "Wed 12pm-7pm; Sat 12pm-5pm",
+   "on_farm": true
+  },
+  {
+   "name": "Denver - Highlands",
+   "address": null,
+   "town": "Denver",
+   "day": "Thu",
+   "time": "4pm-6pm",
+   "on_farm": false
+  },
+  {
+   "name": "Denver - DU neighborhood / University Hills",
+   "address": null,
+   "town": "Denver",
+   "day": "Thu",
+   "time": "4pm-6pm (winter 5-7pm)",
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://www.cureorganicfarm.com/csa-program"
+  },
+  {
+   "field": "snap_accepted",
+   "url": "https://www.cureorganicfarm.com/csa-program"
+  }
+ ]
+}

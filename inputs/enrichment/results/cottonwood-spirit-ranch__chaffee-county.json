@@ -1,0 +1,18 @@
+{
+ "id": "cottonwood-spirit-ranch__chaffee-county",
+ "name": "Cottonwood Spirit Ranch",
+ "city": "",
+ "official_website": "https://cottonwoodspiritranch.com",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Products": {
+   "value": "Beef, eggs, honey, produce",
+   "source_url": "https://cottonwoodspiritranch.com"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/CottonwoodSpiritRanch/",
+   "source_url": "https://cottonwoodspiritranch.com"
+  }
+ }
+}

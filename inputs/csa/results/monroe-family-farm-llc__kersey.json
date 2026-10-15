@@ -1,0 +1,47 @@
+{
+ "id": "monroe-family-farm-llc__kersey",
+ "name": "Monroe Family Farm, LLC",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://monroefarm.com/summer-shares/",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Member-hosted distribution centers (summer: Westminster, Aurora, Centennial, Highlands Ranch, Littleton, Boulder, Denver, Greeley/Kersey, Longmont, Parker, Broomfield, Fort Collins, Lakewood, Louisville, Wheat Ridge)",
+   "address": null,
+   "town": null,
+   "day": null,
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Pickup at member-hosted home distribution centers across the Front Range; also farmers markets"
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://monroefarm.com/summer-shares/"
+  },
+  {
+   "field": "pickup",
+   "url": "https://monroefarm.com/distribution-centers/"
+  }
+ ]
+}

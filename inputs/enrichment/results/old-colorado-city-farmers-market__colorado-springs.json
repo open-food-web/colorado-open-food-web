@@ -1,0 +1,32 @@
+{
+ "id": "old-colorado-city-farmers-market__colorado-springs",
+ "name": "Old Colorado City Farmers Market",
+ "city": "Colorado Springs",
+ "official_website": "https://www.pikespeakfarmersmarkets.com/",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 7:00am - 1:00pm",
+   "source_url": "https://www.pikespeakfarmersmarkets.com/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://www.pikespeakfarmersmarkets.com/"
+  },
+  "Products": {
+   "value": "Fresh produce, handcrafted products, and unique goods from local farms and artisans",
+   "source_url": "https://www.pikespeakfarmersmarkets.com/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/OldColoradoCityFarmersMarket/",
+   "source_url": "https://www.pikespeakfarmersmarkets.com/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/oldcoloradocityfarmersmarket/",
+   "source_url": "https://www.pikespeakfarmersmarkets.com/"
+  },
+  "Website": {
+   "value": "https://www.pikespeakfarmersmarkets.com/",
+   "source_url": "https://www.pikespeakfarmersmarkets.com/"
+  }
+ }
+}

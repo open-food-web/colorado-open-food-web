@@ -1,0 +1,40 @@
+{
+ "id": "farm-and-ranch-market__grand-junction",
+ "name": "Farm and Ranch Market",
+ "city": "Grand Junction",
+ "official_website": "https://www.farmmarketgj.com/",
+ "fields": {
+  "Hours": {
+   "value": "Wed: 8:00am - 12:00pm; Sat: 8:00am - 12:00pm",
+   "source_url": "https://www.farmmarketgj.com/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://www.farmmarketgj.com/"
+  },
+  "Products": {
+   "value": "Locally grown produce from family-owned farms and orchards",
+   "source_url": "https://www.farmmarketgj.com/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.farmmarketgj.com/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/GrandJunctionFarmandRanchMarket/",
+   "source_url": "https://www.farmmarketgj.com/"
+  },
+  "Phone": {
+   "value": "970-778-1781",
+   "source_url": "https://www.farmmarketgj.com/"
+  },
+  "Address": {
+   "value": "3073 F Rd, Grand Junction, CO 81504 (Cross Orchard Historic Site)",
+   "source_url": "https://www.farmmarketgj.com/"
+  },
+  "Website": {
+   "value": "https://www.farmmarketgj.com/",
+   "source_url": "https://www.farmmarketgj.com/"
+  }
+ }
+}

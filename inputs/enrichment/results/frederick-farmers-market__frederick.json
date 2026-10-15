@@ -1,0 +1,32 @@
+{
+ "id": "frederick-farmers-market__frederick",
+ "name": "Frederick Farmers Market",
+ "city": "Frederick",
+ "official_website": "https://www.frederickco.gov/241/Frederick-Market",
+ "fields": {
+  "Website": {
+   "value": "https://www.frederickco.gov/241/Frederick-Market",
+   "source_url": "https://www.frederickco.gov/241/Frederick-Market"
+  },
+  "Hours": {
+   "value": "Frederick in Flight (Jun 27): 5:00pm - 9:00pm; Chainsaws and Chuckwagons (Jul 18): 12:00pm - 6:00pm; Miners Day (Sep 19): 11:00am - 4:00pm; Festival of Lights (Dec 5): 5:30pm - 8:00pm",
+   "source_url": "https://www.frederickco.gov/241/Frederick-Market"
+  },
+  "Months Open": {
+   "value": "June, July, September, December",
+   "source_url": "https://www.frederickco.gov/241/Frederick-Market"
+  },
+  "Products": {
+   "value": "Handcrafted goods from local growers, farmers, artisans, crafters, and non-profits; original handcrafted items only (AI-generated art not permitted)",
+   "source_url": "https://www.frederickco.gov/241/Frederick-Market"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.frederickco.gov/241/Frederick-Market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/TownofFrederick",
+   "source_url": "https://www.frederickco.gov/facebook"
+  }
+ }
+}

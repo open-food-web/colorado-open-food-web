@@ -1,0 +1,32 @@
+{
+ "id": "stapleton-farmers-market__denver",
+ "name": "Stapleton Farmers' Market",
+ "city": "Denver",
+ "official_website": "https://www.mca80238.com/programs/signature-events/summer-markets",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 8:30am - 12:30pm",
+   "source_url": "https://www.mca80238.com/programs/signature-events/summer-markets"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://www.mca80238.com/programs/signature-events/summer-markets"
+  },
+  "Products": {
+   "value": "Colorado-grown produce, baked goods, specialty meats, gourmet food items and more",
+   "source_url": "https://www.mca80238.com/programs/signature-events/summer-markets"
+  },
+  "Phone": {
+   "value": "303.388.0724",
+   "source_url": "https://www.mca80238.com/programs/signature-events/summer-markets"
+  },
+  "Address": {
+   "value": "South Green, 7601 East 29th Avenue, Denver, CO 80238",
+   "source_url": "https://www.mca80238.com/mca-calendar/farmers-market-9ra3j-j9fnw-2plfs-5nj8l-zrkjc-h4yha"
+  },
+  "Website": {
+   "value": "https://www.mca80238.com/programs/signature-events/summer-markets",
+   "source_url": "https://www.mca80238.com/programs/signature-events/summer-markets"
+  }
+ }
+}

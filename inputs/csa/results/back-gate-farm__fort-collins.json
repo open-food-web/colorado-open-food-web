@@ -1,0 +1,44 @@
+{
+ "id": "back-gate-farm__fort-collins",
+ "name": "Back Gate Farm",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "http://www.backgatefarm.com/farm/csa-membership",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables",
+  "Flowers"
+ ],
+ "frequency": null,
+ "price": "$550 per season",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Back Gate Farm",
+   "address": "1505 North College Ave",
+   "town": "Fort Collins",
+   "day": "Thu",
+   "time": null,
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Delivery not offered per CSA page"
+ },
+ "evidence": [
+  {
+   "field": "price",
+   "url": "http://www.backgatefarm.com/farm/csa-membership"
+  }
+ ]
+}

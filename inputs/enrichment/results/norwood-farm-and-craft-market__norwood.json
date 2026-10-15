@@ -1,0 +1,28 @@
+{
+ "id": "norwood-farm-and-craft-market__norwood",
+ "name": "Norwood Farm and Craft Market",
+ "city": "Norwood",
+ "official_website": "",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 9:00am - 1:00pm (June-September); Sat: 10:00am - 12:00pm (October-May)",
+   "source_url": "https://www.localharvest.org/norwood-farm-and-craft-market-M36178"
+  },
+  "Months Open": {
+   "value": "January, February, March, April, May, June, July, August, September, October, November, December",
+   "source_url": "https://www.localharvest.org/norwood-farm-and-craft-market-M36178"
+  },
+  "Products": {
+   "value": "Fruits, vegetables, flowers, and herbs in season (organic and conventional); grass-fed beef and pastured pork; farm fresh eggs; artisan baked goods; honey; homemade jams; lavender products; hard shell gourds; handcrafted glass jewelry; handspun alpaca and wool yarn and handmade garments; local silversmith jewelry; handcrafted quilts and sewn items; also children's activities, music, cooking and canning demonstrations, flea market items, and CSU Extension information",
+   "source_url": "https://www.localharvest.org/norwood-farm-and-craft-market-M36178"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.topfarmersmarkets.com/colorado/norwood/norwood-farm-and-craft-market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/Norwood-Farm-Craft-Market-349308959339/",
+   "source_url": "https://www.facebook.com/Norwood-Farm-Craft-Market-349308959339/"
+  }
+ }
+}

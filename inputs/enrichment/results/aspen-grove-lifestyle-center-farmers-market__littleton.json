@@ -1,0 +1,36 @@
+{
+ "id": "aspen-grove-lifestyle-center-farmers-market__littleton",
+ "name": "Aspen Grove Lifestyle Center Farmers' Market",
+ "city": "Littleton",
+ "official_website": "https://aspengrovefarmersmarket.com/",
+ "fields": {
+  "Hours": {
+   "value": "Fri: 10:00am - 2:00pm",
+   "source_url": "https://aspengrovefarmersmarket.com/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://aspengrovefarmersmarket.com/"
+  },
+  "Products": {
+   "value": "Locally grown produce, baked goods, handcrafted items, fresh vegetables, Palisade peaches, premium meats, artisan pasta, seasonings, hot sauces, tamales, burritos, fresh flowers, and specialty foods",
+   "source_url": "https://aspengrovefarmersmarket.com/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/AspenGroveFarmersMarket/",
+   "source_url": "https://www.facebook.com/AspenGroveFarmersMarket/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/aspengrovefarmersmarket/",
+   "source_url": "https://aspengrovefarmersmarket.com/"
+  },
+  "Address": {
+   "value": "7301 S. Santa Fe Drive, Littleton, CO 80120",
+   "source_url": "https://aspengrovecenter.com/event/aspen-grove-farmers-market/"
+  },
+  "Website": {
+   "value": "https://aspengrovefarmersmarket.com/",
+   "source_url": "https://aspengrovefarmersmarket.com/"
+  }
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "id": "fleischer-family-farm__lakewood",
+ "name": "Fleischer Family Farm",
+ "offers_csa": true,
+ "csa_status": "full",
+ "signup_url": "https://www.fleischerfamilyfarm.com",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "Weekly $625, Biweekly $375, Family $900 (18 weeks), Canning $300 (5 pickups)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Fleischer Family Farm",
+   "address": "2005 S Zephyr Ct, Lakewood, CO 80227",
+   "town": "Lakewood",
+   "day": "Tue",
+   "time": "4pm-7pm",
+   "on_farm": true
+  },
+  {
+   "name": "Fleischer Family Farm (Saturday farmstand hours)",
+   "address": "2005 S Zephyr Ct, Lakewood, CO 80227",
+   "town": "Lakewood",
+   "day": "Sat",
+   "time": "10am-2pm",
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://www.fleischerfamilyfarm.com"
+  },
+  {
+   "field": "season",
+   "url": "https://www.fleischerfamilyfarm.com"
+  }
+ ]
+}

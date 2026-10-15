@@ -1,0 +1,44 @@
+{
+ "id": "fort-collins-farmers-market__fort-collins",
+ "name": "Fort Collins Farmers' Market",
+ "city": "Fort Collins",
+ "official_website": "https://www.fortcollinsfarmersmarket.org/",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 10:00am - 2:00pm (May 3 - Nov 8); Wed: 10:00am - 2:00pm (Jun 3 - Sep 30)",
+   "source_url": "https://www.fortcollinsfarmersmarket.org/locations"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October, November",
+   "source_url": "https://www.fortcollinsfarmersmarket.org/locations"
+  },
+  "Products": {
+   "value": "Colorado-grown seasonal produce (vegetables, herbs, tomatoes, cucumbers, carrots, garlic, onions, spinach), plus bread, desserts, dairy, eggs, flowers, fruit (Palisade peaches, apples, pears), honey, jam, pickles, locally raised beef and pork, Alaskan seafood, coffee, popcorn, tamales, tortillas, salsas, soap, and specialty/handmade crafts",
+   "source_url": "https://www.fortcollinsfarmersmarket.org/"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.fortcollinsfarmersmarket.org/"
+  },
+  "Email": {
+   "value": "fortcollinsfarmersmarket@gmail.com",
+   "source_url": "https://www.fortcollinsfarmersmarket.org/about"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/fortcollinsfarmersmarket",
+   "source_url": "https://www.fortcollinsfarmersmarket.org/about"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/focofarmersmarket",
+   "source_url": "https://www.fortcollinsfarmersmarket.org/about"
+  },
+  "Address": {
+   "value": "1001 E Harmony Rd., Fort Collins, CO 80525",
+   "source_url": "https://www.fortcollinsfarmersmarket.org/"
+  },
+  "Website": {
+   "value": "https://www.fortcollinsfarmersmarket.org/",
+   "source_url": "https://www.fortcollinsfarmersmarket.org/"
+  }
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "id": "mountain-goat-lodge__salida",
+ "name": "Mountain Goat Lodge",
+ "city": "Salida",
+ "official_website": "https://mountaingoatlodge.com",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Phone": {
+   "value": "206-218-8201",
+   "source_url": "https://mountaingoatlodge.com"
+  },
+  "Email": {
+   "value": "mtglodge@gmail.com",
+   "source_url": "https://mountaingoatlodge.com"
+  }
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "id": "arrowpoint-cattle-company__nathrop",
+ "name": "Arrowpoint Cattle Company",
+ "city": "Nathrop",
+ "official_website": "https://www.arrowpointcattle.com",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Phone": {
+   "value": "(303) 618-3135",
+   "source_url": "https://www.arrowpointcattle.com/contact"
+  },
+  "Email": {
+   "value": "arrowpointcc@aol.com",
+   "source_url": "https://www.arrowpointcattle.com/contact"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/arrowpointprovisions/",
+   "source_url": "https://www.arrowpointcattle.com/contact"
+  },
+  "Products": {
+   "value": "Grass-fed Highland beef, pork, dog treats, soaps, salves, candles, tanned hides, breeding stock",
+   "source_url": "https://www.arrowpointcattle.com"
+  }
+ }
+}

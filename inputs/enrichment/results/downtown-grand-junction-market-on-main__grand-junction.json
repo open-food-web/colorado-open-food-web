@@ -1,0 +1,36 @@
+{
+ "id": "downtown-grand-junction-market-on-main__grand-junction",
+ "name": "Downtown Grand Junction Market on Main",
+ "city": "Grand Junction",
+ "official_website": "https://downtowngj.org/events/market-on-main/",
+ "fields": {
+  "Hours": {
+   "value": "Thu: 5:30pm - dusk",
+   "source_url": "https://downtowngj.org/events/market-on-main/"
+  },
+  "Months Open": {
+   "value": "July, August, September",
+   "source_url": "https://downtowngj.org/events/market-on-main/"
+  },
+  "Products": {
+   "value": "Farm products from the Western Slope and around Colorado",
+   "source_url": "https://downtowngj.org/events/market-on-main/"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://downtowngj.org/events/market-on-main/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/downtowngj",
+   "source_url": "https://downtowngj.org/events/market-on-main/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/downtowngj/",
+   "source_url": "https://downtowngj.org/events/market-on-main/"
+  },
+  "Phone": {
+   "value": "970.245.9697",
+   "source_url": "https://downtowngj.org/contact/"
+  }
+ }
+}

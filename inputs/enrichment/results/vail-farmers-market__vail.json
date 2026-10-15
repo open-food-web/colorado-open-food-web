@@ -1,0 +1,28 @@
+{
+ "id": "vail-farmers-market__vail",
+ "name": "Vail Farmers' Market",
+ "city": "Vail",
+ "official_website": "https://www.vailfarmersmarket.com/",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 9:30am - 3:00pm; Thu: 1:00pm - 5:30pm",
+   "source_url": "https://www.vailfarmersmarket.com/vendor-opportunities/event-one-mbxeg"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://www.vailfarmersmarket.com/sunday-market-1"
+  },
+  "Products": {
+   "value": "Farm-fresh produce, artisan foods, Colorado-made art, handcrafted goods, clothing, jewelry, and prepared foods from over 155 vendors",
+   "source_url": "https://www.vailfarmersmarket.com/sunday-market-1"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/VailFarmersMarket",
+   "source_url": "https://www.vailfarmersmarket.com/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/vailfarmersmarket/",
+   "source_url": "https://www.vailfarmersmarket.com/"
+  }
+ }
+}

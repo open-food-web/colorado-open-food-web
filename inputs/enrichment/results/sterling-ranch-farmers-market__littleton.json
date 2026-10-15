@@ -1,0 +1,36 @@
+{
+ "id": "sterling-ranch-farmers-market__littleton",
+ "name": "Sterling Ranch Farmers' Market",
+ "city": "Littleton",
+ "official_website": "https://www.denverfarmersmarket.com/",
+ "fields": {
+  "Hours": {
+   "value": "Wed: 3:00pm - 7:00pm (or sellout)",
+   "source_url": "https://www.denverfarmersmarket.com/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://www.denverfarmersmarket.com/"
+  },
+  "Products": {
+   "value": "Fresh produce",
+   "source_url": "https://www.denverfarmersmarket.com/"
+  },
+  "Email": {
+   "value": "dfmmgrrich@comcast.net",
+   "source_url": "https://www.denverfarmersmarket.com/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/denverfarmersmarket",
+   "source_url": "https://www.denverfarmersmarket.com/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/metro.denver.farmers.market",
+   "source_url": "https://www.denverfarmersmarket.com/"
+  },
+  "Address": {
+   "value": "Providence Park, 8100 Piney River Avenue",
+   "source_url": "https://www.denverfarmersmarket.com/"
+  }
+ }
+}

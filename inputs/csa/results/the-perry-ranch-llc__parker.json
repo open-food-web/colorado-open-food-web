@@ -1,0 +1,50 @@
+{
+ "id": "the-perry-ranch-llc__parker",
+ "name": "The Perry Ranch LLC",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://perryranch.org/csa-memberships/",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Meat",
+  "Vegetables",
+  "Eggs",
+  "Other"
+ ],
+ "frequency": "Other",
+ "price": "$25 annual sign-up fee (returned as store credit); member pricing at least 5% off retail",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "The Perry Ranch",
+   "address": null,
+   "town": "Parker",
+   "day": "Fri/Sat",
+   "time": "10am-5pm",
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": true,
+  "kind": "other",
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Fridays in select areas, seasonally"
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://perryranch.org/csa-memberships/"
+  },
+  {
+   "field": "price",
+   "url": "https://perryranch.org/csa-memberships/"
+  }
+ ]
+}

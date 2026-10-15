@@ -1,0 +1,52 @@
+{
+ "id": "the-triangle-oasis__salida",
+ "name": "The Triangle Oasis",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://www.thetriangleoasis.com/farmstand",
+ "signup_opens": null,
+ "season_start": "2026-06-26",
+ "season_end": "2026-10-24",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables",
+  "Flowers"
+ ],
+ "frequency": "Weekly",
+ "price": "Bachelor(ette) $275, Couple $550, Family $1,100, Summer Flower subscription $120",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Salida Farmers Market",
+   "address": null,
+   "town": "Salida",
+   "day": "Sat",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Market on Main St. (downtown store)",
+   "address": "125 N. F St",
+   "town": "Salida",
+   "day": "Weekdays",
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://www.thetriangleoasis.com/farmstand"
+  }
+ ]
+}

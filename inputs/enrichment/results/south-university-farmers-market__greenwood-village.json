@@ -1,0 +1,44 @@
+{
+ "id": "south-university-farmers-market__greenwood-village",
+ "name": "South University Farmers Market",
+ "city": "Greenwood Village",
+ "official_website": "https://southuniversityfarmersmarket.com",
+ "fields": {
+  "Hours": {
+   "value": "Fri: 10:00am - 2:00pm",
+   "source_url": "https://southuniversityfarmersmarket.com/pages/store-locator"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://southuniversityfarmersmarket.com/pages/store-locator"
+  },
+  "Products": {
+   "value": "Local produce from farmers; other vendor products (food, artisan goods) allowed with market manager approval",
+   "source_url": "https://southuniversityfarmersmarket.com/pages/south-university-farmers-market-rules-regulations"
+  },
+  "Email": {
+   "value": "toddandtoni3@msn.com",
+   "source_url": "https://southuniversityfarmersmarket.com/pages/contact-us"
+  },
+  "Phone": {
+   "value": "(720) 985-9607",
+   "source_url": "https://southuniversityfarmersmarket.com/pages/south-university-farmers-market-rules-regulations"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/SouthUniversityFridayFarmersMarket/",
+   "source_url": "https://southuniversityfarmersmarket.com/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/sufarmersmarket/",
+   "source_url": "https://southuniversityfarmersmarket.com/"
+  },
+  "Address": {
+   "value": "5859 S University Blvd, Greenwood Village, CO 80121",
+   "source_url": "https://southuniversityfarmersmarket.com/pages/store-locator"
+  },
+  "Website": {
+   "value": "https://southuniversityfarmersmarket.com",
+   "source_url": "https://southuniversityfarmersmarket.com/pages/store-locator"
+  }
+ }
+}

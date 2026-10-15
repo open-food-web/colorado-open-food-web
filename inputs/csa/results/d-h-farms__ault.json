@@ -1,0 +1,35 @@
+{
+ "id": "d-h-farms__ault",
+ "name": "D & H Farms",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": null,
+ "signup_opens": null,
+ "season_start": "2026-05-01",
+ "season_end": "2026-10-31",
+ "season_year": 2026,
+ "season_precision": "month",
+ "share_types": [
+  "Vegetables",
+  "Eggs"
+ ],
+ "frequency": null,
+ "price": "$550 summer share; $550 winter share",
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "price",
+   "url": "https://www.localharvest.org/d-h-farms-M7279"
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+[
+ {
+  "Listing_Name": "Pueblo Farmers Market",
+  "Contact_Name": "Marci Cochran",
+  "Contact_Email": "contact95@example.test",
+  "Contact_Phone": "7197786041",
+  "Media_Website": "",
+  "Location_State": "CO",
+  "Location_City": "Pueblo",
+  "Location_Street": "1500 North Santa Fe Avenue",
+  "Location_Zipcode": "81003"
+ },
+ {
+  "Listing_Name": "Backyard Market in Black Forest ",
+  "Contact_Name": "Theda Stone",
+  "Contact_Email": "contact96@example.test",
+  "Contact_Phone": "",
+  "Media_Website": "https://www.thebackyardmarkets.com",
+  "Location_State": "CO",
+  "Location_City": "Colorado Springs",
+  "Location_Street": "6845 Shoup Road",
+  "Location_Zipcode": "80908"
+ },
+ {
+  "Listing_Name": "Delta Farmers Market",
+  "Contact_Name": "Manager",
+  "Contact_Email": "contact97@example.test",
+  "Contact_Phone": "(970)549-7151",
+  "Media_Website": "https://www.deltacofarmersmarket.com/home",
+  "Location_State": "CO",
+  "Location_City": "Delta",
+  "Location_Street": "1001 Colorado 92",
+  "Location_Zipcode": "81416"
+ },
+ {
+  "Listing_Name": "Downtown Littleton Farmers Market",
+  "Contact_Name": "Keely Quinn",
+  "Contact_Email": "contact98@example.test",
+  "Contact_Phone": "7202541534",
+  "Media_Website": "littletonq.com",
+  "Location_State": "CO",
+  "Location_City": "Littleton",
+  "Location_Street": "5671 South Nevada Street",
+  "Location_Zipcode": "80120"
+ },
+ {
+  "Listing_Name": "Fort Morgan Farmers Market",
+  "Contact_Name": "Julie Stiewig",
+  "Contact_Email": "contact99@example.test",
+  "Contact_Phone": "9707687301",
+  "Media_Website": "www.theblock-mc.com",
+  "Location_State": "CO",
+  "Location_City": "Fort Morgan",
+  "Location_Street": "19592 East 8th Avenue",
+  "Location_Zipcode": "80701"
+ },
+ {
+  "Listing_Name": "Salida Farmers Market",
+  "Contact_Name": "Sofia Adinolfi",
+  "Contact_Email": "contact100@example.test",
+  "Contact_Phone": "7192075787",
+  "Media_Website": "https://www.foodshedalliance.com/",
+  "Location_State": "CO",
+  "Location_City": "Salida",
+  "Location_Street": "404 E Street",
+  "Location_Zipcode": "81201"
+ }
+]

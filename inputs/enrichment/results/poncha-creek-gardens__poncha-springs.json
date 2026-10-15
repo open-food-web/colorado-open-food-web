@@ -1,0 +1,26 @@
+{
+ "id": "poncha-creek-gardens__poncha-springs",
+ "name": "Poncha Creek Gardens",
+ "city": "Poncha Springs",
+ "official_website": "https://ponchacreekgardens.wordpress.com/",
+ "status": "unknown",
+ "checked": "2026-10-03",
+ "fields": {
+  "Hours": {
+   "value": "By appointment",
+   "source_url": "https://ponchacreekgardens.wordpress.com/"
+  },
+  "Phone": {
+   "value": "720-380-2121",
+   "source_url": "https://ponchacreekgardens.wordpress.com/"
+  },
+  "Email": {
+   "value": "ponchacreekgardens@gmail.com",
+   "source_url": "https://ponchacreekgardens.wordpress.com/"
+  },
+  "Products": {
+   "value": "Microgreens, sunflower shoots, pea shoots",
+   "source_url": "https://ponchacreekgardens.wordpress.com/our-products/"
+  }
+ }
+}

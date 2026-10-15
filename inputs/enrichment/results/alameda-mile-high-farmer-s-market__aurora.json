@@ -1,0 +1,24 @@
+{
+ "id": "alameda-mile-high-farmer-s-market__aurora",
+ "name": "Alameda Mile High Farmer's Market",
+ "city": "Aurora",
+ "official_website": "",
+ "fields": {
+  "Hours": {
+   "value": "Sunday 9:00 AM - 2:00 PM",
+   "source_url": "https://ezregister.com/events/10206/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://ezregister.com/events/10206/"
+  },
+  "Products": {
+   "value": "Food, handmade crafts, merchandise, and other vendor goods",
+   "source_url": "https://ezregister.com/events/10206/"
+  },
+  "Address": {
+   "value": "Bicentennial Park (Alameda & Potomac), 13655 E Alameda Ave, Aurora, CO 80012",
+   "source_url": "https://ezregister.com/events/10206/"
+  }
+ }
+}

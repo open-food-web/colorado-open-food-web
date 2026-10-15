@@ -1,0 +1,34 @@
+{
+ "id": "salida-farmers-market__salida",
+ "name": "Salida Farmers Market",
+ "city": "Salida",
+ "official_website": "https://foodshedalliance.com",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 8:00am - 12:00pm (Jun 6 - Sep 11); Sat: 9:00am - 12:00pm (Sep 12 - Oct 24)",
+   "source_url": "https://foodshedalliance.com"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://foodshedalliance.com"
+  },
+  "Address": {
+   "value": "Alpine Park, 404 E Street, Salida, CO 81201",
+   "source_url": "https://foodshedalliance.com"
+  },
+  "Phone": {
+   "value": "(719) 207-5787",
+   "source_url": "https://foodshedalliance.com"
+  },
+  "Instagram": {
+   "value": "Salida_Farmers_Market",
+   "source_url": "https://foodshedalliance.com"
+  },
+  "Facebook": {
+   "value": "Foodshed Alliance",
+   "source_url": "https://foodshedalliance.com"
+  }
+ }
+}

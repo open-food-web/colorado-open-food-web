@@ -1,0 +1,24 @@
+{
+ "id": "downtown-littleton-farmers-market__littleton",
+ "name": "Downtown Littleton Farmers Market",
+ "city": "Littleton",
+ "official_website": "https://thelocalcolorado.com/downtown-littleton-farmers-market/",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 8:00am - 1:00pm",
+   "source_url": "https://thelocalcolorado.com/downtown-littleton-farmers-market/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September",
+   "source_url": "https://thelocalcolorado.com/downtown-littleton-farmers-market/"
+  },
+  "Products": {
+   "value": "Local produce, meats, baked goods, artisan foods, handmade products, and more (nearly 40 curated vendors)",
+   "source_url": "https://thelocalcolorado.com/downtown-littleton-farmers-market/"
+  },
+  "Website": {
+   "value": "https://thelocalcolorado.com/downtown-littleton-farmers-market/",
+   "source_url": "https://thelocalcolorado.com/downtown-littleton-farmers-market/"
+  }
+ }
+}

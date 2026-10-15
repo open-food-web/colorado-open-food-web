@@ -1,0 +1,36 @@
+{
+ "id": "mancos-valley-farmers-market__mancos",
+ "name": "Mancos Valley Farmers Market",
+ "city": "Mancos",
+ "official_website": "https://www.mancosvalleyresources.com/2019/07/mancos-farmers-market/",
+ "fields": {
+  "Hours": {
+   "value": "Thu: 4:00pm - 7:00pm",
+   "source_url": "https://www.mancosvalleyresources.com/2019/07/mancos-farmers-market/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://www.mancosvalleyresources.com/2019/07/mancos-farmers-market/"
+  },
+  "Products": {
+   "value": "High-quality products from local Mancos Valley producers of all kinds",
+   "source_url": "https://www.mancosvalleyresources.com/2019/07/mancos-farmers-market/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.mancosvalleyresources.com/2019/07/mancos-farmers-market/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/MancosValleyFarmersMarket",
+   "source_url": "https://www.mancosvalleyresources.com/2019/07/mancos-farmers-market/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/mancos_valley_farmers_market/",
+   "source_url": "https://www.mancosvalleyresources.com/2019/07/mancos-farmers-market/"
+  },
+  "Website": {
+   "value": "https://www.mancosvalleyresources.com/2019/07/mancos-farmers-market/",
+   "source_url": "https://www.mancosvalleyresources.com/2019/07/mancos-farmers-market/"
+  }
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "id": "glenwood-springs-downtown-market-on-7th__glenwood-springs",
+ "name": "Glenwood Springs Downtown Market on 7th",
+ "city": "Glenwood Springs",
+ "official_website": "https://www.glenwoodspringsdda.com/market-on-7th/",
+ "fields": {
+  "Hours": {
+   "value": "Tue: 4:00pm - 8:00pm",
+   "source_url": "https://www.glenwoodspringsdda.com/market-on-7th/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://www.glenwoodspringsdda.com/market-on-7th/"
+  },
+  "Products": {
+   "value": "Food and food products grown or made in the region, local art, and food trucks",
+   "source_url": "https://www.glenwoodspringsdda.com/market-on-7th/"
+  },
+  "Email": {
+   "value": "glenwoodmarketon7th@gmail.com",
+   "source_url": "https://www.glenwoodspringsdda.com/market-on-7th/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/DowntownGlenwoodSprings",
+   "source_url": "https://www.glenwoodspringsdda.com/market-on-7th/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/downtownglenwoodsprings",
+   "source_url": "https://www.glenwoodspringsdda.com/market-on-7th/"
+  },
+  "Website": {
+   "value": "https://www.glenwoodspringsdda.com/market-on-7th/",
+   "source_url": "https://www.glenwoodspringsdda.com/market-on-7th/"
+  }
+ }
+}

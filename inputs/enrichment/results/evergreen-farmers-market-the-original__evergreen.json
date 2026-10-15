@@ -1,0 +1,24 @@
+{
+ "id": "evergreen-farmers-market-the-original__evergreen",
+ "name": "Evergreen Farmers Market THE ORIGINAL",
+ "city": "Evergreen",
+ "official_website": "https://www.coloradooutdoormarkets.com",
+ "fields": {
+  "Hours": {
+   "value": "Tue: 10:00am - 2:00pm",
+   "source_url": "https://downtownevergreen.com/do/the-original-evergreen-farmers-market"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://www.coloradooutdoormarkets.com/"
+  },
+  "Products": {
+   "value": "Fresh-picked organic and conventional produce, Palisade fruit, fresh flowers and hanging baskets, handmade pies, honey, Italian foods, bread, gourmet mushrooms, coffee, Austrian pastries, and Middle Eastern food at the market cafe",
+   "source_url": "https://downtownevergreen.com/do/the-original-evergreen-farmers-market"
+  },
+  "Website": {
+   "value": "https://www.coloradooutdoormarkets.com",
+   "source_url": "https://www.coloradooutdoormarkets.com/"
+  }
+ }
+}

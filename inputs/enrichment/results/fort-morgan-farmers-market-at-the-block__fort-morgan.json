@@ -1,0 +1,32 @@
+{
+ "id": "fort-morgan-farmers-market-at-the-block__fort-morgan",
+ "name": "Fort Morgan Farmers Market at The Block",
+ "city": "Fort Morgan",
+ "official_website": "https://www.theblock-mc.com",
+ "fields": {
+  "Website": {
+   "value": "https://www.theblock-mc.com",
+   "source_url": "https://www.theblock-mc.com/the-block-farmers-market"
+  },
+  "Address": {
+   "value": "19592 E 8th Ave, Fort Morgan, CO 80701",
+   "source_url": "https://www.theblock-mc.com/contact"
+  },
+  "Email": {
+   "value": "julie@theblock-mc.com",
+   "source_url": "https://www.theblock-mc.com/contact"
+  },
+  "Phone": {
+   "value": "(970) 867-7887",
+   "source_url": "https://www.theblock-mc.com/contact"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/theblockfortmorgan/",
+   "source_url": "https://www.theblock-mc.com/about"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/theblockfortmorgan/",
+   "source_url": "https://www.theblock-mc.com/about"
+  }
+ }
+}

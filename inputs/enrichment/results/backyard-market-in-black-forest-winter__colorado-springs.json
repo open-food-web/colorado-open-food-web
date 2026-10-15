@@ -1,0 +1,40 @@
+{
+ "id": "backyard-market-in-black-forest-winter__colorado-springs",
+ "name": "Backyard Market in Black Forest - Winter",
+ "city": "Colorado Springs",
+ "official_website": "https://www.thebackyardmarkets.com/holiday-markets",
+ "fields": {
+  "Website": {
+   "value": "https://www.thebackyardmarkets.com/holiday-markets",
+   "source_url": "https://www.thebackyardmarkets.com/holiday-markets"
+  },
+  "Address": {
+   "value": "13710 Black Forest Road, Colorado Springs, CO 80908 (Edith Wolford Elementary School)",
+   "source_url": "https://www.thebackyardmarkets.com/upcoming-events/fall-into-winter-holiday-market-2"
+  },
+  "Hours": {
+   "value": "Sat: 10:00am - 3:00pm",
+   "source_url": "https://www.thebackyardmarkets.com/upcoming-events/fall-into-winter-holiday-market-2"
+  },
+  "Months Open": {
+   "value": "November, December",
+   "source_url": "https://www.thebackyardmarkets.com/upcoming-events"
+  },
+  "Products": {
+   "value": "50+ local food and artisan vendors, food trucks, holiday gifts",
+   "source_url": "https://www.thebackyardmarkets.com/upcoming-events"
+  },
+  "Phone": {
+   "value": "719-747-2586",
+   "source_url": "https://www.thebackyardmarkets.com/black-forest-market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/BackyardMarketinBF/",
+   "source_url": "https://www.facebook.com/BackyardMarketinBF/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/backyardmarketinbf/",
+   "source_url": "https://www.instagram.com/backyardmarketinbf/"
+  }
+ }
+}

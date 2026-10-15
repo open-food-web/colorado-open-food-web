@@ -1,0 +1,47 @@
+{
+ "id": "father-earth-organic-farm-llc__lafayette",
+ "name": "Father Earth Organic Farm LLC",
+ "offers_csa": true,
+ "csa_status": "closed_season",
+ "signup_url": "https://fatherearthorganicfarm.com/csa.htm",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "$760 for 20 weeks ($38/week)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Father Earth Organic Farm",
+   "address": "8881 Elgin Drive, Lafayette, CO 80026",
+   "town": "Lafayette",
+   "day": null,
+   "time": null,
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Member pickup (or send someone)"
+ },
+ "evidence": [
+  {
+   "field": "price",
+   "url": "https://fatherearthorganicfarm.com/csa.htm"
+  },
+  {
+   "field": "signup",
+   "url": "https://fatherearthorganicfarm.com/csa.htm"
+  }
+ ]
+}

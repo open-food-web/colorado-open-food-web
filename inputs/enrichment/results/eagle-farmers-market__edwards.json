@@ -1,0 +1,32 @@
+{
+ "id": "eagle-farmers-market__edwards",
+ "name": "Eagle Farmers Market",
+ "city": "Edwards",
+ "official_website": "https://www.eaglefarmersmarketandartshow.com/",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 9:00am - 1:00pm",
+   "source_url": "https://www.eaglefarmersmarketandartshow.com/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://www.eaglefarmersmarketandartshow.com/"
+  },
+  "Products": {
+   "value": "Fresh produce, protein, baked goods, and artisanal/homemade goods",
+   "source_url": "https://www.eaglefarmersmarketandartshow.com/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/eaglefarmersmarketandartshow",
+   "source_url": "https://www.eaglefarmersmarketandartshow.com/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/eaglefarmersmarket/",
+   "source_url": "https://www.eaglefarmersmarketandartshow.com/"
+  },
+  "Website": {
+   "value": "https://www.eaglefarmersmarketandartshow.com/",
+   "source_url": "https://www.eaglefarmersmarketandartshow.com/"
+  }
+ }
+}

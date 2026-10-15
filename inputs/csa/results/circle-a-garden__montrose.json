@@ -1,0 +1,43 @@
+{
+ "id": "circle-a-garden__montrose",
+ "name": "Circle A Garden",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://www.circleagarden.com/csa-information/",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "Full $1,500 + 12 hrs work; Mini $1,100 + 12 hrs; Tiny $850 + 12 hrs (2020 prices)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Circle A Garden (farm)",
+   "address": "20341 Pahgre Rd",
+   "town": "Montrose",
+   "day": "Sat",
+   "time": "9am-noon (11am-2pm from mid-Oct)",
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "No delivery mentioned"
+ },
+ "evidence": [
+  {
+   "field": "price",
+   "url": "https://www.circleagarden.com/csa-information/"
+  }
+ ]
+}

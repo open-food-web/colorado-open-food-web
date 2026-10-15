@@ -1,0 +1,41 @@
+{
+ "id": "gaia-s-farm-gardens__laporte",
+ "name": "Gaia's Farm & Gardens",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": null,
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [],
+ "frequency": null,
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Gaia's Farm & Gardens",
+   "address": "4328 W County Rd 54G, Laporte, CO 80535",
+   "town": "Laporte",
+   "day": "Fri/Sat",
+   "time": null,
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "offers_csa",
+   "url": "https://www.localharvest.org/gaias-farm-gardens-M41922/csa"
+  }
+ ]
+}

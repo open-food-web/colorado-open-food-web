@@ -1,0 +1,44 @@
+{
+ "id": "monte-vista-farmers-market__monte-vista",
+ "name": "Monte Vista Farmers Market",
+ "city": "Monte Vista",
+ "official_website": "https://www.facebook.com/MonteVistaFarmersMarket",
+ "fields": {
+  "Hours": {
+   "value": "Fri: 9:00am - 1:00pm",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Monte-Vista-Farmers-Market/40560"
+  },
+  "Months Open": {
+   "value": "July, August, September",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Monte-Vista-Farmers-Market/40560"
+  },
+  "Products": {
+   "value": "Apples, apricots, beets, bell peppers, broccoli, cantaloupe, carrots, cherries, chile peppers, roasted chiles, cucumbers, garlic, green beans, herbs, honeydew, kale, lettuce, microgreens, nectarines, onion, peaches, pears, peas, pinto beans, potatoes, pumpkins, radishes, rhubarb, spinach, squash, sweet corn, tomatoes, turnips, watermelon, zucchini, baked goods, cheese, honey, jams/jellies, pickles, handcrafted gifts, goat milk soap, lotion, salvage art sculptures, fudge, local specialty drinks and lunches",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Monte-Vista-Farmers-Market/40560"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Monte-Vista-Farmers-Market/40560"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Monte-Vista-Farmers-Market/40560"
+  },
+  "Phone": {
+   "value": "(719) 469-7381",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Monte-Vista-Farmers-Market/40560"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/MonteVistaFarmersMarket",
+   "source_url": "https://www.facebook.com/MonteVistaFarmersMarket"
+  },
+  "Address": {
+   "value": "947 1st Ave (at 1st Ave & Jefferson St), Monte Vista, CO 81144",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Monte-Vista-Farmers-Market/40560"
+  },
+  "Website": {
+   "value": "https://www.facebook.com/MonteVistaFarmersMarket",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Monte-Vista-Farmers-Market/40560"
+  }
+ }
+}

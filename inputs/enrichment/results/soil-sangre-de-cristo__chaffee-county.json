@@ -1,0 +1,26 @@
+{
+ "id": "soil-sangre-de-cristo__chaffee-county",
+ "name": "SOIL Sangre de Cristo",
+ "city": "",
+ "official_website": "https://www.soilsangredecristo.org/",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Address": {
+   "value": "PO Box 1445, Salida, CO 81201",
+   "source_url": "https://www.soilsangredecristo.org/"
+  },
+  "Email": {
+   "value": "board@soilsangredecristo.org",
+   "source_url": "https://www.soilsangredecristo.org/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/Soilsangredecristo/",
+   "source_url": "https://www.soilsangredecristo.org/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/soilsangredecristo/",
+   "source_url": "https://www.soilsangredecristo.org/"
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "id": "switch-gears-farm__longmont",
+ "name": "Switch Gears Farm",
+ "offers_csa": true,
+ "csa_status": "closed_season",
+ "signup_url": "https://grownby.com/farms/switch-gears-farm/shop",
+ "signup_opens": null,
+ "season_start": "2026-05-18",
+ "season_end": "2026-10-12",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "Half share $30/week ($630 season); full share $41/week ($861 season)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "City Park Farmers Market",
+   "address": "2551 E Colfax Ave, Denver, CO",
+   "town": "Denver",
+   "day": "Sat",
+   "time": "8am-1pm",
+   "on_farm": false
+  },
+  {
+   "name": "Lafayette Farmers Market",
+   "address": "Public Rd between Cleveland & Geneseo St, Lafayette, CO",
+   "town": "Lafayette",
+   "day": "Sun",
+   "time": "9am-1pm",
+   "on_farm": false
+  },
+  {
+   "name": "Mid-week pickup",
+   "address": null,
+   "town": "Aurora",
+   "day": "Thu",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Mid-week pickup",
+   "address": null,
+   "town": "Boulder",
+   "day": "Thu",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Mid-week pickup",
+   "address": null,
+   "town": "Denver",
+   "day": "Thu",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Mid-week pickup",
+   "address": null,
+   "town": "Longmont",
+   "day": "Thu",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Mid-week pickup",
+   "address": null,
+   "town": "Niwot",
+   "day": "Thu",
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": "other",
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Pre-packed CSA bags dropped off at designated pickup locations (not home delivery)."
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://www.switchgearsfarm.com/food"
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "id": "farm-runners-llc__hotchkiss",
+ "name": "Farm Runners LLC",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://farmrunners.com/csa",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "Summer $869 full / $640 small (16 wks); Autumn Extension $312 (6 wks); Winter $549 (12 wks)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "City Hall",
+   "address": null,
+   "town": "Aspen",
+   "day": "Wed",
+   "time": "12-5pm",
+   "on_farm": false
+  },
+  {
+   "name": "Mountain Heart Brewing",
+   "address": null,
+   "town": "Basalt",
+   "day": "Wed",
+   "time": "12-4pm",
+   "on_farm": false
+  },
+  {
+   "name": "Aloha Mountain Cyclery",
+   "address": null,
+   "town": "Carbondale",
+   "day": "Wed",
+   "time": "12-6pm",
+   "on_farm": false
+  },
+  {
+   "name": "CB Visitor Center",
+   "address": null,
+   "town": "Crested Butte",
+   "day": "Thu",
+   "time": "2-5pm",
+   "on_farm": false
+  },
+  {
+   "name": "Homsted",
+   "address": null,
+   "town": "Glenwood Springs",
+   "day": "Wed",
+   "time": "12-5pm",
+   "on_farm": false
+  },
+  {
+   "name": "Double Shot Cyclery",
+   "address": null,
+   "town": "Gunnison",
+   "day": "Thu",
+   "time": "1-6pm",
+   "on_farm": false
+  },
+  {
+   "name": "Farm Runners Station",
+   "address": null,
+   "town": "Hotchkiss",
+   "day": "Wed",
+   "time": "8:30am-5:30pm",
+   "on_farm": false
+  },
+  {
+   "name": "Bluecorn Candle Factory",
+   "address": null,
+   "town": "Montrose",
+   "day": "Wed",
+   "time": "10am-close",
+   "on_farm": false
+  },
+  {
+   "name": "Adobe Inn",
+   "address": null,
+   "town": "Ridgway",
+   "day": "Wed",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Telluride Public Library",
+   "address": null,
+   "town": "Telluride",
+   "day": "Wed",
+   "time": "11am-6:30pm",
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://farmrunners.com/csa"
+  },
+  {
+   "field": "price",
+   "url": "https://farmrunners.com/csa"
+  }
+ ]
+}

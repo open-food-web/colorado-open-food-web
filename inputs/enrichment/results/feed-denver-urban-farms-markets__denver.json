@@ -1,0 +1,24 @@
+{
+ "id": "feed-denver-urban-farms-markets__denver",
+ "name": "Feed Denver: Urban Farms & Markets",
+ "city": "Denver",
+ "official_website": "http://www.feeddenver.com/",
+ "fields": {
+  "Products": {
+   "value": "Just-harvested produce, fresh-baked breads, homemade jams/marmalades/condiments, local crafts & gifts, seeds, soil & starts, worm products",
+   "source_url": "http://www.feeddenver.com/farm-market.html"
+  },
+  "Phone": {
+   "value": "303-513-7548",
+   "source_url": "http://www.feeddenver.com/contact-us.html"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "http://www.feeddenver.com/contact-us.html"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/FeedDenver",
+   "source_url": "http://www.feeddenver.com/contact-us.html"
+  }
+ }
+}

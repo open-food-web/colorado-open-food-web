@@ -1,0 +1,104 @@
+{
+ "id": "pedro-s-farm-formerly-borden-farms__delta",
+ "name": "Pedro's Farm (formerly Borden Farms)",
+ "offers_csa": true,
+ "csa_status": "full",
+ "signup_url": "https://pedrosfarm.com/csa/",
+ "signup_opens": null,
+ "season_start": "2026-06-01",
+ "season_end": "2026-09-30",
+ "season_year": 2026,
+ "season_precision": "month",
+ "share_types": [
+  "Vegetables",
+  "Other"
+ ],
+ "frequency": "Weekly",
+ "price": "$620/share (about $38/week), paid in full before season",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Farm pickup",
+   "address": "51245 Carnation Road",
+   "town": "Delta",
+   "day": "Fri",
+   "time": null,
+   "on_farm": true
+  },
+  {
+   "name": "Aspen Saturday Market",
+   "address": null,
+   "town": "Aspen",
+   "day": "Sat",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Carbondale Farmers Market",
+   "address": null,
+   "town": "Carbondale",
+   "day": "Wed",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Crested Butte Farmers Market",
+   "address": null,
+   "town": "Crested Butte",
+   "day": "Sun",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Edwards Farmers Market",
+   "address": null,
+   "town": "Edwards",
+   "day": "Sat",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Montrose",
+   "address": null,
+   "town": "Montrose",
+   "day": "Thu",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Ridgway",
+   "address": null,
+   "town": "Ridgway",
+   "day": "Thu",
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Telluride",
+   "address": null,
+   "town": "Telluride",
+   "day": "Thu",
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "No home delivery stated; pickup sites only."
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://pedrosfarm.com/csa/"
+  },
+  {
+   "field": "csa_status",
+   "url": "https://pedrosfarm.com/csa/"
+  }
+ ]
+}

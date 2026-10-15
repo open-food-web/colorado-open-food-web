@@ -1,0 +1,24 @@
+{
+ "id": "parker-farmers-market__parker",
+ "name": "Parker Farmers Market",
+ "city": "Parker",
+ "official_website": "https://www.facebook.com/parkerfarmersmarket/",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 8:00am - 1:00pm",
+   "source_url": "https://www.parkercolorado.net/parker-farmers-market-dates-and-times/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://www.parkercolorado.net/parker-farmers-market-dates-and-times/"
+  },
+  "Products": {
+   "value": "Fresh vegetables, fresh fruit, homemade salsa, flowers, herbs, baked goods, fresh bread, meats, dog treats, pasta, cosmetics, crafts, plus ready-made foods like breakfast burritos, quesadillas, and wine tasting; over 100 vendors",
+   "source_url": "https://www.parkercolorado.net/parker-farmers-market-dates-and-times/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/parkerfarmersmarket/",
+   "source_url": "https://www.facebook.com/parkerfarmersmarket/"
+  }
+ }
+}

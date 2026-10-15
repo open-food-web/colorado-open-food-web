@@ -1,0 +1,34 @@
+{
+ "id": "bluetrane-heritage-farm__elbert",
+ "name": "BlueTrane Heritage Farm",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://bluetranegroup.com/csa",
+ "signup_opens": null,
+ "season_start": "2026-06-05",
+ "season_end": "2026-10-17",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Eggs"
+ ],
+ "frequency": null,
+ "price": "$200/year (small chicken egg share) to $400/year (jumbo)",
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://bluetranegroup.com/csa"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "id": "highland-farmers-market__denver",
+ "name": "Highland Farmers' Market",
+ "city": "Denver",
+ "official_website": "",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 9:00am - 1:00pm",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Highland-Farmers-Market/49419"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Highland-Farmers-Market/49419"
+  },
+  "Products": {
+   "value": "Fresh produce, baked goods, preserved foods, flowers, plants, and locally produced merchandise",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Highland-Farmers-Market/49419"
+  },
+  "Phone": {
+   "value": "(303) 734-0718",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Highland-Farmers-Market/49419"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://www.coloradolandcan.org/local-resources/Highland-Farmers-Market/49419"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/DenverHighlandFarmersMarket/",
+   "source_url": "https://www.facebook.com/DenverHighlandFarmersMarket/"
+  }
+ }
+}

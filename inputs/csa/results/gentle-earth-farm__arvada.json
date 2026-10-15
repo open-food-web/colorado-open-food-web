@@ -1,0 +1,36 @@
+{
+ "id": "gentle-earth-farm__arvada",
+ "name": "Gentle Earth Farm",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://forms.gle/Vy68pbDYkM5B8uTy8",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [],
+ "frequency": null,
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "offers_csa",
+   "url": "https://www.instagram.com/gentleearthfarm"
+  },
+  {
+   "field": "signup_url",
+   "url": "https://linktr.ee/gentleearthfarm"
+  }
+ ]
+}

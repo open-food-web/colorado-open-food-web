@@ -1,0 +1,34 @@
+{
+ "id": "colorado-farm-to-table__salida",
+ "name": "Colorado Farm to Table",
+ "city": "Salida",
+ "official_website": "http://coloradofarmtotable.org/",
+ "status": "active",
+ "checked": "2026-10-03",
+ "fields": {
+  "Address": {
+   "value": "PO Box 826, Salida, CO 81201 (mailing address)",
+   "source_url": "http://coloradofarmtotable.org/"
+  },
+  "Phone": {
+   "value": "(719) 207-2209",
+   "source_url": "http://coloradofarmtotable.org/"
+  },
+  "Email": {
+   "value": "info@coloradofarmtotable.org",
+   "source_url": "http://coloradofarmtotable.org/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/nonprofitfarm/",
+   "source_url": "http://coloradofarmtotable.org/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/colorado_farm_to_table/",
+   "source_url": "http://coloradofarmtotable.org/"
+  },
+  "Products": {
+   "value": "Corn, acorn squash, cabbage, broccoli, pumpkins",
+   "source_url": "http://coloradofarmtotable.org/"
+  }
+ }
+}

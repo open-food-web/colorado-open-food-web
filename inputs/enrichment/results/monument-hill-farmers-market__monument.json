@@ -1,0 +1,32 @@
+{
+ "id": "monument-hill-farmers-market__monument",
+ "name": "Monument Hill Farmers' Market",
+ "city": "Monument",
+ "official_website": "https://www.springsfarmersmarkets.com/monument",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 8:00am - 2:00pm",
+   "source_url": "https://www.townofmonument.org/Calendar.aspx?EID=194"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://www.townofmonument.org/Calendar.aspx?EID=194"
+  },
+  "Address": {
+   "value": "66 Jefferson Street, Monument, CO 80132",
+   "source_url": "https://www.townofmonument.org/Calendar.aspx?EID=194"
+  },
+  "Phone": {
+   "value": "719-351-0012",
+   "source_url": "https://www.springsfarmersmarkets.com/monument"
+  },
+  "Email": {
+   "value": "corderamarket@yahoo.com",
+   "source_url": "https://www.springsfarmersmarkets.com/monument"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/monumenthillfarmersmarket/",
+   "source_url": "https://www.facebook.com/monumenthillfarmersmarket/"
+  }
+ }
+}

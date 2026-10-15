@@ -1,0 +1,20 @@
+{
+ "id": "walsenburg-farmers-market__walsenburg",
+ "name": "Walsenburg Farmers Market",
+ "city": "Walsenburg",
+ "official_website": "https://www.facebook.com/walsenburgfarmersmarket/",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 12:00pm - 2:00pm",
+   "source_url": "https://www.facebook.com/walsenburgfarmersmarket/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September",
+   "source_url": "https://www.facebook.com/walsenburgfarmersmarket/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/walsenburgfarmersmarket/",
+   "source_url": "https://www.facebook.com/walsenburgfarmersmarket/"
+  }
+ }
+}

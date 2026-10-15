@@ -1,0 +1,52 @@
+{
+ "id": "rock-bottom-ranch-aces__basalt",
+ "name": "Rock Bottom Ranch (ACES)",
+ "offers_csa": true,
+ "csa_status": "closed_season",
+ "signup_url": "https://aspennature.org/locations/rock-bottom-ranch/sign-up-for-rock-bottom-ranch-csa/",
+ "signup_opens": null,
+ "season_start": "2026-06-03",
+ "season_end": "2026-10-04",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables",
+  "Bread/Baked"
+ ],
+ "frequency": "Weekly",
+ "price": "$855 for 19 weeks (sliding scale available); Aspen Saturday Market CSA credit $125-$1,250 at 10% discount",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Rock Bottom Ranch",
+   "address": "2001 Hooks Spur Rd, Basalt, CO 81621",
+   "town": "Basalt",
+   "day": "Wed",
+   "time": "2pm-6pm (late Thursday pickup by request, by 4pm)",
+   "on_farm": true
+  },
+  {
+   "name": "Aspen Saturday Market",
+   "address": null,
+   "town": "Aspen",
+   "day": "Sat",
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://aspennature.org/locations/rock-bottom-ranch/sign-up-for-rock-bottom-ranch-csa/"
+  }
+ ]
+}

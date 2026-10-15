@@ -1,0 +1,51 @@
+{
+ "id": "fort-lewis-college-old-fort-at-hesperus__hesperus",
+ "name": "Fort Lewis College-Old Fort at Hesperus",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://www.fortlewis.edu/the-old-fort/products/community-supported-agriculture",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": null,
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Old Fort Farm Stand (on campus)",
+   "address": null,
+   "town": null,
+   "day": null,
+   "time": null,
+   "on_farm": true
+  },
+  {
+   "name": "Old Fort Country Store",
+   "address": null,
+   "town": "Hesperus",
+   "day": null,
+   "time": null,
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "frequency",
+   "url": "https://www.fortlewis.edu/the-old-fort/products/community-supported-agriculture"
+  }
+ ]
+}

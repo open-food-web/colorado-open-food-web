@@ -1,0 +1,71 @@
+{
+ "id": "ahavah-farm__peyton",
+ "name": "Ahavah Farm",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://www.ahavahfarm.com/csa",
+ "signup_opens": null,
+ "season_start": "2027-02-12",
+ "season_end": null,
+ "season_year": 2027,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "Winter 2027: Small $219, Medium $309, Large $399 (per season)",
+ "snap_accepted": true,
+ "pickup_sites": [
+  {
+   "name": "Ahavah Farm",
+   "address": "7545 Log Rd",
+   "town": "Peyton",
+   "day": "Fri",
+   "time": "10am-7pm",
+   "on_farm": true
+  },
+  {
+   "name": "Monument",
+   "address": "17940 Canterbury Drive",
+   "town": "Monument",
+   "day": "Fri",
+   "time": "11am-7pm",
+   "on_farm": false
+  },
+  {
+   "name": "Ranch Foods Direct",
+   "address": "4635 Town Center Dr",
+   "town": "Colorado Springs",
+   "day": "Fri/Sat",
+   "time": "Fri 11:30am-6pm or Sat 9am-5pm",
+   "on_farm": false
+  },
+  {
+   "name": "Woodland Park (carpool from Ranch Foods Direct)",
+   "address": null,
+   "town": "Woodland Park",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": true,
+  "kind": "other",
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": "$13/week",
+  "details": "Door-to-door delivery from Colorado Springs through Denver; coverage map on CSA page"
+ },
+ "evidence": [
+  {
+   "field": "season_start",
+   "url": "https://www.ahavahfarm.com/csa"
+  },
+  {
+   "field": "snap_accepted",
+   "url": "https://www.ahavahfarm.com/csa"
+  }
+ ]
+}

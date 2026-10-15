@@ -1,0 +1,40 @@
+{
+ "id": "delta-farmers-market__delta",
+ "name": "Delta Farmers Market",
+ "city": "Delta",
+ "official_website": "https://www.deltacofarmersmarket.com/home",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 8:30am - 1:00pm; Wed: 8:30am - 1:00pm (June-August only)",
+   "source_url": "https://www.deltacofarmersmarket.com/home"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://www.deltacofarmersmarket.com/home"
+  },
+  "Products": {
+   "value": "Locally grown produce, eggs, honey, jams, jellies, breads, baked goods, handcrafted pottery, leather goods, artisan/handcrafted works; adjoining bazaar sells antiques, collectibles, and art",
+   "source_url": "https://www.deltacofarmersmarket.com/home"
+  },
+  "SNAP": {
+   "value": "No",
+   "source_url": "https://www.deltacofarmersmarket.com/home"
+  },
+  "Email": {
+   "value": "deltacofarmersmarket@gmail.com",
+   "source_url": "https://www.deltacofarmersmarket.com/home"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/groups/246038845197062",
+   "source_url": "https://www.deltacofarmersmarket.com/home"
+  },
+  "Address": {
+   "value": "2195 Southgate Lane, Delta, CO",
+   "source_url": "https://www.deltacofarmersmarket.com/home"
+  },
+  "Website": {
+   "value": "https://www.deltacofarmersmarket.com/home",
+   "source_url": "https://www.deltacofarmersmarket.com/home"
+  }
+ }
+}

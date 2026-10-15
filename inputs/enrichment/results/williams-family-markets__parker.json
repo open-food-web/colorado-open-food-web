@@ -1,0 +1,32 @@
+{
+ "id": "williams-family-markets__parker",
+ "name": "Williams Family Markets",
+ "city": "Parker",
+ "official_website": "https://thelocalcolorado.com/parker-farmers-market/",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 8:00am - 1:00pm",
+   "source_url": "https://thelocalcolorado.com/parker-farmers-market/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://thelocalcolorado.com/parker-farmers-market/"
+  },
+  "Products": {
+   "value": "Fresh vegetables, fruit, herbs, flowers, homemade salsa, baked goods, bread, meats, ready-made foods, artwork, and home/body care items from over 100 vendors",
+   "source_url": "https://www.parkercolorado.net/parker-farmers-market-dates-and-times/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/parkerfarmersmarket/",
+   "source_url": "https://thelocalcolorado.com/parker-farmers-market/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/theparkerfarmersmarket/",
+   "source_url": "https://thelocalcolorado.com/parker-farmers-market/"
+  },
+  "Website": {
+   "value": "https://thelocalcolorado.com/parker-farmers-market/",
+   "source_url": "https://thelocalcolorado.com/parker-farmers-market/"
+  }
+ }
+}

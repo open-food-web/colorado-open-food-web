@@ -1,0 +1,66 @@
+{
+ "id": "highwater-farm__silt",
+ "name": "Highwater Farm",
+ "offers_csa": true,
+ "csa_status": "full",
+ "signup_url": "https://docs.google.com/forms/d/e/1FAIpQLSfLPv7TykNDA4M4mIi4H2A2MRZUlrIXYKUfNQYrVSYcqjpC8g/viewform?usp=publish-editor",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": null,
+ "snap_accepted": true,
+ "pickup_sites": [
+  {
+   "name": "Silt River Preserve (on-farm)",
+   "address": "7001 County Road 346, Silt, CO 81652",
+   "town": "Silt",
+   "day": "Thu & Sat",
+   "time": "Thu 4-6pm, Sat 8-10am",
+   "on_farm": true
+  },
+  {
+   "name": "Glenwood Springs central drop-off",
+   "address": null,
+   "town": "Glenwood Springs",
+   "day": "Tue",
+   "time": "4-7pm",
+   "on_farm": false
+  },
+  {
+   "name": "Carbondale central drop-off",
+   "address": null,
+   "town": "Carbondale",
+   "day": "Tue",
+   "time": "4:30-8pm",
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": "towns",
+  "radius_miles": null,
+  "zips": [],
+  "towns": [
+   "Glenwood Springs",
+   "Carbondale"
+  ],
+  "fee": null,
+  "details": "Boxed share drop-offs; fees not listed"
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "http://www.highwaterfarm.org/csa"
+  },
+  {
+   "field": "pickup_sites",
+   "url": "http://www.highwaterfarm.org/pickupoptions"
+  }
+ ]
+}

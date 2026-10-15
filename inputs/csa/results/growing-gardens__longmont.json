@@ -1,0 +1,47 @@
+{
+ "id": "growing-gardens__longmont",
+ "name": "Growing Gardens",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://growinggardens.org/csa/",
+ "signup_opens": null,
+ "season_start": "2026-10-28",
+ "season_end": "2026-12-16",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables"
+ ],
+ "frequency": "Weekly",
+ "price": "$450 fall share (or $225 + $225 payment plan)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Boulder Farm",
+   "address": "1630 Hawthorn Avenue, Boulder",
+   "town": "Boulder",
+   "day": "Wed",
+   "time": "3:30-6pm",
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Pickup only"
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://growinggardens.org/csa/"
+  },
+  {
+   "field": "season_start",
+   "url": "https://growinggardens.org/csa/"
+  }
+ ]
+}

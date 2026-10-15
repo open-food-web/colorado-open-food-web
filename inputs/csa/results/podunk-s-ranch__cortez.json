@@ -1,0 +1,32 @@
+{
+ "id": "podunk-s-ranch__cortez",
+ "name": "Podunk's Ranch",
+ "offers_csa": "unknown",
+ "csa_status": "unknown",
+ "signup_url": null,
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [],
+ "frequency": null,
+ "price": null,
+ "snap_accepted": true,
+ "pickup_sites": [],
+ "delivery": {
+  "offered": null,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": ""
+ },
+ "evidence": [
+  {
+   "field": "snap_accepted",
+   "url": "https://beef.podunksranch.com/"
+  }
+ ]
+}

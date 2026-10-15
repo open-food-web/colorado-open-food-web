@@ -1,0 +1,16 @@
+name: Refresh usda_datashare (weekly)
+
+on:
+  schedule:
+    - cron: "29 9 * * 3"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    uses: ./.github/workflows/refresh-source.yml
+    with:
+      source: usda_datashare
+    secrets: inherit
+    permissions:
+      contents: write
+      pull-requests: write

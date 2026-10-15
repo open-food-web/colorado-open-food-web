@@ -1,0 +1,55 @@
+{
+ "id": "cabri-creamery__wellington",
+ "name": "Cabri Creamery",
+ "offers_csa": true,
+ "csa_status": "unknown",
+ "signup_url": "https://docs.google.com/forms/d/e/1FAIpQLSe_l8np2nraYzNTqK8MONvtGx3izXhk_ej80xs3rtx3MlKwmw/viewform",
+ "signup_opens": null,
+ "season_start": "2026-07-06",
+ "season_end": "2026-12-19",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Dairy"
+ ],
+ "frequency": "Weekly",
+ "price": "Milk shares $240 full / $120 half / $60 quarter (12 wks); half cheese share $88 (8 wks); one-time $30 lifetime fee",
+ "snap_accepted": true,
+ "pickup_sites": [
+  {
+   "name": "Cabri Creamery",
+   "address": "11664 N. County Rd 7",
+   "town": "Wellington",
+   "day": null,
+   "time": null,
+   "on_farm": true
+  },
+  {
+   "name": "On the Vine Farm",
+   "address": "3611 Richmond Drive",
+   "town": "Fort Collins",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Not mentioned"
+ },
+ "evidence": [
+  {
+   "field": "offers_csa",
+   "url": "https://www.cabricreamery.com/"
+  },
+  {
+   "field": "season_start",
+   "url": "https://www.cabricreamery.com/"
+  }
+ ]
+}

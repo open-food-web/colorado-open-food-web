@@ -1,0 +1,47 @@
+{
+ "id": "crescendum-flower-farm__arvada",
+ "name": "Crescendum Flower Farm",
+ "offers_csa": true,
+ "csa_status": "open",
+ "signup_url": "https://www.crescendumflowerfarm.com/csa-subscription",
+ "signup_opens": null,
+ "season_start": null,
+ "season_end": null,
+ "season_year": 2026,
+ "season_precision": null,
+ "share_types": [
+  "Flowers"
+ ],
+ "frequency": "Weekly",
+ "price": "$250 for 2026 Late Summer CSA Bouquet Share (8 weeks)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Crescendum Flower Farm",
+   "address": "7100 W. 62nd Ave, Arvada, CO 80003",
+   "town": "Arvada",
+   "day": "Thu and Sun",
+   "time": "Thu 5-7pm; Sun 4-6:30pm",
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Farm pickup only; alternate pickup with 24 hours notice."
+ },
+ "evidence": [
+  {
+   "field": "price",
+   "url": "http://www.crescendumflowerfarm.com/f"
+  },
+  {
+   "field": "pickup",
+   "url": "https://www.crescendumflowerfarm.com/csa-subscription"
+  }
+ ]
+}

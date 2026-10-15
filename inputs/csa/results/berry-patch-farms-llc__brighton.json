@@ -1,0 +1,56 @@
+{
+ "id": "berry-patch-farms-llc__brighton",
+ "name": "Berry Patch Farms, LLC",
+ "offers_csa": true,
+ "csa_status": "opens_later",
+ "signup_url": "https://berrypatchfarms.com/csa",
+ "signup_opens": "2027-01-01",
+ "season_start": null,
+ "season_end": null,
+ "season_year": null,
+ "season_precision": null,
+ "share_types": [
+  "Vegetables",
+  "Other"
+ ],
+ "frequency": "Weekly",
+ "price": "Full share (20 wks) $870 City Park / $850 Brighton; half share (10 wks) $440 City Park / $430 Brighton; CSA Flex Card $300 ($325 value) or $500 ($540 value)",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "City Park (Denver)",
+   "address": null,
+   "town": "Denver",
+   "day": null,
+   "time": null,
+   "on_farm": false
+  },
+  {
+   "name": "Berry Patch Farms",
+   "address": "13785 Potomac St, Brighton, CO 80601",
+   "town": "Brighton",
+   "day": null,
+   "time": null,
+   "on_farm": true
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "A CSA is not a delivery service (farm statement)."
+ },
+ "evidence": [
+  {
+   "field": "season",
+   "url": "https://berrypatchfarms.com/csa"
+  },
+  {
+   "field": "signup_opens",
+   "url": "https://berrypatchfarms.com/csa"
+  }
+ ]
+}

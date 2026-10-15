@@ -1,0 +1,40 @@
+{
+ "id": "cortez-farmers-market__cortez",
+ "name": "Cortez Farmers Market",
+ "city": "Cortez",
+ "official_website": "https://www.cortezfarmersmarket.com/",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 8:00am - 12:00pm (May 30 - Sep 26); Sat: 8:30am - 12:00pm (Oct 3 - Oct 31)",
+   "source_url": "https://www.cortezfarmersmarket.com/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October",
+   "source_url": "https://www.cortezfarmersmarket.com/"
+  },
+  "Products": {
+   "value": "Fresh local produce, pork, lamb, eggs, baked goods, beverages, herbs, plants, artisan crafts/goods, plus live music and family-friendly activities",
+   "source_url": "https://www.the-journal.com/articles/cortez-farmers-market-to-open-2025-season-at-new-location/"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://www.the-journal.com/articles/cortez-farmers-market-to-open-2025-season-at-new-location/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://shopcortez.com/events/saturday-farmers-market-every-saturday-in-july/"
+  },
+  "Phone": {
+   "value": "970-564-4095",
+   "source_url": "https://shopcortez.com/events/saturday-farmers-market-every-saturday-in-july/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/groups/265957719169/",
+   "source_url": "https://www.facebook.com/groups/265957719169/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/cortezfarmersmarket/",
+   "source_url": "https://www.instagram.com/cortezfarmersmarket/"
+  }
+ }
+}

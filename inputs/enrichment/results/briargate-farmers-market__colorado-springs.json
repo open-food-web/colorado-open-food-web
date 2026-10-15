@@ -1,0 +1,40 @@
+{
+ "id": "briargate-farmers-market__colorado-springs",
+ "name": "Briargate Farmers' Market",
+ "city": "Colorado Springs",
+ "official_website": "https://www.springsfarmersmarkets.com/northern-springs",
+ "fields": {
+  "Hours": {
+   "value": "Wed: 9:00am - 2:00pm",
+   "source_url": "https://www.springsfarmersmarkets.com/northern-springs"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September",
+   "source_url": "https://www.springsfarmersmarkets.com/northern-springs"
+  },
+  "Products": {
+   "value": "Fresh produce, dairy products, homemade bread, seasonal Palisade peaches, handmade jewelry, crafted wood items, Pampered Chef, microgreens, mushrooms, dog treats, locally ground coffee, and more (about 35 vendors)",
+   "source_url": "https://www.springsfarmersmarkets.com/northern-springs"
+  },
+  "Email": {
+   "value": "corderamarket@yahoo.com",
+   "source_url": "https://www.springsfarmersmarkets.com/contact-us"
+  },
+  "Phone": {
+   "value": "719-351-0012",
+   "source_url": "https://www.springsfarmersmarkets.com/contact-us"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/springsfm",
+   "source_url": "https://www.springsfarmersmarkets.com/"
+  },
+  "Address": {
+   "value": "7610 North Union Blvd, Colorado Springs, CO 80920",
+   "source_url": "https://www.springsfarmersmarkets.com/northern-springs"
+  },
+  "Website": {
+   "value": "https://www.springsfarmersmarkets.com/northern-springs",
+   "source_url": "https://www.springsfarmersmarkets.com/northern-springs"
+  }
+ }
+}

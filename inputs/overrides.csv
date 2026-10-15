@@ -1,0 +1,855 @@
+name,city,column,mode,value,note,date
+Scanga Meat Company,Salida,Category,set,Meat Producer & Packer,"Not a farmers' market: a meat producer and meat packer (user correction). Chaffee Provides files it under its ""Market"" type.",2026-10-03
+Scanga Meat Company,Salida,Notes,prepend,Meat producer and meat packer.,User correction,2026-10-03
+Colorado Mountain Lavender,Buena Vista,Category,set,Farm Products (online),Farm no longer hosts visitors or a farm shop; sells online (co-mtn-lav.com),2026-10-03
+Colorado Mountain Lavender,Buena Vista,Hours,set,Not open to the public. Order online.,co-mtn-lav.com says the farm and farm shop are no longer open to the public (checked 2026-10-03),2026-10-03
+Colorado Mountain Lavender,Buena Vista,Notes,prepend,"Not open to the public: the farm and farm shop no longer host visitors. Its lavender products are sold online at co-mtn-lav.com/farmshop, by subscription (co-mtn-lav.com/subscribe), and wholesale to shops that want to carry them (co-mtn-lav.com/wholesale).","Purchase channels per co-mtn-lav.com, checked 2026-10-03; the site names no retail stockists",2026-10-03
+The Asian Palate Marketplace & Catering,Buena Vista,Category,set,Caterer,No longer a restaurant or market: catering and private-chef business per theasianpalate.com (user correction),2026-10-03
+The Asian Palate Marketplace & Catering,Buena Vista,Hours,set,By booking (catering and private chef),theasianpalate.com: booking via its contact form,2026-10-03
+The Asian Palate Marketplace & Catering,Buena Vista,Notes,prepend,"Now a caterer and private chef (sushi and Southeast Asian dishes) serving Buena Vista and the surrounding valley; book through theasianpalate.com/contact. Like the restaurants we list, it cooks with local food: its own site says it celebrates local producers, farmers and ranchers, and Chaffee Provides lists it as using local veggies.","theasianpalate.com, checked 2026-10-03. A ~2018 magazine profile named Weathervane Farm as its main produce source; not used because it predates the switch to catering",2026-10-03
+The Lettucehead Food Company,Buena Vista,Category,set,Grocery Store,"A grocery and health-food store, not a farmers' market (user correction; thelettucehead.com)",2026-10-03
+Yampa Valley Foods,Steamboat Springs,Category,set,Grocery Store,"Year-round nonprofit local-food store with daily hours, not a farmers' market (user correction)",2026-10-03
+Salida Farmers Market,Salida,Category,set,Farmers' Market,"Chaffee Provides files it under Markets/Food Banks, which added Organization + Food Bank labels; it is a farmers' market",2026-10-03
+Fountain Farmers Market,Fountain,Website,clear,,"Removed compromised link: localvorecolorado.com now redirects to an unrelated restaurant site (elpalaciolatintaste.com), expired certificate (checked 2026-10-03)",2026-10-03
+Four Seasons Farmers and Artisans Market,Wheat Ridge,Website,clear,,Removed compromised link: fourseasonsfam.com now redirects to an unrelated Greek site (fixmasters.gr) (checked 2026-10-03),2026-10-03
+Golden Triangle Farmers Market,Denver,Website,clear,,Removed compromised link: goldentrianglefm.com is abandoned (last updated 2020) and carries an injected spam link (checked 2026-10-03),2026-10-03
+Rocky Mountain Indoor Farmers Market,Fort Collins,Website,clear,,Removed compromised link: rockymountainfarmersmarket.com is a parked domain serving an ad-tracking page (checked 2026-10-03),2026-10-03
+Florence Farmers Market,Florence,Website,clear,,Removed compromised link: florencecoloradochamber.com/calendar redirects to a 'Potential Threat Detected' warning page (checked 2026-10-03),2026-10-03
+Hutchinson Ranch,Salida,Latitude,set,38.5165519,"6700 Old Corral Rd doesn't geocode (Census, OSM); pin from the Google Maps listing for Hutchinson Ranch Wedding & Events at that exact address (checked 2026-10-03), consistent with the ranch site's '2 miles west of Salida off Hwy 50'",2026-10-03
+Hutchinson Ranch,Salida,Longitude,set,-106.0435714,Same Google Maps listing as the Latitude row,2026-10-03
+Hutchinson Ranch,Salida,County,set,Chaffee,"Overrides run after the county lookup, so a hand-set pin needs its county set too (Salida is in Chaffee County)",2026-10-03
+Sandy's Way Microfarm,SEDALIA,City,set,Sedalia,Colorado Proud lists the town in capitals,2026-10-03
+Indian Hills Farmer's Market,Indian Hills,Facebook,clear,,Dead link removed: http://www.facebook.com/Indian-Hills-Farmers-Market/275105069231823 (HTTP 404; link check 2026-10-03),2026-10-03
+Something From the Farm,Fort Collins,Facebook,clear,,Dead link removed: http://www.facebook.com/pages/something-from-the-farm-corn-maze-125041194208203 (HTTP 404; link check 2026-10-03),2026-10-03
+Lower Valley Pumpkin Patch and Corn Maze,Grand Junction,Facebook,clear,,Dead link removed: http://www.facebook.com/pagesgrand-junction-co/lower-valley-pumpkin-patch-and-corn-maze/112542552119168?ref=ts&ajaxpipe=1&__a=6 (HTTP 404; link check 2026-10-03),2026-10-03
+Searle Ranch,Monument,Facebook,clear,,Dead link removed: https://www.facebook.com/pages/Searle-Ranch-Grass-Fed-Beef (HTTP 404; link check 2026-10-03),2026-10-03
+Studt's Pumpkin Patch and Corn Maze,Grand Junction,Facebook,clear,,Dead link removed: https://www.facebook.com/pagesgrand-junction-co/studts-pumpkin-patch-and-corn-maze/138556982822627?ref=sgm (HTTP 404; link check 2026-10-03),2026-10-03
+A Wren's Nest Farm,Pueblo,Website,clear,,Dead link removed: http://awrensnest.com/nest/ (gaierror; link check 2026-10-03),2026-10-03
+Berthoud Farmers' Market,Berthoud,Website,clear,,Dead link removed: http://berthoudlocal.org/farmers-and-fleas/ (HTTP 404; link check 2026-10-03),2026-10-03
+Landmark Greenwood Village Fresh Market,Greenwood Village,Website,clear,,Dead link removed: http://coloradofreshmarkets.com/markets/ (HTTP 404; link check 2026-10-03),2026-10-03
+Hoffmann Commercial Real Estate Farmers' Market,Avon,Website,clear,,Dead link removed: http://edwardsfarmersmarket.com/ (gaierror; link check 2026-10-03),2026-10-03
+Jax Farmer's Market in Lafayette,Lafayette,Website,clear,,Dead link removed: http://farmersmarketlouis.com (gaierror; link check 2026-10-03),2026-10-03
+Caring & Sharing – Sanctuary Soup Kitchen,,Website,clear,,Dead link removed: http://salidacaringsharing.org/the-resource-center/ (HTTP 404; link check 2026-10-03),2026-10-03
+Memorial Park Farmers' Market,Colorado Springs,Website,clear,,Dead link removed: http://springsbargains.com/colorado-springs-farmers-market-schedule/ (HTTP 404; link check 2026-10-03),2026-10-03
+La Veta Local Market,La Veta,Website,clear,,Dead link removed: http://wahatoya.org/ (gaierror; link check 2026-10-03),2026-10-03
+Frederika Fall Festival & Corn Maxe,Avondale,Website,clear,,Dead link removed: http://www.10best.com/interests/travel-now/10best-fall-corn-mazes-fun-for-families/ (HTTP 404; link check 2026-10-03),2026-10-03
+Tiri's Garden Farmers Market,Denver,Website,clear,,Dead link removed: http://www.concertsforkids.org (HTTP 404; link check 2026-10-03),2026-10-03
+Copper Kettle Apothecary,Salida,Website,clear,,Dead link removed: http://www.copperkettleapothecary.com (HTTP 404; link check 2026-10-03),2026-10-03
+Hope Farms,Fort Collins,Website,clear,,Dead link removed: http://www.cultivatehopeco.org (gaierror; link check 2026-10-03),2026-10-03
+Metro Denver Farmers' Market-Lakewood,Lakewood,Website,clear,,Dead link removed: http://www.denverfarmersmarket.com/index.html (HTTP 404; link check 2026-10-03),2026-10-03
+D & H Farms,Ault,Website,clear,,Dead link removed: http://www.dhfarms2000.com/ (gaierror; link check 2026-10-03),2026-10-03
+Downtown Sunday Market,Colorado Springs,Website,clear,,Dead link removed: http://www.downtowncs.com/experience-downtown/sunday-market-downtown.html (HTTP 404; link check 2026-10-03),2026-10-03
+Drake Road Farmers Market,Fort Collins,Website,clear,,Dead link removed: http://www.drakeroadfarmersmarket.com (HTTP 404; link check 2026-10-03),2026-10-03
+Fresh Start Family Farms LLC.,Aurora,Website,clear,,Dead link removed: http://www.freshstartfamilyfarms.com (gaierror; link check 2026-10-03),2026-10-03
+Fritzler Farms Inc dba Fritzler Corn Maze and Scream Acres,La Salle,Website,clear,,Dead link removed: http://www.fritzlermaze.com  and www.screamacres.net (malformed (whitespace); link check 2026-10-03),2026-10-03
+Lowry Farmers' Market,Denver,Website,clear,,Dead link removed: http://www.hangar2lowry.com/farmers-market (HTTP 404; link check 2026-10-03),2026-10-03
+Homestead Farms Co.,Aurora,Website,clear,,Dead link removed: http://www.homesteadfarmsco.com (gaierror; link check 2026-10-03),2026-10-03
+Larimer Street Market,Denver,Website,clear,,Dead link removed: http://www.LarimerStreetMarket.com (gaierror; link check 2026-10-03),2026-10-03
+Lost Greens Farm,Denver,Website,clear,,Dead link removed: http://www.lostgreensfarm.com/ (HTTP 404; link check 2026-10-03),2026-10-03
+Lower Valley Pumpkin Patch and Corn Maze,Grand Junction,Website,clear,,Dead link removed: http://www.lowervalleycornmaze.com/directions.html (gaierror; link check 2026-10-03),2026-10-03
+Lyons Outdoor Market,Lyons,Website,clear,,Dead link removed: http://www.lyonsoutdoormarket.com (gaierror; link check 2026-10-03),2026-10-03
+The Community Market at Naropa,Boulder,Website,clear,,Dead link removed: http://www.naropa.edu/campuslife/communitymarket.cfm (HTTP 404; link check 2026-10-03),2026-10-03
+Roots From Eden CSA Market and Bakery,Loma,Website,clear,,Dead link removed: http://www.RootsFromEden.com (HTTP 404; link check 2026-10-03),2026-10-03
+Spotted Horse Barnyard,Elbert,Website,clear,,Dead link removed: http://www.spottedhorsebarnyard.com (gaierror; link check 2026-10-03),2026-10-03
+Sunshine Greens Farm,Colorado Springs,Website,clear,,Dead link removed: http://www.sunshinegreensfarm.com (HTTP 404; link check 2026-10-03),2026-10-03
+Two Springs Ranch/ Harvest Days,Pueblo,Website,clear,,Dead link removed: http://www.the maize.com (malformed (whitespace); link check 2026-10-03),2026-10-03
+Simply Natural at Desiderata Ranch,Berthoud,Website,clear,,Dead link removed: http://y.ahoo.it/2s86r+td (HTTP 404; link check 2026-10-03),2026-10-03
+Dragonfly Farm,Delta,Website,clear,,Dead link removed: https://dragonflychurros.com (gaierror; link check 2026-10-03),2026-10-03
+Garden Sweet,Fort Collins,Website,clear,,Dead link removed: https://gardensweet.com/store/pick-your-own-c53491163 (HTTP 404; link check 2026-10-03),2026-10-03
+Green Vally Ranch NE Denver Farmers Market (Presented by Grateful Garden llc),Denver,Website,clear,,Dead link removed: https://Gvrfarmersmarket.com (gaierror; link check 2026-10-03),2026-10-03
+Harvest Moon Produce LLC,Dolores,Website,clear,,Dead link removed: https://harvestmoonproduce.farm (gaierror; link check 2026-10-03),2026-10-03
+Castle Rock Farmers Market,Castle Rock,Website,clear,,Dead link removed: https://originalcastlerockfarmersmarket.com/ (gaierror; link check 2026-10-03),2026-10-03
+"Pioneer Farmsteaders, LLC",Arvada,Website,clear,,Dead link removed: https://pioneerfarmsteaders.com (gaierror; link check 2026-10-03),2026-10-03
+Freeman Apple Orchard,Lakewood,Website,clear,,Dead link removed: https://rogerfreemanlaw.com/freeman-apple-orchard/ (gaierror; link check 2026-10-03),2026-10-03
+Copper Canyon Suri Ranch,Nederland,Website,clear,,Dead link removed: https://www.alpacanation.com/coppercanyon.asp (HTTP 404; link check 2026-10-03),2026-10-03
+Boulder Creek Winery,Boulder,Website,clear,,Dead link removed: https://www.bouldercreekwine.com (gaierror; link check 2026-10-03),2026-10-03
+Busy Bee Farm,Larkspur,Website,clear,,Dead link removed: https://www.busybeefarm.us (gaierror; link check 2026-10-03),2026-10-03
+Plateau Valley Farmers Market,Collbran,Website,clear,,Dead link removed: https://www.collbrancongregationalchurch.org/events_collbran_congregational.html (HTTP 404; link check 2026-10-03),2026-10-03
+Crooked Clove Farm & Ranch LLC,Larkspur,Website,clear,,Dead link removed: https://www.crookedclove.com (gaierror; link check 2026-10-03),2026-10-03
+Dayspring Farm,Olathe,Website,clear,,Dead link removed: https://www.dayspringfarm.net (gaierror; link check 2026-10-03),2026-10-03
+Highlands Ranch Farmers' Market,Highlands Ranch,Website,clear,,Dead link removed: https://www.denverfarmersmarket.com/index.html (HTTP 404; link check 2026-10-03),2026-10-03
+Donoma Farms,Carr,Website,clear,,Dead link removed: https://www.donomafarms.com (gaierror; link check 2026-10-03),2026-10-03
+Farm and Ranch Market,Grand Junction,Website,clear,,Dead link removed: https://www.farmmarketgj.com/ (HTTP 404; link check 2026-10-03),2026-10-03
+Five Freedoms Dairy,Longmont,Website,clear,,Dead link removed: https://www.fivefreedomsdairy (gaierror; link check 2026-10-03),2026-10-03
+Happy Apple Orchard,Ignacio,Website,clear,,Dead link removed: https://www.happyappleorchard.com/ (gaierror; link check 2026-10-03),2026-10-03
+Hugs Farm,Walsenburg,Website,clear,,Dead link removed: https://www.HugsFarm.weebly.com (SSLError; link check 2026-10-03),2026-10-03
+Kristin's Farm Stand,Denver,Website,clear,,Dead link removed: https://www.KristinsFarmStand.com (gaierror; link check 2026-10-03),2026-10-03
+Life Cycles Pasture,Montrose,Website,clear,,Dead link removed: https://www.lifecyclespasture.com (gaierror; link check 2026-10-03),2026-10-03
+Cherry Creek Valley International Farmers Market,Denver,Website,clear,,Dead link removed: https://www.localharvestfoods.com/ (gaierror; link check 2026-10-03),2026-10-03
+Masonville Orchards,Ault,Website,clear,,Dead link removed: https://www.masonvilleorchard.com (SSLError; link check 2026-10-03),2026-10-03
+Morton's Organic Orchards,Palisade,Website,clear,,Dead link removed: https://www.mortonsorchards.com (gaierror; link check 2026-10-03),2026-10-03
+Noco Virtual Farmers Market,Fort Collins,Website,clear,,Dead link removed: https://www.nocovirtualfarmersmarket.com/ (HTTP 404; link check 2026-10-03),2026-10-03
+Norwood Farm and Craft Market,Norwood,Website,clear,,Dead link removed: https://www.norwoodfarmmarket.org/ (gaierror; link check 2026-10-03),2026-10-03
+On the Vine at Richmond Farms Urban Market,Fort Collins,Website,clear,,Dead link removed: https://www.onthevineatrichmondfarms.com (HTTP 404; link check 2026-10-03),2026-10-03
+Jenkin's Farms and Western Skies Winery,Penrose,Website,clear,,Dead link removed: https://www.penroseapples.com/hours-of-operation.php (gaierror; link check 2026-10-03),2026-10-03
+Rovegno's Produce,Avondale,Website,clear,,Dead link removed: https://www.rovegnosproduce.com/contact.html (gaierror; link check 2026-10-03),2026-10-03
+Royal Gorge Farmers Market,Cañon City,Website,clear,,Dead link removed: https://www.royalgorgechamberalliance.org/royal-gorge-farmers-market/faceb (HTTP 404; link check 2026-10-03),2026-10-03
+Blue Barrel Farm,Fort Collins,Website,set,https://www.bluebarrel.farm/,"Site moved: http://bluebarrelfarm.com redirects to https://www.bluebarrel.farm/, verified same business (link check 2026-10-03)",2026-10-03
+Edwards Corner Farmers' Market,Edwards,Website,clear,,Removed compromised link http://edwardscornerfarmersmarket.com/: domain is parked for sale (link check 2026-10-03),2026-10-03
+"Heritage Lavender, LLC",Berthoud,Website,clear,,Removed compromised link http://heritagelavender.com/: redirects to expireddomains.com (domain lapsed) (link check 2026-10-03),2026-10-03
+Bolton's Orchards,Grand Junction,Website,set,https://boltonorchards.co/,"Site moved: http://www.boltonorchards.net redirects to https://boltonorchards.co/, verified same business (link check 2026-10-03)",2026-10-03
+"Borden Farms, LLC",Delta,Website,set,https://pedrosfarm.com/,"Site moved: bordenfarms.com redirects to pedrosfarm.com, which says 'Formerly Borden Farms' (organic produce and flowers, Delta; verified 2026-10-03)",2026-10-03
+High Plains Food Cooperative,Denver Tech Center,Website,clear,,"Removed compromised link http://www.highplainsfood.org: redirects through safebrowse.io, a malware-style redirector (link check 2026-10-03)",2026-10-03
+Johnson's Acres,Brighton,Website,clear,,"Removed compromised link http://www.johnsonsacres.com: redirects to 11jelas777.com, a gambling spam site (link check 2026-10-03)",2026-10-03
+The Grainery Ministries,Salida,Website,clear,,"Removed compromised link http://www.thegraineryministries.org: redirects through safebrowse.io, a malware-style redirector (link check 2026-10-03)",2026-10-03
+The County With The Bounty & Wild West Excursions,Cortez,Website,set,https://thecountywiththebounty.com/,"Site moved: https://CountyWithTheBounty.com redirects to https://thecountywiththebounty.com/, verified same business (link check 2026-10-03)",2026-10-03
+The Farm Collaborative,Aspen,Website,set,https://thefarmcollaborative.org/,"Site moved: https://farmco.org redirects to https://thefarmcollaborative.org/, verified same business (link check 2026-10-03)",2026-10-03
+Rocky Mountain Garlic,Salida,Website,set,https://www.rockymountaingarlic.net/,"Site moved: https://Rockymountaingarlic.com redirects to https://www.rockymountaingarlic.net/, verified same business (link check 2026-10-03)",2026-10-03
+Bee Family Centennial Farm Museum,Fort Collins,Website,set,https://www.beefamilyfarm.com/,"Site moved: https://www.beefamilyfarm.org redirects to https://www.beefamilyfarm.com/, verified same business (link check 2026-10-03)",2026-10-03
+East Denver Food Hub,Montbello,Website,clear,,Removed compromised link https://www.eastdenverfoodhub.com: redirects to an unrelated gallery site (irmavaleriogalerias.com) (link check 2026-10-03),2026-10-03
+Rekaivery Food Hub,Fort Collins,Website,clear,,"Removed https://www.endhungerco.org/partner-stories/rekaivery-food-hub-launches-kickstarter: now redirects to provechocollective.org's home page, which doesn't mention Rekaivery (link check 2026-10-03)",2026-10-03
+Harvest Farm,Wellington,Website,set,https://fortcollinsrescuemission.org/who-we-are/locations/harvest-farm/,"Site moved: https://www.harvestfarm.net redirects to https://fortcollinsrescuemission.org/who-we-are/locations/harvest-farm/, verified same business (link check 2026-10-03)",2026-10-03
+Market on the Plaza,Mountain Village,Website,set,https://townofmountainvillage.com/explore/market-on-the-plaza/,"Site moved: https://www.marketontheplaza.com redirects to https://townofmountainvillage.com/explore/market-on-the-plaza/, verified same business (link check 2026-10-03)",2026-10-03
+Fort Collins Winter Farmers Market,Fort Collins,Website,set,https://www.wildcraftmarkets.com/,"Site moved: https://www.winterfarmersmarket.com/ redirects to https://www.wildcraftmarkets.com/, verified same business (link check 2026-10-03)",2026-10-03
+Ledingham Livestock,Carr,Category,set,On-Farm / Ranch Sales,Was 'Other' (Colorado Proud stated no type): Beef and lamb ranch; recategorized in the 2026-10-03 category review,2026-10-03
+Oswald Grassfed Beef,Cotopaxi,Category,set,On-Farm / Ranch Sales,Was 'Other' (Colorado Proud stated no type): Grass-fed beef ranch; recategorized in the 2026-10-03 category review,2026-10-03
+Pasture Provisions Company,Denver,Category,set,On-Farm / Ranch Sales,Was 'Other' (Colorado Proud stated no type): Ranch meats and produce; recategorized in the 2026-10-03 category review,2026-10-03
+Ent Wise Farm,Fort Collins,Category,set,On-Farm / Ranch Sales,Was 'Other' (Colorado Proud stated no type): Produce farm; recategorized in the 2026-10-03 category review,2026-10-03
+First Fruits Organic Farms,Paonia,Category,set,On-Farm / Ranch Sales,Was 'Other' (Colorado Proud stated no type): Orchard; recategorized in the 2026-10-03 category review,2026-10-03
+Quarter Acre and a Mule Farm,Pueblo,Category,set,On-Farm / Ranch Sales,Was 'Other' (Colorado Proud stated no type): Produce farm; recategorized in the 2026-10-03 category review,2026-10-03
+McWiggly Worm Farm LLC,Pueblo West,Category,set,On-Farm / Ranch Sales,"Was 'Other' (Colorado Proud stated no type): Worm farm (composting worms, castings); recategorized in the 2026-10-03 category review",2026-10-03
+Palombo Farms Market,Henderson,Category,set,Roadside Market,Was 'Other' (Colorado Proud stated no type): Farm produce market; recategorized in the 2026-10-03 category review,2026-10-03
+Kokopelli Farm Market,Palisade,Category,set,Roadside Market,Was 'Other' (Colorado Proud stated no type): Farm produce market; recategorized in the 2026-10-03 category review,2026-10-03
+Sackett's Farm Market,Rocky Ford,Category,set,Roadside Market,Was 'Other' (Colorado Proud stated no type): Farm produce market; recategorized in the 2026-10-03 category review,2026-10-03
+Growing Gardens,Longmont,Category,set,"Roadside Market, Organization","Was 'Other' (Colorado Proud stated no type): Nonprofit farm stand / community garden (Colorado Proud 'other' type: Farm Stand, Cultiva Youth Program); recategorized in the 2026-10-03 category review",2026-10-03
+Food to Power,Colorado Springs,Category,set,Community Food Hub,"Community food-access hub, not a wholesale distributor (2026-10-03 category review)",2026-10-03
+The Action Center Community Food Hub,Lakewood,Category,set,Community Food Hub,"Community food-access hub, not a wholesale distributor (2026-10-03 category review)",2026-10-03
+East Denver Food Hub,Montbello,Category,set,Community Food Hub,"Community food-access hub, not a wholesale distributor (2026-10-03 category review)",2026-10-03
+US Potato Board,Denver Tech Center,,remove,,"A trade association, not a place to get food (2026-10-03 category review)",2026-10-03
+"Borden Farms, LLC",Delta,Business Name,set,Pedro's Farm (formerly Borden Farms),Renamed: its site now reads 'Pedro's Farm ... Formerly Borden Farms' (verified 2026-10-03),2026-10-03
+Platte River Fort,Greeley,,remove,,"Now River Fort Ranch, a barn wedding venue (riverfortranch.com); no farm stand, produce or tours described, so not a food stop (reviewed 2026-10-03)",2026-10-03
+Boulder Creek Winery,Boulder,,remove,,"Closed: Yelp 'CLOSED - Updated January 2026', Foursquare 'Now Closed' (closed-org check 2026-10-03)",2026-10-03
+Spotted Horse Barnyard,Elbert,,remove,,Closed: owner confirmed permanent closure (pumpkinpatchesandmore.org closed-farms page) (closed-org check 2026-10-03),2026-10-03
+Freeman Apple Orchard,Lakewood,,remove,,Closed: pickyourown.org lists it permanently closed; domain gone (closed-org check 2026-10-03),2026-10-03
+Lyons Outdoor Market,Lyons,,remove,,"Removed on review: Tripadvisor 'temporarily closed until 10/04/2026', absent from the town's 2026 events, website gone (closed-org check 2026-10-03)",2026-10-03
+Hugs Farm,Walsenburg,,remove,,"Removed on review: visithugsfarm.com now offers mindfulness/animal-therapy services, no food sales (closed-org check 2026-10-03)",2026-10-03
+Morton's Organic Orchards,Palisade,Website,set,https://mortonsorganicorchards.com/,Site moved; 2026 season updates on the new domain (closed-org check 2026-10-03),2026-10-03
+Fritzler Farms Inc dba Fritzler Corn Maze and Scream Acres,La Salle,Website,set,https://www.fritzlerfarmpark.com/,Renamed Fritzler Farm Park; official site shows 2026 Fall Fest Sept 19 - Nov 1 (closed-org check 2026-10-03),2026-10-03
+Fritzler Farms Inc dba Fritzler Corn Maze and Scream Acres,La Salle,Business Name,set,Fritzler Farm Park (Scream Acres),Renamed; same address and phone (closed-org check 2026-10-03),2026-10-03
+Studt's Pumpkin Patch and Corn Maze,Grand Junction,Website,set,https://studtfarms.com/,"Renamed Studt Farms; official site: open Oct 1-31, 2026 (closed-org check 2026-10-03)",2026-10-03
+Studt's Pumpkin Patch and Corn Maze,Grand Junction,Business Name,set,Studt Farms (Pumpkin Patch and Corn Maze),Renamed (closed-org check 2026-10-03),2026-10-03
+Masonville Orchards,Ault,Website,set,https://adamsapplecolorado.com/,U-pick sold to new owner (Mantooth Company post); new business site current for 2026 (closed-org check 2026-10-03),2026-10-03
+Masonville Orchards,Ault,Address,set,42135 Weld County Road 43,Address per adamsapplecolorado.com (the old '135 WCR 43' was truncated; pin unchanged) (closed-org check 2026-10-03),2026-10-03
+Masonville Orchards,Ault,Notes,prepend,"Formerly Masonville Orchards' Ault U-pick, now under new ownership as Adam's Apple Orchard & Country Store.",Ownership change (closed-org check 2026-10-03),2026-10-03
+Masonville Orchards,Ault,Business Name,set,Adam's Apple Orchard & Country Store,Successor business at the same orchard (closed-org check 2026-10-03),2026-10-03
+Something From the Farm,Fort Collins,Website,set,https://somethingfromthefarm.com/,Official site (non-www host) lists the 2026 season Sept 26 - Oct 31 (closed-org check 2026-10-03),2026-10-03
+Something From the Farm,Fort Collins,Address,set,8020 S Timberline Rd,Address per official site (closed-org check 2026-10-03),2026-10-03
+Something From the Farm,Fort Collins,Latitude,set,40.474164077008,Census geocode of 8020 S Timberline Rd (closed-org check 2026-10-03),2026-10-03
+Something From the Farm,Fort Collins,Longitude,set,-105.039379419209,Census geocode of 8020 S Timberline Rd (closed-org check 2026-10-03),2026-10-03
+Lost Greens Farm,Denver,Website,set,https://lostgreensfarm.substack.com,"Farm's Substack (Aug 2025 post: continuing at Gilpin St, planning 2026) (closed-org check 2026-10-03)",2026-10-03
+Metro Denver Farmers' Market-Lakewood,Lakewood,Hours,set,Sat: 10:00am - 2:00pm,"2026 schedule at Mile Hi Church per Denverite (May 1, 2026) (closed-org check 2026-10-03)",2026-10-03
+Metro Denver Farmers' Market-Lakewood,Lakewood,Months Open,set,"June, July, August, September, October","2026 season June 13 - Oct 3 per Denverite (May 1, 2026) (closed-org check 2026-10-03)",2026-10-03
+Gluten Free Farmers Market,Englewood,Hours,set,"Second Saturday of each month, 9:00 AM - 1:00 PM","Monthly, not weekly: denverceliacs.org event page says the second Saturday of each month June-October 2026 (checked 2026-10-04)",2026-10-04
+RoastedChile.com,Denver,Business Name,set,Roasted Chili,Business name per roastedchili.com (USDA listed the domain),2026-10-04
+RoastedChile.com,Denver,Category,set,Roadside Market,"Seasonal chile-roasting stand, not on-farm sales (user correction)",2026-10-04
+RoastedChile.com,Denver,Address,set,1700 S Santa Fe Drive,"roastedchili.com lists the Denver stand at 1700 S Santa Fe Drive; USDA listing (2014) had 1701 South Cherokee St, 80229",2026-10-04
+RoastedChile.com,Denver,Zip,set,80223,"Census geocoder match: 1700 S SANTA FE DR, DENVER, CO, 80223",2026-10-04
+RoastedChile.com,Denver,Latitude,set,39.68588,Census geocoder match for 1700 S Santa Fe Dr,2026-10-04
+RoastedChile.com,Denver,Longitude,set,-104.99186,Census geocoder match for 1700 S Santa Fe Dr,2026-10-04
+RoastedChile.com,Denver,Website,set,https://roastedchili.com/,Business's own site,2026-10-04
+RoastedChile.com,Denver,Hours,set,"9:00 AM–7:00 PM daily, in season","roastedchili.com, checked 2026-10-04",2026-10-04
+RoastedChile.com,Denver,Products,set,"Roasted green chile, Hatch chile, Pueblo chile, Grand Junction chile, Cobblers, Salsas, Quesos, Pickles, BBQ sauces, Jellies, Cherry juice","roastedchili.com, checked 2026-10-04",2026-10-04
+RoastedChile.com,Denver,Notes,set,"Seasonal chile-roasting stand: chile roasted on site the day it arrives, in Mild, Medium, Hot, Extra Hot or Dynamite, plus 25+ jarred goods. One of three Roasted Chili stands (Centennial, Denver, Golden).","roastedchili.com, checked 2026-10-04",2026-10-04
+Buena Vista Farmers' Market,Buena Vista,Address,set,"Turner Farm & Apple Orchard, 829 W Main St","BV Heritage took over the market from Foodshed Alliance for 2026 (heartoftherockiesradio.com, 2026-04-02; buenavistaheritage.org calendar)",2026-10-04
+Buena Vista Farmers' Market,Buena Vista,Hours,set,Sun: 9:00am - 1:00pm (May 31 - Oct 25),"BV Heritage took over the market from Foodshed Alliance for 2026 (heartoftherockiesradio.com, 2026-04-02; buenavistaheritage.org calendar)",2026-10-04
+Buena Vista Farmers' Market,Buena Vista,Months Open,set,"May, June, July, August, September, October","BV Heritage took over the market from Foodshed Alliance for 2026 (heartoftherockiesradio.com, 2026-04-02; buenavistaheritage.org calendar)",2026-10-04
+Buena Vista Farmers' Market,Buena Vista,Website,set,https://www.buenavistaheritage.org/,"BV Heritage took over the market from Foodshed Alliance for 2026 (heartoftherockiesradio.com, 2026-04-02; buenavistaheritage.org calendar)",2026-10-04
+Buena Vista Farmers' Market,Buena Vista,Email,set,buenavistaheritage@msn.com,"BV Heritage took over the market from Foodshed Alliance for 2026 (heartoftherockiesradio.com, 2026-04-02; buenavistaheritage.org calendar)",2026-10-04
+Buena Vista Farmers' Market,Buena Vista,Phone,set,(719) 297-5430,"BV Heritage took over the market from Foodshed Alliance for 2026 (heartoftherockiesradio.com, 2026-04-02; buenavistaheritage.org calendar)",2026-10-04
+Buena Vista Farmers' Market,Buena Vista,Facebook,clear,,"BV Heritage took over the market from Foodshed Alliance for 2026 (heartoftherockiesradio.com, 2026-04-02; buenavistaheritage.org calendar)",2026-10-04
+Buena Vista Farmers' Market,Buena Vista,Instagram,clear,,"BV Heritage took over the market from Foodshed Alliance for 2026 (heartoftherockiesradio.com, 2026-04-02; buenavistaheritage.org calendar)",2026-10-04
+Buena Vista Farmers' Market,Buena Vista,Notes,set,"Run by Buena Vista Heritage at the historic Turner Farm & Apple Orchard since 2026, with a Kids' Market. Foodshed Alliance, which ran it at Columbine Park, dropped the market after 2025. Phone is the market contact (Amy).","BV Heritage took over the market from Foodshed Alliance for 2026 (heartoftherockiesradio.com, 2026-04-02; buenavistaheritage.org calendar)",2026-10-04
+Buena Vista Farmers' Market,Buena Vista,Latitude,set,38.839043715714,"BV Heritage took over the market from Foodshed Alliance for 2026 (heartoftherockiesradio.com, 2026-04-02; buenavistaheritage.org calendar)",2026-10-04
+Buena Vista Farmers' Market,Buena Vista,Longitude,set,-106.141712220022,"BV Heritage took over the market from Foodshed Alliance for 2026 (heartoftherockiesradio.com, 2026-04-02; buenavistaheritage.org calendar)",2026-10-04
+Lulu's Farm Roadside Market,Brighton,Category,set,Roadside Market,Not a farmers' market (a recurring multi-vendor gathering); maintainer review 2026-10-04. A single farm's roadside stand.,2026-10-04
+The Saturday Market at Tagawa Gardens,Centennial,,remove,,"Tagawa Gardens' own seasonal produce stand inside the garden center (7711 S Parker Rd), already listed as Tagawa Gardens; not a farmers' market (coloradolandcan.org; review 2026-10-04)",2026-10-04
+Local Brands Farm and Ranch Markets Cooperative,Hesperus,Category,set,Food Hub,Not a farmers' market (a recurring multi-vendor gathering); maintainer review 2026-10-04. A producers' co-op that sells its members' meat and produce (localharvest.org).,2026-10-04
+Lusk Farms Farmers Market,La Junta,Category,set,Roadside Market,Not a farmers' market (a recurring multi-vendor gathering); maintainer review 2026-10-04. One farm's stand on US-50 (colorado.com).,2026-10-04
+Lusk Farms Farmers Market,La Junta,Notes,prepend,"The farm market property at this address was listed for sale and shows as sold, so check it's still open.",greatplainslandcompany.com listing for 26020 US-50 shows Sold (checked 2026-10-04),2026-10-04
+Noco Virtual Farmers Market,Fort Collins,Category,set,Farm Products (online),Not a farmers' market (a recurring multi-vendor gathering); maintainer review 2026-10-04. Online ordering with Saturday delivery or pickup (thenocooptimist.com).,2026-10-04
+Orchard Valley Farms & Market.   Black Bridge Winery,Paonia,Category,set,"Winery, U-Pick, Agritourism, On-Farm / Ranch Sales","Not a farmers' market (a recurring multi-vendor gathering); maintainer review 2026-10-04. One family farm's market, U-pick and winery (deltacountycolorado.com).",2026-10-04
+Wolf Creek Fresh,Strasburg,Category,set,"CSA Farm, On-Farm / Ranch Sales, Garden Center / Greenhouse, Agritourism",Not a farmers' market (a recurring multi-vendor gathering); maintainer review 2026-10-04. A single farm (wolfcreekfresh.com).,2026-10-04
+Gunnison Farmers Market,Gunnison,Category,set,Farmers' Market,A farmers' market only; the Grocery Store label came from a directory tag (review 2026-10-04),2026-10-04
+Fort Morgan Farmers Market,Fort Morgan,Category,set,Farmers' Market,A farmers' market only; the Roadside Market label came from a directory tag (review 2026-10-04),2026-10-04
+Green Vally Ranch NE Denver Farmers Market (Presented by Grateful Garden llc),Denver,Category,set,"Farmers' Market, Agritourism",A farmers' market; the Roadside Market label came from a directory tag (review 2026-10-04),2026-10-04
+Urban Farmers' Market,Denver,,remove,,"An art, craft and antique market at Union Station (""Urban Market""), not farm food (coloradoevents.org/urbanmarket; review 2026-10-04)",2026-10-04
+Cherry Creek Valley International Farmers Market,Denver,,remove,,Defunct: newest listing anywhere is the 2010 season (localharvest.org; review 2026-10-04),2026-10-04
+Alameda Mile High Farmer's Market,Aurora,,remove,,"Unverified: only aggregator listings, with conflicting days; the address is Aurora's municipal center (review 2026-10-04)",2026-10-04
+Feed Denver: Urban Farms & Markets,Denver,,remove,,"An urban-farm nonprofit, not a market, and its web presence looks long inactive (feeddenver.com; review 2026-10-04)",2026-10-04
+Town of Windsor,Windsor,Business Name,set,Windsor Farmers Market,The listing is the Windsor Farmer's Market at Boardwalk Park; 'Town of Windsor' is the organizer (review 2026-10-04),2026-10-04
+Cabin Kitchen Co,Denver,,remove,,"Market-only cottage bakery (Westcliffe): sells at the Westcliffe Farmers Market (Fri 9-1, Jun 5-Sep 25), Salida Farmers Market (Sat 8-12, Jun 6-Oct 24) and Royal Gorge Farmers Market, per instagram.com/cabinkitchenco. Colorado Proud's member listing gives a Denver apartment address and a Colorado-center placeholder pin; curated research already marked it market-only, home address not to be published (maintainer review 2026-10-04)",2026-10-04
+Cloud City Conservation Center,Leadville,Category,set,"Farmers' Market, Roadside Market","Weekly multi-vendor farm market (farm produce, Jaded Ladies bread, Good Neighbors Mercantile) plus a self-serve farm stand; c4leadville.org/c4events/first-market-2026-w3f5r (checked 2026-10-04)",2026-10-04
+Cloud City Conservation Center,Leadville,Address,set,440 McWethy Drive,Market location per c4leadville.org/c4events/first-market-2026-w3f5r (checked 2026-10-04); Colorado Proud listed only PO Box 459,2026-10-04
+Cloud City Conservation Center,Leadville,Zip,set,80461,c4leadville.org/c4events/first-market-2026-w3f5r (checked 2026-10-04),2026-10-04
+Cloud City Conservation Center,Leadville,Hours,set,Thu: 4:00pm - 6:00pm; Fri: 9:00am - 4:00pm (self-serve),"c4leadville.org/c4events/first-market-2026-w3f5r (checked 2026-10-04); season runs June 11 to mid-October (events listed through Oct 16, 2026)",2026-10-04
+Cloud City Conservation Center,Leadville,Months Open,set,"June, July, August, September, October","Market opened June 11, 2026; events page lists sessions through Oct 16, 2026",2026-10-04
+Cloud City Conservation Center,Leadville,SNAP,set,Yes,"Accepts SNAP/EBT plus the SNAP Produce Bonus ($1 back per $1, up to $60/month); c4leadville.org/c4events/first-market-2026-w3f5r (checked 2026-10-04)",2026-10-04
+Cloud City Conservation Center,Leadville,Notes,prepend,"Cloud City Farm's Thursday farmers' market and self-serve Friday farm stand, run by the Cloud City Conservation Center at 10,152 ft. Leadville-grown produce, locally baked bread (Jaded Ladies) and low-waste goods (Good Neighbors Mercantile); SNAP Produce Bonus doubles SNAP dollars.",c4leadville.org/c4events/first-market-2026-w3f5r (checked 2026-10-04),2026-10-04
+Cloud City Conservation Center,Leadville,Latitude,set,39.244555,"Google Maps listing 'Cloud City Farm & Community Garden', 440 McWethy Dr (Census can't geocode it); the old pin was Leadville's town centre",2026-10-04
+Cloud City Conservation Center,Leadville,Longitude,set,-106.3062659,Same Google Maps listing,2026-10-04
+Cloud City Conservation Center,Leadville,Business Name,set,Cloud City Farm (Cloud City Conservation Center),The farm is what visitors find; the nonprofit runs it,2026-10-04
+Eagle Rock Ranch,Fairplay,Hours,set,"Fri, Sat, Sun, Mon: 11:00am - 5:00pm (winter 2026 hours; subject to change)","buyeaglerockbeef.com 'Visit our store' (maintainer screenshot, 2026-10-04)",2026-10-04
+Eagle Rock Ranch,Fairplay,Notes,prepend,"Ranch store (Eagle Rock Ranch Mercantile) at 530 Front Street, Fairplay: winter 2026 hours Friday-Monday 11am-5pm, subject to change; beef also ships via buyeaglerockbeef.com.","buyeaglerockbeef.com 'Visit our store' (maintainer screenshot, 2026-10-04)",2026-10-04
+Jumpin' Good Goat Dairy,Buena Vista,,remove,,Closed: Buck & Bloom Cheese Co. now operates the same facility (31700 US-24). Held out of the Chaffee Provides source on 2026-10-03; Colorado Proud's member directory still lists it,2026-10-04
+Colorado Farm to Table,Salida,Address,set,7750 County Road 150,"Farm location as Chaffee Provides lists it; the official-site check had recorded the mailing PO Box 826, which isn't a place to visit",2026-10-04
+Vail Farmers' Market,Vail,Hours,set,Sun: 9:30am - 3:00pm (Jun 14 - Oct 4); Thu: 1:00pm - 5:30pm (Jun 18 - Sep 17),"Season dates from vailfarmersmarket.com vendor pages: Sunday market June 14 - October 4, 2026; Thursday Meadow Market June 18 - September 17, 2026 (its blurb says Sept 4; the event listing says Sept 17) (checked 2026-10-04)",2026-10-04
+High On The Hill Farm,Cañon City,Notes,set,"High On the Hill Farm is a small, all natural fruit, vegetable, culinary herb and medicinal herb farm and is the home of The Anāhata Yoga & Meditation Center.  We offer wellness counseling utilizing mindful presence, a fresh, high nutrient density plant based diet and Ashtanga Yoga.  see our website for more info",Source text lost a character (garbled 'Anāhata'); same text with the yoga studio's name restored,2026-10-04
+Caring & Sharing – Sanctuary Soup Kitchen,,Address,set,220 W 4th St,"Chaffee Provides' map lists 220 W 4th St (shared with the Chaffee Community Resource Center, now a separate listing)",2026-10-05
+Green Mountain Ranch,,Latitude,set,38.93454,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Green Mountain Ranch,,Longitude,set,-105.01715,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Happy Day Ranch,Basalt,Latitude,set,39.36887,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Happy Day Ranch,Basalt,Longitude,set,-107.03282,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Homegrown Farm,Bayfield,Latitude,set,37.22556,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Homegrown Farm,Bayfield,Longitude,set,-107.59811,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Golden Hollow Farms,Berthoud,Latitude,set,40.30832,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Golden Hollow Farms,Berthoud,Longitude,set,-105.08109,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Miraflora Farm,Boulder,Latitude,set,40.01499,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Miraflora Farm,Boulder,Longitude,set,-105.27054,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Veggiescapes,Boulder,Latitude,set,40.11616,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Veggiescapes,Boulder,Longitude,set,-105.16190,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Sun Catcher Farms Ldt.,Brighton,Latitude,set,39.98372,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Sun Catcher Farms Ldt.,Brighton,Longitude,set,-104.81108,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+SongHaven Farm,Cahone,Latitude,set,37.65888,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+SongHaven Farm,Cahone,Longitude,set,-108.80788,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Dooley Creek Farm,Carbondale,Latitude,set,39.40056,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Dooley Creek Farm,Carbondale,Longitude,set,-107.21124,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Thompson House Museum,Carbondale,Latitude,set,39.40056,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Thompson House Museum,Carbondale,Longitude,set,-107.21124,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Uncle Johnnys U-pick,Cedaredge,Latitude,set,38.90165,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Uncle Johnnys U-pick,Cedaredge,Longitude,set,-107.92645,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Keelor Family Ranch,Colorado Springs,Latitude,set,38.83396,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Keelor Family Ranch,Colorado Springs,Longitude,set,-104.82535,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Sunshine Greens Farm,Colorado Springs,Latitude,set,38.83396,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Sunshine Greens Farm,Colorado Springs,Longitude,set,-104.82535,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Living Water Fibers and Alpacas,Craig,Latitude,set,40.51525,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Living Water Fibers and Alpacas,Craig,Longitude,set,-107.54645,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+"The One Acre Farm, LLC",Craig,Latitude,set,40.51525,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+"The One Acre Farm, LLC",Craig,Longitude,set,-107.54645,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Farm-i,Durango,Latitude,set,37.27695,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Farm-i,Durango,Longitude,set,-107.87660,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+RK Creations Farm,Elizabeth,Latitude,set,39.36091,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+RK Creations Farm,Elizabeth,Longitude,set,-104.58950,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Blue Barrel Farm,Fort Collins,Latitude,set,40.58718,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Blue Barrel Farm,Fort Collins,Longitude,set,-105.07701,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Heckman Hollow,Fowler,Latitude,set,38.12723,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Heckman Hollow,Fowler,Longitude,set,-104.02825,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Scarecrow Gardens,Greeley,Latitude,set,40.43388,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Scarecrow Gardens,Greeley,Longitude,set,-104.75485,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Forty Mile Feed,Kiowa,Latitude,set,39.34672,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Forty Mile Feed,Kiowa,Longitude,set,-104.46361,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Becker's Produce,Merino,Latitude,set,40.48248,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Becker's Produce,Merino,Longitude,set,-103.35133,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Indian Ridge Farm,Norwood,Latitude,set,38.13055,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Indian Ridge Farm,Norwood,Longitude,set,-108.29230,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Bennett Rock Ranch,Nunn,Latitude,set,40.72520,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Bennett Rock Ranch,Nunn,Longitude,set,-104.77718,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Zephyros Farm and Garden,Paonia,Latitude,set,38.86875,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Zephyros Farm and Garden,Paonia,Longitude,set,-107.60190,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Pollywog Station Lavender Farm,Parker,Latitude,set,39.49453,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Pollywog Station Lavender Farm,Parker,Longitude,set,-104.75013,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Virgil Produce,Pueblo,Latitude,set,38.26328,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Virgil Produce,Pueblo,Longitude,set,-104.42302,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Mills Bros Farm Market,Rocky Ford,Latitude,set,38.05379,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Mills Bros Farm Market,Rocky Ford,Longitude,set,-103.71899,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Gina Marcell,Salida,Latitude,set,38.51755,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Gina Marcell,Salida,Longitude,set,-106.05590,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Highwater Farm,Silt,Latitude,set,39.54859,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Highwater Farm,Silt,Longitude,set,-107.65617,"Geocode gap fill 2026-10-14: town centroid (OpenStreetMap); approximate, farm is somewhere in or near this town.",2026-10-14
+Snowden Meats,Toponas,Latitude,set,40.06267,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Snowden Meats,Toponas,Longitude,set,-106.80750,"Geocode gap fill 2026-10-14: road-level match (OpenStreetMap); approximate, not the exact farm gate.",2026-10-14
+Chaffee Community Resource Center,,Website,clear,,Link check 2026-10-14: HTTP 404 for http://salidacaringsharing.org/the-resource-center/; link removed.,2026-10-14
+Metro Denver Farmers' Market-Littleton,Littleton,Website,clear,,Link check 2026-10-14: HTTP 404 for http://www.denverfarmersmarket.com/index.html; link removed.,2026-10-14
+HooRayRay's,Denver,Website,clear,,Link check 2026-10-14: HTTP 404 for http://www.hoorayrays.com; link removed.,2026-10-14
+Koha Farm,Elizabeth,Website,clear,,Link check 2026-10-14: gaierror for http://www.kohafarm.com; link removed.,2026-10-14
+Mycenae,Lafayette,Website,clear,,Link check 2026-10-14: gaierror for http://www.mycenae-mushrooms.com; link removed.,2026-10-14
+Pauline's Bonafide Baking,Colorado Springs,Website,clear,,Link check 2026-10-14: gaierror for http://www.paulinesbonafidebaking.com; link removed.,2026-10-14
+"5280 Mushrooms, LLC",Thornton,Website,clear,,Link check 2026-10-14: gaierror for https://5280mushroomsandmicrogreens.com; link removed.,2026-10-14
+Autumn's Harvest Granola,Windsor,Website,clear,,Link check 2026-10-14: gaierror for https://autumnsharvestgranola.com; link removed.,2026-10-14
+Petals & Papers,La Veta,Website,clear,,Link check 2026-10-14: SSLError for https://CabinPressStudio.com; link removed.,2026-10-14
+"Commando Dave's BBQ Seasonings, LLC",Monument,Website,clear,,Link check 2026-10-14: gaierror for https://commandodaves.com; link removed.,2026-10-14
+ConsciouSweets,Lafayette,Website,clear,,Link check 2026-10-14: HTTP 404 for https://ConsciouSweets.com; link removed.,2026-10-14
+Crafton's Summit Sourdough,Peyton,Website,clear,,Link check 2026-10-14: SSLError for https://CraftonsSummitSourdough.com; link removed.,2026-10-14
+Creole Roots Catering and Food Truck,,Website,clear,,Link check 2026-10-14: HTTP 404 for https://creolerootscatering.com; link removed.,2026-10-14
+Dove Creek Care and Share Food Pantry,Dove Creek,Website,clear,,Link check 2026-10-14: gaierror for https://dccareandshare.org/; link removed.,2026-10-14
+Dianes's Delights,Castle Pines,Website,clear,,Link check 2026-10-14: HTTP 404 for https://diane-delights-7525.myshopify.com; link removed.,2026-10-14
+Early Morning Orchard,Palisade,Website,clear,,Link check 2026-10-14: HTTP 404 for https://earlymorningorchard.com/; link removed.,2026-10-14
+Ent Wise Farm,Fort Collins,Website,clear,,Link check 2026-10-14: HTTP 404 for https://entwisefarm.com; link removed.,2026-10-14
+"SoulSmile Health & Wellness, LLC",Pueblo,Website,clear,,Link check 2026-10-14: HTTP 410 for https://go.thryv.com/site/SoulSmileHealthWellness/livesite; link removed.,2026-10-14
+Golden Hollow Farms,Berthoud,Website,clear,,Link check 2026-10-14: gaierror for https://goldenhollowfarms.com; link removed.,2026-10-14
+Gordon Creek Farm LLC,Livermore,Website,clear,,Link check 2026-10-14: HTTP 404 for https://gordoncreekfarm.com; link removed.,2026-10-14
+Enjoy Halal,Aurora,Website,clear,,Link check 2026-10-14: SSLError for https://halolfoods.com/; link removed.,2026-10-14
+Herrera's Homestead,Aurora,Website,clear,,Link check 2026-10-14: gaierror for https://herrerashomestead.com/; link removed.,2026-10-14
+Hogback Farm,Silt,Website,clear,,Link check 2026-10-14: gaierror for https://HogbackFarm.com; link removed.,2026-10-14
+Honey Moon Mesa,Hotchkiss,Website,clear,,Link check 2026-10-14: gaierror for https://honeymoonmesa.com; link removed.,2026-10-14
+Howling Woods Fungi,Denver,Website,clear,,Link check 2026-10-14: gaierror for https://Howlingwoodsfungi.com; link removed.,2026-10-14
+Mile-Hi Provisions,Aurora,Website,clear,,Link check 2026-10-14: HTTP 404 for https://milehiprovisions.com/; link removed.,2026-10-14
+Moriah Ranch,Coalmont,Website,clear,,Link check 2026-10-14: gaierror for https://moriahgrassfed.com; link removed.,2026-10-14
+Mountain Jam,Avon,Website,clear,,Link check 2026-10-14: gaierror for https://mountainjamllc.shop/; link removed.,2026-10-14
+Nothing But,Colorado Springs,Website,clear,,Link check 2026-10-14: HTTP 404 for https://nothingbut.site; link removed.,2026-10-14
+The People’s Pickles,Denver,Website,clear,,Link check 2026-10-14: gaierror for https://peoplespickles.com; link removed.,2026-10-14
+Psycho Pig BBQ,Cedaredge,Website,clear,,Link check 2026-10-14: HTTP 404 for https://psychopigbbq.com; link removed.,2026-10-14
+Red Fox Cellars,Palisade,Website,clear,,Link check 2026-10-14: HTTP 404 for https://RedFoxCellars.com; link removed.,2026-10-14
+"Sage Mountain Freeze-Dry, LLC",Aurora,Website,clear,,Link check 2026-10-14: SSLError for https://sagemountainfreezedry.com; link removed.,2026-10-14
+Tinctures and Tallow,Firestone,Website,clear,,Link check 2026-10-14: HTTP 404 for https://shoptincturesandtallow.com; link removed.,2026-10-14
+Sunflower Cottage Foods,Boulder,Website,clear,,Link check 2026-10-14: SSLError for https://sunflowercottagefoods.com; link removed.,2026-10-14
+The Sleepy Turtle Coffee Co,Colorado Springs,Website,clear,,Link check 2026-10-14: gaierror for https://thesleepyturtlecoffeeco.com; link removed.,2026-10-14
+Truth Microfarms,,Website,clear,,Link check 2026-10-14: gaierror for https://truthmicrofarms.com; link removed.,2026-10-14
+Attimo Wine,Denver,Website,clear,,Link check 2026-10-14: HTTP 404 for https://www.attimowine.com/; link removed.,2026-10-14
+Brody’s Fluffy Butt Hut,,Website,clear,,Link check 2026-10-14: gaierror for https://www.brodysfluffybutthut.com; link removed.,2026-10-14
+Clayton Cares Market,Denver,Website,clear,,Link check 2026-10-14: HTTP 404 for https://www.claytonearlylearning.org/our-schools-programs/health-and-wellness/claytoncaresmarket.html; link removed.,2026-10-14
+Cooper's Coffee,Denver,Website,clear,,Link check 2026-10-14: HTTP 404 for https://www.cooperscoffeedenver.com; link removed.,2026-10-14
+Curry Culture,Colorado Springs,Website,clear,,Link check 2026-10-14: HTTP 404 for https://www.curryculturecos.com/; link removed.,2026-10-14
+The Outback Cookin' Company,Haxtun,Website,clear,,Link check 2026-10-14: HTTP 404 for https://www.dosmokehouse.com/theoutbackcookincompany; link removed.,2026-10-14
+Fagerberg Produce,Eaton,Website,clear,,Link check 2026-10-14: gaierror for https://www.fagerbergproduce.com; link removed.,2026-10-14
+Good Steward Farms,Peyton,Website,clear,,Link check 2026-10-14: SSLError for https://www.goodstewardfarms.net/; link removed.,2026-10-14
+Greens Wizard Microgreens,Craig,Website,clear,,Link check 2026-10-14: gaierror for https://www.greenswizardmicrogreens.com/; link removed.,2026-10-14
+Wildboydfarm,Matheson,Website,clear,,Link check 2026-10-14: HTTP 404 for https://www.investingwithyou.org; link removed.,2026-10-14
+Johnny's Green Gardens,Colorado Springs,Website,clear,,Link check 2026-10-14: gaierror for https://www.johnnysgreengardens.com/; link removed.,2026-10-14
+Lollipop & Co.,Westcliffe,Website,clear,,Link check 2026-10-14: SSLError for https://www.lollipopnco.com/; link removed.,2026-10-14
+Mile High Mycro Farms,Commerce City,Website,clear,,Link check 2026-10-14: gaierror for https://www.milehighmycrofarms.co; link removed.,2026-10-14
+Milk and Honey Coffee,Denver,Website,clear,,Link check 2026-10-14: HTTP 404 for https://www.milknhoneycoffeeco.com; link removed.,2026-10-14
+NoCo Gluten Free Bakeshop,Wellington,Website,clear,,Link check 2026-10-14: gaierror for https://www.nocogfbakeshop.com/; link removed.,2026-10-14
+Orchard & Poppy,Morrison,Website,clear,,Link check 2026-10-14: gaierror for https://www.orchardandpoppy.com; link removed.,2026-10-14
+Queen City Greens,Denver,Website,clear,,Link check 2026-10-14: gaierror for https://www.qcgreensdenver.com; link removed.,2026-10-14
+Spring Flour Garden Co.,Denver,Website,clear,,Link check 2026-10-14: HTTP 404 for https://www.springflourgardenco.com; link removed.,2026-10-14
+SugarBee Cookie Company,Loveland,Website,clear,,Link check 2026-10-14: HTTP 404 for https://www.sugarbeecookiecompany.com; link removed.,2026-10-14
+Sunshine Green's Farm,Colorado Springs,Website,clear,,Link check 2026-10-14: HTTP 404 for https://www.sunshinegreensfarm.com/; link removed.,2026-10-14
+PTOM'S FOOD & DRAINAmerican  at The Ptarmigan Inn,Steamboat Springs,Website,clear,,Link check 2026-10-14: gaierror for https://www.theptarmigan.com/; link removed.,2026-10-14
+T-Lazy-7 Ranch,Aspen,Website,clear,,Link check 2026-10-14: SSLError for https://www.tlazy7.com; link removed.,2026-10-14
+Vines 79 Wine Barn,Palisade,Website,clear,,Link check 2026-10-14: SSLError for https://www.vines79.com; link removed.,2026-10-14
+Vino Salida Wine Cellars,Poncha Springs,Website,clear,,Link check 2026-10-14: HTTP 404 for https://www.vinosalida.com; link removed.,2026-10-14
+Wild Thymes Farm,Bayfield,Website,clear,,Link check 2026-10-14: gaierror for https://www.wildthymesfarm.com/; link removed.,2026-10-14
+Llama Trekking by Lookin Up Outfitters,Westcliffe,Website,clear,,Link check 2026-10-14: redirects to all-casinohere.com (unrelated or parked site); link removed.,2026-10-14
+Ancestral Skincare Co,Bennett,Website,clear,,Link check 2026-10-14: redirects to ishimon.com (unrelated or parked site); link removed.,2026-10-14
+POP Colorado,Fort Collins,Website,clear,,Link check 2026-10-14: page says 'domain is for sale' (unrelated or parked site); link removed.,2026-10-14
+"Altius Farms, Inc.",Denver,Website,clear,,Link check 2026-10-14: redirects to jewishfamilyservice.org (unrelated or parked site); link removed.,2026-10-14
+Elevation Meat Market,Westcliffe,Website,clear,,Link check 2026-10-14: redirects to edu.it (unrelated or parked site); link removed.,2026-10-14
+Sacred Song Beef,Mancos,Website,clear,,Link check 2026-10-14: redirects to livedrawhngkong.com (unrelated or parked site); link removed.,2026-10-14
+Southwest Farm Fresh Harvest Shares,Mancos,Website,clear,,Link check 2026-10-14: redirects to usdaindonesia.org (unrelated or parked site); link removed.,2026-10-14
+Phun Bar,Wheat Ridge,Instagram,set,https://www.instagram.com/phunbar/,Link check 2026-10-14: Doubled scheme removed.,2026-10-14
+Podunk's Ranch,Cortez,Instagram,set,https://www.instagram.com/podunksranch/,Link check 2026-10-14: Doubled scheme removed.,2026-10-14
+RESTORATION VINEYARDS,PALISADE,Instagram,set,https://instagram.com/restorationvineyards,Link check 2026-10-14: Malformed 'instagram/handle' made a full URL.,2026-10-14
+B sweet cupcakes,Loveland,Facebook,set,https://facebook.com/BSweetCupcakes,Link check 2026-10-14: Handle @BSweetCupcakes made a URL.,2026-10-14
+Old Elm Farm,Boulder,Instagram,set,https://instagram.com/oldelmfarm,Link check 2026-10-14: Handle @oldelmfarm made a URL.,2026-10-14
+Anderson Farms,Erie,Instagram,set,https://instagram.com/andersonfarmsco,Link check 2026-10-14: Bare handle made a URL (matches their Facebook page name). Unverified: Instagram blocks checks.,2026-10-14
+"Julie Comer, LLC Dan AnyTime Pancakes",Fort Collins,Facebook,set,https://facebook.com/anytimepancakes,Link check 2026-10-14: Bare handle made a URL. Unverified: Facebook blocks checks.,2026-10-14
+"Julie Comer, LLC Dan AnyTime Pancakes",Fort Collins,Instagram,set,https://instagram.com/anytimepancakes,Link check 2026-10-14: Bare handle made a URL. Unverified: Instagram blocks checks.,2026-10-14
+"Free Range Beehives, LLC",Denver,Facebook,set,https://facebook.com/freerangebeehives,Link check 2026-10-14: Bare handle made a URL. Unverified: Facebook blocks checks.,2026-10-14
+"Free Range Beehives, LLC",Denver,Instagram,set,https://instagram.com/freerangebeehives,Link check 2026-10-14: Bare handle made a URL. Unverified: Instagram blocks checks.,2026-10-14
+Queen Bee Bakery,Walsenburg,Facebook,set,https://facebook.com/queenbeebakeryco,Link check 2026-10-14: Bare handle made a URL. Unverified: Facebook blocks checks.,2026-10-14
+Queen Bee Bakery,Walsenburg,Instagram,set,https://instagram.com/queenbeebakeryco,Link check 2026-10-14: Bare handle made a URL. Unverified: Instagram blocks checks.,2026-10-14
+Pauline's Bonafide Baking,Colorado Springs,Facebook,clear,,"Link check 2026-10-14: Cell held the business website (dead), not a Facebook page.",2026-10-14
+Pauline's Bonafide Baking,Colorado Springs,Instagram,clear,,"Link check 2026-10-14: Cell held the business website (dead), not an Instagram page.",2026-10-14
+Smith Family Orchards,Palisade,Facebook,clear,,"Link check 2026-10-14: Cell held a dead domain (smithfamilyorchardsstore.com), not a Facebook page.",2026-10-14
+B sweet cupcakes,Loveland,Instagram,clear,,Link check 2026-10-14: Handle '@b.swwet.cupcakes' looks like a typo and can't be verified; cleared.,2026-10-14
+Marigold Livestock Co.,Basalt,Instagram,clear,,Link check 2026-10-14: Handle '@marigoldlivestock.com' looks like a website pasted as a handle and can't be verified; cleared.,2026-10-14
+Smith Family Orchards,Palisade,Hours,set,Thu: 10am - 4pm; Fri: 10am - 4pm; Sat: 10am - 4pm; Sun: 10am - 3pm,Hours from https://www.smithfamilyorchard.com (page dated 2026); confidence high. Mon-Wed closed. U-pick peaches mentioned; 'fresh produce coming soon'; no season dates stated.,2026-10-14
+Sauvage Spectrum Estate Wainery,Palisade,Hours,set,Mon: 11am - 6pm; Tue: 11am - 6pm; Wed: 11am - 6pm; Thu: 11am - 6pm; Fri: 11am - 7pm; Sat: 11am - 7pm; Sun: 11am - 6pm,Hours from https://sauvagespectrum.com (page dated 2026); confidence medium. Labeled 'Summer hours'; no start/end months given; winter hours not stated.,2026-10-14
+Palombo Farms Market,Henderson,Hours,set,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 5pm; Sun: 9am - 5pm,"Hours from https://Palombomarket.com (undated page); confidence medium. Produce seasonal, 'call for availability'; no months stated.",2026-10-14
+ABF Farms,Berthoud,Hours,set,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 8am - 5pm; Sun: 8am - 5pm,Hours from https://abfarms.co (page dated 2026); confidence high. Farm store 'open every day 8 am - 5 pm'; open during construction.,2026-10-14
+Colorado Kids Ranch,Monument,Hours,set,Wed: 9am - 5pm; Thu: 9am - 5pm; Fri: 9am - 5pm; Sat: 9am - 5pm; Sun: 9am - 5pm,"Hours from https://coloradokidsranch.com/plan-ur-visit (page dated 2026); confidence high. 2026 season Sep 16 - Oct 31. October hours shown; September: Wed-Thu 9am-1pm, Fri-Sun 9am-5pm. Mon-Tue closed. Hot food Sat-Sun 11am-4pm.",2026-10-14
+Colorado Kids Ranch,Monument,Months Open,set,"September, October",Hours from https://coloradokidsranch.com/plan-ur-visit (page dated 2026),2026-10-14
+RESTORATION VINEYARDS,PALISADE,Hours,set,Mon: 11am - 7pm; Tue: 11am - 7pm; Wed: 11am - 7pm; Thu: 11am - 7pm; Fri: 11am - 8pm; Sat: 11am - 5pm; Sun: 10am - 5pm,Hours from https://RestorationVineyards.com (page dated 2026); confidence high. Open daily; 2026 concert season starts May 23.,2026-10-14
+Everitt Farms,Lakewood,Hours,set,Mon: 10am - 8pm; Tue: 10am - 8pm; Wed: 10am - 8pm; Thu: 10am - 8pm; Fri: 10am - 8pm; Sat: 9am - 8pm; Sun: 9am - 8pm,"Hours from https://papareedhosting.com/everittfarmswp/ (page dated 2025); confidence medium. Page says 'Opening day - We are OPEN!' with no months; has Christmas tree pricing page, so hours may be seasonal. Homepage is a frame wrapper around papareedhosting.com/everittfarmswp/.",2026-10-14
+Fox Fire Farms,Ignacio,Hours,set,Thu: 1pm - 6pm; Fri: 1pm - 6pm; Sat: 1pm - 6pm; Sun: 1pm - 6pm,Hours from http://www.foxfirefarms.com (page dated 2025); confidence medium. Open May 15 to Oct 31; closed for winter Nov 1 - May 14 (winter wine tastings page exists). Friday nights Jun-Sep 6-9pm. Mon-Wed closed.,2026-10-14
+Fox Fire Farms,Ignacio,Months Open,set,"May, June, July, August, September, October",Hours from http://www.foxfirefarms.com (page dated 2025),2026-10-14
+Adams Apple Country Store,Ault,Hours,set,Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,Hours from http://adamsapplecolorado.com/hours-of-operation (page dated 2025); confidence medium. Country Store hours. U-pick on select weekends in fall (~11-12 week apple season); 2025 hours page said limited picking due to hail; see Picking Updates page.,2026-10-14
+James Ranch,Durango,Hours,set,Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,Hours from https://www.jamesranch.net/ (page dated 2026); confidence high. Market hours; Mon-Tue closed. Grill separate: Wed-Sun 11am-7:30pm. No season months stated.,2026-10-14
+Wild Cider,Firestone,Hours,set,Fri: 4pm - 9pm; Sat: 12pm - 9pm; Sun: 12pm - 7pm,Hours from https://www.wildcider.com (page dated 2026); confidence high. Cider garden open May through October; Mon-Thu closed.,2026-10-14
+Wild Cider,Firestone,Months Open,set,"May, June, July, August, September, October",Hours from https://www.wildcider.com (page dated 2026),2026-10-14
+"Big B's Delicious Orchards U-pick, Cafe & Tasting Room",Hotchkiss,Hours,set,Mon: 10am - 8pm; Tue: 10am - 8pm; Wed: 10am - 8pm; Thu: 10am - 8pm; Fri: 10am - 8pm; Sat: 10am - 8pm; Sun: 10am - 8pm,"Hours from https://www.bigbs.com/u-pick (page dated U-pick page current season (2026 per freeze note); contact page footer 2024); confidence medium. Store hours per header; cafe daily 11am-8pm. Contact page 'Visit Us' lists different times (store Fri-Sat 9am-9pm, Sun 9am-8pm; cafe Fri-Sat 11am-9pm). Open April 1 - Nov 30. No U-Pick fruit this year (April freeze killed fruit trees); organic garden ",2026-10-14
+"Big B's Delicious Orchards U-pick, Cafe & Tasting Room",Hotchkiss,Months Open,set,"April, May, June, July, August, September, October, November",Hours from https://www.bigbs.com/u-pick (page dated U-pick page current season (2026 per freeze note); contact page footer 2024),2026-10-14
+Malara Gardens,Arvada,Hours,set,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 6pm; Sun: 10am - 5pm,Hours from https://www.malaragardens.com (undated page); confidence medium. Homepage shows 'NOW OPEN'; summer page says open daily 9am-6pm in summer (4th of July and Labor Day 9-3). Farmers market mid-July to end of season; indoor pumpkin patch/straw maze all October; sharpening April-October,2026-10-14
+Musso Farms,Pueblo,Website,clear,,Domain now serves unrelated gambling spam (hijacked or lapsed); link removed. 2026-10-14,2026-10-14
+Manitou Winery,Manitou Springs,Hours,set,Sun: 12pm - 7pm; Mon: 12pm - 7pm; Tue: 12pm - 7pm; Wed: 12pm - 7pm; Thu: 12pm - 7pm; Fri: 12pm - 8pm; Sat: 12pm - 8pm,Hours from http://winerymsprings.com/ (undated page); confidence medium. No seasonal or holiday hours listed; call ahead,2026-10-14
+Buckel Family Wine,Gunnison,Hours,set,Mon: 12pm - 5:30pm; Tue: 12pm - 5:30pm; Wed: 12pm - 5:30pm; Thu: 12pm - 5:30pm; Fri: 2pm - 7pm; Sat: 2pm - 7pm,Hours from https://www.buckelfamilywine.com/visit-us (undated page); confidence medium. Sunday not listed; other times by appointment (email or call),2026-10-14
+"Trinity Acres Farm, LLC",Byers,Hours,set,Sat: 10am - 6pm; Sun: 10am - 6pm,Hours from https://www.trinity-acres.farm/ (page dated NEW FOR 2026); confidence high. Fall festival; Autumn Evenings select Saturdays 6pm-8pm (schedule on /autumnevenings); season start/end dates not stated on homepage,2026-10-14
+Orchard Creek Ranch,Glenwood Springs,Notes,prepend,"Owners are retiring and permanently closing the You-Pick orchard (per its website, 2026); confirm before visiting.",Hours from https://orchardcreekranch.com/ (page dated 2026),2026-10-14
+High On The Hill Farm,Cañon City,Hours,set,Mon: 9am - 1pm; Wed: 9am - 3:30pm; Fri: 9am - 1pm; Sat: 9am - 1pm,Hours from https://HighOnTheHillFarm.com (page dated news item 2025/10/26); confidence medium. Farm stand hours; visits by appointment other times (call/text 719-726-9200); no seasonal change stated; Oct 2025 news says new indoor farm stand opening soon,2026-10-14
+"Tilde Vineyards, LLC",,Hours,set,Fri: 4pm - 7pm; Sat: 12pm - 7pm; Sun: 12pm - 6pm,"Hours from https://www.brushhollowwinery.com/ (undated page); confidence medium. Tasting room (Brush Hollow Winery, Penrose); other times by appointment. No season stated.",2026-10-14
+Dragon meadery,AURORA,Hours,set,Mon: 11am - 9pm; Tue: 11am - 9pm; Wed: 11am - 9pm; Thu: 11am - 9pm; Fri: 11am - 9pm; Sat: 11am - 9pm; Sun: 11am - 9pm,Hours from https://www.dragonmeadery.com/ (page dated (c) 2024); confidence medium. Homepage lists these hours under 'Call for Appointment or Pick-up'.,2026-10-14
+Bookcliff Vineyards,Boulder,Hours,set,Thu: 1pm - 7pm; Fri: 1pm - 7pm; Sat: 1pm - 7pm; Sun: 1pm - 7pm,"Hours from https://www.bookcliffvineyards.com (page dated (c) 2026); confidence high. Boulder tasting room, year round. Palisade tasting room open daily: Mon-Thu 12pm-6pm; Fri 12pm-7pm; Sat 11am-8:30pm; Sun 11am-6pm.",2026-10-14
+Bookcliff Vineyards,Boulder,Months Open,set,"January, February, March, April, May, June, July, August, September, October, November, December",Hours from https://www.bookcliffvineyards.com (page dated (c) 2026),2026-10-14
+Rock Creek Farm U-Pick-em Pumpkin Patch,Broomfield,Hours,set,Mon: 9:30am - 7pm; Tue: 9:30am - 7pm; Wed: 9:30am - 7pm; Thu: 9:30am - 7pm; Fri: 9:30am - 7pm; Sat: 9:30am - 7pm; Sun: 9:30am - 7pm,"Hours from https://www.rockcreekfarm.com (undated page); confidence medium. Opening Sat Sept 26, closing Sat Oct 31 (no year on page, weekdays fit 2026). May close in bad weather; page said closed Wed Oct 14 due to rain.",2026-10-14
+Rock Creek Farm U-Pick-em Pumpkin Patch,Broomfield,Months Open,set,"September, October",Hours from https://www.rockcreekfarm.com (undated page),2026-10-14
+Colon Orchards,Canon City,Hours,set,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 6pm; Sun: 9am - 6pm,Hours from https://www.colonorchards.com/contact/ (page dated (c) 2026); confidence medium. Contact page 'Office Hours' Mon-Sun 9am-6pm; homepage says winter hours differ (not stated); market open until Christmas Eve; pumpkin patch/corn maze end of Sept through fall. Winter pickup by appointment (719-275-6359).,2026-10-14
+Bonacquisti Wine Company,Denver,Hours,set,Thu: 12pm - 5pm; Fri: 12pm - 5pm; Sat: 12pm - 5pm,Hours from https://www.bonacquistiwine.com/pages/contact-us (page dated 2026 (footer)); confidence high. Some Fridays until 9pm (Fridays Uncorked); private tastings by appointment outside hours; no seasonal info,2026-10-14
+Four Leaves Winery,Durango,Hours,set,Mon: 12pm - 7pm; Tue: 12pm - 7pm; Wed: 12pm - 7pm; Thu: 12pm - 7pm; Fri: 12pm - 7pm; Sat: 12pm - 7pm; Sun: 1pm - 7pm,"Hours from https://fourleaveswinery.com/ (undated page); confidence medium. Page conflicts: hours table says Sun 1pm, 'Visit Us' text says Mon-Sun 12pm-7pm; address 528 Main Ave",2026-10-14
+Something From the Farm,Fort Collins,Hours,set,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 6pm; Sun: 10am - 6pm,"Hours from https://somethingfromthefarm.com/hours.html (page dated 2026 season); confidence high. 2026 season Sep 25 - Oct 31, weather permitting",2026-10-14
+Something From the Farm,Fort Collins,Months Open,set,"September, October",Hours from https://somethingfromthefarm.com/hours.html (page dated 2026 season),2026-10-14
+Bartels Land & Livestock,Ft. Collins,Hours,set,Mon: 10am - 6pm; Tue: 10am - 6pm; Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,Hours from https://Thebartelspumpkinpatch.com (undated page); confidence medium. Daily through Oct 31 (year not stated); patch fully opens Sept 19; copyright 2022 so may be stale,2026-10-14
+Bartels Land & Livestock,Ft. Collins,Months Open,set,"September, October",Hours from https://Thebartelspumpkinpatch.com (undated page),2026-10-14
+"Meadowlark Garden, LLC",Grand Junction,Hours,set,Wed: 10am - 5:30pm; Thu: 10am - 5:30pm; Fri: 10am - 5:30pm; Sat: 10am - 4pm; Sun: 10am - 4pm,Hours from https://www.meadowlarkgardencenter.com/hours (page dated 2026); confidence high. Closed Mon and Tue. Houseplants/succulents year-round; 2026 events listed on page.,2026-10-14
+Studt Farms (Pumpkin Patch and Corn Maze),Grand Junction,Hours,set,Tue: 12pm - 7pm; Wed: 12pm - 7pm; Thu: 12pm - 7pm; Fri: 3pm - 9pm; Sat: 10am - 9pm; Sun: 10am - 8pm,"Hours from https://studtfarms.com/ (page dated 2026); confidence high. Season Oct 1-31, 2026. Closed Mon. Closed Tue Oct 6; closed Wed Oct 14 2026 for weather. School tour hours may differ.",2026-10-14
+Studt Farms (Pumpkin Patch and Corn Maze),Grand Junction,Months Open,set,October,Hours from https://studtfarms.com/ (page dated 2026),2026-10-14
+Mesa Winds Farm and Winery,Hotchkiss,Hours,set,Wed: 4pm - 8pm; Thu: 4pm - 8pm; Fri: 4pm - 8pm; Sat: 4pm - 8pm; Sun: 10am - 2pm,"Hours from https://www.mesawindswinery.com/ (undated page); confidence medium. No season stated. Page notes closure Oct 2-3 for private function (year not given); footer copyright 2019, so page may be stale.",2026-10-14
+Cottonwood Farm,Lafayette,Hours,set,Mon: 10am - 6pm; Tue: 10am - 6pm; Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,Hours from https://cottonwoodfarms.com (undated page); confidence medium. Pumpkin patch open every day Sep 23 - Oct 31; wagon/hay rides Sat-Sun in October; Christmas trees Nov 27 - Dec 24 (hours not given). Page undated (no year).,2026-10-14
+Cottonwood Farm,Lafayette,Months Open,set,"September, October, November, December",Hours from https://cottonwoodfarms.com (undated page),2026-10-14
+Ten Bears Winery,Laporte,Hours,set,Sat: 12pm - 7pm,Hours from http://tenbearswinery.com (page dated 2026); confidence medium. Sun-Fri closed to walk-ins; call/text ahead (970-566-4043). Mother's Day 2026 12pm-5pm. Notice 'closure 9/26/26'. Footer 2018.,2026-10-14
+Creek Side Gardens,Littleton,Hours,set,Mon: 9am - 5pm; Tue: 9am - 5pm; Wed: 9am - 5pm; Thu: 9am - 5pm; Fri: 9am - 5pm; Sat: 9am - 5pm; Sun: 9am - 4pm,"Hours from https://www.plantsbycreekside.com/ (page dated 2026); confidence high. Hours listed are the Sep-Dec schedule. Jan-Apr: Mon-Sat 9am-5pm, Sun 9am-4pm. May-Aug: Mon-Fri 9am-6pm, Sat 9am-5pm, Sun 9am-4pm. Pumpkin patch open in fall; 'hours vary seasonally'.",2026-10-14
+Creek Side Gardens,Littleton,Months Open,set,"January, February, March, April, May, June, July, August, September, October, November, December",Hours from https://www.plantsbycreekside.com/ (page dated 2026),2026-10-14
+Modern Farmsteads,Longmont,Hours,set,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 5pm,Hours from https://www.modernfarmsteads.com (page dated 2024); confidence medium. Sat listed as 'open' with no times; Sun not listed. Footer 2024.,2026-10-14
+Peak Press Juicery LLC,Longmont,Hours,set,Mon: 10am - 4pm; Tue: 10am - 4pm; Wed: 10am - 4pm; Thu: 10am - 4pm; Fri: 10am - 4pm,Hours from https://peakpressjuicery.com/ (page dated 2026); confidence high. Sat store closed (delivery or market pick-up only); Sun closed. Saturday afternoon deliveries within 15 miles.,2026-10-14
+St. Vrain Cidery,Longmont,Hours,set,Tue: 4pm - 9pm; Wed: 4pm - 9pm; Thu: 4pm - 9pm; Fri: 4pm - 9pm; Sat: 12pm - 9pm; Sun: 12pm - 8pm,Hours from https://stvraincidery.com (page dated 2026); confidence high. Closed Mon.,2026-10-14
+MeadKrieger Meadery LLC,Loveland,Hours,set,Wed: 4pm - 9pm; Thu: 4pm - 9pm; Fri: 4pm - 9pm; Sat: 12pm - 9pm; Sun: 12pm - 5pm,Hours from https://www.meadkrieger.com/contact-meadkrieger-meadery (undated page); confidence medium. Closed Mon and Tue. Last Wednesday of each month closes 6pm for ticketed event. Page undated.,2026-10-14
+Padilla Prouce Inc.,Manzanola,Hours,set,Mon: 9am - 5:30pm; Tue: 9am - 5:30pm; Wed: 9am - 5:30pm; Thu: 9am - 5:30pm; Fri: 9am - 5:30pm; Sat: 9am - 5:30pm; Sun: 9am - 4pm,"Hours from https://padillaproduceinc.com/contact-copy/ (undated page); confidence medium. Manzanola farm market hours; no season for it stated. Page also lists Colorado Springs-area farmers markets (not this listing), dates without a year.",2026-10-14
+Colorado Gators,Mosca,Hours,set,Mon: 9am - 5pm; Tue: 9am - 5pm; Wed: 9am - 5pm; Thu: 9am - 5pm; Fri: 9am - 5pm; Sat: 9am - 5pm; Sun: 9am - 5pm,Hours from https://ColoradoGators.com (page dated 2026); confidence high. Feb 27 - Nov 1 (2026): daily 9am-5pm; Nov 2 - Feb 26: daily 9am-4pm. Closed Thanksgiving and Christmas.,2026-10-14
+Colorado Gators,Mosca,Months Open,set,"January, February, March, April, May, June, July, August, September, October, November, December",Hours from https://ColoradoGators.com (page dated 2026),2026-10-14
+Alida's Fruits,Palisade,Hours,set,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 2:30pm,"Hours from https://alidasfruits.com/contact-us/ (page dated Page posted 2024-01-22; copyright 2026); confidence medium. Sat/Sun closed. Fresh produce market 'in season' (no months). Site says out of peaches for the year, check back next season.",2026-10-14
+Kokopelli Farm Market,Palisade,Hours,set,Thu: 10am - 4pm; Fri: 10am - 4pm; Sat: 10am - 4pm; Sun: 10am - 4pm,Hours from https://www.kokopelliproduce.com (page dated 2026); confidence high. Fall hours Oct 1-31 and Christmas Market Nov 13-Dec 20 both Thu-Sun 10am-4pm. Homepage elsewhere lists Thu-Sun 9am-5pm (conflict). Harvest season currently open. Closed Thanksgiving (Nov 26). Closed for the season after Dec 20. Season start (summer) not stated.,2026-10-14
+Kokopelli Farm Market,Palisade,Months Open,set,"October, November, December",Hours from https://www.kokopelliproduce.com (page dated 2026),2026-10-14
+Talon Wines,Palisade,Hours,set,Sun: 10am - 6pm; Mon: 10am - 6pm; Tue: 10am - 6pm; Wed: 10am - 7pm; Thu: 10am - 7pm; Fri: 10am - 7pm; Sat: 10am - 7pm,Hours from https://www.talonwines.com/visit-us/ (undated page); confidence medium. Tasting room 'Talon Wines at the Meadery'. Select summer Saturdays close at 6pm; closed major holidays. No open months stated (no seasonal closure listed).,2026-10-14
+Ferrara's Happy Apple Farm,Penrose,Hours,set,Fri: 9am - 4:30pm; Sat: 9am - 4:30pm; Sun: 9am - 4:30pm,Hours from https://www.happyapplefarm.com (undated page); confidence medium. Hours tied to the '35th Annual Fall Festival' (fall season); no months or year stated. Free admission/parking. Page phone 719-429-6300 differs from input (719-372-6300).,2026-10-14
+Aspen Lodge Resort & Spa,Estes Park,Website,clear,,"Link check 2026-10-14: listed site is for a different business (Mills, Nebraska address); link removed.",2026-10-14
+Dao House,Estes Park,Website,clear,,"Link check 2026-10-14: listed site (aspenlodge.net) is for a different business (Mills, Nebraska address); link removed.",2026-10-14
+Bolton's Orchards,Grand Junction,Website,clear,,"Link check 2026-10-14: lists a site for a different business (Bolton Orchards, Massachusetts); link removed.",2026-10-14
+SLV Apothecary,Alamosa,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Slv Apothecary' (Grocery Store, 1617 State Ave); checked 2026-10-14.",2026-10-14
+Cure Organic Farm,Boulder,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Cure Organic Farm' (Farmers and Markets, 7416 Valmont Rd); checked 2026-10-14.",2026-10-14
+Broomfield Farmers' Market,Broomfield,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Broomfield Farmers Market' (Farmers and Markets, 1700 W 10th Ave); checked 2026-10-14.",2026-10-14
+The Lettucehead Food Company,Buena Vista,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'The Lettucehead Food Company' (Grocery Store, 545 US Highway 24 N); checked 2026-10-14.",2026-10-14
+Carbondale Farmers' Market,Carbondale,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Carbondale Farmers' Market' (Farmers and Markets, 4th Main Street); checked 2026-10-14.",2026-10-14
+Old Colorado City Farmers Market,Colorado Springs,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Old Colorado City Farmers Market' (Farmers and Markets, 2408 W Colorado Ave); checked 2026-10-14.",2026-10-14
+Cowboy Cuts - Wyoming Raised Beef,Elizabeth,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Cowboy Cuts - Wyoming Raised Beef' (Farmers and Markets, 37682 Pheasant Run); checked 2026-10-14.",2026-10-14
+Erie Farmers Market,Erie,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Erie Farmers' Market' (Farmers and Markets, 600 Briggs St); checked 2026-10-14.",2026-10-14
+Belafonte Farm,Fort Collins,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Belafonte Farm' (Farmers and Markets, 1807 W Vine Dr); checked 2026-10-14.",2026-10-14
+Blue Ribbon Processing,Fowler,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Blue Ribbon Processing LLC' (Specialty Store, 208 E Santa Fe Ave); checked 2026-10-14.",2026-10-14
+Tigges Farm Produce and Pumpkin Patch,Greeley,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Tigges Farm Produce & Pumpkin Patch' (Farmers and Markets, 12404 County Road 64 1/2); checked 2026-10-14.",2026-10-14
+Family Food Town,Palisade,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Family Food Town' (Grocery Store, 112 W 3rd St); checked 2026-10-14.",2026-10-14
+Ahavah Farm,Peyton,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Ahavah Farm Llc' (Farmers and Markets, 7545 Log Rd); checked 2026-10-14.",2026-10-14
+Celestial Creek Ranch,Pueblo,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Celestial Creek Ranch' (Farmers and Markets, 6963 Young Hollow Rd); checked 2026-10-14.",2026-10-14
+Mills Bros Farm Market,Rocky Ford,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Mills Bros Farm Market' (Farmers and Markets, 16831 US Highway 50); checked 2026-10-14.",2026-10-14
+Highwater Farm,Silt,SNAP,set,Yes,"Listed in the USDA FNS SNAP retailer locator as 'Highwater Farm' (Farmers and Markets, 7001 County Road 346); checked 2026-10-14.",2026-10-14
+Cottonwood Spirit Ranch,,Hours,set,By appointment,Hours from https://cottonwoodspiritranch.com/389-2/ (undated page); confidence medium. Page says 'We are open by appointment only' and hosts a year round locals farmers market; no times stated.,2026-10-14
+Cottonwood Spirit Ranch,,Months Open,set,"January, February, March, April, May, June, July, August, September, October, November, December",Hours from https://cottonwoodspiritranch.com/389-2/ (undated page),2026-10-14
+7 Anubis Farms,Akron,Hours,set,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 9am - 12pm,Hours from https://www.7anubisfarms.com/ (page dated November 2026 - April 24 2027); confidence high. Farm office hours as stated. Winter market season Nov 2026 - Apr 24 2027: Wildcraft Farmer's Market (Foothills Mall) Sat 10am - 2pm; Carbon Valley pickup (King Soopers Marketplace) every other Sat 5pm - 6pm. Sunday not listed. Page phone numbers conflict.,2026-10-14
+7 Anubis Farms,Akron,Months Open,set,"November, December, January, February, March, April",Hours from https://www.7anubisfarms.com/ (page dated November 2026 - April 24 2027),2026-10-14
+Crescendum Flower Farm,Arvada,Hours,set,By appointment,"Hours from http://www.crescendumflowerfarm.com (page dated 2020-2021); confidence medium. Page says 'BY APPOINTMENT ONLY'; free compost classes several times a month, no dates. Page content appears 2020-2021 (finalizing 2021 classes).",2026-10-14
+Sustainable Settings,Carbondale,Hours,set,Wed: 11am - 4pm; Sat: 11am - 4pm,Hours from https://www.sustainablesettings.org/contactandvisit (undated page); confidence medium. Listed as Store Hours; contact page adds 'Or by appointment'. Season not stated.,2026-10-14
+Burley Bees,Cañon City,Hours,set,By appointment,"Hours from https://www.burleybeeshoney.com (page dated Est. 2013; footer (c) 2020); confidence medium. Home-based apiary; all visits/pickups must be scheduled in advance, no drop-ins. No months stated on site.",2026-10-14
+Emerge Aquaponics,Colorado Springs,Hours,set,Mon: 8am - 7pm; Tue: 8am - 7pm; Wed: 8am - 7pm; Thu: 8am - 7pm; Fri: 8am - 7pm; Sat: 8am - 7pm; Sun: 8am - 7pm,"Hours from https://www.emergeaquaponics.com/buy (page dated (c) 2025); confidence high. Self-serve Farm Stand open 8am-7pm every day, no seasonal limit stated; online order pickup Fri 1pm - Mon 7pm. Tours Wed 3:30pm; volunteer harvest Tue/Thu/Fri mornings. Sat market May-October 9am-1pm (Backyard Market, Black Forest). Produce year-round.",2026-10-14
+Ranch Foods Direct,Colorado Springs,Hours,set,Mon: 8:00 - 6:00; Tue: 8:00 - 6:00; Wed: 8:00 - 6:00; Thu: 8:00 - 6:00; Fri: 8:00 - 6:00; Sat: 8:00 - 6:00,Hours from https://ranchfoodsdirect.com/ (undated page); confidence medium. Two stores (Town Center and Fillmore) list identical hours; am/pm not specified on page; Sunday not listed.,2026-10-14
+Rock River Ranches,Commerce City,Hours,set,Mon: 10am - 4pm; Tue: 10am - 4pm; Wed: 10am - 4pm; Thu: 10am - 4pm; Fri: 10am - 4pm,"Hours from https://rockriverbison.com/ (undated page); confidence medium. Page says 'M-F 10-4', closed on Federal Holidays (am/pm inferred from format). Season not stated.",2026-10-14
+Farm and Market,Denver,Hours,set,Mon: 10:30am - 7pm; Tue: 10:30am - 7pm; Wed: 10:30am - 7pm; Thu: 10:30am - 7pm; Fri: 10:30am - 7pm; Sat: 10:30am - 7pm; Sun: 10:30am - 7pm,Hours from https://thefarmandmarket.com (undated page); confidence medium. Page says Mon-Sunday 10:30am - 7:00pm; no season or date stated,2026-10-14
+Freedom Acres Ranch,Denver,Hours,set,Mon: 11am - 5pm; Tue: 11am - 5pm; Wed: 11am - 5pm; Thu: 11am - 5pm; Fri: 11am - 5pm; Sat: 11am - 5pm; Sun: By appointment,Hours from https://www.freedomacresranch.com (page dated Copyright 2026 (footer on /come-visit-us)); confidence high. Page: ranch always open to visitors and volunteers during normal business hours,2026-10-14
+PBJ Cattle Company,Divide,Hours,set,Mon: 10am - 3pm; Tue: 10am - 3pm; Wed: 10am - 3pm; Thu: 10am - 3pm; Fri: 10am - 12pm,Hours from https://www.pbjcattle.com (undated page); confidence medium. By appointment only for ranch shopping; Sat-Sun closed; contact Jessica for Saturday appointment availability; call/text 719-661-6954,2026-10-14
+Adobe House Farm,Durango,Hours,set,Sat: 8am - 12pm,"Hours from http://www.adobehousefarm.com/ (undated page); confidence medium. Sells at Durango Farmers Market on Saturdays 8am-12pm, May - Oct; no farm-gate hours stated",2026-10-14
+Adobe House Farm,Durango,Months Open,set,"May, June, July, August, September, October",Hours from http://www.adobehousefarm.com/ (undated page),2026-10-14
+The Feedery at Grow + Gather,Englewood,Hours,set,Mon: 7am - 2:30pm; Tue: 7am - 2:30pm; Wed: 7am - 2:30pm; Thu: 7am - 2:30pm; Fri: 7am - 2:30pm; Sat: 7am - 2:30pm,Hours from https://www.Feedery.com (page dated 2025 (footer copyright)); confidence medium. These are 'Summer Hours' for Market + Coffee Shop (breakfast menu 8-10:30am); no season dates given. Restaurant Tue-Sat 10:30am-2:30pm. Event tours by appointment only.,2026-10-14
+Belafonte Farm,Fort Collins,Hours,set,Wed: 3:30pm - 7:30pm; Sat: 9am - 1pm; Sun: 9am - 1pm,"Hours from https://belafontefarm.com/markets/ (page dated 2026); confidence medium. Farmers markets, not farm hours: Larimer County FM Sat 9-1 (May 16-Oct 31); Boulder County FM Wed 3:30-7:30pm (May 6-Oct 7); Loveland FM Sun 9-1 (June-September). Also CSA. '2026 will be the fifth season'.",2026-10-14
+Belafonte Farm,Fort Collins,Months Open,set,"May, June, July, August, September, October",Hours from https://belafontefarm.com/markets/ (page dated 2026),2026-10-14
+The Cockeyed Coop,Fort Collins,Hours,set,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 9am - 4pm,Hours from https://thecockeyedcoop.com/ (page dated (c) 2026); confidence medium. Page states 'by appointment only'; scheduling available during checkout or contact to set up appointment. Sunday not listed.,2026-10-14
+Willowbrook Farm and Ranch,FORT COLLINS,Hours,set,By appointment,Hours from https://willowbrookfarmandranch.com/contact-us (page dated (c) 2020); confidence medium. Mon-Sat 'By Appointment'; Sunday 'Closed'. Page copyright 2020 (possibly stale).,2026-10-14
+Blue Ribbon Processing,Fowler,Hours,set,"Mon: 7:30am - 12pm, 1pm - 4:30pm; Tue: 7:30am - 12pm, 1pm - 4:30pm; Wed: 7:30am - 12pm, 1pm - 4:30pm; Thu: 7:30am - 12pm, 1pm - 4:30pm; Fri: 7:30am - 12pm, 1pm - 4:30pm; Sat: 8am - 12pm",Hours from https://www.blueribbonprocessing.com (page dated (c) 2026); confidence high. Saturday hours apply only 1st & 3rd Saturday of month. No seasons stated.,2026-10-14
+Colorado Custom Meat Co,Kersey,Hours,set,Mon: 8am - 4:30pm; Tue: 8am - 4:30pm; Wed: 8am - 4:30pm; Thu: 8am - 4:30pm; Fri: 8am - 4:30pm; Sat: 9am - 12pm,Hours from https://www.coloradocustommeatco.com/ (undated page); confidence medium. Sunday closed; closed 11am-noon for lunch; homepage notice of closure Wed Oct 7 and reopening Thu Oct 8 (no year),2026-10-14
+Coombs Farms Colorado,La Jara,Hours,set,Mon: 7am - 5:30pm; Tue: 7am - 5:30pm; Wed: 7am - 5:30pm; Thu: 7am - 5:30pm; Fri: 7am - 5:30pm; Sat: 7am - 12pm,Hours from https://coombsfarmscolorado.com/ (undated page); confidence medium. Sun closed (store hours as listed on homepage),2026-10-14
+Sunrise Ranch,Loveland,Hours,set,Mon: 8:30am - 6pm; Tue: 8:30am - 6pm; Wed: 8:30am - 6pm; Thu: 8:30am - 6pm; Fri: 8:30am - 6pm; Sat: 8:30am - 6pm; Sun: 8:30am - 6pm,Hours from https://sunriseranch.org/ (page dated 2026 (footer copyright)); confidence medium. Homepage says 'Open Daily 8:30 a.m. to 6:00 p.m.'; unclear if this is front desk/visitor hours; no season stated,2026-10-14
+Deliteful Greens,Northglenn,Website,clear,,Link check 2026-10-14: site redirects to an unrelated or for-sale domain (Domain now serves an unrelated Thai gambling/spam site (Askmebet); not used); link removed.,2026-10-14
+Barn to Basket,,Email,set,support@barntobasket.com,Found on the business's own website https://www.barntobasket.com (crawled 2026-10-14),2026-10-14
+Daddy's Homemade,,Email,set,daddyshomemade@daddyshomemadesyrup.com,Found on the business's own website https://www.daddyshomemadesyrup.com/ (crawled 2026-10-14),2026-10-14
+Phytology Flowers Farm,,Facebook,set,https://www.facebook.com/phytologyflowers,Found on the business's own website https://www.phytologyflowers.com (crawled 2026-10-14),2026-10-14
+PIFCA – Partnership for Community Action,,Facebook,set,https://www.facebook.com/goPfCA,Found on the business's own website https://www.gopfca.com/ (crawled 2026-10-14),2026-10-14
+PIFCA – Partnership for Community Action,,Instagram,set,http://instagram.com/gopfca,Found on the business's own website https://www.gopfca.com/ (crawled 2026-10-14),2026-10-14
+Rampart Bakehouse,,Email,set,orders@rampartbakehouse.com,Found on the business's own website http://rampartbakehouse.com (crawled 2026-10-14),2026-10-14
+Smittys Little Farm LTD,,Email,set,smitty@smittyslittlefarm.com,Found on the business's own website https://www.smittyslittlefarm.com (crawled 2026-10-14),2026-10-14
+Smittys Little Farm LTD,,Instagram,set,https://www.instagram.com/smittys.little.farm,Found on the business's own website https://www.smittyslittlefarm.com (crawled 2026-10-14),2026-10-14
+"Tees Me Treat Me, LLC",,Instagram,set,https://www.instagram.com/tees_me_treat_me,Found on the business's own website https://teesmetreatme.com/ (crawled 2026-10-14),2026-10-14
+"Tilde Vineyards, LLC",,Email,set,vanattarobert@gmail.com,Found on the business's own website https://www.brushhollowwinery.com/ (crawled 2026-10-14),2026-10-14
+Toadstool Traditions,,Email,set,toadstooltraditions@gmail.com,Found on the business's own website https://toadstooltraditions.com/ (crawled 2026-10-14),2026-10-14
+Urmber's IceCream,,Email,set,ummbers@gmail.com,Found on the business's own website https://www.ummberspremiumicecream.com/ (crawled 2026-10-14),2026-10-14
+Urmber's IceCream,,Facebook,set,https://www.facebook.com/Ummbers-IceCream-104704532186209,Found on the business's own website https://www.ummberspremiumicecream.com/ (crawled 2026-10-14),2026-10-14
+Zen and the Art of Beeing,,Email,set,mikayla@zenandtheartofbeeing.com,Found on the business's own website https://www.zenandtheartofbeeing.com (crawled 2026-10-14),2026-10-14
+Mercadillo en el Rio,Alamosa,Email,set,dan@riograndefarmpark.org,Found on the business's own website https://www.riograndefarmpark.org (crawled 2026-10-14),2026-10-14
+Valley Meat and Foods LLC,Alamosa,Email,set,valleymeat@ymail.com,Found on the business's own website https://valleymeatandfood.com/ (crawled 2026-10-14),2026-10-14
+Vision Angus Beef,Amherst,Email,set,visionangus@pctelcom.coop,Found on the business's own website https://www.visionangus.com (crawled 2026-10-14),2026-10-14
+Arvada Farmers Market,Arvada,Instagram,set,http://instagram.com/afarmersmarket,Found on the business's own website https://www.arvadafarmersmarket.com (crawled 2026-10-14),2026-10-14
+Crescendum Flower Farm,Arvada,Email,set,krista@crescendumflowerfarm.com,Found on the business's own website http://www.crescendumflowerfarm.com (crawled 2026-10-14),2026-10-14
+Crescendum Flower Farm,Arvada,Facebook,set,https://www.facebook.com/Crescendum-Flower-Farm-Arvada-107551335097098,Found on the business's own website http://www.crescendumflowerfarm.com (crawled 2026-10-14),2026-10-14
+Crescendum Flower Farm,Arvada,Instagram,set,https://www.instagram.com/crescendum_flowers,Found on the business's own website http://www.crescendumflowerfarm.com (crawled 2026-10-14),2026-10-14
+Inti Farms,Arvada,Facebook,set,https://www.facebook.com/Linktree,Found on the business's own website https://linktr.ee/inti.chacra.farms?utm_source=linktree_profile_share&ltsid=a31e06f5-0479-4fe4-acf7-0fc9b0aa6470 (crawled 2026-10-14),2026-10-14
+Inti Farms,Arvada,Instagram,set,https://instagram.com/inti_farm_co,Found on the business's own website https://linktr.ee/inti.chacra.farms?utm_source=linktree_profile_share&ltsid=a31e06f5-0479-4fe4-acf7-0fc9b0aa6470 (crawled 2026-10-14),2026-10-14
+Micro Farms,Arvada,Facebook,set,https://www.facebook.com/microfarmscolorado,Found on the business's own website http://microfarmscolorado.com (crawled 2026-10-14),2026-10-14
+THE PERUVIAN COOKIE COMPANY LLC,Arvada,Facebook,set,https://www.facebook.com/peruviancookie.usa,Found on the business's own website https://peruviancookie.com/ (crawled 2026-10-14),2026-10-14
+Adam's Apple Orchard & Country Store,Ault,Facebook,set,http://www.facebook.com/adamsappleorchard,Found on the business's own website https://adamsapplecolorado.com/ (crawled 2026-10-14),2026-10-14
+Adam's Apple Orchard & Country Store,Ault,Instagram,set,http://www.instagram.com/adamsappleorchard,Found on the business's own website https://adamsapplecolorado.com/ (crawled 2026-10-14),2026-10-14
+Adams Apple Country Store,Ault,Email,set,hello@adamsapplecolorado.com,Found on the business's own website http://adamsapplecolorado.com/ (crawled 2026-10-14),2026-10-14
+Adams Apple Country Store,Ault,Facebook,set,http://www.facebook.com/adamsappleorchard,Found on the business's own website http://adamsapplecolorado.com/ (crawled 2026-10-14),2026-10-14
+Adams Apple Country Store,Ault,Instagram,set,http://www.instagram.com/adamsappleorchard,Found on the business's own website http://adamsapplecolorado.com/ (crawled 2026-10-14),2026-10-14
+Spring Creek Meats LLC,Ault,Email,set,springcreekmeatsllc@gmail.com,Found on the business's own website https://www.springcreekmeatsllc.com (crawled 2026-10-14),2026-10-14
+Spring Creek Meats LLC,Ault,Instagram,set,https://www.instagram.com/spring_creek_meats_llc,Found on the business's own website https://www.springcreekmeatsllc.com (crawled 2026-10-14),2026-10-14
+Fig & Olive Bakery,Aurora,Email,set,figandolivebakery@gmail.com,Found on the business's own website https://www.figandolivebakeshop.com (crawled 2026-10-14),2026-10-14
+Kalera,Aurora,Facebook,set,https://www.facebook.com/80AcresFarms,Found on the business's own website https://kalera.com/ (crawled 2026-10-14),2026-10-14
+Kalera,Aurora,Instagram,set,http://www.instagram.com/80AcresFarms,Found on the business's own website https://kalera.com/ (crawled 2026-10-14),2026-10-14
+Miette et Chocolat,Aurora,Facebook,set,https://www.facebook.com/mietteetchocolat,Found on the business's own website https://mietteetchocolat.com (crawled 2026-10-14),2026-10-14
+Miette et Chocolat,Aurora,Instagram,set,http://instagram.com/miettechocolat,Found on the business's own website https://mietteetchocolat.com (crawled 2026-10-14),2026-10-14
+Rebels In The Garden,Aurora,Email,set,r.i.g@thegardenrebels.com,Found on the business's own website https://www.thegardenrebels.com/ (crawled 2026-10-14),2026-10-14
+Solomon's Grocery & Deli,Aurora,Email,set,chance@onhavanastreet.com,Found on the business's own website https://onhavanastreet.com/business/solomons-grocery-european-deli/ (crawled 2026-10-14),2026-10-14
+Solomon's Grocery & Deli,Aurora,Facebook,set,https://www.facebook.com/phominhhavana,Found on the business's own website https://onhavanastreet.com/business/solomons-grocery-european-deli/ (crawled 2026-10-14),2026-10-14
+Solomon's Grocery & Deli,Aurora,Instagram,set,https://www.instagram.com/onhavanastreet,Found on the business's own website https://onhavanastreet.com/business/solomons-grocery-european-deli/ (crawled 2026-10-14),2026-10-14
+Southlands Farmers' Market,Aurora,Instagram,set,https://www.instagram.com/shopsouthlands,Found on the business's own website https://www.shopsouthlands.com/eventprograms/farmers-market/ (crawled 2026-10-14),2026-10-14
+Marigold Livestock Co.,Basalt,Email,set,alyssa@marigoldlivestock.com,Found on the business's own website https://www.marigoldlivestock.com (crawled 2026-10-14),2026-10-14
+Marigold Livestock Co.,Basalt,Facebook,set,http://facebook.com/marigoldlivestock,Found on the business's own website https://www.marigoldlivestock.com (crawled 2026-10-14),2026-10-14
+Rock Bottom Ranch (ACES),Basalt,Email,set,cmatts@aspennature.org,Found on the business's own website https://aspennature.org/locations/rock-bottom-ranch/ (crawled 2026-10-14),2026-10-14
+Rock Bottom Ranch (ACES),Basalt,Facebook,set,https://www.facebook.com/AspenCenterforEnvironmentalStudies,Found on the business's own website https://aspennature.org/locations/rock-bottom-ranch/ (crawled 2026-10-14),2026-10-14
+Two Roots Farm LLC,Basalt,Facebook,set,https://www.facebook.com/tworootsfarm,Found on the business's own website https://www.tworootsfarm.com (crawled 2026-10-14),2026-10-14
+Two Roots Farm LLC,Basalt,Instagram,set,http://instagram.com/tworootsfarm,Found on the business's own website https://www.tworootsfarm.com (crawled 2026-10-14),2026-10-14
+Homegrown Farm,Bayfield,Email,set,homegrownbiodynamics@gmail.com,Found on the business's own website http://homegrownbiodynamics.com (crawled 2026-10-14),2026-10-14
+Homegrown Farm,Bayfield,Facebook,set,https://www.facebook.com/homegrownbiodynamicfarm,Found on the business's own website http://homegrownbiodynamics.com (crawled 2026-10-14),2026-10-14
+Homegrown Farm,Bayfield,Instagram,set,https://www.instagram.com/homegrownfarmbayfield,Found on the business's own website http://homegrownbiodynamics.com (crawled 2026-10-14),2026-10-14
+Red Willow Farms LLC,Bayfield,Email,set,info@redwillowfarms.com,Found on the business's own website https://www.redwillowfarms.com/ (crawled 2026-10-14),2026-10-14
+Morning Fresh Dairy,Bellvue,Email,set,morningfresh@morningfreshdairy.com,Found on the business's own website https://www.morningfreshdairy.com/ (crawled 2026-10-14),2026-10-14
+Ancestral Skincare Co,Bennett,Facebook,set,https://www.facebook.com/official_TURBO78,Found on the business's own website https://ancestralskincare.co (crawled 2026-10-14),2026-10-14
+Duckberry Farm,Berthoud,Email,set,duckberryfarm@gmail.com,Found on the business's own website https://www.duckberryfarm.com (crawled 2026-10-14),2026-10-14
+Star View Farm,Berthoud,Email,set,svfsales@mail.com,Found on the business's own website http://www.StarViewFarmLtd.com (crawled 2026-10-14),2026-10-14
+Colorado Coops,Black Hawk,Email,set,contact@coloradocoops.com,Found on the business's own website https://www.coloradocoops.com/ (crawled 2026-10-14),2026-10-14
+Boulder Valley School District,Boulder,Email,set,carolyn.villa@bvsd.org,Found on the business's own website https://food.bvsd.org (crawled 2026-10-14),2026-10-14
+Hempward Farms,Boulder,Email,set,info@hempwardfarms.com,Found on the business's own website https://www.hempwardfarms.com/ (crawled 2026-10-14),2026-10-14
+HOPELANDS COFFEE,Boulder,Email,set,info@hopelandscoffee.com,Found on the business's own website https://hopelandscoffee.com/ (crawled 2026-10-14),2026-10-14
+IE Mills dba Dry Storage Mills,Boulder,Email,set,wholesale@drystorageco.com,Found on the business's own website https://drystorageco.com/ (crawled 2026-10-14),2026-10-14
+Naomi's Sprouted Seed Truffles,Boulder,Email,set,karall@naomissproutedseedtruffles.com,Found on the business's own website https://naomissproutedseedtruffles.com (crawled 2026-10-14),2026-10-14
+Off Beet Farm,Boulder,Email,set,offbeetfarmcolorado@gmail.com,Found on the business's own website http://offbeetfarmcolorado.com (crawled 2026-10-14),2026-10-14
+Off Beet Farm,Boulder,Facebook,set,https://www.facebook.com/profile.php?id=100088126748285,Found on the business's own website http://offbeetfarmcolorado.com (crawled 2026-10-14),2026-10-14
+Off Beet Farm,Boulder,Instagram,set,https://instagram.com/offbeetfarmcolorado,Found on the business's own website http://offbeetfarmcolorado.com (crawled 2026-10-14),2026-10-14
+Ravens Three Apothecary,Boulder,Facebook,set,https://www.facebook.com/people/RavensThree/100092607288782,Found on the business's own website https://www.ravensthree.com/ (crawled 2026-10-14),2026-10-14
+Rudi's Bakery,Boulder,Facebook,set,https://www.facebook.com/p/Rudis-Bakery-100064707879364,Found on the business's own website https://rudisbakery.com/ (crawled 2026-10-14),2026-10-14
+West Wolf Medicinals,Boulder,Email,set,nicole@westwolfmedicinals.com,Found on the business's own website https://www.westwolfmedicinals.com/ (crawled 2026-10-14),2026-10-14
+The Cookie Coven,Brighton,Email,set,info@thecookiecoven.com,Found on the business's own website https://www.thecookiecoven.com/ (crawled 2026-10-14),2026-10-14
+Rock Creek Farm U-Pick-em Pumpkin Patch,Broomfield,Email,set,info@rockcreekfarm.com,Found on the business's own website https://www.rockcreekfarm.com (crawled 2026-10-14),2026-10-14
+Rock Creek Farm U-Pick-em Pumpkin Patch,Broomfield,Facebook,set,http://www.facebook.com/pages/Rock-Creek-Farm/112691738789563,Found on the business's own website https://www.rockcreekfarm.com (crawled 2026-10-14),2026-10-14
+Simply Fresh Microgreens,Broomfield,Email,set,simplyfreshmicrogreenz@gmail.com,Found on the business's own website https://simplyfreshmicrogreens.com (crawled 2026-10-14),2026-10-14
+Trujillo Family Farm,Broomfield,Email,set,info@trujillofamilyfarmco.com,Found on the business's own website https://www.trujillofamilyfarmCO.com (crawled 2026-10-14),2026-10-14
+Colorado Mountain Lavender,Buena Vista,Facebook,set,http://www.facebook.com/coloradomountainlavender,Found on the business's own website https://co-mtn-lav.com/ (crawled 2026-10-14),2026-10-14
+Colorado Mountain Lavender,Buena Vista,Instagram,set,http://www.instagram.com/coloradomountainlavender,Found on the business's own website https://co-mtn-lav.com/ (crawled 2026-10-14),2026-10-14
+The Asian Palate Marketplace & Catering,Buena Vista,Facebook,set,https://www.facebook.com/theasianpalate,Found on the business's own website https://www.theasianpalate.com (crawled 2026-10-14),2026-10-14
+The Lettucehead Food Company,Buena Vista,Facebook,set,https://www.facebook.com/TheLettuceheadFoodCompany,Found on the business's own website http://www.thelettucehead.com (crawled 2026-10-14),2026-10-14
+The Lettucehead Food Company,Buena Vista,Instagram,set,https://www.instagram.com/thelettuceheadfoodcompany,Found on the business's own website http://www.thelettucehead.com (crawled 2026-10-14),2026-10-14
+"Trinity Acres Farm, LLC",Byers,Email,set,pumpkinpatch@trinity-acres.farm,Found on the business's own website https://www.trinity-acres.farm/ (crawled 2026-10-14),2026-10-14
+SongHaven Farm,Cahone,Facebook,set,https://www.facebook.com/SongHavenFarmColorado/?ref=bookmarks,Found on the business's own website http://www.songhavenfarm.com (crawled 2026-10-14),2026-10-14
+SongHaven Farm,Cahone,Instagram,set,https://www.instagram.com/songhavenfarm,Found on the business's own website http://www.songhavenfarm.com (crawled 2026-10-14),2026-10-14
+Our Red Barn Ranch LLC,Calhan,Facebook,set,https://www.facebook.com/people/Our-Red-Barn-Ranch/100075904545877,Found on the business's own website https://Ourredbarnranch.com (crawled 2026-10-14),2026-10-14
+Carbondale Farmers' Market,Carbondale,Facebook,set,https://www.facebook.com/CarbondaleCOFarmersMarket,Found on the business's own website http://www.carbondalefarmersmarket.com/ (crawled 2026-10-14),2026-10-14
+Carbondale Farmers' Market,Carbondale,Instagram,set,https://www.instagram.com/bonedalemarket,Found on the business's own website http://www.carbondalefarmersmarket.com/ (crawled 2026-10-14),2026-10-14
+Dooley Creek Farm,Carbondale,Email,set,dooleycreekfarm@gmail.com,Found on the business's own website http://www.dooleycreekfarm.com (crawled 2026-10-14),2026-10-14
+Dooley Creek Farm,Carbondale,Facebook,set,https://www.facebook.com/Dooley-Creek-Farm,Found on the business's own website http://www.dooleycreekfarm.com (crawled 2026-10-14),2026-10-14
+Dooley Creek Farm,Carbondale,Instagram,set,https://www.instagram.com/dooley_creek_farm,Found on the business's own website http://www.dooleycreekfarm.com (crawled 2026-10-14),2026-10-14
+Spring Creeks Ranch,Carbondale,Facebook,set,https://www.facebook.com/springcreeksranch,Found on the business's own website https://www.springcreeksranch.com (crawled 2026-10-14),2026-10-14
+Spring Creeks Ranch,Carbondale,Instagram,set,https://www.instagram.com/springcreeksranch,Found on the business's own website https://www.springcreeksranch.com (crawled 2026-10-14),2026-10-14
+Sustainable Settings,Carbondale,Email,set,brook@sustainablesettings.org,Found on the business's own website http://www.sustainablesettings.org (crawled 2026-10-14),2026-10-14
+Cattle Queen Craft Bakery,Centennial,Email,set,cheryl@cqofmt.com,Found on the business's own website https://www.cqofmt.com (crawled 2026-10-14),2026-10-14
+Susan Cochran,Centennial,Email,set,susan.cochran@peri-natal.com,Found on the business's own website https://peri-natal.net (crawled 2026-10-14),2026-10-14
+Lazar Family Bakehouse,Cherry Hills Village,Facebook,set,https://www.facebook.com/profile.php?id=61569824093077,Found on the business's own website https://www.lazarfamilybakehouse.com (crawled 2026-10-14),2026-10-14
+Lazar Family Bakehouse,Cherry Hills Village,Instagram,set,https://www.instagram.com/lazarfamilybakehouse,Found on the business's own website https://www.lazarfamilybakehouse.com (crawled 2026-10-14),2026-10-14
+Colorado Q,Clifton,Email,set,coloradoq@outlook.com,Found on the business's own website https://www.coloradoqgj.com (crawled 2026-10-14),2026-10-14
+Colorado Farm and Art Market,Colorado Springs,Instagram,set,https://instagram.com/cofarmandart,Found on the business's own website https://www.farmandartmarket.com (crawled 2026-10-14),2026-10-14
+Emerge Aquaponics,Colorado Springs,Email,set,info@emergeaquaponics.com,Found on the business's own website https://emergeaquaponics.com (crawled 2026-10-14),2026-10-14
+Food to Power,Colorado Springs,Facebook,set,http://facebook.com/foodtopower,Found on the business's own website https://foodtopowerco.org/hillside-hub (crawled 2026-10-14),2026-10-14
+Food to Power,Colorado Springs,Instagram,set,http://instagram.com/foodtopower,Found on the business's own website https://foodtopowerco.org/hillside-hub (crawled 2026-10-14),2026-10-14
+"Hey, Good Lukken!",Colorado Springs,Email,set,heygoodlukken@gmail.com,Found on the business's own website https://carissadewaele.wixsite.com/my-site (crawled 2026-10-14),2026-10-14
+Hillbilly Farms,Colorado Springs,Email,set,donnajlachey@hotmail.com,Found on the business's own website http://Hillbillyfarms.net (crawled 2026-10-14),2026-10-14
+Keelor Family Ranch,Colorado Springs,Facebook,set,https://www.facebook.com/profile.php?id=100057189860269,Found on the business's own website https://keelorfamilyranch.com/ (crawled 2026-10-14),2026-10-14
+Keelor Family Ranch,Colorado Springs,Instagram,set,https://www.instagram.com/keelorfamilyranch,Found on the business's own website https://keelorfamilyranch.com/ (crawled 2026-10-14),2026-10-14
+Outside the Breadbox,Colorado Springs,Email,set,onlinesales@outsidethebreadbox.com,Found on the business's own website https://www.outsidethebreadbox.com (crawled 2026-10-14),2026-10-14
+Ranch Foods Direct,Colorado Springs,Email,set,orders@ranchfoodsdirect.com,Found on the business's own website https://ranchfoodsdirect.com/ (crawled 2026-10-14),2026-10-14
+The Green Witch Homestead LLC.,Colorado Springs,Email,set,info@greenwitchhomestead.com,Found on the business's own website https://www.greenwitchhomestead.com (crawled 2026-10-14),2026-10-14
+Your Peak Energy,Colorado Springs,Email,set,mj@yourpeakenergy.com,Found on the business's own website https://yourpeakenergy.com (crawled 2026-10-14),2026-10-14
+Rock River Ranches,Commerce City,Email,set,frontdesk@rockriverranches.com,Found on the business's own website https://rockriverbison.com/ (crawled 2026-10-14),2026-10-14
+Mountainside Bakery,Conifer,Email,set,info@mountainsidebakery.com,Found on the business's own website https://mountainsidebakery.com (crawled 2026-10-14),2026-10-14
+Cross Rafter C,Cortez,Email,set,cross.rafter.c@gmail.com,Found on the business's own website https://crossraftercranch.com/ (crawled 2026-10-14),2026-10-14
+5 Bar Angus Ranch,Craig,Email,set,5barangus@gmail.com,Found on the business's own website https://www.5barangus.com (crawled 2026-10-14),2026-10-14
+Living Water Fibers and Alpacas,Craig,Facebook,set,https://www.facebook.com/livingwaterfibersandalpacas,Found on the business's own website https://livingwaterfibersandalpacas.com/ (crawled 2026-10-14),2026-10-14
+Living Water Fibers and Alpacas,Craig,Instagram,set,https://www.instagram.com/living_water_fibers,Found on the business's own website https://livingwaterfibersandalpacas.com/ (crawled 2026-10-14),2026-10-14
+Vermont Sticky,Crested Butte,Email,set,krista@vermontsticky.com,Found on the business's own website https://vermontsticky.com (crawled 2026-10-14),2026-10-14
+Colorado Agritourism Association,Delta,Email,set,director@coloradoagritourismassociation.org,Found on the business's own website https://www.coloradoagritourismassociation.org/ (crawled 2026-10-14),2026-10-14
+Delta County Colorado Agritours,Delta,Email,set,tourism@deltacounty.com,Found on the business's own website https://www.deltacountycolorado.com (crawled 2026-10-14),2026-10-14
+Delta County Colorado Agritours,Delta,Facebook,set,https://www.facebook.com/2008/fbml,Found on the business's own website https://www.deltacountycolorado.com (crawled 2026-10-14),2026-10-14
+Delta County Colorado Agritours,Delta,Instagram,set,https://www.instagram.com/deltacountytourismcolorado,Found on the business's own website https://www.deltacountycolorado.com (crawled 2026-10-14),2026-10-14
+"Bet On Me, LLC",Denver,Email,set,info@30forthkitchen.com,Found on the business's own website https://www.30forthkitchen.com/ (crawled 2026-10-14),2026-10-14
+Biscotti Hound Dog Biscuit Bakery,DENVER,Facebook,set,https://www.facebook.com/681745891920764,Found on the business's own website https://biscottihound.com/ (crawled 2026-10-14),2026-10-14
+Bonacquisti Wine Company,Denver,Email,set,paul@denverwine.net,Found on the business's own website https://www.bonacquistiwine.com/ (crawled 2026-10-14),2026-10-14
+Bonverts Farm,Denver,Email,set,info@bonverts.com,Found on the business's own website https://www.bonverts.com (crawled 2026-10-14),2026-10-14
+Bonverts Farm,Denver,Instagram,set,https://www.instagram.com/Bonvertsfarm,Found on the business's own website https://www.bonverts.com (crawled 2026-10-14),2026-10-14
+Bread In The Box LLC,Denver,Email,set,customer@breadinthebox.com,Found on the business's own website https://breadinthebox.com/ (crawled 2026-10-14),2026-10-14
+Brunson Meat Co.,Denver,Facebook,set,https://m.facebook.com/BrunsonMeats,Found on the business's own website https://brunsonmeats.com/ (crawled 2026-10-14),2026-10-14
+Charcutnuvo Organic and Natural Sausage,Denver,Email,set,indulge@charcutnuvo.com,Found on the business's own website http://www.charcutnuvo.com (crawled 2026-10-14),2026-10-14
+Denver Urban Gardens  DeLaney Community Farm (Aurora),Denver,Instagram,set,https://www.instagram.com/denverurbangardens,Found on the business's own website http://www.dug.org/ (crawled 2026-10-14),2026-10-14
+Early Bird Restaurant,Denver,Facebook,set,https://www.facebook.com/earlybirdrestaurantwesty,Found on the business's own website https://earlybirdrestaurant.com/#menu (crawled 2026-10-14),2026-10-14
+Early Bird Restaurant,Denver,Instagram,set,https://www.instagram.com/earlybirdrestaurant,Found on the business's own website https://earlybirdrestaurant.com/#menu (crawled 2026-10-14),2026-10-14
+Farm and Market,Denver,Facebook,set,https://www.facebook.com/109310265382168,Found on the business's own website https://thefarmandmarket.com (crawled 2026-10-14),2026-10-14
+"Free Range Beehives, LLC",Denver,Email,set,info@freerangebeehives.com,Found on the business's own website https://freerangebeehives.com (crawled 2026-10-14),2026-10-14
+Freedom Acres Ranch,Denver,Email,set,freedomacres1@gmail.com,Found on the business's own website https://www.freedomacresranch.com (crawled 2026-10-14),2026-10-14
+Freedom Acres Ranch,Denver,Facebook,set,https://www.facebook.com/profile.php/?id=100070773641480&amp,Found on the business's own website https://www.freedomacresranch.com (crawled 2026-10-14),2026-10-14
+FrontLine Farming,Denver,Facebook,set,https://www.facebook.com/frontlinefarmingcolorado,Found on the business's own website https://www.frontlinefarming.org/csa (crawled 2026-10-14),2026-10-14
+FrontLine Farming,Denver,Instagram,set,https://www.instagram.com/frontlinefarming,Found on the business's own website https://www.frontlinefarming.org/csa (crawled 2026-10-14),2026-10-14
+Lafayette Garden Design,Denver,Email,set,jenniferbolger@comcast.net,Found on the business's own website https://www.lafayettegardendesign.com/ (crawled 2026-10-14),2026-10-14
+Lafayette Garden Design,Denver,Facebook,set,https://www.facebook.com/p/Misty-Prairie-Natives-61580764842875,Found on the business's own website https://www.lafayettegardendesign.com/ (crawled 2026-10-14),2026-10-14
+Marczyk Fine Foods,Denver,Facebook,set,https://www.facebook.com/marczykfinefoods,Found on the business's own website https://marczykfinefoods.com/ (crawled 2026-10-14),2026-10-14
+MarsRoom LLC (Gourmet & Medicinal Mushrooms),Denver,Email,set,mushroom@marsroom.us,Found on the business's own website https://marsroom.us (crawled 2026-10-14),2026-10-14
+Pacific Mercantile Company,Denver,Email,set,info@pacificmercantile.com,Found on the business's own website https://pacificeastwest.com (crawled 2026-10-14),2026-10-14
+Polidori Sausage,Denver,Email,set,in**@*************ge.com,Found on the business's own website http://polidorisausage.com/ (crawled 2026-10-14),2026-10-14
+Restin' Peas LLC,Denver,Email,set,avery@restinpeasdenver.com,Found on the business's own website https://www.restinpeasdenver.com (crawled 2026-10-14),2026-10-14
+Rooted Broth,denver,Email,set,hello@rootedbroth.co,Found on the business's own website https://rootedbroth.co (crawled 2026-10-14),2026-10-14
+Stapleton Farmers' Market,Denver,Facebook,set,https://www.facebook.com/MCA80238,Found on the business's own website https://www.mca80238.com/programs/signature-events/summer-markets (crawled 2026-10-14),2026-10-14
+Stapleton Farmers' Market,Denver,Instagram,set,https://www.instagram.com/mca80238,Found on the business's own website https://www.mca80238.com/programs/signature-events/summer-markets (crawled 2026-10-14),2026-10-14
+Styria Bakery II,Denver,Email,set,getbread@styriabakerybread.com,Found on the business's own website https://www.styriabakerybread.com (crawled 2026-10-14),2026-10-14
+Sweet Bee & Co.,Denver,Instagram,set,https://www.instagram.com/sweetbeeandco22,Found on the business's own website https://sweetbeeandco.com/greens/ (crawled 2026-10-14),2026-10-14
+The Best Honey,Denver,Email,set,hello@thebesthoney.com,Found on the business's own website https://thebesthoney.com/ (crawled 2026-10-14),2026-10-14
+Ullrs Garden,Denver,Instagram,set,https://www.instagram.com/ullrsgarden,Found on the business's own website https://ullrsgarden.com (crawled 2026-10-14),2026-10-14
+Vollmer's Bakery,Denver,Email,set,frontdesk@vollmersbakery.com,Found on the business's own website https://vollmersbakery.com (crawled 2026-10-14),2026-10-14
+Vollmer's Bakery,Denver,Facebook,set,https://www.facebook.com/124059764324517,Found on the business's own website https://vollmersbakery.com (crawled 2026-10-14),2026-10-14
+Vollmer's Bakery,Denver,Instagram,set,https://www.instagram.com/vcheesecake,Found on the business's own website https://vollmersbakery.com (crawled 2026-10-14),2026-10-14
+Watercourse Foods,Denver,Email,set,info@watercoursefoods.com,Found on the business's own website https://watercoursefoods.com (crawled 2026-10-14),2026-10-14
+Watercourse Foods,Denver,Facebook,set,https://www.facebook.com/watercoursefoods,Found on the business's own website https://watercoursefoods.com (crawled 2026-10-14),2026-10-14
+Watercourse Foods,Denver,Instagram,set,https://www.instagram.com/watercoursefoods,Found on the business's own website https://watercoursefoods.com (crawled 2026-10-14),2026-10-14
+"Just Jams & Jellies, LLC",Divide,Email,set,joannsjamsandjellies@gmail.com,Found on the business's own website https://www.JustJamsAndJellies.com (crawled 2026-10-14),2026-10-14
+Adobe House Farm,Durango,Instagram,set,https://www.instagram.com/adobehousefarm,Found on the business's own website http://www.adobehousefarm.com/ (crawled 2026-10-14),2026-10-14
+Four Leaves Winery,Durango,Email,set,info@fourleaveswinery.com,Found on the business's own website https://fourleaveswinery.com/ (crawled 2026-10-14),2026-10-14
+Four Leaves Winery,Durango,Instagram,set,https://www.instagram.com/fourleaveswinery,Found on the business's own website https://fourleaveswinery.com/ (crawled 2026-10-14),2026-10-14
+Gardens of Fire,Durango,Email,set,sam@gardensoffire.com,Found on the business's own website https://www.gardensoffire.com (crawled 2026-10-14),2026-10-14
+James Ranch,Durango,Facebook,set,https://www.facebook.com/thejamesranch,Found on the business's own website https://www.jamesranch.net/ (crawled 2026-10-14),2026-10-14
+James Ranch,Durango,Instagram,set,https://www.instagram.com/jamesranch,Found on the business's own website https://www.jamesranch.net/ (crawled 2026-10-14),2026-10-14
+Leafcutter Farms,durango,Email,set,leafcutterfarms@gmail.com,Found on the business's own website https://www.leafcutterfarms.com/ (crawled 2026-10-14),2026-10-14
+Leafcutter Farms,durango,Facebook,set,http://facebook.com/leafcutterfarms,Found on the business's own website https://www.leafcutterfarms.com/ (crawled 2026-10-14),2026-10-14
+"Copper Bar Ranch, LLLC",Edwards,Email,set,shad@thecopperbarranch.com,Found on the business's own website https://www.thecopperbarranch.com/ (crawled 2026-10-14),2026-10-14
+"Copper Bar Ranch, LLLC",Edwards,Facebook,set,https://www.facebook.com/CopperBarRanchCO,Found on the business's own website https://www.thecopperbarranch.com/ (crawled 2026-10-14),2026-10-14
+"Copper Bar Ranch, LLLC",Edwards,Instagram,set,https://www.instagram.com/copperbarranchco,Found on the business's own website https://www.thecopperbarranch.com/ (crawled 2026-10-14),2026-10-14
+Eagle Farmers Market,Edwards,Email,set,contact@eaglefarmersmarket.com,Found on the business's own website https://www.eaglefarmersmarketandartshow.com/ (crawled 2026-10-14),2026-10-14
+Forest Trail Farm LLC,Elizabeth,Email,set,foresttrailfarm@outlook.com,Found on the business's own website https://foresttrailfarm.com/ (crawled 2026-10-14),2026-10-14
+Gluten Free Farmers Market,Englewood,Email,set,president@denverceliacs.org,Found on the business's own website https://www.denverceliacs.org (crawled 2026-10-14),2026-10-14
+Erie Farmers Market,Erie,Instagram,set,https://www.instagram.com/drizzlencrunch,Found on the business's own website https://realfarmersmarketco.com/erie-farmers-market/ (crawled 2026-10-14),2026-10-14
+Lazy acre beef,Evergreen,Email,set,catering@lazybutcher.com,Found on the business's own website https://shoplazyacrebeef.com/ (crawled 2026-10-14),2026-10-14
+Wild Cider,Firestone,Email,set,info@wildcider.com,Found on the business's own website https://www.wildcider.com (crawled 2026-10-14),2026-10-14
+Loutzenhiser Cattle Company,Flagler,Email,set,loutzenhisercattlecompany@gmail.com,Found on the business's own website http://loutzenhisercattle.com (crawled 2026-10-14),2026-10-14
+Belafonte Farm,Fort Collins,Email,set,dennis@belafontefarm.com,Found on the business's own website http://belafontefarm.com/ (crawled 2026-10-14),2026-10-14
+Belafonte Farm,Fort Collins,Facebook,set,https://www.facebook.com/belafontefarm,Found on the business's own website http://belafontefarm.com/ (crawled 2026-10-14),2026-10-14
+Belafonte Farm,Fort Collins,Instagram,set,https://www.instagram.com/belafontefarm,Found on the business's own website http://belafontefarm.com/ (crawled 2026-10-14),2026-10-14
+Blendings at The Hillside Vineyard,Fort Collins,Email,set,hello@thehillsidevineyard.com,Found on the business's own website https://thehillsidevineyard.com/ (crawled 2026-10-14),2026-10-14
+Fat Donkey Farm,Fort Collins,Email,set,info@fatdonkey.farm,Found on the business's own website http://www.fatdonkey.farm (crawled 2026-10-14),2026-10-14
+Fat Donkey Farm,Fort Collins,Facebook,set,https://www.facebook.com/profile.php?id=61562193961553,Found on the business's own website http://www.fatdonkey.farm (crawled 2026-10-14),2026-10-14
+Fat Donkey Farm,Fort Collins,Instagram,set,https://www.instagram.com/fat.donkey.farm,Found on the business's own website http://www.fatdonkey.farm (crawled 2026-10-14),2026-10-14
+Jodar Farms,Fort Collins,Email,set,customerservice@jodarfarms.com,Found on the business's own website https://www.Jodarfarms.com (crawled 2026-10-14),2026-10-14
+Jodar Farms,Fort Collins,Facebook,set,http://www.facebook.com/jodarfarms,Found on the business's own website https://www.Jodarfarms.com (crawled 2026-10-14),2026-10-14
+Jodar Farms,Fort Collins,Instagram,set,http://instagram.com/jodarfarms,Found on the business's own website https://www.Jodarfarms.com (crawled 2026-10-14),2026-10-14
+Jon-a-thins,Fort Collins,Facebook,set,https://www.facebook.com/jonathinscrackers,Found on the business's own website https://www.jonathins.com/ (crawled 2026-10-14),2026-10-14
+Jon-a-thins,Fort Collins,Instagram,set,https://www.instagram.com/jonathinscrackers,Found on the business's own website https://www.jonathins.com/ (crawled 2026-10-14),2026-10-14
+Laughing Buck Farm,Fort Collins,Instagram,set,https://www.instagram.com/friends_of_laughing_buck_farm,Found on the business's own website https://www.laughingbuckfarm.com (crawled 2026-10-14),2026-10-14
+LoCo Food Distribution,Fort Collins,Instagram,set,http://WWW.INSTAGRAM.COM/LOCOFOODS,Found on the business's own website http://www.locofooddistribution.com (crawled 2026-10-14),2026-10-14
+Native Hill Farm,Fort Collins,Facebook,set,https://www.facebook.com/NativeHillFarm,Found on the business's own website https://www.Nativehillfarm.com (crawled 2026-10-14),2026-10-14
+Owltree Farm,Fort Collins,Facebook,set,http://www.facebook.com/owltreefarmco,Found on the business's own website https://www.OwltreeFarmCO.com (crawled 2026-10-14),2026-10-14
+Owltree Farm,Fort Collins,Instagram,set,https://instagram.com/owltreefarmco,Found on the business's own website https://www.OwltreeFarmCO.com (crawled 2026-10-14),2026-10-14
+Renewed Roots Ranch LLC,Fort Collins,Email,set,info@renewedrootsranch.com,Found on the business's own website http://www.renewedrootsranch.com (crawled 2026-10-14),2026-10-14
+St Michaels Farms,Fort Collins,Email,set,smffoco@gmail.com,Found on the business's own website https://stmichaelsfarms.com (crawled 2026-10-14),2026-10-14
+Willowbrook Farm and Ranch,FORT COLLINS,Email,set,willowbrookfarmandranch@gmail.com,Found on the business's own website https://willowbrookfarmandranch.com/ (crawled 2026-10-14),2026-10-14
+Willowbrook Farm and Ranch,FORT COLLINS,Instagram,set,https://www.instagram.com/willowbrookfarmandranch,Found on the business's own website https://willowbrookfarmandranch.com/ (crawled 2026-10-14),2026-10-14
+Peak View Ranch,Fowler,Email,set,peakviewranch@hotmail.com,Found on the business's own website https://www.peakviewranch.com (crawled 2026-10-14),2026-10-14
+Peak View Ranch,Fowler,Facebook,set,https://www.facebook.com/peakviewranch,Found on the business's own website https://www.peakviewranch.com (crawled 2026-10-14),2026-10-14
+Rancho Largo Cattle Co.,Fowler,Instagram,set,https://www.instagram.com/rancholargo,Found on the business's own website https://rancholargo.com (crawled 2026-10-14),2026-10-14
+Rising Moon Ranch,Franktown,Facebook,set,https://www.facebook.com/rmralpacas,Found on the business's own website https://www.risingmoonranch.net (crawled 2026-10-14),2026-10-14
+"The Farmers Market, LLC",Fruita,Email,set,hello@farmersmarket.store,Found on the business's own website http://www.farmersmarket.store (crawled 2026-10-14),2026-10-14
+GroAway LLC,Gardner,Email,set,contact@groawayllc.com,Found on the business's own website https://groawayllc.com (crawled 2026-10-14),2026-10-14
+Colorado Edible Forest at Rivendell Farms,Glenwood Springs,Email,set,vanessa@coloradoedibleforest.com,Found on the business's own website http://www.coloradoedibleforest.com (crawled 2026-10-14),2026-10-14
+Conditional Gardens,Golden,Email,set,sales@conditionalgardens.com,Found on the business's own website https://conditionalgardens.com (crawled 2026-10-14),2026-10-14
+Nelms Farm,Golden,Facebook,set,https://www.facebook.com/nelmsfarm,Found on the business's own website https://www.nelmsfarm.com/ (crawled 2026-10-14),2026-10-14
+Rome's Sausage,Golden,Email,set,chris@romesausage.com,Found on the business's own website https://www.romesausage.com (crawled 2026-10-14),2026-10-14
+The Buffalo Rose,Golden,Email,set,information@buffalorose.net,Found on the business's own website https://buffalorosegolden.com (crawled 2026-10-14),2026-10-14
+The Flower Shack,Golden,Email,set,loanalisa@hotmail.com,Found on the business's own website https://theflowershack303.com (crawled 2026-10-14),2026-10-14
+7th Street Community Cafe,Grand Junction,Email,set,jessica@foodbankgj.org,Found on the business's own website https://www.communitycafegj.com/ (crawled 2026-10-14),2026-10-14
+Belli Fiori Lavender,Grand Junction,Email,set,lisa@bellifiorilavender.com,Found on the business's own website https://bellifiorilavender.com (crawled 2026-10-14),2026-10-14
+Bershenyi Beef,Grand Junction,Email,set,bershenyibeef@gmail.com,Found on the business's own website https://bershenyibeef.com (crawled 2026-10-14),2026-10-14
+Decadence Gourmet,Grand Junction,Email,set,decadencegourmet@mindspring.com,Found on the business's own website https://decadencegourmet.com (crawled 2026-10-14),2026-10-14
+Grand Junction Agritourism,Grand Junction,Facebook,set,https://www.facebook.com/VisitGrandJunction,Found on the business's own website https://www.visitgrandjunction.com (crawled 2026-10-14),2026-10-14
+Grand Junction Agritourism,Grand Junction,Instagram,set,https://www.instagram.com/visitgrandjunction,Found on the business's own website https://www.visitgrandjunction.com (crawled 2026-10-14),2026-10-14
+Magic Sourdough,Grand Junction,Email,set,sales@magicsourdough.com,Found on the business's own website https://www.magicsourdough.com/ (crawled 2026-10-14),2026-10-14
+Magic Sourdough,Grand Junction,Facebook,set,https://www.facebook.com/profile.php?id=61582815761450,Found on the business's own website https://www.magicsourdough.com/ (crawled 2026-10-14),2026-10-14
+Magic Sourdough,Grand Junction,Instagram,set,https://www.instagram.com/magic.sourdough,Found on the business's own website https://www.magicsourdough.com/ (crawled 2026-10-14),2026-10-14
+Studt Farms (Pumpkin Patch and Corn Maze),Grand Junction,Facebook,set,https://www.facebook.com/studtspumpkinpatch,Found on the business's own website https://studtfarms.com/ (crawled 2026-10-14),2026-10-14
+Studt Farms (Pumpkin Patch and Corn Maze),Grand Junction,Instagram,set,https://www.instagram.com/studtspumpkinpatch,Found on the business's own website https://studtfarms.com/ (crawled 2026-10-14),2026-10-14
+Aragon Farms LLC,Greeley,Facebook,set,https://www.facebook.com/profile.php?id=61555196184725,Found on the business's own website https://aragonfarmsco.com (crawled 2026-10-14),2026-10-14
+Aragon Farms LLC,Greeley,Instagram,set,https://www.instagram.com/aragon_farms,Found on the business's own website https://aragonfarmsco.com (crawled 2026-10-14),2026-10-14
+HUNGENBERG PRODUCE INC,GREELEY,Email,set,jordan@hungenbergproduce.com,Found on the business's own website https://hungenbergproduce.com/ (crawled 2026-10-14),2026-10-14
+Pope Farms Produce & Garden Center LLC,Greeley,Facebook,set,http://facebook.com/popefarmsproduce,Found on the business's own website https://Popefarmsproduce.com (crawled 2026-10-14),2026-10-14
+Pope Farms Produce & Garden Center LLC,Greeley,Instagram,set,http://instagram.com/popefarmsproduce,Found on the business's own website https://Popefarmsproduce.com (crawled 2026-10-14),2026-10-14
+Cannolo Family Farms,Greenwood Village,Email,set,info@milehighfungi.com,Found on the business's own website https://cannolofarms.com/ (crawled 2026-10-14),2026-10-14
+Great Harvest Bread Co & Yogurt Shack,Greenwood Village,Email,set,greenwoodco@greatharvest.com,Found on the business's own website http://greatharvestgreenwoodvillage.com/ (crawled 2026-10-14),2026-10-14
+Buckel Family Wine,Gunnison,Email,set,info@buckelfamilywine.com,Found on the business's own website https://buckelfamilywine.com (crawled 2026-10-14),2026-10-14
+Larson Family Farms,Haxtun,Email,set,contactus@larsonfamilyfarms1909.com,Found on the business's own website https://www.larsonfamilyfarms1909.com (crawled 2026-10-14),2026-10-14
+Fort Lewis College-Old Fort at Hesperus,Hesperus,Email,set,oldfortathesperus@fortlewis.edu,Found on the business's own website https://www.fortlewis.edu/oldfort (crawled 2026-10-14),2026-10-14
+Sunflower Sourdough Ltd.,Hesperus,Instagram,set,https://instagram.com/sunflowersourdoughltd,Found on the business's own website https://www.hotplate.com/sunflowersourdoughltd (crawled 2026-10-14),2026-10-14
+Vi at Highlands Ranch,Highlands Ranch,Facebook,set,http://facebook.com/viseniorliving,Found on the business's own website https://www.viliving.com/ (crawled 2026-10-14),2026-10-14
+BEEF BARN,Holyoke,Email,set,visionangus@pctelcom.coop,Found on the business's own website https://www.visionangus.com (crawled 2026-10-14),2026-10-14
+Lenz Family Farms,Holyoke,Email,set,office@lenzfamilyfarms.com,Found on the business's own website https://www.lenzfamilyfarms.com (crawled 2026-10-14),2026-10-14
+"Big B's Delicious Orchards U-pick, Cafe & Tasting Room",Hotchkiss,Facebook,set,http://www.facebook.com/visitbigbs,Found on the business's own website https://www.bigbs.com/u-pick (crawled 2026-10-14),2026-10-14
+"Big B's Delicious Orchards U-pick, Cafe & Tasting Room",Hotchkiss,Instagram,set,https://instagram.com/drinkbigbs,Found on the business's own website https://www.bigbs.com/u-pick (crawled 2026-10-14),2026-10-14
+Farm Runners LLC,Hotchkiss,Instagram,set,https://www.instagram.com/farmrunners,Found on the business's own website https://FarmRunners.com (crawled 2026-10-14),2026-10-14
+Mesa Winds Farm and Winery,Hotchkiss,Email,set,mail@mesawindsfarm.com,Found on the business's own website https://www.mesawindswinery.com/ (crawled 2026-10-14),2026-10-14
+Princess Beef,Hotchkiss,Facebook,set,https://www.facebook.com/Princess-Beef-100964300025627,Found on the business's own website https://princessbeef.com (crawled 2026-10-14),2026-10-14
+Valere Farm and Ranch,Hudson,Email,set,valerefarmandranch@gmail.com,Found on the business's own website https://ValereFarmandRanch.com (crawled 2026-10-14),2026-10-14
+Fox Fire Farms,Ignacio,Facebook,set,https://www.facebook.com/people/Fox-Fire-Farms-Winery-and-Events/100063713644172,Found on the business's own website http://www.foxfirefarms.com (crawled 2026-10-14),2026-10-14
+Elevated Microgreens LLC,Indian Hills,Facebook,set,https://www.facebook.com/elevatedmicrogreens.llc,Found on the business's own website https://elevatedmicrogreens.app (crawled 2026-10-14),2026-10-14
+From Scratch Farm,Johnstown,Email,set,farm@scratch-farm.com,Found on the business's own website https://scratch-farm.com/ (crawled 2026-10-14),2026-10-14
+From Scratch Farm,Johnstown,Facebook,set,https://www.facebook.com/profile.php?id=100089485614306,Found on the business's own website https://scratch-farm.com/ (crawled 2026-10-14),2026-10-14
+From Scratch Farm,Johnstown,Instagram,set,https://www.instagram.com/scratchfarmcolorado,Found on the business's own website https://scratch-farm.com/ (crawled 2026-10-14),2026-10-14
+Hankins Farms,Johnstown,Facebook,set,http://www.facebook.com/HankinsMaze,Found on the business's own website https://hankinsfarms.com/ (crawled 2026-10-14),2026-10-14
+Tin Cup Ranch,Johnstown,Email,set,tincupranch@gmail.com,Found on the business's own website https://www.thetincupranch.com/ (crawled 2026-10-14),2026-10-14
+Bountiful Meats & Processing,La Jara,Email,set,info@bountifulmeats.com,Found on the business's own website https://www.bountifulmeats.com (crawled 2026-10-14),2026-10-14
+Bountiful Meats & Processing,La Jara,Instagram,set,http://instagram.com/bountifulmeats,Found on the business's own website https://www.bountifulmeats.com (crawled 2026-10-14),2026-10-14
+Coombs Farms Colorado,La Jara,Instagram,set,https://www.instagram.com/coombsfarmscolorado,Found on the business's own website https://coombsfarmscolorado.com/ (crawled 2026-10-14),2026-10-14
+Fritzler Farm Park (Scream Acres),La Salle,Facebook,set,http://www.facebook.com/fritzlermaze,Found on the business's own website https://www.fritzlerfarmpark.com/ (crawled 2026-10-14),2026-10-14
+Fritzler Farm Park (Scream Acres),La Salle,Instagram,set,https://www.instagram.com/fritzlerfarmpark,Found on the business's own website https://www.fritzlerfarmpark.com/ (crawled 2026-10-14),2026-10-14
+Cottonwood Farm,Lafayette,Facebook,set,https://www.facebook.com/cottonwoodfarmsboulder,Found on the business's own website https://cottonwoodfarms.com (crawled 2026-10-14),2026-10-14
+Friends Farm,Lafayette,Email,set,hellofriendsfarm@gmail.com,Found on the business's own website https://www.friendsfarm.org (crawled 2026-10-14),2026-10-14
+Casa Bonita,Lakewood,Email,set,hola@casabonitadenver.com\,Found on the business's own website https://www.casabonitadenver.com (crawled 2026-10-14),2026-10-14
+Casa Bonita,Lakewood,Facebook,set,https://www.facebook.com/casabonita,Found on the business's own website https://www.casabonitadenver.com (crawled 2026-10-14),2026-10-14
+Casa Bonita,Lakewood,Instagram,set,https://www.instagram.com/casabonitaofficial,Found on the business's own website https://www.casabonitadenver.com (crawled 2026-10-14),2026-10-14
+Square Foot Gardens LLC,Lakewood,Email,set,squarefootgardensllc@gmail.com,Found on the business's own website https://www.square-foot-gardens.com/ (crawled 2026-10-14),2026-10-14
+Tague Farm LLC,Lakewood,Email,set,chelsea@taguefarm.com,Found on the business's own website http://www.TagueFarm.com (crawled 2026-10-14),2026-10-14
+The Action Center Community Food Hub,Lakewood,Facebook,set,https://www.facebook.com/TheActionCenterCO,Found on the business's own website https://www.theactioncenter.org/community-food-hub (crawled 2026-10-14),2026-10-14
+The Action Center Community Food Hub,Lakewood,Instagram,set,https://www.instagram.com/theactionctr,Found on the business's own website https://www.theactioncenter.org/community-food-hub (crawled 2026-10-14),2026-10-14
+Wild K Ranch,Limon,Email,set,contactus@wild-k-ranch.com,Found on the business's own website http://www.wild-k-ranch.com/ (crawled 2026-10-14),2026-10-14
+Aqua Duck Farms L.L.C.,Littleton,Email,set,info@aquaduckfarms.com,Found on the business's own website https://aquaduckfarms.com (crawled 2026-10-14),2026-10-14
+Backpack Up Plan,Littleton,Email,set,lr@backpackupplan.com,Found on the business's own website https://backpackupplan.com (crawled 2026-10-14),2026-10-14
+Backpack Up Plan,Littleton,Facebook,set,https://www.facebook.com/profile.php?id=61584169581667,Found on the business's own website https://backpackupplan.com (crawled 2026-10-14),2026-10-14
+Backpack Up Plan,Littleton,Instagram,set,https://www.instagram.com/backpackupplan,Found on the business's own website https://backpackupplan.com (crawled 2026-10-14),2026-10-14
+Creek Side Gardens,Littleton,Facebook,set,https://www.facebook.com/pages/Creek-Side-Gardens/197319456963104,Found on the business's own website https://www.PlantsByCreekSide.com (crawled 2026-10-14),2026-10-14
+Patchwork Farms,Littleton,Email,set,petersongap@comcast.net,Found on the business's own website http://www.patchworkfarmsco.com (crawled 2026-10-14),2026-10-14
+Tart and Soul Bakery,Littleton,Email,set,andrea@tartandsoulbakery.com,Found on the business's own website https://www.tartandsoulbakery.com (crawled 2026-10-14),2026-10-14
+Living Water Ranch,Livermore,Email,set,rex@livingwaterranchcolorado.com,Found on the business's own website https://www.livingwaterranchcolorado.com/ (crawled 2026-10-14),2026-10-14
+100x Farm,Longmont,Email,set,christina@modernfarmsteads.com,Found on the business's own website https://www.modernfarmsteads.com/ (crawled 2026-10-14),2026-10-14
+Future Fit Foods LLC.,Longmont,Email,set,info@futurefitfoods.com,Found on the business's own website https://www.futurefitfoods.com (crawled 2026-10-14),2026-10-14
+Kilt Farm,Longmont,Email,set,michael@kiltfarm.com,Found on the business's own website http://www.kiltfarm.com (crawled 2026-10-14),2026-10-14
+Kilt Farm,Longmont,Facebook,set,http://facebook.com/kiltfarm,Found on the business's own website http://www.kiltfarm.com (crawled 2026-10-14),2026-10-14
+Kilt Farm,Longmont,Instagram,set,https://www.instagram.com/kilt_farm,Found on the business's own website http://www.kiltfarm.com (crawled 2026-10-14),2026-10-14
+"LDF, Inc. dba Longmont Dairy Farm",Longmont,Email,set,customerservice@longmontdairy.com,Found on the business's own website https://www.longmontdairy.com (crawled 2026-10-14),2026-10-14
+"LDF, Inc. dba Longmont Dairy Farm",Longmont,Instagram,set,https://www.instagram.com/longmontdairy,Found on the business's own website https://www.longmontdairy.com (crawled 2026-10-14),2026-10-14
+Miraflora Wagyu,Longmont,Email,set,support@miraflorawagyu.com,Found on the business's own website https://miraflorawagyu.com/ (crawled 2026-10-14),2026-10-14
+Modern Farmsteads,Longmont,Email,set,christina@modernfarmsteads.com,Found on the business's own website https://www.modernfarmsteads.com (crawled 2026-10-14),2026-10-14
+"Suárez Wines and Market LLC, Mariposa Farm LLC",Longmont,Email,set,info@suarezwines.com,Found on the business's own website https://suarezwines.com (crawled 2026-10-14),2026-10-14
+Unlikely Farms,Louisville,Email,set,info@unlikelyfarms.com,Found on the business's own website https://www.unlikelyfarms.com (crawled 2026-10-14),2026-10-14
+Unlikely Farms,Louisville,Facebook,set,https://www.facebook.com/UnlikelyFarms,Found on the business's own website https://www.unlikelyfarms.com (crawled 2026-10-14),2026-10-14
+Unlikely Farms,Louisville,Instagram,set,https://www.instagram.com/unlikelyfarms,Found on the business's own website https://www.unlikelyfarms.com (crawled 2026-10-14),2026-10-14
+MeadKrieger Meadery LLC,Loveland,Email,set,info@meadkrieger.com,Found on the business's own website https://www.meadkrieger.com/ (crawled 2026-10-14),2026-10-14
+Meyer Natural Foods,Loveland,Facebook,set,https://www.facebook.com/meyernatural,Found on the business's own website https://www.meyernaturalfoods.com/ (crawled 2026-10-14),2026-10-14
+Meyer Natural Foods,Loveland,Instagram,set,https://www.instagram.com/meyernatural,Found on the business's own website https://www.meyernaturalfoods.com/ (crawled 2026-10-14),2026-10-14
+Sunrise Ranch,Loveland,Email,set,frontdesk@sunriseranch.org,Found on the business's own website https://sunriseranch.org/ (crawled 2026-10-14),2026-10-14
+COLORADO PORK,Lucerne,Email,set,jrkelly@copork.org,Found on the business's own website https://copork.org (crawled 2026-10-14),2026-10-14
+"ECOburn, LLC",Mack,Email,set,ecoburnllc@gmail.com,Found on the business's own website https://ecoburnllc.com (crawled 2026-10-14),2026-10-14
+"ECOburn, LLC",Mack,Facebook,set,https://www.facebook.com/profile.php?id=61572127168027,Found on the business's own website https://ecoburnllc.com (crawled 2026-10-14),2026-10-14
+"ECOburn, LLC",Mack,Instagram,set,https://www.instagram.com/ecoburnllc,Found on the business's own website https://ecoburnllc.com (crawled 2026-10-14),2026-10-14
+Mountain Roots Produce,Mancos,Facebook,set,http://www.facebook.com/10211421640125160,Found on the business's own website https://Mountainrootsproduce.com (crawled 2026-10-14),2026-10-14
+Mountain Roots Produce,Mancos,Instagram,set,http://instagram.com/mountainrootsproduce,Found on the business's own website https://Mountainrootsproduce.com (crawled 2026-10-14),2026-10-14
+Southwest Farm Fresh Harvest Shares,Mancos,Instagram,set,https://www.instagram.com/teepublic,Found on the business's own website https://www.southwestfarmfresh.com (crawled 2026-10-14),2026-10-14
+The Grasshopper Collective,Mancos,Email,set,grasshoppergarlic@gmail.com,Found on the business's own website https://www.thegrasshoppercollective.com (crawled 2026-10-14),2026-10-14
+Manitou Winery,Manitou Springs,Email,set,winery@winerymsprings.com,Found on the business's own website http://winerymsprings.com/ (crawled 2026-10-14),2026-10-14
+Padilla Prouce Inc.,Manzanola,Facebook,set,https://www.facebook.com/PadillaProduce,Found on the business's own website https://www.padillaproduceinc.com/ (crawled 2026-10-14),2026-10-14
+Wendll's White River Roasters,MEEKER,Email,set,info@wendllswhiteriverroasters.com,Found on the business's own website https://wendllswhiteriverroasters.com (crawled 2026-10-14),2026-10-14
+Wendll's White River Roasters,MEEKER,Instagram,set,https://www.instagram.com/wendllobe,Found on the business's own website https://wendllswhiteriverroasters.com (crawled 2026-10-14),2026-10-14
+Farm Fresh Direct of America,Monte Vista,Email,set,customerservice@ffdllc.net,Found on the business's own website https://farmfreshdirect.com (crawled 2026-10-14),2026-10-14
+Quarter Circle Kunekunes,Montrose,Email,set,quartercirclekunes@gmail.com,Found on the business's own website https://quartercirclekunes.com/ (crawled 2026-10-14),2026-10-14
+Taste of Life,Monument,Email,set,donna@tasteoflifestores.com,Found on the business's own website https://www.tasteoflifestores.com (crawled 2026-10-14),2026-10-14
+Taste of Life,Monument,Instagram,set,https://www.instagram.com/tasteoflifestores,Found on the business's own website https://www.tasteoflifestores.com (crawled 2026-10-14),2026-10-14
+Arrowpoint Cattle Company,Nathrop,Facebook,set,https://www.facebook.com/arrowpointcattle/?ref=bookmarks,Found on the business's own website https://www.arrowpointcattle.com (crawled 2026-10-14),2026-10-14
+Uan Hollow,New Castle,Email,set,sus@uanhollow.com,Found on the business's own website https://www.uanhollow.com (crawled 2026-10-14),2026-10-14
+BakeOff LLC,Northglenn,Email,set,info@bakeoff.store,Found on the business's own website https://bakeoff.store (crawled 2026-10-14),2026-10-14
+XLVII's Bakery/ 47 Bakery,Northglenn,Email,set,saleslead@47bakery.com,Found on the business's own website https://www.47bakery.com (crawled 2026-10-14),2026-10-14
+"Golden Prairie, Inc.",Nunn,Email,set,megan@gpgrains.com,Found on the business's own website https://goldenprairie.com/ (crawled 2026-10-14),2026-10-14
+Grace Hill Farm,Nunn,Instagram,set,https://www.instagram.com/gracehillfarmco,Found on the business's own website https://gracehillfarmco.com (crawled 2026-10-14),2026-10-14
+Smith Serenity LLC,Ordway,Email,set,smithserenity2023@gmail.com,Found on the business's own website https://smithserenity.com/ (crawled 2026-10-14),2026-10-14
+A Pinch of Lavender LLC,Palisade,Email,set,nielsenvillage@gmail.com,Found on the business's own website https://NielsenVillage.com (crawled 2026-10-14),2026-10-14
+Alida's Fruits,Palisade,Email,set,sales@alidasfruits.com,Found on the business's own website https://alidasfruits.com/ (crawled 2026-10-14),2026-10-14
+Kokopelli Farm Market,Palisade,Email,set,edh@kokopelliproduce.com,Found on the business's own website https://www.kokopelliproduce.com (crawled 2026-10-14),2026-10-14
+Kokopelli Farm Market,Palisade,Facebook,set,https://www.facebook.com/Kokopelli-Farm-Market-199212586910118,Found on the business's own website https://www.kokopelliproduce.com (crawled 2026-10-14),2026-10-14
+Palisade Peach Shack,Palisade,Email,set,ramcbreen21@gmail.com,Found on the business's own website https://www.palisadepeachshack.com/ (crawled 2026-10-14),2026-10-14
+Palisade Sunday Farmers' Market,Palisade,Instagram,set,http://www.instagram.com/claytonyeazle.music,Found on the business's own website https://palisade.colorado.gov/sunday-farmers-market (crawled 2026-10-14),2026-10-14
+RESTORATION VINEYARDS,PALISADE,Email,set,sbrauns@restorationvineyards.com,Found on the business's own website https://RestorationVineyards.com (crawled 2026-10-14),2026-10-14
+The Stone Fruit Company LLC,Palisade,Facebook,set,https://www.facebook.com/thestonefruitcompany,Found on the business's own website https://Thestonefruitcompany.com (crawled 2026-10-14),2026-10-14
+The Stone Fruit Company LLC,Palisade,Instagram,set,https://www.instagram.com/thestonefruitcompany,Found on the business's own website https://Thestonefruitcompany.com (crawled 2026-10-14),2026-10-14
+Tovah Homestead,Palmer Lake,Email,set,tovahhomestead@gmail.com,Found on the business's own website http://tovahhomestead.com/ (crawled 2026-10-14),2026-10-14
+Tovah Homestead,Palmer Lake,Facebook,set,https://www.facebook.com/people/Tovah-Homestead/100091710292191,Found on the business's own website http://tovahhomestead.com/ (crawled 2026-10-14),2026-10-14
+Mountain Oven Organic Bakery,Paonia,Email,set,bread@mountainoven.com,Found on the business's own website https://www.mountainoven.com (crawled 2026-10-14),2026-10-14
+The Living Farm,Paonia,Facebook,set,https://www.facebook.com/thelivingfarm,Found on the business's own website https://thelivingfarm.org (crawled 2026-10-14),2026-10-14
+The Living Farm,Paonia,Instagram,set,https://www.instagram.com/thelivingfarm,Found on the business's own website https://thelivingfarm.org (crawled 2026-10-14),2026-10-14
+Bootheel 7 Ranch,Parker,Email,set,hello@bootheel7ranch.com,Found on the business's own website https://www.bootheel7ranch.com (crawled 2026-10-14),2026-10-14
+Broken Gringo LLC,Parker,Facebook,set,https://facebook.com/brokengringo,Found on the business's own website https://brokengringo.com (crawled 2026-10-14),2026-10-14
+Broken Gringo LLC,Parker,Instagram,set,https://instagram.com/brokengringo,Found on the business's own website https://brokengringo.com (crawled 2026-10-14),2026-10-14
+Milagro Foods,Parker,Email,set,orders@frangiosafarms.com,Found on the business's own website https://frangiosafarms.com/ (crawled 2026-10-14),2026-10-14
+Milagro Foods,Parker,Instagram,set,https://www.instagram.com/bee.shepherd.honeys,Found on the business's own website https://frangiosafarms.com/ (crawled 2026-10-14),2026-10-14
+Purgatory Cellars LLP dba Purgatory Cellars Winery,Parker,Instagram,set,https://www.instagram.com/purgatorycellarswinery,Found on the business's own website https://www.purgatorycellarscolorado.com (crawled 2026-10-14),2026-10-14
+The Perry Ranch LLC,Parker,Email,set,theperryranchllc@gmail.com,Found on the business's own website https://perryranch.org (crawled 2026-10-14),2026-10-14
+Ahavah Farm,Peyton,Email,set,contact@ahavahfarm.com,Found on the business's own website http://www.ahavahfarm.com (crawled 2026-10-14),2026-10-14
+Ahavah Farm,Peyton,Facebook,set,https://www.facebook.com/ahavahfarm,Found on the business's own website http://www.ahavahfarm.com (crawled 2026-10-14),2026-10-14
+Ahavah Farm,Peyton,Instagram,set,https://www.instagram.com/ahavahfarm,Found on the business's own website http://www.ahavahfarm.com (crawled 2026-10-14),2026-10-14
+The Urban Farmhouse Co.,Peyton,Facebook,set,https://www.facebook.com/urban,Found on the business's own website https://www.TheUrbanFarmhouseCo.com (crawled 2026-10-14),2026-10-14
+Poncha Creek Gardens,Poncha Springs,Facebook,set,http://www.facebook.com/ponchacreekgardens,Found on the business's own website https://ponchacreekgardens.wordpress.com/our-products/ (crawled 2026-10-14),2026-10-14
+Poncha Creek Gardens,Poncha Springs,Instagram,set,https://www.instagram.com/salidaholidaymakersmarket,Found on the business's own website https://ponchacreekgardens.wordpress.com/our-products/ (crawled 2026-10-14),2026-10-14
+Celestial Creek Ranch,Pueblo,Email,set,info@celestialcreekranch.com,Found on the business's own website https://celestialcreekranch.com (crawled 2026-10-14),2026-10-14
+Celestial Creek Ranch,Pueblo,Facebook,set,https://www.facebook.com/689032594296206,Found on the business's own website https://celestialcreekranch.com (crawled 2026-10-14),2026-10-14
+Celestial Creek Ranch,Pueblo,Instagram,set,https://www.instagram.com/Celestialcreekranch,Found on the business's own website https://celestialcreekranch.com (crawled 2026-10-14),2026-10-14
+Pueblo Charcuterie,Pueblo,Email,set,pueblocheese@gmail.com,Found on the business's own website https://www.pueblocharcuterie.com/ (crawled 2026-10-14),2026-10-14
+Quarter Acre and a Mule Farm,Pueblo,Email,set,perdita.butler@gmail.com,Found on the business's own website https://quarteracreandamule.com/ (crawled 2026-10-14),2026-10-14
+Quarter Acre and a Mule Farm,Pueblo,Facebook,set,https://www.facebook.com/profile.php?id=61590441061744,Found on the business's own website https://quarteracreandamule.com/ (crawled 2026-10-14),2026-10-14
+Quarter Acre and a Mule Farm,Pueblo,Instagram,set,https://www.instagram.com/quarteracreandamule,Found on the business's own website https://quarteracreandamule.com/ (crawled 2026-10-14),2026-10-14
+The Mill Bakery LLC,Pueblo,Email,set,hello@themillpueblo.com,Found on the business's own website https://themillpueblo.com (crawled 2026-10-14),2026-10-14
+The Mill Bakery LLC,Pueblo,Facebook,set,https://www.facebook.com/profile.php?id=61585802797217,Found on the business's own website https://themillpueblo.com (crawled 2026-10-14),2026-10-14
+Winters  Ranch,Rush,Instagram,set,https://www.instagram.com/wintersranchllc,Found on the business's own website https://winterscattleranch.com/ (crawled 2026-10-14),2026-10-14
+Curtis Ranch,Rye,Email,set,lori@adiamondbrand.us,Found on the business's own website https://www.curtisranch.net (crawled 2026-10-14),2026-10-14
+StreetAG,Rye,Email,set,krstreetag@gmail.com,Found on the business's own website https://www.krstreetag.com/ (crawled 2026-10-14),2026-10-14
+Elements Mountain Compost,Salida,Email,set,sales@elementscompost.com,Found on the business's own website http://elementscompost.com (crawled 2026-10-14),2026-10-14
+Foodshed Alliance,Salida,Facebook,set,https://www.facebook.com/FoodshedAllianceCO,Found on the business's own website https://www.foodshedalliance.com (crawled 2026-10-14),2026-10-14
+Foodshed Alliance,Salida,Instagram,set,https://www.instagram.com/foodshedalliance,Found on the business's own website https://www.foodshedalliance.com (crawled 2026-10-14),2026-10-14
+Market on Main St. (The Triangle Oasis),Salida,Facebook,set,https://www.facebook.com/pages/category/Farm/The-Triangle-Oasis-219919395410862,Found on the business's own website https://www.thetriangleoasis.com/markets (crawled 2026-10-14),2026-10-14
+Market on Main St. (The Triangle Oasis),Salida,Instagram,set,https://www.instagram.com/thetriangleoasisproject,Found on the business's own website https://www.thetriangleoasis.com/markets (crawled 2026-10-14),2026-10-14
+Mountain Goat Lodge,Salida,Facebook,set,https://www.facebook.com/Mountaingoatlodge,Found on the business's own website https://mountaingoatlodge.com (crawled 2026-10-14),2026-10-14
+Mountain Goat Lodge,Salida,Instagram,set,https://www.instagram.com/mountaingoatlodge,Found on the business's own website https://mountaingoatlodge.com (crawled 2026-10-14),2026-10-14
+Salida Community Center,Salida,Facebook,set,https://www.facebook.com/SalidaCommunityCenter,Found on the business's own website http://www.salidacommunitycenter.org (crawled 2026-10-14),2026-10-14
+Salida Farmers Market,Salida,Facebook,set,https://www.facebook.com/FoodshedAllianceCO,Found on the business's own website https://foodshedalliance.com (crawled 2026-10-14),2026-10-14
+Salida First Presbyterian Church,Salida,Facebook,set,https://www.facebook.com/profile.php?id=100064411250795,Found on the business's own website https://www.salidapresbyterian.org/ (crawled 2026-10-14),2026-10-14
+The Triangle Oasis,Salida,Facebook,set,https://www.facebook.com/pages/category/Farm/The-Triangle-Oasis-219919395410862,Found on the business's own website https://www.thetriangleoasis.com/ (crawled 2026-10-14),2026-10-14
+San Luis Peoples Market,San Luis,Email,set,dpena@acequiainstitute.org,Found on the business's own website https://sanluispeoplesmarket.org/ (crawled 2026-10-14),2026-10-14
+Sandy's Way Microfarm,Sedalia,Email,set,cale@sandyswayfarm.com,Found on the business's own website https://sandyswayfarm.com (crawled 2026-10-14),2026-10-14
+"WR Premium Beef, LLC",Sedalia,Email,set,diana@wiensranch.com,Found on the business's own website https://wiensranch.com (crawled 2026-10-14),2026-10-14
+"WR Premium Beef, LLC",Sedalia,Facebook,set,http://www.facebook.com/wiensranch,Found on the business's own website https://wiensranch.com (crawled 2026-10-14),2026-10-14
+The Conscious Farms,Seibert,Facebook,set,http://Facebook.com/688807330973742,Found on the business's own website https://theconsciousfarms.com (crawled 2026-10-14),2026-10-14
+Season It Up,Severance,Email,set,info@theseasonitup.com,Found on the business's own website https://theseasonitup.com/ (crawled 2026-10-14),2026-10-14
+Season It Up,Severance,Instagram,set,https://instagram.com/TheSeasonItUp,Found on the business's own website https://theseasonitup.com/ (crawled 2026-10-14),2026-10-14
+ArborScape Inc,Sheridan,Email,set,contact@arborscapeservices.com,Found on the business's own website https://www.arborscapeservices.com/ (crawled 2026-10-14),2026-10-14
+Danny Cash's Branded Sauces,Sheridan,Email,set,sales@brandedsauces.com,Found on the business's own website https://dannycash.com/ (crawled 2026-10-14),2026-10-14
+Highwater Farm,Silt,Email,set,anna@highwaterfarm.org,Found on the business's own website http://www.highwaterfarm.org (crawled 2026-10-14),2026-10-14
+Highwater Farm,Silt,Facebook,set,https://www.facebook.com/highwaterfarmco,Found on the business's own website http://www.highwaterfarm.org (crawled 2026-10-14),2026-10-14
+Highwater Farm,Silt,Instagram,set,https://www.instagram.com/highwater_farm,Found on the business's own website http://www.highwaterfarm.org (crawled 2026-10-14),2026-10-14
+Shining Mountains Farm,Snowmass,Email,set,cooper@smfcolorado.com,Found on the business's own website https://www.smfcolorado.com/smf-farm (crawled 2026-10-14),2026-10-14
+South Fork Farmers Market,South Fork,Instagram,set,https://www.instagram.com/south_fork_colorado,Found on the business's own website https://www.southfork.org/market-at-south-fork (crawled 2026-10-14),2026-10-14
+"Boulder Couny Fair, Livestock Show & Rodeo",Ste 200,Email,set,info@bouldercountyfair.org,Found on the business's own website https://www.bouldercountyfair.org (crawled 2026-10-14),2026-10-14
+"Boulder Couny Fair, Livestock Show & Rodeo",Ste 200,Facebook,set,https://www.facebook.com/BoulderCountyFair,Found on the business's own website https://www.bouldercountyfair.org (crawled 2026-10-14),2026-10-14
+"Boulder Couny Fair, Livestock Show & Rodeo",Ste 200,Instagram,set,https://www.instagram.com/bouldercountyfair,Found on the business's own website https://www.bouldercountyfair.org (crawled 2026-10-14),2026-10-14
+Wolf Creek Fresh,Strasburg,Facebook,set,http://www.facebook.com/wolfcreekfresh,Found on the business's own website https://Www.wolfcreekfresh.com (crawled 2026-10-14),2026-10-14
+Wolf Creek Fresh,Strasburg,Instagram,set,https://instagram.com/wolfcreekfresh,Found on the business's own website https://Www.wolfcreekfresh.com (crawled 2026-10-14),2026-10-14
+Colorado Soy LLC,Stratton,Facebook,set,https://www.facebook.com/pages/Colorado-Soy-LLC/219246744756839,Found on the business's own website https://www.coloradosoy.com (crawled 2026-10-14),2026-10-14
+Superior Sweets,Superior,Facebook,set,https://www.facebook.com/superiorsweetscolorado,Found on the business's own website https://Superior-Sweets.com (crawled 2026-10-14),2026-10-14
+Superior Sweets,Superior,Instagram,set,https://www.instagram.com/superiorsweetscolorado,Found on the business's own website https://Superior-Sweets.com (crawled 2026-10-14),2026-10-14
+Snowden Meats,Toponas,Email,set,info@snowdenmeats.com,Found on the business's own website https://snowdenmeats.com (crawled 2026-10-14),2026-10-14
+Colorado Aromatics,Unit 220 Longmont,Facebook,set,https://www.facebook.com/SagescriptInstitute,Found on the business's own website https://sagescript.com/ (crawled 2026-10-14),2026-10-14
+Cabri Creamery,Wellington,Email,set,cabri.creamery@gmail.com,Found on the business's own website https://www.cabricreamery.com/ (crawled 2026-10-14),2026-10-14
+Grant Farms CSA,Wellington,Instagram,set,https://www.instagram.com/farmstandgrantfarm,Found on the business's own website http://www.grantfarms.com/ (crawled 2026-10-14),2026-10-14
+Harvest Farm,Wellington,Instagram,set,https://www.instagram.com/fcrescuemission,Found on the business's own website https://fortcollinsrescuemission.org/who-we-are/locations/harvest-farm/ (crawled 2026-10-14),2026-10-14
+High Plains Cattle and Meats Co.,wellington,Email,set,presleydevries@highplainscattleandmeatsco.com,Found on the business's own website https://www.highplainscattleandmeatco.com/ (crawled 2026-10-14),2026-10-14
+Elevation Meat Market,Westcliffe,Instagram,set,https://www.instagram.com/teepublic,Found on the business's own website https://www.elevationmeatmarket.com (crawled 2026-10-14),2026-10-14
+Westcliffe Cheese Company,Westcliffe,Email,set,cheese@wheelerfarm.net,Found on the business's own website http://www.westcliffecheesecompany.com (crawled 2026-10-14),2026-10-14
+Forestdale Ranch Galloways,Wetmore,Email,set,forestdaleranch@gmail.com,Found on the business's own website https://www.forestdaleranch.com (crawled 2026-10-14),2026-10-14
+Phun Bar,Wheat Ridge,Facebook,set,https://www.facebook.com/p/Phun-Bar-61573600722265,Found on the business's own website https://www.phunbar.com (crawled 2026-10-14),2026-10-14
+Wheat Ridge Poultry and Meats,Wheat Ridge,Email,set,admin@themeatshopon38.com,Found on the business's own website https://www.wheatridgepoultry.com (crawled 2026-10-14),2026-10-14
+Wheat Ridge Poultry and Meats,Wheat Ridge,Facebook,set,https://www.facebook.com/wrpoultry,Found on the business's own website https://www.wheatridgepoultry.com (crawled 2026-10-14),2026-10-14
+Wheat Ridge Poultry and Meats,Wheat Ridge,Instagram,set,https://www.instagram.com/wrpoultry,Found on the business's own website https://www.wheatridgepoultry.com (crawled 2026-10-14),2026-10-14
+Stagecoach Meat Company,Wiggins,Email,set,info@stagecoachmeatcompany.com,Found on the business's own website https://www.stagecoachmeatcompany.com (crawled 2026-10-14),2026-10-14
+Wiley Processing LLC,Wiley,Email,set,wileyprocessing@outlook.com,Found on the business's own website https://www.wileyprocessing.com/ (crawled 2026-10-14),2026-10-14
+Esh's Grocery Market,Windsor,Email,set,eshsgrocery@gmail.com,Found on the business's own website https://www.eshsgrocery.com/ (crawled 2026-10-14),2026-10-14
+Esh's Grocery Market,Windsor,Facebook,set,https://www.facebook.com/profile.php?id=100064619621874,Found on the business's own website https://www.eshsgrocery.com/ (crawled 2026-10-14),2026-10-14
+Windsor Farmers Market,Windsor,Instagram,set,https://www.instagram.com/windsorprc,Found on the business's own website https://www.recreationliveshere.com (crawled 2026-10-14),2026-10-14
+Windler Ranch,Yampa,Email,set,kwschlatter@gmail.com,Found on the business's own website https://www.windlerranch.com/ (crawled 2026-10-14),2026-10-14
+Hemp Farm Colorado,Yuma,Instagram,set,https://www.instagram.com/hempfarmcolorado,Found on the business's own website http://HempFarmColorado.com (crawled 2026-10-14),2026-10-14
+Trifecta Natural Pork,Yuma,Email,set,neal.saxton@gmail.com,Found on the business's own website http://www.saxtongenetics.com/trifectanaturalporkllc.html (crawled 2026-10-14),2026-10-14
+Weathers Farm,Yuma,Facebook,set,https://www.facebook.com/WeathersFamilyFarms,Found on the business's own website https://www.weathersfarms.net (crawled 2026-10-14),2026-10-14
+Weathers Farm,Yuma,Instagram,set,https://www.instagram.com/weathersnikki,Found on the business's own website https://www.weathersfarms.net (crawled 2026-10-14),2026-10-14
+Adobe House Farm,Durango,Certified Organic,set,Yes,The business's own website says it is certified organic; read in context 2026-10-14,2026-10-14
+Wildcat Garlic,Glenwood Springs,Certified Organic,set,Yes,The business's own website says it is certified organic; read in context 2026-10-14,2026-10-14
+Berg Harvest LLC dba Berg Harvest Mercantile,Paonia,Certified Organic,set,Yes,The business's own website says it is certified organic; read in context 2026-10-14,2026-10-14
+Aragon Farms LLC,Greeley,Hours,set,Sat: 10am - 4pm,Hours from https://aragonfarmsco.com/contact/ (undated page); confidence medium. Farm Store Hours: Saturdays 10 am - 4 pm or by appointment; online orders for on-farm pickup or delivery,2026-10-14
+Lenz Family Farms,Holyoke,Hours,set,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 8am - 12pm,Hours from https://www.lenzfamilyfarms.com (undated page); confidence medium. Hours listed on homepage without label; page does not say whether office or packing shed/public sales; Sunday not listed,2026-10-14
+Farm Runners LLC,Hotchkiss,Hours,set,Wed: 8:30am - 5:30pm; Thu: 8:30am - 5:30pm; Fri: 8:30am - 5:30pm; Sat: 8:30am - 5:30pm; Sun: 10am - 4pm,"Hours from https://FarmRunners.com (undated page); confidence medium. The Station, 235 Hwy 133 Hotchkiss; closed Monday/Tuesday. Year-round not stated on page",2026-10-14

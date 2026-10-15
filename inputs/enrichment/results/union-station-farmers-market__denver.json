@@ -1,0 +1,28 @@
+{
+ "id": "union-station-farmers-market__denver",
+ "name": "Union Station Farmers Market",
+ "city": "Denver",
+ "official_website": "https://unionstationfarmersmarket.com/",
+ "fields": {
+  "Hours": {
+   "value": "Sat: 9:00am - 1:00pm",
+   "source_url": "https://unionstationfarmersmarket.com/"
+  },
+  "Months Open": {
+   "value": "June, July, August, September",
+   "source_url": "https://unionstationfarmersmarket.com/"
+  },
+  "Products": {
+   "value": "Coffee, fresh bread, honey, jams, fresh produce",
+   "source_url": "https://unionstationfarmersmarket.com/"
+  },
+  "Website": {
+   "value": "https://unionstationfarmersmarket.com/",
+   "source_url": "https://unionstationfarmersmarket.com/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/unionstationfarmersmarket/",
+   "source_url": "https://www.facebook.com/unionstationfarmersmarket/"
+  }
+ }
+}

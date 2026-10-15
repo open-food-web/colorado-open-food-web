@@ -1,0 +1,36 @@
+{
+ "id": "greeley-winter-farmers-market__greeley",
+ "name": "Greeley Winter Farmers' Market",
+ "city": "Greeley",
+ "official_website": "https://greeleyco.gov/events/farmers-market/",
+ "fields": {
+  "Website": {
+   "value": "https://greeleyco.gov/events/farmers-market/",
+   "source_url": "https://greeleyco.gov/events/farmers-market/"
+  },
+  "Products": {
+   "value": "Seasonal fruits, vegetables, flowers, seafood and meats, cheese, eggs, coffee, tea, bakery and bread, and handmade goods",
+   "source_url": "https://greeleyco.gov/events/farmers-market/"
+  },
+  "SNAP": {
+   "value": "Yes",
+   "source_url": "https://greeleyco.gov/events/farmers-market/"
+  },
+  "ADA Accessible": {
+   "value": "Yes",
+   "source_url": "https://greeleyco.gov/events/farmers-market/"
+  },
+  "Email": {
+   "value": "farmers.market@greeleygov.com",
+   "source_url": "https://greeleyco.gov/events/farmers-market/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/greeleyfarmersmarket/",
+   "source_url": "https://greeleyco.gov/events/farmers-market/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/greeleyfarmersmarket/",
+   "source_url": "https://greeleyco.gov/events/farmers-market/"
+  }
+ }
+}

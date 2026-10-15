@@ -1,0 +1,60 @@
+{
+ "id": "grow-girl-organics__arvada",
+ "name": "Grow Girl Organics",
+ "offers_csa": true,
+ "csa_status": "full",
+ "signup_url": "https://growgirlorganics.com/csa",
+ "signup_opens": null,
+ "season_start": "2026-05-01",
+ "season_end": "2026-10-31",
+ "season_year": 2026,
+ "season_precision": "day",
+ "share_types": [
+  "Vegetables",
+  "Flowers",
+  "Eggs",
+  "Mushrooms",
+  "Bread/Baked",
+  "Other"
+ ],
+ "frequency": "Weekly",
+ "price": "Large $900/season (6-8 items weekly); Basic $700 (4-6 weekly); Half $425 (4-6 bi-weekly); Working Share: work 12 hrs/month for $250 refund; flower partner share $280/10 weeks",
+ "snap_accepted": null,
+ "pickup_sites": [
+  {
+   "name": "Arvada Farm",
+   "address": "12229 W. 80th Ave, Unit B, Arvada, CO 80005",
+   "town": "Arvada",
+   "day": "Tue",
+   "time": "4-6pm",
+   "on_farm": true
+  },
+  {
+   "name": "Littleton",
+   "address": "5142 S. Xenophon Ct, Littleton, CO 80127",
+   "town": "Littleton",
+   "day": "Wed",
+   "time": "4-6pm",
+   "on_farm": false
+  }
+ ],
+ "delivery": {
+  "offered": false,
+  "kind": null,
+  "radius_miles": null,
+  "zips": [],
+  "towns": [],
+  "fee": null,
+  "details": "Pickup only or designate a proxy."
+ },
+ "evidence": [
+  {
+   "field": "csa_status",
+   "url": "https://growgirlorganics.com/csa"
+  },
+  {
+   "field": "season",
+   "url": "https://growgirlorganics.com/csa"
+  }
+ ]
+}

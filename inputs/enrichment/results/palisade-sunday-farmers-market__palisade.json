@@ -1,0 +1,32 @@
+{
+ "id": "palisade-sunday-farmers-market__palisade",
+ "name": "Palisade Sunday Farmers' Market",
+ "city": "Palisade",
+ "official_website": "https://palisade.colorado.gov/sunday-farmers-market",
+ "fields": {
+  "Website": {
+   "value": "https://palisade.colorado.gov/sunday-farmers-market",
+   "source_url": "https://palisade.colorado.gov/sunday-farmers-market"
+  },
+  "Hours": {
+   "value": "Sun: 9:00am - 1:00pm",
+   "source_url": "https://palisade.colorado.gov/sunday-farmers-market"
+  },
+  "Months Open": {
+   "value": "June, July, August, September, October",
+   "source_url": "https://palisade.colorado.gov/sunday-farmers-market"
+  },
+  "Products": {
+   "value": "Fresh produce and an ever-changing collection of handcrafted/artisan goods (baked goods, lavender, soaps, jewelry, juice, flowers), plus rotating food trucks and live music",
+   "source_url": "https://palisade.colorado.gov/sunday-farmers-market"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/PalisadeFarmersMarket",
+   "source_url": "https://palisade.colorado.gov/sunday-farmers-market"
+  },
+  "Phone": {
+   "value": "970-464-5602",
+   "source_url": "https://palisade.colorado.gov/sunday-farmers-market"
+  }
+ }
+}

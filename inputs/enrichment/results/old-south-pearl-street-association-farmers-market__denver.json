@@ -1,0 +1,40 @@
+{
+ "id": "old-south-pearl-street-association-farmers-market__denver",
+ "name": "Old South Pearl Street Association - Farmers Market",
+ "city": "Denver",
+ "official_website": "https://southpearlstreet.com/farmers-market/",
+ "fields": {
+  "Hours": {
+   "value": "Sun: 9:00am - 1:00pm",
+   "source_url": "https://southpearlstreet.com/farmers-market/"
+  },
+  "Months Open": {
+   "value": "May, June, July, August, September, October, November",
+   "source_url": "https://southpearlstreet.com/farmers-market/"
+  },
+  "Products": {
+   "value": "Fresh Colorado produce, baked goods/pastries, craft coffee, cut flowers, and prepared/chef-made foods from 170+ local vendors; all products must be grown, raised, produced or gathered in Colorado or in bordering counties",
+   "source_url": "https://southpearlstreet.com/farmers-market/"
+  },
+  "Email": {
+   "value": "",
+   "source_url": "https://southpearlstreet.com/farmers-market/"
+  },
+  "Facebook": {
+   "value": "https://www.facebook.com/SouthPearlStreet",
+   "source_url": "https://southpearlstreet.com/farmers-market/"
+  },
+  "Instagram": {
+   "value": "https://www.instagram.com/southpearlst",
+   "source_url": "https://southpearlstreet.com/farmers-market/"
+  },
+  "Address": {
+   "value": "1400 + 1500 blocks of South Pearl Street (between Iowa and Arkansas), Denver, CO 80210",
+   "source_url": "https://southpearlstreet.com/farmers-market/"
+  },
+  "Website": {
+   "value": "https://southpearlstreet.com/farmers-market/",
+   "source_url": "https://southpearlstreet.com/farmers-market/"
+  }
+ }
+}

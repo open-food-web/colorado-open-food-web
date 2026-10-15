@@ -1,0 +1,5570 @@
+{
+ "vendors": [
+  {
+   "id": "795c54c4b64434eaeeadc57c467421cf",
+   "name": "Royal Gorge Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Royal Gorge Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJi1-5SHaPFIcRig5XhORsFfU",
+      "textName": "816 Royal Gorge Blvd, Cañon City, CO 81212, USA",
+      "latitude": 38.4414641,
+      "longitude": -105.234771
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://www.royalgorgechamberalliance.org/royal-gorge-farmers-market/faceb"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/royalgorgefarmersmarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": ""
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "6",
+      "7",
+      "8"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "07/11/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "9/12/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "8:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "1:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": []
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "a7807f1e6d27590dba2757249c4d3e91",
+      "name": "Front View.jpeg",
+      "size": 1857353,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "36ce0938e0f3e488633615856aaef9aa",
+   "name": "Glenwood Springs Downtown Market on 7th",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Glenwood Springs Downtown Market on 7th"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "EiszMDYgN3RoIFN0LCBHbGVud29vZCBTcHJpbmdzLCBDTyA4MTYwMSwgVVNBIjESLwoUChIJ5cL3vpcJQYcRae2NWFaf-4UQsgIqFAoSCYMpipeXCUGHEagIT_19D9FU",
+      "textName": "306 7th St, Glenwood Springs, CO 81601, USA",
+      "latitude": 39.547646,
+      "longitude": -107.3242006
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://www.glenwoodspringsdda.com/market-on-7th/"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/DowntownGlenwoodSprings"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@downtownglenwoodsprings"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "1"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/23/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "09/08/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "4:00pm"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "8:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "3"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "7d9f15c3e3c17399c88335660f1ff332",
+      "name": "joevanwyk_cogs_dda_market-on-seventh_06-2023-104.jpg",
+      "size": 9624935,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "2df46d6ae7ffc3a117e80c451a00dc40",
+      "name": "joevanwyk_cogs_dda_market-on-seventh_06-2023-103.jpg",
+      "size": 4690652,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "11544da7b462b8a3294c9c398203ab5a",
+      "name": "joevanwyk_cogs_dda_market-on-seventh_06-2023-116.jpg",
+      "size": 10812167,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "7ec4d0a963d4dd21da533fa39d7eb6b8",
+      "name": "525017382_1170844495085488_1132683173600521867_n.jpg",
+      "size": 585472,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "f48dfbbf455bac1cfcbdd49934259392",
+   "name": "Woodland Park Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Woodland Park Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJ___v-cmqFIcRZJGLA5nePnA",
+      "textName": "117 Center Ave, Woodland Park, CO 80863, USA",
+      "latitude": 38.995722,
+      "longitude": -105.0538667
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.wpfarmersmarket.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/wpfarmersmarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@wpfarmersmarket.com"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "4"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "10"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/05/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "09/25/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "8:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "1:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "6536568b56a690ea7779359baf09245a",
+      "name": "WPFM photo 2.jpg",
+      "size": 28469,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "7e1228a328e83b3987233949f381c764",
+      "name": "welcome to mkt sign.jpg",
+      "size": 4307315,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "da9b9f4a7b47b556f6c67ac46c58cbf8",
+      "name": "Overhead view of market.jpg",
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null,
+      "size": 197968
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "1d39848834c316fd29ac91e7a8b79930",
+      "name": "IMG_1000.JPG",
+      "size": 2069830,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "d914d37d27b03865e87b27ca1e898284",
+   "name": "Highlands Ranch Farmers' Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Highlands Ranch Farmers' Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJ8cpjrkWCbIcRZ3i1mDx_Xpw",
+      "textName": "9288 Dorchester St, Highlands Ranch, CO 80126, USA",
+      "latitude": 39.5476921,
+      "longitude": -104.9997958
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://www.denverfarmersmarket.com/index.html"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/denverfarmersmarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "metro_denver_farmers_market"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "6"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/02/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/31/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "10:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "2:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "baed828e29314f0addaf345b39d44646",
+      "name": "RC7A6060.JPG",
+      "size": 13477583,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "355cedbe1017eb8a2b3cf84070b9c6b1",
+      "name": "RC7A5442.JPG",
+      "size": 14340281,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "087ccf52c86b2dbe387052e9b29058fa",
+      "name": "RC7A5568.JPG",
+      "size": 15428721,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "0845a6b46741cbfc312299b087d4d833",
+      "name": "RC7A5577.JPG",
+      "size": 9508427,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "2634acdb3a1ff2a2b119ee605cc80c6e",
+   "name": "Southwest Plaza Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Southwest Plaza Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJbcRNEBp_a4cRcTenChYf51E",
+      "textName": "8501 W Bowles Ave, Littleton, CO 80123, USA",
+      "latitude": 39.6132296,
+      "longitude": -105.0948493
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://www.denverfarmersmarket.com/"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/denverfarmersmarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "https://www.instagram.com/metro_denver_farmers_market/"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/02/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/31/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "8:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "2:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "a24e07ef168c4357130b94e33bcc8f22",
+      "name": "download - 2025-08-20T213050.212.jfif",
+      "size": 564767,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "1cbb0ff69082abef9bc9093aa783ff3e",
+      "name": "88.jfif",
+      "size": 641856,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "dfee597d106ba8d6730f93bc5ba8aa45",
+      "name": "download (2).jfif",
+      "size": 513692,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "713ff628c9bb9e79f40772208878a133",
+      "name": "download (18).jfif",
+      "size": 711234,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "0eea117c42066c9d6545ce5404291cdf",
+   "name": "Lakewood Farmers' Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Lakewood Farmers' Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJk-boojmBa4cR5Cb93jBo0FI",
+      "textName": "9077 W Alameda Ave, Denver, CO 80226, USA",
+      "latitude": 39.7116431,
+      "longitude": -105.0985311
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://www.denverfarmersmarket.com/"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/denverfarmersmarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "https://www.instagram.com/metro_denver_farmers_market/"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/13/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/03/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "10:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "2:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "e70fa455f97d743d19f761728d16b28a",
+      "name": "15.jfif",
+      "size": 743986,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "d6d48cf57446feac5403bde4736876e0",
+      "name": "RC7A5308.JPG",
+      "size": 14613436,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "42d4afeaeafa98048433ba9379fdba25",
+      "name": "RC7A5202.JPG",
+      "size": 20006757,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "be089bfde594dcbc0e20a90185122093",
+      "name": "RC7A5430.JPG",
+      "size": 12235417,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "69e85d52c0cb2b47628f5878845a2615",
+   "name": "Sterling Ranch Farmers' Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Sterling Ranch Farmers' Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJZ1t0pKp9a4cRO_3LX6duHiw",
+      "textName": "8100 Piney River Ave, Littleton, CO 80125, USA",
+      "latitude": 39.5065761,
+      "longitude": -105.035698
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://www.denverfarmersmarket.com/"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/denverfarmersmarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "https://www.instagram.com/metro_denver_farmers_market/"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "2"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/24/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/14/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "3:00pm"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "7:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "bd54946e5abad9fdceb8b270948f38c2",
+      "name": "Logo1.png",
+      "size": 1090154,
+      "type": "image/png",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "49ad07ae56c038fddc7b3065c7d04629",
+   "name": "Mancos Valley Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Mancos Valley Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJ-0iV-wJbOYcRAsXJXtqbTEs",
+      "textName": "150 Grand Ave, Mancos, CO 81328, USA",
+      "latitude": 37.3456578,
+      "longitude": -108.2877124
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "mancosvalleyresources.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/MancosValleyFarmersMarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@Mancosvalleyfarmersmarket"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "3"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "6/18/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/08/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "4:00pm"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "6:30pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "c4cefa5307d8f4426fbe438048d16934",
+      "name": "300895786_3179515082269742_5746142038324952574_n.jpeg",
+      "size": 14883,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "8c72ec52878a01ce293e707bf94d8b13",
+      "name": "305499113_3189927727895144_8980757610434766212_n.jpeg",
+      "size": 15225,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "572bec792a7c0699da2a19db71b198f0",
+   "name": "City Park Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "City Park Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJqUqem7R-bIcRY8l28D5AXAQ",
+      "textName": "2551 E Colfax Ave, Denver, CO 80206, USA",
+      "latitude": 39.740462,
+      "longitude": -104.9569818
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.cityparkfarmersmarket.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "fhttps://www.facebook.com/cityparkfarmersmarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@cityparkfarmersmarket"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/2/2025"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/31/2025"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "8:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "1:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "69eccb02c80f7ee8dafdaeb007b8c7fe",
+      "name": "DSC03127.jpg",
+      "size": 4902715,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "2e7c42e9abdfb2545421e5d54875a276",
+      "name": "DSC01686.jpg",
+      "size": 2993461,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "e4c33c3b1cdfcc519aac7d8c5ed969b4",
+      "name": "DSC08452.jpg",
+      "size": 2195992,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "ae9cae1fe0bdf0997536a0f1d5f07de3",
+      "name": "DSC01334.jpg",
+      "size": 3867272,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "669799fe60e4bb5b0cfe034aa1a16702",
+   "name": "Mercadillo en el Rio",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Mercadillo en el Rio"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJx1rRXRF8FocRK9h56I8n1jM",
+      "textName": "6935 CO-17, Alamosa, CO 81101, USA",
+      "latitude": 37.474796,
+      "longitude": -105.8596929
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.riograndefarmpark.org"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/riograndefarmpark"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@riograndefarmpark"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "2"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "7",
+      "8"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "07/15/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "09/02/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "3:00pm"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "7:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "8d365a351b9a2876fad8f1777c13a5e6",
+      "name": "BC7F0D96-0DEF-4854-BBE1-9B609898AD63.jpeg",
+      "size": 134906,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "4a331ee0e9d85729c788c0cc9e655f6b",
+      "name": "AC846565-EF62-4FAB-BF4A-AF9034DAD8F8.jpeg",
+      "size": 258851,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "eb2af48e2e46647b6551b9a08fed310e",
+      "name": "0F88EFDB-7B4F-4812-B9D7-9068781FEC5F.jpeg",
+      "size": 193797,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "4c621bb942c6352715f7b515302f1ce7",
+      "name": "Mercadillo banner.png",
+      "size": 383041,
+      "type": "image/png",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "52eb42817557845b93e0186f6433dccb",
+   "name": "Lafayette Colorado Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Lafayette Colorado Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJw7_4hvr0a4cRz_a6OCZ90Qs",
+      "textName": "100 N Public Rd, Lafayette, CO 80026, USA",
+      "latitude": 39.99845029999999,
+      "longitude": -105.0902865
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.lafayettefm.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/p/Lafayette-Farmers-Market-61571202432615/"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@lafayettefarmersmarket"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "6"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/03/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/25/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "9:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "1:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "3"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "ccb9e184cdb857e6a439c99f62f7ba7b",
+      "name": "DSC00463.JPG",
+      "size": 4097241,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "3b87da787d4275c2c4ee5d87b44898f5",
+      "name": "DSC00453.JPG",
+      "size": 1851751,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "00964662d95309820c238ceda61cf80e",
+      "name": "DSC00483.JPG",
+      "size": 2898130,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "5886e8c66c98e46469b903c020d7af81",
+      "name": "DSC01557.JPG",
+      "size": 3287558,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "4abcc7671f16a33ad044878a7cf60479",
+   "name": "Alamosa Farmers' Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Alamosa Farmers' Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "EilSb3NzIEF2ZSAmIDZ0aCBTdCwgQWxhbW9zYSwgQ08gODExMDEsIFVTQSJmImQKFAoSCSHp8Kd0fBaHEVkbuNLqO2h7EhQKEgkh6fCndHwWhxFZG7jS6jtoexoUChIJ2-FLs3Z8FocR4yhYL6YIt6IaFAoSCds09UpzfBaHEem96kXusxq9IgoN1AZVFhUdf-XA",
+      "textName": "Ross Ave & 6th St, Alamosa, CO 81101, USA",
+      "latitude": 37.467106,
+      "longitude": -105.8701539
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "alamosafarmersmarket.org"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/alamosafarmersmarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@alamosa_farmers_market"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "07/11/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/10/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "08:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "01:30pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "50de95edbf7776cbb326cbd088299058",
+      "name": "DSC_0267.JPG",
+      "size": 13325592,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "6cb9d39ba064dc2ed696086b8358bc9b",
+      "name": "IMG_20250816_082238.jpg",
+      "size": 4419578,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "97b1b37856d1429865f31789701c4627",
+      "name": "6L2A0519.jpg",
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null,
+      "size": 466583
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "836c31854bd5129c8656fb3c23be7214",
+      "name": "6L2A0396.jpg",
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null,
+      "size": 709399
+     }
+    }
+   ]
+  },
+  {
+   "id": "ee3fdc600512150cf686a0b507339e39",
+   "name": "Arbol Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Arbol Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJVcchrqSWQIcRUTqayHLGHGM",
+      "textName": "700 4th St, Paonia, CO 81428, USA",
+      "latitude": 38.87025879999999,
+      "longitude": -107.5912396
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://thelearningcouncil.org/arbol-farmers-market/"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "Arbol Farmers Market"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@arbolfarmersmarket"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "1"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/13/2025"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/14/2025"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "5:00pm"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "7:30pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "4"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "264dac87885e631db0920fe620739205",
+      "name": "arbol.jpg",
+      "size": 31583,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "644c5d051e2b9a83b230169476b7369d",
+      "name": "IMG_6227.JPG",
+      "size": 5146026,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "6fe2256a27600d4e787ad867ba1c4179",
+      "name": "IMG_6025.JPG",
+      "size": 4285249,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "4158a48697c507185ae29dad0696bff1",
+      "name": "IMG-6500.jpg",
+      "size": 2816720,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "ae83706a9300f16931b66bcb018c1d53",
+   "name": "Downtown Grand Junction Market on Main",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Downtown Grand Junction Market on Main"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJbZ8TcWAcR4cRG7ZNZSdjzhU",
+      "textName": "101 S 3rd St, Grand Junction, CO 81501, USA",
+      "latitude": 39.0670074,
+      "longitude": -108.568065
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://downtowngj.org/events/market-on-main/"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/downtowngj"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@downtowngj"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "4"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "07/09/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "09/24/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "5:30pm"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "8:30pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "c425ce6b23461e5d37f8801466cca9e1",
+      "name": "MarketonMain_2023_Square_Downtown.png",
+      "type": "image/png",
+      "imageType": null,
+      "width": null,
+      "height": null,
+      "size": 45217
+     }
+    }
+   ]
+  },
+  {
+   "id": "73847c6d850fff5865c7289ba4cc49b5",
+   "name": "Fort Collins Winter Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Fort Collins Winter Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJuYgg_HNLaYcR1cxPa2H_2qU",
+      "textName": "215 E Foothills Pkwy, Fort Collins, CO 80525, USA",
+      "latitude": 40.543144,
+      "longitude": -105.0729086
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://www.winterfarmersmarket.com/"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/fortcollinsmarkets"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "https://www.instagram.com/fortcollinsmarkets"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "10",
+      "11"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "11/1/2025"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "04/18/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "10:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "2:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "2"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "6366b72483b6459e99d4b7ee9dbc1be8",
+      "name": "Screenshot 2026-02-11 at 9.43.14 AM.png",
+      "size": 1561202,
+      "type": "image/png",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "7971198f80e296852979fe73c8e584ea",
+      "name": "030924 MXD_12A5852.JPG",
+      "size": 10498637,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "fea720eb1ca518d31c0393c1d0f32607",
+      "name": "030924 MXD_12A5857.JPG",
+      "size": 12421048,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "a130ef236e67d900b34f6e67c2d0e17d",
+      "name": "030924 MXD_12A5880 (1).JPG",
+      "size": 12464307,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "9152465889eab32a05f55769056a3d47",
+   "name": "Golden Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Golden Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJR6A39NGaa4cRGDekt-5hiY0",
+      "textName": "1019 10th St, Golden, CO 80401, USA",
+      "latitude": 39.75589799999999,
+      "longitude": -105.2256059
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.goldenfarmersmarket.org"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/goldenfarmersmarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "https://www.instagram.com/goldenfarmersmarket/"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/30/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/03/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "08:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "01:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "5ee540e6f1d18507637a62d806a20527",
+      "name": "Golden Chamber-07265 - Copy - Copy.jpg",
+      "size": 5020402,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "71b9f5aa40a8e742e96129fd9f0c7a49",
+      "name": "market sunrise.jpg",
+      "size": 148206,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "a2e37f9c2488a6ecf25e071dc411dd27",
+      "name": "market crowd.jpg",
+      "size": 670320,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "9fdb72b6f2c2f42ed98503c540acdeed",
+      "name": "banner.jpg",
+      "size": 149696,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "00bcdede48ab35c514ce33eee453f870",
+   "name": "Ridgway Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Ridgway Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJLbQxxYQ8P4cRitM2PMsj8vw",
+      "textName": "Ridgway, CO 81432, USA",
+      "latitude": 38.1520493,
+      "longitude": -107.7557885
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.ridgwayfarmersmarket.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/RidgwayFarmersMarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "https://www.instagram.com/ridgway_farmersmarket"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "4"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/22/2025"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/16/2025"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "10:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "2:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "3"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "951511c29793cd017b2d7d17f45f409c",
+      "name": "IMG_3955.jpg",
+      "size": 712945,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "ca9a776d997dfc29cef44b0adc8029f0",
+      "name": "IMG_3956.jpg",
+      "size": 2034815,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "f08896e50f7915b9e144b3b3278e7f06",
+      "name": "IMG_3954.jpg",
+      "size": 575773,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "0b2da68b43a0f5e6315f477b17513a79",
+      "name": "IMG_3953.jpg",
+      "size": 397425,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "7f46520bea1e69afe23a8dc4b49d753d",
+   "name": "Fort Morgan Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Fort Morgan Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJ84ifUQHvbYcRbR02AMw5i3k",
+      "textName": "19592 E 8th Ave, Fort Morgan, CO 80701, USA",
+      "latitude": 40.2572079,
+      "longitude": -103.7805065
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.theblock-mc.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/theblockfortmorgan/"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@theblockfortmorgan"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "07/18/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/24/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "9:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "1:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": []
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "d18272cc3ad26b372117863372bdd14c",
+      "name": "FMFM_NewLogo2026.png",
+      "size": 878927,
+      "type": "image/png"
+     }
+    }
+   ]
+  },
+  {
+   "id": "7316cdbaaa161e467cc04d660680c298",
+   "name": "Salida Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Salida Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "Eh80MDQgRSBTdCwgU2FsaWRhLCBDTyA4MTIwMSwgVVNBIjESLwoUChIJoTfMgsIXFYcRqQarWUfBTFcQlAMqFAoSCZvYwzLCFxWHESYNUqZvgqv_",
+      "textName": "404 E St, Salida, CO 81201, USA",
+      "latitude": 38.5330889,
+      "longitude": -105.9932331
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "Foodshedalliance.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "Foodshed Alliance"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "Salida_Farmers_Market"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/06/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/24/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "08:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "12:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "e1d4a27347a89a113afca6adc68e44c6",
+      "name": "IMG_4178.JPG",
+      "size": 464237,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "76ecdfe1541d9698341fd2291eae9478",
+      "name": "bestFFCpic.jpg",
+      "size": 744526,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "bc6b56cb563487b86fec13d82864f13c",
+      "name": "IMG_2717.jpg",
+      "size": 1022369,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "08f76fca2e435a21fd093d18adb54fdc",
+      "name": "IMG_3373.jpg",
+      "size": 1042549,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "ecc1b0bac2debac30670534fc697e016",
+   "name": "Monte Vista Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Monte Vista Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJ__8_zTPeFYcRyLzJhW9Uxvw",
+      "textName": "1101 Park Ave, Monte Vista, CO 81144, USA",
+      "latitude": 37.5799049,
+      "longitude": -106.1432995
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": ""
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "www.facebook.com/MonteVistaFarmersMarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@monte_vista_farmers_market"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "4"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "6",
+      "7",
+      "8"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "07/17/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "09/25/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "09:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "01:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "3b13c19e5cf85edb9ed316578e68787e",
+      "name": "MV_farmers_Market_Logo.jpg",
+      "size": 9602405,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "64f7b927b43e5b9c983f9a3269d76dea",
+   "name": "Backyard Market in Black Forest Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Backyard Market in Black Forest Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJmTfNg_xKE4cRW8fv3N7AqZ4",
+      "textName": "6845 Shoup Rd, Colorado Springs, CO 80908, USA",
+      "latitude": 39.0125386,
+      "longitude": -104.6997825
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.thebackyardmarkets.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/backyardmarketinbf"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "https://www.instagram.com/backyardmarketinbf"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/23/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/17/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "9:00AM"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "1:00PM"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "2",
+      "3"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "79c5566af14b5f3f29164657f741fc73",
+      "name": "IMG_8880.jpeg",
+      "size": 4197438,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "3f0739d57d960eebc58a8b49548544a8",
+      "name": "IMG_8457.jpeg",
+      "size": 6731619,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "29d8c15b9b938f71b85e0d66a789676f",
+      "name": "IMG_0359.jpeg",
+      "size": 2378538,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "ccb3fe22ac67065f6a4cb33609826c21",
+      "name": "IMG_5564.jpeg",
+      "size": 4400536,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "33f2ac4c1eead42df1eba90e64eef020",
+   "name": "Loveland West Farmers Market at JAX",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Loveland West Farmers Market at JAX"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJr9l4hDFSaYcRWuzAProxtQU",
+      "textName": "NOT JAX ANY MORE, 2665 W Eisenhower Blvd, Loveland, CO 80537, USA",
+      "latitude": 40.4087584,
+      "longitude": -105.1117253
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": ""
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/LovelandWestFarmersMarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@loveland.west.farmers.market"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "1"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "04/21/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "11/03/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "09:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "01:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "1",
+      "2"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "944b577674727e598d25063a7ec84895",
+      "name": "Screenshot 2023-02-20 205020.png",
+      "size": 985806,
+      "type": "image/png",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "5e33d0b916f6309c93c26cad5c36e51e",
+   "name": "Larimer County Farmers' Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Larimer County Farmers' Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJ2Yb_aCNLaYcRLDEOAlrtDoI",
+      "textName": "200 W Oak St, Fort Collins, CO 80521, USA",
+      "latitude": 40.5864305,
+      "longitude": -105.0796496
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.larimercountyfm.org"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "www.facebook.com/larimercountyfm"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@larimercountyfm"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/16/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/31/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "9:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "1:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "2",
+      "4"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "f11c865c566f1cfc6e82f904725df364",
+      "name": "IMG_3622e (1).jpg",
+      "size": 3717373,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "821823aa9608625ed3269113aea2c241",
+      "name": "20191001_123551 (1).jpg",
+      "size": 3499384,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "3ee1c4caf3333ffa67225d67533b33ff",
+      "name": "IMG_3470 (1).JPG",
+      "size": 13057244,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "a60a9ff52bccd6b722813b0d23bbbaa9",
+      "name": "IMG_0773.jpg",
+      "size": 7174542,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "0d3c61815bf74d94dad940674ee60c9a",
+   "name": "Green Valley Ranch Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Green Valley Ranch Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJO51gfj1kbIcRuUfDTrY8oTc",
+      "textName": "4890 Argonne Way, Denver, CO 80249, USA",
+      "latitude": 39.7866952,
+      "longitude": -104.7661776
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://www.gvrfarmersmarket.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/GVRFarmersMarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "https://www.instagram.com/gvrfarmersmarket/"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "2"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/03/2025"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "08/26/2024"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "5:00pm"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "8:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "120e862205fc2b3f5984cc6b5d0d1ac3",
+      "name": "2019 farmers market from lake view.jpeg",
+      "size": 124418,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "9537701468342bc65ba399de37c8c73b",
+      "name": "2019 farmers market 12.jpeg",
+      "size": 159619,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "db7399f98598106bdb083e06dfccfeb7",
+      "name": "2019 farmers market 16.jpeg",
+      "size": 168828,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "28bc5489db9f41ace2de775b6fde5d60",
+      "name": "Screen Shot 2024-02-22 at 9.17.19 PM.png",
+      "size": 1045876,
+      "type": "image/png",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "bda0dfd02543905d3a76ecb7b794aacd",
+   "name": "Boulder Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Boulder Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJB3e3ei_sa4cRCuGJc-zE_A0",
+      "textName": "1700 13th St, Boulder, CO 80302, USA",
+      "latitude": 40.0144897,
+      "longitude": -105.2771619
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "bcfm.org"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/BoulderCountyFarmersMarkets"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@bcfm, @boulderfarmersmarket"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "2",
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "04/04/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "11/21/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "8:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "2:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "2",
+      "3"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "e7ee55ed3a702cf1898f10a2d151f233",
+      "name": "BB7A9007.jpg",
+      "size": 16285514,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "e9ce40ad576c64f4798a6c7a1833eaaf",
+   "name": "Nederland Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Nederland Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "EiU4MCBFIDJuZCBTdCwgTmVkZXJsYW5kLCBDTyA4MDQ2NiwgVVNBIjASLgoUChIJL0R1_s7Ga4cRR2fsq1kLxyUQUCoUChIJRXfais7Ga4cRapCRt5u1exM",
+      "textName": "80 E 2nd St, Nederland, CO 80466, USA",
+      "latitude": 39.9623177,
+      "longitude": -105.5096501
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://www.nederlandfarmersmarket.org/"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/NederlandFarmersMarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@NederlandFarmersMarket"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "6"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "5/10/2025"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/4/2025"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "10:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "2:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "3"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "37f75229833b10732dddb318ba8be5b6",
+      "name": "market view.jpeg",
+      "size": 625645,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "bb8eb6bac7a24528d82abe78c676e2a7",
+      "name": "laraina.jpeg",
+      "size": 396487,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "aac574570a88a059d529aef7d5acddb1",
+      "name": "shirts.jpeg",
+      "size": 516972,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "1fc2eaa590eceefed79559e151377f7b",
+      "name": "woody.jpeg",
+      "size": 427026,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "745a8bc915480d1b2567217d1fd0c524",
+   "name": "Trinidad Community Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Trinidad Community Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJ_1LjonwbEYcRAAdt2Y3dhtw",
+      "textName": "Trinidad, CO 81082, USA",
+      "latitude": 37.1701692,
+      "longitude": -104.5085463
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "trinidadcofarmersmarket.org"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/TrinidadFarmersMktColorado"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": ""
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "6"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/20/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "09/26/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "8:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "12:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": []
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "856d03c6b457498c6debc69fba5040d2",
+      "name": "IMG_Tents.JPEG",
+      "size": 834640,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "18399808a778f60e08aeaf3cceb2dbfe",
+      "name": "IMG_Stoytime.jpg",
+      "size": 1014330,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "27937271113e250cff2b17911e15f2b4",
+      "name": "IMG_0334Music.jpg",
+      "size": 811672,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "b099e47982cb6d664efef0efd1a8e900",
+      "name": "IMG_1331Sand board.jpg",
+      "size": 891823,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "260126248d2b5ba4847a9a224c3d13c2",
+   "name": "Crested Butte Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Crested Butte Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJi-KB_T1yQIcRjQxuCvtfPic",
+      "textName": "100 Elk Ave, Crested Butte, CO 81224, USA",
+      "latitude": 38.869663,
+      "longitude": -106.9890099
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.cbfarmersmarket.org"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "Crested Butte Farmers Market"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@cbfarmersmarket"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "6"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/31/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/11/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "09:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "02:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "06ae45b2edec3b5c878b8a4e84eaabe6",
+      "name": "market view.jpg",
+      "size": 236720,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "40b7f6e3e448bab8c9e3e6c2f97cf84d",
+      "name": "Tomatoes.jpg",
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null,
+      "size": 391408
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "7a60075202713f1e1eab6dbaaf5a18b1",
+      "name": "TODAY.png",
+      "size": 312795,
+      "type": "image/png",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "13556ffc63e088a2b7eb6bb856713264",
+      "name": "Mountain Oven.jpg",
+      "size": 303522,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "7c7a64201328e548bf16476276f88960",
+   "name": "Cortez Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Cortez Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJnRfzsKFvOYcR9kqZoCxjNcs",
+      "textName": "601 N Mildred Rd, Cortez, CO 81321, USA",
+      "latitude": 37.35526,
+      "longitude": -108.5736603
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://www.cortezfarmersmarket.com/"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/groups/265957719169/"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": ""
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/30/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/30/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "8:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "12:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "4"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "a9d82be3268bfde79f7b2834ad3ca347",
+      "name": "Cortez Farmers Market.jpg",
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null,
+      "size": 32686
+     }
+    }
+   ]
+  },
+  {
+   "id": "44f195cb7f5848c575333da9e4a4cc0e",
+   "name": "Durango Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Durango Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJIyE5YZ8CPIcRCPdmYW7KBGo",
+      "textName": "259 W 9th St, Durango, CO 81301, USA",
+      "latitude": 37.27348980000001,
+      "longitude": -107.8823608
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "Www.durangofarmersmarket.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "Www.facebook.com/durangofarmersmarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@durangofarmers"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/09/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/31/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "8:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "12:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "2"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "e4f0f8bb5cfccf201b8fa928afb74390",
+      "name": "ScottDWSmith_farmersmkt_j9a7850.jpg",
+      "size": 2074918,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "cddb9cce4404cec1cf07a12cae68d98f",
+      "name": "IMG_0173.jpg",
+      "size": 6246723,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "6e2542039f110edd3e184c0676f48e0c",
+      "name": "IMG_0929.jpg",
+      "size": 1780342,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "dee622b26b53b2d0a65f61f50e59a891",
+      "name": "ScottDWSmith_farmersmkt_j9a7878.jpg",
+      "size": 1707982,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "7e18c4cb2e8468ef12001b80311ab933",
+   "name": "Gunnison Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Gunnison Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJ2zJqBsaSP4cRUk656femjNY",
+      "textName": "222 E Gothic Ave, Gunnison, CO 81230, USA",
+      "latitude": 38.5490678,
+      "longitude": -106.9246953
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.gunnisonfarmersmarket.org"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/profile.php?id=100057396522608"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": ""
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/06/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/17/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "09:30am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "13:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "c969c8ea1aed86a652cf6da74d86edd2",
+      "name": "flowers.jpg",
+      "size": 819148,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "e5ea0631db2441ccafbe815f4b48767e",
+   "name": "Pueblo Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": []
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Pueblo Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJbQhd76ujE4cR0U0bUNQWPz8",
+      "textName": "1604 N Santa Fe Ave, Pueblo, CO 81003, USA",
+      "latitude": 38.2814386,
+      "longitude": -104.6070823
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "pueblofarmersmarket.org"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "Facebook.com/Pueblofarmermarket"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "instagram.com/pueblofarmersmarket"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/2/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/31/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "7:30am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "12:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "2"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "365288b6a160f319b8d0b01c44991c3d",
+      "name": "DSC_4621.JPG",
+      "size": 12628195,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "60c96be72c596d9c803ccc4434d11e82",
+      "name": "DSC_4624.JPG",
+      "size": 12328444,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "a7d2a1f37fd6f7979b4c27b19cdf9f2a",
+      "name": "Local Beef.JPG",
+      "size": 7769450,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "0261b36d838b406c45e12d57c2f76f82",
+      "name": "Food Baskets.JPG",
+      "size": 7944035,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "ab0df6b4b7762bec3dcf1e3d0c31224c",
+   "name": "Harvey Park Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Harvey Park Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJK9KCaHGAa4cRiwkn7i-i-JQ",
+      "textName": "2250 S Quitman Wy, Denver, CO 80219, USA",
+      "latitude": 39.6753742,
+      "longitude": -105.0398933
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.harveyparkfarmersmarket.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/profile.php?id=61574977833612"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@harveyparkfarmersmarket"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "05/02/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/31/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "9:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "1:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "c924442026d483ea0f428505f2f66874",
+      "name": "Untitled design.jpg",
+      "size": 187836,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "2d267dfabfe6a01815f5ab1a18ff521e",
+   "name": "Loveland Farmers Market at Fairgrounds Park",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Loveland Farmers Market at Fairgrounds Park"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJc2IPqApTaYcRHtNYgoTGGB8",
+      "textName": "700 S Railroad Ave, Loveland, CO 80537, USA",
+      "latitude": 40.3883963,
+      "longitude": -105.0791619
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://www.lovgov.org/services/parks-recreation/events/farmers-market"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/CityofLovelandFarmersMarket/"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@lovelandcofarmersmarket"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "6"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "5",
+      "6",
+      "7",
+      "8"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/07/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "09/27/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "9:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "1:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "f93e14737f54ba897c633170619ee36e",
+      "name": "CFMA Profile Pic.JPEG",
+      "size": 1092089,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "61e10add27d024fb95bc9c10d13d4f89",
+      "name": "Fruit.jpg",
+      "size": 884249,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "307552b87d43789f8b5846d2672adafd",
+      "name": "Market Aisle.JPEG",
+      "size": 1104783,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "17e8b8d9ec3ebd94ec0c86cf8bceacd6",
+      "name": "Bell Peppers.JPEG",
+      "size": 932982,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "17001a0feb4e6ec35c2b0172d0b01b54",
+   "name": "Rifle Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Rifle Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "EiY2MTIgUmFpbHJvYWQgQXZlLCBSaWZsZSwgQ08gODE2NTAsIFVTQSIxEi8KFAoSCcPn65sgOUGHEYHFEEZ7-diXEOQEKhQKEgln6Pz22zhBhxFVLP2k0GvNAQ",
+      "textName": "612 Railroad Ave, Rifle, CO 81650, USA",
+      "latitude": 39.5345615,
+      "longitude": -107.7830701
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "www.riflefarmersmarket.com"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/riflefarmersmarket?mibextid=LQQJ4d"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": ""
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "4"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/19/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "9/02/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "4:00pm"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "8:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": [
+      "0",
+      "1",
+      "3"
+     ]
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "88fcd8639fd5b1ddffc67edecf31280a",
+      "name": "IMG_4258.jpeg",
+      "size": 257231,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "fc4e0524371594251b6318199c86b5fd",
+   "name": "Florence Farmers Market",
+   "category": [
+    "0"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Florence Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "EjRFIDNyZCBTdCAmIE4gUGlrZXMgUGVhayBBdmUsIEZsb3JlbmNlLCBDTyA4MTIyNiwgVVNBImYiZAoUChIJj6vm1TaBFIcROmVn-5G5kGgSFAoSCY-r5tU2gRSHETplZ_uRuZBoGhQKEglfan2IPIEUhxEgiK2FEPpuoxoUChIJC1bwpTeBFIcRJzmFszppd9kiCg0SKOIWFf1jWME",
+      "textName": "E 3rd St & N Pikes Peak Ave, Florence, CO 81226, USA",
+      "latitude": 38.3920146,
+      "longitude": -105.1171843
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": ""
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/MarketinFlorence"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": ""
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "4"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/04/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "09/25/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "8:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "1:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": []
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "3f85961a06227ab3150dedfe7faa85c2",
+      "name": "farmers market.jpg",
+      "size": 154193,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "34e54997cb339abaa739895b090e9c5d",
+      "name": "farmers market 2.jpg",
+      "size": 83745,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "a3af4add52a2434cdd289eef2c0b587e",
+      "name": "farmers market 1.jpg",
+      "size": 776576,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  },
+  {
+   "id": "9a8d6b163b195741e23c4040f7134906",
+   "name": "Gluten Free Farmers Market",
+   "category": [
+    "1"
+   ],
+   "markets": {
+    "c191d43329f05795af4cdcad8d1af4dd": [
+     "2026-01-01T00:00:00.000Z"
+    ]
+   },
+   "fields": [
+    {
+     "id": "000100bbf7a5329ffa85abbb84c0c5e3",
+     "name": "Market name",
+     "type": "TextElement",
+     "value": "Gluten Free Farmers Market"
+    },
+    {
+     "id": "83235b3265e509e972a2983044651123",
+     "name": "Market Location",
+     "type": "LocationInput",
+     "value": {
+      "id": "ChIJNfAiO3mAbIcRYrPHPGmeVso",
+      "textName": "Chase Tower, 333 W Hampden Ave, Englewood, CO 80110, USA",
+      "latitude": 39.6535719,
+      "longitude": -104.9923244
+     }
+    },
+    {
+     "id": "f62e965db00442a348d9135bd305bed5",
+     "name": "Website   ",
+     "type": "TextElement",
+     "value": "https://sites.google.com/view/gf-farmers-market-denverceliac/home"
+    },
+    {
+     "id": "370864dddf9e37fab5ad68edf591d6c7",
+     "name": "Facebook",
+     "type": "TextElement",
+     "value": "https://www.facebook.com/DenverCeliacs"
+    },
+    {
+     "id": "39daa4c2f590f264c5da90dbeffeebac",
+     "name": "Instagram",
+     "type": "TextElement",
+     "value": "@denverceliacs"
+    },
+    {
+     "id": "000700cb606f0d8c2f5e8da176d8c19c",
+     "name": "Market Description",
+     "type": "TextElement",
+     "value": "Sample market description."
+    },
+    {
+     "id": "ee4b315d73f276469346c08d6a277d52",
+     "name": "Market Day(s)",
+     "type": "MultichoiceElement",
+     "value": [
+      "5"
+     ]
+    },
+    {
+     "id": "ec5841e3ea42d31142d0c3836780da19",
+     "name": "Months Open",
+     "type": "MultichoiceElement",
+     "value": [
+      "6",
+      "7",
+      "8",
+      "9"
+     ]
+    },
+    {
+     "id": "e6062673a70b2c14560c76fa0c785f21",
+     "name": "Market Starts",
+     "type": "TextElement",
+     "value": "06/13/2026"
+    },
+    {
+     "id": "bd528314748443ce6918b54223377e47",
+     "name": "Market Ends",
+     "type": "TextElement",
+     "value": "10/10/2026"
+    },
+    {
+     "id": "feeae8003d238e59e7d8231026ac08f2",
+     "name": "Market Opens",
+     "type": "TextElement",
+     "value": "09:00am"
+    },
+    {
+     "id": "60fac8c64b5dd65cad318156e8e312de",
+     "name": "Market Closes",
+     "type": "TextElement",
+     "value": "01:00pm"
+    },
+    {
+     "id": "d220b580afea92e01b66620254b9c0f4",
+     "name": "Programs",
+     "type": "MultichoiceElement",
+     "value": []
+    },
+    {
+     "id": "0008002da6674272a68e0565e2491535",
+     "name": "Feature Market Image",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "45cdd385c827fe159db3561678a7e51b",
+      "name": "TLK07582.JPG",
+      "size": 5628489,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "000900fefc04c45226e0e336d992515b",
+     "name": "Market Image #2",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "1031504378c7fe93691f3652502e31d8",
+      "name": "FLYER.jpg",
+      "size": 634271,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "0010003414b4c75356a5857158a00112",
+     "name": "Market Image #3",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "8957c87a038ff521ef97617591243fb6",
+      "name": "Aerial shot.jpg",
+      "size": 227647,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    },
+    {
+     "id": "00110022c1e99bc62dee47a291ce6b7c",
+     "name": "Market Image #4",
+     "type": "FileUploadElement",
+     "value": {
+      "id": "7d91040847ca5a49c1a957af574a1374",
+      "name": "The summer.jpg",
+      "size": 146141,
+      "type": "image/jpeg",
+      "imageType": null,
+      "width": null,
+      "height": null
+     }
+    }
+   ]
+  }
+ ]
+}

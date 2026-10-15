@@ -1,0 +1,16 @@
+name: Refresh cfma (monthly)
+
+on:
+  schedule:
+    - cron: "41 9 3 * *"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    uses: ./.github/workflows/refresh-source.yml
+    with:
+      source: cfma
+    secrets: inherit
+    permissions:
+      contents: write
+      pull-requests: write

@@ -1,0 +1,16 @@
+name: Refresh colorado_proud (weekly)
+
+on:
+  schedule:
+    - cron: "17 9 * * 1"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    uses: ./.github/workflows/refresh-source.yml
+    with:
+      source: colorado_proud
+    secrets: inherit
+    permissions:
+      contents: write
+      pull-requests: write

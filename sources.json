@@ -1,0 +1,41 @@
+{
+  "_comment": "One entry per source. cadence is how often the scheduled workflow pulls it; the cron lives in .github/workflows/refresh-<name>.yml and tests/test_sources_config.py keeps the two in step. status: active = pulled on schedule; frozen = no longer pulled, last snapshot still read by the build.",
+  "colorado_proud": {
+    "status": "active",
+    "cadence": "weekly",
+    "what": "Colorado Proud Farm Fresh Directory (ArcGIS feature service), farmers markets only",
+    "requests_per_run": 1
+  },
+  "usda_api": {
+    "status": "active",
+    "cadence": "weekly",
+    "what": "USDA Local Food Portal keyed API, five directories for Colorado",
+    "requests_per_run": 5,
+    "secret": "USDA_API_KEY"
+  },
+  "usda_datashare": {
+    "status": "active",
+    "cadence": "weekly",
+    "what": "USDA Local Food Portal data-share feed (opt-in listings, no key), gap filler",
+    "requests_per_run": 5
+  },
+  "cfma": {
+    "status": "active",
+    "cadence": "monthly",
+    "what": "Colorado Farmers Market Association member markets (MarketWurks API)",
+    "requests_per_run": 2,
+    "note": "Undocumented endpoint with no stated terms. Monthly on purpose; ask CFMA before increasing."
+  },
+  "colorado_proud_finder": {
+    "status": "active",
+    "cadence": "monthly",
+    "what": "Colorado Proud member directory: 6 listing pages plus profiles not seen before",
+    "requests_per_run": "6 + new profiles",
+    "note": "1.5 s between requests. Profile cache is restored between runs; a cold cache is a ~40 minute crawl."
+  },
+  "chaffee_provides": {
+    "status": "frozen",
+    "cadence": "none",
+    "what": "Chaffee Provides directory. Retired as a source on 2026-10-14: the Chaffee prototype site now reads from the Food Web, so pulling from it would be circular. Its last snapshot stays and is still built in; corrections go in inputs/overrides.csv."
+  }
+}
