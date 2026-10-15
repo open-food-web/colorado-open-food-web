@@ -2623,22 +2623,6 @@
 "name": "Anderson's Patchwork Pumpkins",
 "source": "usda"
 },
-"angel ark|buena vista": {
-"Address": "",
-"Category": "Bakery",
-"County": "Chaffee",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "",
-"Products": "Bread, Chocolate & Cocoa Products",
-"Status": "Open",
-"Website": "",
-"Year Opened": "",
-"city": "Buena Vista",
-"name": "The Ark Angel",
-"source": "colorado_proud_finder"
-},
 "angels bakehouse|": {
 "Address": "",
 "Category": "Food Maker",
@@ -8589,22 +8573,6 @@
 "Year Opened": "",
 "city": "Palisade",
 "name": "Red Fox Cellars",
-"source": "colorado_proud_finder"
-},
-"cellars salida vino wine|poncha springs": {
-"Address": "10495 County Road 120",
-"Category": "Winery, Agritourism",
-"County": "Chaffee",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "(719) 539-6299",
-"Products": "Events, Wine",
-"Status": "Open",
-"Website": "",
-"Year Opened": "",
-"city": "Poncha Springs",
-"name": "Vino Salida Wine Cellars",
 "source": "colorado_proud_finder"
 },
 "cellars winery|palisade": {
