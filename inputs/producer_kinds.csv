@@ -1,25 +1,27 @@
-name,kind,product_groups,note,source,date
-Arrowpoint Cattle Company,ranch,beef-meat;poultry-eggs,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
-Badger Creek Ranch,ranch,beef-meat;poultry-eggs,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
-Banyan Breads,maker,baked-goods,Bakery,guidestone_review,2026-10-16
-Buck and Bloom Cheese Co,maker,dairy,Creamery,guidestone_review,2026-10-16
-Colorado Farm to Table,farm,veggies,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
-Colorado Mountain Lavender,farm,flowers,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
-Copper Kettle Apothecary,ranch,garlic-herbs,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
-Cottonwood Spirit Ranch,ranch,veggies;beef-meat;poultry-eggs,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
-Everett Ranch Beef,ranch,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
-Headwater Farms,farm,veggies;flowers,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
-Hutchinson Ranch,ranch,beef-meat,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
-Lewis Lazy L Ranch,ranch,beef-meat,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
-Mountain Goat Lodge,farm,dairy,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
-Mushroom Love Co,farm,veggies,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
-Phytology Flowers Farm,farm,veggies;flowers;garlic-herbs,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
-Poncha Creek Gardens,farm,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
-Rocky Mountain Garlic,farm,veggies;garlic-herbs,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
-Salida Cattle Company,ranch,beef-meat,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
-Scanga Meat Company,,,Chosen by the provider on the old Chaffee Provides form (type: Market),chaffee_provides,2021-2026
-Sweet Pea Farm’s Wildflower Honey,farm,beef-meat;poultry-eggs,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
-Trout Creek Farm,farm,veggies;flowers,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
-Valley Roots Food Hub,ranch,veggies;beef-meat;poultry-eggs;dairy;garlic-herbs,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
-Vino Salida Wine Cellars,winery,drinks,Winery,guidestone_review,2026-10-16
-Who Knows? Farms,farm,,Permaculture farm and farm stand,guidestone_review,2026-10-16
+name,kind,product_groups,dropin_visits,farm_pickup,visit_note,note,source,date
+Arrowpoint Cattle Company,ranch,beef-meat;poultry-eggs,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
+Badger Creek Ranch,ranch,beef-meat;poultry-eggs,no,yes,"Pick up an order at the Coaldale ranch annex by arrangement, or at the Tuesday pickup points, or ask about delivery",Chosen by the provider on the old Chaffee Provides form (type: Ranch) | visit: Guidestone/Chrissy,chaffee_provides,2021-2026
+Banyan Breads,maker,baked-goods,yes,,"Shop at 110 E 1st St, Salida, open mornings until sold out","Bakery | visit: business's own website, Oct 2026",guidestone_review,2026-10-16
+Buck and Bloom Cheese Co,maker,dairy,yes,,Self-serve farm general store; farm tours by booking,"Creamery | visit: business's own website, Oct 2026",guidestone_review,2026-10-16
+Colorado Farm to Table,farm,veggies,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
+Colorado Mountain Lavender,farm,flowers,no,no,The farm and shop are closed to the public; online orders only,"Chosen by the provider on the old Chaffee Provides form (type: Farm) | visit: business's own website, Oct 2026",chaffee_provides,2021-2026
+Copper Kettle Apothecary,ranch,garlic-herbs,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
+Cottonwood Spirit Ranch,ranch,veggies;beef-meat;poultry-eggs,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
+Everett Ranch Beef,ranch,,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
+Guidestone Colorado Community and School Farm,,,yes,,Farm stand every Tuesday 4-6 (season ending soon),"added for visit flag | visit: business's own website, Oct 2026",research,2026-10-16
+Headwater Farms,farm,veggies;flowers,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
+Hutchinson Ranch,ranch,beef-meat,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
+Lewis Lazy L Ranch,ranch,beef-meat,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
+Mountain Goat Lodge,farm,dairy,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
+Mushroom Love Co,farm,veggies,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
+Phytology Flowers Farm,farm,veggies;flowers;garlic-herbs,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
+Poncha Creek Gardens,farm,,,yes,On-farm pickup by arrangement (also delivers in Salida and Poncha Springs),Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
+Rocky Mountain Garlic,farm,veggies;garlic-herbs,yes,,"Self-serve honor-system farm stand, Mon-Sat 8-6, May-Nov","Chosen by the provider on the old Chaffee Provides form (type: Farm) | visit: business's own website, Oct 2026",chaffee_provides,2021-2026
+Salida Cattle Company,ranch,beef-meat,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
+Scanga Meat Company,,,,,,Chosen by the provider on the old Chaffee Provides form (type: Market),chaffee_provides,2021-2026
+Sweet Pea Farm’s Wildflower Honey,farm,beef-meat;poultry-eggs,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
+The Triangle Oasis,,,yes,,"On-farm store; pick-your-own flowers by appointment, June-October","added for visit flag | visit: business's own website, Oct 2026",research,2026-10-16
+Trout Creek Farm,farm,veggies;flowers,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
+Valley Roots Food Hub,ranch,veggies;beef-meat;poultry-eggs;dairy;garlic-herbs,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
+Vino Salida Wine Cellars,winery,drinks,,,,Winery,guidestone_review,2026-10-16
+Who Knows? Farms,farm,,yes,,"Farm stand, Tue-Sun","Permaculture farm and farm stand | visit: business's own website, Oct 2026",guidestone_review,2026-10-16

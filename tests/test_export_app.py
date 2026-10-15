@@ -141,6 +141,24 @@ class ExportApp(unittest.TestCase):
         self.assertEqual(conf["the business's Facebook page"]["fields"], ["products"])
         self.assertEqual(conf["the business's Facebook page"]["url"], "https://www.facebook.com/RanchPage/")
 
+    def test_visit_flags_are_separate_and_never_assumed(self):
+        d = tempfile.mkdtemp()
+        kinds = os.path.join(d, "kinds.csv")
+        with open(kinds, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(["name", "kind", "product_groups", "dropin_visits", "farm_pickup", "visit_note"])
+            w.writerow(["Closed Ranch", "ranch", "", "no", "yes", "Pick up at the annex by arrangement"])
+        doc = self.export([row("Closed Ranch", "On-Farm / Ranch Sales", Address="1 Rd", Latitude="38.5", Longitude="-106"),
+                           row("Stand Farm", "Roadside Market", Address="2 Rd", Latitude="38.6", Longitude="-106"),
+                           row("Mystery Farm", "On-Farm / Ranch Sales", Address="3 Rd", Latitude="38.7", Longitude="-106")],
+                          build_extra=["--kinds", kinds])
+        farms = self.by_name(doc)
+        self.assertEqual((farms["Closed Ranch"]["dropin_visits"], farms["Closed Ranch"]["farm_pickup"]), (False, True))
+        self.assertEqual(farms["Closed Ranch"]["visit_note"], "Pick up at the annex by arrangement")
+        self.assertEqual(farms["Stand Farm"]["dropin_visits"], True)    # a stated farm stand means drop-ins
+        self.assertIsNone(farms["Stand Farm"]["farm_pickup"])
+        self.assertIsNone(farms["Mystery Farm"]["dropin_visits"])      # unknown stays unknown
+
     def test_metadata_counts_match(self):
         doc = self.export([row("A Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106")])
         self.assertEqual(doc["export"]["format_version"], 1)

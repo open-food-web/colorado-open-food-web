@@ -51,6 +51,9 @@ python scripts/export_app.py --tables data/chaffee-county --out exports/chaffee-
 | `kind` | string | `farm`, `ranch`, `orchard`, `maker`, `winery`. Labels are in `vocab.kinds` |
 | `categories`, `products` | list | From the Food Web vocabularies |
 | `product_groups` | list | What people search by: honey, beef and meat, eggs, veggies... Labels are in `vocab.product_groups` |
+| `dropin_visits` | bool/null | Can a customer just show up? Null = not confirmed; apps say "call first" |
+| `farm_pickup` | bool/null | Can a customer collect an order at the farm, by arrangement? A separate question from drop-ins |
+| `visit_note` | string/null | One plain sentence about visiting or pickup |
 | `months_open` | list | Month names. Empty = unknown |
 | `hours_text` | string/null | Free text |
 | `website`, `phone`, `email`, `facebook`, `instagram` | string/null | Public business contact only |

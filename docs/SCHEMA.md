@@ -65,6 +65,9 @@ Every field has a class that decides whether it appears in the public release.
 | `categories` | list | controlled | From the category vocabulary below. Primary first |
 | `products` | list | controlled | From the product vocabulary |
 | `product_groups` | list | controlled | The short list people search by: `veggies`, `fruit`, `beef-meat`, `poultry-eggs`, `dairy`, `honey`, `flowers`, `garlic-herbs`, `mushrooms`, `baked-goods`, `drinks`. Found from the products text, categories and name, plus what the business itself ticked (`inputs/producer_kinds.csv`). `products` keeps the source's own words |
+| `dropin_visits` | bool/null | fact | Can a customer just show up? Set by a person (`inputs/producer_kinds.csv`); a stated farm stand or u-pick also counts as yes in the export. Null = not confirmed, never assumed |
+| `farm_pickup` | bool/null | fact | Can a customer collect an order at the farm, by arrangement? A different question from `dropin_visits`: a ranch can refuse drop-ins and still hand over pre-ordered beef at its annex |
+| `visit_note` | string | owned | One plain sentence about visiting or pickup, written by us or the business |
 | `seasonal_months` | list | fact | Months operating, 1–12. Empty if unknown |
 | `hours_structured` | list | fact | `{days, open, close, season_start, season_end}` entries. See `hours_text` |
 | `hours_text` | string | fact | Fallback when hours cannot be structured. Verbatim and short |
