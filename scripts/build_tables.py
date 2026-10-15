@@ -30,6 +30,8 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from scrape import contact_policy as cp  # noqa: E402
+from scrape import hours as hrs  # noqa: E402
+from scrape import vendors as vnd  # noqa: E402
 
 REGISTRY = os.path.join(HERE, "..", "data", "id_registry.csv")
 
@@ -82,21 +84,24 @@ FIELD_MAP = {"Phone": "phone", "Email": "email", "Website": "website", "Facebook
 
 COLS = {
     "producers": ["producer_id", "slug", "name", "kind", "categories", "products", "seasonal_months",
-                  "hours_text", "website", "phone", "email", "facebook", "instagram", "sales_channels",
+                  "hours_text", "hours_status", "website", "phone", "email", "facebook", "instagram", "sales_channels",
                   "certified_organic", "accepts_snap", "ada_accessible", "call_first", "status", "claimed",
                   "opted_out_fields", "first_seen", "last_verified"],
     "locations": ["location_id", "name", "kind", "address", "city", "zip", "hide_address", "state", "county_fips",
                "lat", "lon", "geo_source", "google_place_id", "photo_url", "photo_credit", "photo_license"],
     "producer_locations": ["producer_location_id", "producer_id", "location_id", "role", "days", "hours_text", "season_start",
                   "season_end", "status"],
-    "markets": ["market_id", "slug", "name", "location_id", "operator", "days", "hours_text", "website", "phone",
+    "markets": ["market_id", "slug", "name", "location_id", "operator", "days", "hours_text", "hours_status", "website", "phone",
                 "email", "facebook", "instagram", "accepts_snap", "ada_accessible", "status", "first_seen",
                 "last_verified"],
     "outlets": ["outlet_id", "slug", "name", "kind", "brand", "location_id", "website", "phone", "facebook",
                 "instagram", "status", "first_seen", "last_verified"],
-    "access_points": ["access_point_id", "slug", "name", "kind", "location_id", "hours_text", "website", "phone",
+    "access_points": ["access_point_id", "slug", "name", "kind", "location_id", "hours_text", "hours_status", "website", "phone",
                       "email", "facebook", "instagram", "status", "first_seen", "last_verified"],
     "service_areas": ["producer_id", "county_fips", "basis", "derived"],
+    "hours": ["record_type", "record_id", "day", "opens", "closes", "closes_next_day", "inferred"],
+    "market_vendors": ["market_id", "producer_id", "year", "season_label", "days", "season_start", "season_end", "status",
+                       "list_source", "source_url", "match_basis"],
     "source_links": ["record_type", "record_id", "source", "url", "source_record_id", "last_seen", "link_status"],
     "field_sources": ["record_type", "record_id", "field", "source", "source_url", "verified_by", "verified_on"],
 }
@@ -171,9 +176,39 @@ def producer_kind(name, cats):
     return "farm"
 
 
+def link_markets(out, stated, vendors_path):
+    """Fill market_vendors from the vendor lists and from market names a producer's listing states, and add
+    the market's county to each producer's service areas."""
+    locs = {r["location_id"]: r for r in out["locations"]}
+    lk = vnd.Linker(out["markets"], out["producers"], locs)
+    lk.attach_locations(out["producer_locations"])
+    rows, unmatched = [], {}
+    if os.path.exists(vendors_path):
+        with open(vendors_path, encoding="utf-8", newline="") as f:
+            rows, unmatched = lk.from_lists(list(csv.DictReader(f)))
+    have = {(r["market_id"], r["producer_id"]) for r in rows}
+    rows += lk.from_text(stated, have)
+    rows.sort(key=lambda r: (r["market_id"], r["producer_id"], r["year"], r["match_basis"]))
+    out["market_vendors"] = rows
+    present = {(r["producer_id"], r["county_fips"]) for r in out["service_areas"]}
+    mk = {m["market_id"]: m for m in out["markets"]}
+    for r in rows:
+        fips = locs[mk[r["market_id"]]["location_id"]]["county_fips"]
+        if fips and (r["producer_id"], fips) not in present:
+            present.add((r["producer_id"], fips))
+            out["service_areas"].append({"producer_id": r["producer_id"], "county_fips": fips, "basis": "market",
+                                         "derived": "true"})
+    by_basis = {}
+    for r in rows:
+        by_basis[r["match_basis"]] = by_basis.get(r["match_basis"], 0) + 1
+    print("market_vendors:", len(rows), by_basis, "| vendor rows not linked:", unmatched)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--raw", required=True)
+    ap.add_argument("--vendors", default=os.path.join(HERE, "..", "inputs", "market_vendor_lists.csv"),
+                    help="market vendor lists (market, market_city, vendor, list_year, list_url)")
     ap.add_argument("--county", default=None, help="limit to one county (default: all of Colorado)")
     ap.add_argument("--out", required=True)
     ap.add_argument("--additions", nargs="*", default=[],
@@ -194,6 +229,7 @@ def main():
     reg = Registry(a.registry)
     out = {k: [] for k in COLS}
     deferred, slugs, used = [], set(), set()
+    stated = {}
 
     def prefixes_for(typ, cats_main):
         """The ID prefixes a row will take, so two rows only collide when they would share an actual ID."""
@@ -241,6 +277,9 @@ def main():
         if "guidestone_review" not in (r["Source"] or ""):   # a partner file states its own contact details
             r["Email"] = publishable_email(r)
         status = "closed" if (r.get("Status") or "").strip().lower() == "closed" else "unverified"
+        parsed = hrs.parse(r["Hours"])
+        hs = parsed.status
+        dys = ";".join(sorted({sl.day for sl in parsed.slots}, key=hrs.DAY_ORDER.index))
         typ = classify(cats_main)
         prov = json.loads(r["Provenance"]) if r["Provenance"] else {}
         srcs = [SOURCE_NAME.get(s, s) for s in (r["Source"] or "").split("+") if s]
@@ -271,7 +310,7 @@ def main():
         if typ == "market":
             mid = reg.get("co-m", sid)
             out["markets"].append({"market_id": mid, "slug": new_slug(name), "name": name, "location_id": location_id,
-                                   "operator": "", "days": "", "hours_text": r["Hours"], "email": r["Email"],
+                                   "operator": "", "days": dys, "hours_text": r["Hours"], "hours_status": hs, "email": r["Email"],
                                    "accepts_snap": tri(r["SNAP"]), "ada_accessible": tri(r["ADA Accessible"]),
                                    "status": status, "first_seen": "", "last_verified": "", **common})
             rec_ids.append(("market", mid))
@@ -279,7 +318,7 @@ def main():
             kind = next(ACCESS_KIND[c] for c in cats_main if c in ACCESS_KIND)
             apid = reg.get("co-ap", sid)
             out["access_points"].append({"access_point_id": apid, "slug": new_slug(name), "name": name, "kind": kind,
-                                         "location_id": location_id, "hours_text": r["Hours"], "email": r["Email"],
+                                         "location_id": location_id, "hours_text": r["Hours"], "hours_status": hs, "email": r["Email"],
                                          "status": status, "first_seen": "", "last_verified": "", **common})
             rec_ids.append(("access_point", apid))
         else:
@@ -290,14 +329,14 @@ def main():
                     "kind": producer_kind(name, cats_main),
                     "categories": ";".join(c for c in cats if c in PRODUCER_CATS),
                     "products": r["Products"].replace(", ", ";"),
-                    "seasonal_months": ";".join(months), "hours_text": r["Hours"], "email": r["Email"],
+                    "seasonal_months": ";".join(months), "hours_text": r["Hours"], "hours_status": hs, "email": r["Email"],
                     "sales_channels": channels(r, cats),
                     "certified_organic": tri(r["Certified Organic"]), "accepts_snap": tri(r["SNAP"]),
                     "ada_accessible": tri(r["ADA Accessible"]), "call_first": tri(r["Call first?"]),
                     "status": status, "claimed": "false", "opted_out_fields": "",
                     "first_seen": "", "last_verified": "", **common})
                 out["producer_locations"].append({"producer_location_id": reg.get("co-ploc", sid + "|home"), "producer_id": pid,
-                                         "location_id": location_id, "role": "home_base", "days": "",
+                                         "location_id": location_id, "role": "home_base", "days": dys,
                                          "hours_text": r["Hours"], "season_start": "", "season_end": "",
                                          "status": "listed"})
                 if rfips:
@@ -312,6 +351,15 @@ def main():
                                        "kind": kinds[0], "brand": "", "location_id": location_id,
                                        "status": status, "first_seen": "", "last_verified": "", **common})
                 rec_ids.append(("outlet", oid))
+
+        for rtype, rid in rec_ids:
+            if rtype in ("producer", "market", "access_point"):
+                for sl in parsed.slots:
+                    out["hours"].append({"record_type": rtype, "record_id": rid, "day": sl.day, "opens": sl.opens,
+                                         "closes": sl.closes, "closes_next_day": "true" if sl.closes_next_day else "false",
+                                         "inferred": "true" if sl.inferred else "false"})
+            if rtype == "producer":
+                stated[rid] = (r.get("Sales Locations") or "") + " ; " + (r["Hours"] or "") + " ; " + (r.get("Where to Get It") or "")
 
         partner = "guidestone" in srcs
         if partner:  # every populated field in a partner file is partner-verified on the file's date
@@ -329,6 +377,8 @@ def main():
                                                  "source": SOURCE_NAME.get(src, src), "source_url": url,
                                                  "verified_by": "partner" if partner else "source",
                                                  "verified_on": r["Source Updated"] if partner else ""})
+
+    link_markets(out, stated, a.vendors)
 
     os.makedirs(a.out, exist_ok=True)
     for name, cols in COLS.items():

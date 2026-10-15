@@ -1,0 +1,411 @@
+market_id,producer_id,year,season_label,days,season_start,season_end,status,list_source,source_url,match_basis
+co-m-000002,co-p-000001,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,normalized_name
+co-m-000002,co-p-000002,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,exact_name
+co-m-000002,co-p-000003,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,exact_name
+co-m-000002,co-p-000004,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,exact_name
+co-m-000002,co-p-000012,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,exact_name
+co-m-000002,co-p-000021,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,exact_name
+co-m-000002,co-p-000026,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,exact_name
+co-m-000002,co-p-000056,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,exact_name
+co-m-000002,co-p-000172,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,exact_name
+co-m-000002,co-p-000792,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,exact_name
+co-m-000002,co-p-000862,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,exact_name
+co-m-000002,co-p-001031,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,exact_name
+co-m-000002,co-p-001212,2026,,,,,listed,vendor list: Salida Farmers Market,https://www.foodshedalliance.com/meet-our-vendors,normalized_name
+co-m-000007,co-p-000331,2026,,,,,listed,vendor list: Aspen Grove Farmers Market,https://aspengrovefarmersmarket.com/vendors/,normalized_name
+co-m-000007,co-p-000394,2026,,,,,listed,vendor list: Aspen Grove Farmers Market,https://aspengrovefarmersmarket.com/vendors/,exact_name
+co-m-000007,co-p-000416,2026,,,,,listed,vendor list: Aspen Grove Farmers Market,https://aspengrovefarmersmarket.com/vendors/,exact_name
+co-m-000007,co-p-000589,2026,,,,,listed,vendor list: Aspen Grove Farmers Market,https://aspengrovefarmersmarket.com/vendors/,normalized_name
+co-m-000007,co-p-000792,2026,,,,,listed,vendor list: Aspen Grove Farmers Market,https://aspengrovefarmersmarket.com/vendors/,exact_name
+co-m-000007,co-p-001006,2026,,,,,listed,vendor list: Aspen Grove Farmers Market,https://aspengrovefarmersmarket.com/vendors/,exact_name
+co-m-000008,co-p-000047,2026,,,,,listed,vendor list: Aspen Saturday Market,https://aspen.gov/DocumentCenter/View/16360/2026-ASPEN-SATURDAY-MARKET-VENDORS-MAP,normalized_name
+co-m-000008,co-p-000335,,,,,,listed,stated in the producer's listing,,stated_text
+co-m-000008,co-p-000388,2026,,,,,listed,vendor list: Aspen Saturday Market,https://aspen.gov/DocumentCenter/View/16360/2026-ASPEN-SATURDAY-MARKET-VENDORS-MAP,normalized_name
+co-m-000008,co-p-000599,2026,,,,,listed,vendor list: Aspen Saturday Market,https://aspen.gov/DocumentCenter/View/16360/2026-ASPEN-SATURDAY-MARKET-VENDORS-MAP,normalized_name
+co-m-000008,co-p-000772,2026,,,,,listed,vendor list: Aspen Saturday Market,https://aspen.gov/DocumentCenter/View/16360/2026-ASPEN-SATURDAY-MARKET-VENDORS-MAP,exact_name
+co-m-000008,co-p-000897,2026,,,,,listed,vendor list: Aspen Saturday Market,https://aspen.gov/DocumentCenter/View/16360/2026-ASPEN-SATURDAY-MARKET-VENDORS-MAP,exact_name
+co-m-000008,co-p-000901,2026,,,,,listed,vendor list: Aspen Saturday Market,https://aspen.gov/DocumentCenter/View/16360/2026-ASPEN-SATURDAY-MARKET-VENDORS-MAP,exact_name
+co-m-000008,co-p-001069,2026,,,,,listed,vendor list: Aspen Saturday Market,https://aspen.gov/DocumentCenter/View/16360/2026-ASPEN-SATURDAY-MARKET-VENDORS-MAP,exact_name
+co-m-000008,co-p-001092,2026,,,,,listed,vendor list: Aspen Saturday Market,https://aspen.gov/DocumentCenter/View/16360/2026-ASPEN-SATURDAY-MARKET-VENDORS-MAP,normalized_name
+co-m-000008,co-p-001114,2026,,,,,listed,vendor list: Aspen Saturday Market,https://aspen.gov/DocumentCenter/View/16360/2026-ASPEN-SATURDAY-MARKET-VENDORS-MAP,normalized_name
+co-m-000008,co-p-001223,2026,,,,,listed,vendor list: Aspen Saturday Market,https://aspen.gov/DocumentCenter/View/16360/2026-ASPEN-SATURDAY-MARKET-VENDORS-MAP,exact_name
+co-m-000012,co-p-001018,,,,,,listed,stated in the producer's listing,,stated_text
+co-m-000016,co-p-000054,2026,,,,,listed,vendor list: Black Forest Farmers Market,https://www.thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000016,co-p-000209,2026,,,,,listed,vendor list: Black Forest Farmers Market,https://www.thebackyardmarkets.com/black-forest-market,normalized_name
+co-m-000016,co-p-000262,2026,,,,,listed,vendor list: Black Forest Farmers Market,https://www.thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000016,co-p-000338,2026,,,,,listed,vendor list: Black Forest Farmers Market,https://www.thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000016,co-p-000395,2026,,,,,listed,vendor list: Black Forest Farmers Market,https://www.thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000016,co-p-000412,2026,,,,,listed,vendor list: Black Forest Farmers Market,https://www.thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000016,co-p-000416,2026,,,,,listed,vendor list: Black Forest Farmers Market,https://www.thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000016,co-p-000503,2026,,,,,listed,vendor list: Black Forest Farmers Market,https://www.thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000016,co-p-000952,2026,,,,,listed,vendor list: Black Forest Farmers Market,https://www.thebackyardmarkets.com/black-forest-market,normalized_name
+co-m-000017,co-p-000004,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000073,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000106,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000127,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000130,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000165,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000269,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000328,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000329,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000366,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000373,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,normalized_name
+co-m-000017,co-p-000441,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000489,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000550,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000588,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000616,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,normalized_name
+co-m-000017,co-p-000634,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000675,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000688,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000706,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000714,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000718,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,normalized_name
+co-m-000017,co-p-000723,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000725,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000747,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000771,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000866,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000872,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000910,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-000957,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-001073,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-001092,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,normalized_name
+co-m-000017,co-p-001174,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000017,co-p-001208,2025,,,,,listed,vendor list: Boulder Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000020,co-p-000127,2026,,,,,listed,vendor list: Breckenridge Sunday Market,https://rockymountainevents.com/breckenridge-farmers-market/,exact_name
+co-m-000020,co-p-000218,2026,,,,,listed,vendor list: Breckenridge Sunday Market,https://rockymountainevents.com/breckenridge-farmers-market/,normalized_name
+co-m-000020,co-p-000262,2026,,,,,listed,vendor list: Breckenridge Sunday Market,https://rockymountainevents.com/breckenridge-farmers-market/,exact_name
+co-m-000020,co-p-001198,2026,,,,,listed,vendor list: Breckenridge Sunday Market,https://rockymountainevents.com/breckenridge-farmers-market/,normalized_name
+co-m-000029,co-p-000070,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000127,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000133,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000175,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000181,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000204,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000269,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000329,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000376,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000380,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000388,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000394,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000415,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000441,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000588,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000712,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-000718,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,normalized_name
+co-m-000029,co-p-000910,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-001037,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-001059,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-001073,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,normalized_name
+co-m-000029,co-p-001116,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,normalized_name
+co-m-000029,co-p-001148,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000029,co-p-001194,2026,,,,,listed,vendor list: City Park Farmers Market,https://vendors.cityparkfarmersmarket.com/vendor_team,exact_name
+co-m-000034,co-p-000107,,,,,,listed,vendor list: Cortez Farmers Market,https://www.cortezfarmersmarket.com/your-vendors,exact_name
+co-m-000034,co-p-000168,,,,,,listed,vendor list: Cortez Farmers Market,https://www.cortezfarmersmarket.com/your-vendors,exact_name
+co-m-000034,co-p-000211,,,,,,listed,vendor list: Cortez Farmers Market,https://www.cortezfarmersmarket.com/your-vendors,exact_name
+co-m-000034,co-p-000976,,,,,,listed,vendor list: Cortez Farmers Market,https://www.cortezfarmersmarket.com/your-vendors,exact_name
+co-m-000034,co-p-001009,,,,,,listed,vendor list: Cortez Farmers Market,https://www.cortezfarmersmarket.com/your-vendors,exact_name
+co-m-000034,co-p-001053,,,,,,listed,vendor list: Cortez Farmers Market,https://www.cortezfarmersmarket.com/your-vendors,exact_name
+co-m-000037,co-p-000004,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000037,co-p-000125,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000037,co-p-000179,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000037,co-p-000335,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000037,co-p-000467,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000037,co-p-000527,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000037,co-p-000727,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000037,co-p-000733,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000037,co-p-000781,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000037,co-p-000901,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000037,co-p-001092,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,normalized_name
+co-m-000037,co-p-001102,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000037,co-p-001223,2026,,,,,listed,vendor list: Crested Butte Farmers Market,https://cbfarmersmarket.org/our-farmers-artisans/,exact_name
+co-m-000040,co-p-000065,2026,,,,,listed,vendor list: Dillon Farmers Market,https://townofdillon.mymarket.org/profiles,exact_name
+co-m-000040,co-p-000105,2026,,,,,listed,vendor list: Dillon Farmers Market,https://townofdillon.mymarket.org/profiles,normalized_name
+co-m-000040,co-p-000127,2026,,,,,listed,vendor list: Dillon Farmers Market,https://townofdillon.mymarket.org/profiles,exact_name
+co-m-000040,co-p-000218,2026,,,,,listed,vendor list: Dillon Farmers Market,https://townofdillon.mymarket.org/profiles,exact_name
+co-m-000040,co-p-000388,2026,,,,,listed,vendor list: Dillon Farmers Market,https://townofdillon.mymarket.org/profiles,exact_name
+co-m-000040,co-p-000394,2026,,,,,listed,vendor list: Dillon Farmers Market,https://townofdillon.mymarket.org/profiles,exact_name
+co-m-000040,co-p-000728,2026,,,,,listed,vendor list: Dillon Farmers Market,https://townofdillon.mymarket.org/profiles,exact_name
+co-m-000040,co-p-000792,2026,,,,,listed,vendor list: Dillon Farmers Market,https://townofdillon.mymarket.org/profiles,exact_name
+co-m-000040,co-p-001006,2026,,,,,listed,vendor list: Dillon Farmers Market,https://townofdillon.mymarket.org/profiles,exact_name
+co-m-000040,co-p-001092,2026,,,,,listed,vendor list: Dillon Farmers Market,https://townofdillon.mymarket.org/profiles,normalized_name
+co-m-000047,co-p-000051,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000058,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000120,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000159,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000168,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,normalized_name
+co-m-000047,co-p-000171,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000298,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000365,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000436,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000459,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000522,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000601,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000621,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000622,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000630,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000649,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000690,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000692,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000715,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000869,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000891,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000915,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-000937,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-001001,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-001009,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-001036,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000047,co-p-001130,2026,,,,,listed,vendor list: Durango Farmers Market,https://www.durangofarmersmarket.com/vendors,exact_name
+co-m-000048,co-p-001092,2024,,,,,listed,vendor list: Eagle Farmers Market,https://www.eaglefarmersmarketandartshow.com/2024-vendors,exact_name
+co-m-000051,co-p-000067,2026,,,,,listed,vendor list: Erie Farmers Market,https://realfarmersmarketco.com/erie-farmers-market/,normalized_name
+co-m-000051,co-p-000127,2026,,,,,listed,vendor list: Erie Farmers Market,https://realfarmersmarketco.com/erie-farmers-market/,exact_name
+co-m-000051,co-p-000138,2026,,,,,listed,vendor list: Erie Farmers Market,https://realfarmersmarketco.com/erie-farmers-market/,exact_name
+co-m-000051,co-p-000209,2026,,,,,listed,vendor list: Erie Farmers Market,https://realfarmersmarketco.com/erie-farmers-market/,exact_name
+co-m-000051,co-p-000388,2026,,,,,listed,vendor list: Erie Farmers Market,https://realfarmersmarketco.com/erie-farmers-market/,normalized_name
+co-m-000051,co-p-000647,2026,,,,,listed,vendor list: Erie Farmers Market,https://realfarmersmarketco.com/erie-farmers-market/,normalized_name
+co-m-000051,co-p-000744,2026,,,,,listed,vendor list: Erie Farmers Market,https://realfarmersmarketco.com/erie-farmers-market/,exact_name
+co-m-000051,co-p-000872,2026,,,,,listed,vendor list: Erie Farmers Market,https://realfarmersmarketco.com/erie-farmers-market/,exact_name
+co-m-000051,co-p-001107,2026,,,,,listed,vendor list: Erie Farmers Market,https://realfarmersmarketco.com/erie-farmers-market/,exact_name
+co-m-000059,co-p-000191,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,normalized_name
+co-m-000059,co-p-000195,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,exact_name
+co-m-000059,co-p-000328,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,exact_name
+co-m-000059,co-p-000706,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,exact_name
+co-m-000059,co-p-000722,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,exact_name
+co-m-000059,co-p-000723,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,exact_name
+co-m-000059,co-p-000726,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,exact_name
+co-m-000059,co-p-000796,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,exact_name
+co-m-000059,co-p-001017,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,exact_name
+co-m-000059,co-p-001057,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,exact_name
+co-m-000059,co-p-001078,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,normalized_name
+co-m-000059,co-p-001171,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,exact_name
+co-m-000059,co-p-001201,,,,,,listed,vendor list: Fort Collins Farmers' Market,https://www.fortcollinsfarmersmarket.org/vendors,exact_name
+co-m-000060,co-p-000004,2025,2025-26 winter,,,,listed,vendor list: Fort Collins Winter Farmers Market,https://www.wildcraftmarkets.com/vendors,normalized_name
+co-m-000060,co-p-000195,2025,2025-26 winter,,,,listed,vendor list: Fort Collins Winter Farmers Market,https://www.wildcraftmarkets.com/vendors,exact_name
+co-m-000060,co-p-000683,2025,2025-26 winter,,,,listed,vendor list: Fort Collins Winter Farmers Market,https://www.wildcraftmarkets.com/vendors,normalized_name
+co-m-000060,co-p-000726,2025,2025-26 winter,,,,listed,vendor list: Fort Collins Winter Farmers Market,https://www.wildcraftmarkets.com/vendors,exact_name
+co-m-000060,co-p-000796,2025,2025-26 winter,,,,listed,vendor list: Fort Collins Winter Farmers Market,https://www.wildcraftmarkets.com/vendors,exact_name
+co-m-000060,co-p-001043,2025,2025-26 winter,,,,listed,vendor list: Fort Collins Winter Farmers Market,https://www.wildcraftmarkets.com/vendors,exact_name
+co-m-000060,co-p-001057,2025,2025-26 winter,,,,listed,vendor list: Fort Collins Winter Farmers Market,https://www.wildcraftmarkets.com/vendors,exact_name
+co-m-000060,co-p-001078,2025,2025-26 winter,,,,listed,vendor list: Fort Collins Winter Farmers Market,https://www.wildcraftmarkets.com/vendors,normalized_name
+co-m-000060,co-p-001107,2025,2025-26 winter,,,,listed,vendor list: Fort Collins Winter Farmers Market,https://www.wildcraftmarkets.com/vendors,exact_name
+co-m-000067,co-p-000792,2026,,,,,listed,vendor list: Glenwood Springs Downtown Market on 7th,https://www.glenwoodspringsdda.com/market-on-7th/,exact_name
+co-m-000069,co-p-000082,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-000282,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-000388,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-000394,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-000703,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-000706,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-000742,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-000748,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-000819,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-000951,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,normalized_name
+co-m-000069,co-p-001007,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-001043,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-001072,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,exact_name
+co-m-000069,co-p-001092,2026,,,,,listed,vendor list: Golden Farmers Market,https://goldenfarmersmarket.org/our-merchants/,normalized_name
+co-m-000071,co-p-000589,2026,,,,,listed,vendor list: Granby Farmers Market,https://www.destinationgranby.com/events/music-market/,normalized_name
+co-m-000071,co-p-000912,2026,,,,,listed,vendor list: Granby Farmers Market,https://www.destinationgranby.com/events/music-market/,exact_name
+co-m-000071,co-p-000959,2026,,,,,listed,vendor list: Granby Farmers Market,https://www.destinationgranby.com/events/music-market/,normalized_name
+co-m-000075,co-p-000245,,,,,,listed,stated in the producer's listing,,stated_text
+co-m-000075,co-p-000467,,,,,,listed,stated in the producer's listing,,stated_text
+co-m-000076,co-p-000004,2026,,,,,listed,vendor list: Harvey Park Farmers Market,https://www.harveyparkfarmersmarket.com/vendors,normalized_name
+co-m-000076,co-p-000133,2026,,,,,listed,vendor list: Harvey Park Farmers Market,https://www.harveyparkfarmersmarket.com/vendors,exact_name
+co-m-000076,co-p-000204,2026,,,,,listed,vendor list: Harvey Park Farmers Market,https://www.harveyparkfarmersmarket.com/vendors,exact_name
+co-m-000076,co-p-000329,2026,,,,,listed,vendor list: Harvey Park Farmers Market,https://www.harveyparkfarmersmarket.com/vendors,exact_name
+co-m-000076,co-p-000376,2026,,,,,listed,vendor list: Harvey Park Farmers Market,https://www.harveyparkfarmersmarket.com/vendors,exact_name
+co-m-000076,co-p-000378,2026,,,,,listed,vendor list: Harvey Park Farmers Market,https://www.harveyparkfarmersmarket.com/vendors,normalized_name
+co-m-000076,co-p-000394,2026,,,,,listed,vendor list: Harvey Park Farmers Market,https://www.harveyparkfarmersmarket.com/vendors,exact_name
+co-m-000076,co-p-000872,2026,,,,,listed,vendor list: Harvey Park Farmers Market,https://www.harveyparkfarmersmarket.com/vendors,exact_name
+co-m-000076,co-p-000874,2026,,,,,listed,vendor list: Harvey Park Farmers Market,https://www.harveyparkfarmersmarket.com/vendors,exact_name
+co-m-000076,co-p-000960,2026,,,,,listed,vendor list: Harvey Park Farmers Market,https://www.harveyparkfarmersmarket.com/vendors,exact_name
+co-m-000076,co-p-001117,2026,,,,,listed,vendor list: Harvey Park Farmers Market,https://www.harveyparkfarmersmarket.com/vendors,exact_name
+co-m-000084,co-p-000127,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000133,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000181,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000242,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000269,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000271,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000329,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000376,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000380,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000383,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000394,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000415,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000573,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000588,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000753,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000872,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-000982,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-001037,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-001073,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,normalized_name
+co-m-000084,co-p-001106,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000084,co-p-001116,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,normalized_name
+co-m-000084,co-p-001148,2026,,,,,listed,vendor list: Lafayette Colorado Farmers Market,https://vendors.lafayettefm.com/2026_vendor_team,exact_name
+co-m-000087,co-p-000106,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000121,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000191,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000264,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000284,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000329,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000359,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000383,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000430,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000489,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,normalized_name
+co-m-000087,co-p-000562,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000637,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000706,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000722,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000726,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000737,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000755,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000866,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-000882,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-001057,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000087,co-p-001078,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,normalized_name
+co-m-000087,co-p-001201,2026,,,,,listed,vendor list: Larimer County Farmers' Market,https://www.larimer.gov/extension/larimer-county-farmers-market/Shop,exact_name
+co-m-000090,co-p-000004,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000073,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000127,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000130,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000161,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000225,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000271,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,normalized_name
+co-m-000090,co-p-000329,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000373,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,normalized_name
+co-m-000090,co-p-000489,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000550,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000581,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000588,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000647,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000706,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000723,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000725,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000747,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000809,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,normalized_name
+co-m-000090,co-p-000866,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000872,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000910,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-000922,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000090,co-p-001116,2025,,,,,listed,vendor list: Longmont Farmers Market,https://bcfm.org/vendors/meet-our-vendors/,exact_name
+co-m-000091,co-p-000105,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,normalized_name
+co-m-000091,co-p-000127,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,exact_name
+co-m-000091,co-p-000138,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,exact_name
+co-m-000091,co-p-000191,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,normalized_name
+co-m-000091,co-p-000209,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,exact_name
+co-m-000091,co-p-000360,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,normalized_name
+co-m-000091,co-p-000388,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,normalized_name
+co-m-000091,co-p-000394,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,exact_name
+co-m-000091,co-p-000402,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,exact_name
+co-m-000091,co-p-000647,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,normalized_name
+co-m-000091,co-p-000706,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,exact_name
+co-m-000091,co-p-000756,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,exact_name
+co-m-000091,co-p-000800,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,exact_name
+co-m-000091,co-p-000906,2026,,,,,listed,vendor list: Louisville Farmers Market,https://realfarmersmarketco.com/louisville-farmers-market/2026/,exact_name
+co-m-000098,co-p-000242,2026,,,,,listed,vendor list: Lyons Farmers Market,https://www.fosterabundantspaces.com/visit,exact_name
+co-m-000098,co-p-000647,2026,,,,,listed,vendor list: Lyons Farmers Market,https://www.fosterabundantspaces.com/visit,exact_name
+co-m-000098,co-p-000753,2026,,,,,listed,vendor list: Lyons Farmers Market,https://www.fosterabundantspaces.com/visit,exact_name
+co-m-000098,co-p-000857,2026,,,,,listed,vendor list: Lyons Farmers Market,https://www.fosterabundantspaces.com/visit,exact_name
+co-m-000098,co-p-000882,2026,,,,,listed,vendor list: Lyons Farmers Market,https://www.fosterabundantspaces.com/visit,exact_name
+co-m-000098,co-p-001176,2026,,,,,listed,vendor list: Lyons Farmers Market,https://www.fosterabundantspaces.com/visit,exact_name
+co-m-000100,co-p-000159,2026,,,,,listed,vendor list: Market on the Plaza,https://townofmountainvillage.com/explore/market-on-the-plaza/,exact_name
+co-m-000100,co-p-000692,2026,,,,,listed,vendor list: Market on the Plaza,https://townofmountainvillage.com/explore/market-on-the-plaza/,exact_name
+co-m-000100,co-p-001145,2026,,,,,listed,vendor list: Market on the Plaza,https://townofmountainvillage.com/explore/market-on-the-plaza/,exact_name
+co-m-000109,co-p-000207,2026,,,,,listed,vendor list: Montrose Farmers Market,https://montrosefarmersmarket.mymarket.org/profiles,exact_name
+co-m-000109,co-p-000477,2026,,,,,listed,vendor list: Montrose Farmers Market,https://montrosefarmersmarket.mymarket.org/profiles,exact_name
+co-m-000109,co-p-000792,2026,,,,,listed,vendor list: Montrose Farmers Market,https://montrosefarmersmarket.mymarket.org/profiles,exact_name
+co-m-000109,co-p-000841,2026,,,,,listed,vendor list: Montrose Farmers Market,https://montrosefarmersmarket.mymarket.org/profiles,exact_name
+co-m-000109,co-p-001145,2026,,,,,listed,vendor list: Montrose Farmers Market,https://montrosefarmersmarket.mymarket.org/profiles,exact_name
+co-m-000111,co-p-000209,2026,,,,,listed,vendor list: Nederland Farmers Market,https://nederlandfarmersmarket.mymarket.org/profiles,normalized_name
+co-m-000111,co-p-000749,2026,,,,,listed,vendor list: Nederland Farmers Market,https://nederlandfarmersmarket.mymarket.org/profiles,exact_name
+co-m-000116,co-p-000004,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000065,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000127,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000165,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000175,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000209,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,normalized_name
+co-m-000116,co-p-000314,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000329,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,normalized_name
+co-m-000116,co-p-000376,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000388,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000415,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000706,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000860,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000910,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-000971,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-001006,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-001039,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-001043,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-001059,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-001170,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000116,co-p-001194,2026,,,,,listed,vendor list: Old South Pearl Street Association - Farmers Market,https://southpearlstreet.com/farmers-market/,exact_name
+co-m-000118,co-p-000394,2026,,,,,listed,vendor list: Orchard Farmers Market,https://orchardfarmersmarket.com/sunday-farmers-market/,exact_name
+co-m-000118,co-p-000432,2026,,,,,listed,vendor list: Orchard Farmers Market,https://orchardfarmersmarket.com/sunday-farmers-market/,exact_name
+co-m-000118,co-p-000647,2026,,,,,listed,vendor list: Orchard Farmers Market,https://orchardfarmersmarket.com/sunday-farmers-market/,exact_name
+co-m-000118,co-p-000703,2026,,,,,listed,vendor list: Orchard Farmers Market,https://orchardfarmersmarket.com/sunday-farmers-market/,exact_name
+co-m-000118,co-p-000706,2026,,,,,listed,vendor list: Orchard Farmers Market,https://orchardfarmersmarket.com/sunday-farmers-market/,exact_name
+co-m-000118,co-p-000792,2026,,,,,listed,vendor list: Orchard Farmers Market,https://orchardfarmersmarket.com/sunday-farmers-market/,exact_name
+co-m-000118,co-p-000957,2026,,,,,listed,vendor list: Orchard Farmers Market,https://orchardfarmersmarket.com/sunday-farmers-market/,exact_name
+co-m-000118,co-p-001006,2026,,,,,listed,vendor list: Orchard Farmers Market,https://orchardfarmersmarket.com/sunday-farmers-market/,exact_name
+co-m-000122,co-p-000064,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-000108,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-000277,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-000417,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-000443,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,normalized_name
+co-m-000122,co-p-000452,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-000477,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-000763,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,normalized_name
+co-m-000122,co-p-000792,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-000839,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-000881,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-000918,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-000935,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-001077,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-001092,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-001142,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000122,co-p-001220,2026,,,,,listed,vendor list: Palisade Sunday Farmers' Market,https://townofpalisade.mymarket.org/profiles,exact_name
+co-m-000128,co-p-000114,2026,,,,,listed,vendor list: Ridgway Farmers Market,https://www.ridgwayfarmersmarket.com/our-vendors,exact_name
+co-m-000128,co-p-000125,2026,,,,,listed,vendor list: Ridgway Farmers Market,https://www.ridgwayfarmersmarket.com/our-vendors,exact_name
+co-m-000128,co-p-000527,2026,,,,,listed,vendor list: Ridgway Farmers Market,https://www.ridgwayfarmersmarket.com/our-vendors,exact_name
+co-m-000128,co-p-000542,2026,,,,,listed,vendor list: Ridgway Farmers Market,https://www.ridgwayfarmersmarket.com/our-vendors,exact_name
+co-m-000128,co-p-000598,2026,,,,,listed,vendor list: Ridgway Farmers Market,https://www.ridgwayfarmersmarket.com/our-vendors,exact_name
+co-m-000128,co-p-000727,2026,,,,,listed,vendor list: Ridgway Farmers Market,https://www.ridgwayfarmersmarket.com/our-vendors,exact_name
+co-m-000128,co-p-000763,2026,,,,,listed,vendor list: Ridgway Farmers Market,https://www.ridgwayfarmersmarket.com/our-vendors,normalized_name
+co-m-000128,co-p-001092,2026,,,,,listed,vendor list: Ridgway Farmers Market,https://www.ridgwayfarmersmarket.com/our-vendors,exact_name
+co-m-000128,co-p-001145,2026,,,,,listed,vendor list: Ridgway Farmers Market,https://www.ridgwayfarmersmarket.com/our-vendors,exact_name
+co-m-000128,co-p-001170,2026,,,,,listed,vendor list: Ridgway Farmers Market,https://www.ridgwayfarmersmarket.com/our-vendors,exact_name
+co-m-000133,co-p-000331,,,,,,listed,stated in the producer's listing,,stated_text
+co-m-000140,co-p-000047,2026,,,,,listed,vendor list: Telluride Farmers' Market,https://www.thetelluridefarmersmarket.com/our-vendors,exact_name
+co-m-000140,co-p-000477,2026,,,,,listed,vendor list: Telluride Farmers' Market,https://www.thetelluridefarmersmarket.com/our-vendors,exact_name
+co-m-000140,co-p-000918,2026,,,,,listed,vendor list: Telluride Farmers' Market,https://www.thetelluridefarmersmarket.com/our-vendors,exact_name
+co-m-000140,co-p-001050,2026,,,,,listed,vendor list: Telluride Farmers' Market,https://www.thetelluridefarmersmarket.com/our-vendors,exact_name
+co-m-000140,co-p-001145,2026,,,,,listed,vendor list: Telluride Farmers' Market,https://www.thetelluridefarmersmarket.com/our-vendors,exact_name
+co-m-000141,co-p-000114,2026,,,,,listed,vendor list: The Arbol Farmers Market,https://www.thelearningcouncil.org/arbol-farmers-market,exact_name
+co-m-000141,co-p-000527,2026,,,,,listed,vendor list: The Arbol Farmers Market,https://www.thelearningcouncil.org/arbol-farmers-market,exact_name
+co-m-000141,co-p-000901,2026,,,,,listed,vendor list: The Arbol Farmers Market,https://www.thelearningcouncil.org/arbol-farmers-market,normalized_name
+co-m-000141,co-p-000918,2026,,,,,listed,vendor list: The Arbol Farmers Market,https://www.thelearningcouncil.org/arbol-farmers-market,exact_name
+co-m-000141,co-p-001018,2026,,,,,listed,vendor list: The Arbol Farmers Market,https://www.thelearningcouncil.org/arbol-farmers-market,exact_name
+co-m-000141,co-p-001102,2026,,,,,listed,vendor list: The Arbol Farmers Market,https://www.thelearningcouncil.org/arbol-farmers-market,exact_name
+co-m-000142,co-p-000054,2026,,,,,listed,vendor list: The Backyard Market in Black Forest,https://thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000142,co-p-000209,2026,,,,,listed,vendor list: The Backyard Market in Black Forest,https://thebackyardmarkets.com/black-forest-market,normalized_name
+co-m-000142,co-p-000262,2026,,,,,listed,vendor list: The Backyard Market in Black Forest,https://thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000142,co-p-000338,2026,,,,,listed,vendor list: The Backyard Market in Black Forest,https://thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000142,co-p-000395,2026,,,,,listed,vendor list: The Backyard Market in Black Forest,https://thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000142,co-p-000412,2026,,,,,listed,vendor list: The Backyard Market in Black Forest,https://thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000142,co-p-000416,2026,,,,,listed,vendor list: The Backyard Market in Black Forest,https://thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000142,co-p-000503,2026,,,,,listed,vendor list: The Backyard Market in Black Forest,https://thebackyardmarkets.com/black-forest-market,exact_name
+co-m-000142,co-p-000952,2026,,,,,listed,vendor list: The Backyard Market in Black Forest,https://thebackyardmarkets.com/black-forest-market,normalized_name
+co-m-000148,co-p-000004,2026,,,,,listed,vendor list: Vail Farmers' Market,https://www.vailfarmersmarket.com/2026-vendors,exact_name
+co-m-000148,co-p-000218,2026,,,,,listed,vendor list: Vail Farmers' Market,https://www.vailfarmersmarket.com/2026-vendors,normalized_name
+co-m-000148,co-p-000330,2026,,,,,listed,vendor list: Vail Farmers' Market,https://www.vailfarmersmarket.com/2026-vendors,normalized_name
+co-m-000148,co-p-000728,2026,,,,,listed,vendor list: Vail Farmers' Market,https://www.vailfarmersmarket.com/2026-vendors,exact_name
+co-m-000148,co-p-001092,2026,,,,,listed,vendor list: Vail Farmers' Market,https://www.vailfarmersmarket.com/2026-vendors,normalized_name
+co-m-000148,co-p-001176,2026,,,,,listed,vendor list: Vail Farmers' Market,https://www.vailfarmersmarket.com/2026-vendors,exact_name
+co-m-000153,co-p-000054,2026,,,,,listed,vendor list: Woodland Park Farmers Market,https://wpfarmersmarket.com/market-vendors,exact_name
+co-m-000153,co-p-000388,2026,,,,,listed,vendor list: Woodland Park Farmers Market,https://wpfarmersmarket.com/market-vendors,exact_name
+co-m-000153,co-p-000412,2026,,,,,listed,vendor list: Woodland Park Farmers Market,https://wpfarmersmarket.com/market-vendors,exact_name
+co-m-000153,co-p-000575,2026,,,,,listed,vendor list: Woodland Park Farmers Market,https://wpfarmersmarket.com/market-vendors,exact_name
+co-m-000153,co-p-000805,2026,,,,,listed,vendor list: Woodland Park Farmers Market,https://wpfarmersmarket.com/market-vendors,exact_name
+co-m-000153,co-p-000936,2026,,,,,listed,vendor list: Woodland Park Farmers Market,https://wpfarmersmarket.com/market-vendors,exact_name
+co-m-000153,co-p-001006,2026,,,,,listed,vendor list: Woodland Park Farmers Market,https://wpfarmersmarket.com/market-vendors,exact_name
+co-m-000153,co-p-001132,2026,,,,,listed,vendor list: Woodland Park Farmers Market,https://wpfarmersmarket.com/market-vendors,exact_name

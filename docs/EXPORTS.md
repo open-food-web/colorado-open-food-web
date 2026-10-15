@@ -41,7 +41,7 @@ python scripts/export_app.py --tables data/colorado --out exports/chaffee-provid
 | `source` | `Colorado Open Food Web` |
 | `county_fips` | Counties the export covers |
 | `attribution` | Text the app must show, once, on its About page or footer |
-| `counts` | `producers`, `markets`, `access_points`, `pins` (a quick sanity check) |
+| `counts` | `producers`, `markets`, `access_points`, `market_links`, `pins` (a quick sanity check) |
 
 ### `producers[]`
 
@@ -51,7 +51,10 @@ python scripts/export_app.py --tables data/colorado --out exports/chaffee-provid
 | `kind` | string | `farm`, `ranch`, `orchard`, `maker`, `winery` |
 | `categories`, `products` | list | From the Food Web vocabularies |
 | `months_open` | list | Month names. Empty = unknown |
-| `hours_text` | string/null | Free text |
+| `hours_text` | string/null | Free text, always kept |
+| `hours` | list | Structured: `{day, opens, closes, closes_next_day?, inferred?}`, `day` is `mon`..`sun`, times are 24-hour `HH:MM`. Empty when not readable |
+| `hours_status` | string | `parsed`, `partial`, `appointment`, `text_only`, `none`. Show `hours_text` unless `parsed` |
+| `sells_at` | list | Markets the producer sells at: `{market_id, name, county_fips, year, season_label, basis, source_url}` |
 | `website`, `phone`, `email`, `facebook`, `instagram` | string/null | Public business contact only |
 | `sales_channels` | list | `farm_stand`, `u_pick`, `csa`, `farmers_market`, `pickup`, `delivery`, `online`, `wholesale`, `retail_partners`. Empty = not confirmed yet |
 | `certified_organic`, `accepts_snap`, `ada_accessible`, `call_first` | bool/null | Null = unknown, never false |
@@ -76,7 +79,7 @@ python scripts/export_app.py --tables data/colorado --out exports/chaffee-provid
 
 ### `markets[]` and `access_points[]`
 
-Same shape as producers where the fields apply, with one `location` each. `access_points[].kind` is
+Same shape as producers where the fields apply (`hours`, `hours_status`), with one `location` each. Markets also carry `vendors`: the IDs of exported producers that sell there. `access_points[].kind` is
 `community_fridge` for now; pantries and meal sites will use the same list. Markets and access points
 are always pinned.
 
@@ -108,5 +111,5 @@ are always pinned.
 
 1. Where releases are published (a GitHub Release asset, or a committed `exports/` folder) and how the
    app's repo is notified.
-2. Whether `hours_text` should become structured hours in version 2.
+2. (Settled) Structured `hours` and `sells_at` were added as non-breaking fields; `hours_text` stays.
 3. Whether outlets (restaurants, stores) get their own list when an app wants them. They are not exported now.

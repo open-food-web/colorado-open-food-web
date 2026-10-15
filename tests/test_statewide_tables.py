@@ -47,6 +47,41 @@ class Statewide(unittest.TestCase):
         self.build(rows, county="Mesa")
         self.assertEqual([r["name"] for r in self.table("producers")], ["B Farm"])
 
+    def test_hours_become_rows_and_the_text_is_kept(self):
+        self.build([row("Hours Farm", "On-Farm / Ranch Sales", Hours="Sat-Sun 10am-2pm"),
+                    row("Odd Farm", "On-Farm / Ranch Sales", Hours="when the sign is out")])
+        p = {r["name"]: r for r in self.table("producers")}
+        self.assertEqual(p["Hours Farm"]["hours_status"], "parsed")
+        self.assertEqual(p["Hours Farm"]["hours_text"], "Sat-Sun 10am-2pm")
+        self.assertEqual(p["Odd Farm"]["hours_status"], "text_only")
+        rows = self.table("hours")
+        self.assertEqual(sorted(r["day"] for r in rows), ["sat", "sun"])
+        self.assertEqual({(r["opens"], r["closes"]) for r in rows}, {("10:00", "14:00")})
+
+    def test_a_vendor_list_links_a_producer_to_a_market_and_adds_its_county(self):
+        d = tempfile.mkdtemp()
+        lists = os.path.join(d, "v.csv")
+        with open(lists, "w", encoding="utf-8", newline="") as f:
+            f.write("\n".join(["market,market_city,vendor,list_year,list_url",
+                               "Palisade Farmers Market,Palisade,Peach Farm,2026,https://example.org/v",
+                               "Palisade Farmers Market,Palisade,Unknown Vendor,2026,https://example.org/v", ""]))
+        raw = os.path.join(d, "raw.csv")
+        with open(raw, "w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=HEAD)
+            w.writeheader()
+            w.writerows([row("Palisade Farmers Market", "Farmers' Market", "Mesa", City="Palisade"),
+                         row("Peach Farm", "On-Farm / Ranch Sales", "Delta", City="Cedaredge")])
+        out = os.path.join(d, "out")
+        subprocess.run([sys.executable, "-I", os.path.join(ROOT, "scripts", "build_tables.py"), "--raw", raw,
+                        "--out", out, "--registry", os.path.join(d, "reg.csv"), "--vendors", lists],
+                       check=True, capture_output=True)
+        self.out = out
+        links = self.table("market_vendors")
+        self.assertEqual(len(links), 1)
+        self.assertEqual((links[0]["year"], links[0]["match_basis"]), ("2026", "exact_name"))
+        areas = {(r["county_fips"], r["basis"]) for r in self.table("service_areas")}
+        self.assertIn(("08077", "market"), areas)
+
     def test_same_name_in_two_towns_gets_two_ids(self):
         self.build([row("Farmers Market", "Farmers' Market", "Mesa", City="Palisade"),
                     row("Farmers Market", "Farmers' Market", "Larimer", City="Loveland")])
@@ -109,6 +144,21 @@ class CommittedTables(unittest.TestCase):
                 self.assertIn(r["location_id"], loc)
         for r in self.t("service_areas"):
             self.assertIn(r["producer_id"], prod)
+
+    def test_hours_and_market_links_point_at_real_records(self):
+        recs = {"producer": {r["producer_id"] for r in self.t("producers")},
+                "market": {r["market_id"] for r in self.t("markets")},
+                "access_point": {r["access_point_id"] for r in self.t("access_points")}}
+        for r in self.t("hours"):
+            self.assertIn(r["record_id"], recs[r["record_type"]])
+            self.assertRegex(r["opens"], r"^\d\d:\d\d$")
+        seen = set()
+        for r in self.t("market_vendors"):
+            self.assertIn(r["market_id"], recs["market"])
+            self.assertIn(r["producer_id"], recs["producer"])
+            key = (r["market_id"], r["producer_id"], r["year"], r["season_label"])
+            self.assertNotIn(key, seen)
+            seen.add(key)
 
     def test_it_covers_the_state_not_one_county(self):
         counties = {r["county_fips"] for r in self.t("locations") if r["county_fips"]}
