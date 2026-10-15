@@ -53,7 +53,7 @@ FIPS = {c: "08%03d" % n for n, c in [
 
 MARKET = "Farmers' Market"
 PRODUCER_CATS = {"On-Farm / Ranch Sales", "Meat Producer & Packer", "Farm Products (online)", "Agritourism",
-                 "CSA Farm", "Roadside Market", "U-Pick", "Winery", "Bakery", "Food Maker", "Wholesale Grower"}
+                 "CSA Farm", "Roadside Market", "U-Pick", "Winery", "Bakery", "Food Maker", "Specialty Shop", "Wholesale Grower"}
 # Outlet categories. Garden Center only makes an outlet row when nothing else says the business
 # is a producer (a garlic farm with a greenhouse is a producer, not a garden center).
 OUTLET_KIND = {"Restaurant": "restaurant", "Caterer": "caterer", "Grocery Store": "grocery",
@@ -190,6 +190,8 @@ def classify(cats):
 def producer_kind(name, cats):
     if "Winery" in cats:
         return "winery"
+    if "Specialty Shop" in cats and "On-Farm / Ranch Sales" not in cats:
+        return "specialty_shop"
     if any(c in ("Bakery", "Food Maker") for c in cats) and "On-Farm / Ranch Sales" not in cats:
         return "maker"
     if "Meat Producer & Packer" in cats or re.search(r"\b(ranch|cattle|beef)\b", name, re.I):

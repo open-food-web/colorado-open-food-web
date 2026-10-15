@@ -49,6 +49,7 @@
    "orchard": "Orchards",
    "bakery": "Bakeries",
    "maker": "Food makers",
+   "specialty_shop": "Specialty shops",
    "winery": "Wineries"
   },
   "product_groups": {
@@ -835,18 +836,20 @@
    "id": "co-p-000007",
    "slug": "copper-kettle-apothecary",
    "name": "Copper Kettle Apothecary",
-   "kind": "maker",
+   "kind": "specialty_shop",
    "categories": [
-    "Food Maker"
+    "Specialty Shop"
    ],
    "products": [
     "Bulk herbs",
     "honey",
-    "lavender"
+    "lavender",
+    "seeds"
    ],
    "product_groups": [
     "garlic-herbs",
-    "honey"
+    "honey",
+    "seeds-plants"
    ],
    "dropin_visits": true,
    "dropin_hours": null,
@@ -855,7 +858,7 @@
     "dropin": "set",
     "pickup": "listing"
    },
-   "visit_note": "Apothecary shop focused on herbs: bulk herbs plus honey and lavender",
+   "visit_note": "Apothecary and specialty shop focused on herbs; also honey, lavender and seeds",
    "months_open": [],
    "hours_text": null,
    "hours": [],
