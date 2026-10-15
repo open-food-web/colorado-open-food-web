@@ -18,9 +18,12 @@ import json
 import math
 import os
 import re
+import sys
 
 FORMAT_VERSION = 1
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import products as PRODUCTS  # noqa: E402
 TOWNS = os.path.join(HERE, "..", "data", "towns.csv")
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
@@ -34,6 +37,8 @@ SOURCE_LABELS = {
     "cfma": "Colorado Farmers Market Association", "usda_lfd": "USDA Local Food Directories",
     "curated": "Farmers market vendor lists, checked by hand", "guidestone": "Guidestone Colorado review",
     "census_geocoder": "US Census geocoder", "reviewed": "Reviewed by hand", "maintainer": "Maintainer"}
+# What a producer calls itself (producers.kind). Farms and ranches are different things to a shopper.
+KIND_LABELS = {"farm": "Farms", "ranch": "Ranches", "orchard": "Orchards", "maker": "Food makers", "winery": "Wineries"}
 # Records with these statuses are not published. "removed" is listed by ID only.
 HIDDEN_STATUS = {"closed", "removed"}
 
@@ -163,6 +168,7 @@ def main():
         rec = {
             "id": pid, "slug": p["slug"], "name": p["name"], "kind": p["kind"],
             "categories": lst(p["categories"]), "products": lst(p["products"]),
+            "product_groups": lst(p.get("product_groups", "")),
             "months_open": [MONTHS[int(m) - 1] for m in lst(p["seasonal_months"])],
             "hours_text": p["hours_text"] or None, "website": p["website"] or None, "phone": p["phone"] or None,
             "email": p["email"] or None, "facebook": p["facebook"] or None, "instagram": p["instagram"] or None,
@@ -211,7 +217,8 @@ def main():
             "counts": {"producers": len(producers), "markets": len(markets), "access_points": len(access),
                        "pins": sum(l["pin"] for p in producers for l in p["locations"])
                        + len(markets) + len(access)}},
-        "vocab": {"sales_channels": CHANNEL_LABELS, "months": MONTHS},
+        "vocab": {"sales_channels": CHANNEL_LABELS, "months": MONTHS, "kinds": KIND_LABELS,
+                  "product_groups": PRODUCTS.LABELS},
         "producers": sorted(producers, key=lambda x: x["name"].lower()),
         "markets": sorted(markets, key=lambda x: x["name"].lower()),
         "access_points": sorted(access, key=lambda x: x["name"].lower()),

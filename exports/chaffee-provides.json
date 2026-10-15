@@ -41,7 +41,27 @@
    "October",
    "November",
    "December"
-  ]
+  ],
+  "kinds": {
+   "farm": "Farms",
+   "ranch": "Ranches",
+   "orchard": "Orchards",
+   "maker": "Food makers",
+   "winery": "Wineries"
+  },
+  "product_groups": {
+   "veggies": "Veggies",
+   "fruit": "Fruit",
+   "beef-meat": "Beef & meat",
+   "poultry-eggs": "Poultry & eggs",
+   "dairy": "Dairy",
+   "honey": "Honey",
+   "flowers": "Flowers",
+   "garlic-herbs": "Garlic & herbs",
+   "mushrooms": "Mushrooms",
+   "baked-goods": "Baked goods",
+   "drinks": "Wine & drinks"
+  }
  },
  "producers": [
   {
@@ -61,6 +81,9 @@
     "candles",
     "tanned hides",
     "breeding stock"
+   ],
+   "product_groups": [
+    "beef-meat"
    ],
    "months_open": [],
    "hours_text": null,
@@ -122,6 +145,10 @@
    "products": [
     "Grass-fed beef",
     "eggs"
+   ],
+   "product_groups": [
+    "beef-meat",
+    "poultry-eggs"
    ],
    "months_open": [],
    "hours_text": null,
@@ -275,6 +302,9 @@
     "whole-grain German rye",
     "babka"
    ],
+   "product_groups": [
+    "baked-goods"
+   ],
    "months_open": [],
    "hours_text": "Shop open mornings; preorder pickup Thu, Fri, Sun",
    "website": "https://banyanbreads.com/",
@@ -323,7 +353,7 @@
    "id": "co-p-000004",
    "slug": "buck-and-bloom-cheese-co",
    "name": "Buck and Bloom Cheese Co",
-   "kind": "farm",
+   "kind": "maker",
    "categories": [
     "On-Farm / Ranch Sales",
     "Agritourism"
@@ -336,6 +366,10 @@
     "pepperjack",
     "cave-aged)",
     "eggs"
+   ],
+   "product_groups": [
+    "poultry-eggs",
+    "dairy"
    ],
    "months_open": [],
    "hours_text": null,
@@ -400,6 +434,9 @@
     "cabbage",
     "broccoli",
     "pumpkins"
+   ],
+   "product_groups": [
+    "veggies"
    ],
    "months_open": [],
    "hours_text": null,
@@ -466,6 +503,9 @@
     "culinary vinegars",
     "dried lavender bouquets"
    ],
+   "product_groups": [
+    "flowers"
+   ],
    "months_open": [],
    "hours_text": "Not open to the public. Order online.",
    "website": "https://co-mtn-lav.com/",
@@ -521,12 +561,15 @@
    "id": "co-p-000007",
    "slug": "copper-kettle-apothecary",
    "name": "Copper Kettle Apothecary",
-   "kind": "farm",
+   "kind": "ranch",
    "categories": [
     "On-Farm / Ranch Sales"
    ],
    "products": [
     "Spices/Garlic"
+   ],
+   "product_groups": [
+    "garlic-herbs"
    ],
    "months_open": [],
    "hours_text": null,
@@ -594,6 +637,7 @@
     "Tours",
     "Value-Added Non-Food Products"
    ],
+   "product_groups": [],
    "months_open": [],
    "hours_text": null,
    "website": "http://elementscompost.com",
@@ -648,6 +692,9 @@
    ],
    "products": [
     "Beef/Meat"
+   ],
+   "product_groups": [
+    "beef-meat"
    ],
    "months_open": [],
    "hours_text": null,
@@ -708,6 +755,7 @@
     "Agritourism"
    ],
    "products": [],
+   "product_groups": [],
    "months_open": [],
    "hours_text": "Tue: 4:00pm - 6:00pm",
    "website": "https://www.GuidestoneColorado.org",
@@ -767,6 +815,9 @@
     "wildflowers",
     "pumpkins (pumpkin patch)",
     "CSA shares"
+   ],
+   "product_groups": [
+    "veggies"
    ],
    "months_open": [],
    "hours_text": null,
@@ -828,6 +879,9 @@
    "products": [
     "Grass-fed beef"
    ],
+   "product_groups": [
+    "beef-meat"
+   ],
    "months_open": [],
    "hours_text": null,
    "website": "https://www.hutchranchsalida.com",
@@ -888,6 +942,9 @@
    "products": [
     "Beef/Meat"
    ],
+   "product_groups": [
+    "beef-meat"
+   ],
    "months_open": [],
    "hours_text": null,
    "website": null,
@@ -947,6 +1004,9 @@
    ],
    "products": [
     "Dairy"
+   ],
+   "product_groups": [
+    "dairy"
    ],
    "months_open": [],
    "hours_text": null,
@@ -1012,6 +1072,9 @@
     "classes",
     "CSA membership"
    ],
+   "product_groups": [
+    "mushrooms"
+   ],
    "months_open": [],
    "hours_text": null,
    "website": "http://www.mushroomloveco.com",
@@ -1075,6 +1138,9 @@
     "summer flower subscriptions",
     "bouquets"
    ],
+   "product_groups": [
+    "flowers"
+   ],
    "months_open": [],
    "hours_text": "By appointment",
    "website": "https://www.phytologyflowers.com",
@@ -1136,6 +1202,10 @@
     "Microgreens",
     "sunflower shoots",
     "pea shoots"
+   ],
+   "product_groups": [
+    "veggies",
+    "flowers"
    ],
    "months_open": [],
    "hours_text": "By appointment",
@@ -1199,6 +1269,10 @@
    "products": [
     "Hardneck garlic",
     "vegetables"
+   ],
+   "product_groups": [
+    "veggies",
+    "garlic-herbs"
    ],
    "months_open": [
     "May",
@@ -1301,6 +1375,9 @@
     "hamburger)",
     "grass-fed and corn-finished cattle"
    ],
+   "product_groups": [
+    "beef-meat"
+   ],
    "months_open": [],
    "hours_text": null,
    "website": "http://www.salidacattlecompany.com",
@@ -1361,6 +1438,10 @@
    "products": [
     "Beef/Meat",
     "Poultry/Eggs"
+   ],
+   "product_groups": [
+    "beef-meat",
+    "poultry-eggs"
    ],
    "months_open": [],
    "hours_text": null,
@@ -1425,6 +1506,12 @@
     "Staples",
     "Flowers"
    ],
+   "product_groups": [
+    "beef-meat",
+    "poultry-eggs",
+    "honey",
+    "flowers"
+   ],
    "months_open": [],
    "hours_text": null,
    "website": null,
@@ -1485,6 +1572,9 @@
    "products": [
     "Bread",
     "Chocolate & Cocoa Products"
+   ],
+   "product_groups": [
+    "baked-goods"
    ],
    "months_open": [],
    "hours_text": null,
@@ -1550,6 +1640,12 @@
     "sausages",
     "frozen treats"
    ],
+   "product_groups": [
+    "veggies",
+    "beef-meat",
+    "flowers",
+    "garlic-herbs"
+   ],
    "months_open": [],
    "hours_text": "Pick-your-own flowers by appointment, June–October",
    "website": "https://www.thetriangleoasis.com/",
@@ -1609,6 +1705,10 @@
     "Specialty cut flowers",
     "produce"
    ],
+   "product_groups": [
+    "veggies",
+    "flowers"
+   ],
    "months_open": [],
    "hours_text": null,
    "website": "https://www.troutcreekfarm.com",
@@ -1662,7 +1762,7 @@
    "id": "co-p-000028",
    "slug": "valley-roots-food-hub",
    "name": "Valley Roots Food Hub",
-   "kind": "farm",
+   "kind": "ranch",
    "categories": [
     "On-Farm / Ranch Sales"
    ],
@@ -1671,6 +1771,12 @@
     "meat",
     "cheese",
     "eggs"
+   ],
+   "product_groups": [
+    "veggies",
+    "beef-meat",
+    "poultry-eggs",
+    "dairy"
    ],
    "months_open": [],
    "hours_text": null,
@@ -1734,6 +1840,9 @@
     "Events",
     "Wine"
    ],
+   "product_groups": [
+    "drinks"
+   ],
    "months_open": [],
    "hours_text": null,
    "website": null,
@@ -1793,6 +1902,12 @@
     "pasture-raised lamb",
     "pork",
     "poultry"
+   ],
+   "product_groups": [
+    "veggies",
+    "fruit",
+    "beef-meat",
+    "poultry-eggs"
    ],
    "months_open": [],
    "hours_text": "Tue-Sun: 8:00am - 6:00pm",

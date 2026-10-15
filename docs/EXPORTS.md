@@ -48,8 +48,9 @@ python scripts/export_app.py --tables data/chaffee-county --out exports/chaffee-
 | Field | Type | Notes |
 |---|---|---|
 | `id`, `slug`, `name` | string | IDs are permanent; slugs may change |
-| `kind` | string | `farm`, `ranch`, `orchard`, `maker`, `winery` |
+| `kind` | string | `farm`, `ranch`, `orchard`, `maker`, `winery`. Labels are in `vocab.kinds` |
 | `categories`, `products` | list | From the Food Web vocabularies |
+| `product_groups` | list | What people search by: honey, beef and meat, eggs, veggies... Labels are in `vocab.product_groups` |
 | `months_open` | list | Month names. Empty = unknown |
 | `hours_text` | string/null | Free text |
 | `website`, `phone`, `email`, `facebook`, `instagram` | string/null | Public business contact only |
