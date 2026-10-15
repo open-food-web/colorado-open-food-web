@@ -97,4 +97,4 @@ python scripts/change_report.py --before <tables built from main> --after data/c
 
 ## Follow-up, Oct 16: red means closed
 
-The maintainer confirmed that red on Alycen's sheet means the business is closed. Vino Salida Wine Cellars (website expired) and The Ark Angel were marked red but still listed, so both are now removed. Market on Main St (The Triangle Oasis) is also red but its own site still lists it, and Colorado Mountain Lavender is red but sells online; both are being checked with Alycen.
+The maintainer confirmed that red on Alycen's sheet means the business is closed. Vino Salida Wine Cellars (website expired) and The Ark Angel were marked red but still listed, so both are now removed. Market on Main St (The Triangle Oasis) is also red but its own site still lists it, so it is being checked with Alycen. Colorado Mountain Lavender is red but sells online; the maintainer decided to keep it listed as online-only.
