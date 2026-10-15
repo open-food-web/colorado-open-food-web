@@ -25,6 +25,7 @@ links, with very little manual input required. Manual input is still welcome
 | Dedup + possible-dup flags for human review | `merge.py` | New records land without duplicating old ones |
 | Link checker with confirmed-BROKEN-only rule | `scripts/check_links.py`, [`LINK_CHECKING.md`](LINK_CHECKING.md) | Link health signal with a low false-positive bar |
 | Human intake | [`BUSINESS_SUBMISSIONS.md`](BUSINESS_SUBMISSIONS.md) form | Manual input path, already live |
+| Entity registry | `scripts/scrape/registry.py`, [`ENTITY_REGISTRY.md`](ENTITY_REGISTRY.md) | Remembers businesses we declined, closed, merged or could not resolve, so a source cannot bring them back as "new" |
 
 The engine is mostly *orchestration and memory* on top of these: run the pulls on
 a schedule, remember what we knew last time, diff, and act by rule.

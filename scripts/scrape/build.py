@@ -21,7 +21,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from scrape import geocode, normalize, snapshots
+from scrape import geocode, ledger, normalize, registry, snapshots
 from scrape.merge import (apply_decisions, apply_overrides, flag_possible_dups,
                           load_decisions, load_overrides, merge)
 from scrape.normalize import in_colorado
@@ -138,9 +138,10 @@ def write(markets: list) -> None:
         w = csv.DictWriter(fh, fieldnames=COLUMNS)
         w.writeheader()
         for m in markets:
-            w.writerow(m.to_mymaps_row())
+            if m.status != "Closed":   # closed businesses stay in the raw CSV only
+                w.writerow(m.to_mymaps_row())
 
-    extra = ["Source", "Geo Source", "Possible Dup Of", "Provenance",
+    extra = ["Status", "Year Opened", "Source", "Geo Source", "Possible Dup Of", "Provenance",
              "Source ID", "Source Updated",
              "Public Listing", "Hide Address", "Local Sales Channel", "Sales Channels", "Sales Locations"]
     with open(raw, "w", newline="", encoding="utf-8-sig") as fh:
@@ -148,6 +149,8 @@ def write(markets: list) -> None:
         w.writeheader()
         for m in markets:
             row = m.to_mymaps_row(public=False)   # the raw data keeps hidden addresses
+            row["Status"] = m.status or "Open"
+            row["Year Opened"] = m.year_opened
             row["Source"] = m.source
             row["Geo Source"] = m.geo_source
             row["Possible Dup Of"] = m.dup_hint
@@ -161,7 +164,8 @@ def write(markets: list) -> None:
             row["Sales Locations"] = m.sales_locations
             w.writerow(row)
 
-    print(f"Wrote {len(markets)} markets:\n  {mymaps}\n  {raw}")
+    closed = sum(m.status == "Closed" for m in markets)
+    print(f"Wrote {len(markets)} markets ({closed} marked Closed, kept out of the public directory):\n  {mymaps}\n  {raw}")
 
 
 def main() -> None:
@@ -187,9 +191,17 @@ def main() -> None:
     apply_overrides(markets, overrides)
     if overrides:
         print(f"Applied {len(overrides)} curated overrides.")
+    # Entity registry: businesses we decided not to list, or that closed or were folded into
+    # another, must not come back from a source as if they were new.
+    added = registry.sync()   # capture decisions made in the curated, overrides and dedup files
+    if added:
+        print(f"Registry: {added} new decisions recorded (inputs/registry/decisions.csv).")
+    markets = registry.guard(markets)
     flag_possible_dups(markets, distinct=distinct)
     markets.sort(key=lambda m: (m.city.lower(), m.business_name.lower()))
     write(markets)
+    events = ledger.update(markets)
+    print(f"Ledger: {events} new events (inputs/ledger/transactions.csv).")
     dups = sum(1 for m in markets if m.dup_hint)
     if dups:
         print(f"{dups} markets flagged 'Possible Dup Of' for review (see raw CSV).")
