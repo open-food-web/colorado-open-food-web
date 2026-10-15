@@ -835,91 +835,6 @@
    ]
   },
   {
-   "id": "co-p-000007",
-   "slug": "copper-kettle-apothecary",
-   "name": "Copper Kettle Apothecary",
-   "kind": "ranch",
-   "categories": [
-    "On-Farm / Ranch Sales"
-   ],
-   "products": [
-    "Spices/Garlic"
-   ],
-   "product_groups": [
-    "garlic-herbs"
-   ],
-   "dropin_visits": true,
-   "dropin_hours": null,
-   "farm_pickup": true,
-   "visit_basis": {
-    "dropin": "set",
-    "pickup": "listing"
-   },
-   "visit_note": "Retail shop selling bulk herbs",
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": null,
-   "phone": "(719) 530-7111",
-   "email": null,
-   "facebook": "https://www.facebook.com/copperkettleapothecary/",
-   "instagram": null,
-   "sales_channels": [],
-   "sells_at": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000008",
-     "role": "home_base",
-     "name": null,
-     "address": "138 w 1st street",
-     "city": "Salida",
-     "zip": "81201",
-     "county_fips": "08015",
-     "lat": 38.536715,
-     "lon": -105.992351,
-     "precision": "exact",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed",
-     "confirm_url": null
-    }
-   ],
-   "sources": [
-    {
-     "source": "producer_site",
-     "label": "Producer's own website",
-     "url": null
-    },
-    {
-     "source": "chaffee_provides",
-     "label": "Chaffee Provides",
-     "url": null
-    }
-   ],
-   "confirmed_by": [
-    {
-     "by": "Guidestone Colorado",
-     "fields": [
-      "phone"
-     ],
-     "url": null,
-     "date": "2026-10-13"
-    }
-   ]
-  },
-  {
    "id": "co-p-000317",
    "slug": "dram-apothecary",
    "name": "DRAM Apothecary",
@@ -3042,6 +2957,90 @@
      "date": "2026-10-15"
     }
    ]
+  },
+  {
+   "id": "co-p-001242",
+   "slug": "the-farmstand",
+   "name": "The Farmstand",
+   "kind": "farm",
+   "categories": [
+    "Roadside Market"
+   ],
+   "products": [
+    "Eggs",
+    "honey",
+    "flowers",
+    "produce",
+    "baked goods",
+    "jams",
+    "tallow balms",
+    "soaps"
+   ],
+   "product_groups": [
+    "veggies",
+    "poultry-eggs",
+    "honey",
+    "flowers",
+    "baked-goods"
+   ],
+   "dropin_visits": true,
+   "dropin_hours": null,
+   "farm_pickup": true,
+   "visit_basis": {
+    "dropin": "listing",
+    "pickup": "listing"
+   },
+   "visit_note": null,
+   "months_open": [],
+   "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
+   "website": null,
+   "phone": null,
+   "email": null,
+   "facebook": "https://www.facebook.com/p/the-farmstand-61576733552283/",
+   "instagram": null,
+   "sales_channels": [
+    "farm_stand"
+   ],
+   "sells_at": [],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-001510",
+     "role": "home_base",
+     "name": null,
+     "address": "County Road 306",
+     "city": "Buena Vista",
+     "zip": "81211",
+     "county_fips": "08015",
+     "lat": 38.81435,
+     "lon": -106.276176,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": null
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ],
+   "confirmed_by": []
   },
   {
    "id": "co-p-000026",

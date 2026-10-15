@@ -57,7 +57,8 @@ PRODUCER_CATS = {"On-Farm / Ranch Sales", "Meat Producer & Packer", "Farm Produc
 # Outlet categories. Garden Center only makes an outlet row when nothing else says the business
 # is a producer (a garlic farm with a greenhouse is a producer, not a garden center).
 OUTLET_KIND = {"Restaurant": "restaurant", "Caterer": "caterer", "Grocery Store": "grocery",
-               "Farm Store": "farm_store", "Garden Center / Greenhouse": "garden_center"}
+               "Farm Store": "farm_store", "Garden Center / Greenhouse": "garden_center",
+               "Apothecary": "apothecary"}
 # Food access points (v1: community fridges; pantries and meal sites can join this list when wanted).
 ACCESS_KIND = {"Community Fridge": "community_fridge"}
 BADGES = {"Sells to Schools"}

@@ -37,6 +37,7 @@ outlet,co-o-000008,colorado_proud,,,,unchecked
 producer,co-p-000053,colorado_proud,,,,unchecked
 producer,co-p-000054,curated,,,,unchecked
 producer,co-p-000055,colorado_proud,,,,unchecked
+producer,co-p-001240,curated,,,,unchecked
 producer,co-p-001232,curated,,,,unchecked
 producer,co-p-001232,colorado_proud,,,,unchecked
 producer,co-p-000057,colorado_proud,,,,unchecked
@@ -353,8 +354,8 @@ producer,co-p-000248,colorado_proud,,,,unchecked
 outlet,co-o-000032,colorado_proud,,,,unchecked
 producer,co-p-000249,colorado_proud,,,,unchecked
 producer,co-p-000250,usda_lfd,,,,unchecked
-producer,co-p-000007,producer_site,,,,unchecked
-producer,co-p-000007,chaffee_provides,,copper-kettle-apothecary,,unchecked
+outlet,co-o-000159,producer_site,,,,unchecked
+outlet,co-o-000159,chaffee_provides,,copper-kettle-apothecary,,unchecked
 producer,co-p-000251,usda_lfd,,,,unchecked
 market,co-m-000034,producer_site,https://www.cortezfarmersmarket.com/,,,unchecked
 market,co-m-000034,cfma,,,,unchecked
@@ -1149,6 +1150,8 @@ producer,co-p-000725,curated,,,,unchecked
 producer,co-p-000726,colorado_proud,,,,unchecked
 producer,co-p-000727,curated,,,,unchecked
 outlet,co-o-000092,curated,,,,unchecked
+producer,co-p-001241,curated,,,,unchecked
+outlet,co-o-000160,curated,,,,unchecked
 producer,co-p-000017,producer_site,https://mountaingoatlodge.com,,,unchecked
 producer,co-p-000017,chaffee_provides,,mountain-goat-lodge,,unchecked
 producer,co-p-000728,colorado_proud,,,,unchecked
@@ -1685,6 +1688,7 @@ producer,co-p-001068,usda_lfd,,,,unchecked
 producer,co-p-001069,colorado_proud,,,,unchecked
 producer,co-p-001070,colorado_proud,,,,unchecked
 outlet,co-o-000139,colorado_proud,,,,unchecked
+producer,co-p-001242,curated,,,,unchecked
 producer,co-p-001071,colorado_proud,,,,unchecked
 outlet,co-o-000140,colorado_proud,,,,unchecked
 producer,co-p-001072,colorado_proud,,,,unchecked

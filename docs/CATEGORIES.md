@@ -26,6 +26,7 @@ by `scripts/tests/test_categories.py`. A record can carry several labels, primar
 | Distribute | **Distributor / Aggregator** *(new)* | wholesalers, distributors, resellers and aggregators of local product |
 | Distribute | **Market Vendor** *(new)* | verified producers who sell through farmers markets and have no separate sales location |
 | Sell / serve | Farmers' Market, Farm Store, Grocery Store, Restaurant, Caterer | existing |
+| Sell / serve | **Apothecary** *(new)* | herb and apothecary shops that sell herbs, honey, seeds and the like (Copper Kettle Apothecary). An outlet, filed under Shops & Grocers |
 | Sell / serve | **Food Truck**, **Cafe / Coffee Shop** *(new)* | mobile and counter-service food businesses |
 | Support | Food Bank, Organization | existing |
 | Support | **Ag Input Supplier** *(new)* | feed, soil, compost, worm castings, equipment |

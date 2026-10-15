@@ -208,7 +208,7 @@ prices or descriptions. One record per location; chains share a `brand`.
 | `outlet_id` | string | fact | Required. Primary key |
 | `slug` | string | fact | Page path |
 | `name` | string | fact | Required |
-| `kind` | enum | controlled | Dining: `restaurant`, `caterer`, `food_truck`, `cafe`, `bar_or_taproom`, `other_dining`. Retail: `grocery`, `farm_store`, `garden_center`, `other_retail` |
+| `kind` | enum | controlled | Dining: `restaurant`, `caterer`, `food_truck`, `cafe`, `bar_or_taproom`, `other_dining`. Retail: `grocery`, `farm_store`, `garden_center`, `apothecary` (herb and apothecary shops, which can also sell honey, seeds and the like), `other_retail` |
 | `brand` | string | fact | Chain or group name, for multi-location businesses |
 | `location_id` | string | fact | FK. Required |
 | `website`, `phone` | string | fact | Public business contact |
@@ -293,7 +293,7 @@ Provenance for each populated field. Attribution for the public release is built
 
 - **Categories** follow the existing labels (Farmers' Market, On-Farm / Ranch Sales, Meat Producer &
   Packer, Farm Products (online), Agritourism, CSA Farm, Roadside Market, U-Pick, Garden Center /
-  Greenhouse, Winery, Grocery Store, Farm Store, Bakery, Food Maker, Restaurant, Caterer, Wholesale
+  Greenhouse, Winery, Grocery Store, Farm Store, Apothecary, Bakery, Food Maker, Restaurant, Caterer, Wholesale
   Grower, Food Hub, Food Bank, Community Food Hub, Organization), plus the badge "Sells to Schools".
   The Farm Trail's map groups are an app concern and stay in the app.
 - **Products** reuse the normalized product list from the Farm Trail data.
