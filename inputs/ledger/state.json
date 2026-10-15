@@ -1457,7 +1457,7 @@
 },
 "alpine mushrooms valley|saguache": {
 "Address": "319 San Juan Avenue",
-"Category": "Other, On-Farm / Ranch Sales",
+"Category": "Market Vendor, On-Farm / Ranch Sales",
 "County": "Saguache",
 "Email": "",
 "Hours": "",
@@ -9969,7 +9969,7 @@
 },
 "company honey westcliffe|westcliffe": {
 "Address": "",
-"Category": "Other",
+"Category": "Market Vendor",
 "County": "",
 "Email": "",
 "Hours": "",
@@ -10193,7 +10193,7 @@
 },
 "compost elements mountain|salida": {
 "Address": "9255 County Road 140",
-"Category": "On-Farm / Ranch Sales, Food Maker",
+"Category": "Ag Input Supplier",
 "County": "Chaffee",
 "Email": "sales@elementscompost.com",
 "Hours": "",
@@ -10961,7 +10961,7 @@
 },
 "creations microgreen|buena vista": {
 "Address": "",
-"Category": "Other",
+"Category": "Market Vendor",
 "County": "",
 "Email": "",
 "Hours": "",
@@ -14417,7 +14417,7 @@
 },
 "farm foxtown|buena vista": {
 "Address": "",
-"Category": "Other",
+"Category": "Market Vendor",
 "County": "",
 "Email": "",
 "Hours": "",
@@ -17377,7 +17377,7 @@
 },
 "feedsack flowers|center": {
 "Address": "",
-"Category": "Other",
+"Category": "Market Vendor",
 "County": "",
 "Email": "",
 "Hours": "",
@@ -19073,7 +19073,7 @@
 },
 "gourmet greens greg s|poncha springs": {
 "Address": "",
-"Category": "Other",
+"Category": "Market Vendor",
 "County": "",
 "Email": "",
 "Hours": "",
@@ -22001,7 +22001,7 @@
 },
 "miss mountain penn s seeds|westcliffe": {
 "Address": "",
-"Category": "Other",
+"Category": "Market Vendor",
 "County": "",
 "Email": "",
 "Hours": "",
