@@ -8351,22 +8351,6 @@
 "name": "PBJ Cattle Company",
 "source": "colorado_proud_finder"
 },
-"cattle company salida|": {
-"Address": "",
-"Category": "On-Farm / Ranch Sales",
-"County": "Chaffee",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "(719) 221-2267",
-"Products": "Beef (steaks, hamburger), grass-fed and corn-finished cattle",
-"Status": "Open",
-"Website": "http://www.salidacattlecompany.com",
-"Year Opened": "",
-"city": "",
-"name": "Salida Cattle Company",
-"source": "official-site+chaffee_provides"
-},
 "cattle double hay j peterson ranch|gunnison": {
 "Address": "",
 "Category": "Meat Producer & Packer, Farm Products (online)",
@@ -18849,7 +18833,7 @@
 },
 "goat lodge mountain|salida": {
 "Address": "9582 US Highway 285",
-"Category": "On-Farm / Ranch Sales",
+"Category": "Agritourism",
 "County": "Chaffee",
 "Email": "mtglodge@gmail.com",
 "Hours": "",
@@ -22221,22 +22205,6 @@
 "Year Opened": "",
 "city": "Colorado Springs",
 "name": "Rise N’ Shine Ranch",
-"source": "colorado_proud_finder"
-},
-"n shack snack wag woof|coaldale": {
-"Address": "PO Box 43",
-"Category": "Bakery",
-"County": "Fremont",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "(719) 207-5107",
-"Products": "Animal & Pet Food",
-"Status": "Open",
-"Website": "http://www.woofnwagsnackshack.com",
-"Year Opened": "",
-"city": "Coaldale",
-"name": "Woof n’ Wag Snack Shack LLC",
 "source": "colorado_proud_finder"
 },
 "nahmdy nuts s|colorado springs": {

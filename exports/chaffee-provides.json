@@ -10,11 +10,11 @@
   ],
   "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
   "counts": {
-   "producers": 31,
+   "producers": 25,
    "markets": 2,
    "access_points": 2,
-   "market_links": 26,
-   "pins": 29
+   "market_links": 22,
+   "pins": 21
   }
  },
  "vocab": {
@@ -444,211 +444,6 @@
      "date": null
     }
    ]
-  },
-  {
-   "id": "co-p-000003",
-   "slug": "banyan-breads",
-   "name": "Banyan Breads",
-   "kind": "maker",
-   "categories": [
-    "Bakery"
-   ],
-   "products": [
-    "Country sourdough",
-    "maple whole wheat",
-    "sourdough bagels",
-    "baguette",
-    "whole-grain German rye",
-    "babka"
-   ],
-   "product_groups": [
-    "baked-goods"
-   ],
-   "dropin_visits": true,
-   "dropin_hours": "Mornings, until sold out",
-   "farm_pickup": true,
-   "visit_basis": {
-    "dropin": "set",
-    "pickup": "listing"
-   },
-   "visit_note": "Shop at 110 E 1st St, Salida, open mornings until sold out",
-   "months_open": [],
-   "hours_text": "Shop open mornings; preorder pickup Thu, Fri, Sun",
-   "hours": [],
-   "hours_status": "text_only",
-   "website": "https://banyanbreads.com/",
-   "phone": null,
-   "email": null,
-   "facebook": null,
-   "instagram": "https://www.instagram.com/banyan_breads/",
-   "sales_channels": [
-    "farm_stand",
-    "farmers_market",
-    "pickup"
-   ],
-   "sells_at": [
-    {
-     "market_id": "co-m-000002",
-     "name": "Salida Farmers Market",
-     "county_fips": "08015",
-     "year": 2026,
-     "season_label": null,
-     "basis": "exact_name",
-     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
-    }
-   ],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000003",
-     "role": "home_base",
-     "name": null,
-     "address": "110 E 1st Street",
-     "city": "Salida",
-     "zip": "81201",
-     "county_fips": "08015",
-     "lat": 38.536237,
-     "lon": -105.991583,
-     "precision": "exact",
-     "pin": true,
-     "pin_basis": "confirmed",
-     "days": [],
-     "hours_text": "Shop open mornings; preorder pickup Thu, Fri, Sun",
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "curated",
-     "label": "Farmers market vendor lists, checked by hand",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
-  },
-  {
-   "id": "co-p-000172",
-   "slug": "bristlecone-bakeshop",
-   "name": "Bristlecone Bakeshop",
-   "kind": "maker",
-   "categories": [
-    "Bakery"
-   ],
-   "products": [
-    "Sourdough loaves",
-    "sweet and savory pastries",
-    "breakfast sandwiches",
-    "cookies",
-    "cold sandwiches"
-   ],
-   "product_groups": [
-    "baked-goods"
-   ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": "Wed–Sat 7am–2pm; Sun 7am–12pm",
-   "hours": [
-    {
-     "day": "wed",
-     "opens": "07:00",
-     "closes": "14:00"
-    },
-    {
-     "day": "thu",
-     "opens": "07:00",
-     "closes": "14:00"
-    },
-    {
-     "day": "fri",
-     "opens": "07:00",
-     "closes": "14:00"
-    },
-    {
-     "day": "sat",
-     "opens": "07:00",
-     "closes": "14:00"
-    },
-    {
-     "day": "sun",
-     "opens": "07:00",
-     "closes": "12:00"
-    }
-   ],
-   "hours_status": "parsed",
-   "website": "https://www.bristleconebakeshop.com/",
-   "phone": "(908) 451-5727",
-   "email": "maggie@bristleconebakeshop.com",
-   "facebook": null,
-   "instagram": "https://www.instagram.com/bristlecone_bakeshop/",
-   "sales_channels": [],
-   "sells_at": [
-    {
-     "market_id": "co-m-000002",
-     "name": "Salida Farmers Market",
-     "county_fips": "08015",
-     "year": 2026,
-     "season_label": null,
-     "basis": "exact_name",
-     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
-    }
-   ],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000213",
-     "role": "home_base",
-     "name": null,
-     "address": "15 S. Main St",
-     "city": "Alma",
-     "zip": "80420",
-     "county_fips": "08093",
-     "lat": 39.283437,
-     "lon": -106.062459,
-     "precision": "exact",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [
-      "wed",
-      "thu",
-      "fri",
-      "sat",
-      "sun"
-     ],
-     "hours_text": "Wed–Sat 7am–2pm; Sun 7am–12pm",
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "curated",
-     "label": "Farmers market vendor lists, checked by hand",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
   },
   {
    "id": "co-p-000004",
@@ -1229,14 +1024,14 @@
      "id": "co-loc-000012",
      "role": "home_base",
      "name": null,
-     "address": "8955 County Road 166",
+     "address": null,
      "city": "Salida",
-     "zip": "81201",
+     "zip": null,
      "county_fips": "08015",
-     "lat": 38.565968,
-     "lon": -106.046544,
-     "precision": "exact",
-     "pin": true,
+     "lat": 38.5347,
+     "lon": -105.9989,
+     "precision": "town",
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": null,
@@ -1471,7 +1266,7 @@
     "dropin": null,
     "pickup": null
    },
-   "visit_note": null,
+   "visit_note": "Sells beef directly; none available right now. Ask by email or phone",
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -1614,91 +1409,6 @@
     }
    ],
    "confirmed_by": []
-  },
-  {
-   "id": "co-p-000017",
-   "slug": "mountain-goat-lodge",
-   "name": "Mountain Goat Lodge",
-   "kind": "farm",
-   "categories": [
-    "On-Farm / Ranch Sales"
-   ],
-   "products": [
-    "Dairy"
-   ],
-   "product_groups": [
-    "dairy"
-   ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": "https://mountaingoatlodge.com",
-   "phone": "(206) 218-8201",
-   "email": "mtglodge@gmail.com",
-   "facebook": "https://www.facebook.com/Mountaingoatlodge",
-   "instagram": "https://www.instagram.com/mountaingoatlodge",
-   "sales_channels": [],
-   "sells_at": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000020",
-     "role": "home_base",
-     "name": null,
-     "address": "9582 US Highway 285",
-     "city": "Salida",
-     "zip": "81201",
-     "county_fips": "08015",
-     "lat": 38.558605,
-     "lon": -106.08301,
-     "precision": "exact",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "producer_site",
-     "label": "Producer's own website",
-     "url": "https://mountaingoatlodge.com"
-    },
-    {
-     "source": "chaffee_provides",
-     "label": "Chaffee Provides",
-     "url": null
-    }
-   ],
-   "confirmed_by": [
-    {
-     "by": "the business's own website",
-     "fields": [
-      "email",
-      "phone"
-     ],
-     "url": "https://mountaingoatlodge.com",
-     "date": null
-    }
-   ]
   },
   {
    "id": "co-p-000018",
@@ -2132,94 +1842,6 @@
    ]
   },
   {
-   "id": "co-p-000862",
-   "slug": "raisin-rye",
-   "name": "Raisin' Rye",
-   "kind": "maker",
-   "categories": [
-    "Bakery"
-   ],
-   "products": [
-    "Sourdough breads and bagels",
-    "rye",
-    "scones",
-    "muffins",
-    "gluten-free brownies",
-    " coffee"
-   ],
-   "product_groups": [
-    "baked-goods",
-    "drinks"
-   ],
-   "dropin_visits": true,
-   "dropin_hours": null,
-   "farm_pickup": true,
-   "visit_basis": {
-    "dropin": "set",
-    "pickup": "listing"
-   },
-   "visit_note": "Walk-in bakery at 675 Grand Ave, Del Norte (weekday and Saturday hours differ by source)",
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": null,
-   "phone": "(719) 588-2857",
-   "email": null,
-   "facebook": "https://www.facebook.com/raisinrye/",
-   "instagram": "https://www.instagram.com/raisinryebakery/",
-   "sales_channels": [
-    "farm_stand"
-   ],
-   "sells_at": [
-    {
-     "market_id": "co-m-000002",
-     "name": "Salida Farmers Market",
-     "county_fips": "08015",
-     "year": 2026,
-     "season_label": null,
-     "basis": "exact_name",
-     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
-    }
-   ],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-001067",
-     "role": "home_base",
-     "name": null,
-     "address": "675 Grand Ave",
-     "city": "Del Norte",
-     "zip": "81132",
-     "county_fips": "08105",
-     "lat": 37.678741,
-     "lon": -106.353694,
-     "precision": "exact",
-     "pin": true,
-     "pin_basis": "confirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "curated",
-     "label": "Farmers market vendor lists, checked by hand",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
-  },
-  {
    "id": "co-p-000021",
    "slug": "rocky-mountain-garlic",
    "name": "Rocky Mountain Garlic",
@@ -2390,92 +2012,6 @@
       "products"
      ],
      "url": "https://www.rockymountaingarlic.net/",
-     "date": null
-    }
-   ]
-  },
-  {
-   "id": "co-p-000022",
-   "slug": "salida-cattle-company",
-   "name": "Salida Cattle Company",
-   "kind": "ranch",
-   "categories": [
-    "On-Farm / Ranch Sales"
-   ],
-   "products": [
-    "Beef (steaks",
-    "hamburger)",
-    "grass-fed and corn-finished cattle"
-   ],
-   "product_groups": [
-    "beef-meat"
-   ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": "http://www.salidacattlecompany.com",
-   "phone": "(719) 221-2267",
-   "email": null,
-   "facebook": null,
-   "instagram": null,
-   "sales_channels": [],
-   "sells_at": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000025",
-     "role": "home_base",
-     "name": null,
-     "address": null,
-     "city": "Salida",
-     "zip": null,
-     "county_fips": "08015",
-     "lat": 38.5347,
-     "lon": -105.9989,
-     "precision": "town",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "producer_site",
-     "label": "Producer's own website",
-     "url": "http://www.salidacattlecompany.com"
-    },
-    {
-     "source": "chaffee_provides",
-     "label": "Chaffee Provides",
-     "url": null
-    }
-   ],
-   "confirmed_by": [
-    {
-     "by": "the business's own website",
-     "fields": [
-      "products"
-     ],
-     "url": "http://www.salidacattlecompany.com",
      "date": null
     }
    ]
@@ -2882,7 +2418,10 @@
    "email": "beth@troutcreekfarm.com",
    "facebook": null,
    "instagram": null,
-   "sales_channels": [],
+   "sales_channels": [
+    "online",
+    "wholesale"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -2903,7 +2442,7 @@
      "lat": 38.796609,
      "lon": -106.094898,
      "precision": "exact",
-     "pin": true,
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": null,
@@ -3151,86 +2690,6 @@
     }
    ],
    "confirmed_by": []
-  },
-  {
-   "id": "co-p-001212",
-   "slug": "woof-n-wag-snack-shack-llc",
-   "name": "Woof n’ Wag Snack Shack LLC",
-   "kind": "maker",
-   "categories": [
-    "Bakery"
-   ],
-   "products": [
-    "Animal & Pet Food"
-   ],
-   "product_groups": [
-    "baked-goods"
-   ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": "http://www.woofnwagsnackshack.com",
-   "phone": "(719) 207-5107",
-   "email": null,
-   "facebook": "https://www.facebook.com/share/1U3hYPBUPX/?mibextid=wwXIfr",
-   "instagram": "https://www.instagram.com/woofnwagsnackshack?igsh=N3lrdHBzZGtzYjZp&utm_source=qr",
-   "sales_channels": [],
-   "sells_at": [
-    {
-     "market_id": "co-m-000002",
-     "name": "Salida Farmers Market",
-     "county_fips": "08015",
-     "year": 2026,
-     "season_label": null,
-     "basis": "normalized_name",
-     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
-    }
-   ],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-001471",
-     "role": "home_base",
-     "name": null,
-     "address": null,
-     "city": "Coaldale",
-     "zip": "81222",
-     "county_fips": "08043",
-     "lat": 38.359871,
-     "lon": -105.755656,
-     "precision": "approximate",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "colorado_proud",
-     "label": "Colorado Proud",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
   }
  ],
  "markets": [
@@ -3313,17 +2772,13 @@
    "vendors": [
     "co-p-000001",
     "co-p-000002",
-    "co-p-000003",
     "co-p-000004",
     "co-p-000012",
     "co-p-000021",
     "co-p-000026",
     "co-p-000056",
-    "co-p-000172",
     "co-p-000792",
-    "co-p-000862",
-    "co-p-001031",
-    "co-p-001212"
+    "co-p-001031"
    ],
    "website": "https://foodshedalliance.com",
    "phone": "(719) 207-5787",

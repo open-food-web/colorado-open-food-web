@@ -110,12 +110,14 @@ def main():
                     help="also include records that this source lists, even outside the county")
     ap.add_argument("--unconfirmed-home-pins", choices=["show", "hide"], default="show",
                     help="draw a home-base pin for producers whose sales channels are not confirmed yet")
-    ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}} for the app's own scope choices")
+    ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}, \"exclude_categories\": {category: reason}, \"hide_pin_slugs\": {slug: reason}} for the app's own scope choices")
     ap.add_argument("--generated", default=dt.date.today().isoformat())
     a = ap.parse_args()
     T = lambda n: read(os.path.join(a.tables, n + ".csv"))
     cfg = json.load(open(a.config, encoding="utf-8")) if a.config else {}
     exclude_slugs = set((cfg.get("exclude_slugs") or {}).keys())
+    hide_pin_slugs = set((cfg.get("hide_pin_slugs") or {}).keys())
+    exclude_categories = set((cfg.get("exclude_categories") or {}).keys())
 
     locations = {r["location_id"]: r for r in T("locations")}
     towns = [(r["name"], float(r["lat"]), float(r["lon"])) for r in read(TOWNS) if r["county_fips"] in a.county_fips]
@@ -223,6 +225,9 @@ def main():
         locs = plocs.get(pid, [])
         if p["slug"] in exclude_slugs:
             continue
+        # excluded only when every category the record has is one the app leaves out
+        if exclude_categories and lst(p["categories"]) and set(lst(p["categories"])) <= exclude_categories:
+            continue
         if p["status"] in HIDDEN_STATUS or not in_area("producer", pid, [l["location_id"] for l in locs]):
             continue
         channels = lst(p["sales_channels"])
@@ -261,6 +266,8 @@ def main():
             if l["role"] == "home_base":
                 pin = sells_at_farm or (not channels and a.unconfirmed_home_pins == "show")
                 basis = "confirmed" if sells_at_farm else "unconfirmed"
+                if p["slug"] in hide_pin_slugs and not sells_at_farm:
+                    pin = False
             else:
                 pin, basis = True, "confirmed"
             out_locs.append(public_location(l["location_id"], l["role"], pin, basis, {
