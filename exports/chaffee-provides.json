@@ -835,9 +835,9 @@
    "id": "co-p-000007",
    "slug": "copper-kettle-apothecary",
    "name": "Copper Kettle Apothecary",
-   "kind": "ranch",
+   "kind": "maker",
    "categories": [
-    "On-Farm / Ranch Sales"
+    "Food Maker"
    ],
    "products": [
     "Spices/Garlic"
