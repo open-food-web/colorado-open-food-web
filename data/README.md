@@ -10,7 +10,7 @@ The canonical tables for all of Colorado, built from the raw build and kept in s
   ```bash
   python scripts/scrape/build.py
   python scripts/build_tables.py --raw .cache/build/co_farmers_markets_all_raw.csv --out data/colorado \
-      --additions data/partner-additions/guidestone_2026-10-13.csv
+      --additions data/partner-additions/guidestone_2026-10-13.csv \n      --locations inputs/locations.csv --overrides inputs/overrides.csv --kinds inputs/producer_kinds.csv
   ```
 
   Emails appear only when the business lists them itself (see `docs/PIPELINE.md`); a partner file's own
