@@ -95,6 +95,26 @@ def slugify(s: str) -> str:
     return s or "unnamed"
 
 
+def nkey(s: str) -> str:
+    """Name key for matching across files: letters and digits only, so apostrophes, dashes and the
+    broken characters some sources carry do not matter."""
+    return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
+
+
+CHANNEL_ALIAS = {"on_farm": "farm_stand"}
+CHANNEL_VALUES = {"farm_stand", "u_pick", "csa", "farmers_market", "pickup", "delivery", "online", "wholesale",
+                  "retail_partners"}
+
+
+def channel_list(text: str) -> set:
+    out = set()
+    for c in re.split(r"[;,]", text or ""):
+        c = CHANNEL_ALIAS.get(c.strip().lower(), c.strip().lower())
+        if c in CHANNEL_VALUES:
+            out.add(c)
+    return out
+
+
 def tri(v: str) -> str:
     return {"yes": "true", "no": "false"}.get((v or "").strip().lower(), "")
 
@@ -158,6 +178,8 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--additions", nargs="*", default=[],
                     help="partner CSVs in the raw layout; a row replaces the raw row with the same Source ID")
+    ap.add_argument("--locations", help="inputs/locations.csv: extra places to buy (pickup points, markets) per producer")
+    ap.add_argument("--overrides", help="inputs/overrides.csv, read only to credit partner-confirmed fields")
     ap.add_argument("--registry", default=REGISTRY, help="ID registry CSV (default: data/id_registry.csv)")
     a = ap.parse_args()
     fips = FIPS[a.county]
@@ -169,6 +191,20 @@ def main():
         with open(path, encoding="utf-8-sig", newline="") as f:
             add = list(csv.DictReader(f))
         raw = [r for r in raw if r["Source ID"] not in {x["Source ID"] for x in add}] + add
+    extra_locs = {}
+    if a.locations and os.path.exists(a.locations):
+        with open(a.locations, encoding="utf-8-sig", newline="") as f:
+            for lr in csv.DictReader(f):
+                extra_locs.setdefault(nkey(lr["name"]), []).append(lr)
+    partner_fields = {}
+    if a.overrides and os.path.exists(a.overrides):
+        with open(a.overrides, encoding="utf-8-sig", newline="") as f:
+            for orow in csv.DictReader(f):
+                m = re.search(r"partner:(\w+)", orow.get("note") or "")
+                if m:
+                    partner_fields[(nkey(orow["name"]), (orow.get("column") or "").strip())] = (
+                        m.group(1), orow.get("date") or "")
+    pending_market_pickups = []
     reg = Registry(a.registry)
     out = {k: [] for k in COLS}
     deferred, slugs = [], set()
@@ -197,7 +233,11 @@ def main():
 
         # One location per business. A business with coordinates but no street address is a hidden
         # address (Chaffee Provides' "hide address" flag): keep county, round the pin to the town.
-        hidden = bool(r["Latitude"]) and not r["Address"].strip() and "chaffee_provides" in (r["Source"] or "")
+        mine = extra_locs.get(nkey(name), [])
+        home_rows = [x for x in mine if (x.get("role") or "").strip() == "home_base"]
+        hidden = (bool(r["Latitude"]) and not r["Address"].strip() and "chaffee_provides" in (r["Source"] or "")) \
+            or (r.get("Hide Address") or "").strip().lower() == "yes" \
+            or any((x.get("hide_address") or "").strip().lower() in ("yes", "true") for x in home_rows)
         rfips = FIPS.get((r["County"] or "").strip(), fips if not r["County"].strip() else "")
         lkind = {"market": "market_site", "producer": "farm", "outlet": "outlet_site", "access": "access_site"}[typ]
         location_id = reg.get("co-loc", "%s|%s" % (typ, sid))
@@ -235,7 +275,9 @@ def main():
                     "categories": ";".join(c for c in cats if c in PRODUCER_CATS),
                     "products": r["Products"].replace(", ", ";"),
                     "seasonal_months": ";".join(months), "hours_text": r["Hours"], "email": r["Email"],
-                    "sales_channels": ";".join(sorted({CHANNEL[c] for c in cats if c in CHANNEL})),
+                    "sales_channels": ";".join(sorted(
+                        {CHANNEL[c] for c in cats if c in CHANNEL} | channel_list(r.get("Sales Channels"))
+                        | set().union(*[channel_list(x.get("sales_channels")) for x in home_rows]))),
                     "certified_organic": tri(r["Certified Organic"]), "accepts_snap": tri(r["SNAP"]),
                     "ada_accessible": tri(r["ADA Accessible"]), "call_first": tri(r["Call first?"]),
                     "status": "unverified", "claimed": "false", "opted_out_fields": "",
@@ -248,6 +290,33 @@ def main():
                     out["service_areas"].append({"producer_id": pid, "county_fips": rfips,
                                                  "basis": "home_base", "derived": "true"})
                 rec_ids.append(("producer", pid))
+                for x in mine:
+                    role = (x.get("role") or "").strip()
+                    if role == "home_base":
+                        continue
+                    if (x.get("market_ref") or "").strip():
+                        pending_market_pickups.append((pid, sid, x))
+                        continue
+                    lk = "loc|%s|%s|%s" % (nkey(name), role, nkey(x.get("place_name")))
+                    xloc = reg.get("co-loc", lk)
+                    xfips = FIPS.get((x.get("county") or "").strip(), rfips)
+                    out["locations"].append({
+                        "location_id": xloc, "name": x.get("place_name") or "",
+                        "kind": "public_venue" if role == "pickup" else "farm", "address": x.get("address") or "",
+                        "city": x.get("place_city") or "", "zip": x.get("zip") or "", "hide_address": "false",
+                        "state": "CO", "county_fips": xfips, "lat": x.get("lat") or "", "lon": x.get("lon") or "",
+                        "geo_source": x.get("geo_source") or "manual", "google_place_id": "", "photo_url": "",
+                        "photo_credit": "", "photo_license": ""})
+                    out["producer_locations"].append({
+                        "producer_location_id": reg.get("co-ploc", lk), "producer_id": pid, "location_id": xloc,
+                        "role": role, "days": (x.get("days") or "").replace(", ", ";"),
+                        "hours_text": x.get("hours_text") or "",
+                        "season_start": x.get("season_start") or "", "season_end": x.get("season_end") or "",
+                        "status": "listed"})
+                    if xfips and not any(sa["producer_id"] == pid and sa["county_fips"] == xfips
+                                         for sa in out["service_areas"]):
+                        out["service_areas"].append({"producer_id": pid, "county_fips": xfips,
+                                                     "basis": "pickup", "derived": "true"})
             kinds = [OUTLET_KIND[c] for c in cats_main if c in OUTLET_KIND
                      and (typ == "outlet" or c != "Garden Center / Greenhouse")]
             if kinds:
@@ -269,10 +338,25 @@ def main():
             for col, fld in FIELD_MAP.items():
                 if col in prov and r.get(col):
                     src, _, url = prov[col].partition(":")
+                    who, when = ("partner", r["Source Updated"]) if partner else ("source", "")
+                    pf = partner_fields.get((nkey(name), col)) if src == "override" else None
+                    if pf:
+                        src, who, when = pf[0], "partner", pf[1]
                     out["field_sources"].append({"record_type": rtype, "record_id": rid, "field": fld,
                                                  "source": SOURCE_NAME.get(src, src), "source_url": url,
-                                                 "verified_by": "partner" if partner else "source",
-                                                 "verified_on": r["Source Updated"] if partner else ""})
+                                                 "verified_by": who, "verified_on": when})
+
+    market_loc = {nkey(m["name"]): m["location_id"] for m in out["markets"]}
+    for pid, sid, x in pending_market_pickups:
+        mloc = market_loc.get(nkey(x["market_ref"]))
+        if not mloc:
+            print("  location not applied (market not in this build): %s -> %s" % (x["name"], x["market_ref"]))
+            continue
+        out["producer_locations"].append({
+            "producer_location_id": reg.get("co-ploc", "loc|%s|pickup|market|%s" % (nkey(x["name"]), nkey(x["market_ref"]))),
+            "producer_id": pid, "location_id": mloc, "role": (x.get("role") or "pickup").strip(),
+            "days": (x.get("days") or "").replace(", ", ";"), "hours_text": x.get("hours_text") or "",
+            "season_start": x.get("season_start") or "", "season_end": x.get("season_end") or "", "status": "listed"})
 
     os.makedirs(a.out, exist_ok=True)
     for name, cols in COLS.items():

@@ -2,7 +2,7 @@ name,categories,address,city,phone,website,lat,lon,source
 Arkansas Valley Christian Mission,Food Bank,"122 Cottonwood Ave, Buena Vista, CO 81211",,(719) 395-9321,https://www.avcmbv.org/,38.8398446,-106.1330412,producer_site+chaffee_provides
 Caring & Sharing – Sanctuary Soup Kitchen,Food Bank,220 W 4th St,,(719) 539-3686,,38.53474420000001,-105.9953842,producer_site+chaffee_provides
 Chaffee Cares,Organization,,,(719) 568-8522,http://www.chaffeecares.org,38.5303318,-105.9916776,producer_site+chaffee_provides
-Chaffee Community Resource Center,Food Bank,220 W 4th St Salida,,(719) 539-4849,http://salidacaringsharing.org/the-resource-center/,38.5348233,-105.995465,chaffee_provides
+Chaffee Community Resource Center,Food Bank,220 W 4th St Salida,,(719) 539-4849,,38.5348233,-105.995465,chaffee_provides
 Foodshed Alliance,Organization,Alpine Park,Salida,(719) 398-0301,https://www.foodshedalliance.com,38.5331419,-105.9940419,chaffee_provides
 PIFCA – Partnership for Community Action,Food Bank,,,(719) 398-0363,https://www.gopfca.com/,38.534419,-105.991406,producer_site+chaffee_provides
 Salida Community Center,Food Bank,305 F. Street,Salida,(719) 539-3351,http://www.salidacommunitycenter.org,38.5343414,-105.9933303,chaffee_provides

@@ -69,7 +69,7 @@ python scripts/export_app.py --tables data/chaffee-county --out exports/chaffee-
 | `role` | `home_base`, `farm_stand`, `csa_dropoff`, `pickup` for producers; `market_site`; `access_site` |
 | `name`, `address`, `city`, `zip`, `county_fips` | `address` and `zip` are null when withheld |
 | `lat`, `lon` | Where to draw the pin. For a hidden address this is the nearest **town centre**, not the real spot |
-| `precision` | `exact`, `approximate` (no street address, coordinates not exact), `town` (address withheld), `none` |
+| `precision` | `exact`, `approximate` (no street address, or the coordinates are a town centre), `town` (address withheld), `none` |
 | `pin` | **Draw a pin here.** The app does not decide this |
 | `pin_basis` | `confirmed` or `unconfirmed` (see below). An app may style unconfirmed pins, e.g. "call first" |
 | `days`, `hours_text`, `season_start`, `season_end`, `status` | When the producer is at this location (producer locations only) |
@@ -94,7 +94,8 @@ are always pinned.
    the channels are not confirmed yet, the home base is pinned with `pin_basis: unconfirmed` (set
    `--unconfirmed-home-pins hide` to turn this off). A producer that sells only by pickup or delivery
    has no home-base pin once its channels are set, so its pins are the pickup points.
-6. **Order is stable.** Lists are sorted by name so a release diff shows only real changes.
+6. **App scope choices.** An app's own decisions about what to show (for example, Guidestone leaving a vacation rental off its site) live in `exports/<app>.config.json` as `exclude_slugs` with a reason. The Food Web keeps the record; only the export leaves it out.
+7. **Order is stable.** Lists are sorted by name so a release diff shows only real changes.
 
 ## Changing the format
 

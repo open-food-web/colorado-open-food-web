@@ -1,5 +1,5 @@
 outlet_id,slug,name,kind,brand,location_id,website,phone,facebook,instagram,status,first_seen,last_verified
 co-o-000001,eddyline-restaurant-at-southmain-outlet,Eddyline Restaurant at Southmain,restaurant,,co-loc-000010,https://eddylinebrewery.com/pages/restaurant-menu-board,(719) 966-6000,https://facebook.com/eddylinebrewery,https://instagram.com/EddylineBrewery,unverified,,
-co-o-000002,market-on-main-st-the-triangle-oasis-outlet,Market on Main St. (The Triangle Oasis),farm_store,,co-loc-000017,https://www.thetriangleoasis.com/markets,,,,unverified,,
-co-o-000003,the-asian-palate-marketplace-and-catering-outlet,The Asian Palate Marketplace & Catering,caterer,,co-loc-000030,https://www.theasianpalate.com,,,https://www.instagram.com/the_asian_palate/,unverified,,
-co-o-000004,the-lettucehead-food-company-outlet,The Lettucehead Food Company,grocery,,co-loc-000031,http://www.thelettucehead.com,(719) 395-2649,,,unverified,,
+co-o-000002,market-on-main-st-the-triangle-oasis-outlet,Market on Main St. (The Triangle Oasis),farm_store,,co-loc-000017,https://www.thetriangleoasis.com/markets,,https://www.facebook.com/pages/category/Farm/The-Triangle-Oasis-219919395410862,https://www.instagram.com/thetriangleoasisproject,unverified,,
+co-o-000003,the-asian-palate-marketplace-and-catering-outlet,The Asian Palate Marketplace & Catering,caterer,,co-loc-000030,https://www.theasianpalate.com,,https://www.facebook.com/theasianpalate,https://www.instagram.com/the_asian_palate/,unverified,,
+co-o-000004,the-lettucehead-food-company-outlet,The Lettucehead Food Company,grocery,,co-loc-000031,http://www.thelettucehead.com,(719) 395-2649,https://www.facebook.com/TheLettuceheadFoodCompany,https://www.instagram.com/thelettuceheadfoodcompany,unverified,,

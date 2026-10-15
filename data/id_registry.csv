@@ -38,6 +38,11 @@ co-loc|producer|valley-roots-food-hub,co-loc-000034
 co-loc|producer|business_profile_123,co-loc-000035
 co-loc|access|guidestone-colorados-free-community-fridge-buena-vista,co-loc-000036
 co-loc|access|guidestone-colorados-free-community-fridge,co-loc-000037
+co-loc|loc|badgercreekranch|pickup|safewayparkinglotsalida,co-loc-000038
+co-loc|loc|badgercreekranch|pickup|valleyfellowshipchurchbuenavista,co-loc-000039
+co-loc|loc|badgercreekranch|pickup|ranchannexcoaldale,co-loc-000040
+co-loc|producer|https://www.guidestonecolorado.org/,co-loc-000041
+co-loc|producer|https://www.whoknowsfarms.com/about,co-loc-000042
 co-m|309028,co-m-000001
 co-m|309117,co-m-000002
 co-o|eddyline-restaurant-at-southmain,co-o-000001
@@ -73,6 +78,8 @@ co-p|https://www.thetriangleoasis.com/markets,co-p-000026
 co-p|trout-creek-farm,co-p-000027
 co-p|valley-roots-food-hub,co-p-000028
 co-p|business_profile_123,co-p-000029
+co-p|https://www.guidestonecolorado.org/,co-p-000030
+co-p|https://www.whoknowsfarms.com/about,co-p-000031
 co-ploc|arrowpoint-cattle-company|home,co-ploc-000001
 co-ploc|badger-creek-ranch|home,co-ploc-000002
 co-ploc|https://banyanbreads.com/|home,co-ploc-000003
@@ -102,3 +109,10 @@ co-ploc|https://www.thetriangleoasis.com/markets|home,co-ploc-000026
 co-ploc|trout-creek-farm|home,co-ploc-000027
 co-ploc|valley-roots-food-hub|home,co-ploc-000028
 co-ploc|business_profile_123|home,co-ploc-000029
+co-ploc|loc|badgercreekranch|pickup|safewayparkinglotsalida,co-ploc-000030
+co-ploc|loc|badgercreekranch|pickup|valleyfellowshipchurchbuenavista,co-ploc-000031
+co-ploc|loc|badgercreekranch|pickup|ranchannexcoaldale,co-ploc-000032
+co-ploc|https://www.guidestonecolorado.org/|home,co-ploc-000033
+co-ploc|https://www.whoknowsfarms.com/about|home,co-ploc-000034
+co-ploc|loc|badgercreekranch|pickup|market|salidafarmersmarket,co-ploc-000035
+co-ploc|loc|rockymountaingarlic|pickup|market|salidafarmersmarket,co-ploc-000036

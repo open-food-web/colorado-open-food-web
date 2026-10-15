@@ -1,0 +1,6 @@
+{
+  "_comment": "Scope choices Guidestone made for the Chaffee Provides site. These are about what that site shows, not about the facts, so the Food Web keeps the records. Keyed by producer slug.",
+  "exclude_slugs": {
+    "cottonwood-spirit-ranch": "Not applicable for now: mostly a vacation rental that sells beef to guests (Alycen Quattrocchi, Oct 13 2026)"
+  }
+}

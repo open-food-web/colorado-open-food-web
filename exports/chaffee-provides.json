@@ -3,17 +3,17 @@
   "app": "chaffee-provides",
   "format_version": 1,
   "release": "2026-10",
-  "generated": "2026-10-15",
+  "generated": "2026-10-16",
   "source": "Colorado Open Food Web",
   "county_fips": [
    "08015"
   ],
   "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
   "counts": {
-   "producers": 29,
+   "producers": 27,
    "markets": 2,
    "access_points": 2,
-   "pins": 31
+   "pins": 33
   }
  },
  "vocab": {
@@ -67,7 +67,7 @@
    "website": "https://www.arrowpointcattle.com",
    "phone": "(303) 618-3135",
    "email": "arrowpointcc@aol.com",
-   "facebook": null,
+   "facebook": "https://www.facebook.com/arrowpointcattle/?ref=bookmarks",
    "instagram": "https://www.instagram.com/arrowpointprovisions/",
    "sales_channels": [],
    "certified_organic": null,
@@ -130,7 +130,12 @@
    "email": "info@badgercreekranch.com",
    "facebook": "https://facebook.com/badgercreekranch",
    "instagram": "https://instagram.com/badgercreekranch",
-   "sales_channels": [],
+   "sales_channels": [
+    "delivery",
+    "farmers_market",
+    "online",
+    "pickup"
+   ],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -143,17 +148,99 @@
      "id": "co-loc-000002",
      "role": "home_base",
      "name": null,
-     "address": "5795 County Road 2",
-     "city": "Cañon City",
-     "zip": "81212",
+     "address": null,
+     "city": "Coaldale",
+     "zip": null,
      "county_fips": "08043",
-     "lat": 38.676143,
-     "lon": -105.81811,
-     "precision": "exact",
-     "pin": true,
+     "lat": 38.5347,
+     "lon": -105.9989,
+     "precision": "town",
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000038",
+     "role": "pickup",
+     "name": "Safeway parking lot (Salida)",
+     "address": "232 G St",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.535842,
+     "lon": -105.994042,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Tue"
+     ],
+     "hours_text": "Tue: 4:45pm - 5:00pm",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000039",
+     "role": "pickup",
+     "name": "Valley Fellowship Church (Buena Vista)",
+     "address": "608 S San Juan Ave",
+     "city": "Buena Vista",
+     "zip": "81211",
+     "county_fips": "08015",
+     "lat": 38.835891,
+     "lon": -106.133171,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Tue"
+     ],
+     "hours_text": "Tue: 6:00pm - 6:15pm",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000040",
+     "role": "pickup",
+     "name": "Ranch Annex (Coaldale)",
+     "address": "364 County Road 40",
+     "city": "Coaldale",
+     "zip": "81222",
+     "county_fips": "08043",
+     "lat": 38.365553,
+     "lon": -105.757784,
+     "precision": "approximate",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [],
+     "hours_text": "Pickup by arrangement",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000026",
+     "role": "pickup",
+     "name": null,
+     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.533052,
+     "lon": -105.993304,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19",
      "season_start": null,
      "season_end": null,
      "status": "listed"
@@ -384,8 +471,8 @@
    "website": "https://co-mtn-lav.com/",
    "phone": "(719) 371-2828",
    "email": "connect@co-mtn-lav.com",
-   "facebook": null,
-   "instagram": null,
+   "facebook": "http://www.facebook.com/coloradomountainlavender",
+   "instagram": "http://www.instagram.com/coloradomountainlavender",
    "sales_channels": [
     "online"
    ],
@@ -444,8 +531,8 @@
    "months_open": [],
    "hours_text": null,
    "website": null,
-   "phone": "(719) 221-3158",
-   "email": "",
+   "phone": "(719) 530-7111",
+   "email": null,
    "facebook": "https://www.facebook.com/copperkettleapothecary/",
    "instagram": null,
    "sales_channels": [],
@@ -491,69 +578,6 @@
    ]
   },
   {
-   "id": "co-p-000008",
-   "slug": "cottonwood-spirit-ranch",
-   "name": "Cottonwood Spirit Ranch",
-   "kind": "ranch",
-   "categories": [
-    "On-Farm / Ranch Sales"
-   ],
-   "products": [
-    "Beef",
-    "eggs",
-    "honey",
-    "produce"
-   ],
-   "months_open": [],
-   "hours_text": null,
-   "website": "https://cottonwoodspiritranch.com",
-   "phone": "(970) 406-8054",
-   "email": "",
-   "facebook": "https://www.facebook.com/CottonwoodSpiritRanch/",
-   "instagram": null,
-   "sales_channels": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000009",
-     "role": "home_base",
-     "name": null,
-     "address": null,
-     "city": "Buena Vista",
-     "zip": null,
-     "county_fips": "08015",
-     "lat": 38.8422,
-     "lon": -106.1311,
-     "precision": "town",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "producer_site",
-     "label": "Producer's own website",
-     "url": "https://cottonwoodspiritranch.com"
-    },
-    {
-     "source": "chaffee_provides",
-     "label": "Chaffee Provides",
-     "url": null
-    }
-   ]
-  },
-  {
    "id": "co-p-000009",
    "slug": "elements-mountain-compost",
    "name": "Elements Mountain Compost",
@@ -574,7 +598,7 @@
    "hours_text": null,
    "website": "http://elementscompost.com",
    "phone": "(719) 207-2207",
-   "email": null,
+   "email": "sales@elementscompost.com",
    "facebook": "https://www.facebook.com/elementsmountaincompost",
    "instagram": "https://www.instagram.com/elementscompost/",
    "sales_channels": [],
@@ -628,7 +652,7 @@
    "months_open": [],
    "hours_text": null,
    "website": null,
-   "phone": null,
+   "phone": "(719) 530-1597",
    "email": null,
    "facebook": "https://www.facebook.com/everettranchbeef/",
    "instagram": null,
@@ -675,89 +699,48 @@
    ]
   },
   {
-   "id": "co-p-000011",
-   "slug": "guidestone-colorado",
-   "name": "Guidestone Colorado",
+   "id": "co-p-000030",
+   "slug": "guidestone-colorado-community-and-school-farm",
+   "name": "Guidestone Colorado Community and School Farm",
    "kind": "farm",
    "categories": [
-    "Agritourism",
-    "On-Farm / Ranch Sales"
+    "Roadside Market",
+    "Agritourism"
    ],
-   "products": [
-    "Beets",
-    "Bell Peppers",
-    "Broccoli",
-    "Brussels Sprouts",
-    "Cabbage",
-    "Carrots",
-    "Cauliflower",
-    "Celery",
-    "Cucumbers",
-    "Eggplant",
-    "Garlic",
-    "Green Beans",
-    "Herbs",
-    "Kale",
-    "Leeks",
-    "Lettuce",
-    "Microgreens",
-    "Onions",
-    "Peas",
-    "Potatoes",
-    "Pumpkins",
-    "Radishes",
-    "Rhubarb",
-    "Spinach",
-    "Squash",
-    "Tomatoes",
-    "Turnips",
-    "Zucchini",
-    "Beef",
-    "Cider",
-    "The cider is specifically in conjunction with our annual Pumpkin Patch & Harvest Festival in October"
-   ],
-   "months_open": [
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "February",
-    "March",
-    "April",
-    "November"
-   ],
-   "hours_text": null,
+   "products": [],
+   "months_open": [],
+   "hours_text": "Tue: 4:00pm - 6:00pm",
    "website": "https://www.GuidestoneColorado.org",
-   "phone": "(719) 239-0955",
+   "phone": null,
    "email": "info@guidestonecolorado.org",
    "facebook": "https://www.facebook.com/guidestonecolorado/",
    "instagram": "https://www.instagram.com/guidestonecolorado/",
-   "sales_channels": [],
-   "certified_organic": false,
-   "accepts_snap": true,
-   "ada_accessible": true,
+   "sales_channels": [
+    "farm_stand"
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
    "call_first": null,
    "status": "unverified",
    "claimed": false,
    "last_verified": null,
    "locations": [
     {
-     "id": "co-loc-000013",
+     "id": "co-loc-000041",
      "role": "home_base",
      "name": null,
-     "address": "8913 West Hwy 50",
+     "address": "1455 Holman Ave",
      "city": "Salida",
      "zip": "81201",
      "county_fips": "08015",
-     "lat": 38.538832,
-     "lon": -106.187201,
+     "lat": 38.529598,
+     "lon": -106.01067,
      "precision": "exact",
      "pin": true,
-     "pin_basis": "unconfirmed",
+     "pin_basis": "confirmed",
      "days": [],
-     "hours_text": null,
+     "hours_text": "Tue: 4:00pm - 6:00pm",
      "season_start": null,
      "season_end": null,
      "status": "listed"
@@ -765,23 +748,8 @@
    ],
    "sources": [
     {
-     "source": "producer_site",
-     "label": "Producer's own website",
-     "url": "https://www.GuidestoneColorado.org"
-    },
-    {
-     "source": "colorado_proud",
-     "label": "Colorado Proud",
-     "url": null
-    },
-    {
-     "source": "chaffee_provides",
-     "label": "Chaffee Provides",
-     "url": null
-    },
-    {
-     "source": "usda_lfd",
-     "label": "USDA Local Food Directories",
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
      "url": null
     }
    ]
@@ -924,7 +892,7 @@
    "hours_text": null,
    "website": null,
    "phone": "(719) 850-3440",
-   "email": "",
+   "email": null,
    "facebook": "https://www.facebook.com/myredcows/",
    "instagram": null,
    "sales_channels": [],
@@ -970,125 +938,6 @@
    ]
   },
   {
-   "id": "co-p-000015",
-   "slug": "meadows-edge-farm",
-   "name": "Meadows Edge Farm",
-   "kind": "farm",
-   "categories": [
-    "On-Farm / Ranch Sales"
-   ],
-   "products": [
-    "Veggies",
-    "Spices/Garlic"
-   ],
-   "months_open": [],
-   "hours_text": null,
-   "website": null,
-   "phone": "(401) 714-1489",
-   "email": "meadowsedgefarmbv@gmail.com",
-   "facebook": "https://www.facebook.com/meadowsedgefarmbv/",
-   "instagram": "https://www.instagram.com/meadowsedgefarmbv/",
-   "sales_channels": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000018",
-     "role": "home_base",
-     "name": null,
-     "address": "29135 Co Rd 331",
-     "city": "Buena Vista",
-     "zip": "81211",
-     "county_fips": "08015",
-     "lat": 38.840848,
-     "lon": -106.155406,
-     "precision": "exact",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "producer_site",
-     "label": "Producer's own website",
-     "url": null
-    },
-    {
-     "source": "chaffee_provides",
-     "label": "Chaffee Provides",
-     "url": null
-    }
-   ]
-  },
-  {
-   "id": "co-p-000016",
-   "slug": "moonstone-farm",
-   "name": "Moonstone Farm",
-   "kind": "farm",
-   "categories": [
-    "On-Farm / Ranch Sales"
-   ],
-   "products": [
-    "Flowers",
-    "Poultry/Eggs",
-    "Spices/Garlic",
-    "Veggies"
-   ],
-   "months_open": [],
-   "hours_text": null,
-   "website": null,
-   "phone": "(719) 239-2021",
-   "email": "",
-   "facebook": null,
-   "instagram": null,
-   "sales_channels": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000019",
-     "role": "home_base",
-     "name": null,
-     "address": null,
-     "city": "Salida",
-     "zip": null,
-     "county_fips": "08015",
-     "lat": 38.5347,
-     "lon": -105.9989,
-     "precision": "town",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "chaffee_provides",
-     "label": "Chaffee Provides",
-     "url": null
-    }
-   ]
-  },
-  {
    "id": "co-p-000017",
    "slug": "mountain-goat-lodge",
    "name": "Mountain Goat Lodge",
@@ -1104,8 +953,8 @@
    "website": "https://mountaingoatlodge.com",
    "phone": "(206) 218-8201",
    "email": "mtglodge@gmail.com",
-   "facebook": null,
-   "instagram": null,
+   "facebook": "https://www.facebook.com/Mountaingoatlodge",
+   "instagram": "https://www.instagram.com/mountaingoatlodge",
    "sales_channels": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -1231,7 +1080,7 @@
    "website": "https://www.phytologyflowers.com",
    "phone": "(303) 709-4912",
    "email": "Hannah@phytologyflowers.com",
-   "facebook": null,
+   "facebook": "https://www.facebook.com/phytologyflowers",
    "instagram": "https://www.instagram.com/phytologyflowers/",
    "sales_channels": [],
    "certified_organic": null,
@@ -1293,8 +1142,8 @@
    "website": "https://ponchacreekgardens.wordpress.com/our-products/",
    "phone": "(720) 380-2121",
    "email": "ponchacreekgardens@gmail.com",
-   "facebook": null,
-   "instagram": null,
+   "facebook": "http://www.facebook.com/ponchacreekgardens",
+   "instagram": "https://www.instagram.com/salidaholidaymakersmarket",
    "sales_channels": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -1363,12 +1212,14 @@
    "hours_text": "Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; Wed: 8 am - 6 pm; Thu: 8 am - 6 pm; Fri: 8 am - 6 pm; Sat: 8 am - 6 pm",
    "website": "https://www.rockymountaingarlic.net/",
    "phone": "(719) 221-6943",
-   "email": "",
+   "email": null,
    "facebook": "https://www.facebook.com/RockyMountainGarlic",
    "instagram": "https://www.instagram.com/rockymountaingarlic1",
    "sales_channels": [
     "csa",
-    "farm_stand"
+    "farm_stand",
+    "farmers_market",
+    "online"
    ],
    "certified_organic": false,
    "accepts_snap": false,
@@ -1393,6 +1244,27 @@
      "pin_basis": "confirmed",
      "days": [],
      "hours_text": "Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; Wed: 8 am - 6 pm; Thu: 8 am - 6 pm; Fri: 8 am - 6 pm; Sat: 8 am - 6 pm",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000026",
+     "role": "pickup",
+     "name": null,
+     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.533052,
+     "lon": -105.993304,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19",
      "season_start": null,
      "season_end": null,
      "status": "listed"
@@ -1433,7 +1305,7 @@
    "hours_text": null,
    "website": "http://www.salidacattlecompany.com",
    "phone": "(719) 221-2267",
-   "email": "",
+   "email": null,
    "facebook": null,
    "instagram": null,
    "sales_channels": [],
@@ -1494,7 +1366,7 @@
    "hours_text": null,
    "website": "http://www.scangameat.com/",
    "phone": "(719) 539-3511",
-   "email": "",
+   "email": null,
    "facebook": null,
    "instagram": null,
    "sales_channels": [],
@@ -1557,8 +1429,8 @@
    "hours_text": null,
    "website": null,
    "phone": "(719) 539-7452",
-   "email": "",
-   "facebook": null,
+   "email": null,
+   "facebook": "https://www.facebook.com/SweetPeaFarmHoney",
    "instagram": null,
    "sales_channels": [],
    "certified_organic": null,
@@ -1683,7 +1555,7 @@
    "website": "https://www.thetriangleoasis.com/",
    "phone": null,
    "email": "thetriangleoasis@gmail.com",
-   "facebook": null,
+   "facebook": "https://www.facebook.com/pages/category/Farm/The-Triangle-Oasis-219919395410862",
    "instagram": "https://www.instagram.com/thetriangleoasisproject/",
    "sales_channels": [
     "csa",
@@ -1804,7 +1676,7 @@
    "hours_text": null,
    "website": "https://www.valleyrootsfoodhub.com/",
    "phone": "(719) 206-2839",
-   "email": "",
+   "email": null,
    "facebook": null,
    "instagram": null,
    "sales_channels": [],
@@ -1864,7 +1736,7 @@
    ],
    "months_open": [],
    "hours_text": null,
-   "website": "https://www.vinosalida.com",
+   "website": null,
    "phone": "(719) 539-6299",
    "email": null,
    "facebook": "https://www.facebook.com/vinosalidawinecellars",
@@ -1902,6 +1774,68 @@
     {
      "source": "colorado_proud",
      "label": "Colorado Proud",
+     "url": null
+    }
+   ]
+  },
+  {
+   "id": "co-p-000031",
+   "slug": "who-knows-farms",
+   "name": "Who Knows? Farms",
+   "kind": "farm",
+   "categories": [
+    "Roadside Market",
+    "On-Farm / Ranch Sales"
+   ],
+   "products": [
+    "Vegetables",
+    "fruit",
+    "pasture-raised lamb",
+    "pork",
+    "poultry"
+   ],
+   "months_open": [],
+   "hours_text": "Tue-Sun: 8:00am - 6:00pm",
+   "website": "https://www.whoknowsfarms.com",
+   "phone": "(719) 398-3306",
+   "email": "isaiah@whoknowsfarms.com",
+   "facebook": "https://www.facebook.com/p/Who-Knows-Farms-61566533660122/",
+   "instagram": null,
+   "sales_channels": [
+    "farm_stand"
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000042",
+     "role": "home_base",
+     "name": null,
+     "address": "19235 US Highway 285",
+     "city": "Nathrop",
+     "zip": "81236",
+     "county_fips": "08015",
+     "lat": 38.697301,
+     "lon": -106.090238,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [],
+     "hours_text": "Tue-Sun: 8:00am - 6:00pm",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
      "url": null
     }
    ]
@@ -1961,7 +1895,7 @@
    "website": "https://foodshedalliance.com",
    "phone": "(719) 207-5787",
    "email": "info@foodshedalliance.com",
-   "facebook": null,
+   "facebook": "https://www.facebook.com/FoodshedAllianceCO",
    "instagram": "https://instagram.com/Salida_Farmers_Market",
    "accepts_snap": true,
    "ada_accessible": true,
