@@ -1259,7 +1259,7 @@ co-loc-001260,,farm,1849 Cherry Street,Louisville,80027,false,CO,08013,39.965885
 co-loc-001261,,farm,4841 Mt Princeton St,Brighton,80601,false,CO,08001,39.9805344,-104.7549098,source,,,,
 co-loc-001262,,farm,218 N Frazier Ave,Florence,81226,false,CO,08043,38.3941819,-105.1254411,source,,,,
 co-loc-001263,,farm,,Salida,,false,CO,08015,,,,,,,
-co-loc-000028,,farm,7465 COUNTY ROAD 146,Salida,81201,false,CO,08015,38.5259907,-106.0430725,source,,,,
+co-loc-000028,,farm,7465 COUNTY ROAD 146,Salida,81201,false,CO,08015,38.5267157,-106.0449229,override,,,,
 co-loc-001264,,farm,5686 Tabor St,Arvada,80002,false,CO,08059,39.7997898,-105.1299576,source,,,,
 co-loc-001265,,farm,33357 County Road 9.5,Manzanola,81058,false,CO,08089,38.1167153,-103.9031265,source,,,,
 co-loc-001266,,farm,18423 W 92ND LN,ARVADA,80007,false,CO,08059,39.8642854,-105.2093163,source,,,,
