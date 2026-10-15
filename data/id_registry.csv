@@ -1507,6 +1507,10 @@ co-loc|loc|microgreencreationsllc|pickup|breckenridgesundaymarket,co-loc-001503
 co-loc|producer|https://www.pennandcordsgarden.com/store.html,co-loc-001504
 co-loc|producer|500213,co-loc-001505
 co-loc|producer|https://www.westcliffehoneyco.com/,co-loc-001506
+co-loc|producer|https://www.facebook.com/p/Alpenglow-Hive-Honey-61586258981365/,co-loc-001507
+co-loc|outlet|copper-kettle-apothecary,co-loc-001508
+co-loc|producer|https://www.mountainessentialsllc.com/,co-loc-001509
+co-loc|producer|https://www.facebook.com/p/the-farmstand-61576733552283/,co-loc-001510
 co-m|309028,co-m-000001
 co-m|309117,co-m-000002
 co-m|business_profile_176,co-m-000003
@@ -1818,6 +1822,8 @@ co-o|yampa-valley-foods|steamboat-springs,co-o-000155
 co-o|business_profile_1042,co-o-000156
 co-o|business_profile_911,co-o-000157
 co-o|business_profile_942,co-o-000158
+co-o|copper-kettle-apothecary,co-o-000159
+co-o|https://www.mountainessentialsllc.com/,co-o-000160
 co-p|arrowpoint-cattle-company,co-p-000001
 co-p|badger-creek-ranch,co-p-000002
 co-p|https://banyanbreads.com/,co-p-000003
@@ -3057,6 +3063,9 @@ co-p|https://www.foodshedalliance.com/meet-our-vendors,co-p-001236
 co-p|https://www.pennandcordsgarden.com/store.html,co-p-001237
 co-p|500213,co-p-001238
 co-p|https://www.westcliffehoneyco.com/,co-p-001239
+co-p|https://www.facebook.com/p/Alpenglow-Hive-Honey-61586258981365/,co-p-001240
+co-p|https://www.mountainessentialsllc.com/,co-p-001241
+co-p|https://www.facebook.com/p/the-farmstand-61576733552283/,co-p-001242
 co-ploc|arrowpoint-cattle-company|home,co-ploc-000001
 co-ploc|badger-creek-ranch|home,co-ploc-000002
 co-ploc|https://banyanbreads.com/|home,co-ploc-000003
@@ -4313,3 +4322,6 @@ co-ploc|loc|misspennsmountainseeds|pickup|market|salidafarmersmarket,co-ploc-001
 co-ploc|loc|palisadepeachshack|pickup|market|salidafarmersmarket,co-ploc-001252
 co-ploc|loc|raisinrye|pickup|market|salidafarmersmarket,co-ploc-001253
 co-ploc|loc|westcliffehoneycompany|pickup|market|salidafarmersmarket,co-ploc-001254
+co-ploc|https://www.facebook.com/p/Alpenglow-Hive-Honey-61586258981365/|home,co-ploc-001255
+co-ploc|https://www.mountainessentialsllc.com/|home,co-ploc-001256
+co-ploc|https://www.facebook.com/p/the-farmstand-61576733552283/|home,co-ploc-001257
