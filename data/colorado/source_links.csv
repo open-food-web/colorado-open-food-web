@@ -37,7 +37,8 @@ outlet,co-o-000008,colorado_proud,,,,unchecked
 producer,co-p-000053,colorado_proud,,,,unchecked
 producer,co-p-000054,curated,,,,unchecked
 producer,co-p-000055,colorado_proud,,,,unchecked
-producer,co-p-000056,colorado_proud,,,,unchecked
+producer,co-p-001232,curated,,,,unchecked
+producer,co-p-001232,colorado_proud,,,,unchecked
 producer,co-p-000057,colorado_proud,,,,unchecked
 producer,co-p-000058,curated,,,,unchecked
 producer,co-p-000059,colorado_proud,,,,unchecked
@@ -565,6 +566,7 @@ market,co-m-000057,usda_lfd,,,,unchecked
 producer,co-p-000359,usda_lfd,,,,unchecked
 producer,co-p-000360,colorado_proud,,,,unchecked
 producer,co-p-000361,colorado_proud,,,,unchecked
+producer,co-p-001233,curated,,,,unchecked
 producer,co-p-000362,usda_lfd,,,,unchecked
 producer,co-p-000363,usda_lfd,,,,unchecked
 producer,co-p-000364,colorado_proud,,,,unchecked
@@ -624,6 +626,7 @@ producer,co-p-000393,usda_lfd,,,,unchecked
 producer,co-p-000394,colorado_proud,,,,unchecked
 producer,co-p-000394,colorado_proud,,,,unchecked
 producer,co-p-000395,colorado_proud,,,,unchecked
+producer,co-p-001234,curated,,,,unchecked
 outlet,co-o-000056,colorado_proud,,,,unchecked
 market,co-m-000064,producer_site,https://www.frederickco.gov/241/Frederick-Market,,,unchecked
 market,co-m-000064,usda_lfd,,,,unchecked
@@ -732,6 +735,7 @@ market,co-m-000074,colorado_proud,,,,unchecked
 producer,co-p-000455,colorado_proud,,,,unchecked
 producer,co-p-000456,colorado_proud,,,,unchecked
 producer,co-p-000457,colorado_proud,,,,unchecked
+producer,co-p-001235,curated,,,,unchecked
 outlet,co-o-000066,curated,,,,unchecked
 producer,co-p-000458,curated,,,,unchecked
 producer,co-p-000459,curated,,,,unchecked
@@ -1094,6 +1098,7 @@ market,co-m-000105,usda_lfd,,,,unchecked
 market,co-m-000106,usda_lfd,,,,unchecked
 producer,co-p-000694,colorado_proud,,,,unchecked
 producer,co-p-000695,usda_lfd,,,,unchecked
+producer,co-p-001236,curated,,,,unchecked
 producer,co-p-000696,colorado_proud,,,,unchecked
 producer,co-p-000697,colorado_proud,,,,unchecked
 producer,co-p-000698,colorado_proud,,,,unchecked
@@ -1119,6 +1124,7 @@ market,co-m-000107,colorado_proud,,,,unchecked
 market,co-m-000107,usda_lfd,,,,unchecked
 producer,co-p-000713,usda_lfd,,,,unchecked
 producer,co-p-000714,colorado_proud,,,,unchecked
+producer,co-p-001237,curated,,,,unchecked
 producer,co-p-000715,curated,,,,unchecked
 producer,co-p-000716,colorado_proud,,,,unchecked
 producer,co-p-000717,colorado_proud,,,,unchecked
@@ -1799,6 +1805,7 @@ producer,co-p-001153,colorado_proud,,,,unchecked
 producer,co-p-001154,colorado_proud,,,,unchecked
 producer,co-p-000028,producer_site,https://www.valleyrootsfoodhub.com/,,,unchecked
 producer,co-p-000028,chaffee_provides,,valley-roots-food-hub,,unchecked
+producer,co-p-001238,usda_lfd,,,,unchecked
 producer,co-p-001155,colorado_proud,,,,unchecked
 producer,co-p-001156,colorado_proud,,,,unchecked
 producer,co-p-001157,colorado_proud,,,,unchecked
@@ -1832,6 +1839,7 @@ producer,co-p-001176,colorado_proud,,,,unchecked
 producer,co-p-001177,colorado_proud,,,,unchecked
 market,co-m-000151,producer_site,https://www.westcliffefarmersmarket.com/,,,unchecked
 market,co-m-000151,usda_lfd,,,,unchecked
+producer,co-p-001239,curated,,,,unchecked
 producer,co-p-001178,curated,,,,unchecked
 outlet,co-o-000152,curated,,,,unchecked
 producer,co-p-001179,curated,,,,unchecked

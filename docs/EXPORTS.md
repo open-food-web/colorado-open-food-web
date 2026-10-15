@@ -105,7 +105,7 @@ are always pinned.
    the channels are not confirmed yet, the home base is pinned with `pin_basis: unconfirmed` (set
    `--unconfirmed-home-pins hide` to turn this off). A producer that sells only by pickup or delivery
    has no home-base pin once its channels are set, so its pins are the pickup points.
-6. **App scope choices.** An app's own decisions about what to show (for example, Guidestone leaving a vacation rental off its site) live in `exports/<app>.config.json` as `exclude_slugs` with a reason. The Food Web keeps the record; only the export leaves it out.
+6. **App scope choices.** (`exclude_kinds` leaves out a whole category, for example `["bakery"]`, until the partner decides.) An app's own decisions about what to show (for example, Guidestone leaving a vacation rental off its site) live in `exports/<app>.config.json` as `exclude_slugs` with a reason. The Food Web keeps the record; only the export leaves it out.
 7. **Order is stable.** Lists are sorted by name so a release diff shows only real changes.
 
 ## Changing the format

@@ -38,7 +38,8 @@ SOURCE_LABELS = {
     "curated": "Farmers market vendor lists, checked by hand", "guidestone": "Guidestone Colorado review",
     "census_geocoder": "US Census geocoder", "reviewed": "Reviewed by hand", "maintainer": "Maintainer"}
 # What a producer calls itself (producers.kind). Farms and ranches are different things to a shopper.
-KIND_LABELS = {"farm": "Farms", "ranch": "Ranches", "orchard": "Orchards", "maker": "Food makers", "winery": "Wineries"}
+KIND_LABELS = {"farm": "Farms", "ranch": "Ranches", "orchard": "Orchards", "bakery": "Bakeries", "maker": "Food makers",
+               "winery": "Wineries"}
 FIELD_LABEL = {"phone": "phone", "email": "email", "website": "website", "facebook": "Facebook", "instagram": "Instagram",
                "hours_text": "hours", "seasonal_months": "season", "products": "products", "address": "address",
                "city": "town", "zip": "ZIP", "categories": "type", "certified_organic": "organic status",
@@ -119,6 +120,7 @@ def main():
     hide_pin_slugs = set((cfg.get("hide_pin_slugs") or {}).keys())
     include_categories = set((cfg.get("include_categories") or {}).keys())
     exclude_categories = set((cfg.get("exclude_categories") or {}).keys())
+    exclude_kinds = set(cfg.get("exclude_kinds") or [])   # e.g. ["bakery"]: a whole category left out of a launch
 
     locations = {r["location_id"]: r for r in T("locations")}
     towns = [(r["name"], float(r["lat"]), float(r["lon"])) for r in read(TOWNS) if r["county_fips"] in a.county_fips]
@@ -224,13 +226,13 @@ def main():
             removed.append(pid)
             continue
         locs = plocs.get(pid, [])
-        if p["slug"] in exclude_slugs:
+        if p["slug"] in exclude_slugs or p["kind"] in exclude_kinds:
             continue
         # excluded only when every category the record has is one the app leaves out
         if exclude_categories and lst(p["categories"]) and set(lst(p["categories"])) <= exclude_categories:
             continue
-        # an allowlist, when the app has one: keep a record only if some category of it is on the list
-        if include_categories and not (set(lst(p["categories"])) & include_categories):
+        # an allowlist, when the app has one: a record with categories stays only if one of them is on the list
+        if include_categories and lst(p["categories"]) and not (set(lst(p["categories"])) & include_categories):
             continue
         if p["status"] in HIDDEN_STATUS or not in_area("producer", pid, [l["location_id"] for l in locs]):
             continue
@@ -274,6 +276,12 @@ def main():
                     pin = False
             else:
                 pin, basis = True, "confirmed"
+            if l["role"] == "home_base" and not (locations.get(l["location_id"]) or {}).get("address") \
+                    and (locations.get(l["location_id"]) or {}).get("hide_address") != "true":
+                pin = False       # no street address and not a hidden one: nothing to point to
+            lcf = (locations.get(l["location_id"]) or {}).get("county_fips")
+            if lcf and lcf not in a.county_fips:
+                pin = False       # a place outside this county is not a place to buy on this county's map
             out_locs.append(public_location(l["location_id"], l["role"], pin, basis, {
                 "days": lst(l["days"]), "hours_text": l["hours_text"] or None,
                 "season_start": l["season_start"] or None, "season_end": l["season_end"] or None,

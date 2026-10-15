@@ -84,6 +84,7 @@ The tables are now statewide, so the counts below are for all of Colorado; the C
 | Chaffee Cares (not food access), Colorado Mountain Lavender (online only) | Alycen is following up with both |
 | Emma's map flag: "Market on Main St" drawn in Buena Vista where Josh's Market is, and Josh's Market missing | Check on the new map |
 | Caring & Sharing, The Grainery and the Resource Center are food banks | Their confirmed fields are saved but they stay out of the site until food banks join the food access list |
+| **Question for Emma and Alycen:** should businesses that grow or operate outside Chaffee County, but sell here (so far at the Salida Farmers Market), get their own listing? Today they do, with no pin of their own. Palisade Peach Shack (Palisade, with a farm tour that is not in the county) is the clearest case; the others are Alpine Valley Mushrooms (Saguache), Feedsack Flowers (Center), Miss Penn's Mountain Seeds and Westcliffe Honey Company (Westcliffe), Raisin' Rye (Del Norte) and Bristlecone Bakeshop (Alma) | Guidestone's decision. If not, they could appear only on the market's vendor list, or be left off |
 | Sales channels for most producers | 27 of 34 producers on the site still have none confirmed; their home-base pins are marked unconfirmed |
 
 ## How this was produced
@@ -98,3 +99,22 @@ python scripts/change_report.py --before <tables built from main> --after data/c
 ## Follow-up, Oct 16: red means closed
 
 The maintainer confirmed that red on Alycen's sheet means the business is closed. Vino Salida Wine Cellars (website expired) and The Ark Angel were marked red but still listed, so both are now removed. Market on Main St (The Triangle Oasis) is also red but its own site still lists it, so it is being checked with Alycen. Colorado Mountain Lavender is red but sells online; the maintainer decided to keep it listed as online-only.
+
+## Changes driven by the maintainer (David), not by Alycen's sheet
+
+These came out of the maintainer's own review of the draft site and the Oct 8 / Oct 13 calls. They belong to this round, so they are listed here rather than in separate pull requests.
+
+| Change | Why |
+|---|---|
+| Farms and ranches are separate categories (by how the business labels itself); product groups (veggies, fruit, beef and meat, poultry and eggs, dairy, honey, flowers, garlic and herbs, mushrooms, baked goods, seeds and plants, drinks) | People search by what they want to buy; sales channels are detail on each producer's page, not search filters |
+| `confirmed_by` credits in the export | The site credits the partner (Guidestone), or the business's own website or Facebook page, for each confirmed detail |
+| Two visit flags, drop-in visits and pickup at the farm, inferred from the listing (farm stand, u-pick, tours, listed as a pickup spot) unless a person has answered; drop-in hours are listed, and "by appointment" is not | Visitors need to know whether they can just show up |
+| Vino Salida Wine Cellars and The Ark Angel removed | Red on Alycen's sheet means closed |
+| Colorado Mountain Lavender kept, online only | Maintainer decision |
+| Sweet Pea Farm: honey, meat chickens, eggs and pork, from its own Facebook page (not beef) | Corrects an earlier claim |
+| Seven vendors at the Salida Farmers Market added (Greg's Gourmet Greens, Miss Penn's Mountain Seeds, Alpine Valley Mushrooms, Foxtown Farm, Feedsack Flowers, Westcliffe Honey Company, Palisade Peach Shack) | A business that sells in the county belongs on the county's map wherever it is based; each has no pin of its own, only the market's |
+| Microgreen Creations LLC added: grows in Buena Vista, sells at the Salida Farmers Market and the Breckenridge Sunday Market | Same rule. No pin in Buena Vista, because a pin marks a place to buy |
+| Bakeries are their own category (Banyan Breads, Raisin' Rye, Bristlecone Bakeshop). Raisin' Rye is a Del Norte bakery that sells at the Salida Farmers Market | Whether the category is in the first launch is for Emma and Alycen; `exclude_kinds: ["bakery"]` in the export config leaves it out |
+| A place outside the county gets no pin on the county's map | Raisin' Rye's Del Norte shop is not on the Chaffee map; only its Salida market stall is |
+| Colorado Mountain Lavender also offers herbs (product group "Garlic & herbs"); a leading `+` in `inputs/producer_kinds.csv` adds a group to what the products text shows | Maintainer decision |
+| Farms that welcome neither drop-in visits nor farm pickup (Colorado Mountain Lavender, Alpine Valley Mushrooms) show one "Not open to visitors" message and no farm under "places to find them"; the town is shown as "Based in" | Maintainer decision; this is done in the site, not the data |
