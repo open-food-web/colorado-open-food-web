@@ -1,5 +1,5 @@
 name,kind,product_groups,dropin_visits,dropin_hours,farm_pickup,visit_note,note,source,date
-Alpine Valley Mushrooms,farm,,,,,,Salida Farmers Market vendor,foodshedalliance.com vendor list,2026-10-16
+Alpine Valley Mushrooms,farm,,no,,no,"No on-farm store. Find them at the Salida Farmers Market (Saturdays)",Salida Farmers Market vendor | visit: no on-farm store (Real Organic Project),maintainer,2026-10-16
 Arrowpoint Cattle Company,ranch,beef-meat;poultry-eggs,,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
 Badger Creek Ranch,ranch,beef-meat;poultry-eggs,no,,yes,"Pick up an order at the Coaldale ranch annex by arrangement, or at the Tuesday pickup points, or ask about delivery",Chosen by the provider on the old Chaffee Provides form (type: Ranch) | visit: Guidestone/Chrissy,chaffee_provides,2021-2026
 Banyan Breads,bakery,baked-goods,yes,"Mornings, until sold out",,"Shop at 110 E 1st St, Salida, open mornings until sold out","Bakery | visit: business's own website, Oct 2026",guidestone_review,2026-10-16

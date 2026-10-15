@@ -249,7 +249,8 @@ def main():
     with open(a.raw, encoding="utf-8-sig", newline="") as f:
         raw = [r for r in csv.DictReader(f)
                if not a.county or (r["County"] or "").strip().lower() == a.county.lower()
-               or "chaffee_provides" in (r["Source"] or "")]
+               or "chaffee_provides" in (r["Source"] or "")
+               or re.sub(r"[^a-z0-9]+", "", (r["Business Name"] or "").lower()) in sells_here]
     for path in a.additions:
         with open(path, encoding="utf-8-sig", newline="") as f:
             add = list(csv.DictReader(f))
