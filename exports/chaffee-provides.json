@@ -14,6 +14,8 @@
    "markets": 2,
    "access_points": 2,
    "market_links": 36,
+   "outlets": 3,
+   "outlet_pins": 3,
    "pins": 29
   }
  },
@@ -64,6 +66,16 @@
    "baked-goods": "Baked goods",
    "seeds-plants": "Seeds & plants",
    "drinks": "Wine & drinks"
+  },
+  "outlet_kinds": {
+   "grocery": "Grocery stores",
+   "farm_store": "Farm stores",
+   "garden_center": "Garden centers",
+   "apothecary": "Apothecary"
+  },
+  "outlet_groups": {
+   "shops": "Shops & Grocers",
+   "dining": "Restaurants & Caterers"
   }
  },
  "producers": [
@@ -3835,6 +3847,149 @@
      "source": "guidestone",
      "label": "Guidestone Colorado review",
      "url": null
+    }
+   ]
+  }
+ ],
+ "outlets": [
+  {
+   "id": "co-o-000159",
+   "slug": "copper-kettle-apothecary-outlet",
+   "name": "Copper Kettle Apothecary",
+   "kind": "apothecary",
+   "group": "shops",
+   "brand": null,
+   "hours": [],
+   "website": null,
+   "phone": "(719) 530-7111",
+   "facebook": "https://www.facebook.com/copperkettleapothecary/",
+   "instagram": null,
+   "status": "unverified",
+   "last_verified": null,
+   "location": {
+    "id": "co-loc-001508",
+    "role": "outlet_site",
+    "name": null,
+    "address": "138 w 1st street",
+    "city": "Salida",
+    "zip": "81201",
+    "county_fips": "08015",
+    "lat": 38.536715,
+    "lon": -105.992351,
+    "precision": "exact",
+    "pin": true,
+    "pin_basis": "confirmed"
+   },
+   "sources": [
+    {
+     "source": "producer_site",
+     "label": "Producer's own website",
+     "url": null
+    },
+    {
+     "source": "chaffee_provides",
+     "label": "Chaffee Provides",
+     "url": null
+    }
+   ],
+   "confirmed_by": [
+    {
+     "by": "Guidestone Colorado",
+     "fields": [
+      "phone"
+     ],
+     "url": null,
+     "date": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "id": "co-o-000002",
+   "slug": "market-on-main-st-the-triangle-oasis-outlet",
+   "name": "Market on Main St. (The Triangle Oasis)",
+   "kind": "farm_store",
+   "group": "shops",
+   "brand": null,
+   "hours": [],
+   "website": "https://www.thetriangleoasis.com/markets",
+   "phone": null,
+   "facebook": "https://www.facebook.com/pages/category/Farm/The-Triangle-Oasis-219919395410862",
+   "instagram": "https://www.instagram.com/thetriangleoasisproject",
+   "status": "unverified",
+   "last_verified": null,
+   "location": {
+    "id": "co-loc-000017",
+    "role": "outlet_site",
+    "name": null,
+    "address": "125 N. F St",
+    "city": "Salida",
+    "zip": null,
+    "county_fips": "08015",
+    "lat": 38.536706,
+    "lon": -105.991271,
+    "precision": "exact",
+    "pin": true,
+    "pin_basis": "confirmed"
+   },
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ],
+   "confirmed_by": []
+  },
+  {
+   "id": "co-o-000004",
+   "slug": "the-lettucehead-food-company-outlet",
+   "name": "The Lettucehead Food Company",
+   "kind": "grocery",
+   "group": "shops",
+   "brand": null,
+   "hours": [],
+   "website": "http://www.thelettucehead.com",
+   "phone": "(719) 395-2649",
+   "facebook": "https://www.facebook.com/TheLettuceheadFoodCompany",
+   "instagram": "https://www.instagram.com/thelettuceheadfoodcompany",
+   "status": "unverified",
+   "last_verified": null,
+   "location": {
+    "id": "co-loc-000031",
+    "role": "outlet_site",
+    "name": null,
+    "address": "545 US Highway 24 N, Buena Vista, CO",
+    "city": "Buena Vista",
+    "zip": "81211",
+    "county_fips": "08015",
+    "lat": 38.846767,
+    "lon": -106.135075,
+    "precision": "exact",
+    "pin": true,
+    "pin_basis": "confirmed"
+   },
+   "sources": [
+    {
+     "source": "producer_site",
+     "label": "Producer's own website",
+     "url": "http://www.thelettucehead.com"
+    },
+    {
+     "source": "chaffee_provides",
+     "label": "Chaffee Provides",
+     "url": null
+    }
+   ],
+   "confirmed_by": [
+    {
+     "by": "the business's own website",
+     "fields": [
+      "address",
+      "hours",
+      "phone"
+     ],
+     "url": "http://www.thelettucehead.com",
+     "date": null
     }
    ]
   }

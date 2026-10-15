@@ -12,6 +12,7 @@
   "hide_pin_slugs": {
     "everett-ranch-beef": "Social media only; listed so people can message them, but not shown on the map (user, 2026-10-15)"
   },
+  "include_outlet_kinds": ["apothecary", "farm_store", "garden_center", "grocery"],
   "include_categories": {
     "On-Farm / Ranch Sales": "Part of the Chaffee Provides set",
     "Roadside Market": "Part of the Chaffee Provides set",

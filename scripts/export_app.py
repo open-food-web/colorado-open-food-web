@@ -40,6 +40,14 @@ SOURCE_LABELS = {
 # What a producer calls itself (producers.kind). Farms and ranches are different things to a shopper.
 KIND_LABELS = {"farm": "Farms", "ranch": "Ranches", "orchard": "Orchards", "bakery": "Bakeries", "maker": "Food makers",
                "winery": "Wineries"}
+# Outlets (retailers and dining) an app can opt into with "include_outlet_kinds". The group is derived from the kind.
+OUTLET_KIND_LABELS = {"grocery": "Grocery stores", "farm_store": "Farm stores", "garden_center": "Garden centers",
+                      "apothecary": "Apothecary", "other_retail": "Other shops", "restaurant": "Restaurants",
+                      "caterer": "Caterers", "food_truck": "Food trucks", "cafe": "Cafes", "bar_or_taproom": "Bars and taprooms",
+                      "other_dining": "Other dining"}
+OUTLET_GROUPS = {"shops": "Shops & Grocers", "dining": "Restaurants & Caterers"}
+OUTLET_GROUP_OF = {k: ("shops" if k in ("grocery", "farm_store", "garden_center", "apothecary", "other_retail") else "dining")
+                   for k in OUTLET_KIND_LABELS}
 FIELD_LABEL = {"phone": "phone", "email": "email", "website": "website", "facebook": "Facebook", "instagram": "Instagram",
                "hours_text": "hours", "seasonal_months": "season", "products": "products", "address": "address",
                "city": "town", "zip": "ZIP", "categories": "type", "certified_organic": "organic status",
@@ -120,6 +128,7 @@ def main():
     hide_pin_slugs = set((cfg.get("hide_pin_slugs") or {}).keys())
     include_categories = set((cfg.get("include_categories") or {}).keys())
     exclude_categories = set((cfg.get("exclude_categories") or {}).keys())
+    include_outlet_kinds = set(cfg.get("include_outlet_kinds") or [])   # outlets are exported only when the app asks for them
     exclude_kinds = set(cfg.get("exclude_kinds") or [])   # e.g. ["bakery"]: a whole category left out of a launch
 
     locations = {r["location_id"]: r for r in T("locations")}
@@ -326,6 +335,21 @@ def main():
             "location": public_location(m["location_id"], "market_site", True, "confirmed"),
             "sources": sources("market", m["market_id"])})
 
+    outlets = []
+    for o in (T("outlets") if include_outlet_kinds else []):
+        if o["kind"] not in include_outlet_kinds or o["slug"] in exclude_slugs or o["status"] in HIDDEN_STATUS                 or not in_area("outlet", o["outlet_id"], [o["location_id"]]):
+            continue
+        outlets.append({
+            "id": o["outlet_id"], "slug": o["slug"], "name": o["name"], "kind": o["kind"],
+            "group": OUTLET_GROUP_OF.get(o["kind"], "shops"), "brand": o["brand"] or None,
+            "hours": hours_by.get(("outlet", o["outlet_id"]), []),
+            "website": o["website"] or None, "phone": o["phone"] or None,
+            "facebook": o["facebook"] or None, "instagram": o["instagram"] or None,
+            "status": o["status"], "last_verified": o["last_verified"] or None,
+            "location": public_location(o["location_id"], "outlet_site", True, "confirmed"),
+            "sources": sources("outlet", o["outlet_id"]),
+            "confirmed_by": confirmed_by("outlet", o["outlet_id"], o["website"])})
+
     access = []
     for r in T("access_points"):
         if r["status"] in HIDDEN_STATUS or not in_area("access_point", r["access_point_id"], [r["location_id"]]):
@@ -348,13 +372,17 @@ def main():
             "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
             "counts": {"producers": len(producers), "markets": len(markets), "access_points": len(access),
                        "market_links": sum(len(p["sells_at"]) for p in producers),
+                       **({"outlets": len(outlets), "outlet_pins": sum(o["location"]["pin"] for o in outlets)} if include_outlet_kinds else {}),
                        "pins": sum(l["pin"] for p in producers for l in p["locations"])
                        + len(markets) + len(access)}},
         "vocab": {"sales_channels": CHANNEL_LABELS, "months": MONTHS, "kinds": KIND_LABELS,
-                  "product_groups": PRODUCTS.LABELS},
+                  "product_groups": PRODUCTS.LABELS,
+                  **({"outlet_kinds": {k: v for k, v in OUTLET_KIND_LABELS.items() if k in include_outlet_kinds},
+                      "outlet_groups": OUTLET_GROUPS} if include_outlet_kinds else {})},
         "producers": sorted(producers, key=lambda x: x["name"].lower()),
         "markets": sorted(markets, key=lambda x: x["name"].lower()),
         "access_points": sorted(access, key=lambda x: x["name"].lower()),
+        **({"outlets": sorted(outlets, key=lambda x: x["name"].lower())} if include_outlet_kinds else {}),
         "removed_ids": sorted(removed)}
     os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     with open(a.out, "w", encoding="utf-8", newline="\n") as f:
