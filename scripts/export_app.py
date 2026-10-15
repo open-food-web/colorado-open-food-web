@@ -111,12 +111,15 @@ def main():
                     help="also include records that this source lists, even outside the county")
     ap.add_argument("--unconfirmed-home-pins", choices=["show", "hide"], default="show",
                     help="draw a home-base pin for producers whose sales channels are not confirmed yet")
-    ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}} for the app's own scope choices")
+    ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}, \"include_categories\": {category: reason}, \"exclude_categories\": {category: reason}, \"hide_pin_slugs\": {slug: reason}} for the app's own scope choices")
     ap.add_argument("--generated", default=dt.date.today().isoformat())
     a = ap.parse_args()
     T = lambda n: read(os.path.join(a.tables, n + ".csv"))
     cfg = json.load(open(a.config, encoding="utf-8")) if a.config else {}
     exclude_slugs = set((cfg.get("exclude_slugs") or {}).keys())
+    hide_pin_slugs = set((cfg.get("hide_pin_slugs") or {}).keys())
+    include_categories = set((cfg.get("include_categories") or {}).keys())
+    exclude_categories = set((cfg.get("exclude_categories") or {}).keys())
     exclude_kinds = set(cfg.get("exclude_kinds") or [])   # e.g. ["bakery"]: a whole category left out of a launch
 
     locations = {r["location_id"]: r for r in T("locations")}
@@ -225,6 +228,12 @@ def main():
         locs = plocs.get(pid, [])
         if p["slug"] in exclude_slugs or p["kind"] in exclude_kinds:
             continue
+        # excluded only when every category the record has is one the app leaves out
+        if exclude_categories and lst(p["categories"]) and set(lst(p["categories"])) <= exclude_categories:
+            continue
+        # an allowlist, when the app has one: a record with categories stays only if one of them is on the list
+        if include_categories and lst(p["categories"]) and not (set(lst(p["categories"])) & include_categories):
+            continue
         if p["status"] in HIDDEN_STATUS or not in_area("producer", pid, [l["location_id"] for l in locs]):
             continue
         channels = lst(p["sales_channels"])
@@ -263,6 +272,8 @@ def main():
             if l["role"] == "home_base":
                 pin = sells_at_farm or (not channels and a.unconfirmed_home_pins == "show")
                 basis = "confirmed" if sells_at_farm else "unconfirmed"
+                if p["slug"] in hide_pin_slugs and not sells_at_farm:
+                    pin = False
             else:
                 pin, basis = True, "confirmed"
             if l["role"] == "home_base" and not (locations.get(l["location_id"]) or {}).get("address") \
@@ -274,7 +285,7 @@ def main():
             out_locs.append(public_location(l["location_id"], l["role"], pin, basis, {
                 "days": lst(l["days"]), "hours_text": l["hours_text"] or None,
                 "season_start": l["season_start"] or None, "season_end": l["season_end"] or None,
-                "status": l["status"]}, use_market_name=True))
+                "status": l["status"], "confirm_url": l.get("confirm_url") or None}, use_market_name=True))
         rec = {
             "id": pid, "slug": p["slug"], "name": p["name"], "kind": p["kind"],
             "categories": lst(p["categories"]), "products": lst(p["products"]),

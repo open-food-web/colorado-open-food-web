@@ -1,6 +1,26 @@
 {
-  "_comment": "Scope choices Guidestone made for the Chaffee Provides site. These are about what that site shows, not about the facts, so the Food Web keeps the records. Keyed by producer slug.",
+  "_comment": "Scope choices Guidestone made for the Chaffee Provides site. These are about what that site shows, not about the facts, so the Food Web keeps the records. include_categories is the allowlist (farms, farmers markets, makers); exclude_categories drops a record whose categories are all listed; exclude_slugs and hide_pin_slugs are per producer.",
   "exclude_slugs": {
     "cottonwood-spirit-ranch": "Not applicable for now: mostly a vacation rental that sells beef to guests (Alycen Quattrocchi, Oct 13 2026)"
+  },
+  "exclude_categories": {
+    "Agritourism": "Guidestone does not want agritourism on the Chaffee Provides site (user, 2026-10-15)",
+    "Bakery": "Bakeries are not part of the Chaffee Provides set (user, 2026-10-15)",
+    "Restaurant": "Restaurants are not part of the Chaffee Provides set (JP provider, 2026-10-15)",
+    "Caterer": "Caterers are not part of the Chaffee Provides set (JP provider, 2026-10-15)"
+  },
+  "hide_pin_slugs": {
+    "everett-ranch-beef": "Social media only; listed so people can message them, but not shown on the map (user, 2026-10-15)"
+  },
+  "include_categories": {
+    "On-Farm / Ranch Sales": "Part of the Chaffee Provides set",
+    "Roadside Market": "Part of the Chaffee Provides set",
+    "U-Pick": "Part of the Chaffee Provides set",
+    "CSA Farm": "Part of the Chaffee Provides set",
+    "Farm Products (online)": "Part of the Chaffee Provides set",
+    "Food Maker": "Part of the Chaffee Provides set",
+    "Meat Producer & Packer": "Part of the Chaffee Provides set",
+    "Winery": "Part of the Chaffee Provides set",
+    "Market Vendor": "Part of the Chaffee Provides set: growers and makers who sell at the Salida Farmers Market"
   }
 }

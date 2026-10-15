@@ -76,6 +76,21 @@ class ExportApp(unittest.TestCase):
                           extra=["--unconfirmed-home-pins", "hide"])
         self.assertFalse(self.by_name(doc)["Unknown Farm"]["locations"][0]["pin"])
 
+    def test_app_config_scopes_by_category_and_hides_a_pin(self):
+        rows = [row("Plain Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106"),
+                row("Bread Shop", "Bakery", Address="3 Rd", Latitude="38.6", Longitude="-106"),
+                row("Goat Stay", "Agritourism", Address="4 Rd", Latitude="38.6", Longitude="-106"),
+                row("Social Ranch", "On-Farm / Ranch Sales", Address="5 Rd", Latitude="38.6", Longitude="-106")]
+        cfg = os.path.join(tempfile.mkdtemp(), "cfg.json")
+        with open(cfg, "w", encoding="utf-8") as f:
+            json.dump({"include_categories": {"On-Farm / Ranch Sales": "x"},
+                       "exclude_categories": {"Agritourism": "x"},
+                       "hide_pin_slugs": {"social-ranch": "x"}}, f)
+        names = self.by_name(self.export(rows, extra=["--config", cfg]))
+        self.assertEqual(set(names), {"Plain Farm", "Social Ranch"})
+        self.assertTrue(names["Plain Farm"]["locations"][0]["pin"])
+        self.assertFalse(names["Social Ranch"]["locations"][0]["pin"])
+
     def test_closed_and_removed_leave_the_file(self):
         def edit(prod):
             for p in prod:

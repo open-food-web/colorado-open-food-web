@@ -10,11 +10,11 @@
   ],
   "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
   "counts": {
-   "producers": 37,
+   "producers": 31,
    "markets": 2,
    "access_points": 2,
-   "market_links": 40,
-   "pins": 33
+   "market_links": 36,
+   "pins": 29
   }
  },
  "vocab": {
@@ -141,7 +141,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -162,7 +163,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -254,7 +256,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -357,7 +360,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-001493",
@@ -378,7 +382,8 @@
      "hours_text": "Tue: 4:45pm - 5:00pm",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": "https://store.badgercreekranch.com/delivery_location/salida-safeway-parking-lot"
     },
     {
      "id": "co-loc-001494",
@@ -399,7 +404,8 @@
      "hours_text": "Tue: 6:00pm - 6:15pm",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": "https://store.badgercreekranch.com/delivery_location/valley-fellowship-church"
     },
     {
      "id": "co-loc-001495",
@@ -418,7 +424,8 @@
      "hours_text": "Pickup by arrangement",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -439,7 +446,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -475,211 +483,6 @@
      "date": null
     }
    ]
-  },
-  {
-   "id": "co-p-000003",
-   "slug": "banyan-breads",
-   "name": "Banyan Breads",
-   "kind": "bakery",
-   "categories": [
-    "Bakery"
-   ],
-   "products": [
-    "Country sourdough",
-    "maple whole wheat",
-    "sourdough bagels",
-    "baguette",
-    "whole-grain German rye",
-    "babka"
-   ],
-   "product_groups": [
-    "baked-goods"
-   ],
-   "dropin_visits": true,
-   "dropin_hours": "Mornings, until sold out",
-   "farm_pickup": true,
-   "visit_basis": {
-    "dropin": "set",
-    "pickup": "listing"
-   },
-   "visit_note": "Shop at 110 E 1st St, Salida, open mornings until sold out",
-   "months_open": [],
-   "hours_text": "Shop open mornings; preorder pickup Thu, Fri, Sun",
-   "hours": [],
-   "hours_status": "text_only",
-   "website": "https://banyanbreads.com/",
-   "phone": null,
-   "email": null,
-   "facebook": null,
-   "instagram": "https://www.instagram.com/banyan_breads/",
-   "sales_channels": [
-    "farm_stand",
-    "farmers_market",
-    "pickup"
-   ],
-   "sells_at": [
-    {
-     "market_id": "co-m-000002",
-     "name": "Salida Farmers Market",
-     "county_fips": "08015",
-     "year": 2026,
-     "season_label": null,
-     "basis": "exact_name",
-     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
-    }
-   ],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000003",
-     "role": "home_base",
-     "name": null,
-     "address": "110 E 1st Street",
-     "city": "Salida",
-     "zip": "81201",
-     "county_fips": "08015",
-     "lat": 38.536237,
-     "lon": -105.991583,
-     "precision": "exact",
-     "pin": true,
-     "pin_basis": "confirmed",
-     "days": [],
-     "hours_text": "Shop open mornings; preorder pickup Thu, Fri, Sun",
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "curated",
-     "label": "Farmers market vendor lists, checked by hand",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
-  },
-  {
-   "id": "co-p-000172",
-   "slug": "bristlecone-bakeshop",
-   "name": "Bristlecone Bakeshop",
-   "kind": "bakery",
-   "categories": [
-    "Bakery"
-   ],
-   "products": [
-    "Sourdough loaves",
-    "sweet and savory pastries",
-    "breakfast sandwiches",
-    "cookies",
-    "cold sandwiches"
-   ],
-   "product_groups": [
-    "baked-goods"
-   ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": "Wed–Sat 7am–2pm; Sun 7am–12pm",
-   "hours": [
-    {
-     "day": "wed",
-     "opens": "07:00",
-     "closes": "14:00"
-    },
-    {
-     "day": "thu",
-     "opens": "07:00",
-     "closes": "14:00"
-    },
-    {
-     "day": "fri",
-     "opens": "07:00",
-     "closes": "14:00"
-    },
-    {
-     "day": "sat",
-     "opens": "07:00",
-     "closes": "14:00"
-    },
-    {
-     "day": "sun",
-     "opens": "07:00",
-     "closes": "12:00"
-    }
-   ],
-   "hours_status": "parsed",
-   "website": "https://www.bristleconebakeshop.com/",
-   "phone": "(908) 451-5727",
-   "email": "maggie@bristleconebakeshop.com",
-   "facebook": null,
-   "instagram": "https://www.instagram.com/bristlecone_bakeshop/",
-   "sales_channels": [],
-   "sells_at": [
-    {
-     "market_id": "co-m-000002",
-     "name": "Salida Farmers Market",
-     "county_fips": "08015",
-     "year": 2026,
-     "season_label": null,
-     "basis": "exact_name",
-     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
-    }
-   ],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000213",
-     "role": "home_base",
-     "name": null,
-     "address": "15 S. Main St",
-     "city": "Alma",
-     "zip": "80420",
-     "county_fips": "08093",
-     "lat": 39.283437,
-     "lon": -106.062459,
-     "precision": "exact",
-     "pin": false,
-     "pin_basis": "unconfirmed",
-     "days": [
-      "wed",
-      "thu",
-      "fri",
-      "sat",
-      "sun"
-     ],
-     "hours_text": "Wed–Sat 7am–2pm; Sun 7am–12pm",
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "curated",
-     "label": "Farmers market vendor lists, checked by hand",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
   },
   {
    "id": "co-p-000004",
@@ -824,7 +627,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -903,7 +707,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -997,7 +802,8 @@
      "hours_text": "Not open to the public. Order online.",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1083,7 +889,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1204,7 +1011,8 @@
      "hours_text": "No storefront; online support Mon-Thu 8-3 MT",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1261,20 +1069,21 @@
      "id": "co-loc-000012",
      "role": "home_base",
      "name": null,
-     "address": "8955 County Road 166",
+     "address": null,
      "city": "Salida",
-     "zip": "81201",
+     "zip": null,
      "county_fips": "08015",
-     "lat": 38.565968,
-     "lon": -106.046544,
-     "precision": "exact",
-     "pin": true,
+     "lat": 38.5347,
+     "lon": -105.9989,
+     "precision": "town",
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1369,7 +1178,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -1390,7 +1200,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1520,7 +1331,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -1541,7 +1353,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1627,7 +1440,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -1648,7 +1462,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1725,7 +1540,8 @@
      "hours_text": "Tue: 4:00pm - 6:00pm",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1814,7 +1630,52 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
+    },
+    {
+     "id": "co-loc-000026",
+     "role": "pickup",
+     "name": "Salida Farmers Market",
+     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.533052,
+     "lon": -105.993304,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Saturdays, June - October",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": "https://www.headwaterfarmco.com/purchase"
+    },
+    {
+     "id": "co-loc-000005",
+     "role": "pickup",
+     "name": "Buena Vista Farmers' Market",
+     "address": "Turner Farm & Apple Orchard, 829 W Main St",
+     "city": "Buena Vista",
+     "zip": "81211",
+     "county_fips": "08015",
+     "lat": 38.839044,
+     "lon": -106.141712,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Saturdays, June - October",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": "https://www.headwaterfarmco.com/purchase"
     }
    ],
    "sources": [
@@ -1863,7 +1724,7 @@
     "dropin": null,
     "pickup": null
    },
-   "visit_note": null,
+   "visit_note": "Sells beef directly; none available right now. Ask by email or phone",
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -1900,7 +1761,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1990,7 +1852,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2096,7 +1959,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-001503",
@@ -2117,7 +1981,8 @@
      "hours_text": "Sundays",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -2138,7 +2003,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2227,7 +2093,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -2248,7 +2115,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2259,91 +2127,6 @@
     }
    ],
    "confirmed_by": []
-  },
-  {
-   "id": "co-p-000017",
-   "slug": "mountain-goat-lodge",
-   "name": "Mountain Goat Lodge",
-   "kind": "farm",
-   "categories": [
-    "On-Farm / Ranch Sales"
-   ],
-   "products": [
-    "Dairy"
-   ],
-   "product_groups": [
-    "dairy"
-   ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": "https://mountaingoatlodge.com",
-   "phone": "(206) 218-8201",
-   "email": "mtglodge@gmail.com",
-   "facebook": "https://www.facebook.com/Mountaingoatlodge",
-   "instagram": "https://www.instagram.com/mountaingoatlodge",
-   "sales_channels": [],
-   "sells_at": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000020",
-     "role": "home_base",
-     "name": null,
-     "address": "9582 US Highway 285",
-     "city": "Salida",
-     "zip": "81201",
-     "county_fips": "08015",
-     "lat": 38.558605,
-     "lon": -106.08301,
-     "precision": "exact",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "producer_site",
-     "label": "Producer's own website",
-     "url": "https://mountaingoatlodge.com"
-    },
-    {
-     "source": "chaffee_provides",
-     "label": "Chaffee Provides",
-     "url": null
-    }
-   ],
-   "confirmed_by": [
-    {
-     "by": "the business's own website",
-     "fields": [
-      "email",
-      "phone"
-     ],
-     "url": "https://mountaingoatlodge.com",
-     "date": null
-    }
-   ]
   },
   {
    "id": "co-p-000018",
@@ -2412,7 +2195,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2576,7 +2360,8 @@
      "hours_text": "U-pick orchard tours in summer season",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -2597,7 +2382,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2675,7 +2461,8 @@
      "hours_text": "By appointment",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2767,7 +2554,8 @@
      "hours_text": "By appointment",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2795,115 +2583,6 @@
      "date": null
     }
    ]
-  },
-  {
-   "id": "co-p-000862",
-   "slug": "raisin-rye",
-   "name": "Raisin' Rye",
-   "kind": "bakery",
-   "categories": [
-    "Bakery"
-   ],
-   "products": [
-    "Sourdough breads and bagels",
-    "rye",
-    "scones",
-    "muffins",
-    "gluten-free brownies",
-    " coffee"
-   ],
-   "product_groups": [
-    "baked-goods",
-    "drinks"
-   ],
-   "dropin_visits": true,
-   "dropin_hours": null,
-   "farm_pickup": true,
-   "visit_basis": {
-    "dropin": "set",
-    "pickup": "listing"
-   },
-   "visit_note": "Walk-in bakery at 675 Grand Ave, Del Norte (weekday and Saturday hours differ by source)",
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": null,
-   "phone": "(719) 588-2857",
-   "email": null,
-   "facebook": "https://www.facebook.com/raisinrye/",
-   "instagram": "https://www.instagram.com/raisinryebakery/",
-   "sales_channels": [
-    "farm_stand"
-   ],
-   "sells_at": [
-    {
-     "market_id": "co-m-000002",
-     "name": "Salida Farmers Market",
-     "county_fips": "08015",
-     "year": 2026,
-     "season_label": null,
-     "basis": "exact_name",
-     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
-    }
-   ],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-001067",
-     "role": "home_base",
-     "name": null,
-     "address": "675 Grand Ave",
-     "city": "Del Norte",
-     "zip": "81132",
-     "county_fips": "08105",
-     "lat": 37.678741,
-     "lon": -106.353694,
-     "precision": "exact",
-     "pin": false,
-     "pin_basis": "confirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    },
-    {
-     "id": "co-loc-000026",
-     "role": "pickup",
-     "name": "Salida Farmers Market",
-     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
-     "city": "Salida",
-     "zip": "81201",
-     "county_fips": "08015",
-     "lat": 38.533052,
-     "lon": -105.993304,
-     "precision": "exact",
-     "pin": true,
-     "pin_basis": "confirmed",
-     "days": [
-      "Sat"
-     ],
-     "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "curated",
-     "label": "Farmers market vendor lists, checked by hand",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
   },
   {
    "id": "co-p-000021",
@@ -3028,7 +2707,8 @@
      "hours_text": "Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; Wed: 8 am - 6 pm; Thu: 8 am - 6 pm; Fri: 8 am - 6 pm; Sat: 8 am - 6 pm",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -3049,7 +2729,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -3076,92 +2757,6 @@
       "products"
      ],
      "url": "https://www.rockymountaingarlic.net/",
-     "date": null
-    }
-   ]
-  },
-  {
-   "id": "co-p-000022",
-   "slug": "salida-cattle-company",
-   "name": "Salida Cattle Company",
-   "kind": "ranch",
-   "categories": [
-    "On-Farm / Ranch Sales"
-   ],
-   "products": [
-    "Beef (steaks",
-    "hamburger)",
-    "grass-fed and corn-finished cattle"
-   ],
-   "product_groups": [
-    "beef-meat"
-   ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": "http://www.salidacattlecompany.com",
-   "phone": "(719) 221-2267",
-   "email": null,
-   "facebook": null,
-   "instagram": null,
-   "sales_channels": [],
-   "sells_at": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000025",
-     "role": "home_base",
-     "name": null,
-     "address": null,
-     "city": "Salida",
-     "zip": null,
-     "county_fips": "08015",
-     "lat": 38.5347,
-     "lon": -105.9989,
-     "precision": "town",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "producer_site",
-     "label": "Producer's own website",
-     "url": "http://www.salidacattlecompany.com"
-    },
-    {
-     "source": "chaffee_provides",
-     "label": "Chaffee Provides",
-     "url": null
-    }
-   ],
-   "confirmed_by": [
-    {
-     "by": "the business's own website",
-     "fields": [
-      "products"
-     ],
-     "url": "http://www.salidacattlecompany.com",
      "date": null
     }
    ]
@@ -3229,7 +2824,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -3331,7 +2927,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -3406,7 +3003,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -3524,7 +3122,8 @@
      "hours_text": "Pick-your-own flowers by appointment, June–October",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -3569,7 +3168,10 @@
    "email": "beth@troutcreekfarm.com",
    "facebook": null,
    "instagram": null,
-   "sales_channels": [],
+   "sales_channels": [
+    "online",
+    "wholesale"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -3590,13 +3192,14 @@
      "lat": 38.796609,
      "lon": -106.094898,
      "precision": "exact",
-     "pin": true,
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -3693,7 +3296,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -3792,7 +3396,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -3813,7 +3418,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -3931,93 +3537,14 @@
      "hours_text": "Tue-Sun: 8:00am - 6:00pm",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
     {
      "source": "curated",
      "label": "Farmers market vendor lists, checked by hand",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
-  },
-  {
-   "id": "co-p-001212",
-   "slug": "woof-n-wag-snack-shack-llc",
-   "name": "Woof n’ Wag Snack Shack LLC",
-   "kind": "maker",
-   "categories": [
-    "Bakery"
-   ],
-   "products": [
-    "Animal & Pet Food"
-   ],
-   "product_groups": [
-    "baked-goods"
-   ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": "http://www.woofnwagsnackshack.com",
-   "phone": "(719) 207-5107",
-   "email": null,
-   "facebook": "https://www.facebook.com/share/1U3hYPBUPX/?mibextid=wwXIfr",
-   "instagram": "https://www.instagram.com/woofnwagsnackshack?igsh=N3lrdHBzZGtzYjZp&utm_source=qr",
-   "sales_channels": [],
-   "sells_at": [
-    {
-     "market_id": "co-m-000002",
-     "name": "Salida Farmers Market",
-     "county_fips": "08015",
-     "year": 2026,
-     "season_label": null,
-     "basis": "normalized_name",
-     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
-    }
-   ],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-001471",
-     "role": "home_base",
-     "name": null,
-     "address": null,
-     "city": "Coaldale",
-     "zip": "81222",
-     "county_fips": "08043",
-     "lat": 38.359871,
-     "lon": -105.755656,
-     "precision": "approximate",
-     "pin": false,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "colorado_proud",
-     "label": "Colorado Proud",
      "url": null
     }
    ],
@@ -4104,16 +3631,12 @@
    "vendors": [
     "co-p-000001",
     "co-p-000002",
-    "co-p-000003",
     "co-p-000004",
     "co-p-000012",
     "co-p-000021",
     "co-p-000026",
-    "co-p-000172",
     "co-p-000792",
-    "co-p-000862",
     "co-p-001031",
-    "co-p-001212",
     "co-p-001232",
     "co-p-001233",
     "co-p-001234",
