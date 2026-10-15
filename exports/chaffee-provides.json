@@ -42,7 +42,27 @@
    "October",
    "November",
    "December"
-  ]
+  ],
+  "kinds": {
+   "farm": "Farms",
+   "ranch": "Ranches",
+   "orchard": "Orchards",
+   "maker": "Food makers",
+   "winery": "Wineries"
+  },
+  "product_groups": {
+   "veggies": "Veggies",
+   "fruit": "Fruit",
+   "beef-meat": "Beef & meat",
+   "poultry-eggs": "Poultry & eggs",
+   "dairy": "Dairy",
+   "honey": "Honey",
+   "flowers": "Flowers",
+   "garlic-herbs": "Garlic & herbs",
+   "mushrooms": "Mushrooms",
+   "baked-goods": "Baked goods",
+   "drinks": "Wine & drinks"
+  }
  },
  "producers": [
   {
@@ -131,6 +151,9 @@
     "tanned hides",
     "breeding stock"
    ],
+   "product_groups": [
+    "beef-meat"
+   ],
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -204,6 +227,10 @@
    "products": [
     "Grass-fed beef",
     "eggs"
+   ],
+   "product_groups": [
+    "beef-meat",
+    "poultry-eggs"
    ],
    "months_open": [],
    "hours_text": null,
@@ -370,6 +397,9 @@
     "whole-grain German rye",
     "babka"
    ],
+   "product_groups": [
+    "baked-goods"
+   ],
    "months_open": [],
    "hours_text": "Shop open mornings; preorder pickup Thu, Fri, Sun",
    "hours": [],
@@ -535,7 +565,7 @@
    "id": "co-p-000004",
    "slug": "buck-and-bloom-cheese-co",
    "name": "Buck and Bloom Cheese Co",
-   "kind": "farm",
+   "kind": "maker",
    "categories": [
     "On-Farm / Ranch Sales",
     "Agritourism"
@@ -548,6 +578,10 @@
     "pepperjack",
     "cave-aged)",
     "eggs"
+   ],
+   "product_groups": [
+    "poultry-eggs",
+    "dairy"
    ],
    "months_open": [],
    "hours_text": null,
@@ -689,6 +723,9 @@
     "broccoli",
     "pumpkins"
    ],
+   "product_groups": [
+    "veggies"
+   ],
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -757,6 +794,9 @@
     "culinary vinegars",
     "dried lavender bouquets"
    ],
+   "product_groups": [
+    "flowers"
+   ],
    "months_open": [],
    "hours_text": "Not open to the public. Order online.",
    "hours": [],
@@ -815,12 +855,15 @@
    "id": "co-p-000007",
    "slug": "copper-kettle-apothecary",
    "name": "Copper Kettle Apothecary",
-   "kind": "farm",
+   "kind": "ranch",
    "categories": [
     "On-Farm / Ranch Sales"
    ],
    "products": [
     "Spices/Garlic"
+   ],
+   "product_groups": [
+    "garlic-herbs"
    ],
    "months_open": [],
    "hours_text": null,
@@ -982,6 +1025,7 @@
     "Tours",
     "Value-Added Non-Food Products"
    ],
+   "product_groups": [],
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -1039,6 +1083,9 @@
    ],
    "products": [
     "Beef/Meat"
+   ],
+   "product_groups": [
+    "beef-meat"
    ],
    "months_open": [],
    "hours_text": null,
@@ -1102,6 +1149,7 @@
     "Agritourism"
    ],
    "products": [],
+   "product_groups": [],
    "months_open": [],
    "hours_text": "Tue: 4:00pm - 6:00pm",
    "hours": [
@@ -1172,6 +1220,9 @@
     "wildflowers",
     "pumpkins (pumpkin patch)",
     "CSA shares"
+   ],
+   "product_groups": [
+    "veggies"
    ],
    "months_open": [],
    "hours_text": null,
@@ -1246,6 +1297,9 @@
    "products": [
     "Grass-fed beef"
    ],
+   "product_groups": [
+    "beef-meat"
+   ],
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -1309,6 +1363,9 @@
    "products": [
     "Beef/Meat"
    ],
+   "product_groups": [
+    "beef-meat"
+   ],
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -1371,6 +1428,9 @@
    ],
    "products": [
     "Dairy"
+   ],
+   "product_groups": [
+    "dairy"
    ],
    "months_open": [],
    "hours_text": null,
@@ -1438,6 +1498,9 @@
     "mushroom growing supplies",
     "classes",
     "CSA membership"
+   ],
+   "product_groups": [
+    "mushrooms"
    ],
    "months_open": [],
    "hours_text": null,
@@ -1642,6 +1705,9 @@
     "summer flower subscriptions",
     "bouquets"
    ],
+   "product_groups": [
+    "flowers"
+   ],
    "months_open": [],
    "hours_text": "By appointment",
    "hours": [],
@@ -1706,6 +1772,10 @@
     "Microgreens",
     "sunflower shoots",
     "pea shoots"
+   ],
+   "product_groups": [
+    "veggies",
+    "flowers"
    ],
    "months_open": [],
    "hours_text": "By appointment",
@@ -1845,6 +1915,10 @@
    "products": [
     "Hardneck garlic",
     "vegetables"
+   ],
+   "product_groups": [
+    "veggies",
+    "garlic-herbs"
    ],
    "months_open": [
     "May",
@@ -1998,6 +2072,9 @@
     "hamburger)",
     "grass-fed and corn-finished cattle"
    ],
+   "product_groups": [
+    "beef-meat"
+   ],
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -2061,6 +2138,10 @@
    "products": [
     "Beef/Meat",
     "Poultry/Eggs"
+   ],
+   "product_groups": [
+    "beef-meat",
+    "poultry-eggs"
    ],
    "months_open": [],
    "hours_text": null,
@@ -2200,6 +2281,12 @@
     "Staples",
     "Flowers"
    ],
+   "product_groups": [
+    "beef-meat",
+    "poultry-eggs",
+    "honey",
+    "flowers"
+   ],
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -2263,6 +2350,9 @@
    "products": [
     "Bread",
     "Chocolate & Cocoa Products"
+   ],
+   "product_groups": [
+    "baked-goods"
    ],
    "months_open": [],
    "hours_text": null,
@@ -2330,6 +2420,12 @@
     "roasted chilies",
     "sausages",
     "frozen treats"
+   ],
+   "product_groups": [
+    "veggies",
+    "beef-meat",
+    "flowers",
+    "garlic-herbs"
    ],
    "months_open": [],
    "hours_text": "Pick-your-own flowers by appointment, June–October",
@@ -2403,6 +2499,10 @@
     "Specialty cut flowers",
     "produce"
    ],
+   "product_groups": [
+    "veggies",
+    "flowers"
+   ],
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -2459,7 +2559,7 @@
    "id": "co-p-000028",
    "slug": "valley-roots-food-hub",
    "name": "Valley Roots Food Hub",
-   "kind": "farm",
+   "kind": "ranch",
    "categories": [
     "On-Farm / Ranch Sales"
    ],
@@ -2468,6 +2568,12 @@
     "meat",
     "cheese",
     "eggs"
+   ],
+   "product_groups": [
+    "veggies",
+    "beef-meat",
+    "poultry-eggs",
+    "dairy"
    ],
    "months_open": [],
    "hours_text": null,
@@ -2534,6 +2640,9 @@
     "Events",
     "Wine"
    ],
+   "product_groups": [
+    "drinks"
+   ],
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -2596,6 +2705,12 @@
     "pasture-raised lamb",
     "pork",
     "poultry"
+   ],
+   "product_groups": [
+    "veggies",
+    "fruit",
+    "beef-meat",
+    "poultry-eggs"
    ],
    "months_open": [],
    "hours_text": "Tue-Sun: 8:00am - 6:00pm",

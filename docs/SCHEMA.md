@@ -64,9 +64,10 @@ Every field has a class that decides whether it appears in the public release.
 | `producer_id` | string | fact | Required. Primary key |
 | `slug` | string | fact | Homepage path |
 | `name` | string | fact | Required. Business name |
-| `kind` | enum | controlled | `farm`, `ranch`, `orchard`, `maker`, `winery`. Markets are not producers (see `markets`). Food hubs, retailers and organizations are not decided yet (see open questions) |
+| `kind` | enum | controlled | How the business labels itself: `farm`, `ranch`, `orchard`, `maker`, `winery`. A vegetable farm and a cattle ranch are different things to a shopper, so they are not merged. Markets are not producers (see `markets`). Food hubs, retailers and organizations are not decided yet (see open questions) |
 | `categories` | list | controlled | From the category vocabulary below. Primary first |
 | `products` | list | controlled | From the product vocabulary |
+| `product_groups` | list | controlled | The short list people search by: `veggies`, `fruit`, `beef-meat`, `poultry-eggs`, `dairy`, `honey`, `flowers`, `garlic-herbs`, `mushrooms`, `baked-goods`, `drinks`. Found from the products text, categories and name, plus what the business itself ticked (`inputs/producer_kinds.csv`). `products` keeps the source's own words |
 | `seasonal_months` | list | fact | Months operating, 1–12. Empty if unknown |
 | `hours_text` | string | fact | The hours as the business states them. Verbatim and short; always kept |
 | `hours_status` | enum | controlled | How much of `hours_text` became rows in `hours`: `parsed`, `partial`, `appointment`, `text_only`, `none` |

@@ -32,7 +32,7 @@ sys.path.insert(0, HERE)
 from scrape import contact_policy as cp  # noqa: E402
 from scrape import hours as hrs  # noqa: E402
 from scrape import vendors as vnd  # noqa: E402
-
+import products as PRODUCTS  # noqa: E402
 REGISTRY = os.path.join(HERE, "..", "data", "id_registry.csv")
 
 # Colorado county FIPS (state 08).
@@ -83,7 +83,7 @@ FIELD_MAP = {"Phone": "phone", "Email": "email", "Website": "website", "Facebook
              "County": "county_fips", "Category": "categories"}
 
 COLS = {
-    "producers": ["producer_id", "slug", "name", "kind", "categories", "products", "seasonal_months",
+    "producers": ["producer_id", "slug", "name", "kind", "categories", "products", "product_groups", "seasonal_months",
                   "hours_text", "hours_status", "website", "phone", "email", "facebook", "instagram", "sales_channels",
                   "certified_organic", "accepts_snap", "ada_accessible", "call_first", "status", "claimed",
                   "opted_out_fields", "first_seen", "last_verified"],
@@ -235,6 +235,7 @@ def main():
                     help="partner CSVs in the raw layout; a row replaces the raw row with the same Source ID")
     ap.add_argument("--locations", help="inputs/locations.csv: extra places to buy (pickup points, markets) per producer")
     ap.add_argument("--overrides", help="inputs/overrides.csv, read only to credit partner-confirmed fields")
+    ap.add_argument("--kinds", help="inputs/producer_kinds.csv: how a producer labels itself (farm, ranch, maker...) and what it offers")
     ap.add_argument("--registry", default=REGISTRY, help="ID registry CSV (default: data/id_registry.csv)")
     a = ap.parse_args()
     fips = FIPS[a.county] if a.county else ""
@@ -261,6 +262,11 @@ def main():
                 if m:
                     partner_fields[(nkey(orow["name"]), (orow.get("column") or "").strip())] = (
                         m.group(1), orow.get("date") or "")
+    kinds_by_name = {}
+    if a.kinds and os.path.exists(a.kinds):
+        with open(a.kinds, encoding="utf-8-sig", newline="") as f:
+            for kr in csv.DictReader(f):
+                kinds_by_name[nkey(kr["name"])] = kr
     pending_market_pickups = []
     reg = Registry(a.registry)
     out = {k: [] for k in COLS}
@@ -365,7 +371,10 @@ def main():
                 pid = reg.get("co-p", sid)
                 out["producers"].append({
                     "producer_id": pid, "slug": new_slug(name), "name": name,
-                    "kind": producer_kind(name, cats_main),
+                    "kind": (kinds_by_name.get(nkey(name)) or {}).get("kind") or producer_kind(name, cats_main),
+                    "product_groups": ";".join(
+                        PRODUCTS.from_text(r["Products"], " ".join(cats_main), name)
+                        or [g for g in ((kinds_by_name.get(nkey(name)) or {}).get("product_groups") or "").split(";") if g]),
                     "categories": ";".join(c for c in cats if c in PRODUCER_CATS),
                     "products": r["Products"].replace(", ", ";"),
                     "seasonal_months": ";".join(months), "hours_text": r["Hours"], "hours_status": hs, "email": r["Email"],
