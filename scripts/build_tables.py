@@ -91,7 +91,7 @@ COLS = {
     "locations": ["location_id", "name", "kind", "address", "city", "zip", "hide_address", "state", "county_fips",
                "lat", "lon", "geo_source", "google_place_id", "photo_url", "photo_credit", "photo_license"],
     "producer_locations": ["producer_location_id", "producer_id", "location_id", "role", "days", "hours_text", "season_start",
-                  "season_end", "status"],
+                  "season_end", "status", "confirm_url"],
     "markets": ["market_id", "slug", "name", "location_id", "operator", "days", "hours_text", "hours_status", "website", "phone",
                 "email", "facebook", "instagram", "accepts_snap", "ada_accessible", "status", "first_seen",
                 "last_verified"],
@@ -223,6 +223,12 @@ def link_markets(out, stated, vendors_path):
     for r in rows:
         by_basis[r["match_basis"]] = by_basis.get(r["match_basis"], 0) + 1
     print("market_vendors:", len(rows), by_basis, "| vendor rows not linked:", unmatched)
+
+
+def confirm_url(x):
+    """The business's own page that confirms it sells at this place (the `source` of a locations.csv row, when it is a link)."""
+    u = (x.get("source") or "").strip()
+    return u if u.lower().startswith(("http://", "https://")) else ""
 
 
 def main():
@@ -426,7 +432,7 @@ def main():
                         "role": role, "days": (x.get("days") or "").replace(", ", ";"),
                         "hours_text": x.get("hours_text") or "",
                         "season_start": x.get("season_start") or "", "season_end": x.get("season_end") or "",
-                        "status": "listed"})
+                        "status": "listed", "confirm_url": confirm_url(x)})
                     if xfips and not any(sa["producer_id"] == pid and sa["county_fips"] == xfips
                                          for sa in out["service_areas"]):
                         out["service_areas"].append({"producer_id": pid, "county_fips": xfips,
@@ -480,7 +486,8 @@ def main():
             "producer_location_id": reg.get("co-ploc", "loc|%s|pickup|market|%s" % (nkey(x["name"]), nkey(x["market_ref"]))),
             "producer_id": pid, "location_id": mloc, "role": (x.get("role") or "pickup").strip(),
             "days": (x.get("days") or "").replace(", ", ";"), "hours_text": x.get("hours_text") or "",
-            "season_start": x.get("season_start") or "", "season_end": x.get("season_end") or "", "status": "listed"})
+            "season_start": x.get("season_start") or "", "season_end": x.get("season_end") or "", "status": "listed",
+            "confirm_url": confirm_url(x)})
 
     link_markets(out, stated, a.vendors)
 

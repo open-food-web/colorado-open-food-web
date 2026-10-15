@@ -1,1228 +1,1230 @@
-producer_location_id,producer_id,location_id,role,days,hours_text,season_start,season_end,status
-co-ploc-000030,co-p-000030,co-loc-000038,home_base,,,,,listed
-co-ploc-000031,co-p-000031,co-loc-000039,home_base,,,,,listed
-co-ploc-000032,co-p-000032,co-loc-000040,home_base,,,,,listed
-co-ploc-000033,co-p-000033,co-loc-000041,home_base,mon;tue;wed;thu;fri;sat,Mon: 10am to 5pm; Tue: 10am to 5pm; Wed: 10am to 5pm; Thu: 10am to 5pm; Fri: 10am to 5pm; Sat: 10am to 5pm,,,listed
-co-ploc-000034,co-p-000034,co-loc-000042,home_base,,,,,listed
-co-ploc-000035,co-p-000035,co-loc-000043,home_base,,,,,listed
-co-ploc-000036,co-p-000036,co-loc-000044,home_base,,,,,listed
-co-ploc-000037,co-p-000037,co-loc-000046,home_base,,,,,listed
-co-ploc-000038,co-p-000038,co-loc-000047,home_base,,,,,listed
-co-ploc-000039,co-p-000039,co-loc-000048,home_base,,,,,listed
-co-ploc-000040,co-p-000040,co-loc-000049,home_base,mon;tue;wed;thu;fri;sat,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 9am - 12pm,,,listed
-co-ploc-000041,co-p-000041,co-loc-000052,home_base,,,,,listed
-co-ploc-000042,co-p-000042,co-loc-000053,home_base,,,,,listed
-co-ploc-000043,co-p-000043,co-loc-000054,home_base,,,,,listed
-co-ploc-000044,co-p-000044,co-loc-000055,home_base,,,,,listed
-co-ploc-000045,co-p-000045,co-loc-000056,home_base,,,,,listed
-co-ploc-000046,co-p-000046,co-loc-000057,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 8am - 5pm; Sun: 8am - 5pm,,,listed
-co-ploc-000047,co-p-000047,co-loc-000058,home_base,,,,,listed
-co-ploc-000048,co-p-000048,co-loc-000059,home_base,,,,,listed
-co-ploc-000049,co-p-000049,co-loc-000060,home_base,wed;thu;fri;sat;sun,Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,,,listed
-co-ploc-000050,co-p-000050,co-loc-000061,home_base,,,,,listed
-co-ploc-000051,co-p-000051,co-loc-000062,home_base,sat,Sat: 8am - 12pm,,,listed
-co-ploc-000052,co-p-000052,co-loc-000064,home_base,,,,,listed
-co-ploc-000053,co-p-000053,co-loc-000067,home_base,mon;tue;wed;thu;fri,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 2:30pm,,,listed
-co-ploc-000054,co-p-000054,co-loc-000068,home_base,,Winter CSA,,,listed
-co-ploc-000055,co-p-000055,co-loc-000069,home_base,,,,,listed
-co-ploc-000056,co-p-000056,co-loc-000070,home_base,,,,,listed
-co-ploc-000057,co-p-000057,co-loc-000071,home_base,,,,,listed
-co-ploc-000058,co-p-000058,co-loc-000072,home_base,,,,,listed
-co-ploc-000059,co-p-000059,co-loc-000073,home_base,,,,,listed
-co-ploc-000060,co-p-000060,co-loc-000074,home_base,,,,,listed
-co-ploc-000061,co-p-000061,co-loc-000075,home_base,,Mon: Varies; Wed: Varies; Thu: Varies; Fri: Varies; Sat: Varies; Sun: Varies,,,listed
-co-ploc-000062,co-p-000062,co-loc-000076,home_base,,,,,listed
-co-ploc-000063,co-p-000063,co-loc-000077,home_base,,,,,listed
-co-ploc-000064,co-p-000064,co-loc-000078,home_base,,,,,listed
-co-ploc-000065,co-p-000065,co-loc-000079,home_base,,,,,listed
-co-ploc-000066,co-p-000066,co-loc-000081,home_base,,,,,listed
-co-ploc-000067,co-p-000067,co-loc-000083,home_base,sat,Sat: 10am - 4pm,,,listed
-co-ploc-000068,co-p-000068,co-loc-000084,home_base,,,,,listed
-co-ploc-000069,co-p-000069,co-loc-000085,home_base,sat,Sat: 9AM-4PM,,,listed
-co-ploc-000001,co-p-000001,co-loc-000001,home_base,,,,,listed
-co-ploc-000070,co-p-000070,co-loc-000086,home_base,,,,,listed
-co-ploc-000071,co-p-000071,co-loc-000089,home_base,,,,,listed
-co-ploc-000072,co-p-000072,co-loc-000091,home_base,,,,,listed
-co-ploc-000073,co-p-000073,co-loc-000092,home_base,tue;wed;thu;fri,Tue: 10 am - 6 pm (check website spring/fall); Wed: 10 am - 6 pm (check website spring/fall); Thu: 10 am - 6 pm (check website spring/fall); Fri: 10 am - 5 pm (check website spring/fall),,,listed
-co-ploc-000074,co-p-000074,co-loc-000095,home_base,,,,,listed
-co-ploc-000075,co-p-000075,co-loc-000097,home_base,,,,,listed
-co-ploc-000076,co-p-000076,co-loc-000098,home_base,,,,,listed
-co-ploc-000077,co-p-000077,co-loc-000100,home_base,,,,,listed
-co-ploc-000078,co-p-000078,co-loc-000101,home_base,,,,,listed
-co-ploc-000079,co-p-000079,co-loc-000102,home_base,thu,Thu: 4pm-6pm,,,listed
-co-ploc-000080,co-p-000080,co-loc-000103,home_base,,,,,listed
-co-ploc-000081,co-p-000081,co-loc-000104,home_base,,,,,listed
-co-ploc-000082,co-p-000082,co-loc-000105,home_base,,,,,listed
-co-ploc-000002,co-p-000002,co-loc-000002,home_base,,,,,listed
-co-ploc-001230,co-p-000002,co-loc-001493,pickup,Tue,Tue: 4:45pm - 5:00pm,,,listed
-co-ploc-001231,co-p-000002,co-loc-001494,pickup,Tue,Tue: 6:00pm - 6:15pm,,,listed
-co-ploc-001232,co-p-000002,co-loc-001495,pickup,,Pickup by arrangement,,,listed
-co-ploc-000083,co-p-000083,co-loc-000108,home_base,,,,,listed
-co-ploc-000084,co-p-000084,co-loc-000109,home_base,,,,,listed
-co-ploc-000085,co-p-000085,co-loc-000110,home_base,,,,,listed
-co-ploc-000086,co-p-000086,co-loc-000111,home_base,,,,,listed
-co-ploc-000087,co-p-000087,co-loc-000112,home_base,,,,,listed
-co-ploc-000088,co-p-000088,co-loc-000113,home_base,,,,,listed
-co-ploc-000089,co-p-000089,co-loc-000114,home_base,,,,,listed
-co-ploc-000003,co-p-000003,co-loc-000003,home_base,,"Shop open mornings; preorder pickup Thu, Fri, Sun",,,listed
-co-ploc-000090,co-p-000090,co-loc-000116,home_base,,,,,listed
-co-ploc-000091,co-p-000091,co-loc-000117,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10am - 6pm; Tue: 10am - 6pm; Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,,,listed
-co-ploc-000092,co-p-000092,co-loc-000118,home_base,,,,,listed
-co-ploc-000093,co-p-000093,co-loc-000120,home_base,,,,,listed
-co-ploc-000094,co-p-000094,co-loc-000121,home_base,,,,,listed
-co-ploc-000095,co-p-000095,co-loc-000122,home_base,,,,,listed
-co-ploc-000096,co-p-000096,co-loc-000123,home_base,,,,,listed
-co-ploc-000097,co-p-000097,co-loc-000124,home_base,,,,,listed
-co-ploc-000098,co-p-000098,co-loc-000125,home_base,,,,,listed
-co-ploc-000099,co-p-000099,co-loc-000126,home_base,,,,,listed
-co-ploc-000100,co-p-000100,co-loc-000127,home_base,,,,,listed
-co-ploc-000101,co-p-000101,co-loc-000128,home_base,mon;tue;wed;thu;fri,Mon: 9 a.m. - 4 p.m.; Tue: 9 a.m. - 4 p.m; Wed: 9 a.m. - 4 p.m; Thu: 9 a.m. - 4 p.m; Fri: 9 a.m. - 4 p.m,,,listed
-co-ploc-000102,co-p-000102,co-loc-000130,home_base,,,,,listed
-co-ploc-000103,co-p-000103,co-loc-000131,home_base,,,,,listed
-co-ploc-000104,co-p-000104,co-loc-000132,home_base,,,,,listed
-co-ploc-000105,co-p-000105,co-loc-000133,home_base,,,,,listed
-co-ploc-000106,co-p-000106,co-loc-000134,home_base,wed;sat;sun,Wed: 3:30pm - 7:30pm; Sat: 9am - 1pm; Sun: 9am - 1pm,,,listed
-co-ploc-000107,co-p-000107,co-loc-000135,home_base,,,,,listed
-co-ploc-000108,co-p-000108,co-loc-000136,home_base,,,,,listed
-co-ploc-000109,co-p-000109,co-loc-000137,home_base,,,,,listed
-co-ploc-000110,co-p-000110,co-loc-000138,home_base,,,,,listed
-co-ploc-000111,co-p-000111,co-loc-000139,home_base,,,,,listed
-co-ploc-000112,co-p-000112,co-loc-000141,home_base,,,,,listed
-co-ploc-000113,co-p-000113,co-loc-000143,home_base,tue;wed;thu;fri;sat,Tue: 11:00am - 7:00pm; Wed: 11:00am - 7:00pm; Thu: 11:00am - 7:00pm; Fri: 11:00am - 8:00pm; Sat: 11:00am - 8:00pm,,,listed
-co-ploc-000114,co-p-000114,co-loc-000144,home_base,mon;tue;wed;thu;fri;sat,11am-3am MST Mon-Sat (as stated),,,listed
-co-ploc-000115,co-p-000115,co-loc-000145,home_base,tue;thu;sat,Tue: 8am-1pm;  4-7pm  ( check website for seasonal updates or call 303-659-5050); Thu: 8am-1pm (check website for seasonal updates or call  303-659-5050); Sat: 8am-4pm (check website for seasonal updates or call 303-659-5050),,,listed
-co-ploc-000116,co-p-000116,co-loc-000146,home_base,,,,,listed
-co-ploc-000117,co-p-000117,co-loc-000148,home_base,,,,,listed
-co-ploc-000118,co-p-000118,co-loc-000150,home_base,,,,,listed
-co-ploc-000119,co-p-000119,co-loc-000151,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10am - 8pm; Tue: 10am - 8pm; Wed: 10am - 8pm; Thu: 10am - 8pm; Fri: 10am - 8pm; Sat: 10am - 8pm; Sun: 10am - 8pm,,,listed
-co-ploc-000120,co-p-000120,co-loc-000152,home_base,,,,,listed
-co-ploc-000121,co-p-000121,co-loc-000153,home_base,,,,,listed
-co-ploc-000122,co-p-000122,co-loc-000154,home_base,,,,,listed
-co-ploc-000123,co-p-000123,co-loc-000155,home_base,,,,,listed
-co-ploc-000124,co-p-000124,co-loc-000156,home_base,,Mon: By appointment for tours / Campground 24 hrs; Tue: By appointment for tours / Campground 24 hrs; Wed: By appointment for tours / Campground 24 hrs; Thu: By appointment for tours / Campground 24 hrs; Fri: Fridays on the Farm 4pm - 9pm / By appointment for tours / Campground 24 hrs; Sat: By appointment for tours / Campground 24 hrs; Sun: By appointment for tours / Campground 24 hrs,,,listed
-co-ploc-000125,co-p-000125,co-loc-000158,home_base,sat;sun,Sat-Sun 10am-2pm or by appointment (banner: through Oct 11; year not stated). Otherwise by appointment,,,listed
-co-ploc-000126,co-p-000126,co-loc-000159,home_base,,,,,listed
-co-ploc-000127,co-p-000127,co-loc-000160,home_base,,,,,listed
-co-ploc-000128,co-p-000128,co-loc-000161,home_base,,,,,listed
-co-ploc-000129,co-p-000129,co-loc-000162,home_base,,,,,listed
-co-ploc-000130,co-p-000130,co-loc-000163,home_base,,,,,listed
-co-ploc-000131,co-p-000131,co-loc-000164,home_base,,,,,listed
-co-ploc-000132,co-p-000132,co-loc-000165,home_base,,,,,listed
-co-ploc-000133,co-p-000133,co-loc-000168,home_base,mon;tue;wed;thu;fri;sat;sun,"Monday-Sunday, 8 a.m.-8 p.m.",,,listed
-co-ploc-000134,co-p-000134,co-loc-000169,home_base,,,,,listed
-co-ploc-000135,co-p-000135,co-loc-000170,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 am - 6 pm; Tue: 9 am - 6 pm; Wed: 9 am - 6 pm; Thu: 9 am - 6 pm; Fri: 9 am - 6 pm; Sat: 9 am - 6 pm; Sun: 9 am - 6 pm,,,listed
-co-ploc-000136,co-p-000136,co-loc-000171,home_base,,,,,listed
-co-ploc-000137,co-p-000137,co-loc-000172,home_base,,,,,listed
-co-ploc-000138,co-p-000138,co-loc-000174,home_base,,,,,listed
-co-ploc-000139,co-p-000139,co-loc-000175,home_base,,,,,listed
-co-ploc-000140,co-p-000140,co-loc-000176,home_base,,,,,listed
-co-ploc-000141,co-p-000141,co-loc-000177,home_base,,,,,listed
-co-ploc-000142,co-p-000142,co-loc-000178,home_base,,,,,listed
-co-ploc-000143,co-p-000143,co-loc-000179,home_base,,,,,listed
-co-ploc-000144,co-p-000144,co-loc-000180,home_base,mon;tue;wed;thu;fri;sat,"Mon: 7:30am - 12pm, 1pm - 4:30pm; Tue: 7:30am - 12pm, 1pm - 4:30pm; Wed: 7:30am - 12pm, 1pm - 4:30pm; Thu: 7:30am - 12pm, 1pm - 4:30pm; Fri: 7:30am - 12pm, 1pm - 4:30pm; Sat: 8am - 12pm",,,listed
-co-ploc-000145,co-p-000145,co-loc-000181,home_base,,,,,listed
-co-ploc-000146,co-p-000146,co-loc-000182,home_base,,,,,listed
-co-ploc-000147,co-p-000147,co-loc-000183,home_base,,,,,listed
-co-ploc-000148,co-p-000148,co-loc-000184,home_base,,,,,listed
-co-ploc-000149,co-p-000149,co-loc-000185,home_base,,,,,listed
-co-ploc-000150,co-p-000150,co-loc-000186,home_base,,,,,listed
-co-ploc-000151,co-p-000151,co-loc-000187,home_base,,,,,listed
-co-ploc-000152,co-p-000152,co-loc-000188,home_base,,,,,listed
-co-ploc-000153,co-p-000153,co-loc-000189,home_base,thu;fri;sat,Thu: 12pm - 5pm; Fri: 12pm - 5pm; Sat: 12pm - 5pm,,,listed
-co-ploc-000154,co-p-000154,co-loc-000190,home_base,,,,,listed
-co-ploc-000155,co-p-000155,co-loc-000191,home_base,,,,,listed
-co-ploc-000156,co-p-000156,co-loc-000192,home_base,thu;fri;sat;sun,Thu: 1pm - 7pm; Fri: 1pm - 7pm; Sat: 1pm - 7pm; Sun: 1pm - 7pm,,,listed
-co-ploc-000157,co-p-000157,co-loc-000193,home_base,,,,,listed
-co-ploc-000158,co-p-000158,co-loc-000194,home_base,,,,,listed
-co-ploc-000159,co-p-000159,co-loc-000195,home_base,,,,,listed
-co-ploc-000160,co-p-000160,co-loc-000196,home_base,,,,,listed
-co-ploc-000161,co-p-000161,co-loc-000197,home_base,,,,,listed
-co-ploc-000162,co-p-000162,co-loc-000198,home_base,,,,,listed
-co-ploc-000163,co-p-000163,co-loc-000199,home_base,,,,,listed
-co-ploc-000164,co-p-000164,co-loc-000200,home_base,,,,,listed
-co-ploc-000165,co-p-000165,co-loc-000202,home_base,,,,,listed
-co-ploc-000166,co-p-000166,co-loc-000203,home_base,,,,,listed
-co-ploc-000167,co-p-000167,co-loc-000205,home_base,,,,,listed
-co-ploc-000168,co-p-000168,co-loc-000206,home_base,,,,,listed
-co-ploc-000169,co-p-000169,co-loc-000207,home_base,,,,,listed
-co-ploc-000170,co-p-000170,co-loc-000208,home_base,,,,,listed
-co-ploc-000171,co-p-000171,co-loc-000211,home_base,,,,,listed
-co-ploc-000172,co-p-000172,co-loc-000213,home_base,wed;thu;fri;sat;sun,Wed–Sat 7am–2pm; Sun 7am–12pm,,,listed
-co-ploc-000173,co-p-000173,co-loc-000215,home_base,,,,,listed
-co-ploc-000174,co-p-000174,co-loc-000216,home_base,,,,,listed
-co-ploc-000175,co-p-000175,co-loc-000218,home_base,,,,,listed
-co-ploc-000176,co-p-000176,co-loc-000219,home_base,,,,,listed
-co-ploc-000177,co-p-000177,co-loc-000220,home_base,,,,,listed
-co-ploc-000004,co-p-000004,co-loc-000004,home_base,,,,,listed
-co-ploc-000178,co-p-000178,co-loc-000221,home_base,,,,,listed
-co-ploc-000179,co-p-000179,co-loc-000222,home_base,mon;tue;wed;thu;fri;sat,Mon: 12pm - 5:30pm; Tue: 12pm - 5:30pm; Wed: 12pm - 5:30pm; Thu: 12pm - 5:30pm; Fri: 2pm - 7pm; Sat: 2pm - 7pm,,,listed
-co-ploc-000180,co-p-000180,co-loc-000223,home_base,,,,,listed
-co-ploc-000181,co-p-000181,co-loc-000224,home_base,,,,,listed
-co-ploc-000182,co-p-000182,co-loc-000225,home_base,,,,,listed
-co-ploc-000183,co-p-000183,co-loc-000226,home_base,,,,,listed
-co-ploc-000184,co-p-000184,co-loc-000227,home_base,,,,,listed
-co-ploc-000185,co-p-000185,co-loc-000228,home_base,,,,,listed
-co-ploc-000186,co-p-000186,co-loc-000229,home_base,,,,,listed
-co-ploc-000187,co-p-000187,co-loc-000230,home_base,,By appointment,,,listed
-co-ploc-000188,co-p-000188,co-loc-000231,home_base,,,,,listed
-co-ploc-000189,co-p-000189,co-loc-000232,home_base,,,,,listed
-co-ploc-000190,co-p-000190,co-loc-000233,home_base,,,,,listed
-co-ploc-000191,co-p-000191,co-loc-000234,home_base,,,,,listed
-co-ploc-000192,co-p-000192,co-loc-000235,home_base,,,,,listed
-co-ploc-000193,co-p-000193,co-loc-000236,home_base,,,,,listed
-co-ploc-000194,co-p-000194,co-loc-000237,home_base,,,,,listed
-co-ploc-000195,co-p-000195,co-loc-000238,home_base,,,,,listed
-co-ploc-000196,co-p-000196,co-loc-000239,home_base,,,,,listed
-co-ploc-000197,co-p-000197,co-loc-000240,home_base,,,,,listed
-co-ploc-000198,co-p-000198,co-loc-000242,home_base,,,,,listed
-co-ploc-000199,co-p-000199,co-loc-000243,home_base,,,,,listed
-co-ploc-000200,co-p-000200,co-loc-000247,home_base,,,,,listed
-co-ploc-000201,co-p-000201,co-loc-000248,home_base,,,,,listed
-co-ploc-000202,co-p-000202,co-loc-000249,home_base,,,,,listed
-co-ploc-000203,co-p-000203,co-loc-000251,home_base,,,,,listed
-co-ploc-000204,co-p-000204,co-loc-000252,home_base,,,,,listed
-co-ploc-000205,co-p-000205,co-loc-000253,home_base,,,,,listed
-co-ploc-000206,co-p-000206,co-loc-000254,home_base,,,,,listed
-co-ploc-000207,co-p-000207,co-loc-000255,home_base,,"Sells at Montrose Farmers Market (Saturdays; market is year-round, Centennial Plaza, S Uncompahgre Ave)",,,listed
-co-ploc-000208,co-p-000208,co-loc-000256,home_base,,,,,listed
-co-ploc-000209,co-p-000209,co-loc-000257,home_base,,,,,listed
-co-ploc-000210,co-p-000210,co-loc-000259,home_base,,,,,listed
-co-ploc-000211,co-p-000211,co-loc-000261,home_base,,,,,listed
-co-ploc-000212,co-p-000212,co-loc-000262,home_base,mon;tue;wed;thu;fri,Mon: 8 am - 4 pm; Tue: 8 am - 4 pm; Wed: 8 am - 4 pm; Thu: 8 am - 4 pm; Fri: 8 am - 4 pm,,,listed
-co-ploc-000213,co-p-000213,co-loc-000263,home_base,,,,,listed
-co-ploc-000214,co-p-000214,co-loc-000264,home_base,,,,,listed
-co-ploc-000215,co-p-000215,co-loc-000265,home_base,,,,,listed
-co-ploc-000216,co-p-000216,co-loc-000268,home_base,,,,,listed
-co-ploc-000217,co-p-000217,co-loc-000269,home_base,,,,,listed
-co-ploc-000218,co-p-000218,co-loc-000270,home_base,,,,,listed
-co-ploc-000219,co-p-000219,co-loc-000272,home_base,,,,,listed
-co-ploc-000220,co-p-000220,co-loc-000273,home_base,,,,,listed
-co-ploc-000221,co-p-000221,co-loc-000274,home_base,,,,,listed
-co-ploc-000222,co-p-000222,co-loc-000275,home_base,mon;tue;wed;thu;fri;sat,Mon: 6 am - 3 pm; Tue: 6 am - 3 pm; Wed: 6 am - 3 pm; Thu: 6 am - 3 pm; Fri: 6 am - 3 pm; Sat: 6 am - 10 am,,,listed
-co-ploc-000223,co-p-000223,co-loc-000276,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 6pm; Sun: 9am - 6pm,,,listed
-co-ploc-000224,co-p-000224,co-loc-000277,home_base,,,,,listed
-co-ploc-000225,co-p-000225,co-loc-000278,home_base,,,,,listed
-co-ploc-000226,co-p-000226,co-loc-000279,home_base,,,,,listed
-co-ploc-000227,co-p-000227,co-loc-000280,home_base,,,,,listed
-co-ploc-000228,co-p-000228,co-loc-000281,home_base,,,,,listed
-co-ploc-000229,co-p-000229,co-loc-000282,home_base,,,,,listed
-co-ploc-000230,co-p-000230,co-loc-000283,home_base,mon;tue;wed;thu;fri;sat,Mon: 8am - 4:30pm; Tue: 8am - 4:30pm; Wed: 8am - 4:30pm; Thu: 8am - 4:30pm; Fri: 8am - 4:30pm; Sat: 9am - 12pm,,,listed
-co-ploc-000231,co-p-000231,co-loc-000284,home_base,,,,,listed
-co-ploc-000005,co-p-000005,co-loc-000006,home_base,,,,,listed
-co-ploc-000232,co-p-000232,co-loc-000286,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 5pm; Tue: 9am - 5pm; Wed: 9am - 5pm; Thu: 9am - 5pm; Fri: 9am - 5pm; Sat: 9am - 5pm; Sun: 9am - 5pm,,,listed
-co-ploc-000233,co-p-000233,co-loc-000287,home_base,,,,,listed
-co-ploc-000234,co-p-000234,co-loc-000288,home_base,wed;thu;fri;sat;sun,Wed: 9am - 5pm; Thu: 9am - 5pm; Fri: 9am - 5pm; Sat: 9am - 5pm; Sun: 9am - 5pm,,,listed
-co-ploc-000235,co-p-000235,co-loc-000289,home_base,,,,,listed
-co-ploc-000006,co-p-000006,co-loc-000007,home_base,,Not open to the public. Order online.,,,listed
-co-ploc-000236,co-p-000236,co-loc-000290,home_base,,,,,listed
-co-ploc-000237,co-p-000237,co-loc-000291,home_base,,,,,listed
-co-ploc-000238,co-p-000238,co-loc-000293,home_base,,,,,listed
-co-ploc-000239,co-p-000239,co-loc-000295,home_base,,,,,listed
-co-ploc-000240,co-p-000240,co-loc-000296,home_base,,,,,listed
-co-ploc-000241,co-p-000241,co-loc-000297,home_base,,,,,listed
-co-ploc-000242,co-p-000242,co-loc-000299,home_base,,,,,listed
-co-ploc-000243,co-p-000243,co-loc-000300,home_base,,,,,listed
-co-ploc-000244,co-p-000244,co-loc-000302,home_base,,,,,listed
-co-ploc-000245,co-p-000245,co-loc-000303,home_base,mon;tue;wed;thu;fri;sat,"At farm: Mid June-October Mon-Fri 9am-6pm; winter Mon-Fri 1-5pm, Sat call first. Gunnison Farmers Market Sat 9:30-1 mid Jun-mid Oct",,,listed
-co-ploc-000246,co-p-000246,co-loc-000304,home_base,,,,,listed
-co-ploc-000247,co-p-000247,co-loc-000305,home_base,mon;tue;wed;thu;fri;sat,Mon: 7am - 5:30pm; Tue: 7am - 5:30pm; Wed: 7am - 5:30pm; Thu: 7am - 5:30pm; Fri: 7am - 5:30pm; Sat: 7am - 12pm,,,listed
-co-ploc-000248,co-p-000248,co-loc-000307,home_base,,,,,listed
-co-ploc-000249,co-p-000249,co-loc-000308,home_base,,,,,listed
-co-ploc-000250,co-p-000250,co-loc-000309,home_base,,,,,listed
-co-ploc-000007,co-p-000007,co-loc-000008,home_base,,,,,listed
-co-ploc-000251,co-p-000251,co-loc-000310,home_base,,,,,listed
-co-ploc-000252,co-p-000252,co-loc-000312,home_base,,,,,listed
-co-ploc-000253,co-p-000253,co-loc-000314,home_base,,,,,listed
-co-ploc-000254,co-p-000254,co-loc-000315,home_base,,,,,listed
-co-ploc-000255,co-p-000255,co-loc-000316,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10am - 6pm; Tue: 10am - 6pm; Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,,,listed
-co-ploc-000008,co-p-000008,co-loc-000009,home_base,,By appointment,,,listed
-co-ploc-000256,co-p-000256,co-loc-000317,home_base,fri;sat,Fri: 4:00 p.m. - 8:00 p.m.; Sat: 1:00 p.m. - 8:00 p.m.,,,listed
-co-ploc-000257,co-p-000257,co-loc-000318,home_base,,,,,listed
-co-ploc-000258,co-p-000258,co-loc-000319,home_base,,,,,listed
-co-ploc-000259,co-p-000259,co-loc-000320,home_base,,,,,listed
-co-ploc-000260,co-p-000260,co-loc-000321,home_base,,,,,listed
-co-ploc-000261,co-p-000261,co-loc-000322,home_base,,,,,listed
-co-ploc-000262,co-p-000262,co-loc-000323,home_base,,,,,listed
-co-ploc-000263,co-p-000263,co-loc-000324,home_base,,,,,listed
-co-ploc-000264,co-p-000264,co-loc-000325,home_base,,,,,listed
-co-ploc-000265,co-p-000265,co-loc-000326,home_base,,,,,listed
-co-ploc-000266,co-p-000266,co-loc-000327,home_base,,,,,listed
-co-ploc-000267,co-p-000267,co-loc-000328,home_base,,,,,listed
-co-ploc-000268,co-p-000268,co-loc-000332,home_base,,By appointment,,,listed
-co-ploc-000269,co-p-000269,co-loc-000336,home_base,,,,,listed
-co-ploc-000270,co-p-000270,co-loc-000337,home_base,,,,,listed
-co-ploc-000271,co-p-000271,co-loc-000338,home_base,,,,,listed
-co-ploc-000272,co-p-000272,co-loc-000339,home_base,,,,,listed
-co-ploc-000273,co-p-000273,co-loc-000340,home_base,,,,,listed
-co-ploc-000274,co-p-000274,co-loc-000341,home_base,,,,,listed
-co-ploc-000275,co-p-000275,co-loc-000342,home_base,,,,,listed
-co-ploc-000276,co-p-000276,co-loc-000343,home_base,,,,,listed
-co-ploc-000277,co-p-000277,co-loc-000344,home_base,,,,,listed
-co-ploc-000278,co-p-000278,co-loc-000345,home_base,,,,,listed
-co-ploc-000279,co-p-000279,co-loc-000347,home_base,,,,,listed
-co-ploc-000280,co-p-000280,co-loc-000348,home_base,,,,,listed
-co-ploc-000281,co-p-000281,co-loc-000349,home_base,,,,,listed
-co-ploc-000282,co-p-000282,co-loc-000350,home_base,,,,,listed
-co-ploc-000283,co-p-000283,co-loc-000351,home_base,,,,,listed
-co-ploc-000284,co-p-000284,co-loc-000352,home_base,,,,,listed
-co-ploc-000285,co-p-000285,co-loc-000353,home_base,,,,,listed
-co-ploc-000286,co-p-000286,co-loc-000354,home_base,,,,,listed
-co-ploc-000287,co-p-000287,co-loc-000355,home_base,,,,,listed
-co-ploc-000288,co-p-000288,co-loc-000356,home_base,mon;tue;wed;thu;fri;sat,Mon: 10:00 AM - 5:00 PM; Tue: 10:00 AM - 5:00 PM; Wed: 10:00 AM - 5:00 PM; Thu: 10:00 AM - 5:00 PM; Fri: 10:00 AM - 5:00 PM; Sat: 10:00 AM - 5:00 PM,,,listed
-co-ploc-000289,co-p-000289,co-loc-000357,home_base,,,,,listed
-co-ploc-000290,co-p-000290,co-loc-000359,home_base,mon;tue;wed;thu;fri,Mon: 9am-3pm; Tue: 9am-3pm; Wed: 9am-3pm; Thu: 9am-3pm; Fri: 9am-3pm,,,listed
-co-ploc-000291,co-p-000291,co-loc-000360,home_base,,,,,listed
-co-ploc-000292,co-p-000292,co-loc-000361,home_base,,,,,listed
-co-ploc-000293,co-p-000293,co-loc-000363,home_base,,,,,listed
-co-ploc-000294,co-p-000294,co-loc-000364,home_base,,,,,listed
-co-ploc-000295,co-p-000295,co-loc-000365,home_base,,,,,listed
-co-ploc-000296,co-p-000296,co-loc-000366,home_base,,,,,listed
-co-ploc-000297,co-p-000297,co-loc-000367,home_base,,,,,listed
-co-ploc-000298,co-p-000298,co-loc-000368,home_base,,,,,listed
-co-ploc-000299,co-p-000299,co-loc-000369,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 a.m. -5 p.m.; Tue: 9 a.m. - 5 p.m.; Wed: 9 a.m. - 5 p.m.; Thu: 9 a.m. - 5 p.m.; Fri: 9 a.m. - 5 p.m.; Sat: 9 a.m. - 5 p.m.; Sun: 9 a.m.- 5 p.m.,,,listed
-co-ploc-000300,co-p-000300,co-loc-000370,home_base,,,,,listed
-co-ploc-000301,co-p-000301,co-loc-000371,home_base,,,,,listed
-co-ploc-000302,co-p-000302,co-loc-000372,home_base,,,,,listed
-co-ploc-000303,co-p-000303,co-loc-000373,home_base,,,,,listed
-co-ploc-000304,co-p-000304,co-loc-000376,home_base,,,,,listed
-co-ploc-000305,co-p-000305,co-loc-000377,home_base,,,,,listed
-co-ploc-000306,co-p-000306,co-loc-000380,home_base,,,,,listed
-co-ploc-000307,co-p-000307,co-loc-000381,home_base,,,,,listed
-co-ploc-000308,co-p-000308,co-loc-000382,home_base,,,,,listed
-co-ploc-000309,co-p-000309,co-loc-000383,home_base,,,,,listed
-co-ploc-000310,co-p-000310,co-loc-000384,home_base,,,,,listed
-co-ploc-000311,co-p-000311,co-loc-000385,home_base,,,,,listed
-co-ploc-000312,co-p-000312,co-loc-000386,home_base,,,,,listed
-co-ploc-000313,co-p-000313,co-loc-000387,home_base,,,,,listed
-co-ploc-000314,co-p-000314,co-loc-000393,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 11am - 9pm; Tue: 11am - 9pm; Wed: 11am - 9pm; Thu: 11am - 9pm; Fri: 11am - 9pm; Sat: 11am - 9pm; Sun: 11am - 9pm,,,listed
-co-ploc-000315,co-p-000315,co-loc-000394,home_base,,,,,listed
-co-ploc-000316,co-p-000316,co-loc-000395,home_base,,,,,listed
-co-ploc-000317,co-p-000317,co-loc-000397,home_base,mon;tue;wed;thu,No storefront; online support Mon-Thu 8-3 MT,,,listed
-co-ploc-000318,co-p-000318,co-loc-000398,home_base,,,,,listed
-co-ploc-000319,co-p-000319,co-loc-000399,home_base,,,,,listed
-co-ploc-000320,co-p-000320,co-loc-000400,home_base,,,,,listed
-co-ploc-000321,co-p-000321,co-loc-000402,home_base,,,,,listed
-co-ploc-000322,co-p-000322,co-loc-000404,home_base,,,,,listed
-co-ploc-000323,co-p-000323,co-loc-000405,home_base,mon;fri;sat;sun,"Fri, Sat, Sun, Mon: 11:00am - 5:00pm (winter 2026 hours; subject to change)",,,listed
-co-ploc-000324,co-p-000324,co-loc-000406,home_base,,,,,listed
-co-ploc-000325,co-p-000325,co-loc-000408,home_base,,,,,listed
-co-ploc-000326,co-p-000326,co-loc-000409,home_base,tue;wed;thu;fri;sat,Tue: 9a.m.-7p.m.; Wed: 9a.m.-7p.m.; Thu: 9a.m.-7p.m.; Fri: 9a.m.-7p.m.; Sat: 9a.m.-7p.m.,,,listed
-co-ploc-000327,co-p-000327,co-loc-000410,home_base,,,,,listed
-co-ploc-000328,co-p-000328,co-loc-000411,home_base,,,,,listed
-co-ploc-000329,co-p-000329,co-loc-000414,home_base,mon;tue;wed;thu,Mon: 9 a.m. - 4 p.m.; Tue: 9 a.m. - 4 p.m.; Wed: 9 a.m. - 4 p.m.; Thu: 9 a.m. - 4 p.m.,,,listed
-co-ploc-000330,co-p-000330,co-loc-000416,home_base,,,,,listed
-co-ploc-000331,co-p-000331,co-loc-000417,home_base,,,,,listed
-co-ploc-000332,co-p-000332,co-loc-000418,home_base,,,,,listed
-co-ploc-000333,co-p-000333,co-loc-000419,home_base,,,,,listed
-co-ploc-000334,co-p-000334,co-loc-000420,home_base,mon;tue;wed;thu;fri;sat,Mon: 8:30-12:30; Tue: 8:30-12:30; Wed: 8:30-12:30; Thu: 8:30-12:30; Fri: 8:30-12:30; Sat: 8:30-12:30,,,listed
-co-ploc-000335,co-p-000335,co-loc-000421,home_base,,Website: always open / local pickup by order; Aspen Saturday Market and Crested Butte Market end of May to early October,,,listed
-co-ploc-000336,co-p-000336,co-loc-000422,home_base,,,,,listed
-co-ploc-000337,co-p-000337,co-loc-000423,home_base,,,,,listed
-co-ploc-000338,co-p-000338,co-loc-000424,home_base,,,,,listed
-co-ploc-000339,co-p-000339,co-loc-000425,home_base,,,,,listed
-co-ploc-000340,co-p-000340,co-loc-000426,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8am - 7pm; Tue: 8am - 7pm; Wed: 8am - 7pm; Thu: 8am - 7pm; Fri: 8am - 7pm; Sat: 8am - 7pm; Sun: 8am - 7pm,,,listed
-co-ploc-000341,co-p-000341,co-loc-000427,home_base,,,,,listed
-co-ploc-000342,co-p-000342,co-loc-000428,home_base,,,,,listed
-co-ploc-000343,co-p-000343,co-loc-000429,home_base,,,,,listed
-co-ploc-000344,co-p-000344,co-loc-000433,home_base,,,,,listed
-co-ploc-000345,co-p-000345,co-loc-000436,home_base,,,,,listed
-co-ploc-000346,co-p-000346,co-loc-000437,home_base,,,,,listed
-co-ploc-000010,co-p-000010,co-loc-000012,home_base,,,,,listed
-co-ploc-000347,co-p-000347,co-loc-000438,home_base,,,,,listed
-co-ploc-000348,co-p-000348,co-loc-000441,home_base,,,,,listed
-co-ploc-000349,co-p-000349,co-loc-000442,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10am - 8pm; Tue: 10am - 8pm; Wed: 10am - 8pm; Thu: 10am - 8pm; Fri: 10am - 8pm; Sat: 9am - 8pm; Sun: 9am - 8pm,,,listed
-co-ploc-000350,co-p-000350,co-loc-000443,home_base,,,,,listed
-co-ploc-000351,co-p-000351,co-loc-000444,home_base,,,,,listed
-co-ploc-000352,co-p-000352,co-loc-000445,home_base,,,,,listed
-co-ploc-000353,co-p-000353,co-loc-000447,home_base,,,,,listed
-co-ploc-000354,co-p-000354,co-loc-000448,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10:30am - 7pm; Tue: 10:30am - 7pm; Wed: 10:30am - 7pm; Thu: 10:30am - 7pm; Fri: 10:30am - 7pm; Sat: 10:30am - 7pm; Sun: 10:30am - 7pm,,,listed
-co-ploc-000355,co-p-000355,co-loc-000450,home_base,,,,,listed
-co-ploc-000356,co-p-000356,co-loc-000451,home_base,,,,,listed
-co-ploc-000357,co-p-000357,co-loc-000452,home_base,,,,,listed
-co-ploc-000358,co-p-000358,co-loc-000453,home_base,,,,,listed
-co-ploc-000359,co-p-000359,co-loc-000455,home_base,,,,,listed
-co-ploc-000360,co-p-000360,co-loc-000456,home_base,sat,Sat: 9 a.m. - 1 p.m.  Louisville Farmer's market,,,listed
-co-ploc-000361,co-p-000361,co-loc-000457,home_base,,,,,listed
-co-ploc-000362,co-p-000362,co-loc-000458,home_base,,,,,listed
-co-ploc-000363,co-p-000363,co-loc-000459,home_base,fri;sat;sun,Fri: 9am - 4:30pm; Sat: 9am - 4:30pm; Sun: 9am - 4:30pm,,,listed
-co-ploc-000364,co-p-000364,co-loc-000460,home_base,,,,,listed
-co-ploc-000365,co-p-000365,co-loc-000461,home_base,,"Durango Farmers Market Saturdays (May-Oct, 8am-noon)",,,listed
-co-ploc-000366,co-p-000366,co-loc-000462,home_base,,,,,listed
-co-ploc-000367,co-p-000367,co-loc-000463,home_base,,,,,listed
-co-ploc-000368,co-p-000368,co-loc-000464,home_base,,,,,listed
-co-ploc-000369,co-p-000369,co-loc-000465,home_base,,,,,listed
-co-ploc-000370,co-p-000370,co-loc-000466,home_base,,,,,listed
-co-ploc-000371,co-p-000371,co-loc-000467,home_base,,,,,listed
-co-ploc-000372,co-p-000372,co-loc-000468,home_base,,,,,listed
-co-ploc-000373,co-p-000373,co-loc-000469,home_base,tue;wed;thu;fri,Tue: 8:00 am - 4 p.m.; Wed: 8:00 a.m. - 4:00 p.m.; Thu: 8:00 a.m. - 4:00 p.m.; Fri: 8:00 a.m. - 4:00 p.m.,,,listed
-co-ploc-000374,co-p-000374,co-loc-000470,home_base,,,,,listed
-co-ploc-000375,co-p-000375,co-loc-000471,home_base,,,,,listed
-co-ploc-000376,co-p-000376,co-loc-000472,home_base,,,,,listed
-co-ploc-000377,co-p-000377,co-loc-000473,home_base,,,,,listed
-co-ploc-000378,co-p-000378,co-loc-000474,home_base,tue;sat,Tue: 4-7PM; Sat: 10-2,,,listed
-co-ploc-000379,co-p-000379,co-loc-000475,home_base,,Season Oct-Apr (winter greens); by order,,,listed
-co-ploc-000380,co-p-000380,co-loc-000477,home_base,,,,,listed
-co-ploc-000381,co-p-000381,co-loc-000478,home_base,,,,,listed
-co-ploc-000382,co-p-000382,co-loc-000479,home_base,,,,,listed
-co-ploc-000383,co-p-000383,co-loc-000480,home_base,,"Farm stand open May through February, closed March and April",,,listed
-co-ploc-000384,co-p-000384,co-loc-000481,home_base,,,,,listed
-co-ploc-000385,co-p-000385,co-loc-000482,home_base,,,,,listed
-co-ploc-000386,co-p-000386,co-loc-000483,home_base,,,,,listed
-co-ploc-000387,co-p-000387,co-loc-000486,home_base,,,,,listed
-co-ploc-000388,co-p-000388,co-loc-000488,home_base,,,,,listed
-co-ploc-000389,co-p-000389,co-loc-000489,home_base,,,,,listed
-co-ploc-000390,co-p-000390,co-loc-000490,home_base,,,,,listed
-co-ploc-000391,co-p-000391,co-loc-000492,home_base,,,,,listed
-co-ploc-000392,co-p-000392,co-loc-000493,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 12pm - 7pm; Tue: 12pm - 7pm; Wed: 12pm - 7pm; Thu: 12pm - 7pm; Fri: 12pm - 7pm; Sat: 12pm - 7pm; Sun: 1pm - 7pm,,,listed
-co-ploc-000393,co-p-000393,co-loc-000495,home_base,thu;fri;sat;sun,Thu: 1pm - 6pm; Fri: 1pm - 6pm; Sat: 1pm - 6pm; Sun: 1pm - 6pm,,,listed
-co-ploc-000394,co-p-000394,co-loc-000496,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 12-6; Tue: 12-6; Wed: 12-6; Thu: 12-6; Fri: 10-7; Sat: 10-7; Sun: 12-5,,,listed
-co-ploc-000395,co-p-000395,co-loc-000497,home_base,,,,,listed
-co-ploc-000396,co-p-000396,co-loc-000500,home_base,,,,,listed
-co-ploc-000397,co-p-000397,co-loc-000501,home_base,,,,,listed
-co-ploc-000398,co-p-000398,co-loc-000502,home_base,mon;tue;wed;thu;fri;sat,Mon: 11am - 5pm; Tue: 11am - 5pm; Wed: 11am - 5pm; Thu: 11am - 5pm; Fri: 11am - 5pm; Sat: 11am - 5pm; Sun: By appointment,,,listed
-co-ploc-000399,co-p-000399,co-loc-000503,home_base,,,,,listed
-co-ploc-000400,co-p-000400,co-loc-000504,home_base,,,,,listed
-co-ploc-000401,co-p-000401,co-loc-000505,home_base,,,,,listed
-co-ploc-000402,co-p-000402,co-loc-000506,home_base,sun,"Farm stand: Sun 10:00am - 2:00pm at The HerbiCulture Project Hub, 9722 Empire Rd, Louisville; U-Pick mid-July through first frost",,,listed
-co-ploc-000403,co-p-000403,co-loc-000507,home_base,,,,,listed
-co-ploc-000404,co-p-000404,co-loc-000508,home_base,,,,,listed
-co-ploc-000405,co-p-000405,co-loc-000509,home_base,,,,,listed
-co-ploc-000406,co-p-000406,co-loc-000510,home_base,,,,,listed
-co-ploc-000407,co-p-000407,co-loc-000511,home_base,,,,,listed
-co-ploc-000408,co-p-000408,co-loc-000513,home_base,,,,,listed
-co-ploc-000409,co-p-000409,co-loc-000514,home_base,tue;thu;sat,Tue: 4 pm - 6 pm; Thu: 4 pm - 6 pm; Sat: 12pm - 2pm,,,listed
-co-ploc-000410,co-p-000410,co-loc-000515,home_base,,,,,listed
-co-ploc-000411,co-p-000411,co-loc-000517,home_base,,,,,listed
-co-ploc-000412,co-p-000412,co-loc-000518,home_base,,,,,listed
-co-ploc-000413,co-p-000413,co-loc-000519,home_base,,,,,listed
-co-ploc-000414,co-p-000414,co-loc-000520,home_base,,,,,listed
-co-ploc-000415,co-p-000415,co-loc-000521,home_base,,Winter CSA January-April,,,listed
-co-ploc-000416,co-p-000416,co-loc-000522,home_base,,,,,listed
-co-ploc-000417,co-p-000417,co-loc-000524,home_base,mon;tue;wed;thu;fri;sat,Mon: 8 am - 5 pm; Tue: 8 am - 5 pm; Wed: 8 am - 5 pm; Thu: 8 am - 5 pm; Fri: 8 am - 5 pm; Sat: 8 am - 5 pm,,,listed
-co-ploc-000418,co-p-000418,co-loc-000525,home_base,,,,,listed
-co-ploc-000419,co-p-000419,co-loc-000526,home_base,,,,,listed
-co-ploc-000420,co-p-000420,co-loc-000527,home_base,,,,,listed
-co-ploc-000421,co-p-000421,co-loc-000528,home_base,,,,,listed
-co-ploc-000422,co-p-000422,co-loc-000529,home_base,,,,,listed
-co-ploc-000423,co-p-000423,co-loc-000530,home_base,,,,,listed
-co-ploc-000424,co-p-000424,co-loc-000531,home_base,,,,,listed
-co-ploc-000425,co-p-000425,co-loc-000533,home_base,,,,,listed
-co-ploc-000426,co-p-000426,co-loc-000534,home_base,,,,,listed
-co-ploc-000427,co-p-000427,co-loc-000537,home_base,,,,,listed
-co-ploc-000428,co-p-000428,co-loc-000539,home_base,,,,,listed
-co-ploc-000429,co-p-000429,co-loc-000540,home_base,,,,,listed
-co-ploc-000430,co-p-000430,co-loc-000542,home_base,,,,,listed
-co-ploc-000431,co-p-000431,co-loc-000543,home_base,,,,,listed
-co-ploc-000432,co-p-000432,co-loc-000544,home_base,,"Farmstand Monday-Saturday, daylight hours",,,listed
-co-ploc-000433,co-p-000433,co-loc-000545,home_base,,,,,listed
-co-ploc-000434,co-p-000434,co-loc-000546,home_base,,,,,listed
-co-ploc-000435,co-p-000435,co-loc-000548,home_base,,,,,listed
-co-ploc-000436,co-p-000436,co-loc-000549,home_base,,,,,listed
-co-ploc-000437,co-p-000437,co-loc-000550,home_base,,,,,listed
-co-ploc-000438,co-p-000438,co-loc-000552,home_base,,,,,listed
-co-ploc-000439,co-p-000439,co-loc-000553,home_base,,,,,listed
-co-ploc-000440,co-p-000440,co-loc-000555,home_base,,,,,listed
-co-ploc-000441,co-p-000441,co-loc-000556,home_base,,,,,listed
-co-ploc-000442,co-p-000442,co-loc-000558,home_base,,,,,listed
-co-ploc-000443,co-p-000443,co-loc-000559,home_base,,,,,listed
-co-ploc-000444,co-p-000444,co-loc-000560,home_base,mon;tue;wed;thu;fri;sat;sun,"Mon: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Tue: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Wed: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Thu: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Fri: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Sat: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Sun: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall)",,,listed
-co-ploc-000445,co-p-000445,co-loc-000561,home_base,,,,,listed
-co-ploc-000446,co-p-000446,co-loc-000562,home_base,,,,,listed
-co-ploc-000447,co-p-000447,co-loc-000563,home_base,,,,,listed
-co-ploc-000448,co-p-000448,co-loc-000565,home_base,,,,,listed
-co-ploc-000449,co-p-000449,co-loc-000566,home_base,,,,,listed
-co-ploc-000450,co-p-000450,co-loc-000569,home_base,,,,,listed
-co-ploc-000451,co-p-000451,co-loc-000570,home_base,,,,,listed
-co-ploc-000452,co-p-000452,co-loc-000571,home_base,sat,Sat: 10-12,,,listed
-co-ploc-000453,co-p-000453,co-loc-000572,home_base,,,,,listed
-co-ploc-000454,co-p-000454,co-loc-000573,home_base,,,,,listed
-co-ploc-000455,co-p-000455,co-loc-000575,home_base,,,,,listed
-co-ploc-000456,co-p-000456,co-loc-000576,home_base,,,,,listed
-co-ploc-000457,co-p-000457,co-loc-000577,home_base,,,,,listed
-co-ploc-000458,co-p-000458,co-loc-000579,home_base,,,,,listed
-co-ploc-000459,co-p-000459,co-loc-000580,home_base,,,,,listed
-co-ploc-000460,co-p-000460,co-loc-000581,home_base,,,,,listed
-co-ploc-000461,co-p-000461,co-loc-000582,home_base,,,,,listed
-co-ploc-000462,co-p-000462,co-loc-000583,home_base,sat,Sat: 9am - 3pm,,,listed
-co-ploc-000463,co-p-000463,co-loc-000584,home_base,,Wed: Boulder - 3:30 p.m. - 6:30 p.m.,,,listed
-co-ploc-000464,co-p-000464,co-loc-000585,home_base,,Wed: Longmont - 4:00 p.m. - 6:00 p.m.,,,listed
-co-ploc-001233,co-p-001230,co-loc-001496,home_base,tue,Tue: 4:00pm - 6:00pm,,,listed
-co-ploc-000465,co-p-000465,co-loc-000586,home_base,,,,,listed
-co-ploc-000466,co-p-000466,co-loc-000587,home_base,,,,,listed
-co-ploc-000467,co-p-000467,co-loc-000589,home_base,,"Gunnison Farmers Market Saturday mornings mid-June to October (IOOF park, Main & Virginia); Crested Butte South Farmers Market Thursdays 4:30-6 pm in summer",,,listed
-co-ploc-000468,co-p-000468,co-loc-000592,home_base,,,,,listed
-co-ploc-000469,co-p-000469,co-loc-000593,home_base,,,,,listed
-co-ploc-000470,co-p-000470,co-loc-000594,home_base,sat;sun,Sat: 9am-2pm; Sun: 9am-2pm,,,listed
-co-ploc-000471,co-p-000471,co-loc-000595,home_base,,,,,listed
-co-ploc-000472,co-p-000472,co-loc-000596,home_base,,,,,listed
-co-ploc-000473,co-p-000473,co-loc-000597,home_base,,,,,listed
-co-ploc-000474,co-p-000474,co-loc-000598,home_base,,,,,listed
-co-ploc-000475,co-p-000475,co-loc-000599,home_base,,,,,listed
-co-ploc-000476,co-p-000476,co-loc-000600,home_base,,,,,listed
-co-ploc-000477,co-p-000477,co-loc-000601,home_base,,,,,listed
-co-ploc-000478,co-p-000478,co-loc-000602,home_base,,Facebook shows 'Always open' (farm visits welcome); eggs via honor-system shed at front of property,,,listed
-co-ploc-000479,co-p-000479,co-loc-000603,home_base,,,,,listed
-co-ploc-000480,co-p-000480,co-loc-000604,home_base,,,,,listed
-co-ploc-000481,co-p-000481,co-loc-000605,home_base,,,,,listed
-co-ploc-000482,co-p-000482,co-loc-000606,home_base,,,,,listed
-co-ploc-000483,co-p-000483,co-loc-000607,home_base,,,,,listed
-co-ploc-000484,co-p-000484,co-loc-000608,home_base,,,,,listed
-co-ploc-000485,co-p-000485,co-loc-000609,home_base,,,,,listed
-co-ploc-000486,co-p-000486,co-loc-000610,home_base,,,,,listed
-co-ploc-000487,co-p-000487,co-loc-000612,home_base,,,,,listed
-co-ploc-000488,co-p-000488,co-loc-000613,home_base,,,,,listed
-co-ploc-000489,co-p-000489,co-loc-000614,home_base,mon;tue;wed;thu;fri,Mon: 9am - 5pm; Tue: 9am - 5pm; Wed: 9am - 5pm; Thu: 9am - 5pm; Fri: 9am - 5pm,,,listed
-co-ploc-000012,co-p-000012,co-loc-000014,home_base,,,,,listed
-co-ploc-000490,co-p-000490,co-loc-000615,home_base,,,,,listed
-co-ploc-000491,co-p-000491,co-loc-000616,home_base,,,,,listed
-co-ploc-000492,co-p-000492,co-loc-000617,home_base,,,,,listed
-co-ploc-000493,co-p-000493,co-loc-000618,home_base,,,,,listed
-co-ploc-000494,co-p-000494,co-loc-000619,home_base,,,,,listed
-co-ploc-000495,co-p-000495,co-loc-000620,home_base,,,,,listed
-co-ploc-000496,co-p-000496,co-loc-000621,home_base,,,,,listed
-co-ploc-000497,co-p-000497,co-loc-000622,home_base,,,,,listed
-co-ploc-000498,co-p-000498,co-loc-000623,home_base,,,,,listed
-co-ploc-000499,co-p-000499,co-loc-000624,home_base,,,,,listed
-co-ploc-000500,co-p-000500,co-loc-000625,home_base,,,,,listed
-co-ploc-000501,co-p-000501,co-loc-000626,home_base,,,,,listed
-co-ploc-000502,co-p-000502,co-loc-000627,home_base,,,,,listed
-co-ploc-000503,co-p-000503,co-loc-000628,home_base,,,,,listed
-co-ploc-000504,co-p-000504,co-loc-000630,home_base,,,,,listed
-co-ploc-000505,co-p-000505,co-loc-000631,home_base,,,,,listed
-co-ploc-000506,co-p-000506,co-loc-000632,home_base,,,,,listed
-co-ploc-000507,co-p-000507,co-loc-000633,home_base,,,,,listed
-co-ploc-000508,co-p-000508,co-loc-000634,home_base,,,,,listed
-co-ploc-000509,co-p-000509,co-loc-000635,home_base,mon;wed;fri;sat,Mon: 9am - 1pm; Wed: 9am - 3:30pm; Fri: 9am - 1pm; Sat: 9am - 1pm,,,listed
-co-ploc-000510,co-p-000510,co-loc-000636,home_base,,,,,listed
-co-ploc-000511,co-p-000511,co-loc-000637,home_base,,,,,listed
-co-ploc-000512,co-p-000512,co-loc-000638,home_base,,,,,listed
-co-ploc-000513,co-p-000513,co-loc-000641,home_base,,,,,listed
-co-ploc-000514,co-p-000514,co-loc-000642,home_base,,,,,listed
-co-ploc-000515,co-p-000515,co-loc-000643,home_base,,,,,listed
-co-ploc-000516,co-p-000516,co-loc-000644,home_base,,,,,listed
-co-ploc-000517,co-p-000517,co-loc-000645,home_base,,,,,listed
-co-ploc-000518,co-p-000518,co-loc-000647,home_base,,,,,listed
-co-ploc-000519,co-p-000519,co-loc-000648,home_base,,,,,listed
-co-ploc-000520,co-p-000520,co-loc-000649,home_base,,,,,listed
-co-ploc-000521,co-p-000521,co-loc-000650,home_base,,,,,listed
-co-ploc-000522,co-p-000522,co-loc-000651,home_base,,,,,listed
-co-ploc-000523,co-p-000523,co-loc-000652,home_base,,,,,listed
-co-ploc-000524,co-p-000524,co-loc-000653,home_base,,,,,listed
-co-ploc-000525,co-p-000525,co-loc-000654,home_base,,,,,listed
-co-ploc-000526,co-p-000526,co-loc-000655,home_base,,Facebook intro: 'Farm Store now Open Monday thru Saturday' (summer); stand season about April-September; asparagus from mid-April,,,listed
-co-ploc-000527,co-p-000527,co-loc-000656,home_base,,,,,listed
-co-ploc-000528,co-p-000528,co-loc-000657,home_base,,,,,listed
-co-ploc-000529,co-p-000529,co-loc-000658,home_base,,,,,listed
-co-ploc-000530,co-p-000530,co-loc-000659,home_base,,,,,listed
-co-ploc-000531,co-p-000531,co-loc-000660,home_base,,,,,listed
-co-ploc-000532,co-p-000532,co-loc-000661,home_base,,,,,listed
-co-ploc-000533,co-p-000533,co-loc-000662,home_base,,,,,listed
-co-ploc-000534,co-p-000534,co-loc-000664,home_base,,,,,listed
-co-ploc-000535,co-p-000535,co-loc-000665,home_base,,,,,listed
-co-ploc-000536,co-p-000536,co-loc-000666,home_base,,,,,listed
-co-ploc-000537,co-p-000537,co-loc-000667,home_base,,,,,listed
-co-ploc-000538,co-p-000538,co-loc-000668,home_base,,,,,listed
-co-ploc-000539,co-p-000539,co-loc-000669,home_base,,,,,listed
-co-ploc-000540,co-p-000540,co-loc-000670,home_base,,,,,listed
-co-ploc-000541,co-p-000541,co-loc-000671,home_base,,,,,listed
-co-ploc-000013,co-p-000013,co-loc-000015,home_base,,,,,listed
-co-ploc-000542,co-p-000542,co-loc-000672,home_base,,,,,listed
-co-ploc-000543,co-p-000543,co-loc-000673,home_base,,,,,listed
-co-ploc-000544,co-p-000544,co-loc-000675,home_base,,,,,listed
-co-ploc-000545,co-p-000545,co-loc-000676,home_base,,,,,listed
-co-ploc-000546,co-p-000546,co-loc-000677,home_base,,,,,listed
-co-ploc-000547,co-p-000547,co-loc-000679,home_base,,,,,listed
-co-ploc-000548,co-p-000548,co-loc-000680,home_base,,,,,listed
-co-ploc-000549,co-p-000549,co-loc-000681,home_base,,,,,listed
-co-ploc-000550,co-p-000550,co-loc-000683,home_base,,,,,listed
-co-ploc-000551,co-p-000551,co-loc-000684,home_base,,,,,listed
-co-ploc-000552,co-p-000552,co-loc-000685,home_base,,,,,listed
-co-ploc-000553,co-p-000553,co-loc-000686,home_base,,,,,listed
-co-ploc-000554,co-p-000554,co-loc-000687,home_base,fri;sat,Fri: 9:00 AM to 1:00 PM; Sat: 9:00 AM to 1:00 PM,,,listed
-co-ploc-000555,co-p-000555,co-loc-000688,home_base,wed;thu;fri;sat;sun,Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,,,listed
-co-ploc-000556,co-p-000556,co-loc-000689,home_base,,,,,listed
-co-ploc-000557,co-p-000557,co-loc-000691,home_base,,,,,listed
-co-ploc-000558,co-p-000558,co-loc-000692,home_base,,,,,listed
-co-ploc-000559,co-p-000559,co-loc-000693,home_base,,,,,listed
-co-ploc-000560,co-p-000560,co-loc-000694,home_base,,,,,listed
-co-ploc-000561,co-p-000561,co-loc-000695,home_base,,,,,listed
-co-ploc-000562,co-p-000562,co-loc-000696,home_base,,,,,listed
-co-ploc-000563,co-p-000563,co-loc-000697,home_base,,,,,listed
-co-ploc-000564,co-p-000564,co-loc-000698,home_base,,,,,listed
-co-ploc-000565,co-p-000565,co-loc-000699,home_base,,,,,listed
-co-ploc-000566,co-p-000566,co-loc-000700,home_base,,,,,listed
-co-ploc-000567,co-p-000567,co-loc-000701,home_base,,,,,listed
-co-ploc-000568,co-p-000568,co-loc-000702,home_base,,,,,listed
-co-ploc-000569,co-p-000569,co-loc-000703,home_base,,,,,listed
-co-ploc-000570,co-p-000570,co-loc-000704,home_base,,,,,listed
-co-ploc-000571,co-p-000571,co-loc-000705,home_base,,,,,listed
-co-ploc-000572,co-p-000572,co-loc-000706,home_base,,,,,listed
-co-ploc-000573,co-p-000573,co-loc-000707,home_base,sun,"Every other Sunday: 9am-1pm (market), 3-5pm (pop-up)",,,listed
-co-ploc-000574,co-p-000574,co-loc-000709,home_base,,,,,listed
-co-ploc-000575,co-p-000575,co-loc-000710,home_base,,,,,listed
-co-ploc-000576,co-p-000576,co-loc-000711,home_base,,,,,listed
-co-ploc-000577,co-p-000577,co-loc-000712,home_base,,,,,listed
-co-ploc-000578,co-p-000578,co-loc-000713,home_base,,,,,listed
-co-ploc-000579,co-p-000579,co-loc-000714,home_base,,,,,listed
-co-ploc-000580,co-p-000580,co-loc-000715,home_base,,,,,listed
-co-ploc-000581,co-p-000581,co-loc-000716,home_base,,,,,listed
-co-ploc-000582,co-p-000582,co-loc-000717,home_base,,,,,listed
-co-ploc-000583,co-p-000583,co-loc-000718,home_base,,,,,listed
-co-ploc-000584,co-p-000584,co-loc-000719,home_base,,,,,listed
-co-ploc-000585,co-p-000585,co-loc-000720,home_base,,,,,listed
-co-ploc-000586,co-p-000586,co-loc-000722,home_base,,,,,listed
-co-ploc-000587,co-p-000587,co-loc-000723,home_base,,,,,listed
-co-ploc-000588,co-p-000588,co-loc-000724,home_base,,,,,listed
-co-ploc-000589,co-p-000589,co-loc-000725,home_base,,,,,listed
-co-ploc-000590,co-p-000590,co-loc-000726,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8am-6pm; Tue: 8am-6pm; Wed: 8am-6pm; Thu: 8am-6pm; Fri: 8am-6pm; Sat: 8am-6pm; Sun: 8am-6pm,,,listed
-co-ploc-000591,co-p-000591,co-loc-000727,home_base,,,,,listed
-co-ploc-000592,co-p-000592,co-loc-000728,home_base,,,,,listed
-co-ploc-000593,co-p-000593,co-loc-000729,home_base,thu;fri;sat;sun,Thu: 10am - 4pm; Fri: 10am - 4pm; Sat: 10am - 4pm; Sun: 10am - 4pm,,,listed
-co-ploc-000594,co-p-000594,co-loc-000730,home_base,,,,,listed
-co-ploc-000595,co-p-000595,co-loc-000731,home_base,,,,,listed
-co-ploc-000596,co-p-000596,co-loc-000732,home_base,,,,,listed
-co-ploc-000597,co-p-000597,co-loc-000733,home_base,,,,,listed
-co-ploc-000598,co-p-000598,co-loc-000734,home_base,,,,,listed
-co-ploc-000599,co-p-000599,co-loc-000735,home_base,,,,,listed
-co-ploc-000600,co-p-000600,co-loc-000737,home_base,mon;tue;wed;thu;fri;sat,"Mon-Sat 9:00 AM-7:00 PM, Sun closed (Yelp, updated Oct 2026)",,,listed
-co-ploc-000601,co-p-000601,co-loc-000738,home_base,,,,,listed
-co-ploc-000602,co-p-000602,co-loc-000740,home_base,,,,,listed
-co-ploc-000603,co-p-000603,co-loc-000741,home_base,,,,,listed
-co-ploc-000604,co-p-000604,co-loc-000743,home_base,,,,,listed
-co-ploc-000605,co-p-000605,co-loc-000745,home_base,,,,,listed
-co-ploc-000606,co-p-000606,co-loc-000749,home_base,,,,,listed
-co-ploc-000607,co-p-000607,co-loc-000750,home_base,,,,,listed
-co-ploc-000608,co-p-000608,co-loc-000751,home_base,,,,,listed
-co-ploc-000609,co-p-000609,co-loc-000752,home_base,,,,,listed
-co-ploc-000610,co-p-000610,co-loc-000753,home_base,,,,,listed
-co-ploc-000611,co-p-000611,co-loc-000754,home_base,fri;sat;sun,Fri: 9 a.m. - 4 p.m.; Sat: 9 a.m. - 4 p.m. and 6 p.m.- 10 p.m.; Sun: 10 a.m. - 4 p.m.,,,listed
-co-ploc-000612,co-p-000612,co-loc-000755,home_base,,,,,listed
-co-ploc-000613,co-p-000613,co-loc-000756,home_base,,,,,listed
-co-ploc-000614,co-p-000614,co-loc-000757,home_base,,,,,listed
-co-ploc-000615,co-p-000615,co-loc-000758,home_base,,,,,listed
-co-ploc-000616,co-p-000616,co-loc-000759,home_base,,,,,listed
-co-ploc-000617,co-p-000617,co-loc-000760,home_base,,,,,listed
-co-ploc-000618,co-p-000618,co-loc-000761,home_base,,,,,listed
-co-ploc-000619,co-p-000619,co-loc-000762,home_base,,,,,listed
-co-ploc-000620,co-p-000620,co-loc-000763,home_base,,,,,listed
-co-ploc-000621,co-p-000621,co-loc-000764,home_base,,,,,listed
-co-ploc-000622,co-p-000622,co-loc-000765,home_base,,,,,listed
-co-ploc-000623,co-p-000623,co-loc-000766,home_base,sat,Sat: 8 a.m. - 12 p.m.,,,listed
-co-ploc-000624,co-p-000624,co-loc-000767,home_base,,,,,listed
-co-ploc-000625,co-p-000625,co-loc-000768,home_base,tue;wed;thu;fri,Tue: 9a-3pm; Wed: 9a-3pm; Thu: 9a-3pm; Fri: 9a-3pm,,,listed
-co-ploc-000626,co-p-000626,co-loc-000769,home_base,,,,,listed
-co-ploc-000627,co-p-000627,co-loc-000770,home_base,mon;tue;wed;thu;fri;sat,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 8am - 12pm,,,listed
-co-ploc-000628,co-p-000628,co-loc-000771,home_base,,,,,listed
-co-ploc-000014,co-p-000014,co-loc-000016,home_base,,,,,listed
-co-ploc-000629,co-p-000629,co-loc-000772,home_base,,,,,listed
-co-ploc-000630,co-p-000630,co-loc-000773,home_base,,,,,listed
-co-ploc-000631,co-p-000631,co-loc-000774,home_base,,,,,listed
-co-ploc-000632,co-p-000632,co-loc-000775,home_base,,,,,listed
-co-ploc-000633,co-p-000633,co-loc-000776,home_base,,,,,listed
-co-ploc-000634,co-p-000634,co-loc-000777,home_base,,,,,listed
-co-ploc-000635,co-p-000635,co-loc-000778,home_base,,,,,listed
-co-ploc-000636,co-p-000636,co-loc-000779,home_base,,,,,listed
-co-ploc-000637,co-p-000637,co-loc-000780,home_base,,,,,listed
-co-ploc-000638,co-p-000638,co-loc-000781,home_base,,,,,listed
-co-ploc-000639,co-p-000639,co-loc-000782,home_base,,,,,listed
-co-ploc-000640,co-p-000640,co-loc-000783,home_base,,,,,listed
-co-ploc-000641,co-p-000641,co-loc-000784,home_base,,,,,listed
-co-ploc-000642,co-p-000642,co-loc-000785,home_base,,,,,listed
-co-ploc-000643,co-p-000643,co-loc-000786,home_base,,,,,listed
-co-ploc-000644,co-p-000644,co-loc-000788,home_base,,,,,listed
-co-ploc-000645,co-p-000645,co-loc-000790,home_base,,,,,listed
-co-ploc-000646,co-p-000646,co-loc-000791,home_base,,,,,listed
-co-ploc-000647,co-p-000647,co-loc-000792,home_base,,,,,listed
-co-ploc-000648,co-p-000648,co-loc-000794,home_base,,,,,listed
-co-ploc-000649,co-p-000649,co-loc-000795,home_base,,,,,listed
-co-ploc-000650,co-p-000650,co-loc-000796,home_base,,,,,listed
-co-ploc-000651,co-p-000651,co-loc-000797,home_base,,,,,listed
-co-ploc-000652,co-p-000652,co-loc-000798,home_base,,,,,listed
-co-ploc-000653,co-p-000653,co-loc-000801,home_base,,,,,listed
-co-ploc-000654,co-p-000654,co-loc-000807,home_base,,,,,listed
-co-ploc-000655,co-p-000655,co-loc-000809,home_base,,,,,listed
-co-ploc-000656,co-p-000656,co-loc-000810,home_base,,,,,listed
-co-ploc-000657,co-p-000657,co-loc-000811,home_base,,,,,listed
-co-ploc-000658,co-p-000658,co-loc-000812,home_base,,,,,listed
-co-ploc-000659,co-p-000659,co-loc-000813,home_base,mon;tue;wed;thu;fri;sat;sun,Mon-Sun: 9:00am - 6:00pm,,,listed
-co-ploc-000660,co-p-000660,co-loc-000814,home_base,,,,,listed
-co-ploc-000661,co-p-000661,co-loc-000816,home_base,,,,,listed
-co-ploc-000662,co-p-000662,co-loc-000818,home_base,,,,,listed
-co-ploc-000663,co-p-000663,co-loc-000819,home_base,,,,,listed
-co-ploc-000664,co-p-000664,co-loc-000820,home_base,,,,,listed
-co-ploc-000665,co-p-000665,co-loc-000821,home_base,,,,,listed
-co-ploc-000666,co-p-000666,co-loc-000822,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 6pm; Sun: 10am - 5pm,,,listed
-co-ploc-000667,co-p-000667,co-loc-000823,home_base,,,,,listed
-co-ploc-000668,co-p-000668,co-loc-000825,home_base,mon;tue;wed;thu;fri;sat;sun,Sun: 12pm - 7pm; Mon: 12pm - 7pm; Tue: 12pm - 7pm; Wed: 12pm - 7pm; Thu: 12pm - 7pm; Fri: 12pm - 8pm; Sat: 12pm - 8pm,,,listed
-co-ploc-000669,co-p-000669,co-loc-000826,home_base,,,,,listed
-co-ploc-000670,co-p-000670,co-loc-000828,home_base,,,,,listed
-co-ploc-000671,co-p-000671,co-loc-000830,home_base,,,,,listed
-co-ploc-000672,co-p-000672,co-loc-000831,home_base,,,,,listed
-co-ploc-000673,co-p-000673,co-loc-000832,home_base,,,,,listed
-co-ploc-000674,co-p-000674,co-loc-000833,home_base,,,,,listed
-co-ploc-000675,co-p-000675,co-loc-000834,home_base,mon;tue;wed;thu;fri;sat,Mon-Sat 9am-2pm (site also says open every day; confirm),,,listed
-co-ploc-000676,co-p-000676,co-loc-000836,home_base,,,,,listed
-co-ploc-000677,co-p-000677,co-loc-000837,home_base,,,,,listed
-co-ploc-000678,co-p-000678,co-loc-000838,home_base,,,,,listed
-co-ploc-000679,co-p-000679,co-loc-000839,home_base,sat;sun,Sat: 10 a.m. - 5 p.m.; Sun: 10 a.m. - 5 p.m.,,,listed
-co-ploc-000680,co-p-000680,co-loc-000840,home_base,,,,,listed
-co-ploc-000681,co-p-000681,co-loc-000842,home_base,,,,,listed
-co-ploc-000682,co-p-000682,co-loc-000843,home_base,,,,,listed
-co-ploc-000683,co-p-000683,co-loc-000844,home_base,wed;thu;fri;sat;sun,Wed: 4pm - 9pm; Thu: 4pm - 9pm; Fri: 4pm - 9pm; Sat: 12pm - 9pm; Sun: 12pm - 5pm,,,listed
-co-ploc-000684,co-p-000684,co-loc-000845,home_base,wed;thu;fri;sat;sun,Wed: 10am - 5:30pm; Thu: 10am - 5:30pm; Fri: 10am - 5:30pm; Sat: 10am - 4pm; Sun: 10am - 4pm,,,listed
-co-ploc-000685,co-p-000685,co-loc-000846,home_base,,,,,listed
-co-ploc-000686,co-p-000686,co-loc-000848,home_base,,,,,listed
-co-ploc-000687,co-p-000687,co-loc-000849,home_base,,,,,listed
-co-ploc-000688,co-p-000688,co-loc-000851,home_base,,,,,listed
-co-ploc-000689,co-p-000689,co-loc-000854,home_base,sat,Sat: 10 am - 2pm,,,listed
-co-ploc-000690,co-p-000690,co-loc-000855,home_base,,,,,listed
-co-ploc-000691,co-p-000691,co-loc-000856,home_base,,,,,listed
-co-ploc-000692,co-p-000692,co-loc-000857,home_base,,,,,listed
-co-ploc-000693,co-p-000693,co-loc-000858,home_base,wed;thu;fri;sat;sun,Wed: 4pm - 8pm; Thu: 4pm - 8pm; Fri: 4pm - 8pm; Sat: 4pm - 8pm; Sun: 10am - 2pm,,,listed
-co-ploc-000694,co-p-000694,co-loc-000862,home_base,,,,,listed
-co-ploc-000695,co-p-000695,co-loc-000863,home_base,,,,,listed
-co-ploc-000696,co-p-000696,co-loc-000864,home_base,,,,,listed
-co-ploc-000697,co-p-000697,co-loc-000865,home_base,,,,,listed
-co-ploc-000698,co-p-000698,co-loc-000866,home_base,,,,,listed
-co-ploc-000699,co-p-000699,co-loc-000867,home_base,,,,,listed
-co-ploc-000700,co-p-000700,co-loc-000868,home_base,,Mon: winter 7am-3pm / summer 7am-5pm; Tue: winter 7am-3pm / summer 7am-5pm; Wed: winter 7am-3pm / summer 7am-5pm; Thu: winter 7am-3pm / summer 7am-5pm; Fri: winter 7am-3pm / summer 7am-8pm; Sat: winter 7am-3pm / summer 7am-5pm; Sun: winter 7am-3pm / summer 7am-5pm,,,listed
-co-ploc-000701,co-p-000701,co-loc-000869,home_base,,,,,listed
-co-ploc-000702,co-p-000702,co-loc-000870,home_base,,,,,listed
-co-ploc-000703,co-p-000703,co-loc-000872,home_base,,,,,listed
-co-ploc-000704,co-p-000704,co-loc-000873,home_base,,,,,listed
-co-ploc-000705,co-p-000705,co-loc-000874,home_base,,,,,listed
-co-ploc-000706,co-p-000706,co-loc-000875,home_base,,,,,listed
-co-ploc-000707,co-p-000707,co-loc-000876,home_base,,,,,listed
-co-ploc-000708,co-p-000708,co-loc-000877,home_base,,,,,listed
-co-ploc-000709,co-p-000709,co-loc-000878,home_base,,,,,listed
-co-ploc-000710,co-p-000710,co-loc-000879,home_base,,,,,listed
-co-ploc-000711,co-p-000711,co-loc-000880,home_base,,,,,listed
-co-ploc-000712,co-p-000712,co-loc-000881,home_base,,,,,listed
-co-ploc-000713,co-p-000713,co-loc-000883,home_base,,,,,listed
-co-ploc-000714,co-p-000714,co-loc-000884,home_base,,,,,listed
-co-ploc-000715,co-p-000715,co-loc-000885,home_base,,,,,listed
-co-ploc-000716,co-p-000716,co-loc-000886,home_base,mon;tue;wed;thu;fri,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 5pm,,,listed
-co-ploc-000717,co-p-000717,co-loc-000887,home_base,,,,,listed
-co-ploc-000718,co-p-000718,co-loc-000888,home_base,mon;tue;wed;thu;fri,Mon: 7am - 4pm; Tue: 7am - 4pm; Wed: 7am - 4pm; Thu: 7am - 4pm; Fri: 7am-4pm,,,listed
-co-ploc-000719,co-p-000719,co-loc-000892,home_base,,,,,listed
-co-ploc-000720,co-p-000720,co-loc-000893,home_base,,,,,listed
-co-ploc-000721,co-p-000721,co-loc-000894,home_base,,,,,listed
-co-ploc-000722,co-p-000722,co-loc-000895,home_base,,,,,listed
-co-ploc-000723,co-p-000723,co-loc-000896,home_base,,,,,listed
-co-ploc-000724,co-p-000724,co-loc-000897,home_base,,,,,listed
-co-ploc-000725,co-p-000725,co-loc-000898,home_base,,,,,listed
-co-ploc-000726,co-p-000726,co-loc-000899,home_base,,,,,listed
-co-ploc-000727,co-p-000727,co-loc-000900,home_base,,Farm pickup: contact before visiting,,,listed
-co-ploc-000017,co-p-000017,co-loc-000020,home_base,,,,,listed
-co-ploc-000728,co-p-000728,co-loc-000902,home_base,,,,,listed
-co-ploc-000729,co-p-000729,co-loc-000903,home_base,,,,,listed
-co-ploc-000730,co-p-000730,co-loc-000905,home_base,,,,,listed
-co-ploc-000731,co-p-000731,co-loc-000906,home_base,,,,,listed
-co-ploc-000732,co-p-000732,co-loc-000907,home_base,,,,,listed
-co-ploc-000733,co-p-000733,co-loc-000908,home_base,,"2026 CSA: 16 weeks, Jun 25-Oct 15, Thursday pickups 4-6pm (513 S Main St, Gunnison; 620 Second St, Crested Butte). Backyard Harvest free-produce packing Tue 10am",,,listed
-co-ploc-000734,co-p-000734,co-loc-000909,home_base,,,,,listed
-co-ploc-000735,co-p-000735,co-loc-000911,home_base,mon;wed;fri,Mon: 1pm - 5pm; Wed: 1pm - 5pm; Fri: 1pm - 5pm,,,listed
-co-ploc-000736,co-p-000736,co-loc-000912,home_base,,,,,listed
-co-ploc-000737,co-p-000737,co-loc-000913,home_base,,,,,listed
-co-ploc-000738,co-p-000738,co-loc-000914,home_base,,,,,listed
-co-ploc-000739,co-p-000739,co-loc-000915,home_base,,,,,listed
-co-ploc-000740,co-p-000740,co-loc-000916,home_base,,,,,listed
-co-ploc-000741,co-p-000741,co-loc-000917,home_base,,,,,listed
-co-ploc-000742,co-p-000742,co-loc-000918,home_base,,,,,listed
-co-ploc-000018,co-p-000018,co-loc-000021,home_base,,,,,listed
-co-ploc-000743,co-p-000743,co-loc-000919,home_base,,,,,listed
-co-ploc-000744,co-p-000744,co-loc-000920,home_base,,,,,listed
-co-ploc-000745,co-p-000745,co-loc-000921,home_base,,,,,listed
-co-ploc-000746,co-p-000746,co-loc-000922,home_base,,,,,listed
-co-ploc-000747,co-p-000747,co-loc-000923,home_base,,,,,listed
-co-ploc-000748,co-p-000748,co-loc-000924,home_base,,,,,listed
-co-ploc-000749,co-p-000749,co-loc-000925,home_base,,,,,listed
-co-ploc-000750,co-p-000750,co-loc-000926,home_base,,,,,listed
-co-ploc-000751,co-p-000751,co-loc-000927,home_base,,,,,listed
-co-ploc-000752,co-p-000752,co-loc-000928,home_base,,,,,listed
-co-ploc-000753,co-p-000753,co-loc-000930,home_base,,,,,listed
-co-ploc-000754,co-p-000754,co-loc-000931,home_base,,,,,listed
-co-ploc-000755,co-p-000755,co-loc-000932,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 a.m. - 6 p.m.; Tue: 9 a.m. - 6 p.m.; Wed: 9 a.m. - 6 p.m.; Thu: 9 a.m. - 6 p.m.; Fri: 9 a.m. - 6 p.m.; Sat: 9 a.m. - 6 p.m.; Sun: 9 a.m. - 6 p.m.,,,listed
-co-ploc-000756,co-p-000756,co-loc-000933,home_base,,,,,listed
-co-ploc-000757,co-p-000757,co-loc-000935,home_base,,,,,listed
-co-ploc-000758,co-p-000758,co-loc-000937,home_base,mon,Mon: 7 am - 12 pm,,,listed
-co-ploc-000759,co-p-000759,co-loc-000938,home_base,,,,,listed
-co-ploc-000760,co-p-000760,co-loc-000939,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 8am - 5pm; Sun: 9am - 11am,,,listed
-co-ploc-000761,co-p-000761,co-loc-000941,home_base,,,,,listed
-co-ploc-000762,co-p-000762,co-loc-000942,home_base,,,,,listed
-co-ploc-000763,co-p-000763,co-loc-000943,home_base,,,,,listed
-co-ploc-000764,co-p-000764,co-loc-000944,home_base,,,,,listed
-co-ploc-000765,co-p-000765,co-loc-000946,home_base,,,,,listed
-co-ploc-000766,co-p-000766,co-loc-000948,home_base,,,,,listed
-co-ploc-000767,co-p-000767,co-loc-000950,home_base,,,,,listed
-co-ploc-000768,co-p-000768,co-loc-000951,home_base,,,,,listed
-co-ploc-000769,co-p-000769,co-loc-000952,home_base,,,,,listed
-co-ploc-000770,co-p-000770,co-loc-000953,home_base,,,,,listed
-co-ploc-000771,co-p-000771,co-loc-000954,home_base,,,,,listed
-co-ploc-000772,co-p-000772,co-loc-000955,home_base,,,,,listed
-co-ploc-000773,co-p-000773,co-loc-000957,home_base,fri;sat,Fri: 2 pm - 7 pm; Sat: 10 am - 3 pm,,,listed
-co-ploc-000774,co-p-000774,co-loc-000961,home_base,,,,,listed
-co-ploc-000775,co-p-000775,co-loc-000963,home_base,,,,,listed
-co-ploc-000776,co-p-000776,co-loc-000964,home_base,,,,,listed
-co-ploc-000777,co-p-000777,co-loc-000966,home_base,,,,,listed
-co-ploc-000778,co-p-000778,co-loc-000968,home_base,mon;tue;wed;thu;fri;sat;sun,Daily: 10:00am - 6:00pm,,,listed
-co-ploc-000779,co-p-000779,co-loc-000969,home_base,,,,,listed
-co-ploc-000780,co-p-000780,co-loc-000970,home_base,,,,,listed
-co-ploc-000781,co-p-000781,co-loc-000971,home_base,,Honor-system farm store (hours not stated); glamping tents May-Oct,,,listed
-co-ploc-000782,co-p-000782,co-loc-000972,home_base,,Mon: call first please to arrange a time.; Tue: ditto; Wed: ditto; Thu: ditto; Fri: ditto; Sat: ditto; Sun: ditto,,,listed
-co-ploc-000783,co-p-000783,co-loc-000973,home_base,,,,,listed
-co-ploc-000784,co-p-000784,co-loc-000974,home_base,,,,,listed
-co-ploc-000785,co-p-000785,co-loc-000975,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10am-4pm; Tue: 10am-4pm; Wed: 10am-4pm; Thu: 10am-4pm; Fri: 10am-4pm; Sat: 10am-4pm; Sun: 10am-4pm,,,listed
-co-ploc-000786,co-p-000786,co-loc-000976,home_base,,,,,listed
-co-ploc-000787,co-p-000787,co-loc-000977,home_base,,,,,listed
-co-ploc-000788,co-p-000788,co-loc-000978,home_base,,,,,listed
-co-ploc-000789,co-p-000789,co-loc-000979,home_base,,,,,listed
-co-ploc-000790,co-p-000790,co-loc-000980,home_base,,,,,listed
-co-ploc-000791,co-p-000791,co-loc-000982,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 5:30pm; Tue: 9am - 5:30pm; Wed: 9am - 5:30pm; Thu: 9am - 5:30pm; Fri: 9am - 5:30pm; Sat: 9am - 5:30pm; Sun: 9am - 4pm,,,listed
-co-ploc-000792,co-p-000792,co-loc-000986,home_base,,U-pick orchard tours in summer season,,,listed
-co-ploc-000793,co-p-000793,co-loc-000988,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 5pm; Sun: 9am - 5pm,,,listed
-co-ploc-000794,co-p-000794,co-loc-000990,home_base,,,,,listed
-co-ploc-000795,co-p-000795,co-loc-000991,home_base,,,,,listed
-co-ploc-000796,co-p-000796,co-loc-000992,home_base,,,,,listed
-co-ploc-000797,co-p-000797,co-loc-000993,home_base,,,,,listed
-co-ploc-000798,co-p-000798,co-loc-000995,home_base,,Online orders; ships Mon/Tue,,,listed
-co-ploc-000799,co-p-000799,co-loc-000996,home_base,mon;tue;wed;thu;fri,Mon: 8 am - 5 pm; Tue: 8 am - 5 pm; Wed: 8 am - 5 pm; Thu: 8 am - 5 pm; Fri: 8 am - 5 pm,,,listed
-co-ploc-000800,co-p-000800,co-loc-000997,home_base,,,,,listed
-co-ploc-000801,co-p-000801,co-loc-000998,home_base,,,,,listed
-co-ploc-000802,co-p-000802,co-loc-000999,home_base,,,,,listed
-co-ploc-000803,co-p-000803,co-loc-001000,home_base,,,,,listed
-co-ploc-000804,co-p-000804,co-loc-001001,home_base,,,,,listed
-co-ploc-000805,co-p-000805,co-loc-001002,home_base,mon;tue;wed;thu;fri,Mon: 10am - 3pm; Tue: 10am - 3pm; Wed: 10am - 3pm; Thu: 10am - 3pm; Fri: 10am - 12pm,,,listed
-co-ploc-000806,co-p-000806,co-loc-001003,home_base,,,,,listed
-co-ploc-000807,co-p-000807,co-loc-001004,home_base,,,,,listed
-co-ploc-000808,co-p-000808,co-loc-001005,home_base,,,,,listed
-co-ploc-000809,co-p-000809,co-loc-001006,home_base,mon;tue;wed;thu;fri,Mon: 10am - 4pm; Tue: 10am - 4pm; Wed: 10am - 4pm; Thu: 10am - 4pm; Fri: 10am - 4pm,,,listed
-co-ploc-000810,co-p-000810,co-loc-001007,home_base,,,,,listed
-co-ploc-000811,co-p-000811,co-loc-001008,home_base,,,,,listed
-co-ploc-000812,co-p-000812,co-loc-001009,home_base,,,,,listed
-co-ploc-000813,co-p-000813,co-loc-001010,home_base,,,,,listed
-co-ploc-000814,co-p-000814,co-loc-001011,home_base,,,,,listed
-co-ploc-000815,co-p-000815,co-loc-001012,home_base,,,,,listed
-co-ploc-000816,co-p-000816,co-loc-001013,home_base,,,,,listed
-co-ploc-000817,co-p-000817,co-loc-001014,home_base,,,,,listed
-co-ploc-000818,co-p-000818,co-loc-001015,home_base,,,,,listed
-co-ploc-000819,co-p-000819,co-loc-001016,home_base,,,,,listed
-co-ploc-000019,co-p-000019,co-loc-000022,home_base,,By appointment,,,listed
-co-ploc-000820,co-p-000820,co-loc-001017,home_base,,,,,listed
-co-ploc-000821,co-p-000821,co-loc-001018,home_base,,,,,listed
-co-ploc-000822,co-p-000822,co-loc-001019,home_base,,,,,listed
-co-ploc-000823,co-p-000823,co-loc-001020,home_base,,,,,listed
-co-ploc-000824,co-p-000824,co-loc-001021,home_base,,,,,listed
-co-ploc-000825,co-p-000825,co-loc-001022,home_base,,,,,listed
-co-ploc-000826,co-p-000826,co-loc-001023,home_base,,,,,listed
-co-ploc-000827,co-p-000827,co-loc-001024,home_base,,,,,listed
-co-ploc-000828,co-p-000828,co-loc-001025,home_base,,,,,listed
-co-ploc-000829,co-p-000829,co-loc-001027,home_base,,,,,listed
-co-ploc-000830,co-p-000830,co-loc-001028,home_base,,,,,listed
-co-ploc-000831,co-p-000831,co-loc-001029,home_base,,,,,listed
-co-ploc-000832,co-p-000832,co-loc-001030,home_base,,,,,listed
-co-ploc-000833,co-p-000833,co-loc-001031,home_base,,,,,listed
-co-ploc-000834,co-p-000834,co-loc-001032,home_base,,,,,listed
-co-ploc-000020,co-p-000020,co-loc-000023,home_base,,By appointment,,,listed
-co-ploc-000835,co-p-000835,co-loc-001033,home_base,,,,,listed
-co-ploc-000836,co-p-000836,co-loc-001034,home_base,,,,,listed
-co-ploc-000837,co-p-000837,co-loc-001035,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 am-6 pm; Tue: 9 am-6 pm; Wed: 9 am-6 pm; Thu: 9 am-6 pm; Fri: 9 am-6 pm; Sat: 9 am-6 pm; Sun: 10 am - 4pm,,,listed
-co-ploc-000838,co-p-000838,co-loc-001036,home_base,,,,,listed
-co-ploc-000839,co-p-000839,co-loc-001037,home_base,,,,,listed
-co-ploc-000840,co-p-000840,co-loc-001038,home_base,,,,,listed
-co-ploc-000841,co-p-000841,co-loc-001039,home_base,,,,,listed
-co-ploc-000842,co-p-000842,co-loc-001040,home_base,,,,,listed
-co-ploc-000843,co-p-000843,co-loc-001041,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8 a.m.- 5 p.m.; Tue: 8 a.m.- 5 p.m.; Wed: 8 a.m.- 5 p.m.; Thu: 8 a.m.- 5 p.m.; Fri: 8 a.m.- 5 p.m.; Sat: 8 a.m.- 5 p.m.; Sun: 8 a.m.- 5 p.m.,,,listed
-co-ploc-000844,co-p-000844,co-loc-001047,home_base,,,,,listed
-co-ploc-000845,co-p-000845,co-loc-001048,home_base,,,,,listed
-co-ploc-000846,co-p-000846,co-loc-001049,home_base,,,,,listed
-co-ploc-000847,co-p-000847,co-loc-001050,home_base,,,,,listed
-co-ploc-000848,co-p-000848,co-loc-001052,home_base,,,,,listed
-co-ploc-000849,co-p-000849,co-loc-001053,home_base,,,,,listed
-co-ploc-000850,co-p-000850,co-loc-001054,home_base,,,,,listed
-co-ploc-000851,co-p-000851,co-loc-001055,home_base,sat,Sat: 9:00am - Noon,,,listed
-co-ploc-000852,co-p-000852,co-loc-001056,home_base,,,,,listed
-co-ploc-000853,co-p-000853,co-loc-001057,home_base,,,,,listed
-co-ploc-000854,co-p-000854,co-loc-001058,home_base,,,,,listed
-co-ploc-000855,co-p-000855,co-loc-001059,home_base,,,,,listed
-co-ploc-000856,co-p-000856,co-loc-001060,home_base,,,,,listed
-co-ploc-000857,co-p-000857,co-loc-001061,home_base,,,,,listed
-co-ploc-000858,co-p-000858,co-loc-001062,home_base,,,,,listed
-co-ploc-000859,co-p-000859,co-loc-001064,home_base,,,,,listed
-co-ploc-000860,co-p-000860,co-loc-001065,home_base,,,,,listed
-co-ploc-000861,co-p-000861,co-loc-001066,home_base,,,,,listed
-co-ploc-000862,co-p-000862,co-loc-001067,home_base,,,,,listed
-co-ploc-000863,co-p-000863,co-loc-001069,home_base,,,,,listed
-co-ploc-000864,co-p-000864,co-loc-001070,home_base,mon;tue;wed;thu;fri;sat,Mon: 8:00 - 6:00; Tue: 8:00 - 6:00; Wed: 8:00 - 6:00; Thu: 8:00 - 6:00; Fri: 8:00 - 6:00; Sat: 8:00 - 6:00,,,listed
-co-ploc-000865,co-p-000865,co-loc-001071,home_base,,,,,listed
-co-ploc-000866,co-p-000866,co-loc-001072,home_base,,,,,listed
-co-ploc-000867,co-p-000867,co-loc-001073,home_base,mon;tue;wed;thu;fri,Mon: 7 am - 4 pm; Tue: 7 am - 4 pm; Wed: 7 am - 4 pm; Thu: 7 am - 4 pm; Fri: 7 am - 4 pm,,,listed
-co-ploc-000868,co-p-000868,co-loc-001074,home_base,,,,,listed
-co-ploc-000869,co-p-000869,co-loc-001075,home_base,,,,,listed
-co-ploc-000870,co-p-000870,co-loc-001076,home_base,,,,,listed
-co-ploc-000871,co-p-000871,co-loc-001077,home_base,,,,,listed
-co-ploc-000872,co-p-000872,co-loc-001078,home_base,,,,,listed
-co-ploc-000873,co-p-000873,co-loc-001079,home_base,,,,,listed
-co-ploc-000874,co-p-000874,co-loc-001080,home_base,,,,,listed
-co-ploc-000875,co-p-000875,co-loc-001082,home_base,,,,,listed
-co-ploc-000876,co-p-000876,co-loc-001083,home_base,,,,,listed
-co-ploc-000877,co-p-000877,co-loc-001084,home_base,,,,,listed
-co-ploc-000878,co-p-000878,co-loc-001085,home_base,,,,,listed
-co-ploc-000879,co-p-000879,co-loc-001086,home_base,,,,,listed
-co-ploc-000880,co-p-000880,co-loc-001087,home_base,,,,,listed
-co-ploc-000881,co-p-000881,co-loc-001088,home_base,,,,,listed
-co-ploc-000882,co-p-000882,co-loc-001089,home_base,,,,,listed
-co-ploc-000883,co-p-000883,co-loc-001090,home_base,,,,,listed
-co-ploc-000884,co-p-000884,co-loc-001091,home_base,,,,,listed
-co-ploc-000885,co-p-000885,co-loc-001092,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 11am - 7pm; Tue: 11am - 7pm; Wed: 11am - 7pm; Thu: 11am - 7pm; Fri: 11am - 8pm; Sat: 11am - 5pm; Sun: 10am - 5pm,,,listed
-co-ploc-000886,co-p-000886,co-loc-001097,home_base,wed,Wed: 3pm-7pm,,,listed
-co-ploc-000887,co-p-000887,co-loc-001098,home_base,,,,,listed
-co-ploc-000888,co-p-000888,co-loc-001099,home_base,,,,,listed
-co-ploc-000889,co-p-000889,co-loc-001100,home_base,,,,,listed
-co-ploc-000890,co-p-000890,co-loc-001101,home_base,,,,,listed
-co-ploc-000891,co-p-000891,co-loc-001102,home_base,,,,,listed
-co-ploc-000892,co-p-000892,co-loc-001103,home_base,,,,,listed
-co-ploc-000893,co-p-000893,co-loc-001104,home_base,,,,,listed
-co-ploc-000894,co-p-000894,co-loc-001105,home_base,,,,,listed
-co-ploc-000895,co-p-000895,co-loc-001106,home_base,,,,,listed
-co-ploc-000896,co-p-000896,co-loc-001107,home_base,,,,,listed
-co-ploc-000897,co-p-000897,co-loc-001108,home_base,,,,,listed
-co-ploc-000898,co-p-000898,co-loc-001109,home_base,mon;tue;wed;thu;fri;sat;sun,"9:00 AM–7:00 PM daily, in season",,,listed
-co-ploc-000899,co-p-000899,co-loc-001110,home_base,mon;tue;wed;thu;fri;sat;sun,"9:00 AM–7:00 PM daily, in season",,,listed
-co-ploc-000900,co-p-000900,co-loc-001111,home_base,mon;tue;wed;thu;fri;sat;sun,"9:00 AM–7:00 PM daily, in season",,,listed
-co-ploc-000901,co-p-000901,co-loc-001112,home_base,,,,,listed
-co-ploc-000902,co-p-000902,co-loc-001113,home_base,wed;thu;fri;sat,"Oct–May: Wed–Fri 9am–4pm; Jun–Sep: Wed–Fri 9am–4pm, Sat 9am–1pm",,,listed
-co-ploc-000903,co-p-000903,co-loc-001114,home_base,,,,,listed
-co-ploc-000904,co-p-000904,co-loc-001115,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9:30am - 7pm; Tue: 9:30am - 7pm; Wed: 9:30am - 7pm; Thu: 9:30am - 7pm; Fri: 9:30am - 7pm; Sat: 9:30am - 7pm; Sun: 9:30am - 7pm,,,listed
-co-ploc-000905,co-p-000905,co-loc-001116,home_base,mon;tue;wed;thu;fri,Mon: 10am - 4pm; Tue: 10am - 4pm; Wed: 10am - 4pm; Thu: 10am - 4pm; Fri: 10am - 4pm,,,listed
-co-ploc-000906,co-p-000906,co-loc-001117,home_base,,,,,listed
-co-ploc-000907,co-p-000907,co-loc-001118,home_base,,,,,listed
-co-ploc-000908,co-p-000908,co-loc-001119,home_base,,,,,listed
-co-ploc-000909,co-p-000909,co-loc-001120,home_base,,,,,listed
-co-ploc-000910,co-p-000910,co-loc-001121,home_base,,,,,listed
-co-ploc-000021,co-p-000021,co-loc-000024,home_base,mon;tue;wed;thu;fri;sat,Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; Wed: 8 am - 6 pm; Thu: 8 am - 6 pm; Fri: 8 am - 6 pm; Sat: 8 am - 6 pm,,,listed
-co-ploc-000911,co-p-000911,co-loc-001122,home_base,,,,,listed
-co-ploc-000912,co-p-000912,co-loc-001124,home_base,,,,,listed
-co-ploc-000913,co-p-000913,co-loc-001125,home_base,,,,,listed
-co-ploc-000914,co-p-000914,co-loc-001126,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 a.m. - 6 p.m.; Tue: 9 a.m. - 6 p.m.; Wed: 9 a.m. - 6 p.m.; Thu: 9 a.m. - 6 p.m.; Fri: 9 a.m. - 6 p.m.; Sat: 9 a.m. - 6 p.m.; Sun: 9 a.m. - 6 p.m.,,,listed
-co-ploc-000915,co-p-000915,co-loc-001127,home_base,,,,,listed
-co-ploc-000916,co-p-000916,co-loc-001128,home_base,,,,,listed
-co-ploc-000917,co-p-000917,co-loc-001129,home_base,,,,,listed
-co-ploc-000918,co-p-000918,co-loc-001130,home_base,,,,,listed
-co-ploc-000919,co-p-000919,co-loc-001131,home_base,,,,,listed
-co-ploc-000920,co-p-000920,co-loc-001132,home_base,,,,,listed
-co-ploc-000921,co-p-000921,co-loc-001133,home_base,,,,,listed
-co-ploc-000922,co-p-000922,co-loc-001134,home_base,,,,,listed
-co-ploc-000923,co-p-000923,co-loc-001135,home_base,,,,,listed
-co-ploc-000924,co-p-000924,co-loc-001136,home_base,,,,,listed
-co-ploc-000925,co-p-000925,co-loc-001137,home_base,,,,,listed
-co-ploc-000926,co-p-000926,co-loc-001139,home_base,,,,,listed
-co-ploc-000927,co-p-000927,co-loc-001140,home_base,,,,,listed
-co-ploc-000928,co-p-000928,co-loc-001141,home_base,,,,,listed
-co-ploc-000929,co-p-000929,co-loc-001142,home_base,,,,,listed
-co-ploc-000930,co-p-000930,co-loc-001143,home_base,,,,,listed
-co-ploc-000931,co-p-000931,co-loc-001144,home_base,,,,,listed
-co-ploc-000932,co-p-000932,co-loc-001145,home_base,,,,,listed
-co-ploc-000933,co-p-000933,co-loc-001146,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8am-7pm; Tue: 8am-7pm; Wed: 8am-7pm; Thu: 8am-7pm; Fri: 8am-7pm; Sat: 8am-7pm; Sun: 8am-7pm,,,listed
-co-ploc-000934,co-p-000934,co-loc-001147,home_base,,,,,listed
-co-ploc-000935,co-p-000935,co-loc-001148,home_base,,,,,listed
-co-ploc-000936,co-p-000936,co-loc-001149,home_base,,,,,listed
-co-ploc-000937,co-p-000937,co-loc-001150,home_base,,,,,listed
-co-ploc-000938,co-p-000938,co-loc-001151,home_base,mon;tue;wed;thu;fri;sat,Mon: 9:30am - 6pm; Tue: 9:30am - 6pm; Wed: 9:30am - 6pm; Thu: 9:30am - 6pm; Fri: 9:30am - 6pm; Sat: 9am - 5pm,,,listed
-co-ploc-000939,co-p-000939,co-loc-001152,home_base,sat;sun,Sat: 8am -4pm; Sun: 8am - 4pm,,,listed
-co-ploc-000940,co-p-000940,co-loc-001154,home_base,,,,,listed
-co-ploc-000941,co-p-000941,co-loc-001155,home_base,,Fri: CALL; Sat: Call,,,listed
-co-ploc-000942,co-p-000942,co-loc-001156,home_base,,,,,listed
-co-ploc-000943,co-p-000943,co-loc-001157,home_base,,,,,listed
-co-ploc-000944,co-p-000944,co-loc-001158,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 11am - 6pm; Tue: 11am - 6pm; Wed: 11am - 6pm; Thu: 11am - 6pm; Fri: 11am - 7pm; Sat: 11am - 7pm; Sun: 11am - 6pm,,,listed
-co-ploc-000023,co-p-000023,co-loc-000027,home_base,,,,,listed
-co-ploc-000945,co-p-000945,co-loc-001159,home_base,,,,,listed
-co-ploc-000946,co-p-000946,co-loc-001160,home_base,,,,,listed
-co-ploc-000947,co-p-000947,co-loc-001161,home_base,,,,,listed
-co-ploc-000948,co-p-000948,co-loc-001162,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 a.m. - 6 p.m.; Tue: 9 a.m. - 6 p.m.; Wed: 9 a.m. - 6 p.m.; Thu: 9 a.m. - 6 p.m.; Fri: 9 a.m. - 6 p.m.; Sat: 9 a.m. - 6 p.m.; Sun: 10 a.m. - 5 p.m.,,,listed
-co-ploc-000949,co-p-000949,co-loc-001163,home_base,,,,,listed
-co-ploc-000950,co-p-000950,co-loc-001164,home_base,,,,,listed
-co-ploc-000951,co-p-000951,co-loc-001166,home_base,,,,,listed
-co-ploc-000952,co-p-000952,co-loc-001168,home_base,,,,,listed
-co-ploc-000953,co-p-000953,co-loc-001169,home_base,,,,,listed
-co-ploc-000954,co-p-000954,co-loc-001171,home_base,,,,,listed
-co-ploc-000955,co-p-000955,co-loc-001172,home_base,,,,,listed
-co-ploc-000956,co-p-000956,co-loc-001174,home_base,,,,,listed
-co-ploc-000957,co-p-000957,co-loc-001175,home_base,,,,,listed
-co-ploc-000958,co-p-000958,co-loc-001176,home_base,,,,,listed
-co-ploc-000959,co-p-000959,co-loc-001177,home_base,,,,,listed
-co-ploc-000960,co-p-000960,co-loc-001178,home_base,,,,,listed
-co-ploc-000961,co-p-000961,co-loc-001179,home_base,,,,,listed
-co-ploc-000962,co-p-000962,co-loc-001180,home_base,,,,,listed
-co-ploc-000963,co-p-000963,co-loc-001181,home_base,,,,,listed
-co-ploc-000964,co-p-000964,co-loc-001182,home_base,,,,,listed
-co-ploc-000965,co-p-000965,co-loc-001184,home_base,,,,,listed
-co-ploc-000966,co-p-000966,co-loc-001185,home_base,thu;fri;sat;sun,Thu: 10am - 4pm; Fri: 10am - 4pm; Sat: 10am - 4pm; Sun: 10am - 3pm,,,listed
-co-ploc-000967,co-p-000967,co-loc-001186,home_base,,,,,listed
-co-ploc-000968,co-p-000968,co-loc-001187,home_base,,,,,listed
-co-ploc-000969,co-p-000969,co-loc-001189,home_base,,,,,listed
-co-ploc-000970,co-p-000970,co-loc-001190,home_base,,,,,listed
-co-ploc-000971,co-p-000971,co-loc-001191,home_base,,,,,listed
-co-ploc-000972,co-p-000972,co-loc-001192,home_base,,,,,listed
-co-ploc-000973,co-p-000973,co-loc-001193,home_base,,,,,listed
-co-ploc-000974,co-p-000974,co-loc-001195,home_base,,,,,listed
-co-ploc-000975,co-p-000975,co-loc-001196,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 6pm; Sun: 10am - 6pm,,,listed
-co-ploc-000976,co-p-000976,co-loc-001197,home_base,,,,,listed
-co-ploc-000977,co-p-000977,co-loc-001198,home_base,,,,,listed
-co-ploc-000978,co-p-000978,co-loc-001199,home_base,,,,,listed
-co-ploc-000979,co-p-000979,co-loc-001200,home_base,,,,,listed
-co-ploc-000980,co-p-000980,co-loc-001205,home_base,,,,,listed
-co-ploc-000981,co-p-000981,co-loc-001207,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 am -5pm; Tue: 9am - 5pm; Wed: 9am-5pm; Thu: 9am-5pm; Fri: 9am-5pm; Sat: 9am-5pm; Sun: 10am-4pm,,,listed
-co-ploc-000982,co-p-000982,co-loc-001208,home_base,,,,,listed
-co-ploc-000983,co-p-000983,co-loc-001209,home_base,,,,,listed
-co-ploc-000984,co-p-000984,co-loc-001210,home_base,,,,,listed
-co-ploc-000985,co-p-000985,co-loc-001211,home_base,,,,,listed
-co-ploc-000986,co-p-000986,co-loc-001212,home_base,,,,,listed
-co-ploc-000987,co-p-000987,co-loc-001213,home_base,,,,,listed
-co-ploc-000988,co-p-000988,co-loc-001214,home_base,,Events typically May–October,,,listed
-co-ploc-000989,co-p-000989,co-loc-001215,home_base,,,,,listed
-co-ploc-000990,co-p-000990,co-loc-001216,home_base,,,,,listed
-co-ploc-000991,co-p-000991,co-loc-001217,home_base,,,,,listed
-co-ploc-000992,co-p-000992,co-loc-001218,home_base,mon;tue;wed;thu;fri,Mon: 9-3; Tue: 9-3; Wed: 9-3; Thu: 9-3; Fri: 9-1,,,listed
-co-ploc-000993,co-p-000993,co-loc-001219,home_base,,,,,listed
-co-ploc-000994,co-p-000994,co-loc-001220,home_base,,,,,listed
-co-ploc-000995,co-p-000995,co-loc-001221,home_base,,,,,listed
-co-ploc-000996,co-p-000996,co-loc-001222,home_base,tue;wed;thu;fri;sat;sun,Tue: 4pm - 9pm; Wed: 4pm - 9pm; Thu: 4pm - 9pm; Fri: 4pm - 9pm; Sat: 12pm - 9pm; Sun: 12pm - 8pm,,,listed
-co-ploc-000997,co-p-000997,co-loc-001223,home_base,,,,,listed
-co-ploc-000998,co-p-000998,co-loc-001224,home_base,,,,,listed
-co-ploc-000999,co-p-000999,co-loc-001226,home_base,,,,,listed
-co-ploc-001000,co-p-001000,co-loc-001228,home_base,,,,,listed
-co-ploc-001001,co-p-001001,co-loc-001231,home_base,,,,,listed
-co-ploc-001002,co-p-001002,co-loc-001232,home_base,tue;wed;thu;fri;sat,Tue: 10 a.m. - 6 p.m.; Wed: 10 a.m. - 6 p.m.; Thu: 10 a.m. - 6 p.m.; Fri: 10 a.m. - 6 p.m.; Sat: 10 a.m. - 4 p.m.,,,listed
-co-ploc-001003,co-p-001003,co-loc-001233,home_base,,,,,listed
-co-ploc-001004,co-p-001004,co-loc-001234,home_base,,,,,listed
-co-ploc-001005,co-p-001005,co-loc-001235,home_base,,,,,listed
-co-ploc-001006,co-p-001006,co-loc-001236,home_base,,,,,listed
-co-ploc-001007,co-p-001007,co-loc-001237,home_base,,,,,listed
-co-ploc-001008,co-p-001008,co-loc-001238,home_base,,,,,listed
-co-ploc-001009,co-p-001009,co-loc-001239,home_base,,,,,listed
-co-ploc-001010,co-p-001010,co-loc-001240,home_base,,,,,listed
-co-ploc-001011,co-p-001011,co-loc-001241,home_base,,,,,listed
-co-ploc-001012,co-p-001012,co-loc-001243,home_base,,,,,listed
-co-ploc-001013,co-p-001013,co-loc-001244,home_base,wed;thu;fri,"Wed: 12:30-4:30; Thu: 9-4:30; Fri: 9-4:30; Sat: Depends on Season, 11-3 in April & 9-1:00 from May-October; Sun: Depends on Season, 11-3 in April & 9-1:00 from May-OctoberSeason",,,listed
-co-ploc-001014,co-p-001014,co-loc-001245,home_base,,,,,listed
-co-ploc-001015,co-p-001015,co-loc-001247,home_base,,,,,listed
-co-ploc-001016,co-p-001016,co-loc-001248,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8:30am - 6pm; Tue: 8:30am - 6pm; Wed: 8:30am - 6pm; Thu: 8:30am - 6pm; Fri: 8:30am - 6pm; Sat: 8:30am - 6pm; Sun: 8:30am - 6pm,,,listed
-co-ploc-001017,co-p-001017,co-loc-001249,home_base,,,,,listed
-co-ploc-001018,co-p-001018,co-loc-001250,home_base,,,,,listed
-co-ploc-001019,co-p-001019,co-loc-001251,home_base,,,,,listed
-co-ploc-001020,co-p-001020,co-loc-001252,home_base,,,,,listed
-co-ploc-001021,co-p-001021,co-loc-001253,home_base,,,,,listed
-co-ploc-001022,co-p-001022,co-loc-001254,home_base,,,,,listed
-co-ploc-001023,co-p-001023,co-loc-001255,home_base,wed;sat,Wed: 11am - 4pm; Sat: 11am - 4pm,,,listed
-co-ploc-001024,co-p-001024,co-loc-001256,home_base,,,,,listed
-co-ploc-001025,co-p-001025,co-loc-001257,home_base,,,,,listed
-co-ploc-001026,co-p-001026,co-loc-001258,home_base,,,,,listed
-co-ploc-001027,co-p-001027,co-loc-001259,home_base,,,,,listed
-co-ploc-001028,co-p-001028,co-loc-001260,home_base,,,,,listed
-co-ploc-001029,co-p-001029,co-loc-001261,home_base,,,,,listed
-co-ploc-001030,co-p-001030,co-loc-001262,home_base,,,,,listed
-co-ploc-001031,co-p-001031,co-loc-001263,home_base,,,,,listed
-co-ploc-000024,co-p-000024,co-loc-000028,home_base,,,,,listed
-co-ploc-001032,co-p-001032,co-loc-001264,home_base,,,,,listed
-co-ploc-001033,co-p-001033,co-loc-001265,home_base,,,,,listed
-co-ploc-001034,co-p-001034,co-loc-001266,home_base,,,,,listed
-co-ploc-001035,co-p-001035,co-loc-001267,home_base,,,,,listed
-co-ploc-001036,co-p-001036,co-loc-001268,home_base,,,,,listed
-co-ploc-001037,co-p-001037,co-loc-001269,home_base,sat;sun,Sat: 8AM - 1PM (City Park Farmers Market); Sun: 9AM - 1PM (Lafayette Farmers Market),,,listed
-co-ploc-001038,co-p-001038,co-loc-001270,home_base,,,,,listed
-co-ploc-001039,co-p-001039,co-loc-001272,home_base,,,,,listed
-co-ploc-001040,co-p-001040,co-loc-001273,home_base,,,,,listed
-co-ploc-001041,co-p-001041,co-loc-001274,home_base,mon;tue;wed;thu;fri;sat;sun,Sun: 10am - 6pm; Mon: 10am - 6pm; Tue: 10am - 6pm; Wed: 10am - 7pm; Thu: 10am - 7pm; Fri: 10am - 7pm; Sat: 10am - 7pm,,,listed
-co-ploc-001042,co-p-001042,co-loc-001275,home_base,,,,,listed
-co-ploc-001043,co-p-001043,co-loc-001276,home_base,,,,,listed
-co-ploc-001044,co-p-001044,co-loc-001277,home_base,,,,,listed
-co-ploc-001045,co-p-001045,co-loc-001279,home_base,,,,,listed
-co-ploc-001046,co-p-001046,co-loc-001280,home_base,,,,,listed
-co-ploc-001047,co-p-001047,co-loc-001281,home_base,,,,,listed
-co-ploc-001048,co-p-001048,co-loc-001282,home_base,,,,,listed
-co-ploc-001049,co-p-001049,co-loc-001283,home_base,,,,,listed
-co-ploc-001050,co-p-001050,co-loc-001286,home_base,,,,,listed
-co-ploc-001051,co-p-001051,co-loc-001287,home_base,sat,Sat: 12pm - 7pm,,,listed
-co-ploc-001052,co-p-001052,co-loc-001288,home_base,,,,,listed
-co-ploc-001053,co-p-001053,co-loc-001289,home_base,,,,,listed
-co-ploc-001054,co-p-001054,co-loc-001290,home_base,,,,,listed
-co-ploc-001055,co-p-001055,co-loc-001293,home_base,,,,,listed
-co-ploc-001056,co-p-001056,co-loc-001294,home_base,,,,,listed
-co-ploc-001057,co-p-001057,co-loc-001295,home_base,,,,,listed
-co-ploc-001058,co-p-001058,co-loc-001297,home_base,mon;tue;wed;thu;fri;sat,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 9am - 4pm,,,listed
-co-ploc-001059,co-p-001059,co-loc-001299,home_base,,,,,listed
-co-ploc-001060,co-p-001060,co-loc-001300,home_base,,,,,listed
-co-ploc-001061,co-p-001061,co-loc-001301,home_base,,,,,listed
-co-ploc-001062,co-p-001062,co-loc-001302,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10 am - 6 pm; Tue: 10 am - 6 pm; Wed: 10 am - 6 pm; Thu: 10 am - 6 pm; Fri: 10 am - 6 pm; Sat: 10 am - 6 pm; Sun: 10 am - 6 pm,,,listed
-co-ploc-001063,co-p-001063,co-loc-001303,home_base,,,,,listed
-co-ploc-001064,co-p-001064,co-loc-001304,home_base,,,,,listed
-co-ploc-001065,co-p-001065,co-loc-001305,home_base,,,,,listed
-co-ploc-001066,co-p-001066,co-loc-001306,home_base,,,,,listed
-co-ploc-001067,co-p-001067,co-loc-001307,home_base,,,,,listed
-co-ploc-001068,co-p-001068,co-loc-001308,home_base,,,,,listed
-co-ploc-001069,co-p-001069,co-loc-001309,home_base,,,,,listed
-co-ploc-001070,co-p-001070,co-loc-001310,home_base,,,,,listed
-co-ploc-001071,co-p-001071,co-loc-001311,home_base,mon;tue;wed;thu;fri;sat,Mon: 7am - 2:30pm; Tue: 7am - 2:30pm; Wed: 7am - 2:30pm; Thu: 7am - 2:30pm; Fri: 7am - 2:30pm; Sat: 7am - 2:30pm,,,listed
-co-ploc-001072,co-p-001072,co-loc-001312,home_base,,,,,listed
-co-ploc-001073,co-p-001073,co-loc-001313,home_base,,,,,listed
-co-ploc-001074,co-p-001074,co-loc-001314,home_base,,,,,listed
-co-ploc-001075,co-p-001075,co-loc-001315,home_base,,,,,listed
-co-ploc-001076,co-p-001076,co-loc-001316,home_base,,,,,listed
-co-ploc-001077,co-p-001077,co-loc-001317,home_base,mon;tue;wed;thu;fri,Mon: 8am to 6pm; Tue: 8am to 6pm; Wed: 8am to 6pm; Thu: 8am to 6pm; Fri: 8am to 6pm,,,listed
-co-ploc-001078,co-p-001078,co-loc-001318,home_base,,,,,listed
-co-ploc-001079,co-p-001079,co-loc-001320,home_base,,,,,listed
-co-ploc-001080,co-p-001080,co-loc-001322,home_base,,,,,listed
-co-ploc-001081,co-p-001081,co-loc-001323,home_base,,,,,listed
-co-ploc-001082,co-p-001082,co-loc-001324,home_base,,,,,listed
-co-ploc-001083,co-p-001083,co-loc-001326,home_base,,,,,listed
-co-ploc-001084,co-p-001084,co-loc-001327,home_base,mon;thu;fri;sat;sun,Mon: Noon - 6pm; Thu: Noon - 6pm; Fri: Noon - 6pm; Sat: Noon -6 pm; Sun: Noon - 6pm,,,listed
-co-ploc-001085,co-p-001085,co-loc-001328,home_base,,,,,listed
-co-ploc-001086,co-p-001086,co-loc-001329,home_base,,,,,listed
-co-ploc-001087,co-p-001087,co-loc-001330,home_base,,,,,listed
-co-ploc-001088,co-p-001088,co-loc-001331,home_base,,,,,listed
-co-ploc-001089,co-p-001089,co-loc-001332,home_base,,,,,listed
-co-ploc-001090,co-p-001090,co-loc-001333,home_base,,,,,listed
-co-ploc-001091,co-p-001091,co-loc-001334,home_base,,,,,listed
-co-ploc-001092,co-p-001092,co-loc-001335,home_base,,,,,listed
-co-ploc-001093,co-p-001093,co-loc-001336,home_base,thu;fri;sat;sun,Thu: 12 p.m. - 7 p.m.; Fri: 12 p.m. - 7 p.m.; Sat: 12 p.m. - 7 p.m.; Sun: 12 p.m. - 7 p.m.,,,listed
-co-ploc-001094,co-p-001094,co-loc-001338,home_base,,,,,listed
-co-ploc-000026,co-p-000026,co-loc-000032,home_base,,"Pick-your-own flowers by appointment, June–October",,,listed
-co-ploc-001096,co-p-001096,co-loc-001340,home_base,,,,,listed
-co-ploc-001097,co-p-001097,co-loc-001341,home_base,,,,,listed
-co-ploc-001098,co-p-001098,co-loc-001342,home_base,mon;tue;wed;thu;fri;sat,Mon: 10  am - 6 pm; Tue: 10  am - 6 pm; Wed: 10  am - 6 pm; Thu: 10  am - 6 pm; Fri: 10  am - 6 pm; Sat: 10  am - 6 pm; Sun: 12 noon - 5 pm,,,listed
-co-ploc-001099,co-p-001099,co-loc-001343,home_base,,,,,listed
-co-ploc-001100,co-p-001100,co-loc-001345,home_base,,,,,listed
-co-ploc-001101,co-p-001101,co-loc-001346,home_base,,,,,listed
-co-ploc-001102,co-p-001102,co-loc-001347,home_base,tue;sat;sun,"2025 markets: Paonia Tue 5-7:30pm, Gunnison Sat 9:30am-1pm, Crested Butte Sun 9am-2pm; 2026 schedule not confirmed",,,listed
-co-ploc-001103,co-p-001103,co-loc-001348,home_base,,Tours by appointment,,,listed
-co-ploc-001104,co-p-001104,co-loc-001349,home_base,,,,,listed
-co-ploc-001105,co-p-001105,co-loc-001350,home_base,,,,,listed
-co-ploc-001106,co-p-001106,co-loc-001351,home_base,,Open to public only during events/workshops,,,listed
-co-ploc-001107,co-p-001107,co-loc-001352,home_base,,,,,listed
-co-ploc-001108,co-p-001108,co-loc-001353,home_base,,Mon: Check our website / FB page for events and hours; Tue: Check our website / FB page for events and hours; Wed: Check our website / FB page for events and hours; Thu: Check our website / FB page for events and hours; Fri: Check our website / FB page for events and hours; Sat: Check our website / FB page for events and hours; Sun: Check our website / FB page for events and hours,,,listed
-co-ploc-001109,co-p-001109,co-loc-001354,home_base,,,,,listed
-co-ploc-001110,co-p-001110,co-loc-001355,home_base,fri;sat;sun,Fri: 4pm - 7pm; Sat: 12pm - 7pm; Sun: 12pm - 6pm,,,listed
-co-ploc-001111,co-p-001111,co-loc-001356,home_base,,,,,listed
-co-ploc-001112,co-p-001112,co-loc-001357,home_base,,,,,listed
-co-ploc-001113,co-p-001113,co-loc-001358,home_base,,,,,listed
-co-ploc-001114,co-p-001114,co-loc-001360,home_base,,,,,listed
-co-ploc-001115,co-p-001115,co-loc-001361,home_base,,,,,listed
-co-ploc-001116,co-p-001116,co-loc-001362,home_base,,,,,listed
-co-ploc-001117,co-p-001117,co-loc-001363,home_base,,,,,listed
-co-ploc-001118,co-p-001118,co-loc-001364,home_base,,,,,listed
-co-ploc-001119,co-p-001119,co-loc-001365,home_base,,,,,listed
-co-ploc-001120,co-p-001120,co-loc-001366,home_base,,,,,listed
-co-ploc-001121,co-p-001121,co-loc-001367,home_base,,,,,listed
-co-ploc-001122,co-p-001122,co-loc-001369,home_base,sat;sun,Sat: 10am - 6pm; Sun: 10am - 6pm,,,listed
-co-ploc-001123,co-p-001123,co-loc-001370,home_base,,,,,listed
-co-ploc-001124,co-p-001124,co-loc-001371,home_base,,,,,listed
-co-ploc-000027,co-p-000027,co-loc-000033,home_base,,,,,listed
-co-ploc-001125,co-p-001125,co-loc-001372,home_base,,,,,listed
-co-ploc-001126,co-p-001126,co-loc-001373,home_base,,,,,listed
-co-ploc-001127,co-p-001127,co-loc-001374,home_base,,,,,listed
-co-ploc-001128,co-p-001128,co-loc-001375,home_base,,,,,listed
-co-ploc-001129,co-p-001129,co-loc-001376,home_base,,,,,listed
-co-ploc-001130,co-p-001130,co-loc-001377,home_base,,Cafe lunches Tue and Fri,,,listed
-co-ploc-001131,co-p-001131,co-loc-001378,home_base,,,,,listed
-co-ploc-001132,co-p-001132,co-loc-001379,home_base,,,,,listed
-co-ploc-001133,co-p-001133,co-loc-001380,home_base,,,,,listed
-co-ploc-001134,co-p-001134,co-loc-001381,home_base,,,,,listed
-co-ploc-001135,co-p-001135,co-loc-001382,home_base,,,,,listed
-co-ploc-001136,co-p-001136,co-loc-001383,home_base,fri,Fri: 9am-1pm,,,listed
-co-ploc-001137,co-p-001137,co-loc-001384,home_base,,,,,listed
-co-ploc-001138,co-p-001138,co-loc-001386,home_base,,,,,listed
-co-ploc-001139,co-p-001139,co-loc-001387,home_base,,,,,listed
-co-ploc-001140,co-p-001140,co-loc-001388,home_base,,,,,listed
-co-ploc-001141,co-p-001141,co-loc-001389,home_base,,,,,listed
-co-ploc-001142,co-p-001142,co-loc-001390,home_base,,,,,listed
-co-ploc-001143,co-p-001143,co-loc-001391,home_base,,,,,listed
-co-ploc-001144,co-p-001144,co-loc-001392,home_base,,,,,listed
-co-ploc-001145,co-p-001145,co-loc-001393,home_base,,,,,listed
-co-ploc-001146,co-p-001146,co-loc-001394,home_base,,,,,listed
-co-ploc-001147,co-p-001147,co-loc-001396,home_base,,,,,listed
-co-ploc-001148,co-p-001148,co-loc-001397,home_base,,,,,listed
-co-ploc-001149,co-p-001149,co-loc-001398,home_base,,,,,listed
-co-ploc-001150,co-p-001150,co-loc-001399,home_base,,,,,listed
-co-ploc-001151,co-p-001151,co-loc-001400,home_base,,,,,listed
-co-ploc-001152,co-p-001152,co-loc-001402,home_base,,,,,listed
-co-ploc-001153,co-p-001153,co-loc-001403,home_base,,,,,listed
-co-ploc-001154,co-p-001154,co-loc-001404,home_base,,,,,listed
-co-ploc-000028,co-p-000028,co-loc-000034,home_base,,,,,listed
-co-ploc-001155,co-p-001155,co-loc-001405,home_base,,,,,listed
-co-ploc-001156,co-p-001156,co-loc-001406,home_base,,,,,listed
-co-ploc-001157,co-p-001157,co-loc-001407,home_base,,,,,listed
-co-ploc-001158,co-p-001158,co-loc-001408,home_base,,,,,listed
-co-ploc-001159,co-p-001159,co-loc-001409,home_base,,,,,listed
-co-ploc-001160,co-p-001160,co-loc-001410,home_base,,,,,listed
-co-ploc-001161,co-p-001161,co-loc-001412,home_base,,,,,listed
-co-ploc-001162,co-p-001162,co-loc-001413,home_base,,,,,listed
-co-ploc-001163,co-p-001163,co-loc-001414,home_base,,,,,listed
-co-ploc-001164,co-p-001164,co-loc-001415,home_base,,,,,listed
-co-ploc-001165,co-p-001165,co-loc-001416,home_base,,,,,listed
-co-ploc-001166,co-p-001166,co-loc-001417,home_base,,,,,listed
-co-ploc-001167,co-p-001167,co-loc-001418,home_base,,,,,listed
-co-ploc-001168,co-p-001168,co-loc-001419,home_base,,,,,listed
-co-ploc-001169,co-p-001169,co-loc-001420,home_base,,,,,listed
-co-ploc-001170,co-p-001170,co-loc-001421,home_base,,,,,listed
-co-ploc-001171,co-p-001171,co-loc-001422,home_base,,,,,listed
-co-ploc-001172,co-p-001172,co-loc-001424,home_base,,,,,listed
-co-ploc-001173,co-p-001173,co-loc-001426,home_base,,,,,listed
-co-ploc-001174,co-p-001174,co-loc-001427,home_base,,,,,listed
-co-ploc-001175,co-p-001175,co-loc-001428,home_base,,,,,listed
-co-ploc-001176,co-p-001176,co-loc-001431,home_base,,,,,listed
-co-ploc-001177,co-p-001177,co-loc-001432,home_base,,,,,listed
-co-ploc-001178,co-p-001178,co-loc-001434,home_base,,"Site shows 9am-5pm, open for the season; tours typically Tue/Wed when closed to public; confirm",,,listed
-co-ploc-001179,co-p-001179,co-loc-001435,home_base,,,,,listed
-co-ploc-001180,co-p-001180,co-loc-001436,home_base,,,,,listed
-co-ploc-001181,co-p-001181,co-loc-001437,home_base,,,,,listed
-co-ploc-001182,co-p-001182,co-loc-001438,home_base,,,,,listed
-co-ploc-001183,co-p-001183,co-loc-001439,home_base,,,,,listed
-co-ploc-001184,co-p-001184,co-loc-001440,home_base,,,,,listed
-co-ploc-001185,co-p-001185,co-loc-001441,home_base,,,,,listed
-co-ploc-001186,co-p-001186,co-loc-001442,home_base,,,,,listed
-co-ploc-001187,co-p-001187,co-loc-001443,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10 a.m. - 5:45 p.m.; Tue: 10 a.m. - 5:45 p.m.; Wed: 10 a.m. - 5:45 p.m.; Thu: 10 a.m. - 5:45 p.m.; Fri: 10 a.m. - 5:45 p.m.; Sat: 10 a.m. - 5:45 p.m.; Sun: 10 a.m. - 5:45 p.m.,,,listed
-co-ploc-001234,co-p-001231,co-loc-001497,home_base,tue;wed;thu;fri;sat;sun,Tue-Sun: 8:00am - 6:00pm,,,listed
-co-ploc-001188,co-p-001188,co-loc-001444,home_base,,,,,listed
-co-ploc-001189,co-p-001189,co-loc-001445,home_base,fri;sat;sun,Fri: 4pm - 9pm; Sat: 12pm - 9pm; Sun: 12pm - 7pm,,,listed
-co-ploc-001190,co-p-001190,co-loc-001446,home_base,,,,,listed
-co-ploc-001191,co-p-001191,co-loc-001447,home_base,,,,,listed
-co-ploc-001192,co-p-001192,co-loc-001448,home_base,,,,,listed
-co-ploc-001193,co-p-001193,co-loc-001449,home_base,,,,,listed
-co-ploc-001194,co-p-001194,co-loc-001450,home_base,,,,,listed
-co-ploc-001195,co-p-001195,co-loc-001451,home_base,,,,,listed
-co-ploc-001196,co-p-001196,co-loc-001452,home_base,,,,,listed
-co-ploc-001197,co-p-001197,co-loc-001453,home_base,,,,,listed
-co-ploc-001198,co-p-001198,co-loc-001454,home_base,,,,,listed
-co-ploc-001199,co-p-001199,co-loc-001455,home_base,,,,,listed
-co-ploc-001200,co-p-001200,co-loc-001456,home_base,,,,,listed
-co-ploc-001201,co-p-001201,co-loc-001457,home_base,,,,,listed
-co-ploc-001202,co-p-001202,co-loc-001458,home_base,,By appointment,,,listed
-co-ploc-001203,co-p-001203,co-loc-001459,home_base,,,,,listed
-co-ploc-001204,co-p-001204,co-loc-001460,home_base,,,,,listed
-co-ploc-001205,co-p-001205,co-loc-001462,home_base,,,,,listed
-co-ploc-001206,co-p-001206,co-loc-001464,home_base,,,,,listed
-co-ploc-001207,co-p-001207,co-loc-001465,home_base,,,,,listed
-co-ploc-001208,co-p-001208,co-loc-001466,home_base,,,,,listed
-co-ploc-001209,co-p-001209,co-loc-001467,home_base,,,,,listed
-co-ploc-001210,co-p-001210,co-loc-001468,home_base,,Mon: By appointment; Sat: By appointment,,,listed
-co-ploc-001211,co-p-001211,co-loc-001469,home_base,,,,,listed
-co-ploc-001213,co-p-001213,co-loc-001473,home_base,,,,,listed
-co-ploc-001214,co-p-001214,co-loc-001474,home_base,,,,,listed
-co-ploc-001215,co-p-001215,co-loc-001475,home_base,,,,,listed
-co-ploc-001216,co-p-001216,co-loc-001477,home_base,,,,,listed
-co-ploc-001217,co-p-001217,co-loc-001478,home_base,,,,,listed
-co-ploc-001218,co-p-001218,co-loc-001480,home_base,,,,,listed
-co-ploc-001219,co-p-001219,co-loc-001482,home_base,,,,,listed
-co-ploc-001220,co-p-001220,co-loc-001483,home_base,,,,,listed
-co-ploc-001221,co-p-001221,co-loc-001484,home_base,,,,,listed
-co-ploc-001222,co-p-001222,co-loc-001485,home_base,,,,,listed
-co-ploc-001223,co-p-001223,co-loc-001486,home_base,,,,,listed
-co-ploc-001224,co-p-001224,co-loc-001487,home_base,,,,,listed
-co-ploc-001225,co-p-001225,co-loc-001488,home_base,,,,,listed
-co-ploc-001226,co-p-001226,co-loc-001489,home_base,,,,,listed
-co-ploc-001227,co-p-001227,co-loc-001490,home_base,,,,,listed
-co-ploc-001228,co-p-001228,co-loc-001491,home_base,,,,,listed
-co-ploc-001229,co-p-001229,co-loc-001492,home_base,,,,,listed
-co-ploc-001235,co-p-000002,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19,,,listed
-co-ploc-001236,co-p-000021,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19,,,listed
+producer_location_id,producer_id,location_id,role,days,hours_text,season_start,season_end,status,confirm_url
+co-ploc-000030,co-p-000030,co-loc-000038,home_base,,,,,listed,
+co-ploc-000031,co-p-000031,co-loc-000039,home_base,,,,,listed,
+co-ploc-000032,co-p-000032,co-loc-000040,home_base,,,,,listed,
+co-ploc-000033,co-p-000033,co-loc-000041,home_base,mon;tue;wed;thu;fri;sat,Mon: 10am to 5pm; Tue: 10am to 5pm; Wed: 10am to 5pm; Thu: 10am to 5pm; Fri: 10am to 5pm; Sat: 10am to 5pm,,,listed,
+co-ploc-000034,co-p-000034,co-loc-000042,home_base,,,,,listed,
+co-ploc-000035,co-p-000035,co-loc-000043,home_base,,,,,listed,
+co-ploc-000036,co-p-000036,co-loc-000044,home_base,,,,,listed,
+co-ploc-000037,co-p-000037,co-loc-000046,home_base,,,,,listed,
+co-ploc-000038,co-p-000038,co-loc-000047,home_base,,,,,listed,
+co-ploc-000039,co-p-000039,co-loc-000048,home_base,,,,,listed,
+co-ploc-000040,co-p-000040,co-loc-000049,home_base,mon;tue;wed;thu;fri;sat,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 9am - 12pm,,,listed,
+co-ploc-000041,co-p-000041,co-loc-000052,home_base,,,,,listed,
+co-ploc-000042,co-p-000042,co-loc-000053,home_base,,,,,listed,
+co-ploc-000043,co-p-000043,co-loc-000054,home_base,,,,,listed,
+co-ploc-000044,co-p-000044,co-loc-000055,home_base,,,,,listed,
+co-ploc-000045,co-p-000045,co-loc-000056,home_base,,,,,listed,
+co-ploc-000046,co-p-000046,co-loc-000057,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 8am - 5pm; Sun: 8am - 5pm,,,listed,
+co-ploc-000047,co-p-000047,co-loc-000058,home_base,,,,,listed,
+co-ploc-000048,co-p-000048,co-loc-000059,home_base,,,,,listed,
+co-ploc-000049,co-p-000049,co-loc-000060,home_base,wed;thu;fri;sat;sun,Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,,,listed,
+co-ploc-000050,co-p-000050,co-loc-000061,home_base,,,,,listed,
+co-ploc-000051,co-p-000051,co-loc-000062,home_base,sat,Sat: 8am - 12pm,,,listed,
+co-ploc-000052,co-p-000052,co-loc-000064,home_base,,,,,listed,
+co-ploc-000053,co-p-000053,co-loc-000067,home_base,mon;tue;wed;thu;fri,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 2:30pm,,,listed,
+co-ploc-000054,co-p-000054,co-loc-000068,home_base,,Winter CSA,,,listed,
+co-ploc-000055,co-p-000055,co-loc-000069,home_base,,,,,listed,
+co-ploc-000056,co-p-000056,co-loc-000070,home_base,,,,,listed,
+co-ploc-000057,co-p-000057,co-loc-000071,home_base,,,,,listed,
+co-ploc-000058,co-p-000058,co-loc-000072,home_base,,,,,listed,
+co-ploc-000059,co-p-000059,co-loc-000073,home_base,,,,,listed,
+co-ploc-000060,co-p-000060,co-loc-000074,home_base,,,,,listed,
+co-ploc-000061,co-p-000061,co-loc-000075,home_base,,Mon: Varies; Wed: Varies; Thu: Varies; Fri: Varies; Sat: Varies; Sun: Varies,,,listed,
+co-ploc-000062,co-p-000062,co-loc-000076,home_base,,,,,listed,
+co-ploc-000063,co-p-000063,co-loc-000077,home_base,,,,,listed,
+co-ploc-000064,co-p-000064,co-loc-000078,home_base,,,,,listed,
+co-ploc-000065,co-p-000065,co-loc-000079,home_base,,,,,listed,
+co-ploc-000066,co-p-000066,co-loc-000081,home_base,,,,,listed,
+co-ploc-000067,co-p-000067,co-loc-000083,home_base,sat,Sat: 10am - 4pm,,,listed,
+co-ploc-000068,co-p-000068,co-loc-000084,home_base,,,,,listed,
+co-ploc-000069,co-p-000069,co-loc-000085,home_base,sat,Sat: 9AM-4PM,,,listed,
+co-ploc-000001,co-p-000001,co-loc-000001,home_base,,,,,listed,
+co-ploc-000070,co-p-000070,co-loc-000086,home_base,,,,,listed,
+co-ploc-000071,co-p-000071,co-loc-000089,home_base,,,,,listed,
+co-ploc-000072,co-p-000072,co-loc-000091,home_base,,,,,listed,
+co-ploc-000073,co-p-000073,co-loc-000092,home_base,tue;wed;thu;fri,Tue: 10 am - 6 pm (check website spring/fall); Wed: 10 am - 6 pm (check website spring/fall); Thu: 10 am - 6 pm (check website spring/fall); Fri: 10 am - 5 pm (check website spring/fall),,,listed,
+co-ploc-000074,co-p-000074,co-loc-000095,home_base,,,,,listed,
+co-ploc-000075,co-p-000075,co-loc-000097,home_base,,,,,listed,
+co-ploc-000076,co-p-000076,co-loc-000098,home_base,,,,,listed,
+co-ploc-000077,co-p-000077,co-loc-000100,home_base,,,,,listed,
+co-ploc-000078,co-p-000078,co-loc-000101,home_base,,,,,listed,
+co-ploc-000079,co-p-000079,co-loc-000102,home_base,thu,Thu: 4pm-6pm,,,listed,
+co-ploc-000080,co-p-000080,co-loc-000103,home_base,,,,,listed,
+co-ploc-000081,co-p-000081,co-loc-000104,home_base,,,,,listed,
+co-ploc-000082,co-p-000082,co-loc-000105,home_base,,,,,listed,
+co-ploc-000002,co-p-000002,co-loc-000002,home_base,,,,,listed,
+co-ploc-001230,co-p-000002,co-loc-001493,pickup,Tue,Tue: 4:45pm - 5:00pm,,,listed,https://store.badgercreekranch.com/delivery_location/salida-safeway-parking-lot
+co-ploc-001231,co-p-000002,co-loc-001494,pickup,Tue,Tue: 6:00pm - 6:15pm,,,listed,https://store.badgercreekranch.com/delivery_location/valley-fellowship-church
+co-ploc-001232,co-p-000002,co-loc-001495,pickup,,Pickup by arrangement,,,listed,
+co-ploc-000083,co-p-000083,co-loc-000108,home_base,,,,,listed,
+co-ploc-000084,co-p-000084,co-loc-000109,home_base,,,,,listed,
+co-ploc-000085,co-p-000085,co-loc-000110,home_base,,,,,listed,
+co-ploc-000086,co-p-000086,co-loc-000111,home_base,,,,,listed,
+co-ploc-000087,co-p-000087,co-loc-000112,home_base,,,,,listed,
+co-ploc-000088,co-p-000088,co-loc-000113,home_base,,,,,listed,
+co-ploc-000089,co-p-000089,co-loc-000114,home_base,,,,,listed,
+co-ploc-000003,co-p-000003,co-loc-000003,home_base,,"Shop open mornings; preorder pickup Thu, Fri, Sun",,,listed,
+co-ploc-000090,co-p-000090,co-loc-000116,home_base,,,,,listed,
+co-ploc-000091,co-p-000091,co-loc-000117,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10am - 6pm; Tue: 10am - 6pm; Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,,,listed,
+co-ploc-000092,co-p-000092,co-loc-000118,home_base,,,,,listed,
+co-ploc-000093,co-p-000093,co-loc-000120,home_base,,,,,listed,
+co-ploc-000094,co-p-000094,co-loc-000121,home_base,,,,,listed,
+co-ploc-000095,co-p-000095,co-loc-000122,home_base,,,,,listed,
+co-ploc-000096,co-p-000096,co-loc-000123,home_base,,,,,listed,
+co-ploc-000097,co-p-000097,co-loc-000124,home_base,,,,,listed,
+co-ploc-000098,co-p-000098,co-loc-000125,home_base,,,,,listed,
+co-ploc-000099,co-p-000099,co-loc-000126,home_base,,,,,listed,
+co-ploc-000100,co-p-000100,co-loc-000127,home_base,,,,,listed,
+co-ploc-000101,co-p-000101,co-loc-000128,home_base,mon;tue;wed;thu;fri,Mon: 9 a.m. - 4 p.m.; Tue: 9 a.m. - 4 p.m; Wed: 9 a.m. - 4 p.m; Thu: 9 a.m. - 4 p.m; Fri: 9 a.m. - 4 p.m,,,listed,
+co-ploc-000102,co-p-000102,co-loc-000130,home_base,,,,,listed,
+co-ploc-000103,co-p-000103,co-loc-000131,home_base,,,,,listed,
+co-ploc-000104,co-p-000104,co-loc-000132,home_base,,,,,listed,
+co-ploc-000105,co-p-000105,co-loc-000133,home_base,,,,,listed,
+co-ploc-000106,co-p-000106,co-loc-000134,home_base,wed;sat;sun,Wed: 3:30pm - 7:30pm; Sat: 9am - 1pm; Sun: 9am - 1pm,,,listed,
+co-ploc-000107,co-p-000107,co-loc-000135,home_base,,,,,listed,
+co-ploc-000108,co-p-000108,co-loc-000136,home_base,,,,,listed,
+co-ploc-000109,co-p-000109,co-loc-000137,home_base,,,,,listed,
+co-ploc-000110,co-p-000110,co-loc-000138,home_base,,,,,listed,
+co-ploc-000111,co-p-000111,co-loc-000139,home_base,,,,,listed,
+co-ploc-000112,co-p-000112,co-loc-000141,home_base,,,,,listed,
+co-ploc-000113,co-p-000113,co-loc-000143,home_base,tue;wed;thu;fri;sat,Tue: 11:00am - 7:00pm; Wed: 11:00am - 7:00pm; Thu: 11:00am - 7:00pm; Fri: 11:00am - 8:00pm; Sat: 11:00am - 8:00pm,,,listed,
+co-ploc-000114,co-p-000114,co-loc-000144,home_base,mon;tue;wed;thu;fri;sat,11am-3am MST Mon-Sat (as stated),,,listed,
+co-ploc-000115,co-p-000115,co-loc-000145,home_base,tue;thu;sat,Tue: 8am-1pm;  4-7pm  ( check website for seasonal updates or call 303-659-5050); Thu: 8am-1pm (check website for seasonal updates or call  303-659-5050); Sat: 8am-4pm (check website for seasonal updates or call 303-659-5050),,,listed,
+co-ploc-000116,co-p-000116,co-loc-000146,home_base,,,,,listed,
+co-ploc-000117,co-p-000117,co-loc-000148,home_base,,,,,listed,
+co-ploc-000118,co-p-000118,co-loc-000150,home_base,,,,,listed,
+co-ploc-000119,co-p-000119,co-loc-000151,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10am - 8pm; Tue: 10am - 8pm; Wed: 10am - 8pm; Thu: 10am - 8pm; Fri: 10am - 8pm; Sat: 10am - 8pm; Sun: 10am - 8pm,,,listed,
+co-ploc-000120,co-p-000120,co-loc-000152,home_base,,,,,listed,
+co-ploc-000121,co-p-000121,co-loc-000153,home_base,,,,,listed,
+co-ploc-000122,co-p-000122,co-loc-000154,home_base,,,,,listed,
+co-ploc-000123,co-p-000123,co-loc-000155,home_base,,,,,listed,
+co-ploc-000124,co-p-000124,co-loc-000156,home_base,,Mon: By appointment for tours / Campground 24 hrs; Tue: By appointment for tours / Campground 24 hrs; Wed: By appointment for tours / Campground 24 hrs; Thu: By appointment for tours / Campground 24 hrs; Fri: Fridays on the Farm 4pm - 9pm / By appointment for tours / Campground 24 hrs; Sat: By appointment for tours / Campground 24 hrs; Sun: By appointment for tours / Campground 24 hrs,,,listed,
+co-ploc-000125,co-p-000125,co-loc-000158,home_base,sat;sun,Sat-Sun 10am-2pm or by appointment (banner: through Oct 11; year not stated). Otherwise by appointment,,,listed,
+co-ploc-000126,co-p-000126,co-loc-000159,home_base,,,,,listed,
+co-ploc-000127,co-p-000127,co-loc-000160,home_base,,,,,listed,
+co-ploc-000128,co-p-000128,co-loc-000161,home_base,,,,,listed,
+co-ploc-000129,co-p-000129,co-loc-000162,home_base,,,,,listed,
+co-ploc-000130,co-p-000130,co-loc-000163,home_base,,,,,listed,
+co-ploc-000131,co-p-000131,co-loc-000164,home_base,,,,,listed,
+co-ploc-000132,co-p-000132,co-loc-000165,home_base,,,,,listed,
+co-ploc-000133,co-p-000133,co-loc-000168,home_base,mon;tue;wed;thu;fri;sat;sun,"Monday-Sunday, 8 a.m.-8 p.m.",,,listed,
+co-ploc-000134,co-p-000134,co-loc-000169,home_base,,,,,listed,
+co-ploc-000135,co-p-000135,co-loc-000170,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 am - 6 pm; Tue: 9 am - 6 pm; Wed: 9 am - 6 pm; Thu: 9 am - 6 pm; Fri: 9 am - 6 pm; Sat: 9 am - 6 pm; Sun: 9 am - 6 pm,,,listed,
+co-ploc-000136,co-p-000136,co-loc-000171,home_base,,,,,listed,
+co-ploc-000137,co-p-000137,co-loc-000172,home_base,,,,,listed,
+co-ploc-000138,co-p-000138,co-loc-000174,home_base,,,,,listed,
+co-ploc-000139,co-p-000139,co-loc-000175,home_base,,,,,listed,
+co-ploc-000140,co-p-000140,co-loc-000176,home_base,,,,,listed,
+co-ploc-000141,co-p-000141,co-loc-000177,home_base,,,,,listed,
+co-ploc-000142,co-p-000142,co-loc-000178,home_base,,,,,listed,
+co-ploc-000143,co-p-000143,co-loc-000179,home_base,,,,,listed,
+co-ploc-000144,co-p-000144,co-loc-000180,home_base,mon;tue;wed;thu;fri;sat,"Mon: 7:30am - 12pm, 1pm - 4:30pm; Tue: 7:30am - 12pm, 1pm - 4:30pm; Wed: 7:30am - 12pm, 1pm - 4:30pm; Thu: 7:30am - 12pm, 1pm - 4:30pm; Fri: 7:30am - 12pm, 1pm - 4:30pm; Sat: 8am - 12pm",,,listed,
+co-ploc-000145,co-p-000145,co-loc-000181,home_base,,,,,listed,
+co-ploc-000146,co-p-000146,co-loc-000182,home_base,,,,,listed,
+co-ploc-000147,co-p-000147,co-loc-000183,home_base,,,,,listed,
+co-ploc-000148,co-p-000148,co-loc-000184,home_base,,,,,listed,
+co-ploc-000149,co-p-000149,co-loc-000185,home_base,,,,,listed,
+co-ploc-000150,co-p-000150,co-loc-000186,home_base,,,,,listed,
+co-ploc-000151,co-p-000151,co-loc-000187,home_base,,,,,listed,
+co-ploc-000152,co-p-000152,co-loc-000188,home_base,,,,,listed,
+co-ploc-000153,co-p-000153,co-loc-000189,home_base,thu;fri;sat,Thu: 12pm - 5pm; Fri: 12pm - 5pm; Sat: 12pm - 5pm,,,listed,
+co-ploc-000154,co-p-000154,co-loc-000190,home_base,,,,,listed,
+co-ploc-000155,co-p-000155,co-loc-000191,home_base,,,,,listed,
+co-ploc-000156,co-p-000156,co-loc-000192,home_base,thu;fri;sat;sun,Thu: 1pm - 7pm; Fri: 1pm - 7pm; Sat: 1pm - 7pm; Sun: 1pm - 7pm,,,listed,
+co-ploc-000157,co-p-000157,co-loc-000193,home_base,,,,,listed,
+co-ploc-000158,co-p-000158,co-loc-000194,home_base,,,,,listed,
+co-ploc-000159,co-p-000159,co-loc-000195,home_base,,,,,listed,
+co-ploc-000160,co-p-000160,co-loc-000196,home_base,,,,,listed,
+co-ploc-000161,co-p-000161,co-loc-000197,home_base,,,,,listed,
+co-ploc-000162,co-p-000162,co-loc-000198,home_base,,,,,listed,
+co-ploc-000163,co-p-000163,co-loc-000199,home_base,,,,,listed,
+co-ploc-000164,co-p-000164,co-loc-000200,home_base,,,,,listed,
+co-ploc-000165,co-p-000165,co-loc-000202,home_base,,,,,listed,
+co-ploc-000166,co-p-000166,co-loc-000203,home_base,,,,,listed,
+co-ploc-000167,co-p-000167,co-loc-000205,home_base,,,,,listed,
+co-ploc-000168,co-p-000168,co-loc-000206,home_base,,,,,listed,
+co-ploc-000169,co-p-000169,co-loc-000207,home_base,,,,,listed,
+co-ploc-000170,co-p-000170,co-loc-000208,home_base,,,,,listed,
+co-ploc-000171,co-p-000171,co-loc-000211,home_base,,,,,listed,
+co-ploc-000172,co-p-000172,co-loc-000213,home_base,wed;thu;fri;sat;sun,Wed–Sat 7am–2pm; Sun 7am–12pm,,,listed,
+co-ploc-000173,co-p-000173,co-loc-000215,home_base,,,,,listed,
+co-ploc-000174,co-p-000174,co-loc-000216,home_base,,,,,listed,
+co-ploc-000175,co-p-000175,co-loc-000218,home_base,,,,,listed,
+co-ploc-000176,co-p-000176,co-loc-000219,home_base,,,,,listed,
+co-ploc-000177,co-p-000177,co-loc-000220,home_base,,,,,listed,
+co-ploc-000004,co-p-000004,co-loc-000004,home_base,,,,,listed,
+co-ploc-000178,co-p-000178,co-loc-000221,home_base,,,,,listed,
+co-ploc-000179,co-p-000179,co-loc-000222,home_base,mon;tue;wed;thu;fri;sat,Mon: 12pm - 5:30pm; Tue: 12pm - 5:30pm; Wed: 12pm - 5:30pm; Thu: 12pm - 5:30pm; Fri: 2pm - 7pm; Sat: 2pm - 7pm,,,listed,
+co-ploc-000180,co-p-000180,co-loc-000223,home_base,,,,,listed,
+co-ploc-000181,co-p-000181,co-loc-000224,home_base,,,,,listed,
+co-ploc-000182,co-p-000182,co-loc-000225,home_base,,,,,listed,
+co-ploc-000183,co-p-000183,co-loc-000226,home_base,,,,,listed,
+co-ploc-000184,co-p-000184,co-loc-000227,home_base,,,,,listed,
+co-ploc-000185,co-p-000185,co-loc-000228,home_base,,,,,listed,
+co-ploc-000186,co-p-000186,co-loc-000229,home_base,,,,,listed,
+co-ploc-000187,co-p-000187,co-loc-000230,home_base,,By appointment,,,listed,
+co-ploc-000188,co-p-000188,co-loc-000231,home_base,,,,,listed,
+co-ploc-000189,co-p-000189,co-loc-000232,home_base,,,,,listed,
+co-ploc-000190,co-p-000190,co-loc-000233,home_base,,,,,listed,
+co-ploc-000191,co-p-000191,co-loc-000234,home_base,,,,,listed,
+co-ploc-000192,co-p-000192,co-loc-000235,home_base,,,,,listed,
+co-ploc-000193,co-p-000193,co-loc-000236,home_base,,,,,listed,
+co-ploc-000194,co-p-000194,co-loc-000237,home_base,,,,,listed,
+co-ploc-000195,co-p-000195,co-loc-000238,home_base,,,,,listed,
+co-ploc-000196,co-p-000196,co-loc-000239,home_base,,,,,listed,
+co-ploc-000197,co-p-000197,co-loc-000240,home_base,,,,,listed,
+co-ploc-000198,co-p-000198,co-loc-000242,home_base,,,,,listed,
+co-ploc-000199,co-p-000199,co-loc-000243,home_base,,,,,listed,
+co-ploc-000200,co-p-000200,co-loc-000247,home_base,,,,,listed,
+co-ploc-000201,co-p-000201,co-loc-000248,home_base,,,,,listed,
+co-ploc-000202,co-p-000202,co-loc-000249,home_base,,,,,listed,
+co-ploc-000203,co-p-000203,co-loc-000251,home_base,,,,,listed,
+co-ploc-000204,co-p-000204,co-loc-000252,home_base,,,,,listed,
+co-ploc-000205,co-p-000205,co-loc-000253,home_base,,,,,listed,
+co-ploc-000206,co-p-000206,co-loc-000254,home_base,,,,,listed,
+co-ploc-000207,co-p-000207,co-loc-000255,home_base,,"Sells at Montrose Farmers Market (Saturdays; market is year-round, Centennial Plaza, S Uncompahgre Ave)",,,listed,
+co-ploc-000208,co-p-000208,co-loc-000256,home_base,,,,,listed,
+co-ploc-000209,co-p-000209,co-loc-000257,home_base,,,,,listed,
+co-ploc-000210,co-p-000210,co-loc-000259,home_base,,,,,listed,
+co-ploc-000211,co-p-000211,co-loc-000261,home_base,,,,,listed,
+co-ploc-000212,co-p-000212,co-loc-000262,home_base,mon;tue;wed;thu;fri,Mon: 8 am - 4 pm; Tue: 8 am - 4 pm; Wed: 8 am - 4 pm; Thu: 8 am - 4 pm; Fri: 8 am - 4 pm,,,listed,
+co-ploc-000213,co-p-000213,co-loc-000263,home_base,,,,,listed,
+co-ploc-000214,co-p-000214,co-loc-000264,home_base,,,,,listed,
+co-ploc-000215,co-p-000215,co-loc-000265,home_base,,,,,listed,
+co-ploc-000216,co-p-000216,co-loc-000268,home_base,,,,,listed,
+co-ploc-000217,co-p-000217,co-loc-000269,home_base,,,,,listed,
+co-ploc-000218,co-p-000218,co-loc-000270,home_base,,,,,listed,
+co-ploc-000219,co-p-000219,co-loc-000272,home_base,,,,,listed,
+co-ploc-000220,co-p-000220,co-loc-000273,home_base,,,,,listed,
+co-ploc-000221,co-p-000221,co-loc-000274,home_base,,,,,listed,
+co-ploc-000222,co-p-000222,co-loc-000275,home_base,mon;tue;wed;thu;fri;sat,Mon: 6 am - 3 pm; Tue: 6 am - 3 pm; Wed: 6 am - 3 pm; Thu: 6 am - 3 pm; Fri: 6 am - 3 pm; Sat: 6 am - 10 am,,,listed,
+co-ploc-000223,co-p-000223,co-loc-000276,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 6pm; Sun: 9am - 6pm,,,listed,
+co-ploc-000224,co-p-000224,co-loc-000277,home_base,,,,,listed,
+co-ploc-000225,co-p-000225,co-loc-000278,home_base,,,,,listed,
+co-ploc-000226,co-p-000226,co-loc-000279,home_base,,,,,listed,
+co-ploc-000227,co-p-000227,co-loc-000280,home_base,,,,,listed,
+co-ploc-000228,co-p-000228,co-loc-000281,home_base,,,,,listed,
+co-ploc-000229,co-p-000229,co-loc-000282,home_base,,,,,listed,
+co-ploc-000230,co-p-000230,co-loc-000283,home_base,mon;tue;wed;thu;fri;sat,Mon: 8am - 4:30pm; Tue: 8am - 4:30pm; Wed: 8am - 4:30pm; Thu: 8am - 4:30pm; Fri: 8am - 4:30pm; Sat: 9am - 12pm,,,listed,
+co-ploc-000231,co-p-000231,co-loc-000284,home_base,,,,,listed,
+co-ploc-000005,co-p-000005,co-loc-000006,home_base,,,,,listed,
+co-ploc-000232,co-p-000232,co-loc-000286,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 5pm; Tue: 9am - 5pm; Wed: 9am - 5pm; Thu: 9am - 5pm; Fri: 9am - 5pm; Sat: 9am - 5pm; Sun: 9am - 5pm,,,listed,
+co-ploc-000233,co-p-000233,co-loc-000287,home_base,,,,,listed,
+co-ploc-000234,co-p-000234,co-loc-000288,home_base,wed;thu;fri;sat;sun,Wed: 9am - 5pm; Thu: 9am - 5pm; Fri: 9am - 5pm; Sat: 9am - 5pm; Sun: 9am - 5pm,,,listed,
+co-ploc-000235,co-p-000235,co-loc-000289,home_base,,,,,listed,
+co-ploc-000006,co-p-000006,co-loc-000007,home_base,,Not open to the public. Order online.,,,listed,
+co-ploc-000236,co-p-000236,co-loc-000290,home_base,,,,,listed,
+co-ploc-000237,co-p-000237,co-loc-000291,home_base,,,,,listed,
+co-ploc-000238,co-p-000238,co-loc-000293,home_base,,,,,listed,
+co-ploc-000239,co-p-000239,co-loc-000295,home_base,,,,,listed,
+co-ploc-000240,co-p-000240,co-loc-000296,home_base,,,,,listed,
+co-ploc-000241,co-p-000241,co-loc-000297,home_base,,,,,listed,
+co-ploc-000242,co-p-000242,co-loc-000299,home_base,,,,,listed,
+co-ploc-000243,co-p-000243,co-loc-000300,home_base,,,,,listed,
+co-ploc-000244,co-p-000244,co-loc-000302,home_base,,,,,listed,
+co-ploc-000245,co-p-000245,co-loc-000303,home_base,mon;tue;wed;thu;fri;sat,"At farm: Mid June-October Mon-Fri 9am-6pm; winter Mon-Fri 1-5pm, Sat call first. Gunnison Farmers Market Sat 9:30-1 mid Jun-mid Oct",,,listed,
+co-ploc-000246,co-p-000246,co-loc-000304,home_base,,,,,listed,
+co-ploc-000247,co-p-000247,co-loc-000305,home_base,mon;tue;wed;thu;fri;sat,Mon: 7am - 5:30pm; Tue: 7am - 5:30pm; Wed: 7am - 5:30pm; Thu: 7am - 5:30pm; Fri: 7am - 5:30pm; Sat: 7am - 12pm,,,listed,
+co-ploc-000248,co-p-000248,co-loc-000307,home_base,,,,,listed,
+co-ploc-000249,co-p-000249,co-loc-000308,home_base,,,,,listed,
+co-ploc-000250,co-p-000250,co-loc-000309,home_base,,,,,listed,
+co-ploc-000007,co-p-000007,co-loc-000008,home_base,,,,,listed,
+co-ploc-000251,co-p-000251,co-loc-000310,home_base,,,,,listed,
+co-ploc-000252,co-p-000252,co-loc-000312,home_base,,,,,listed,
+co-ploc-000253,co-p-000253,co-loc-000314,home_base,,,,,listed,
+co-ploc-000254,co-p-000254,co-loc-000315,home_base,,,,,listed,
+co-ploc-000255,co-p-000255,co-loc-000316,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10am - 6pm; Tue: 10am - 6pm; Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,,,listed,
+co-ploc-000008,co-p-000008,co-loc-000009,home_base,,By appointment,,,listed,
+co-ploc-000256,co-p-000256,co-loc-000317,home_base,fri;sat,Fri: 4:00 p.m. - 8:00 p.m.; Sat: 1:00 p.m. - 8:00 p.m.,,,listed,
+co-ploc-000257,co-p-000257,co-loc-000318,home_base,,,,,listed,
+co-ploc-000258,co-p-000258,co-loc-000319,home_base,,,,,listed,
+co-ploc-000259,co-p-000259,co-loc-000320,home_base,,,,,listed,
+co-ploc-000260,co-p-000260,co-loc-000321,home_base,,,,,listed,
+co-ploc-000261,co-p-000261,co-loc-000322,home_base,,,,,listed,
+co-ploc-000262,co-p-000262,co-loc-000323,home_base,,,,,listed,
+co-ploc-000263,co-p-000263,co-loc-000324,home_base,,,,,listed,
+co-ploc-000264,co-p-000264,co-loc-000325,home_base,,,,,listed,
+co-ploc-000265,co-p-000265,co-loc-000326,home_base,,,,,listed,
+co-ploc-000266,co-p-000266,co-loc-000327,home_base,,,,,listed,
+co-ploc-000267,co-p-000267,co-loc-000328,home_base,,,,,listed,
+co-ploc-000268,co-p-000268,co-loc-000332,home_base,,By appointment,,,listed,
+co-ploc-000269,co-p-000269,co-loc-000336,home_base,,,,,listed,
+co-ploc-000270,co-p-000270,co-loc-000337,home_base,,,,,listed,
+co-ploc-000271,co-p-000271,co-loc-000338,home_base,,,,,listed,
+co-ploc-000272,co-p-000272,co-loc-000339,home_base,,,,,listed,
+co-ploc-000273,co-p-000273,co-loc-000340,home_base,,,,,listed,
+co-ploc-000274,co-p-000274,co-loc-000341,home_base,,,,,listed,
+co-ploc-000275,co-p-000275,co-loc-000342,home_base,,,,,listed,
+co-ploc-000276,co-p-000276,co-loc-000343,home_base,,,,,listed,
+co-ploc-000277,co-p-000277,co-loc-000344,home_base,,,,,listed,
+co-ploc-000278,co-p-000278,co-loc-000345,home_base,,,,,listed,
+co-ploc-000279,co-p-000279,co-loc-000347,home_base,,,,,listed,
+co-ploc-000280,co-p-000280,co-loc-000348,home_base,,,,,listed,
+co-ploc-000281,co-p-000281,co-loc-000349,home_base,,,,,listed,
+co-ploc-000282,co-p-000282,co-loc-000350,home_base,,,,,listed,
+co-ploc-000283,co-p-000283,co-loc-000351,home_base,,,,,listed,
+co-ploc-000284,co-p-000284,co-loc-000352,home_base,,,,,listed,
+co-ploc-000285,co-p-000285,co-loc-000353,home_base,,,,,listed,
+co-ploc-000286,co-p-000286,co-loc-000354,home_base,,,,,listed,
+co-ploc-000287,co-p-000287,co-loc-000355,home_base,,,,,listed,
+co-ploc-000288,co-p-000288,co-loc-000356,home_base,mon;tue;wed;thu;fri;sat,Mon: 10:00 AM - 5:00 PM; Tue: 10:00 AM - 5:00 PM; Wed: 10:00 AM - 5:00 PM; Thu: 10:00 AM - 5:00 PM; Fri: 10:00 AM - 5:00 PM; Sat: 10:00 AM - 5:00 PM,,,listed,
+co-ploc-000289,co-p-000289,co-loc-000357,home_base,,,,,listed,
+co-ploc-000290,co-p-000290,co-loc-000359,home_base,mon;tue;wed;thu;fri,Mon: 9am-3pm; Tue: 9am-3pm; Wed: 9am-3pm; Thu: 9am-3pm; Fri: 9am-3pm,,,listed,
+co-ploc-000291,co-p-000291,co-loc-000360,home_base,,,,,listed,
+co-ploc-000292,co-p-000292,co-loc-000361,home_base,,,,,listed,
+co-ploc-000293,co-p-000293,co-loc-000363,home_base,,,,,listed,
+co-ploc-000294,co-p-000294,co-loc-000364,home_base,,,,,listed,
+co-ploc-000295,co-p-000295,co-loc-000365,home_base,,,,,listed,
+co-ploc-000296,co-p-000296,co-loc-000366,home_base,,,,,listed,
+co-ploc-000297,co-p-000297,co-loc-000367,home_base,,,,,listed,
+co-ploc-000298,co-p-000298,co-loc-000368,home_base,,,,,listed,
+co-ploc-000299,co-p-000299,co-loc-000369,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 a.m. -5 p.m.; Tue: 9 a.m. - 5 p.m.; Wed: 9 a.m. - 5 p.m.; Thu: 9 a.m. - 5 p.m.; Fri: 9 a.m. - 5 p.m.; Sat: 9 a.m. - 5 p.m.; Sun: 9 a.m.- 5 p.m.,,,listed,
+co-ploc-000300,co-p-000300,co-loc-000370,home_base,,,,,listed,
+co-ploc-000301,co-p-000301,co-loc-000371,home_base,,,,,listed,
+co-ploc-000302,co-p-000302,co-loc-000372,home_base,,,,,listed,
+co-ploc-000303,co-p-000303,co-loc-000373,home_base,,,,,listed,
+co-ploc-000304,co-p-000304,co-loc-000376,home_base,,,,,listed,
+co-ploc-000305,co-p-000305,co-loc-000377,home_base,,,,,listed,
+co-ploc-000306,co-p-000306,co-loc-000380,home_base,,,,,listed,
+co-ploc-000307,co-p-000307,co-loc-000381,home_base,,,,,listed,
+co-ploc-000308,co-p-000308,co-loc-000382,home_base,,,,,listed,
+co-ploc-000309,co-p-000309,co-loc-000383,home_base,,,,,listed,
+co-ploc-000310,co-p-000310,co-loc-000384,home_base,,,,,listed,
+co-ploc-000311,co-p-000311,co-loc-000385,home_base,,,,,listed,
+co-ploc-000312,co-p-000312,co-loc-000386,home_base,,,,,listed,
+co-ploc-000313,co-p-000313,co-loc-000387,home_base,,,,,listed,
+co-ploc-000314,co-p-000314,co-loc-000393,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 11am - 9pm; Tue: 11am - 9pm; Wed: 11am - 9pm; Thu: 11am - 9pm; Fri: 11am - 9pm; Sat: 11am - 9pm; Sun: 11am - 9pm,,,listed,
+co-ploc-000315,co-p-000315,co-loc-000394,home_base,,,,,listed,
+co-ploc-000316,co-p-000316,co-loc-000395,home_base,,,,,listed,
+co-ploc-000317,co-p-000317,co-loc-000397,home_base,mon;tue;wed;thu,No storefront; online support Mon-Thu 8-3 MT,,,listed,
+co-ploc-000318,co-p-000318,co-loc-000398,home_base,,,,,listed,
+co-ploc-000319,co-p-000319,co-loc-000399,home_base,,,,,listed,
+co-ploc-000320,co-p-000320,co-loc-000400,home_base,,,,,listed,
+co-ploc-000321,co-p-000321,co-loc-000402,home_base,,,,,listed,
+co-ploc-000322,co-p-000322,co-loc-000404,home_base,,,,,listed,
+co-ploc-000323,co-p-000323,co-loc-000405,home_base,mon;fri;sat;sun,"Fri, Sat, Sun, Mon: 11:00am - 5:00pm (winter 2026 hours; subject to change)",,,listed,
+co-ploc-000324,co-p-000324,co-loc-000406,home_base,,,,,listed,
+co-ploc-000325,co-p-000325,co-loc-000408,home_base,,,,,listed,
+co-ploc-000326,co-p-000326,co-loc-000409,home_base,tue;wed;thu;fri;sat,Tue: 9a.m.-7p.m.; Wed: 9a.m.-7p.m.; Thu: 9a.m.-7p.m.; Fri: 9a.m.-7p.m.; Sat: 9a.m.-7p.m.,,,listed,
+co-ploc-000327,co-p-000327,co-loc-000410,home_base,,,,,listed,
+co-ploc-000328,co-p-000328,co-loc-000411,home_base,,,,,listed,
+co-ploc-000329,co-p-000329,co-loc-000414,home_base,mon;tue;wed;thu,Mon: 9 a.m. - 4 p.m.; Tue: 9 a.m. - 4 p.m.; Wed: 9 a.m. - 4 p.m.; Thu: 9 a.m. - 4 p.m.,,,listed,
+co-ploc-000330,co-p-000330,co-loc-000416,home_base,,,,,listed,
+co-ploc-000331,co-p-000331,co-loc-000417,home_base,,,,,listed,
+co-ploc-000332,co-p-000332,co-loc-000418,home_base,,,,,listed,
+co-ploc-000333,co-p-000333,co-loc-000419,home_base,,,,,listed,
+co-ploc-000334,co-p-000334,co-loc-000420,home_base,mon;tue;wed;thu;fri;sat,Mon: 8:30-12:30; Tue: 8:30-12:30; Wed: 8:30-12:30; Thu: 8:30-12:30; Fri: 8:30-12:30; Sat: 8:30-12:30,,,listed,
+co-ploc-000335,co-p-000335,co-loc-000421,home_base,,Website: always open / local pickup by order; Aspen Saturday Market and Crested Butte Market end of May to early October,,,listed,
+co-ploc-000336,co-p-000336,co-loc-000422,home_base,,,,,listed,
+co-ploc-000337,co-p-000337,co-loc-000423,home_base,,,,,listed,
+co-ploc-000338,co-p-000338,co-loc-000424,home_base,,,,,listed,
+co-ploc-000339,co-p-000339,co-loc-000425,home_base,,,,,listed,
+co-ploc-000340,co-p-000340,co-loc-000426,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8am - 7pm; Tue: 8am - 7pm; Wed: 8am - 7pm; Thu: 8am - 7pm; Fri: 8am - 7pm; Sat: 8am - 7pm; Sun: 8am - 7pm,,,listed,
+co-ploc-000341,co-p-000341,co-loc-000427,home_base,,,,,listed,
+co-ploc-000342,co-p-000342,co-loc-000428,home_base,,,,,listed,
+co-ploc-000343,co-p-000343,co-loc-000429,home_base,,,,,listed,
+co-ploc-000344,co-p-000344,co-loc-000433,home_base,,,,,listed,
+co-ploc-000345,co-p-000345,co-loc-000436,home_base,,,,,listed,
+co-ploc-000346,co-p-000346,co-loc-000437,home_base,,,,,listed,
+co-ploc-000010,co-p-000010,co-loc-000012,home_base,,,,,listed,
+co-ploc-000347,co-p-000347,co-loc-000438,home_base,,,,,listed,
+co-ploc-000348,co-p-000348,co-loc-000441,home_base,,,,,listed,
+co-ploc-000349,co-p-000349,co-loc-000442,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10am - 8pm; Tue: 10am - 8pm; Wed: 10am - 8pm; Thu: 10am - 8pm; Fri: 10am - 8pm; Sat: 9am - 8pm; Sun: 9am - 8pm,,,listed,
+co-ploc-000350,co-p-000350,co-loc-000443,home_base,,,,,listed,
+co-ploc-000351,co-p-000351,co-loc-000444,home_base,,,,,listed,
+co-ploc-000352,co-p-000352,co-loc-000445,home_base,,,,,listed,
+co-ploc-000353,co-p-000353,co-loc-000447,home_base,,,,,listed,
+co-ploc-000354,co-p-000354,co-loc-000448,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10:30am - 7pm; Tue: 10:30am - 7pm; Wed: 10:30am - 7pm; Thu: 10:30am - 7pm; Fri: 10:30am - 7pm; Sat: 10:30am - 7pm; Sun: 10:30am - 7pm,,,listed,
+co-ploc-000355,co-p-000355,co-loc-000450,home_base,,,,,listed,
+co-ploc-000356,co-p-000356,co-loc-000451,home_base,,,,,listed,
+co-ploc-000357,co-p-000357,co-loc-000452,home_base,,,,,listed,
+co-ploc-000358,co-p-000358,co-loc-000453,home_base,,,,,listed,
+co-ploc-000359,co-p-000359,co-loc-000455,home_base,,,,,listed,
+co-ploc-000360,co-p-000360,co-loc-000456,home_base,sat,Sat: 9 a.m. - 1 p.m.  Louisville Farmer's market,,,listed,
+co-ploc-000361,co-p-000361,co-loc-000457,home_base,,,,,listed,
+co-ploc-000362,co-p-000362,co-loc-000458,home_base,,,,,listed,
+co-ploc-000363,co-p-000363,co-loc-000459,home_base,fri;sat;sun,Fri: 9am - 4:30pm; Sat: 9am - 4:30pm; Sun: 9am - 4:30pm,,,listed,
+co-ploc-000364,co-p-000364,co-loc-000460,home_base,,,,,listed,
+co-ploc-000365,co-p-000365,co-loc-000461,home_base,,"Durango Farmers Market Saturdays (May-Oct, 8am-noon)",,,listed,
+co-ploc-000366,co-p-000366,co-loc-000462,home_base,,,,,listed,
+co-ploc-000367,co-p-000367,co-loc-000463,home_base,,,,,listed,
+co-ploc-000368,co-p-000368,co-loc-000464,home_base,,,,,listed,
+co-ploc-000369,co-p-000369,co-loc-000465,home_base,,,,,listed,
+co-ploc-000370,co-p-000370,co-loc-000466,home_base,,,,,listed,
+co-ploc-000371,co-p-000371,co-loc-000467,home_base,,,,,listed,
+co-ploc-000372,co-p-000372,co-loc-000468,home_base,,,,,listed,
+co-ploc-000373,co-p-000373,co-loc-000469,home_base,tue;wed;thu;fri,Tue: 8:00 am - 4 p.m.; Wed: 8:00 a.m. - 4:00 p.m.; Thu: 8:00 a.m. - 4:00 p.m.; Fri: 8:00 a.m. - 4:00 p.m.,,,listed,
+co-ploc-000374,co-p-000374,co-loc-000470,home_base,,,,,listed,
+co-ploc-000375,co-p-000375,co-loc-000471,home_base,,,,,listed,
+co-ploc-000376,co-p-000376,co-loc-000472,home_base,,,,,listed,
+co-ploc-000377,co-p-000377,co-loc-000473,home_base,,,,,listed,
+co-ploc-000378,co-p-000378,co-loc-000474,home_base,tue;sat,Tue: 4-7PM; Sat: 10-2,,,listed,
+co-ploc-000379,co-p-000379,co-loc-000475,home_base,,Season Oct-Apr (winter greens); by order,,,listed,
+co-ploc-000380,co-p-000380,co-loc-000477,home_base,,,,,listed,
+co-ploc-000381,co-p-000381,co-loc-000478,home_base,,,,,listed,
+co-ploc-000382,co-p-000382,co-loc-000479,home_base,,,,,listed,
+co-ploc-000383,co-p-000383,co-loc-000480,home_base,,"Farm stand open May through February, closed March and April",,,listed,
+co-ploc-000384,co-p-000384,co-loc-000481,home_base,,,,,listed,
+co-ploc-000385,co-p-000385,co-loc-000482,home_base,,,,,listed,
+co-ploc-000386,co-p-000386,co-loc-000483,home_base,,,,,listed,
+co-ploc-000387,co-p-000387,co-loc-000486,home_base,,,,,listed,
+co-ploc-000388,co-p-000388,co-loc-000488,home_base,,,,,listed,
+co-ploc-000389,co-p-000389,co-loc-000489,home_base,,,,,listed,
+co-ploc-000390,co-p-000390,co-loc-000490,home_base,,,,,listed,
+co-ploc-000391,co-p-000391,co-loc-000492,home_base,,,,,listed,
+co-ploc-000392,co-p-000392,co-loc-000493,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 12pm - 7pm; Tue: 12pm - 7pm; Wed: 12pm - 7pm; Thu: 12pm - 7pm; Fri: 12pm - 7pm; Sat: 12pm - 7pm; Sun: 1pm - 7pm,,,listed,
+co-ploc-000393,co-p-000393,co-loc-000495,home_base,thu;fri;sat;sun,Thu: 1pm - 6pm; Fri: 1pm - 6pm; Sat: 1pm - 6pm; Sun: 1pm - 6pm,,,listed,
+co-ploc-000394,co-p-000394,co-loc-000496,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 12-6; Tue: 12-6; Wed: 12-6; Thu: 12-6; Fri: 10-7; Sat: 10-7; Sun: 12-5,,,listed,
+co-ploc-000395,co-p-000395,co-loc-000497,home_base,,,,,listed,
+co-ploc-000396,co-p-000396,co-loc-000500,home_base,,,,,listed,
+co-ploc-000397,co-p-000397,co-loc-000501,home_base,,,,,listed,
+co-ploc-000398,co-p-000398,co-loc-000502,home_base,mon;tue;wed;thu;fri;sat,Mon: 11am - 5pm; Tue: 11am - 5pm; Wed: 11am - 5pm; Thu: 11am - 5pm; Fri: 11am - 5pm; Sat: 11am - 5pm; Sun: By appointment,,,listed,
+co-ploc-000399,co-p-000399,co-loc-000503,home_base,,,,,listed,
+co-ploc-000400,co-p-000400,co-loc-000504,home_base,,,,,listed,
+co-ploc-000401,co-p-000401,co-loc-000505,home_base,,,,,listed,
+co-ploc-000402,co-p-000402,co-loc-000506,home_base,sun,"Farm stand: Sun 10:00am - 2:00pm at The HerbiCulture Project Hub, 9722 Empire Rd, Louisville; U-Pick mid-July through first frost",,,listed,
+co-ploc-000403,co-p-000403,co-loc-000507,home_base,,,,,listed,
+co-ploc-000404,co-p-000404,co-loc-000508,home_base,,,,,listed,
+co-ploc-000405,co-p-000405,co-loc-000509,home_base,,,,,listed,
+co-ploc-000406,co-p-000406,co-loc-000510,home_base,,,,,listed,
+co-ploc-000407,co-p-000407,co-loc-000511,home_base,,,,,listed,
+co-ploc-000408,co-p-000408,co-loc-000513,home_base,,,,,listed,
+co-ploc-000409,co-p-000409,co-loc-000514,home_base,tue;thu;sat,Tue: 4 pm - 6 pm; Thu: 4 pm - 6 pm; Sat: 12pm - 2pm,,,listed,
+co-ploc-000410,co-p-000410,co-loc-000515,home_base,,,,,listed,
+co-ploc-000411,co-p-000411,co-loc-000517,home_base,,,,,listed,
+co-ploc-000412,co-p-000412,co-loc-000518,home_base,,,,,listed,
+co-ploc-000413,co-p-000413,co-loc-000519,home_base,,,,,listed,
+co-ploc-000414,co-p-000414,co-loc-000520,home_base,,,,,listed,
+co-ploc-000415,co-p-000415,co-loc-000521,home_base,,Winter CSA January-April,,,listed,
+co-ploc-000416,co-p-000416,co-loc-000522,home_base,,,,,listed,
+co-ploc-000417,co-p-000417,co-loc-000524,home_base,mon;tue;wed;thu;fri;sat,Mon: 8 am - 5 pm; Tue: 8 am - 5 pm; Wed: 8 am - 5 pm; Thu: 8 am - 5 pm; Fri: 8 am - 5 pm; Sat: 8 am - 5 pm,,,listed,
+co-ploc-000418,co-p-000418,co-loc-000525,home_base,,,,,listed,
+co-ploc-000419,co-p-000419,co-loc-000526,home_base,,,,,listed,
+co-ploc-000420,co-p-000420,co-loc-000527,home_base,,,,,listed,
+co-ploc-000421,co-p-000421,co-loc-000528,home_base,,,,,listed,
+co-ploc-000422,co-p-000422,co-loc-000529,home_base,,,,,listed,
+co-ploc-000423,co-p-000423,co-loc-000530,home_base,,,,,listed,
+co-ploc-000424,co-p-000424,co-loc-000531,home_base,,,,,listed,
+co-ploc-000425,co-p-000425,co-loc-000533,home_base,,,,,listed,
+co-ploc-000426,co-p-000426,co-loc-000534,home_base,,,,,listed,
+co-ploc-000427,co-p-000427,co-loc-000537,home_base,,,,,listed,
+co-ploc-000428,co-p-000428,co-loc-000539,home_base,,,,,listed,
+co-ploc-000429,co-p-000429,co-loc-000540,home_base,,,,,listed,
+co-ploc-000430,co-p-000430,co-loc-000542,home_base,,,,,listed,
+co-ploc-000431,co-p-000431,co-loc-000543,home_base,,,,,listed,
+co-ploc-000432,co-p-000432,co-loc-000544,home_base,,"Farmstand Monday-Saturday, daylight hours",,,listed,
+co-ploc-000433,co-p-000433,co-loc-000545,home_base,,,,,listed,
+co-ploc-000434,co-p-000434,co-loc-000546,home_base,,,,,listed,
+co-ploc-000435,co-p-000435,co-loc-000548,home_base,,,,,listed,
+co-ploc-000436,co-p-000436,co-loc-000549,home_base,,,,,listed,
+co-ploc-000437,co-p-000437,co-loc-000550,home_base,,,,,listed,
+co-ploc-000438,co-p-000438,co-loc-000552,home_base,,,,,listed,
+co-ploc-000439,co-p-000439,co-loc-000553,home_base,,,,,listed,
+co-ploc-000440,co-p-000440,co-loc-000555,home_base,,,,,listed,
+co-ploc-000441,co-p-000441,co-loc-000556,home_base,,,,,listed,
+co-ploc-000442,co-p-000442,co-loc-000558,home_base,,,,,listed,
+co-ploc-000443,co-p-000443,co-loc-000559,home_base,,,,,listed,
+co-ploc-000444,co-p-000444,co-loc-000560,home_base,mon;tue;wed;thu;fri;sat;sun,"Mon: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Tue: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Wed: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Thu: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Fri: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Sat: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall); Sun: 11am-5pm(Winter), 9am-5pm(Spring, Summer, Fall)",,,listed,
+co-ploc-000445,co-p-000445,co-loc-000561,home_base,,,,,listed,
+co-ploc-000446,co-p-000446,co-loc-000562,home_base,,,,,listed,
+co-ploc-000447,co-p-000447,co-loc-000563,home_base,,,,,listed,
+co-ploc-000448,co-p-000448,co-loc-000565,home_base,,,,,listed,
+co-ploc-000449,co-p-000449,co-loc-000566,home_base,,,,,listed,
+co-ploc-000450,co-p-000450,co-loc-000569,home_base,,,,,listed,
+co-ploc-000451,co-p-000451,co-loc-000570,home_base,,,,,listed,
+co-ploc-000452,co-p-000452,co-loc-000571,home_base,sat,Sat: 10-12,,,listed,
+co-ploc-000453,co-p-000453,co-loc-000572,home_base,,,,,listed,
+co-ploc-000454,co-p-000454,co-loc-000573,home_base,,,,,listed,
+co-ploc-000455,co-p-000455,co-loc-000575,home_base,,,,,listed,
+co-ploc-000456,co-p-000456,co-loc-000576,home_base,,,,,listed,
+co-ploc-000457,co-p-000457,co-loc-000577,home_base,,,,,listed,
+co-ploc-000458,co-p-000458,co-loc-000579,home_base,,,,,listed,
+co-ploc-000459,co-p-000459,co-loc-000580,home_base,,,,,listed,
+co-ploc-000460,co-p-000460,co-loc-000581,home_base,,,,,listed,
+co-ploc-000461,co-p-000461,co-loc-000582,home_base,,,,,listed,
+co-ploc-000462,co-p-000462,co-loc-000583,home_base,sat,Sat: 9am - 3pm,,,listed,
+co-ploc-000463,co-p-000463,co-loc-000584,home_base,,Wed: Boulder - 3:30 p.m. - 6:30 p.m.,,,listed,
+co-ploc-000464,co-p-000464,co-loc-000585,home_base,,Wed: Longmont - 4:00 p.m. - 6:00 p.m.,,,listed,
+co-ploc-001233,co-p-001230,co-loc-001496,home_base,tue,Tue: 4:00pm - 6:00pm,,,listed,
+co-ploc-000465,co-p-000465,co-loc-000586,home_base,,,,,listed,
+co-ploc-000466,co-p-000466,co-loc-000587,home_base,,,,,listed,
+co-ploc-000467,co-p-000467,co-loc-000589,home_base,,"Gunnison Farmers Market Saturday mornings mid-June to October (IOOF park, Main & Virginia); Crested Butte South Farmers Market Thursdays 4:30-6 pm in summer",,,listed,
+co-ploc-000468,co-p-000468,co-loc-000592,home_base,,,,,listed,
+co-ploc-000469,co-p-000469,co-loc-000593,home_base,,,,,listed,
+co-ploc-000470,co-p-000470,co-loc-000594,home_base,sat;sun,Sat: 9am-2pm; Sun: 9am-2pm,,,listed,
+co-ploc-000471,co-p-000471,co-loc-000595,home_base,,,,,listed,
+co-ploc-000472,co-p-000472,co-loc-000596,home_base,,,,,listed,
+co-ploc-000473,co-p-000473,co-loc-000597,home_base,,,,,listed,
+co-ploc-000474,co-p-000474,co-loc-000598,home_base,,,,,listed,
+co-ploc-000475,co-p-000475,co-loc-000599,home_base,,,,,listed,
+co-ploc-000476,co-p-000476,co-loc-000600,home_base,,,,,listed,
+co-ploc-000477,co-p-000477,co-loc-000601,home_base,,,,,listed,
+co-ploc-000478,co-p-000478,co-loc-000602,home_base,,Facebook shows 'Always open' (farm visits welcome); eggs via honor-system shed at front of property,,,listed,
+co-ploc-000479,co-p-000479,co-loc-000603,home_base,,,,,listed,
+co-ploc-000480,co-p-000480,co-loc-000604,home_base,,,,,listed,
+co-ploc-000481,co-p-000481,co-loc-000605,home_base,,,,,listed,
+co-ploc-000482,co-p-000482,co-loc-000606,home_base,,,,,listed,
+co-ploc-000483,co-p-000483,co-loc-000607,home_base,,,,,listed,
+co-ploc-000484,co-p-000484,co-loc-000608,home_base,,,,,listed,
+co-ploc-000485,co-p-000485,co-loc-000609,home_base,,,,,listed,
+co-ploc-000486,co-p-000486,co-loc-000610,home_base,,,,,listed,
+co-ploc-000487,co-p-000487,co-loc-000612,home_base,,,,,listed,
+co-ploc-000488,co-p-000488,co-loc-000613,home_base,,,,,listed,
+co-ploc-000489,co-p-000489,co-loc-000614,home_base,mon;tue;wed;thu;fri,Mon: 9am - 5pm; Tue: 9am - 5pm; Wed: 9am - 5pm; Thu: 9am - 5pm; Fri: 9am - 5pm,,,listed,
+co-ploc-000012,co-p-000012,co-loc-000014,home_base,,,,,listed,
+co-ploc-000490,co-p-000490,co-loc-000615,home_base,,,,,listed,
+co-ploc-000491,co-p-000491,co-loc-000616,home_base,,,,,listed,
+co-ploc-000492,co-p-000492,co-loc-000617,home_base,,,,,listed,
+co-ploc-000493,co-p-000493,co-loc-000618,home_base,,,,,listed,
+co-ploc-000494,co-p-000494,co-loc-000619,home_base,,,,,listed,
+co-ploc-000495,co-p-000495,co-loc-000620,home_base,,,,,listed,
+co-ploc-000496,co-p-000496,co-loc-000621,home_base,,,,,listed,
+co-ploc-000497,co-p-000497,co-loc-000622,home_base,,,,,listed,
+co-ploc-000498,co-p-000498,co-loc-000623,home_base,,,,,listed,
+co-ploc-000499,co-p-000499,co-loc-000624,home_base,,,,,listed,
+co-ploc-000500,co-p-000500,co-loc-000625,home_base,,,,,listed,
+co-ploc-000501,co-p-000501,co-loc-000626,home_base,,,,,listed,
+co-ploc-000502,co-p-000502,co-loc-000627,home_base,,,,,listed,
+co-ploc-000503,co-p-000503,co-loc-000628,home_base,,,,,listed,
+co-ploc-000504,co-p-000504,co-loc-000630,home_base,,,,,listed,
+co-ploc-000505,co-p-000505,co-loc-000631,home_base,,,,,listed,
+co-ploc-000506,co-p-000506,co-loc-000632,home_base,,,,,listed,
+co-ploc-000507,co-p-000507,co-loc-000633,home_base,,,,,listed,
+co-ploc-000508,co-p-000508,co-loc-000634,home_base,,,,,listed,
+co-ploc-000509,co-p-000509,co-loc-000635,home_base,mon;wed;fri;sat,Mon: 9am - 1pm; Wed: 9am - 3:30pm; Fri: 9am - 1pm; Sat: 9am - 1pm,,,listed,
+co-ploc-000510,co-p-000510,co-loc-000636,home_base,,,,,listed,
+co-ploc-000511,co-p-000511,co-loc-000637,home_base,,,,,listed,
+co-ploc-000512,co-p-000512,co-loc-000638,home_base,,,,,listed,
+co-ploc-000513,co-p-000513,co-loc-000641,home_base,,,,,listed,
+co-ploc-000514,co-p-000514,co-loc-000642,home_base,,,,,listed,
+co-ploc-000515,co-p-000515,co-loc-000643,home_base,,,,,listed,
+co-ploc-000516,co-p-000516,co-loc-000644,home_base,,,,,listed,
+co-ploc-000517,co-p-000517,co-loc-000645,home_base,,,,,listed,
+co-ploc-000518,co-p-000518,co-loc-000647,home_base,,,,,listed,
+co-ploc-000519,co-p-000519,co-loc-000648,home_base,,,,,listed,
+co-ploc-000520,co-p-000520,co-loc-000649,home_base,,,,,listed,
+co-ploc-000521,co-p-000521,co-loc-000650,home_base,,,,,listed,
+co-ploc-000522,co-p-000522,co-loc-000651,home_base,,,,,listed,
+co-ploc-000523,co-p-000523,co-loc-000652,home_base,,,,,listed,
+co-ploc-000524,co-p-000524,co-loc-000653,home_base,,,,,listed,
+co-ploc-000525,co-p-000525,co-loc-000654,home_base,,,,,listed,
+co-ploc-000526,co-p-000526,co-loc-000655,home_base,,Facebook intro: 'Farm Store now Open Monday thru Saturday' (summer); stand season about April-September; asparagus from mid-April,,,listed,
+co-ploc-000527,co-p-000527,co-loc-000656,home_base,,,,,listed,
+co-ploc-000528,co-p-000528,co-loc-000657,home_base,,,,,listed,
+co-ploc-000529,co-p-000529,co-loc-000658,home_base,,,,,listed,
+co-ploc-000530,co-p-000530,co-loc-000659,home_base,,,,,listed,
+co-ploc-000531,co-p-000531,co-loc-000660,home_base,,,,,listed,
+co-ploc-000532,co-p-000532,co-loc-000661,home_base,,,,,listed,
+co-ploc-000533,co-p-000533,co-loc-000662,home_base,,,,,listed,
+co-ploc-000534,co-p-000534,co-loc-000664,home_base,,,,,listed,
+co-ploc-000535,co-p-000535,co-loc-000665,home_base,,,,,listed,
+co-ploc-000536,co-p-000536,co-loc-000666,home_base,,,,,listed,
+co-ploc-000537,co-p-000537,co-loc-000667,home_base,,,,,listed,
+co-ploc-000538,co-p-000538,co-loc-000668,home_base,,,,,listed,
+co-ploc-000539,co-p-000539,co-loc-000669,home_base,,,,,listed,
+co-ploc-000540,co-p-000540,co-loc-000670,home_base,,,,,listed,
+co-ploc-000541,co-p-000541,co-loc-000671,home_base,,,,,listed,
+co-ploc-000013,co-p-000013,co-loc-000015,home_base,,,,,listed,
+co-ploc-000542,co-p-000542,co-loc-000672,home_base,,,,,listed,
+co-ploc-000543,co-p-000543,co-loc-000673,home_base,,,,,listed,
+co-ploc-000544,co-p-000544,co-loc-000675,home_base,,,,,listed,
+co-ploc-000545,co-p-000545,co-loc-000676,home_base,,,,,listed,
+co-ploc-000546,co-p-000546,co-loc-000677,home_base,,,,,listed,
+co-ploc-000547,co-p-000547,co-loc-000679,home_base,,,,,listed,
+co-ploc-000548,co-p-000548,co-loc-000680,home_base,,,,,listed,
+co-ploc-000549,co-p-000549,co-loc-000681,home_base,,,,,listed,
+co-ploc-000550,co-p-000550,co-loc-000683,home_base,,,,,listed,
+co-ploc-000551,co-p-000551,co-loc-000684,home_base,,,,,listed,
+co-ploc-000552,co-p-000552,co-loc-000685,home_base,,,,,listed,
+co-ploc-000553,co-p-000553,co-loc-000686,home_base,,,,,listed,
+co-ploc-000554,co-p-000554,co-loc-000687,home_base,fri;sat,Fri: 9:00 AM to 1:00 PM; Sat: 9:00 AM to 1:00 PM,,,listed,
+co-ploc-000555,co-p-000555,co-loc-000688,home_base,wed;thu;fri;sat;sun,Wed: 10am - 6pm; Thu: 10am - 6pm; Fri: 10am - 6pm; Sat: 10am - 6pm; Sun: 10am - 6pm,,,listed,
+co-ploc-000556,co-p-000556,co-loc-000689,home_base,,,,,listed,
+co-ploc-000557,co-p-000557,co-loc-000691,home_base,,,,,listed,
+co-ploc-000558,co-p-000558,co-loc-000692,home_base,,,,,listed,
+co-ploc-000559,co-p-000559,co-loc-000693,home_base,,,,,listed,
+co-ploc-000560,co-p-000560,co-loc-000694,home_base,,,,,listed,
+co-ploc-000561,co-p-000561,co-loc-000695,home_base,,,,,listed,
+co-ploc-000562,co-p-000562,co-loc-000696,home_base,,,,,listed,
+co-ploc-000563,co-p-000563,co-loc-000697,home_base,,,,,listed,
+co-ploc-000564,co-p-000564,co-loc-000698,home_base,,,,,listed,
+co-ploc-000565,co-p-000565,co-loc-000699,home_base,,,,,listed,
+co-ploc-000566,co-p-000566,co-loc-000700,home_base,,,,,listed,
+co-ploc-000567,co-p-000567,co-loc-000701,home_base,,,,,listed,
+co-ploc-000568,co-p-000568,co-loc-000702,home_base,,,,,listed,
+co-ploc-000569,co-p-000569,co-loc-000703,home_base,,,,,listed,
+co-ploc-000570,co-p-000570,co-loc-000704,home_base,,,,,listed,
+co-ploc-000571,co-p-000571,co-loc-000705,home_base,,,,,listed,
+co-ploc-000572,co-p-000572,co-loc-000706,home_base,,,,,listed,
+co-ploc-000573,co-p-000573,co-loc-000707,home_base,sun,"Every other Sunday: 9am-1pm (market), 3-5pm (pop-up)",,,listed,
+co-ploc-000574,co-p-000574,co-loc-000709,home_base,,,,,listed,
+co-ploc-000575,co-p-000575,co-loc-000710,home_base,,,,,listed,
+co-ploc-000576,co-p-000576,co-loc-000711,home_base,,,,,listed,
+co-ploc-000577,co-p-000577,co-loc-000712,home_base,,,,,listed,
+co-ploc-000578,co-p-000578,co-loc-000713,home_base,,,,,listed,
+co-ploc-000579,co-p-000579,co-loc-000714,home_base,,,,,listed,
+co-ploc-000580,co-p-000580,co-loc-000715,home_base,,,,,listed,
+co-ploc-000581,co-p-000581,co-loc-000716,home_base,,,,,listed,
+co-ploc-000582,co-p-000582,co-loc-000717,home_base,,,,,listed,
+co-ploc-000583,co-p-000583,co-loc-000718,home_base,,,,,listed,
+co-ploc-000584,co-p-000584,co-loc-000719,home_base,,,,,listed,
+co-ploc-000585,co-p-000585,co-loc-000720,home_base,,,,,listed,
+co-ploc-000586,co-p-000586,co-loc-000722,home_base,,,,,listed,
+co-ploc-000587,co-p-000587,co-loc-000723,home_base,,,,,listed,
+co-ploc-000588,co-p-000588,co-loc-000724,home_base,,,,,listed,
+co-ploc-000589,co-p-000589,co-loc-000725,home_base,,,,,listed,
+co-ploc-000590,co-p-000590,co-loc-000726,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8am-6pm; Tue: 8am-6pm; Wed: 8am-6pm; Thu: 8am-6pm; Fri: 8am-6pm; Sat: 8am-6pm; Sun: 8am-6pm,,,listed,
+co-ploc-000591,co-p-000591,co-loc-000727,home_base,,,,,listed,
+co-ploc-000592,co-p-000592,co-loc-000728,home_base,,,,,listed,
+co-ploc-000593,co-p-000593,co-loc-000729,home_base,thu;fri;sat;sun,Thu: 10am - 4pm; Fri: 10am - 4pm; Sat: 10am - 4pm; Sun: 10am - 4pm,,,listed,
+co-ploc-000594,co-p-000594,co-loc-000730,home_base,,,,,listed,
+co-ploc-000595,co-p-000595,co-loc-000731,home_base,,,,,listed,
+co-ploc-000596,co-p-000596,co-loc-000732,home_base,,,,,listed,
+co-ploc-000597,co-p-000597,co-loc-000733,home_base,,,,,listed,
+co-ploc-000598,co-p-000598,co-loc-000734,home_base,,,,,listed,
+co-ploc-000599,co-p-000599,co-loc-000735,home_base,,,,,listed,
+co-ploc-000600,co-p-000600,co-loc-000737,home_base,mon;tue;wed;thu;fri;sat,"Mon-Sat 9:00 AM-7:00 PM, Sun closed (Yelp, updated Oct 2026)",,,listed,
+co-ploc-000601,co-p-000601,co-loc-000738,home_base,,,,,listed,
+co-ploc-000602,co-p-000602,co-loc-000740,home_base,,,,,listed,
+co-ploc-000603,co-p-000603,co-loc-000741,home_base,,,,,listed,
+co-ploc-000604,co-p-000604,co-loc-000743,home_base,,,,,listed,
+co-ploc-000605,co-p-000605,co-loc-000745,home_base,,,,,listed,
+co-ploc-000606,co-p-000606,co-loc-000749,home_base,,,,,listed,
+co-ploc-000607,co-p-000607,co-loc-000750,home_base,,,,,listed,
+co-ploc-000608,co-p-000608,co-loc-000751,home_base,,,,,listed,
+co-ploc-000609,co-p-000609,co-loc-000752,home_base,,,,,listed,
+co-ploc-000610,co-p-000610,co-loc-000753,home_base,,,,,listed,
+co-ploc-000611,co-p-000611,co-loc-000754,home_base,fri;sat;sun,Fri: 9 a.m. - 4 p.m.; Sat: 9 a.m. - 4 p.m. and 6 p.m.- 10 p.m.; Sun: 10 a.m. - 4 p.m.,,,listed,
+co-ploc-000612,co-p-000612,co-loc-000755,home_base,,,,,listed,
+co-ploc-000613,co-p-000613,co-loc-000756,home_base,,,,,listed,
+co-ploc-000614,co-p-000614,co-loc-000757,home_base,,,,,listed,
+co-ploc-000615,co-p-000615,co-loc-000758,home_base,,,,,listed,
+co-ploc-000616,co-p-000616,co-loc-000759,home_base,,,,,listed,
+co-ploc-000617,co-p-000617,co-loc-000760,home_base,,,,,listed,
+co-ploc-000618,co-p-000618,co-loc-000761,home_base,,,,,listed,
+co-ploc-000619,co-p-000619,co-loc-000762,home_base,,,,,listed,
+co-ploc-000620,co-p-000620,co-loc-000763,home_base,,,,,listed,
+co-ploc-000621,co-p-000621,co-loc-000764,home_base,,,,,listed,
+co-ploc-000622,co-p-000622,co-loc-000765,home_base,,,,,listed,
+co-ploc-000623,co-p-000623,co-loc-000766,home_base,sat,Sat: 8 a.m. - 12 p.m.,,,listed,
+co-ploc-000624,co-p-000624,co-loc-000767,home_base,,,,,listed,
+co-ploc-000625,co-p-000625,co-loc-000768,home_base,tue;wed;thu;fri,Tue: 9a-3pm; Wed: 9a-3pm; Thu: 9a-3pm; Fri: 9a-3pm,,,listed,
+co-ploc-000626,co-p-000626,co-loc-000769,home_base,,,,,listed,
+co-ploc-000627,co-p-000627,co-loc-000770,home_base,mon;tue;wed;thu;fri;sat,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 8am - 12pm,,,listed,
+co-ploc-000628,co-p-000628,co-loc-000771,home_base,,,,,listed,
+co-ploc-000014,co-p-000014,co-loc-000016,home_base,,,,,listed,
+co-ploc-000629,co-p-000629,co-loc-000772,home_base,,,,,listed,
+co-ploc-000630,co-p-000630,co-loc-000773,home_base,,,,,listed,
+co-ploc-000631,co-p-000631,co-loc-000774,home_base,,,,,listed,
+co-ploc-000632,co-p-000632,co-loc-000775,home_base,,,,,listed,
+co-ploc-000633,co-p-000633,co-loc-000776,home_base,,,,,listed,
+co-ploc-000634,co-p-000634,co-loc-000777,home_base,,,,,listed,
+co-ploc-000635,co-p-000635,co-loc-000778,home_base,,,,,listed,
+co-ploc-000636,co-p-000636,co-loc-000779,home_base,,,,,listed,
+co-ploc-000637,co-p-000637,co-loc-000780,home_base,,,,,listed,
+co-ploc-000638,co-p-000638,co-loc-000781,home_base,,,,,listed,
+co-ploc-000639,co-p-000639,co-loc-000782,home_base,,,,,listed,
+co-ploc-000640,co-p-000640,co-loc-000783,home_base,,,,,listed,
+co-ploc-000641,co-p-000641,co-loc-000784,home_base,,,,,listed,
+co-ploc-000642,co-p-000642,co-loc-000785,home_base,,,,,listed,
+co-ploc-000643,co-p-000643,co-loc-000786,home_base,,,,,listed,
+co-ploc-000644,co-p-000644,co-loc-000788,home_base,,,,,listed,
+co-ploc-000645,co-p-000645,co-loc-000790,home_base,,,,,listed,
+co-ploc-000646,co-p-000646,co-loc-000791,home_base,,,,,listed,
+co-ploc-000647,co-p-000647,co-loc-000792,home_base,,,,,listed,
+co-ploc-000648,co-p-000648,co-loc-000794,home_base,,,,,listed,
+co-ploc-000649,co-p-000649,co-loc-000795,home_base,,,,,listed,
+co-ploc-000650,co-p-000650,co-loc-000796,home_base,,,,,listed,
+co-ploc-000651,co-p-000651,co-loc-000797,home_base,,,,,listed,
+co-ploc-000652,co-p-000652,co-loc-000798,home_base,,,,,listed,
+co-ploc-000653,co-p-000653,co-loc-000801,home_base,,,,,listed,
+co-ploc-000654,co-p-000654,co-loc-000807,home_base,,,,,listed,
+co-ploc-000655,co-p-000655,co-loc-000809,home_base,,,,,listed,
+co-ploc-000656,co-p-000656,co-loc-000810,home_base,,,,,listed,
+co-ploc-000657,co-p-000657,co-loc-000811,home_base,,,,,listed,
+co-ploc-000658,co-p-000658,co-loc-000812,home_base,,,,,listed,
+co-ploc-000659,co-p-000659,co-loc-000813,home_base,mon;tue;wed;thu;fri;sat;sun,Mon-Sun: 9:00am - 6:00pm,,,listed,
+co-ploc-000660,co-p-000660,co-loc-000814,home_base,,,,,listed,
+co-ploc-000661,co-p-000661,co-loc-000816,home_base,,,,,listed,
+co-ploc-000662,co-p-000662,co-loc-000818,home_base,,,,,listed,
+co-ploc-000663,co-p-000663,co-loc-000819,home_base,,,,,listed,
+co-ploc-000664,co-p-000664,co-loc-000820,home_base,,,,,listed,
+co-ploc-000665,co-p-000665,co-loc-000821,home_base,,,,,listed,
+co-ploc-000666,co-p-000666,co-loc-000822,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 6pm; Sun: 10am - 5pm,,,listed,
+co-ploc-000667,co-p-000667,co-loc-000823,home_base,,,,,listed,
+co-ploc-000668,co-p-000668,co-loc-000825,home_base,mon;tue;wed;thu;fri;sat;sun,Sun: 12pm - 7pm; Mon: 12pm - 7pm; Tue: 12pm - 7pm; Wed: 12pm - 7pm; Thu: 12pm - 7pm; Fri: 12pm - 8pm; Sat: 12pm - 8pm,,,listed,
+co-ploc-000669,co-p-000669,co-loc-000826,home_base,,,,,listed,
+co-ploc-000670,co-p-000670,co-loc-000828,home_base,,,,,listed,
+co-ploc-000671,co-p-000671,co-loc-000830,home_base,,,,,listed,
+co-ploc-000672,co-p-000672,co-loc-000831,home_base,,,,,listed,
+co-ploc-000673,co-p-000673,co-loc-000832,home_base,,,,,listed,
+co-ploc-000674,co-p-000674,co-loc-000833,home_base,,,,,listed,
+co-ploc-000675,co-p-000675,co-loc-000834,home_base,mon;tue;wed;thu;fri;sat,Mon-Sat 9am-2pm (site also says open every day; confirm),,,listed,
+co-ploc-000676,co-p-000676,co-loc-000836,home_base,,,,,listed,
+co-ploc-000677,co-p-000677,co-loc-000837,home_base,,,,,listed,
+co-ploc-000678,co-p-000678,co-loc-000838,home_base,,,,,listed,
+co-ploc-000679,co-p-000679,co-loc-000839,home_base,sat;sun,Sat: 10 a.m. - 5 p.m.; Sun: 10 a.m. - 5 p.m.,,,listed,
+co-ploc-000680,co-p-000680,co-loc-000840,home_base,,,,,listed,
+co-ploc-000681,co-p-000681,co-loc-000842,home_base,,,,,listed,
+co-ploc-000682,co-p-000682,co-loc-000843,home_base,,,,,listed,
+co-ploc-000683,co-p-000683,co-loc-000844,home_base,wed;thu;fri;sat;sun,Wed: 4pm - 9pm; Thu: 4pm - 9pm; Fri: 4pm - 9pm; Sat: 12pm - 9pm; Sun: 12pm - 5pm,,,listed,
+co-ploc-000684,co-p-000684,co-loc-000845,home_base,wed;thu;fri;sat;sun,Wed: 10am - 5:30pm; Thu: 10am - 5:30pm; Fri: 10am - 5:30pm; Sat: 10am - 4pm; Sun: 10am - 4pm,,,listed,
+co-ploc-000685,co-p-000685,co-loc-000846,home_base,,,,,listed,
+co-ploc-000686,co-p-000686,co-loc-000848,home_base,,,,,listed,
+co-ploc-000687,co-p-000687,co-loc-000849,home_base,,,,,listed,
+co-ploc-000688,co-p-000688,co-loc-000851,home_base,,,,,listed,
+co-ploc-000689,co-p-000689,co-loc-000854,home_base,sat,Sat: 10 am - 2pm,,,listed,
+co-ploc-000690,co-p-000690,co-loc-000855,home_base,,,,,listed,
+co-ploc-000691,co-p-000691,co-loc-000856,home_base,,,,,listed,
+co-ploc-000692,co-p-000692,co-loc-000857,home_base,,,,,listed,
+co-ploc-000693,co-p-000693,co-loc-000858,home_base,wed;thu;fri;sat;sun,Wed: 4pm - 8pm; Thu: 4pm - 8pm; Fri: 4pm - 8pm; Sat: 4pm - 8pm; Sun: 10am - 2pm,,,listed,
+co-ploc-000694,co-p-000694,co-loc-000862,home_base,,,,,listed,
+co-ploc-000695,co-p-000695,co-loc-000863,home_base,,,,,listed,
+co-ploc-000696,co-p-000696,co-loc-000864,home_base,,,,,listed,
+co-ploc-000697,co-p-000697,co-loc-000865,home_base,,,,,listed,
+co-ploc-000698,co-p-000698,co-loc-000866,home_base,,,,,listed,
+co-ploc-000699,co-p-000699,co-loc-000867,home_base,,,,,listed,
+co-ploc-000700,co-p-000700,co-loc-000868,home_base,,Mon: winter 7am-3pm / summer 7am-5pm; Tue: winter 7am-3pm / summer 7am-5pm; Wed: winter 7am-3pm / summer 7am-5pm; Thu: winter 7am-3pm / summer 7am-5pm; Fri: winter 7am-3pm / summer 7am-8pm; Sat: winter 7am-3pm / summer 7am-5pm; Sun: winter 7am-3pm / summer 7am-5pm,,,listed,
+co-ploc-000701,co-p-000701,co-loc-000869,home_base,,,,,listed,
+co-ploc-000702,co-p-000702,co-loc-000870,home_base,,,,,listed,
+co-ploc-000703,co-p-000703,co-loc-000872,home_base,,,,,listed,
+co-ploc-000704,co-p-000704,co-loc-000873,home_base,,,,,listed,
+co-ploc-000705,co-p-000705,co-loc-000874,home_base,,,,,listed,
+co-ploc-000706,co-p-000706,co-loc-000875,home_base,,,,,listed,
+co-ploc-000707,co-p-000707,co-loc-000876,home_base,,,,,listed,
+co-ploc-000708,co-p-000708,co-loc-000877,home_base,,,,,listed,
+co-ploc-000709,co-p-000709,co-loc-000878,home_base,,,,,listed,
+co-ploc-000710,co-p-000710,co-loc-000879,home_base,,,,,listed,
+co-ploc-000711,co-p-000711,co-loc-000880,home_base,,,,,listed,
+co-ploc-000712,co-p-000712,co-loc-000881,home_base,,,,,listed,
+co-ploc-000713,co-p-000713,co-loc-000883,home_base,,,,,listed,
+co-ploc-000714,co-p-000714,co-loc-000884,home_base,,,,,listed,
+co-ploc-000715,co-p-000715,co-loc-000885,home_base,,,,,listed,
+co-ploc-000716,co-p-000716,co-loc-000886,home_base,mon;tue;wed;thu;fri,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 5pm,,,listed,
+co-ploc-000717,co-p-000717,co-loc-000887,home_base,,,,,listed,
+co-ploc-000718,co-p-000718,co-loc-000888,home_base,mon;tue;wed;thu;fri,Mon: 7am - 4pm; Tue: 7am - 4pm; Wed: 7am - 4pm; Thu: 7am - 4pm; Fri: 7am-4pm,,,listed,
+co-ploc-000719,co-p-000719,co-loc-000892,home_base,,,,,listed,
+co-ploc-000720,co-p-000720,co-loc-000893,home_base,,,,,listed,
+co-ploc-000721,co-p-000721,co-loc-000894,home_base,,,,,listed,
+co-ploc-000722,co-p-000722,co-loc-000895,home_base,,,,,listed,
+co-ploc-000723,co-p-000723,co-loc-000896,home_base,,,,,listed,
+co-ploc-000724,co-p-000724,co-loc-000897,home_base,,,,,listed,
+co-ploc-000725,co-p-000725,co-loc-000898,home_base,,,,,listed,
+co-ploc-000726,co-p-000726,co-loc-000899,home_base,,,,,listed,
+co-ploc-000727,co-p-000727,co-loc-000900,home_base,,Farm pickup: contact before visiting,,,listed,
+co-ploc-000017,co-p-000017,co-loc-000020,home_base,,,,,listed,
+co-ploc-000728,co-p-000728,co-loc-000902,home_base,,,,,listed,
+co-ploc-000729,co-p-000729,co-loc-000903,home_base,,,,,listed,
+co-ploc-000730,co-p-000730,co-loc-000905,home_base,,,,,listed,
+co-ploc-000731,co-p-000731,co-loc-000906,home_base,,,,,listed,
+co-ploc-000732,co-p-000732,co-loc-000907,home_base,,,,,listed,
+co-ploc-000733,co-p-000733,co-loc-000908,home_base,,"2026 CSA: 16 weeks, Jun 25-Oct 15, Thursday pickups 4-6pm (513 S Main St, Gunnison; 620 Second St, Crested Butte). Backyard Harvest free-produce packing Tue 10am",,,listed,
+co-ploc-000734,co-p-000734,co-loc-000909,home_base,,,,,listed,
+co-ploc-000735,co-p-000735,co-loc-000911,home_base,mon;wed;fri,Mon: 1pm - 5pm; Wed: 1pm - 5pm; Fri: 1pm - 5pm,,,listed,
+co-ploc-000736,co-p-000736,co-loc-000912,home_base,,,,,listed,
+co-ploc-000737,co-p-000737,co-loc-000913,home_base,,,,,listed,
+co-ploc-000738,co-p-000738,co-loc-000914,home_base,,,,,listed,
+co-ploc-000739,co-p-000739,co-loc-000915,home_base,,,,,listed,
+co-ploc-000740,co-p-000740,co-loc-000916,home_base,,,,,listed,
+co-ploc-000741,co-p-000741,co-loc-000917,home_base,,,,,listed,
+co-ploc-000742,co-p-000742,co-loc-000918,home_base,,,,,listed,
+co-ploc-000018,co-p-000018,co-loc-000021,home_base,,,,,listed,
+co-ploc-000743,co-p-000743,co-loc-000919,home_base,,,,,listed,
+co-ploc-000744,co-p-000744,co-loc-000920,home_base,,,,,listed,
+co-ploc-000745,co-p-000745,co-loc-000921,home_base,,,,,listed,
+co-ploc-000746,co-p-000746,co-loc-000922,home_base,,,,,listed,
+co-ploc-000747,co-p-000747,co-loc-000923,home_base,,,,,listed,
+co-ploc-000748,co-p-000748,co-loc-000924,home_base,,,,,listed,
+co-ploc-000749,co-p-000749,co-loc-000925,home_base,,,,,listed,
+co-ploc-000750,co-p-000750,co-loc-000926,home_base,,,,,listed,
+co-ploc-000751,co-p-000751,co-loc-000927,home_base,,,,,listed,
+co-ploc-000752,co-p-000752,co-loc-000928,home_base,,,,,listed,
+co-ploc-000753,co-p-000753,co-loc-000930,home_base,,,,,listed,
+co-ploc-000754,co-p-000754,co-loc-000931,home_base,,,,,listed,
+co-ploc-000755,co-p-000755,co-loc-000932,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 a.m. - 6 p.m.; Tue: 9 a.m. - 6 p.m.; Wed: 9 a.m. - 6 p.m.; Thu: 9 a.m. - 6 p.m.; Fri: 9 a.m. - 6 p.m.; Sat: 9 a.m. - 6 p.m.; Sun: 9 a.m. - 6 p.m.,,,listed,
+co-ploc-000756,co-p-000756,co-loc-000933,home_base,,,,,listed,
+co-ploc-000757,co-p-000757,co-loc-000935,home_base,,,,,listed,
+co-ploc-000758,co-p-000758,co-loc-000937,home_base,mon,Mon: 7 am - 12 pm,,,listed,
+co-ploc-000759,co-p-000759,co-loc-000938,home_base,,,,,listed,
+co-ploc-000760,co-p-000760,co-loc-000939,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 8am - 5pm; Sun: 9am - 11am,,,listed,
+co-ploc-000761,co-p-000761,co-loc-000941,home_base,,,,,listed,
+co-ploc-000762,co-p-000762,co-loc-000942,home_base,,,,,listed,
+co-ploc-000763,co-p-000763,co-loc-000943,home_base,,,,,listed,
+co-ploc-000764,co-p-000764,co-loc-000944,home_base,,,,,listed,
+co-ploc-000765,co-p-000765,co-loc-000946,home_base,,,,,listed,
+co-ploc-000766,co-p-000766,co-loc-000948,home_base,,,,,listed,
+co-ploc-000767,co-p-000767,co-loc-000950,home_base,,,,,listed,
+co-ploc-000768,co-p-000768,co-loc-000951,home_base,,,,,listed,
+co-ploc-000769,co-p-000769,co-loc-000952,home_base,,,,,listed,
+co-ploc-000770,co-p-000770,co-loc-000953,home_base,,,,,listed,
+co-ploc-000771,co-p-000771,co-loc-000954,home_base,,,,,listed,
+co-ploc-000772,co-p-000772,co-loc-000955,home_base,,,,,listed,
+co-ploc-000773,co-p-000773,co-loc-000957,home_base,fri;sat,Fri: 2 pm - 7 pm; Sat: 10 am - 3 pm,,,listed,
+co-ploc-000774,co-p-000774,co-loc-000961,home_base,,,,,listed,
+co-ploc-000775,co-p-000775,co-loc-000963,home_base,,,,,listed,
+co-ploc-000776,co-p-000776,co-loc-000964,home_base,,,,,listed,
+co-ploc-000777,co-p-000777,co-loc-000966,home_base,,,,,listed,
+co-ploc-000778,co-p-000778,co-loc-000968,home_base,mon;tue;wed;thu;fri;sat;sun,Daily: 10:00am - 6:00pm,,,listed,
+co-ploc-000779,co-p-000779,co-loc-000969,home_base,,,,,listed,
+co-ploc-000780,co-p-000780,co-loc-000970,home_base,,,,,listed,
+co-ploc-000781,co-p-000781,co-loc-000971,home_base,,Honor-system farm store (hours not stated); glamping tents May-Oct,,,listed,
+co-ploc-000782,co-p-000782,co-loc-000972,home_base,,Mon: call first please to arrange a time.; Tue: ditto; Wed: ditto; Thu: ditto; Fri: ditto; Sat: ditto; Sun: ditto,,,listed,
+co-ploc-000783,co-p-000783,co-loc-000973,home_base,,,,,listed,
+co-ploc-000784,co-p-000784,co-loc-000974,home_base,,,,,listed,
+co-ploc-000785,co-p-000785,co-loc-000975,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10am-4pm; Tue: 10am-4pm; Wed: 10am-4pm; Thu: 10am-4pm; Fri: 10am-4pm; Sat: 10am-4pm; Sun: 10am-4pm,,,listed,
+co-ploc-000786,co-p-000786,co-loc-000976,home_base,,,,,listed,
+co-ploc-000787,co-p-000787,co-loc-000977,home_base,,,,,listed,
+co-ploc-000788,co-p-000788,co-loc-000978,home_base,,,,,listed,
+co-ploc-000789,co-p-000789,co-loc-000979,home_base,,,,,listed,
+co-ploc-000790,co-p-000790,co-loc-000980,home_base,,,,,listed,
+co-ploc-000791,co-p-000791,co-loc-000982,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 5:30pm; Tue: 9am - 5:30pm; Wed: 9am - 5:30pm; Thu: 9am - 5:30pm; Fri: 9am - 5:30pm; Sat: 9am - 5:30pm; Sun: 9am - 4pm,,,listed,
+co-ploc-000792,co-p-000792,co-loc-000986,home_base,,U-pick orchard tours in summer season,,,listed,
+co-ploc-000793,co-p-000793,co-loc-000988,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 5pm; Sun: 9am - 5pm,,,listed,
+co-ploc-000794,co-p-000794,co-loc-000990,home_base,,,,,listed,
+co-ploc-000795,co-p-000795,co-loc-000991,home_base,,,,,listed,
+co-ploc-000796,co-p-000796,co-loc-000992,home_base,,,,,listed,
+co-ploc-000797,co-p-000797,co-loc-000993,home_base,,,,,listed,
+co-ploc-000798,co-p-000798,co-loc-000995,home_base,,Online orders; ships Mon/Tue,,,listed,
+co-ploc-000799,co-p-000799,co-loc-000996,home_base,mon;tue;wed;thu;fri,Mon: 8 am - 5 pm; Tue: 8 am - 5 pm; Wed: 8 am - 5 pm; Thu: 8 am - 5 pm; Fri: 8 am - 5 pm,,,listed,
+co-ploc-000800,co-p-000800,co-loc-000997,home_base,,,,,listed,
+co-ploc-000801,co-p-000801,co-loc-000998,home_base,,,,,listed,
+co-ploc-000802,co-p-000802,co-loc-000999,home_base,,,,,listed,
+co-ploc-000803,co-p-000803,co-loc-001000,home_base,,,,,listed,
+co-ploc-000804,co-p-000804,co-loc-001001,home_base,,,,,listed,
+co-ploc-000805,co-p-000805,co-loc-001002,home_base,mon;tue;wed;thu;fri,Mon: 10am - 3pm; Tue: 10am - 3pm; Wed: 10am - 3pm; Thu: 10am - 3pm; Fri: 10am - 12pm,,,listed,
+co-ploc-000806,co-p-000806,co-loc-001003,home_base,,,,,listed,
+co-ploc-000807,co-p-000807,co-loc-001004,home_base,,,,,listed,
+co-ploc-000808,co-p-000808,co-loc-001005,home_base,,,,,listed,
+co-ploc-000809,co-p-000809,co-loc-001006,home_base,mon;tue;wed;thu;fri,Mon: 10am - 4pm; Tue: 10am - 4pm; Wed: 10am - 4pm; Thu: 10am - 4pm; Fri: 10am - 4pm,,,listed,
+co-ploc-000810,co-p-000810,co-loc-001007,home_base,,,,,listed,
+co-ploc-000811,co-p-000811,co-loc-001008,home_base,,,,,listed,
+co-ploc-000812,co-p-000812,co-loc-001009,home_base,,,,,listed,
+co-ploc-000813,co-p-000813,co-loc-001010,home_base,,,,,listed,
+co-ploc-000814,co-p-000814,co-loc-001011,home_base,,,,,listed,
+co-ploc-000815,co-p-000815,co-loc-001012,home_base,,,,,listed,
+co-ploc-000816,co-p-000816,co-loc-001013,home_base,,,,,listed,
+co-ploc-000817,co-p-000817,co-loc-001014,home_base,,,,,listed,
+co-ploc-000818,co-p-000818,co-loc-001015,home_base,,,,,listed,
+co-ploc-000819,co-p-000819,co-loc-001016,home_base,,,,,listed,
+co-ploc-000019,co-p-000019,co-loc-000022,home_base,,By appointment,,,listed,
+co-ploc-000820,co-p-000820,co-loc-001017,home_base,,,,,listed,
+co-ploc-000821,co-p-000821,co-loc-001018,home_base,,,,,listed,
+co-ploc-000822,co-p-000822,co-loc-001019,home_base,,,,,listed,
+co-ploc-000823,co-p-000823,co-loc-001020,home_base,,,,,listed,
+co-ploc-000824,co-p-000824,co-loc-001021,home_base,,,,,listed,
+co-ploc-000825,co-p-000825,co-loc-001022,home_base,,,,,listed,
+co-ploc-000826,co-p-000826,co-loc-001023,home_base,,,,,listed,
+co-ploc-000827,co-p-000827,co-loc-001024,home_base,,,,,listed,
+co-ploc-000828,co-p-000828,co-loc-001025,home_base,,,,,listed,
+co-ploc-000829,co-p-000829,co-loc-001027,home_base,,,,,listed,
+co-ploc-000830,co-p-000830,co-loc-001028,home_base,,,,,listed,
+co-ploc-000831,co-p-000831,co-loc-001029,home_base,,,,,listed,
+co-ploc-000832,co-p-000832,co-loc-001030,home_base,,,,,listed,
+co-ploc-000833,co-p-000833,co-loc-001031,home_base,,,,,listed,
+co-ploc-000834,co-p-000834,co-loc-001032,home_base,,,,,listed,
+co-ploc-000020,co-p-000020,co-loc-000023,home_base,,By appointment,,,listed,
+co-ploc-000835,co-p-000835,co-loc-001033,home_base,,,,,listed,
+co-ploc-000836,co-p-000836,co-loc-001034,home_base,,,,,listed,
+co-ploc-000837,co-p-000837,co-loc-001035,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 am-6 pm; Tue: 9 am-6 pm; Wed: 9 am-6 pm; Thu: 9 am-6 pm; Fri: 9 am-6 pm; Sat: 9 am-6 pm; Sun: 10 am - 4pm,,,listed,
+co-ploc-000838,co-p-000838,co-loc-001036,home_base,,,,,listed,
+co-ploc-000839,co-p-000839,co-loc-001037,home_base,,,,,listed,
+co-ploc-000840,co-p-000840,co-loc-001038,home_base,,,,,listed,
+co-ploc-000841,co-p-000841,co-loc-001039,home_base,,,,,listed,
+co-ploc-000842,co-p-000842,co-loc-001040,home_base,,,,,listed,
+co-ploc-000843,co-p-000843,co-loc-001041,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8 a.m.- 5 p.m.; Tue: 8 a.m.- 5 p.m.; Wed: 8 a.m.- 5 p.m.; Thu: 8 a.m.- 5 p.m.; Fri: 8 a.m.- 5 p.m.; Sat: 8 a.m.- 5 p.m.; Sun: 8 a.m.- 5 p.m.,,,listed,
+co-ploc-000844,co-p-000844,co-loc-001047,home_base,,,,,listed,
+co-ploc-000845,co-p-000845,co-loc-001048,home_base,,,,,listed,
+co-ploc-000846,co-p-000846,co-loc-001049,home_base,,,,,listed,
+co-ploc-000847,co-p-000847,co-loc-001050,home_base,,,,,listed,
+co-ploc-000848,co-p-000848,co-loc-001052,home_base,,,,,listed,
+co-ploc-000849,co-p-000849,co-loc-001053,home_base,,,,,listed,
+co-ploc-000850,co-p-000850,co-loc-001054,home_base,,,,,listed,
+co-ploc-000851,co-p-000851,co-loc-001055,home_base,sat,Sat: 9:00am - Noon,,,listed,
+co-ploc-000852,co-p-000852,co-loc-001056,home_base,,,,,listed,
+co-ploc-000853,co-p-000853,co-loc-001057,home_base,,,,,listed,
+co-ploc-000854,co-p-000854,co-loc-001058,home_base,,,,,listed,
+co-ploc-000855,co-p-000855,co-loc-001059,home_base,,,,,listed,
+co-ploc-000856,co-p-000856,co-loc-001060,home_base,,,,,listed,
+co-ploc-000857,co-p-000857,co-loc-001061,home_base,,,,,listed,
+co-ploc-000858,co-p-000858,co-loc-001062,home_base,,,,,listed,
+co-ploc-000859,co-p-000859,co-loc-001064,home_base,,,,,listed,
+co-ploc-000860,co-p-000860,co-loc-001065,home_base,,,,,listed,
+co-ploc-000861,co-p-000861,co-loc-001066,home_base,,,,,listed,
+co-ploc-000862,co-p-000862,co-loc-001067,home_base,,,,,listed,
+co-ploc-000863,co-p-000863,co-loc-001069,home_base,,,,,listed,
+co-ploc-000864,co-p-000864,co-loc-001070,home_base,mon;tue;wed;thu;fri;sat,Mon: 8:00 - 6:00; Tue: 8:00 - 6:00; Wed: 8:00 - 6:00; Thu: 8:00 - 6:00; Fri: 8:00 - 6:00; Sat: 8:00 - 6:00,,,listed,
+co-ploc-000865,co-p-000865,co-loc-001071,home_base,,,,,listed,
+co-ploc-000866,co-p-000866,co-loc-001072,home_base,,,,,listed,
+co-ploc-000867,co-p-000867,co-loc-001073,home_base,mon;tue;wed;thu;fri,Mon: 7 am - 4 pm; Tue: 7 am - 4 pm; Wed: 7 am - 4 pm; Thu: 7 am - 4 pm; Fri: 7 am - 4 pm,,,listed,
+co-ploc-000868,co-p-000868,co-loc-001074,home_base,,,,,listed,
+co-ploc-000869,co-p-000869,co-loc-001075,home_base,,,,,listed,
+co-ploc-000870,co-p-000870,co-loc-001076,home_base,,,,,listed,
+co-ploc-000871,co-p-000871,co-loc-001077,home_base,,,,,listed,
+co-ploc-000872,co-p-000872,co-loc-001078,home_base,,,,,listed,
+co-ploc-000873,co-p-000873,co-loc-001079,home_base,,,,,listed,
+co-ploc-000874,co-p-000874,co-loc-001080,home_base,,,,,listed,
+co-ploc-000875,co-p-000875,co-loc-001082,home_base,,,,,listed,
+co-ploc-000876,co-p-000876,co-loc-001083,home_base,,,,,listed,
+co-ploc-000877,co-p-000877,co-loc-001084,home_base,,,,,listed,
+co-ploc-000878,co-p-000878,co-loc-001085,home_base,,,,,listed,
+co-ploc-000879,co-p-000879,co-loc-001086,home_base,,,,,listed,
+co-ploc-000880,co-p-000880,co-loc-001087,home_base,,,,,listed,
+co-ploc-000881,co-p-000881,co-loc-001088,home_base,,,,,listed,
+co-ploc-000882,co-p-000882,co-loc-001089,home_base,,,,,listed,
+co-ploc-000883,co-p-000883,co-loc-001090,home_base,,,,,listed,
+co-ploc-000884,co-p-000884,co-loc-001091,home_base,,,,,listed,
+co-ploc-000885,co-p-000885,co-loc-001092,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 11am - 7pm; Tue: 11am - 7pm; Wed: 11am - 7pm; Thu: 11am - 7pm; Fri: 11am - 8pm; Sat: 11am - 5pm; Sun: 10am - 5pm,,,listed,
+co-ploc-000886,co-p-000886,co-loc-001097,home_base,wed,Wed: 3pm-7pm,,,listed,
+co-ploc-000887,co-p-000887,co-loc-001098,home_base,,,,,listed,
+co-ploc-000888,co-p-000888,co-loc-001099,home_base,,,,,listed,
+co-ploc-000889,co-p-000889,co-loc-001100,home_base,,,,,listed,
+co-ploc-000890,co-p-000890,co-loc-001101,home_base,,,,,listed,
+co-ploc-000891,co-p-000891,co-loc-001102,home_base,,,,,listed,
+co-ploc-000892,co-p-000892,co-loc-001103,home_base,,,,,listed,
+co-ploc-000893,co-p-000893,co-loc-001104,home_base,,,,,listed,
+co-ploc-000894,co-p-000894,co-loc-001105,home_base,,,,,listed,
+co-ploc-000895,co-p-000895,co-loc-001106,home_base,,,,,listed,
+co-ploc-000896,co-p-000896,co-loc-001107,home_base,,,,,listed,
+co-ploc-000897,co-p-000897,co-loc-001108,home_base,,,,,listed,
+co-ploc-000898,co-p-000898,co-loc-001109,home_base,mon;tue;wed;thu;fri;sat;sun,"9:00 AM–7:00 PM daily, in season",,,listed,
+co-ploc-000899,co-p-000899,co-loc-001110,home_base,mon;tue;wed;thu;fri;sat;sun,"9:00 AM–7:00 PM daily, in season",,,listed,
+co-ploc-000900,co-p-000900,co-loc-001111,home_base,mon;tue;wed;thu;fri;sat;sun,"9:00 AM–7:00 PM daily, in season",,,listed,
+co-ploc-000901,co-p-000901,co-loc-001112,home_base,,,,,listed,
+co-ploc-000902,co-p-000902,co-loc-001113,home_base,wed;thu;fri;sat,"Oct–May: Wed–Fri 9am–4pm; Jun–Sep: Wed–Fri 9am–4pm, Sat 9am–1pm",,,listed,
+co-ploc-000903,co-p-000903,co-loc-001114,home_base,,,,,listed,
+co-ploc-000904,co-p-000904,co-loc-001115,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9:30am - 7pm; Tue: 9:30am - 7pm; Wed: 9:30am - 7pm; Thu: 9:30am - 7pm; Fri: 9:30am - 7pm; Sat: 9:30am - 7pm; Sun: 9:30am - 7pm,,,listed,
+co-ploc-000905,co-p-000905,co-loc-001116,home_base,mon;tue;wed;thu;fri,Mon: 10am - 4pm; Tue: 10am - 4pm; Wed: 10am - 4pm; Thu: 10am - 4pm; Fri: 10am - 4pm,,,listed,
+co-ploc-000906,co-p-000906,co-loc-001117,home_base,,,,,listed,
+co-ploc-000907,co-p-000907,co-loc-001118,home_base,,,,,listed,
+co-ploc-000908,co-p-000908,co-loc-001119,home_base,,,,,listed,
+co-ploc-000909,co-p-000909,co-loc-001120,home_base,,,,,listed,
+co-ploc-000910,co-p-000910,co-loc-001121,home_base,,,,,listed,
+co-ploc-000021,co-p-000021,co-loc-000024,home_base,mon;tue;wed;thu;fri;sat,Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; Wed: 8 am - 6 pm; Thu: 8 am - 6 pm; Fri: 8 am - 6 pm; Sat: 8 am - 6 pm,,,listed,
+co-ploc-000911,co-p-000911,co-loc-001122,home_base,,,,,listed,
+co-ploc-000912,co-p-000912,co-loc-001124,home_base,,,,,listed,
+co-ploc-000913,co-p-000913,co-loc-001125,home_base,,,,,listed,
+co-ploc-000914,co-p-000914,co-loc-001126,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 a.m. - 6 p.m.; Tue: 9 a.m. - 6 p.m.; Wed: 9 a.m. - 6 p.m.; Thu: 9 a.m. - 6 p.m.; Fri: 9 a.m. - 6 p.m.; Sat: 9 a.m. - 6 p.m.; Sun: 9 a.m. - 6 p.m.,,,listed,
+co-ploc-000915,co-p-000915,co-loc-001127,home_base,,,,,listed,
+co-ploc-000916,co-p-000916,co-loc-001128,home_base,,,,,listed,
+co-ploc-000917,co-p-000917,co-loc-001129,home_base,,,,,listed,
+co-ploc-000918,co-p-000918,co-loc-001130,home_base,,,,,listed,
+co-ploc-000919,co-p-000919,co-loc-001131,home_base,,,,,listed,
+co-ploc-000920,co-p-000920,co-loc-001132,home_base,,,,,listed,
+co-ploc-000921,co-p-000921,co-loc-001133,home_base,,,,,listed,
+co-ploc-000922,co-p-000922,co-loc-001134,home_base,,,,,listed,
+co-ploc-000923,co-p-000923,co-loc-001135,home_base,,,,,listed,
+co-ploc-000924,co-p-000924,co-loc-001136,home_base,,,,,listed,
+co-ploc-000925,co-p-000925,co-loc-001137,home_base,,,,,listed,
+co-ploc-000926,co-p-000926,co-loc-001139,home_base,,,,,listed,
+co-ploc-000927,co-p-000927,co-loc-001140,home_base,,,,,listed,
+co-ploc-000928,co-p-000928,co-loc-001141,home_base,,,,,listed,
+co-ploc-000929,co-p-000929,co-loc-001142,home_base,,,,,listed,
+co-ploc-000930,co-p-000930,co-loc-001143,home_base,,,,,listed,
+co-ploc-000931,co-p-000931,co-loc-001144,home_base,,,,,listed,
+co-ploc-000932,co-p-000932,co-loc-001145,home_base,,,,,listed,
+co-ploc-000933,co-p-000933,co-loc-001146,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8am-7pm; Tue: 8am-7pm; Wed: 8am-7pm; Thu: 8am-7pm; Fri: 8am-7pm; Sat: 8am-7pm; Sun: 8am-7pm,,,listed,
+co-ploc-000934,co-p-000934,co-loc-001147,home_base,,,,,listed,
+co-ploc-000935,co-p-000935,co-loc-001148,home_base,,,,,listed,
+co-ploc-000936,co-p-000936,co-loc-001149,home_base,,,,,listed,
+co-ploc-000937,co-p-000937,co-loc-001150,home_base,,,,,listed,
+co-ploc-000938,co-p-000938,co-loc-001151,home_base,mon;tue;wed;thu;fri;sat,Mon: 9:30am - 6pm; Tue: 9:30am - 6pm; Wed: 9:30am - 6pm; Thu: 9:30am - 6pm; Fri: 9:30am - 6pm; Sat: 9am - 5pm,,,listed,
+co-ploc-000939,co-p-000939,co-loc-001152,home_base,sat;sun,Sat: 8am -4pm; Sun: 8am - 4pm,,,listed,
+co-ploc-000940,co-p-000940,co-loc-001154,home_base,,,,,listed,
+co-ploc-000941,co-p-000941,co-loc-001155,home_base,,Fri: CALL; Sat: Call,,,listed,
+co-ploc-000942,co-p-000942,co-loc-001156,home_base,,,,,listed,
+co-ploc-000943,co-p-000943,co-loc-001157,home_base,,,,,listed,
+co-ploc-000944,co-p-000944,co-loc-001158,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 11am - 6pm; Tue: 11am - 6pm; Wed: 11am - 6pm; Thu: 11am - 6pm; Fri: 11am - 7pm; Sat: 11am - 7pm; Sun: 11am - 6pm,,,listed,
+co-ploc-000023,co-p-000023,co-loc-000027,home_base,,,,,listed,
+co-ploc-000945,co-p-000945,co-loc-001159,home_base,,,,,listed,
+co-ploc-000946,co-p-000946,co-loc-001160,home_base,,,,,listed,
+co-ploc-000947,co-p-000947,co-loc-001161,home_base,,,,,listed,
+co-ploc-000948,co-p-000948,co-loc-001162,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 a.m. - 6 p.m.; Tue: 9 a.m. - 6 p.m.; Wed: 9 a.m. - 6 p.m.; Thu: 9 a.m. - 6 p.m.; Fri: 9 a.m. - 6 p.m.; Sat: 9 a.m. - 6 p.m.; Sun: 10 a.m. - 5 p.m.,,,listed,
+co-ploc-000949,co-p-000949,co-loc-001163,home_base,,,,,listed,
+co-ploc-000950,co-p-000950,co-loc-001164,home_base,,,,,listed,
+co-ploc-000951,co-p-000951,co-loc-001166,home_base,,,,,listed,
+co-ploc-000952,co-p-000952,co-loc-001168,home_base,,,,,listed,
+co-ploc-000953,co-p-000953,co-loc-001169,home_base,,,,,listed,
+co-ploc-000954,co-p-000954,co-loc-001171,home_base,,,,,listed,
+co-ploc-000955,co-p-000955,co-loc-001172,home_base,,,,,listed,
+co-ploc-000956,co-p-000956,co-loc-001174,home_base,,,,,listed,
+co-ploc-000957,co-p-000957,co-loc-001175,home_base,,,,,listed,
+co-ploc-000958,co-p-000958,co-loc-001176,home_base,,,,,listed,
+co-ploc-000959,co-p-000959,co-loc-001177,home_base,,,,,listed,
+co-ploc-000960,co-p-000960,co-loc-001178,home_base,,,,,listed,
+co-ploc-000961,co-p-000961,co-loc-001179,home_base,,,,,listed,
+co-ploc-000962,co-p-000962,co-loc-001180,home_base,,,,,listed,
+co-ploc-000963,co-p-000963,co-loc-001181,home_base,,,,,listed,
+co-ploc-000964,co-p-000964,co-loc-001182,home_base,,,,,listed,
+co-ploc-000965,co-p-000965,co-loc-001184,home_base,,,,,listed,
+co-ploc-000966,co-p-000966,co-loc-001185,home_base,thu;fri;sat;sun,Thu: 10am - 4pm; Fri: 10am - 4pm; Sat: 10am - 4pm; Sun: 10am - 3pm,,,listed,
+co-ploc-000967,co-p-000967,co-loc-001186,home_base,,,,,listed,
+co-ploc-000968,co-p-000968,co-loc-001187,home_base,,,,,listed,
+co-ploc-000969,co-p-000969,co-loc-001189,home_base,,,,,listed,
+co-ploc-000970,co-p-000970,co-loc-001190,home_base,,,,,listed,
+co-ploc-000971,co-p-000971,co-loc-001191,home_base,,,,,listed,
+co-ploc-000972,co-p-000972,co-loc-001192,home_base,,,,,listed,
+co-ploc-000973,co-p-000973,co-loc-001193,home_base,,,,,listed,
+co-ploc-000974,co-p-000974,co-loc-001195,home_base,,,,,listed,
+co-ploc-000975,co-p-000975,co-loc-001196,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 6pm; Sat: 9am - 6pm; Sun: 10am - 6pm,,,listed,
+co-ploc-000976,co-p-000976,co-loc-001197,home_base,,,,,listed,
+co-ploc-000977,co-p-000977,co-loc-001198,home_base,,,,,listed,
+co-ploc-000978,co-p-000978,co-loc-001199,home_base,,,,,listed,
+co-ploc-000979,co-p-000979,co-loc-001200,home_base,,,,,listed,
+co-ploc-000980,co-p-000980,co-loc-001205,home_base,,,,,listed,
+co-ploc-000981,co-p-000981,co-loc-001207,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 9 am -5pm; Tue: 9am - 5pm; Wed: 9am-5pm; Thu: 9am-5pm; Fri: 9am-5pm; Sat: 9am-5pm; Sun: 10am-4pm,,,listed,
+co-ploc-000982,co-p-000982,co-loc-001208,home_base,,,,,listed,
+co-ploc-000983,co-p-000983,co-loc-001209,home_base,,,,,listed,
+co-ploc-000984,co-p-000984,co-loc-001210,home_base,,,,,listed,
+co-ploc-000985,co-p-000985,co-loc-001211,home_base,,,,,listed,
+co-ploc-000986,co-p-000986,co-loc-001212,home_base,,,,,listed,
+co-ploc-000987,co-p-000987,co-loc-001213,home_base,,,,,listed,
+co-ploc-000988,co-p-000988,co-loc-001214,home_base,,Events typically May–October,,,listed,
+co-ploc-000989,co-p-000989,co-loc-001215,home_base,,,,,listed,
+co-ploc-000990,co-p-000990,co-loc-001216,home_base,,,,,listed,
+co-ploc-000991,co-p-000991,co-loc-001217,home_base,,,,,listed,
+co-ploc-000992,co-p-000992,co-loc-001218,home_base,mon;tue;wed;thu;fri,Mon: 9-3; Tue: 9-3; Wed: 9-3; Thu: 9-3; Fri: 9-1,,,listed,
+co-ploc-000993,co-p-000993,co-loc-001219,home_base,,,,,listed,
+co-ploc-000994,co-p-000994,co-loc-001220,home_base,,,,,listed,
+co-ploc-000995,co-p-000995,co-loc-001221,home_base,,,,,listed,
+co-ploc-000996,co-p-000996,co-loc-001222,home_base,tue;wed;thu;fri;sat;sun,Tue: 4pm - 9pm; Wed: 4pm - 9pm; Thu: 4pm - 9pm; Fri: 4pm - 9pm; Sat: 12pm - 9pm; Sun: 12pm - 8pm,,,listed,
+co-ploc-000997,co-p-000997,co-loc-001223,home_base,,,,,listed,
+co-ploc-000998,co-p-000998,co-loc-001224,home_base,,,,,listed,
+co-ploc-000999,co-p-000999,co-loc-001226,home_base,,,,,listed,
+co-ploc-001000,co-p-001000,co-loc-001228,home_base,,,,,listed,
+co-ploc-001001,co-p-001001,co-loc-001231,home_base,,,,,listed,
+co-ploc-001002,co-p-001002,co-loc-001232,home_base,tue;wed;thu;fri;sat,Tue: 10 a.m. - 6 p.m.; Wed: 10 a.m. - 6 p.m.; Thu: 10 a.m. - 6 p.m.; Fri: 10 a.m. - 6 p.m.; Sat: 10 a.m. - 4 p.m.,,,listed,
+co-ploc-001003,co-p-001003,co-loc-001233,home_base,,,,,listed,
+co-ploc-001004,co-p-001004,co-loc-001234,home_base,,,,,listed,
+co-ploc-001005,co-p-001005,co-loc-001235,home_base,,,,,listed,
+co-ploc-001006,co-p-001006,co-loc-001236,home_base,,,,,listed,
+co-ploc-001007,co-p-001007,co-loc-001237,home_base,,,,,listed,
+co-ploc-001008,co-p-001008,co-loc-001238,home_base,,,,,listed,
+co-ploc-001009,co-p-001009,co-loc-001239,home_base,,,,,listed,
+co-ploc-001010,co-p-001010,co-loc-001240,home_base,,,,,listed,
+co-ploc-001011,co-p-001011,co-loc-001241,home_base,,,,,listed,
+co-ploc-001012,co-p-001012,co-loc-001243,home_base,,,,,listed,
+co-ploc-001013,co-p-001013,co-loc-001244,home_base,wed;thu;fri,"Wed: 12:30-4:30; Thu: 9-4:30; Fri: 9-4:30; Sat: Depends on Season, 11-3 in April & 9-1:00 from May-October; Sun: Depends on Season, 11-3 in April & 9-1:00 from May-OctoberSeason",,,listed,
+co-ploc-001014,co-p-001014,co-loc-001245,home_base,,,,,listed,
+co-ploc-001015,co-p-001015,co-loc-001247,home_base,,,,,listed,
+co-ploc-001016,co-p-001016,co-loc-001248,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 8:30am - 6pm; Tue: 8:30am - 6pm; Wed: 8:30am - 6pm; Thu: 8:30am - 6pm; Fri: 8:30am - 6pm; Sat: 8:30am - 6pm; Sun: 8:30am - 6pm,,,listed,
+co-ploc-001017,co-p-001017,co-loc-001249,home_base,,,,,listed,
+co-ploc-001018,co-p-001018,co-loc-001250,home_base,,,,,listed,
+co-ploc-001019,co-p-001019,co-loc-001251,home_base,,,,,listed,
+co-ploc-001020,co-p-001020,co-loc-001252,home_base,,,,,listed,
+co-ploc-001021,co-p-001021,co-loc-001253,home_base,,,,,listed,
+co-ploc-001022,co-p-001022,co-loc-001254,home_base,,,,,listed,
+co-ploc-001023,co-p-001023,co-loc-001255,home_base,wed;sat,Wed: 11am - 4pm; Sat: 11am - 4pm,,,listed,
+co-ploc-001024,co-p-001024,co-loc-001256,home_base,,,,,listed,
+co-ploc-001025,co-p-001025,co-loc-001257,home_base,,,,,listed,
+co-ploc-001026,co-p-001026,co-loc-001258,home_base,,,,,listed,
+co-ploc-001027,co-p-001027,co-loc-001259,home_base,,,,,listed,
+co-ploc-001028,co-p-001028,co-loc-001260,home_base,,,,,listed,
+co-ploc-001029,co-p-001029,co-loc-001261,home_base,,,,,listed,
+co-ploc-001030,co-p-001030,co-loc-001262,home_base,,,,,listed,
+co-ploc-001031,co-p-001031,co-loc-001263,home_base,,,,,listed,
+co-ploc-000024,co-p-000024,co-loc-000028,home_base,,,,,listed,
+co-ploc-001032,co-p-001032,co-loc-001264,home_base,,,,,listed,
+co-ploc-001033,co-p-001033,co-loc-001265,home_base,,,,,listed,
+co-ploc-001034,co-p-001034,co-loc-001266,home_base,,,,,listed,
+co-ploc-001035,co-p-001035,co-loc-001267,home_base,,,,,listed,
+co-ploc-001036,co-p-001036,co-loc-001268,home_base,,,,,listed,
+co-ploc-001037,co-p-001037,co-loc-001269,home_base,sat;sun,Sat: 8AM - 1PM (City Park Farmers Market); Sun: 9AM - 1PM (Lafayette Farmers Market),,,listed,
+co-ploc-001038,co-p-001038,co-loc-001270,home_base,,,,,listed,
+co-ploc-001039,co-p-001039,co-loc-001272,home_base,,,,,listed,
+co-ploc-001040,co-p-001040,co-loc-001273,home_base,,,,,listed,
+co-ploc-001041,co-p-001041,co-loc-001274,home_base,mon;tue;wed;thu;fri;sat;sun,Sun: 10am - 6pm; Mon: 10am - 6pm; Tue: 10am - 6pm; Wed: 10am - 7pm; Thu: 10am - 7pm; Fri: 10am - 7pm; Sat: 10am - 7pm,,,listed,
+co-ploc-001042,co-p-001042,co-loc-001275,home_base,,,,,listed,
+co-ploc-001043,co-p-001043,co-loc-001276,home_base,,,,,listed,
+co-ploc-001044,co-p-001044,co-loc-001277,home_base,,,,,listed,
+co-ploc-001045,co-p-001045,co-loc-001279,home_base,,,,,listed,
+co-ploc-001046,co-p-001046,co-loc-001280,home_base,,,,,listed,
+co-ploc-001047,co-p-001047,co-loc-001281,home_base,,,,,listed,
+co-ploc-001048,co-p-001048,co-loc-001282,home_base,,,,,listed,
+co-ploc-001049,co-p-001049,co-loc-001283,home_base,,,,,listed,
+co-ploc-001050,co-p-001050,co-loc-001286,home_base,,,,,listed,
+co-ploc-001051,co-p-001051,co-loc-001287,home_base,sat,Sat: 12pm - 7pm,,,listed,
+co-ploc-001052,co-p-001052,co-loc-001288,home_base,,,,,listed,
+co-ploc-001053,co-p-001053,co-loc-001289,home_base,,,,,listed,
+co-ploc-001054,co-p-001054,co-loc-001290,home_base,,,,,listed,
+co-ploc-001055,co-p-001055,co-loc-001293,home_base,,,,,listed,
+co-ploc-001056,co-p-001056,co-loc-001294,home_base,,,,,listed,
+co-ploc-001057,co-p-001057,co-loc-001295,home_base,,,,,listed,
+co-ploc-001058,co-p-001058,co-loc-001297,home_base,mon;tue;wed;thu;fri;sat,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 9am - 4pm,,,listed,
+co-ploc-001059,co-p-001059,co-loc-001299,home_base,,,,,listed,
+co-ploc-001060,co-p-001060,co-loc-001300,home_base,,,,,listed,
+co-ploc-001061,co-p-001061,co-loc-001301,home_base,,,,,listed,
+co-ploc-001062,co-p-001062,co-loc-001302,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10 am - 6 pm; Tue: 10 am - 6 pm; Wed: 10 am - 6 pm; Thu: 10 am - 6 pm; Fri: 10 am - 6 pm; Sat: 10 am - 6 pm; Sun: 10 am - 6 pm,,,listed,
+co-ploc-001063,co-p-001063,co-loc-001303,home_base,,,,,listed,
+co-ploc-001064,co-p-001064,co-loc-001304,home_base,,,,,listed,
+co-ploc-001065,co-p-001065,co-loc-001305,home_base,,,,,listed,
+co-ploc-001066,co-p-001066,co-loc-001306,home_base,,,,,listed,
+co-ploc-001067,co-p-001067,co-loc-001307,home_base,,,,,listed,
+co-ploc-001068,co-p-001068,co-loc-001308,home_base,,,,,listed,
+co-ploc-001069,co-p-001069,co-loc-001309,home_base,,,,,listed,
+co-ploc-001070,co-p-001070,co-loc-001310,home_base,,,,,listed,
+co-ploc-001071,co-p-001071,co-loc-001311,home_base,mon;tue;wed;thu;fri;sat,Mon: 7am - 2:30pm; Tue: 7am - 2:30pm; Wed: 7am - 2:30pm; Thu: 7am - 2:30pm; Fri: 7am - 2:30pm; Sat: 7am - 2:30pm,,,listed,
+co-ploc-001072,co-p-001072,co-loc-001312,home_base,,,,,listed,
+co-ploc-001073,co-p-001073,co-loc-001313,home_base,,,,,listed,
+co-ploc-001074,co-p-001074,co-loc-001314,home_base,,,,,listed,
+co-ploc-001075,co-p-001075,co-loc-001315,home_base,,,,,listed,
+co-ploc-001076,co-p-001076,co-loc-001316,home_base,,,,,listed,
+co-ploc-001077,co-p-001077,co-loc-001317,home_base,mon;tue;wed;thu;fri,Mon: 8am to 6pm; Tue: 8am to 6pm; Wed: 8am to 6pm; Thu: 8am to 6pm; Fri: 8am to 6pm,,,listed,
+co-ploc-001078,co-p-001078,co-loc-001318,home_base,,,,,listed,
+co-ploc-001079,co-p-001079,co-loc-001320,home_base,,,,,listed,
+co-ploc-001080,co-p-001080,co-loc-001322,home_base,,,,,listed,
+co-ploc-001081,co-p-001081,co-loc-001323,home_base,,,,,listed,
+co-ploc-001082,co-p-001082,co-loc-001324,home_base,,,,,listed,
+co-ploc-001083,co-p-001083,co-loc-001326,home_base,,,,,listed,
+co-ploc-001084,co-p-001084,co-loc-001327,home_base,mon;thu;fri;sat;sun,Mon: Noon - 6pm; Thu: Noon - 6pm; Fri: Noon - 6pm; Sat: Noon -6 pm; Sun: Noon - 6pm,,,listed,
+co-ploc-001085,co-p-001085,co-loc-001328,home_base,,,,,listed,
+co-ploc-001086,co-p-001086,co-loc-001329,home_base,,,,,listed,
+co-ploc-001087,co-p-001087,co-loc-001330,home_base,,,,,listed,
+co-ploc-001088,co-p-001088,co-loc-001331,home_base,,,,,listed,
+co-ploc-001089,co-p-001089,co-loc-001332,home_base,,,,,listed,
+co-ploc-001090,co-p-001090,co-loc-001333,home_base,,,,,listed,
+co-ploc-001091,co-p-001091,co-loc-001334,home_base,,,,,listed,
+co-ploc-001092,co-p-001092,co-loc-001335,home_base,,,,,listed,
+co-ploc-001093,co-p-001093,co-loc-001336,home_base,thu;fri;sat;sun,Thu: 12 p.m. - 7 p.m.; Fri: 12 p.m. - 7 p.m.; Sat: 12 p.m. - 7 p.m.; Sun: 12 p.m. - 7 p.m.,,,listed,
+co-ploc-001094,co-p-001094,co-loc-001338,home_base,,,,,listed,
+co-ploc-000026,co-p-000026,co-loc-000032,home_base,,"Pick-your-own flowers by appointment, June–October",,,listed,
+co-ploc-001096,co-p-001096,co-loc-001340,home_base,,,,,listed,
+co-ploc-001097,co-p-001097,co-loc-001341,home_base,,,,,listed,
+co-ploc-001098,co-p-001098,co-loc-001342,home_base,mon;tue;wed;thu;fri;sat,Mon: 10  am - 6 pm; Tue: 10  am - 6 pm; Wed: 10  am - 6 pm; Thu: 10  am - 6 pm; Fri: 10  am - 6 pm; Sat: 10  am - 6 pm; Sun: 12 noon - 5 pm,,,listed,
+co-ploc-001099,co-p-001099,co-loc-001343,home_base,,,,,listed,
+co-ploc-001100,co-p-001100,co-loc-001345,home_base,,,,,listed,
+co-ploc-001101,co-p-001101,co-loc-001346,home_base,,,,,listed,
+co-ploc-001102,co-p-001102,co-loc-001347,home_base,tue;sat;sun,"2025 markets: Paonia Tue 5-7:30pm, Gunnison Sat 9:30am-1pm, Crested Butte Sun 9am-2pm; 2026 schedule not confirmed",,,listed,
+co-ploc-001103,co-p-001103,co-loc-001348,home_base,,Tours by appointment,,,listed,
+co-ploc-001104,co-p-001104,co-loc-001349,home_base,,,,,listed,
+co-ploc-001105,co-p-001105,co-loc-001350,home_base,,,,,listed,
+co-ploc-001106,co-p-001106,co-loc-001351,home_base,,Open to public only during events/workshops,,,listed,
+co-ploc-001107,co-p-001107,co-loc-001352,home_base,,,,,listed,
+co-ploc-001108,co-p-001108,co-loc-001353,home_base,,Mon: Check our website / FB page for events and hours; Tue: Check our website / FB page for events and hours; Wed: Check our website / FB page for events and hours; Thu: Check our website / FB page for events and hours; Fri: Check our website / FB page for events and hours; Sat: Check our website / FB page for events and hours; Sun: Check our website / FB page for events and hours,,,listed,
+co-ploc-001109,co-p-001109,co-loc-001354,home_base,,,,,listed,
+co-ploc-001110,co-p-001110,co-loc-001355,home_base,fri;sat;sun,Fri: 4pm - 7pm; Sat: 12pm - 7pm; Sun: 12pm - 6pm,,,listed,
+co-ploc-001111,co-p-001111,co-loc-001356,home_base,,,,,listed,
+co-ploc-001112,co-p-001112,co-loc-001357,home_base,,,,,listed,
+co-ploc-001113,co-p-001113,co-loc-001358,home_base,,,,,listed,
+co-ploc-001114,co-p-001114,co-loc-001360,home_base,,,,,listed,
+co-ploc-001115,co-p-001115,co-loc-001361,home_base,,,,,listed,
+co-ploc-001116,co-p-001116,co-loc-001362,home_base,,,,,listed,
+co-ploc-001117,co-p-001117,co-loc-001363,home_base,,,,,listed,
+co-ploc-001118,co-p-001118,co-loc-001364,home_base,,,,,listed,
+co-ploc-001119,co-p-001119,co-loc-001365,home_base,,,,,listed,
+co-ploc-001120,co-p-001120,co-loc-001366,home_base,,,,,listed,
+co-ploc-001121,co-p-001121,co-loc-001367,home_base,,,,,listed,
+co-ploc-001122,co-p-001122,co-loc-001369,home_base,sat;sun,Sat: 10am - 6pm; Sun: 10am - 6pm,,,listed,
+co-ploc-001123,co-p-001123,co-loc-001370,home_base,,,,,listed,
+co-ploc-001124,co-p-001124,co-loc-001371,home_base,,,,,listed,
+co-ploc-000027,co-p-000027,co-loc-000033,home_base,,,,,listed,
+co-ploc-001125,co-p-001125,co-loc-001372,home_base,,,,,listed,
+co-ploc-001126,co-p-001126,co-loc-001373,home_base,,,,,listed,
+co-ploc-001127,co-p-001127,co-loc-001374,home_base,,,,,listed,
+co-ploc-001128,co-p-001128,co-loc-001375,home_base,,,,,listed,
+co-ploc-001129,co-p-001129,co-loc-001376,home_base,,,,,listed,
+co-ploc-001130,co-p-001130,co-loc-001377,home_base,,Cafe lunches Tue and Fri,,,listed,
+co-ploc-001131,co-p-001131,co-loc-001378,home_base,,,,,listed,
+co-ploc-001132,co-p-001132,co-loc-001379,home_base,,,,,listed,
+co-ploc-001133,co-p-001133,co-loc-001380,home_base,,,,,listed,
+co-ploc-001134,co-p-001134,co-loc-001381,home_base,,,,,listed,
+co-ploc-001135,co-p-001135,co-loc-001382,home_base,,,,,listed,
+co-ploc-001136,co-p-001136,co-loc-001383,home_base,fri,Fri: 9am-1pm,,,listed,
+co-ploc-001137,co-p-001137,co-loc-001384,home_base,,,,,listed,
+co-ploc-001138,co-p-001138,co-loc-001386,home_base,,,,,listed,
+co-ploc-001139,co-p-001139,co-loc-001387,home_base,,,,,listed,
+co-ploc-001140,co-p-001140,co-loc-001388,home_base,,,,,listed,
+co-ploc-001141,co-p-001141,co-loc-001389,home_base,,,,,listed,
+co-ploc-001142,co-p-001142,co-loc-001390,home_base,,,,,listed,
+co-ploc-001143,co-p-001143,co-loc-001391,home_base,,,,,listed,
+co-ploc-001144,co-p-001144,co-loc-001392,home_base,,,,,listed,
+co-ploc-001145,co-p-001145,co-loc-001393,home_base,,,,,listed,
+co-ploc-001146,co-p-001146,co-loc-001394,home_base,,,,,listed,
+co-ploc-001147,co-p-001147,co-loc-001396,home_base,,,,,listed,
+co-ploc-001148,co-p-001148,co-loc-001397,home_base,,,,,listed,
+co-ploc-001149,co-p-001149,co-loc-001398,home_base,,,,,listed,
+co-ploc-001150,co-p-001150,co-loc-001399,home_base,,,,,listed,
+co-ploc-001151,co-p-001151,co-loc-001400,home_base,,,,,listed,
+co-ploc-001152,co-p-001152,co-loc-001402,home_base,,,,,listed,
+co-ploc-001153,co-p-001153,co-loc-001403,home_base,,,,,listed,
+co-ploc-001154,co-p-001154,co-loc-001404,home_base,,,,,listed,
+co-ploc-000028,co-p-000028,co-loc-000034,home_base,,,,,listed,
+co-ploc-001155,co-p-001155,co-loc-001405,home_base,,,,,listed,
+co-ploc-001156,co-p-001156,co-loc-001406,home_base,,,,,listed,
+co-ploc-001157,co-p-001157,co-loc-001407,home_base,,,,,listed,
+co-ploc-001158,co-p-001158,co-loc-001408,home_base,,,,,listed,
+co-ploc-001159,co-p-001159,co-loc-001409,home_base,,,,,listed,
+co-ploc-001160,co-p-001160,co-loc-001410,home_base,,,,,listed,
+co-ploc-001161,co-p-001161,co-loc-001412,home_base,,,,,listed,
+co-ploc-001162,co-p-001162,co-loc-001413,home_base,,,,,listed,
+co-ploc-001163,co-p-001163,co-loc-001414,home_base,,,,,listed,
+co-ploc-001164,co-p-001164,co-loc-001415,home_base,,,,,listed,
+co-ploc-001165,co-p-001165,co-loc-001416,home_base,,,,,listed,
+co-ploc-001166,co-p-001166,co-loc-001417,home_base,,,,,listed,
+co-ploc-001167,co-p-001167,co-loc-001418,home_base,,,,,listed,
+co-ploc-001168,co-p-001168,co-loc-001419,home_base,,,,,listed,
+co-ploc-001169,co-p-001169,co-loc-001420,home_base,,,,,listed,
+co-ploc-001170,co-p-001170,co-loc-001421,home_base,,,,,listed,
+co-ploc-001171,co-p-001171,co-loc-001422,home_base,,,,,listed,
+co-ploc-001172,co-p-001172,co-loc-001424,home_base,,,,,listed,
+co-ploc-001173,co-p-001173,co-loc-001426,home_base,,,,,listed,
+co-ploc-001174,co-p-001174,co-loc-001427,home_base,,,,,listed,
+co-ploc-001175,co-p-001175,co-loc-001428,home_base,,,,,listed,
+co-ploc-001176,co-p-001176,co-loc-001431,home_base,,,,,listed,
+co-ploc-001177,co-p-001177,co-loc-001432,home_base,,,,,listed,
+co-ploc-001178,co-p-001178,co-loc-001434,home_base,,"Site shows 9am-5pm, open for the season; tours typically Tue/Wed when closed to public; confirm",,,listed,
+co-ploc-001179,co-p-001179,co-loc-001435,home_base,,,,,listed,
+co-ploc-001180,co-p-001180,co-loc-001436,home_base,,,,,listed,
+co-ploc-001181,co-p-001181,co-loc-001437,home_base,,,,,listed,
+co-ploc-001182,co-p-001182,co-loc-001438,home_base,,,,,listed,
+co-ploc-001183,co-p-001183,co-loc-001439,home_base,,,,,listed,
+co-ploc-001184,co-p-001184,co-loc-001440,home_base,,,,,listed,
+co-ploc-001185,co-p-001185,co-loc-001441,home_base,,,,,listed,
+co-ploc-001186,co-p-001186,co-loc-001442,home_base,,,,,listed,
+co-ploc-001187,co-p-001187,co-loc-001443,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10 a.m. - 5:45 p.m.; Tue: 10 a.m. - 5:45 p.m.; Wed: 10 a.m. - 5:45 p.m.; Thu: 10 a.m. - 5:45 p.m.; Fri: 10 a.m. - 5:45 p.m.; Sat: 10 a.m. - 5:45 p.m.; Sun: 10 a.m. - 5:45 p.m.,,,listed,
+co-ploc-001234,co-p-001231,co-loc-001497,home_base,tue;wed;thu;fri;sat;sun,Tue-Sun: 8:00am - 6:00pm,,,listed,
+co-ploc-001188,co-p-001188,co-loc-001444,home_base,,,,,listed,
+co-ploc-001189,co-p-001189,co-loc-001445,home_base,fri;sat;sun,Fri: 4pm - 9pm; Sat: 12pm - 9pm; Sun: 12pm - 7pm,,,listed,
+co-ploc-001190,co-p-001190,co-loc-001446,home_base,,,,,listed,
+co-ploc-001191,co-p-001191,co-loc-001447,home_base,,,,,listed,
+co-ploc-001192,co-p-001192,co-loc-001448,home_base,,,,,listed,
+co-ploc-001193,co-p-001193,co-loc-001449,home_base,,,,,listed,
+co-ploc-001194,co-p-001194,co-loc-001450,home_base,,,,,listed,
+co-ploc-001195,co-p-001195,co-loc-001451,home_base,,,,,listed,
+co-ploc-001196,co-p-001196,co-loc-001452,home_base,,,,,listed,
+co-ploc-001197,co-p-001197,co-loc-001453,home_base,,,,,listed,
+co-ploc-001198,co-p-001198,co-loc-001454,home_base,,,,,listed,
+co-ploc-001199,co-p-001199,co-loc-001455,home_base,,,,,listed,
+co-ploc-001200,co-p-001200,co-loc-001456,home_base,,,,,listed,
+co-ploc-001201,co-p-001201,co-loc-001457,home_base,,,,,listed,
+co-ploc-001202,co-p-001202,co-loc-001458,home_base,,By appointment,,,listed,
+co-ploc-001203,co-p-001203,co-loc-001459,home_base,,,,,listed,
+co-ploc-001204,co-p-001204,co-loc-001460,home_base,,,,,listed,
+co-ploc-001205,co-p-001205,co-loc-001462,home_base,,,,,listed,
+co-ploc-001206,co-p-001206,co-loc-001464,home_base,,,,,listed,
+co-ploc-001207,co-p-001207,co-loc-001465,home_base,,,,,listed,
+co-ploc-001208,co-p-001208,co-loc-001466,home_base,,,,,listed,
+co-ploc-001209,co-p-001209,co-loc-001467,home_base,,,,,listed,
+co-ploc-001210,co-p-001210,co-loc-001468,home_base,,Mon: By appointment; Sat: By appointment,,,listed,
+co-ploc-001211,co-p-001211,co-loc-001469,home_base,,,,,listed,
+co-ploc-001213,co-p-001213,co-loc-001473,home_base,,,,,listed,
+co-ploc-001214,co-p-001214,co-loc-001474,home_base,,,,,listed,
+co-ploc-001215,co-p-001215,co-loc-001475,home_base,,,,,listed,
+co-ploc-001216,co-p-001216,co-loc-001477,home_base,,,,,listed,
+co-ploc-001217,co-p-001217,co-loc-001478,home_base,,,,,listed,
+co-ploc-001218,co-p-001218,co-loc-001480,home_base,,,,,listed,
+co-ploc-001219,co-p-001219,co-loc-001482,home_base,,,,,listed,
+co-ploc-001220,co-p-001220,co-loc-001483,home_base,,,,,listed,
+co-ploc-001221,co-p-001221,co-loc-001484,home_base,,,,,listed,
+co-ploc-001222,co-p-001222,co-loc-001485,home_base,,,,,listed,
+co-ploc-001223,co-p-001223,co-loc-001486,home_base,,,,,listed,
+co-ploc-001224,co-p-001224,co-loc-001487,home_base,,,,,listed,
+co-ploc-001225,co-p-001225,co-loc-001488,home_base,,,,,listed,
+co-ploc-001226,co-p-001226,co-loc-001489,home_base,,,,,listed,
+co-ploc-001227,co-p-001227,co-loc-001490,home_base,,,,,listed,
+co-ploc-001228,co-p-001228,co-loc-001491,home_base,,,,,listed,
+co-ploc-001229,co-p-001229,co-loc-001492,home_base,,,,,listed,
+co-ploc-001235,co-p-000002,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19,,,listed,
+co-ploc-001237,co-p-000012,co-loc-000026,pickup,Sat,"Saturdays, June - October",,,listed,https://www.headwaterfarmco.com/purchase
+co-ploc-001238,co-p-000012,co-loc-000005,pickup,Sat,"Saturdays, June - October",,,listed,https://www.headwaterfarmco.com/purchase
+co-ploc-001236,co-p-000021,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19,,,listed,

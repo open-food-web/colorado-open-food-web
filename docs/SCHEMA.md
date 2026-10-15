@@ -141,6 +141,7 @@ A producer can have several locations (a farm plus three pickup points). Each is
 | `role` | enum | controlled | `home_base`, `farm_stand`, `csa_dropoff`, `pickup`. Markets are in `market_vendors` and stores or restaurants in `outlet_suppliers`, not here |
 | `days`, `hours_text` | list/string | fact | When they are at that location |
 | `season_start`, `season_end` | date/month | fact | Months or dates |
+| `confirm_url` | url | fact | The business's own page that says it sells at this place (a farmers market page on its site, say). Blank when it has none |
 | `status` | enum | fact | `confirmed`, `listed`, `unverified` |
 
 ## Table: `markets`

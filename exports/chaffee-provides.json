@@ -14,7 +14,7 @@
    "markets": 2,
    "access_points": 2,
    "market_links": 22,
-   "pins": 21
+   "pins": 23
   }
  },
  "vocab": {
@@ -136,7 +136,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -223,7 +224,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -326,7 +328,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-001493",
@@ -347,7 +350,8 @@
      "hours_text": "Tue: 4:45pm - 5:00pm",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": "https://store.badgercreekranch.com/delivery_location/salida-safeway-parking-lot"
     },
     {
      "id": "co-loc-001494",
@@ -368,7 +372,8 @@
      "hours_text": "Tue: 6:00pm - 6:15pm",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": "https://store.badgercreekranch.com/delivery_location/valley-fellowship-church"
     },
     {
      "id": "co-loc-001495",
@@ -387,7 +392,8 @@
      "hours_text": "Pickup by arrangement",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -408,7 +414,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -588,7 +595,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -667,7 +675,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -760,7 +769,8 @@
      "hours_text": "Not open to the public. Order online.",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -846,7 +856,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -967,7 +978,8 @@
      "hours_text": "No storefront; online support Mon-Thu 8-3 MT",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1037,7 +1049,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1128,7 +1141,8 @@
      "hours_text": "Tue: 4:00pm - 6:00pm",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1217,7 +1231,52 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
+    },
+    {
+     "id": "co-loc-000026",
+     "role": "pickup",
+     "name": "Salida Farmers Market",
+     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.533052,
+     "lon": -105.993304,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Saturdays, June - October",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": "https://www.headwaterfarmco.com/purchase"
+    },
+    {
+     "id": "co-loc-000005",
+     "role": "pickup",
+     "name": "Buena Vista Farmers' Market",
+     "address": "Turner Farm & Apple Orchard, 829 W Main St",
+     "city": "Buena Vista",
+     "zip": "81211",
+     "county_fips": "08015",
+     "lat": 38.839044,
+     "lon": -106.141712,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Saturdays, June - October",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": "https://www.headwaterfarmco.com/purchase"
     }
    ],
    "sources": [
@@ -1303,7 +1362,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1393,7 +1453,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1477,7 +1538,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1642,7 +1704,8 @@
      "hours_text": "U-pick orchard tours in summer season",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1720,7 +1783,8 @@
      "hours_text": "By appointment",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1812,7 +1876,8 @@
      "hours_text": "By appointment",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -1964,7 +2029,8 @@
      "hours_text": "Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; Wed: 8 am - 6 pm; Thu: 8 am - 6 pm; Fri: 8 am - 6 pm; Sat: 8 am - 6 pm",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     },
     {
      "id": "co-loc-000026",
@@ -1985,7 +2051,8 @@
      "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2079,7 +2146,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2181,7 +2249,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2256,7 +2325,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2373,7 +2443,8 @@
      "hours_text": "Pick-your-own flowers by appointment, June–October",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2448,7 +2519,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2545,7 +2617,8 @@
      "hours_text": null,
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [
@@ -2679,7 +2752,8 @@
      "hours_text": "Tue-Sun: 8:00am - 6:00pm",
      "season_start": null,
      "season_end": null,
-     "status": "listed"
+     "status": "listed",
+     "confirm_url": null
     }
    ],
    "sources": [

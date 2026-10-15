@@ -277,7 +277,7 @@ def main():
             out_locs.append(public_location(l["location_id"], l["role"], pin, basis, {
                 "days": lst(l["days"]), "hours_text": l["hours_text"] or None,
                 "season_start": l["season_start"] or None, "season_end": l["season_end"] or None,
-                "status": l["status"]}, use_market_name=True))
+                "status": l["status"], "confirm_url": l.get("confirm_url") or None}, use_market_name=True))
         rec = {
             "id": pid, "slug": p["slug"], "name": p["name"], "kind": p["kind"],
             "categories": lst(p["categories"]), "products": lst(p["products"]),

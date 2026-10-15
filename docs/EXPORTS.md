@@ -83,6 +83,7 @@ python scripts/export_app.py --tables data/colorado --out exports/chaffee-provid
 | `pin` | **Draw a pin here.** The app does not decide this |
 | `pin_basis` | `confirmed` or `unconfirmed` (see below). An app may style unconfirmed pins, e.g. "call first" |
 | `days`, `hours_text`, `season_start`, `season_end`, `status` | When the producer is at this location (producer locations only) |
+| `confirm_url` | The business's own page that confirms it sells here, so an app can link to it (producer locations only; null when none) |
 
 ### `markets[]` and `access_points[]`
 
