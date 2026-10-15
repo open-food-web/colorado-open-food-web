@@ -110,13 +110,14 @@ def main():
                     help="also include records that this source lists, even outside the county")
     ap.add_argument("--unconfirmed-home-pins", choices=["show", "hide"], default="show",
                     help="draw a home-base pin for producers whose sales channels are not confirmed yet")
-    ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}, \"exclude_categories\": {category: reason}, \"hide_pin_slugs\": {slug: reason}} for the app's own scope choices")
+    ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}, \"include_categories\": {category: reason}, \"exclude_categories\": {category: reason}, \"hide_pin_slugs\": {slug: reason}} for the app's own scope choices")
     ap.add_argument("--generated", default=dt.date.today().isoformat())
     a = ap.parse_args()
     T = lambda n: read(os.path.join(a.tables, n + ".csv"))
     cfg = json.load(open(a.config, encoding="utf-8")) if a.config else {}
     exclude_slugs = set((cfg.get("exclude_slugs") or {}).keys())
     hide_pin_slugs = set((cfg.get("hide_pin_slugs") or {}).keys())
+    include_categories = set((cfg.get("include_categories") or {}).keys())
     exclude_categories = set((cfg.get("exclude_categories") or {}).keys())
 
     locations = {r["location_id"]: r for r in T("locations")}
@@ -227,6 +228,9 @@ def main():
             continue
         # excluded only when every category the record has is one the app leaves out
         if exclude_categories and lst(p["categories"]) and set(lst(p["categories"])) <= exclude_categories:
+            continue
+        # an allowlist, when the app has one: keep a record only if some category of it is on the list
+        if include_categories and not (set(lst(p["categories"])) & include_categories):
             continue
         if p["status"] in HIDDEN_STATUS or not in_area("producer", pid, [l["location_id"] for l in locs]):
             continue
