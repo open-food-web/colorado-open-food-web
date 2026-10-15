@@ -84,14 +84,14 @@
    "product_groups": [
     "mushrooms"
    ],
-   "dropin_visits": null,
+   "dropin_visits": false,
    "dropin_hours": null,
-   "farm_pickup": null,
+   "farm_pickup": false,
    "visit_basis": {
-    "dropin": null,
-    "pickup": null
+    "dropin": "set",
+    "pickup": "set"
    },
-   "visit_note": null,
+   "visit_note": "No on-farm store. Find them at the Salida Farmers Market (Saturdays)",
    "months_open": [],
    "hours_text": null,
    "hours": [],
