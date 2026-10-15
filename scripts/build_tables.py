@@ -242,6 +242,10 @@ def main():
     fips = FIPS[a.county] if a.county else ""
     emails = cp.Table()
 
+    sells_here = set()      # businesses based elsewhere that sell here (a place in inputs/locations.csv)
+    if a.locations and os.path.exists(a.locations):
+        with open(a.locations, encoding="utf-8-sig", newline="") as f:
+            sells_here = {re.sub(r"[^a-z0-9]+", "", (lr["name"] or "").lower()) for lr in csv.DictReader(f)}
     with open(a.raw, encoding="utf-8-sig", newline="") as f:
         raw = [r for r in csv.DictReader(f)
                if not a.county or (r["County"] or "").strip().lower() == a.county.lower()
@@ -329,6 +333,8 @@ def main():
         hs = parsed.status
         dys = ";".join(sorted({sl.day for sl in parsed.slots}, key=hrs.DAY_ORDER.index))
         typ = classify(cats_main)
+        if typ == "deferred" and (kinds_by_name.get(nkey(name)) or {}).get("kind"):
+            typ = "producer"      # a person has said what it is (a mushroom grower, a honey maker...)
         prov = json.loads(r["Provenance"]) if r["Provenance"] else {}
         srcs = [SOURCE_NAME.get(s, s) for s in (r["Source"] or "").split("+") if s]
         if typ == "deferred":

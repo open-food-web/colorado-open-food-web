@@ -1,4 +1,5 @@
 name,kind,product_groups,dropin_visits,dropin_hours,farm_pickup,visit_note,note,source,date
+Alpine Valley Mushrooms,farm,,,,,,Salida Farmers Market vendor,foodshedalliance.com vendor list,2026-10-16
 Arrowpoint Cattle Company,ranch,beef-meat;poultry-eggs,,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
 Badger Creek Ranch,ranch,beef-meat;poultry-eggs,no,,yes,"Pick up an order at the Coaldale ranch annex by arrangement, or at the Tuesday pickup points, or ask about delivery",Chosen by the provider on the old Chaffee Provides form (type: Ranch) | visit: Guidestone/Chrissy,chaffee_provides,2021-2026
 Banyan Breads,maker,baked-goods,yes,"Mornings, until sold out",,"Shop at 110 E 1st St, Salida, open mornings until sold out","Bakery | visit: business's own website, Oct 2026",guidestone_review,2026-10-16
@@ -8,12 +9,17 @@ Colorado Mountain Lavender,farm,flowers,no,,no,The farm and shop are closed to t
 Copper Kettle Apothecary,ranch,garlic-herbs,,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
 Cottonwood Spirit Ranch,ranch,veggies;beef-meat;poultry-eggs,,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
 Everett Ranch Beef,ranch,,,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
+Feedsack Flowers,farm,,,,,,Salida Farmers Market vendor,foodshedalliance.com vendor list,2026-10-16
+Foxtown Farm,maker,,,,,,Salida Farmers Market vendor,foodshedalliance.com vendor list,2026-10-16
+Greg's Gourmet Greens,farm,,,,,,Salida Farmers Market vendor,foodshedalliance.com vendor list,2026-10-16
 Guidestone Colorado Community and School Farm,,,yes,Tue: 4:00pm - 6:00pm (closing for the season soon),,Farm stand every Tuesday 4-6 (season ending soon),"added for visit flag | visit: business's own website, Oct 2026",research,2026-10-16
 Headwater Farms,farm,veggies;flowers,,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
 Hutchinson Ranch,ranch,beef-meat,,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
 Lewis Lazy L Ranch,ranch,beef-meat,,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
+Miss Penn's Mountain Seeds,farm,,,,,,Salida Farmers Market vendor,foodshedalliance.com vendor list,2026-10-16
 Mountain Goat Lodge,farm,dairy,,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
 Mushroom Love Co,farm,veggies,,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
+Palisade Peach Shack,orchard,,,,,,Salida Farmers Market vendor,foodshedalliance.com vendor list,2026-10-16
 Phytology Flowers Farm,farm,veggies;flowers;garlic-herbs,,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
 Poncha Creek Gardens,farm,,,,yes,On-farm pickup by arrangement (also delivers in Salida and Poncha Springs),Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
 Rocky Mountain Garlic,farm,veggies;garlic-herbs,yes,,,"Self-serve honor-system farm stand, Mon-Sat 8-6, May-Nov","Chosen by the provider on the old Chaffee Provides form (type: Farm) | visit: business's own website, Oct 2026",chaffee_provides,2021-2026
@@ -24,4 +30,5 @@ The Triangle Oasis,,,yes,,,"On-farm store; pick-your-own flowers by appointment,
 Trout Creek Farm,farm,veggies;flowers,,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026
 Valley Roots Food Hub,ranch,veggies;beef-meat;poultry-eggs;dairy;garlic-herbs,,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026
 Vino Salida Wine Cellars,winery,drinks,,,,,Winery,guidestone_review,2026-10-16
+Westcliffe Honey Company,farm,,,,,,Salida Farmers Market vendor,foodshedalliance.com vendor list,2026-10-16
 Who Knows? Farms,farm,,yes,,,"Farm stand, Tue-Sun","Permaculture farm and farm stand | visit: business's own website, Oct 2026",guidestone_review,2026-10-16

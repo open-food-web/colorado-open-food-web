@@ -263,6 +263,9 @@ def main():
                 basis = "confirmed" if sells_at_farm else "unconfirmed"
             else:
                 pin, basis = True, "confirmed"
+            if l["role"] == "home_base" and not (locations.get(l["location_id"]) or {}).get("address") \
+                    and (locations.get(l["location_id"]) or {}).get("hide_address") != "true":
+                pin = False       # no street address and not a hidden one: nothing to point to
             out_locs.append(public_location(l["location_id"], l["role"], pin, basis, {
                 "days": lst(l["days"]), "hours_text": l["hours_text"] or None,
                 "season_start": l["season_start"] or None, "season_end": l["season_end"] or None,
