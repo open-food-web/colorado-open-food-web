@@ -281,3 +281,10 @@
 2026-10-15,City of Loveland Farmers Market,Loveland,,,,merged,merged_into,City of Loveland's market = the Fairgrounds Park market (Colorado Proud member review 2026-10-04),Loveland Farmers Market at Fairgrounds Park,Loveland,,review,,dedup_decisions.csv
 2026-10-15,Williams Family Markets,Parker,,,,merged,merged_into,Williams Family Markets is the company that runs the Parker Farmers Market (same Sunday hours; parkerchronicle.net) (review 2026-10-04),Parker Farmers Market,Parker,,review,,dedup_decisions.csv
 2026-10-15,Southern Colorado Farmers Market and Craft Fair,Pueblo,,,,merged,merged_into,Earlier name of the Pueblo Farmers Market (both at Mineral Palace Park; pueblofarmersmarket.org) (review 2026-10-04),Pueblo Farmers Market,Pueblo,,review,,dedup_decisions.csv
+2026-10-15,4 Corners Worm Farm,Durango,,,,not_listed,not_food_system,"First pass (not_qualified): Sells worms, castings and compost kits; not a food, plant or flower producer.",,,,research,,prospect_status.csv
+2026-10-15,Denver Love Goats,Denver,,,,not_listed,not_food_system,Not a food producer.,,,,research,,prospect_status.csv
+2026-10-15,Elk Fields,Golden,,,,not_listed,did_not_qualify,Non-food craft; match to Elk Field Home Goods inferred,,,,research,,prospect_status.csv
+2026-10-15,Fields of Glory Organic Farm,Paonia,,,,not_listed,not_food_system,"Real, active, organic-certified farm but sells CBD, not food; human should decide if it belongs. Located in Paonia, not Glenwood Springs.",,,,research,,prospect_status.csv
+2026-10-15,Offbeat Family Farm,"Aztec, NM",,,,not_listed,not_colorado,Real active farm but located in NM; sells at Colorado market. Human decides on out-of-state vendors.,,,,research,,prospect_status.csv
+2026-10-15,Uncompahgre Valley Alliance (aka Western Colorado Alliance),Montrose,,,,not_listed,not_food_system,"Advocacy nonprofit, not a producer.",,,,research,,prospect_status.csv
+2026-10-15,Vital Beauty Gardening,Durango,,,,not_listed,not_food_system,"Landscaping service, not a food producer.",,,,research,,prospect_status.csv

@@ -68,8 +68,8 @@ Every field has a class that decides whether it appears in the public release.
 | `categories` | list | controlled | From the category vocabulary below. Primary first |
 | `products` | list | controlled | From the product vocabulary |
 | `seasonal_months` | list | fact | Months operating, 1–12. Empty if unknown |
-| `hours_structured` | list | fact | `{days, open, close, season_start, season_end}` entries. See `hours_text` |
-| `hours_text` | string | fact | Fallback when hours cannot be structured. Verbatim and short |
+| `hours_text` | string | fact | The hours as the business states them. Verbatim and short; always kept |
+| `hours_status` | enum | controlled | How much of `hours_text` became rows in `hours`: `parsed`, `partial`, `appointment`, `text_only`, `none` |
 | `website` | url | fact | The business's own site |
 | `phone` | string | fact | Public business phone |
 | `email` | string | fact/personal | Only if the business publishes it for customers |
@@ -152,7 +152,7 @@ a market that moves between sites is one record per site, linked by `network_nam
 | `operator` | string | fact | Organization that runs it |
 | `network_name` | string | fact | For markets run as a series at several sites |
 | `days`, `season_start`, `season_end` | list/date | fact | When it runs |
-| `hours_structured`, `hours_text` | list/string | fact | As for producers |
+| `hours_text`, `hours_status` | string/enum | fact | As for producers. Structured rows are in `hours` |
 | `website`, `phone`, `email`, `facebook`, `instagram` | string | fact/personal | Public contact for the market |
 | `accepts_snap`, `double_up`, `accepts_wic`, `ada_accessible` | bool/null | fact | Null = unknown |
 | `status` | enum | fact | `active`, `seasonal_closed`, `closed`, `unverified` |
@@ -164,10 +164,31 @@ a market that moves between sites is one record per site, linked by `network_nam
 |---|---|---|---|
 | `market_id` | string | fact | FK |
 | `producer_id` | string | fact | FK |
-| `year` | integer | fact | Vendor lists change yearly. Required |
+| `year` | integer | fact | Vendor lists change yearly. Empty when the link is stated by the producer with no year |
+| `season_label` | string | fact | When the list covers a season such as "2025-26 winter" |
 | `days`, `season_start`, `season_end` | list/date | fact | If narrower than the market's own |
 | `status` | enum | fact | `confirmed`, `listed`, `unverified` |
 | `list_source` | string | fact | Which vendor list said so |
+| `source_url` | url | fact | The vendor list page |
+| `match_basis` | enum | controlled | `exact_name`, `normalized_name`, `stated_text`. Only unambiguous matches are kept |
+
+Links are made from vendor lists (names only, no descriptions) and from a market a producer's own listing names.
+Each link also gives the producer a `service_areas` row (basis `market`) for the market's county.
+
+## Table: `hours`
+
+One row per record, day and time block. A day with two blocks has two rows.
+
+| Field | Type | Class | Notes |
+|---|---|---|---|
+| `record_type` | enum | controlled | `producer`, `market`, `access_point` |
+| `record_id` | string | fact | FK to that table |
+| `day` | enum | controlled | `mon` … `sun` |
+| `opens`, `closes` | time | fact | 24-hour `HH:MM` (`00:00`–`24:00` for always open) |
+| `closes_next_day` | bool | fact | Closing time is after midnight |
+| `inferred` | bool | fact | am/pm was not written and was read from the usual shape of hours. Treat with care |
+
+Only what the text states becomes a row. `hours_text` stays alongside it.
 
 ## Table: `outlets`
 

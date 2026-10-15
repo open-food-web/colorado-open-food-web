@@ -90,6 +90,27 @@ def main():
     plocs = {}
     for r in T("producer_locations"):
         plocs.setdefault(r["producer_id"], []).append(r)
+    # structured hours, and which markets each producer sells at (both are additive fields; see EXPORTS.md)
+    hours_by = {}
+    for r in T("hours"):
+        h = {"day": r["day"], "opens": r["opens"], "closes": r["closes"]}
+        if r["closes_next_day"] == "true":
+            h["closes_next_day"] = True
+        if r["inferred"] == "true":
+            h["inferred"] = True
+        hours_by.setdefault((r["record_type"], r["record_id"]), []).append(h)
+    market_rows = {m["market_id"]: m for m in T("markets")}
+    sells, vendors_of = {}, {}
+    for r in T("market_vendors"):
+        m = market_rows.get(r["market_id"])
+        if not m:
+            continue
+        sells.setdefault(r["producer_id"], {})[(r["market_id"], r["year"])] = {
+            "market_id": r["market_id"], "name": m["name"],
+            "county_fips": (locations.get(m["location_id"]) or {}).get("county_fips") or None,
+            "year": int(r["year"]) if r["year"] else None, "season_label": r["season_label"] or None,
+            "basis": r["match_basis"], "source_url": r["source_url"] or None}
+        vendors_of.setdefault(r["market_id"], set()).add(r["producer_id"])
 
     def sources(rtype, rid):
         out, seen = [], set()
@@ -157,9 +178,12 @@ def main():
             "id": pid, "slug": p["slug"], "name": p["name"], "kind": p["kind"],
             "categories": lst(p["categories"]), "products": lst(p["products"]),
             "months_open": [MONTHS[int(m) - 1] for m in lst(p["seasonal_months"])],
-            "hours_text": p["hours_text"] or None, "website": p["website"] or None, "phone": p["phone"] or None,
+            "hours_text": p["hours_text"] or None, "hours": hours_by.get(("producer", pid), []),
+            "hours_status": p.get("hours_status") or "none",
+            "website": p["website"] or None, "phone": p["phone"] or None,
             "email": p["email"] or None, "facebook": p["facebook"] or None, "instagram": p["instagram"] or None,
-            "sales_channels": channels, "certified_organic": boolish(p["certified_organic"]),
+            "sales_channels": channels,
+            "sells_at": sorted(sells.get(pid, {}).values(), key=lambda x: (x["name"].lower(), x["year"] or 0)), "certified_organic": boolish(p["certified_organic"]),
             "accepts_snap": boolish(p["accepts_snap"]), "ada_accessible": boolish(p["ada_accessible"]),
             "call_first": boolish(p["call_first"]), "status": p["status"], "claimed": boolish(p["claimed"]) is True,
             "last_verified": p["last_verified"] or None, "locations": out_locs,
@@ -169,13 +193,17 @@ def main():
                 rec[f] = None if not isinstance(rec[f], list) else []
         producers.append(rec)
 
+    included = {p["id"] for p in producers}
     markets = []
     for m in T("markets"):
         if m["status"] in HIDDEN_STATUS or not in_area("market", m["market_id"], [m["location_id"]]):
             continue
         markets.append({
             "id": m["market_id"], "slug": m["slug"], "name": m["name"], "operator": m["operator"] or None,
-            "days": lst(m["days"]), "hours_text": m["hours_text"] or None, "website": m["website"] or None,
+            "days": lst(m["days"]), "hours_text": m["hours_text"] or None, "hours": hours_by.get(("market", m["market_id"]), []),
+            "hours_status": m.get("hours_status") or "none",
+            "vendors": sorted(vendors_of.get(m["market_id"], set()) & included),
+            "website": m["website"] or None,
             "phone": m["phone"] or None, "email": m["email"] or None, "facebook": m["facebook"] or None,
             "instagram": m["instagram"] or None, "accepts_snap": boolish(m["accepts_snap"]),
             "ada_accessible": boolish(m["ada_accessible"]), "status": m["status"],
@@ -189,7 +217,9 @@ def main():
             continue
         access.append({
             "id": r["access_point_id"], "slug": r["slug"], "name": r["name"], "kind": r["kind"],
-            "hours_text": r["hours_text"] or None, "website": r["website"] or None, "phone": r["phone"] or None,
+            "hours_text": r["hours_text"] or None, "hours": hours_by.get(("access_point", r["access_point_id"]), []),
+            "hours_status": r.get("hours_status") or "none",
+            "website": r["website"] or None, "phone": r["phone"] or None,
             "email": r["email"] or None, "facebook": r["facebook"] or None, "instagram": r["instagram"] or None,
             "status": r["status"], "last_verified": r["last_verified"] or None,
             "location": public_location(r["location_id"], "access_site", True, "confirmed"),
@@ -202,6 +232,7 @@ def main():
             "county_fips": a.county_fips,
             "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
             "counts": {"producers": len(producers), "markets": len(markets), "access_points": len(access),
+                       "market_links": sum(len(p["sells_at"]) for p in producers),
                        "pins": sum(l["pin"] for p in producers for l in p["locations"])
                        + len(markets) + len(access)}},
         "vocab": {"sales_channels": CHANNEL_LABELS, "months": MONTHS},

@@ -10,10 +10,11 @@
   ],
   "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
   "counts": {
-   "producers": 31,
+   "producers": 36,
    "markets": 2,
    "access_points": 2,
-   "pins": 32
+   "market_links": 26,
+   "pins": 37
   }
  },
  "vocab": {
@@ -45,6 +46,74 @@
  },
  "producers": [
   {
+   "id": "co-p-000056",
+   "slug": "alpine-valley-mushrooms",
+   "name": "Alpine Valley Mushrooms",
+   "kind": "farm",
+   "categories": [
+    "On-Farm / Ranch Sales"
+   ],
+   "products": [
+    "Mushrooms"
+   ],
+   "months_open": [],
+   "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
+   "website": null,
+   "phone": "(719) 207-3827",
+   "email": null,
+   "facebook": "https://www.facebook.com/alpinevalleymushrooms?mibextid=LQQJ4d",
+   "instagram": "https://instagram.com/alpinevalleymushrooms?igshid=NTc4MTIwNjQ2YQ==",
+   "sales_channels": [],
+   "sells_at": [
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
+   ],
+   "certified_organic": true,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000070",
+     "role": "home_base",
+     "name": null,
+     "address": "319 San Juan Avenue",
+     "city": "Saguache",
+     "zip": "81149",
+     "county_fips": "08109",
+     "lat": 38.08641,
+     "lon": -106.136452,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "colorado_proud",
+     "label": "Colorado Proud",
+     "url": null
+    }
+   ]
+  },
+  {
    "id": "co-p-000001",
    "slug": "arrowpoint-cattle-company",
    "name": "Arrowpoint Cattle Company",
@@ -64,12 +133,25 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "https://www.arrowpointcattle.com",
    "phone": "(303) 618-3135",
    "email": "arrowpointcc@aol.com",
    "facebook": "https://www.facebook.com/arrowpointcattle/?ref=bookmarks",
    "instagram": "https://www.instagram.com/arrowpointprovisions/",
    "sales_channels": [],
+   "sells_at": [
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "normalized_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
+   ],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -125,12 +207,25 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "https://www.badgercreekranch.com/",
    "phone": "(719) 837-2962",
    "email": "info@badgercreekranch.com",
    "facebook": "https://facebook.com/badgercreekranch",
    "instagram": "https://instagram.com/badgercreekranch",
    "sales_channels": [],
+   "sells_at": [
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
+   ],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -190,12 +285,25 @@
    ],
    "months_open": [],
    "hours_text": "Shop open mornings; preorder pickup Thu, Fri, Sun",
+   "hours": [],
+   "hours_status": "text_only",
    "website": "https://banyanbreads.com/",
    "phone": null,
    "email": null,
    "facebook": null,
    "instagram": "https://www.instagram.com/banyan_breads/",
    "sales_channels": [],
+   "sells_at": [
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
+   ],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -233,6 +341,110 @@
    ]
   },
   {
+   "id": "co-p-000172",
+   "slug": "bristlecone-bakeshop",
+   "name": "Bristlecone Bakeshop",
+   "kind": "maker",
+   "categories": [
+    "Bakery"
+   ],
+   "products": [
+    "Sourdough loaves",
+    "sweet and savory pastries",
+    "breakfast sandwiches",
+    "cookies",
+    "cold sandwiches"
+   ],
+   "months_open": [],
+   "hours_text": "Wed–Sat 7am–2pm; Sun 7am–12pm",
+   "hours": [
+    {
+     "day": "wed",
+     "opens": "07:00",
+     "closes": "14:00"
+    },
+    {
+     "day": "thu",
+     "opens": "07:00",
+     "closes": "14:00"
+    },
+    {
+     "day": "fri",
+     "opens": "07:00",
+     "closes": "14:00"
+    },
+    {
+     "day": "sat",
+     "opens": "07:00",
+     "closes": "14:00"
+    },
+    {
+     "day": "sun",
+     "opens": "07:00",
+     "closes": "12:00"
+    }
+   ],
+   "hours_status": "parsed",
+   "website": "https://www.bristleconebakeshop.com/",
+   "phone": "(908) 451-5727",
+   "email": "maggie@bristleconebakeshop.com",
+   "facebook": null,
+   "instagram": "https://www.instagram.com/bristlecone_bakeshop/",
+   "sales_channels": [],
+   "sells_at": [
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000213",
+     "role": "home_base",
+     "name": null,
+     "address": "15 S. Main St",
+     "city": "Alma",
+     "zip": "80420",
+     "county_fips": "08093",
+     "lat": 39.283437,
+     "lon": -106.062459,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "unconfirmed",
+     "days": [
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+     ],
+     "hours_text": "Wed–Sat 7am–2pm; Sun 7am–12pm",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ]
+  },
+  {
    "id": "co-p-000004",
    "slug": "buck-and-bloom-cheese-co",
    "name": "Buck and Bloom Cheese Co",
@@ -252,12 +464,88 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "https://www.buckandbloomcheese.com/",
    "phone": "(720) 382-4782",
    "email": "buckandbloomcheese@gmail.com",
    "facebook": "https://www.facebook.com/people/Buck-Bloom-Cheese-Co/61578967916917/",
    "instagram": "https://www.instagram.com/buckandbloomcheese/",
    "sales_channels": [],
+   "sells_at": [
+    {
+     "market_id": "co-m-000017",
+     "name": "Boulder Farmers Market",
+     "county_fips": "08013",
+     "year": 2025,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://bcfm.org/vendors/meet-our-vendors/"
+    },
+    {
+     "market_id": "co-m-000037",
+     "name": "Crested Butte Farmers Market",
+     "county_fips": "08051",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://cbfarmersmarket.org/our-farmers-artisans/"
+    },
+    {
+     "market_id": "co-m-000060",
+     "name": "Fort Collins Winter Farmers Market",
+     "county_fips": "08069",
+     "year": 2025,
+     "season_label": "2025-26 winter",
+     "basis": "normalized_name",
+     "source_url": "https://www.wildcraftmarkets.com/vendors"
+    },
+    {
+     "market_id": "co-m-000076",
+     "name": "Harvey Park Farmers Market",
+     "county_fips": "08031",
+     "year": 2026,
+     "season_label": null,
+     "basis": "normalized_name",
+     "source_url": "https://www.harveyparkfarmersmarket.com/vendors"
+    },
+    {
+     "market_id": "co-m-000090",
+     "name": "Longmont Farmers Market",
+     "county_fips": "08013",
+     "year": 2025,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://bcfm.org/vendors/meet-our-vendors/"
+    },
+    {
+     "market_id": "co-m-000116",
+     "name": "Old South Pearl Street Association - Farmers Market",
+     "county_fips": "08031",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://southpearlstreet.com/farmers-market/"
+    },
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    },
+    {
+     "market_id": "co-m-000148",
+     "name": "Vail Farmers' Market",
+     "county_fips": "08037",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.vailfarmersmarket.com/2026-vendors"
+    }
+   ],
    "certified_organic": null,
    "accepts_snap": true,
    "ada_accessible": null,
@@ -316,12 +604,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "http://coloradofarmtotable.org/",
    "phone": "(719) 207-2209",
    "email": "info@coloradofarmtotable.org",
    "facebook": "https://www.facebook.com/nonprofitfarm/",
    "instagram": "https://www.instagram.com/colorado_farm_to_table/",
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -381,6 +672,8 @@
    ],
    "months_open": [],
    "hours_text": "Not open to the public. Order online.",
+   "hours": [],
+   "hours_status": "text_only",
    "website": "https://co-mtn-lav.com/",
    "phone": "(719) 371-2828",
    "email": "connect@co-mtn-lav.com",
@@ -389,6 +682,7 @@
    "sales_channels": [
     "online"
    ],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -443,12 +737,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": null,
    "phone": "(719) 221-3158",
    "email": null,
    "facebook": "https://www.facebook.com/copperkettleapothecary/",
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -519,12 +816,15 @@
     "December"
    ],
    "hours_text": "By appointment",
+   "hours": [],
+   "hours_status": "appointment",
    "website": "https://cottonwoodspiritranch.com",
    "phone": "(970) 406-8054",
    "email": null,
    "facebook": "https://www.facebook.com/CottonwoodSpiritRanch/",
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -582,12 +882,40 @@
    ],
    "months_open": [],
    "hours_text": "No storefront; online support Mon-Thu 8-3 MT",
+   "hours": [
+    {
+     "day": "mon",
+     "opens": "08:00",
+     "closes": "15:00",
+     "inferred": true
+    },
+    {
+     "day": "tue",
+     "opens": "08:00",
+     "closes": "15:00",
+     "inferred": true
+    },
+    {
+     "day": "wed",
+     "opens": "08:00",
+     "closes": "15:00",
+     "inferred": true
+    },
+    {
+     "day": "thu",
+     "opens": "08:00",
+     "closes": "15:00",
+     "inferred": true
+    }
+   ],
+   "hours_status": "parsed",
    "website": "https://www.dramapothecary.com",
    "phone": null,
    "email": null,
    "facebook": null,
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -609,7 +937,12 @@
      "precision": "approximate",
      "pin": true,
      "pin_basis": "unconfirmed",
-     "days": [],
+     "days": [
+      "mon",
+      "tue",
+      "wed",
+      "thu"
+     ],
      "hours_text": "No storefront; online support Mon-Thu 8-3 MT",
      "season_start": null,
      "season_end": null,
@@ -643,12 +976,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "http://elementscompost.com",
    "phone": "(719) 207-2207",
    "email": "sales@elementscompost.com",
    "facebook": "https://www.facebook.com/elementsmountaincompost",
    "instagram": "https://www.instagram.com/elementscompost/",
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -698,12 +1034,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": null,
    "phone": null,
    "email": null,
    "facebook": "https://www.facebook.com/everettranchbeef/",
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -800,12 +1139,15 @@
     "November"
    ],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "https://www.GuidestoneColorado.org",
    "phone": "(719) 239-0955",
    "email": "info@guidestonecolorado.org",
    "facebook": "https://www.facebook.com/guidestonecolorado/",
    "instagram": "https://www.instagram.com/guidestonecolorado/",
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": false,
    "accepts_snap": true,
    "ada_accessible": true,
@@ -873,12 +1215,25 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "https://www.headwaterfarmco.com/",
    "phone": "(719) 322-8737",
    "email": "maddychance@headwaterfarmco.com",
    "facebook": null,
    "instagram": "https://instagram.com/headwater_farms",
    "sales_channels": [],
+   "sells_at": [
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
+   ],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -933,12 +1288,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "https://www.hutchranchsalida.com",
    "phone": "(719) 221-4672",
    "email": "hutchsalida@gmail.com",
    "facebook": "https://www.facebook.com/HutchinsonRanch/",
    "instagram": "https://www.instagram.com/hutchranch/",
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -993,12 +1351,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": null,
    "phone": "(719) 850-3440",
    "email": null,
    "facebook": "https://www.facebook.com/myredcows/",
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1054,12 +1415,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": null,
    "phone": "(401) 714-1489",
    "email": "meadowsedgefarmbv@gmail.com",
    "facebook": "https://www.facebook.com/meadowsedgefarmbv/",
    "instagram": "https://www.instagram.com/meadowsedgefarmbv/",
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1117,12 +1481,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": null,
    "phone": "(719) 239-2021",
    "email": null,
    "facebook": null,
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1172,12 +1539,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "https://mountaingoatlodge.com",
    "phone": "(206) 218-8201",
    "email": "mtglodge@gmail.com",
    "facebook": "https://www.facebook.com/Mountaingoatlodge",
    "instagram": "https://www.instagram.com/mountaingoatlodge",
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1236,12 +1606,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "http://www.mushroomloveco.com",
    "phone": "(970) 420-8359",
    "email": "morgan.tristana@gmail.com",
    "facebook": "https://www.facebook.com/Mushroom-Love-Co-334280667437315/",
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1284,6 +1657,143 @@
    ]
   },
   {
+   "id": "co-p-000792",
+   "slug": "palisade-peach-shack",
+   "name": "Palisade Peach Shack",
+   "kind": "farm",
+   "categories": [
+    "Roadside Market",
+    "U-Pick"
+   ],
+   "products": [
+    "Peaches",
+    "cherries",
+    "apricots",
+    "pears",
+    "melons",
+    "corn",
+    "jams",
+    "peach butter",
+    "salsas",
+    "pies",
+    "coffee",
+    "ice cream"
+   ],
+   "months_open": [],
+   "hours_text": "U-pick orchard tours in summer season",
+   "hours": [],
+   "hours_status": "text_only",
+   "website": "https://www.palisadepeachshack.com/",
+   "phone": "(970) 464-2091",
+   "email": "ramcbreen21@gmail.com",
+   "facebook": "https://www.facebook.com/PalisadePeachShackWesternSlope/",
+   "instagram": "https://www.instagram.com/palisadepeachshack/",
+   "sales_channels": [
+    "farm_stand",
+    "u_pick"
+   ],
+   "sells_at": [
+    {
+     "market_id": "co-m-000007",
+     "name": "Aspen Grove Farmers Market",
+     "county_fips": "08005",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://aspengrovefarmersmarket.com/vendors/"
+    },
+    {
+     "market_id": "co-m-000040",
+     "name": "Dillon Farmers Market",
+     "county_fips": "08117",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://townofdillon.mymarket.org/profiles"
+    },
+    {
+     "market_id": "co-m-000067",
+     "name": "Glenwood Springs Downtown Market on 7th",
+     "county_fips": "08045",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.glenwoodspringsdda.com/market-on-7th/"
+    },
+    {
+     "market_id": "co-m-000109",
+     "name": "Montrose Farmers Market",
+     "county_fips": "08085",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://montrosefarmersmarket.mymarket.org/profiles"
+    },
+    {
+     "market_id": "co-m-000118",
+     "name": "Orchard Farmers Market",
+     "county_fips": "08001",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://orchardfarmersmarket.com/sunday-farmers-market/"
+    },
+    {
+     "market_id": "co-m-000122",
+     "name": "Palisade Sunday Farmers' Market",
+     "county_fips": "08077",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://townofpalisade.mymarket.org/profiles"
+    },
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000986",
+     "role": "home_base",
+     "name": null,
+     "address": "757 37 3/10 Rd",
+     "city": "Palisade",
+     "zip": "81526",
+     "county_fips": "08077",
+     "lat": 39.11413,
+     "lon": -108.360267,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [],
+     "hours_text": "U-pick orchard tours in summer season",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ]
+  },
+  {
    "id": "co-p-000019",
    "slug": "phytology-flowers-farm",
    "name": "Phytology Flowers Farm",
@@ -1299,12 +1809,15 @@
    ],
    "months_open": [],
    "hours_text": "By appointment",
+   "hours": [],
+   "hours_status": "appointment",
    "website": "https://www.phytologyflowers.com",
    "phone": "(303) 709-4912",
    "email": "hannah@phytologyflowers.com",
    "facebook": "https://www.facebook.com/phytologyflowers",
    "instagram": "https://www.instagram.com/phytologyflowers/",
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1361,12 +1874,15 @@
    ],
    "months_open": [],
    "hours_text": "By appointment",
+   "hours": [],
+   "hours_status": "appointment",
    "website": "https://ponchacreekgardens.wordpress.com/our-products/",
    "phone": "(720) 380-2121",
    "email": "ponchacreekgardens@gmail.com",
    "facebook": "http://www.facebook.com/ponchacreekgardens",
    "instagram": "https://www.instagram.com/salidaholidaymakersmarket",
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1409,6 +1925,79 @@
    ]
   },
   {
+   "id": "co-p-000862",
+   "slug": "raisin-rye",
+   "name": "Raisin' Rye",
+   "kind": "maker",
+   "categories": [
+    "Bakery"
+   ],
+   "products": [
+    "Sourdough breads and bagels",
+    "rye",
+    "scones",
+    "muffins",
+    "gluten-free brownies",
+    " coffee"
+   ],
+   "months_open": [],
+   "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
+   "website": null,
+   "phone": "(719) 588-2857",
+   "email": null,
+   "facebook": "https://www.facebook.com/raisinrye/",
+   "instagram": "https://www.instagram.com/raisinryebakery/",
+   "sales_channels": [],
+   "sells_at": [
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-001067",
+     "role": "home_base",
+     "name": null,
+     "address": "675 Grand Ave",
+     "city": "Del Norte",
+     "zip": "81132",
+     "county_fips": "08105",
+     "lat": 37.678741,
+     "lon": -106.353694,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ]
+  },
+  {
    "id": "co-p-000021",
    "slug": "rocky-mountain-garlic",
    "name": "Rocky Mountain Garlic",
@@ -1432,6 +2021,39 @@
     "November"
    ],
    "hours_text": "Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; Wed: 8 am - 6 pm; Thu: 8 am - 6 pm; Fri: 8 am - 6 pm; Sat: 8 am - 6 pm",
+   "hours": [
+    {
+     "day": "mon",
+     "opens": "08:00",
+     "closes": "18:00"
+    },
+    {
+     "day": "tue",
+     "opens": "08:00",
+     "closes": "18:00"
+    },
+    {
+     "day": "wed",
+     "opens": "08:00",
+     "closes": "18:00"
+    },
+    {
+     "day": "thu",
+     "opens": "08:00",
+     "closes": "18:00"
+    },
+    {
+     "day": "fri",
+     "opens": "08:00",
+     "closes": "18:00"
+    },
+    {
+     "day": "sat",
+     "opens": "08:00",
+     "closes": "18:00"
+    }
+   ],
+   "hours_status": "parsed",
    "website": "https://www.rockymountaingarlic.net/",
    "phone": "(719) 221-6943",
    "email": null,
@@ -1440,6 +2062,17 @@
    "sales_channels": [
     "csa",
     "farm_stand"
+   ],
+   "sells_at": [
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
    ],
    "certified_organic": false,
    "accepts_snap": false,
@@ -1462,7 +2095,14 @@
      "precision": "exact",
      "pin": true,
      "pin_basis": "confirmed",
-     "days": [],
+     "days": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+     ],
      "hours_text": "Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; Wed: 8 am - 6 pm; Thu: 8 am - 6 pm; Fri: 8 am - 6 pm; Sat: 8 am - 6 pm",
      "season_start": null,
      "season_end": null,
@@ -1502,12 +2142,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "http://www.salidacattlecompany.com",
    "phone": "(719) 221-2267",
    "email": null,
    "facebook": null,
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1563,12 +2206,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "http://www.scangameat.com/",
    "phone": "(719) 539-3511",
    "email": null,
    "facebook": null,
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1627,12 +2273,25 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": null,
    "phone": null,
    "email": null,
    "facebook": null,
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
+   ],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1685,12 +2344,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": null,
    "phone": "(719) 539-7452",
    "email": null,
    "facebook": null,
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1746,12 +2408,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": null,
    "phone": null,
    "email": null,
    "facebook": "https://www.facebook.com/thearkangelco",
    "instagram": "https://www.instagram.com/thearkangelco/",
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1810,6 +2475,8 @@
    ],
    "months_open": [],
    "hours_text": "Pick-your-own flowers by appointment, June–October",
+   "hours": [],
+   "hours_status": "appointment",
    "website": "https://www.thetriangleoasis.com/",
    "phone": null,
    "email": "thetriangleoasis@gmail.com",
@@ -1818,6 +2485,17 @@
    "sales_channels": [
     "csa",
     "u_pick"
+   ],
+   "sells_at": [
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
    ],
    "certified_organic": null,
    "accepts_snap": null,
@@ -1869,12 +2547,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "https://www.troutcreekfarm.com",
    "phone": "(719) 207-0230",
    "email": "beth@troutcreekfarm.com",
    "facebook": null,
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1932,12 +2613,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": "https://www.valleyrootsfoodhub.com/",
    "phone": "(719) 206-2839",
    "email": null,
    "facebook": null,
    "instagram": null,
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -1994,12 +2678,15 @@
    ],
    "months_open": [],
    "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
    "website": null,
    "phone": "(719) 539-6299",
    "email": null,
    "facebook": "https://www.facebook.com/vinosalidawinecellars",
    "instagram": "https://www.instagram.com/vinosalidawinebar/",
    "sales_channels": [],
+   "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
    "ada_accessible": null,
@@ -2035,6 +2722,74 @@
      "url": null
     }
    ]
+  },
+  {
+   "id": "co-p-001212",
+   "slug": "woof-n-wag-snack-shack-llc",
+   "name": "Woof n’ Wag Snack Shack LLC",
+   "kind": "maker",
+   "categories": [
+    "Bakery"
+   ],
+   "products": [
+    "Animal & Pet Food"
+   ],
+   "months_open": [],
+   "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
+   "website": "http://www.woofnwagsnackshack.com",
+   "phone": "(719) 207-5107",
+   "email": null,
+   "facebook": "https://www.facebook.com/share/1U3hYPBUPX/?mibextid=wwXIfr",
+   "instagram": "https://www.instagram.com/woofnwagsnackshack?igsh=N3lrdHBzZGtzYjZp&utm_source=qr",
+   "sales_channels": [],
+   "sells_at": [
+    {
+     "market_id": "co-m-000002",
+     "name": "Salida Farmers Market",
+     "county_fips": "08015",
+     "year": 2026,
+     "season_label": null,
+     "basis": "normalized_name",
+     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
+    }
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-001471",
+     "role": "home_base",
+     "name": null,
+     "address": null,
+     "city": "Coaldale",
+     "zip": "81222",
+     "county_fips": "08043",
+     "lat": 38.359871,
+     "lon": -105.755656,
+     "precision": "approximate",
+     "pin": true,
+     "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "colorado_proud",
+     "label": "Colorado Proud",
+     "url": null
+    }
+   ]
   }
  ],
  "markets": [
@@ -2043,8 +2798,19 @@
    "slug": "buena-vista-farmers-market",
    "name": "Buena Vista Farmers' Market",
    "operator": null,
-   "days": [],
+   "days": [
+    "sun"
+   ],
    "hours_text": "Sun: 9:00am - 1:00pm (May 31 - Oct 25)",
+   "hours": [
+    {
+     "day": "sun",
+     "opens": "09:00",
+     "closes": "13:00"
+    }
+   ],
+   "hours_status": "parsed",
+   "vendors": [],
    "website": "https://www.buenavistaheritage.org/",
    "phone": "(719) 297-5430",
    "email": "buenavistaheritage@msn.com",
@@ -2086,8 +2852,38 @@
    "slug": "salida-farmers-market",
    "name": "Salida Farmers Market",
    "operator": null,
-   "days": [],
+   "days": [
+    "sat"
+   ],
    "hours_text": "Sat: 8:00am - 12:00pm (Jun 6 - Sep 11); Sat: 9:00am - 12:00pm (Sep 12 - Oct 24)",
+   "hours": [
+    {
+     "day": "sat",
+     "opens": "08:00",
+     "closes": "12:00"
+    },
+    {
+     "day": "sat",
+     "opens": "09:00",
+     "closes": "12:00"
+    }
+   ],
+   "hours_status": "parsed",
+   "vendors": [
+    "co-p-000001",
+    "co-p-000002",
+    "co-p-000003",
+    "co-p-000004",
+    "co-p-000012",
+    "co-p-000021",
+    "co-p-000026",
+    "co-p-000056",
+    "co-p-000172",
+    "co-p-000792",
+    "co-p-000862",
+    "co-p-001031",
+    "co-p-001212"
+   ],
    "website": "https://foodshedalliance.com",
    "phone": "(719) 207-5787",
    "email": "info@foodshedalliance.com",
@@ -2142,6 +2938,44 @@
    "name": "Guidestone Colorado's Free Community Fridge: Buena Vista",
    "kind": "community_fridge",
    "hours_text": "Open 24/7",
+   "hours": [
+    {
+     "day": "mon",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "tue",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "wed",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "thu",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "fri",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "sat",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "sun",
+     "opens": "00:00",
+     "closes": "24:00"
+    }
+   ],
+   "hours_status": "parsed",
    "website": null,
    "phone": null,
    "email": "info@guidestonecolorado.org",
@@ -2177,6 +3011,44 @@
    "name": "Guidestone Colorado's Free Community Fridge: Salida",
    "kind": "community_fridge",
    "hours_text": "Open 24/7",
+   "hours": [
+    {
+     "day": "mon",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "tue",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "wed",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "thu",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "fri",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "sat",
+     "opens": "00:00",
+     "closes": "24:00"
+    },
+    {
+     "day": "sun",
+     "opens": "00:00",
+     "closes": "24:00"
+    }
+   ],
+   "hours_status": "parsed",
    "website": null,
    "phone": null,
    "email": "info@guidestonecolorado.org",
