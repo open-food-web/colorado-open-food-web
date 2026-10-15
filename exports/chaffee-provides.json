@@ -840,10 +840,13 @@
     "Food Maker"
    ],
    "products": [
-    "Spices/Garlic"
+    "Bulk herbs",
+    "honey",
+    "lavender"
    ],
    "product_groups": [
-    "garlic-herbs"
+    "garlic-herbs",
+    "honey"
    ],
    "dropin_visits": true,
    "dropin_hours": null,
@@ -852,7 +855,7 @@
     "dropin": "set",
     "pickup": "listing"
    },
-   "visit_note": "Retail shop selling bulk herbs",
+   "visit_note": "Retail shop specializing in bulk herbs; also honey and lavender",
    "months_open": [],
    "hours_text": null,
    "hours": [],

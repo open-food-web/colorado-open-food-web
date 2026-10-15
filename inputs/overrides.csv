@@ -1059,4 +1059,5 @@ Elements Mountain Compost,Salida,Category,set,Ag Input Supplier,"Compost and foo
 Mountain Goat Lodge,Salida,Category,set,Agritourism,"Lodge and cheesemaking classes on a goat farm: agritourism, kept in the Food Web; not wanted on Chaffee Provides (user, 2026-10-15)",2026-10-15
 Woof n’ Wag Snack Shack LLC,Coaldale,,remove,,"Dog treats only, no human food: removed from the data set (user, 2026-10-15)",2026-10-15
 Salida Cattle Company,,,remove,,"Website last updated 2018-2019 and no current presence found: probably not operating (user, 2026-10-15). Re-open if a current source appears",2026-10-15
-Copper Kettle Apothecary,Salida,Category,set,Food Maker,"Retail herb and apothecary shop, not a ranch or farm (user, 2026-10-15)",2026-10-15
+Copper Kettle Apothecary,Salida,Category,set,Food Maker,"Apothecary shop focused on herbs, not a ranch or farm (user, 2026-10-15)",2026-10-15
+Copper Kettle Apothecary,Salida,Products,set,"Bulk herbs, honey, lavender","Apothecary shop focused on herbs: bulk herbs, honey, lavender (user, 2026-10-15)",2026-10-15
