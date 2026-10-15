@@ -76,6 +76,9 @@
    "products": [
     "Mushrooms"
    ],
+   "product_groups": [
+    "mushrooms"
+   ],
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -471,6 +474,9 @@
     "breakfast sandwiches",
     "cookies",
     "cold sandwiches"
+   ],
+   "product_groups": [
+    "baked-goods"
    ],
    "months_open": [],
    "hours_text": "Wed–Sat 7am–2pm; Sun 7am–12pm",
@@ -930,6 +936,9 @@
     "adaptogenic CBD sparkling waters and drops",
     "alcohol-free cocktail bitters",
     "mushroom cola"
+   ],
+   "product_groups": [
+    "mushrooms"
    ],
    "months_open": [],
    "hours_text": "No storefront; online support Mon-Thu 8-3 MT",
@@ -1577,6 +1586,11 @@
     "coffee",
     "ice cream"
    ],
+   "product_groups": [
+    "fruit",
+    "dairy",
+    "drinks"
+   ],
    "months_open": [],
    "hours_text": "U-pick orchard tours in summer season",
    "hours": [],
@@ -1844,6 +1858,10 @@
     "muffins",
     "gluten-free brownies",
     " coffee"
+   ],
+   "product_groups": [
+    "baked-goods",
+    "drinks"
    ],
    "months_open": [],
    "hours_text": null,
@@ -2209,6 +2227,12 @@
     "pork",
     "produce",
     "beeswax balms and candles"
+   ],
+   "product_groups": [
+    "veggies",
+    "beef-meat",
+    "poultry-eggs",
+    "honey"
    ],
    "months_open": [],
    "hours_text": null,
@@ -2748,7 +2772,7 @@
    "hours_status": "parsed",
    "website": "https://www.whoknowsfarms.com",
    "phone": "(719) 398-3306",
-   "email": null,
+   "email": "isaiah@whoknowsfarms.com",
    "facebook": "https://www.facebook.com/p/Who-Knows-Farms-61566533660122/",
    "instagram": null,
    "sales_channels": [
@@ -2808,6 +2832,9 @@
    ],
    "products": [
     "Animal & Pet Food"
+   ],
+   "product_groups": [
+    "baked-goods"
    ],
    "months_open": [],
    "hours_text": null,
