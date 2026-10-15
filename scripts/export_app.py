@@ -39,7 +39,7 @@ SOURCE_LABELS = {
     "census_geocoder": "US Census geocoder", "reviewed": "Reviewed by hand", "maintainer": "Maintainer"}
 # What a producer calls itself (producers.kind). Farms and ranches are different things to a shopper.
 KIND_LABELS = {"farm": "Farms", "ranch": "Ranches", "orchard": "Orchards", "bakery": "Bakeries", "maker": "Food makers",
-               "specialty_shop": "Specialty shops", "winery": "Wineries"}
+               "winery": "Wineries"}
 FIELD_LABEL = {"phone": "phone", "email": "email", "website": "website", "facebook": "Facebook", "instagram": "Instagram",
                "hours_text": "hours", "seasonal_months": "season", "products": "products", "address": "address",
                "city": "town", "zip": "ZIP", "categories": "type", "certified_organic": "organic status",

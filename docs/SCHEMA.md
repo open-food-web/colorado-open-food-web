@@ -64,7 +64,7 @@ Every field has a class that decides whether it appears in the public release.
 | `producer_id` | string | fact | Required. Primary key |
 | `slug` | string | fact | Homepage path |
 | `name` | string | fact | Required. Business name |
-| `kind` | enum | controlled | How the business labels itself: `farm`, `ranch`, `orchard`, `maker`, `specialty_shop`, `winery`. A vegetable farm and a cattle ranch are different things to a shopper, so they are not merged. Markets are not producers (see `markets`). Food hubs, retailers and organizations are not decided yet (see open questions) |
+| `kind` | enum | controlled | How the business labels itself: `farm`, `ranch`, `orchard`, `maker`, `winery`. A vegetable farm and a cattle ranch are different things to a shopper, so they are not merged. Markets are not producers (see `markets`). Food hubs, retailers and organizations are not decided yet (see open questions) |
 | `categories` | list | controlled | From the category vocabulary below. Primary first |
 | `products` | list | controlled | From the product vocabulary |
 | `product_groups` | list | controlled | The short list people search by: `veggies`, `fruit`, `beef-meat`, `poultry-eggs`, `dairy`, `honey`, `flowers`, `garlic-herbs`, `mushrooms`, `baked-goods`, `drinks`. Found from the products text, categories and name, plus what the business itself ticked (`inputs/producer_kinds.csv`). `products` keeps the source's own words |
@@ -293,7 +293,7 @@ Provenance for each populated field. Attribution for the public release is built
 
 - **Categories** follow the existing labels (Farmers' Market, On-Farm / Ranch Sales, Meat Producer &
   Packer, Farm Products (online), Agritourism, CSA Farm, Roadside Market, U-Pick, Garden Center /
-  Greenhouse, Winery, Grocery Store, Farm Store, Bakery, Food Maker, Specialty Shop, Restaurant, Caterer, Wholesale
+  Greenhouse, Winery, Grocery Store, Farm Store, Bakery, Food Maker, Restaurant, Caterer, Wholesale
   Grower, Food Hub, Food Bank, Community Food Hub, Organization), plus the badge "Sells to Schools".
   The Farm Trail's map groups are an app concern and stay in the app.
 - **Products** reuse the normalized product list from the Farm Trail data.
