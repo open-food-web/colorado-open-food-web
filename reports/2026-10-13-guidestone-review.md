@@ -94,3 +94,7 @@ python scripts/build_tables.py --raw .cache/build/co_farmers_markets_all_raw.csv
 python scripts/export_app.py --tables data/colorado --out exports/chaffee-provides.json     --release 2026-10 --county-fips 08015 --include-source chaffee_provides     --config exports/chaffee-provides.config.json
 python scripts/change_report.py --before <tables built from main> --after data/colorado     --export-before <export built from main> --export-after exports/chaffee-provides.json
 ```
+
+## Follow-up, Oct 16: red means closed
+
+The maintainer confirmed that red on Alycen's sheet means the business is closed. Vino Salida Wine Cellars (website expired) and The Ark Angel were marked red but still listed, so both are now removed. Market on Main St (The Triangle Oasis) is also red but its own site still lists it, so it is being checked with Alycen. Colorado Mountain Lavender is red but sells online; the maintainer decided to keep it listed as online-only.
