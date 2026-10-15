@@ -52,6 +52,25 @@ class ExportApp(unittest.TestCase):
         self.assertEqual(loc["city"], "Buena Vista")
         self.assertEqual((loc["lat"], loc["lon"]), (38.8422, -106.1311))
 
+    def test_outlets_are_exported_only_when_the_app_asks_for_them(self):
+        rows = [row("Herb Shop", "Apothecary", Address="138 W 1st St", City="Salida", Latitude="38.53", Longitude="-105.99"),
+                row("Hidden Farm", "On-Farm / Ranch Sales", Latitude="38.80", Longitude="-106.10")]
+        plain = self.export(rows)
+        self.assertNotIn("outlets", plain)
+        self.assertNotIn("outlets", plain["export"]["counts"])
+        cfg = os.path.join(tempfile.mkdtemp(), "app.config.json")
+        with open(cfg, "w", encoding="utf-8") as f:
+            json.dump({"include_outlet_kinds": ["apothecary"]}, f)
+        doc = self.export(rows, extra=("--config", cfg))
+        self.assertEqual([o["name"] for o in doc["outlets"]], ["Herb Shop"])
+        o = doc["outlets"][0]
+        self.assertEqual((o["kind"], o["group"]), ("apothecary", "shops"))
+        self.assertTrue(o["location"]["pin"])
+        self.assertEqual(doc["export"]["counts"]["outlets"], 1)
+        self.assertEqual(doc["vocab"]["outlet_groups"]["shops"], "Shops & Grocers")
+        # the pin count stays producers + markets + access points, so a site that predates outlets still checks out
+        self.assertEqual(doc["export"]["counts"]["pins"], plain["export"]["counts"]["pins"])
+
     def test_po_box_is_not_an_address(self):
         doc = self.export([row("Box Farm", "On-Farm / Ranch Sales", Address="P.O. Box 654", City="Poncha Springs",
                                Latitude="38.51", Longitude="-106.07")])

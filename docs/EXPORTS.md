@@ -26,6 +26,7 @@ python scripts/export_app.py --tables data/colorado --out exports/chaffee-provid
   "producers":     [ ... ],
   "markets":       [ ... ],
   "access_points": [ ... ],
+  "outlets":       [ ... ],     // only when the app's config sets include_outlet_kinds
   "removed_ids":   [ ... ]     // IDs only, so the app can drop old links
 }
 ```
@@ -41,7 +42,7 @@ python scripts/export_app.py --tables data/colorado --out exports/chaffee-provid
 | `source` | `Colorado Open Food Web` |
 | `county_fips` | Counties the export covers |
 | `attribution` | Text the app must show, once, on its About page or footer |
-| `counts` | `producers`, `markets`, `access_points`, `market_links`, `pins` (a quick sanity check) |
+| `counts` | `producers`, `markets`, `access_points`, `market_links`, `pins` (a quick sanity check). `pins` counts producers, markets and access points only. With outlets: `outlets` and `outlet_pins` as well |
 
 ### `producers[]`
 
@@ -90,6 +91,23 @@ python scripts/export_app.py --tables data/colorado --out exports/chaffee-provid
 Same shape as producers where the fields apply (`hours`, `hours_status`), with one `location` each. Markets also carry `vendors`: the IDs of exported producers that sell there. `access_points[].kind` is
 `community_fridge` for now; pantries and meal sites will use the same list. Markets and access points
 are always pinned.
+
+### `outlets[]` (optional)
+
+Shops, grocers and dining places, exported only for an app whose config lists `include_outlet_kinds`
+(for example `["apothecary", "farm_store"]`). An app that does not ask gets no `outlets` key, and
+`pins` never includes outlet pins, so a site written before outlets existed still passes its checks.
+
+| Field | Notes |
+|---|---|
+| `id`, `slug`, `name`, `brand` | Outlet identity; `brand` is null unless a chain or group |
+| `kind` | `grocery`, `farm_store`, `garden_center`, `apothecary`, `other_retail`, or a dining kind; labels in `vocab.outlet_kinds` |
+| `group` | `shops` or `dining`, derived from `kind`; labels in `vocab.outlet_groups` ("Shops & Grocers", "Restaurants & Caterers") |
+| `website`, `phone`, `facebook`, `instagram`, `hours`, `status`, `last_verified` | As for producers where they apply |
+| `location` | Same shape as a market's `location` (role `outlet_site`). Pinned unless the address is hidden |
+| `sources`, `confirmed_by` | As for producers |
+
+An outlet carries no products or descriptions; the Food Web keeps outlets thin.
 
 ## Rules the export applies
 
