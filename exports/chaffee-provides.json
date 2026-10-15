@@ -2962,12 +2962,12 @@
     "poultry-eggs",
     "honey"
    ],
-   "dropin_visits": null,
+   "dropin_visits": true,
    "dropin_hours": null,
-   "farm_pickup": null,
+   "farm_pickup": true,
    "visit_basis": {
-    "dropin": null,
-    "pickup": null
+    "dropin": "listing",
+    "pickup": "listing"
    },
    "visit_note": null,
    "months_open": [],
@@ -2979,7 +2979,9 @@
    "email": null,
    "facebook": "https://www.facebook.com/SweetPeaFarmHoney",
    "instagram": null,
-   "sales_channels": [],
+   "sales_channels": [
+    "farm_stand"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -2997,11 +2999,11 @@
      "city": "Salida",
      "zip": "81201",
      "county_fips": "08015",
-     "lat": 38.525991,
-     "lon": -106.043072,
+     "lat": 38.526716,
+     "lon": -106.044923,
      "precision": "exact",
      "pin": true,
-     "pin_basis": "unconfirmed",
+     "pin_basis": "confirmed",
      "days": [],
      "hours_text": null,
      "season_start": null,
