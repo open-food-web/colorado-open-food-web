@@ -10,10 +10,10 @@
   ],
   "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
   "counts": {
-   "producers": 27,
+   "producers": 25,
    "markets": 2,
    "access_points": 2,
-   "pins": 33
+   "pins": 31
   }
  },
  "vocab": {
@@ -1930,74 +1930,6 @@
    ]
   },
   {
-   "id": "co-p-000025",
-   "slug": "the-ark-angel",
-   "name": "The Ark Angel",
-   "kind": "maker",
-   "categories": [
-    "Bakery"
-   ],
-   "products": [
-    "Bread",
-    "Chocolate & Cocoa Products"
-   ],
-   "product_groups": [
-    "baked-goods"
-   ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": null,
-   "website": null,
-   "phone": null,
-   "email": null,
-   "facebook": "https://www.facebook.com/thearkangelco",
-   "instagram": "https://www.instagram.com/thearkangelco/",
-   "sales_channels": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000029",
-     "role": "home_base",
-     "name": null,
-     "address": null,
-     "city": "Buena Vista",
-     "zip": "81211",
-     "county_fips": "08015",
-     "lat": 38.842218,
-     "lon": -106.131129,
-     "precision": "approximate",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "colorado_proud",
-     "label": "Colorado Proud",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
-  },
-  {
    "id": "co-p-000026",
    "slug": "the-triangle-oasis",
    "name": "The Triangle Oasis",
@@ -2253,75 +2185,6 @@
      "date": null
     }
    ]
-  },
-  {
-   "id": "co-p-000029",
-   "slug": "vino-salida-wine-cellars",
-   "name": "Vino Salida Wine Cellars",
-   "kind": "winery",
-   "categories": [
-    "Winery",
-    "Agritourism"
-   ],
-   "products": [
-    "Events",
-    "Wine"
-   ],
-   "product_groups": [
-    "drinks"
-   ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": true,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": "listing"
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": null,
-   "website": null,
-   "phone": "(719) 539-6299",
-   "email": null,
-   "facebook": "https://www.facebook.com/vinosalidawinecellars",
-   "instagram": "https://www.instagram.com/vinosalidawinebar/",
-   "sales_channels": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000035",
-     "role": "home_base",
-     "name": null,
-     "address": "10495 County Road 120",
-     "city": "Poncha Springs",
-     "zip": "81242",
-     "county_fips": "08015",
-     "lat": 38.517471,
-     "lon": -106.076066,
-     "precision": "exact",
-     "pin": true,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed"
-    }
-   ],
-   "sources": [
-    {
-     "source": "colorado_proud",
-     "label": "Colorado Proud",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
   },
   {
    "id": "co-p-000031",
