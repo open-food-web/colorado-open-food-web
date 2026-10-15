@@ -227,7 +227,7 @@
     {
      "id": "co-loc-000026",
      "role": "pickup",
-     "name": null,
+     "name": "Salida Farmers Market",
      "address": "Alpine Park, 404 E Street, Salida, CO 81201",
      "city": "Salida",
      "zip": "81201",
@@ -1251,7 +1251,7 @@
     {
      "id": "co-loc-000026",
      "role": "pickup",
-     "name": null,
+     "name": "Salida Farmers Market",
      "address": "Alpine Park, 404 E Street, Salida, CO 81201",
      "city": "Salida",
      "zip": "81201",

@@ -12,7 +12,7 @@ from test_build_tables import HEAD, ROOT, row  # noqa: E402
 
 
 class ExportApp(unittest.TestCase):
-    def export(self, rows, edit=None, extra=()):
+    def export(self, rows, edit=None, extra=(), build_extra=()):
         d = tempfile.mkdtemp()
         raw, tables, out = os.path.join(d, "raw.csv"), os.path.join(d, "tables"), os.path.join(d, "x", "app.json")
         with open(raw, "w", encoding="utf-8", newline="") as f:
@@ -20,7 +20,7 @@ class ExportApp(unittest.TestCase):
             w.writeheader()
             w.writerows(rows)
         subprocess.run([sys.executable, "-I", os.path.join(ROOT, "scripts", "build_tables.py"), "--raw", raw,
-                        "--county", "Chaffee", "--out", tables, "--registry", os.path.join(d, "reg.csv")],
+                        "--county", "Chaffee", "--out", tables, "--registry", os.path.join(d, "reg.csv"), *build_extra],
                        check=True, capture_output=True)
         if edit:
             path = os.path.join(tables, "producers.csv")
@@ -89,6 +89,20 @@ class ExportApp(unittest.TestCase):
         farm = self.by_name(doc)["Shy Farm"]
         self.assertIsNone(farm["phone"])
         self.assertIsNone(farm["email"])
+
+    def test_a_producer_pickup_at_a_market_is_named_for_the_market(self):
+        d = tempfile.mkdtemp()
+        locs = os.path.join(d, "locations.csv")
+        head = "name,city,role,place_name,address,place_city,zip,county,lat,lon,geo_source,hide_address,days,hours_text,season_start,season_end,market_ref,sales_channels,note,source,date".split(",")
+        with open(locs, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(head)
+            w.writerow([{"name": "Ranch", "role": "pickup", "market_ref": "Salida Market"}.get(h, "") for h in head])
+        rows = [row("Ranch", "On-Farm / Ranch Sales", Address="9 Rd", Latitude="38.6", Longitude="-106.1"),
+                row("Salida Market", "Farmers' Market", Address="Alpine Park, 404 E St", City="Salida", Latitude="38.5", Longitude="-106.0")]
+        doc = self.export(rows, build_extra=["--locations", locs])
+        pickup = [l for l in self.by_name(doc)["Ranch"]["locations"] if l["role"] == "pickup"][0]
+        self.assertEqual(pickup["name"], "Salida Market")
 
     def test_metadata_counts_match(self):
         doc = self.export([row("A Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106")])

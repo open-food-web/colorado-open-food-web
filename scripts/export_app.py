@@ -111,7 +111,9 @@ def main():
             return True
         return any(l["source"] in a.include_source for l in links.get((rtype, rid), []))
 
-    def public_location(loc_id, role, pin, pin_basis, extra=None):
+    market_name = {m["location_id"]: m["name"] for m in T("markets")}
+
+    def public_location(loc_id, role, pin, pin_basis, extra=None, use_market_name=False):
         """One map location with the public rules applied."""
         L = locations[loc_id]
         lat, lon = num(L["lat"]), num(L["lon"])
@@ -123,7 +125,7 @@ def main():
         street = None if hidden else (L["address"] or None)
         if street and re.match(r"(?i)\s*p\.?\s*o\.?\s*box", street):  # a mailbox is not a place to visit
             street = None
-        out = {"id": loc_id, "role": role, "name": L["name"] or None,
+        out = {"id": loc_id, "role": role, "name": L["name"] or (market_name.get(loc_id) if use_market_name else None) or None,
                "address": street,
                "city": L["city"] or (town[0] if town else None), "zip": None if hidden else (L["zip"] or None),
                "county_fips": L["county_fips"] or None,
@@ -157,7 +159,7 @@ def main():
             out_locs.append(public_location(l["location_id"], l["role"], pin, basis, {
                 "days": lst(l["days"]), "hours_text": l["hours_text"] or None,
                 "season_start": l["season_start"] or None, "season_end": l["season_end"] or None,
-                "status": l["status"]}))
+                "status": l["status"]}, use_market_name=True))
         rec = {
             "id": pid, "slug": p["slug"], "name": p["name"], "kind": p["kind"],
             "categories": lst(p["categories"]), "products": lst(p["products"]),
