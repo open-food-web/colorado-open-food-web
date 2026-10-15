@@ -48,8 +48,9 @@ python scripts/export_app.py --tables data/colorado --out exports/chaffee-provid
 | Field | Type | Notes |
 |---|---|---|
 | `id`, `slug`, `name` | string | IDs are permanent; slugs may change |
-| `kind` | string | `farm`, `ranch`, `orchard`, `maker`, `winery` |
+| `kind` | string | `farm`, `ranch`, `orchard`, `maker`, `winery`. Labels are in `vocab.kinds` |
 | `categories`, `products` | list | From the Food Web vocabularies |
+| `product_groups` | list | What people search by: honey, beef and meat, eggs, veggies... Labels are in `vocab.product_groups` |
 | `months_open` | list | Month names. Empty = unknown |
 | `hours_text` | string/null | Free text, always kept |
 | `hours` | list | Structured: `{day, opens, closes, closes_next_day?, inferred?}`, `day` is `mon`..`sun`, times are 24-hour `HH:MM`. Empty when not readable |

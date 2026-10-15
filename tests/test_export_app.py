@@ -104,6 +104,26 @@ class ExportApp(unittest.TestCase):
         pickup = [l for l in self.by_name(doc)["Ranch"]["locations"] if l["role"] == "pickup"][0]
         self.assertEqual(pickup["name"], "Salida Market")
 
+    def test_kind_and_product_groups(self):
+        d = tempfile.mkdtemp()
+        kinds = os.path.join(d, "kinds.csv")
+        with open(kinds, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(["name", "kind", "product_groups", "note", "source", "date"])
+            w.writerow(["Sunny Place", "ranch", "", "", "", ""])
+            w.writerow(["Quiet Place", "farm", "veggies", "", "", ""])
+        doc = self.export([row("Sunny Place", "On-Farm / Ranch Sales", Products="Grass-fed beef, wildflower honey", Address="1 Rd", Latitude="38.5", Longitude="-106"),
+                           row("Quiet Place", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106"),
+                           row("Meat Producer Co", "Meat Producer & Packer", Address="3 Rd", Latitude="38.7", Longitude="-106")],
+                          build_extra=["--kinds", kinds])
+        farms = self.by_name(doc)
+        self.assertEqual(farms["Sunny Place"]["kind"], "ranch")
+        self.assertEqual(farms["Sunny Place"]["product_groups"], ["beef-meat", "honey"])
+        self.assertEqual(farms["Quiet Place"]["product_groups"], ["veggies"])   # falls back to what the business ticked
+        self.assertNotIn("veggies", farms["Meat Producer Co"]["product_groups"])  # "Producer" is not "produce"
+        self.assertIn("honey", doc["vocab"]["product_groups"])
+        self.assertEqual(doc["vocab"]["kinds"]["ranch"], "Ranches")
+
     def test_metadata_counts_match(self):
         doc = self.export([row("A Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106")])
         self.assertEqual(doc["export"]["format_version"], 1)
