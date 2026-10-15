@@ -124,6 +124,23 @@ class ExportApp(unittest.TestCase):
         self.assertIn("honey", doc["vocab"]["product_groups"])
         self.assertEqual(doc["vocab"]["kinds"]["ranch"], "Ranches")
 
+    def test_confirmed_by_names_the_partner_or_the_business_page(self):
+        d = tempfile.mkdtemp()
+        ovr = os.path.join(d, "overrides.csv")
+        with open(ovr, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(["name", "city", "column", "mode", "value", "note", "date"])
+            w.writerow(["Ranch", "", "Phone", "set", "(719) 555-0100", "partner:guidestone Alycen", "2026-10-13"])
+            w.writerow(["Ranch", "", "Products", "set", "Eggs", "via:facebook https://www.facebook.com/RanchPage/ seen", "2026-10-15"])
+        doc = self.export([row("Ranch", "On-Farm / Ranch Sales", Address="9 Rd", Latitude="38.6", Longitude="-106.1",
+                               Phone="(719) 555-0100", Products="Eggs", Provenance='{"Phone": "override", "Products": "override"}')],
+                          build_extra=["--overrides", ovr])
+        conf = {c["by"]: c for c in self.by_name(doc)["Ranch"]["confirmed_by"]}
+        self.assertEqual(conf["Guidestone Colorado"]["fields"], ["phone"])
+        self.assertEqual(conf["Guidestone Colorado"]["date"], "2026-10-13")
+        self.assertEqual(conf["the business's Facebook page"]["fields"], ["products"])
+        self.assertEqual(conf["the business's Facebook page"]["url"], "https://www.facebook.com/RanchPage/")
+
     def test_metadata_counts_match(self):
         doc = self.export([row("A Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106")])
         self.assertEqual(doc["export"]["format_version"], 1)

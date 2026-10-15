@@ -75,7 +75,8 @@ SOURCE_NAME = {"chaffee_provides": "chaffee_provides", "colorado_proud": "colora
                "colorado_proud_farm_fresh": "colorado_proud", "colorado_proud_finder": "colorado_proud",
                "cfma": "cfma", "usda": "usda_lfd", "official-site": "producer_site",
                "curated": "curated", "dedup-decision": "reviewed", "census-geocoder": "census_geocoder",
-               "override": "maintainer", "maintainer": "maintainer", "guidestone_review": "guidestone"}
+               "override": "maintainer", "maintainer": "maintainer", "guidestone_review": "guidestone",
+               "producer_facebook": "producer_facebook"}
 FIELD_MAP = {"Phone": "phone", "Email": "email", "Website": "website", "Facebook": "facebook",
              "Instagram": "instagram", "Hours": "hours_text", "Months Open": "seasonal_months",
              "Products": "products", "Certified Organic": "certified_organic", "SNAP": "accepts_snap",
@@ -258,10 +259,15 @@ def main():
     if a.overrides and os.path.exists(a.overrides):
         with open(a.overrides, encoding="utf-8-sig", newline="") as f:
             for orow in csv.DictReader(f):
-                m = re.search(r"partner:(\w+)", orow.get("note") or "")
-                if m:
-                    partner_fields[(nkey(orow["name"]), (orow.get("column") or "").strip())] = (
-                        m.group(1), orow.get("date") or "")
+                note = orow.get("note") or ""
+                m = re.search(r"partner:(\w+)", note)
+                v = re.search(r"via:(facebook|website)(?:\s+(https?://\S+))?", note)
+                key = (nkey(orow["name"]), (orow.get("column") or "").strip())
+                if m:      # confirmed by a partner such as Guidestone
+                    partner_fields[key] = (m.group(1), "partner", orow.get("date") or "", "")
+                elif v:    # confirmed from the business's own Facebook page or website
+                    partner_fields[key] = ({"facebook": "producer_facebook", "website": "producer_site"}[v.group(1)],
+                                           "source", orow.get("date") or "", v.group(2) or "")
     kinds_by_name = {}
     if a.kinds and os.path.exists(a.kinds):
         with open(a.kinds, encoding="utf-8-sig", newline="") as f:
@@ -452,7 +458,8 @@ def main():
                     who, when = ("partner", r["Source Updated"]) if partner else ("source", "")
                     pf = partner_fields.get((nkey(name), col)) if src == "override" else None
                     if pf:
-                        src, who, when = pf[0], "partner", pf[1]
+                        src, who, when = pf[0], pf[1], pf[2]
+                        url = pf[3] or url
                     out["field_sources"].append({"record_type": rtype, "record_id": rid, "field": fld,
                                                  "source": SOURCE_NAME.get(src, src), "source_url": url,
                                                  "verified_by": who, "verified_on": when})
