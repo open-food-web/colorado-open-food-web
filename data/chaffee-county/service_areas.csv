@@ -1,4 +1,5 @@
 producer_id,county_fips,basis,derived
+co-p-000032,08109,home_base,true
 co-p-000001,08015,home_base,true
 co-p-000002,08043,home_base,true
 co-p-000002,08015,pickup,true
@@ -10,12 +11,17 @@ co-p-000007,08015,home_base,true
 co-p-000008,08015,home_base,true
 co-p-000009,08015,home_base,true
 co-p-000010,08015,home_base,true
+co-p-000033,08015,home_base,true
+co-p-000034,08015,home_base,true
+co-p-000035,08015,home_base,true
 co-p-000030,08015,home_base,true
 co-p-000012,08015,home_base,true
 co-p-000013,08015,home_base,true
 co-p-000014,08015,home_base,true
+co-p-000036,08015,home_base,true
 co-p-000017,08015,home_base,true
 co-p-000018,08015,home_base,true
+co-p-000037,08077,home_base,true
 co-p-000019,08015,home_base,true
 co-p-000020,08015,home_base,true
 co-p-000021,08015,home_base,true
@@ -25,4 +31,5 @@ co-p-000024,08015,home_base,true
 co-p-000026,08015,home_base,true
 co-p-000027,08015,home_base,true
 co-p-000028,08015,home_base,true
+co-p-000038,08015,home_base,true
 co-p-000031,08015,home_base,true

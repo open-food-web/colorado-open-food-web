@@ -1,4 +1,5 @@
 producer_location_id,producer_id,location_id,role,days,hours_text,season_start,season_end,status
+co-ploc-000037,co-p-000032,co-loc-000043,home_base,,,,,listed
 co-ploc-000001,co-p-000001,co-loc-000001,home_base,,,,,listed
 co-ploc-000002,co-p-000002,co-loc-000002,home_base,,,,,listed
 co-ploc-000030,co-p-000002,co-loc-000038,pickup,Tue,Tue: 4:45pm - 5:00pm,,,listed
@@ -12,12 +13,17 @@ co-ploc-000007,co-p-000007,co-loc-000008,home_base,,,,,listed
 co-ploc-000008,co-p-000008,co-loc-000009,home_base,,By appointment,,,listed
 co-ploc-000009,co-p-000009,co-loc-000011,home_base,,,,,listed
 co-ploc-000010,co-p-000010,co-loc-000012,home_base,,,,,listed
+co-ploc-000038,co-p-000033,co-loc-000044,home_base,,,,,listed
+co-ploc-000039,co-p-000034,co-loc-000045,home_base,,,,,listed
+co-ploc-000040,co-p-000035,co-loc-000046,home_base,,,,,listed
 co-ploc-000033,co-p-000030,co-loc-000041,home_base,,Tue: 4:00pm - 6:00pm,,,listed
 co-ploc-000012,co-p-000012,co-loc-000014,home_base,,,,,listed
 co-ploc-000013,co-p-000013,co-loc-000015,home_base,,,,,listed
 co-ploc-000014,co-p-000014,co-loc-000016,home_base,,,,,listed
+co-ploc-000041,co-p-000036,co-loc-000047,home_base,,,,,listed
 co-ploc-000017,co-p-000017,co-loc-000020,home_base,,,,,listed
 co-ploc-000018,co-p-000018,co-loc-000021,home_base,,,,,listed
+co-ploc-000042,co-p-000037,co-loc-000048,home_base,,U-pick orchard tours in summer season,,,listed
 co-ploc-000019,co-p-000019,co-loc-000022,home_base,,By appointment,,,listed
 co-ploc-000020,co-p-000020,co-loc-000023,home_base,,By appointment,,,listed
 co-ploc-000021,co-p-000021,co-loc-000024,home_base,,Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; Wed: 8 am - 6 pm; Thu: 8 am - 6 pm; Fri: 8 am - 6 pm; Sat: 8 am - 6 pm,,,listed
@@ -27,6 +33,14 @@ co-ploc-000024,co-p-000024,co-loc-000028,home_base,,,,,listed
 co-ploc-000026,co-p-000026,co-loc-000032,home_base,,"Pick-your-own flowers by appointment, June–October",,,listed
 co-ploc-000027,co-p-000027,co-loc-000033,home_base,,,,,listed
 co-ploc-000028,co-p-000028,co-loc-000034,home_base,,,,,listed
+co-ploc-000043,co-p-000038,co-loc-000049,home_base,,,,,listed
 co-ploc-000034,co-p-000031,co-loc-000042,home_base,,Tue-Sun: 8:00am - 6:00pm,,,listed
+co-ploc-000044,co-p-000032,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
 co-ploc-000035,co-p-000002,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19,,,listed
+co-ploc-000045,co-p-000033,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
+co-ploc-000046,co-p-000034,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
+co-ploc-000047,co-p-000035,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
+co-ploc-000048,co-p-000036,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
+co-ploc-000049,co-p-000037,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
 co-ploc-000036,co-p-000021,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19,,,listed
+co-ploc-000050,co-p-000038,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed

@@ -1,4 +1,6 @@
 record_type,record_id,source,url,source_record_id,last_seen,link_status
+producer,co-p-000032,curated,,,,unchecked
+producer,co-p-000032,colorado_proud,,,,unchecked
 producer,co-p-000001,producer_site,https://www.arrowpointcattle.com,,,unchecked
 producer,co-p-000001,chaffee_provides,,arrowpoint-cattle-company,,unchecked
 producer,co-p-000002,producer_site,https://www.badgercreekranch.com/,,,unchecked
@@ -21,6 +23,9 @@ outlet,co-o-000001,chaffee_provides,,eddyline-restaurant-at-southmain,,unchecked
 producer,co-p-000009,colorado_proud,,,,unchecked
 producer,co-p-000010,producer_site,,,,unchecked
 producer,co-p-000010,chaffee_provides,,everett-ranch-beef,,unchecked
+producer,co-p-000033,curated,,,,unchecked
+producer,co-p-000034,curated,,,,unchecked
+producer,co-p-000035,curated,,,,unchecked
 producer,co-p-000030,curated,,,,unchecked
 access_point,co-ap-000001,guidestone,,,,unchecked
 access_point,co-ap-000002,guidestone,,,,unchecked
@@ -31,10 +36,12 @@ producer,co-p-000013,chaffee_provides,,hutchinson-ranch,,unchecked
 producer,co-p-000014,producer_site,,,,unchecked
 producer,co-p-000014,chaffee_provides,,lewis-lazy-l-ranch,,unchecked
 outlet,co-o-000002,curated,,,,unchecked
+producer,co-p-000036,curated,,,,unchecked
 producer,co-p-000017,producer_site,https://mountaingoatlodge.com,,,unchecked
 producer,co-p-000017,chaffee_provides,,mountain-goat-lodge,,unchecked
 producer,co-p-000018,producer_site,http://www.mushroomloveco.com,,,unchecked
 producer,co-p-000018,chaffee_provides,,mushroom-love-co,,unchecked
+producer,co-p-000037,curated,,,,unchecked
 producer,co-p-000019,producer_site,https://www.phytologyflowers.com,,,unchecked
 producer,co-p-000019,chaffee_provides,,phytology-flowers-farm,,unchecked
 producer,co-p-000020,producer_site,https://ponchacreekgardens.wordpress.com/our-products/,,,unchecked
@@ -62,4 +69,5 @@ producer,co-p-000027,producer_site,https://www.troutcreekfarm.com,,,unchecked
 producer,co-p-000027,chaffee_provides,,trout-creek-farm,,unchecked
 producer,co-p-000028,producer_site,https://www.valleyrootsfoodhub.com/,,,unchecked
 producer,co-p-000028,chaffee_provides,,valley-roots-food-hub,,unchecked
+producer,co-p-000038,curated,,,,unchecked
 producer,co-p-000031,curated,,,,unchecked

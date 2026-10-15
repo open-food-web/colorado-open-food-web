@@ -189,9 +189,14 @@ def main():
     a = ap.parse_args()
     fips = FIPS[a.county]
 
+    sells_here = set()      # businesses based elsewhere that sell here (a place in inputs/locations.csv)
+    if a.locations and os.path.exists(a.locations):
+        with open(a.locations, encoding="utf-8-sig", newline="") as f:
+            sells_here = {re.sub(r"[^a-z0-9]+", "", (lr["name"] or "").lower()) for lr in csv.DictReader(f)}
     with open(a.raw, encoding="utf-8-sig", newline="") as f:
         raw = [r for r in csv.DictReader(f) if (r["County"] or "").strip().lower() == a.county.lower()
-               or "chaffee_provides" in (r["Source"] or "")]
+               or "chaffee_provides" in (r["Source"] or "")
+               or re.sub(r"[^a-z0-9]+", "", (r["Business Name"] or "").lower()) in sells_here]
     for path in a.additions:
         with open(path, encoding="utf-8-sig", newline="") as f:
             add = list(csv.DictReader(f))
@@ -238,6 +243,8 @@ def main():
         cats_main = [c for c in cats if c not in BADGES]
         sid = r["Source ID"] or slugify(name)
         typ = classify(cats_main)
+        if typ == "deferred" and (kinds_by_name.get(nkey(name)) or {}).get("kind"):
+            typ = "producer"      # a person has said what it is (a mushroom grower, a honey maker...)
         prov = json.loads(r["Provenance"]) if r["Provenance"] else {}
         srcs = [SOURCE_NAME.get(s, s) for s in (r["Source"] or "").split("+") if s]
         if typ == "deferred":

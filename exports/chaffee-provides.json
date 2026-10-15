@@ -10,10 +10,10 @@
   ],
   "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
   "counts": {
-   "producers": 25,
+   "producers": 32,
    "markets": 2,
    "access_points": 2,
-   "pins": 31
+   "pins": 39
   }
  },
  "vocab": {
@@ -60,10 +60,109 @@
    "garlic-herbs": "Garlic & herbs",
    "mushrooms": "Mushrooms",
    "baked-goods": "Baked goods",
+   "seeds-plants": "Seeds & plants",
    "drinks": "Wine & drinks"
   }
  },
  "producers": [
+  {
+   "id": "co-p-000032",
+   "slug": "alpine-valley-mushrooms",
+   "name": "Alpine Valley Mushrooms",
+   "kind": "farm",
+   "categories": [
+    "On-Farm / Ranch Sales"
+   ],
+   "products": [
+    "Certified organic gourmet mushrooms",
+    "fresh and dried",
+    " tinctures",
+    "extracts"
+   ],
+   "product_groups": [
+    "mushrooms"
+   ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
+   "months_open": [],
+   "hours_text": null,
+   "website": "https://www.alpinevalleymushrooms.com/",
+   "phone": "(303) 916-2691",
+   "email": null,
+   "facebook": "https://www.facebook.com/alpinevalleymushrooms/",
+   "instagram": "https://www.instagram.com/alpinevalleymushrooms/",
+   "sales_channels": [
+    "farmers_market"
+   ],
+   "certified_organic": true,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000043",
+     "role": "home_base",
+     "name": null,
+     "address": "319 San Juan Avenue",
+     "city": "Saguache",
+     "zip": "81149",
+     "county_fips": "08109",
+     "lat": 38.08641,
+     "lon": -106.136452,
+     "precision": "exact",
+     "pin": false,
+     "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000026",
+     "role": "pickup",
+     "name": "Salida Farmers Market",
+     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.533052,
+     "lon": -105.993304,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    },
+    {
+     "source": "colorado_proud",
+     "label": "Colorado Proud",
+     "url": null
+    }
+   ],
+   "confirmed_by": []
+  },
   {
    "id": "co-p-000001",
    "slug": "arrowpoint-cattle-company",
@@ -898,6 +997,282 @@
    ]
   },
   {
+   "id": "co-p-000033",
+   "slug": "feedsack-flowers",
+   "name": "Feedsack Flowers",
+   "kind": "farm",
+   "categories": [],
+   "products": [
+    "Cut-flower bouquets",
+    "dried and pressed flower art"
+   ],
+   "product_groups": [
+    "flowers"
+   ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
+   "months_open": [],
+   "hours_text": null,
+   "website": null,
+   "phone": null,
+   "email": null,
+   "facebook": "https://www.facebook.com/Feedsackflowers/",
+   "instagram": null,
+   "sales_channels": [
+    "farmers_market"
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000044",
+     "role": "home_base",
+     "name": null,
+     "address": null,
+     "city": "Center",
+     "zip": null,
+     "county_fips": "08015",
+     "lat": null,
+     "lon": null,
+     "precision": "none",
+     "pin": false,
+     "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000026",
+     "role": "pickup",
+     "name": "Salida Farmers Market",
+     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.533052,
+     "lon": -105.993304,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ],
+   "confirmed_by": []
+  },
+  {
+   "id": "co-p-000034",
+   "slug": "foxtown-farm",
+   "name": "Foxtown Farm",
+   "kind": "maker",
+   "categories": [],
+   "products": [
+    "Ginger",
+    "turmeric and elderberry honey syrups",
+    "fire cider",
+    "crystallized ginger"
+   ],
+   "product_groups": [
+    "fruit",
+    "honey",
+    "drinks"
+   ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
+   "months_open": [],
+   "hours_text": null,
+   "website": "https://foxtownfarm.com/",
+   "phone": null,
+   "email": null,
+   "facebook": null,
+   "instagram": "https://www.instagram.com/foxtownfarm/",
+   "sales_channels": [
+    "farmers_market"
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000045",
+     "role": "home_base",
+     "name": null,
+     "address": null,
+     "city": "Buena Vista",
+     "zip": null,
+     "county_fips": "08015",
+     "lat": null,
+     "lon": null,
+     "precision": "none",
+     "pin": false,
+     "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000026",
+     "role": "pickup",
+     "name": "Salida Farmers Market",
+     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.533052,
+     "lon": -105.993304,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ],
+   "confirmed_by": []
+  },
+  {
+   "id": "co-p-000035",
+   "slug": "gregs-gourmet-greens",
+   "name": "Greg's Gourmet Greens",
+   "kind": "farm",
+   "categories": [],
+   "products": [
+    "Microgreens",
+    "freeze-dried produce",
+    "herbs",
+    "mushrooms"
+   ],
+   "product_groups": [
+    "veggies",
+    "garlic-herbs",
+    "mushrooms"
+   ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
+   "months_open": [],
+   "hours_text": null,
+   "website": "https://gregsgourmetgreens.com/",
+   "phone": null,
+   "email": null,
+   "facebook": null,
+   "instagram": null,
+   "sales_channels": [
+    "farmers_market",
+    "online"
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000046",
+     "role": "home_base",
+     "name": null,
+     "address": null,
+     "city": "Poncha Springs",
+     "zip": null,
+     "county_fips": "08015",
+     "lat": null,
+     "lon": null,
+     "precision": "none",
+     "pin": false,
+     "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000026",
+     "role": "pickup",
+     "name": "Salida Farmers Market",
+     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.533052,
+     "lon": -105.993304,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ],
+   "confirmed_by": []
+  },
+  {
    "id": "co-p-000030",
    "slug": "guidestone-colorado-community-and-school-farm",
    "name": "Guidestone Colorado Community and School Farm",
@@ -1206,6 +1581,94 @@
    "confirmed_by": []
   },
   {
+   "id": "co-p-000036",
+   "slug": "miss-penns-mountain-seeds",
+   "name": "Miss Penn's Mountain Seeds",
+   "kind": "farm",
+   "categories": [],
+   "products": [
+    "Heirloom mountain-adapted seeds (about 250 tomato varieties)"
+   ],
+   "product_groups": [
+    "seeds-plants"
+   ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
+   "months_open": [],
+   "hours_text": null,
+   "website": "https://www.pennandcordsgarden.com/miss-penns-mountain-seeds.html",
+   "phone": "(719) 783-2917",
+   "email": null,
+   "facebook": null,
+   "instagram": "https://www.instagram.com/misspennsmountainseeds/",
+   "sales_channels": [
+    "farmers_market"
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000047",
+     "role": "home_base",
+     "name": null,
+     "address": null,
+     "city": "Westcliffe",
+     "zip": null,
+     "county_fips": "08015",
+     "lat": null,
+     "lon": null,
+     "precision": "none",
+     "pin": false,
+     "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000026",
+     "role": "pickup",
+     "name": "Salida Farmers Market",
+     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.533052,
+     "lon": -105.993304,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ],
+   "confirmed_by": []
+  },
+  {
    "id": "co-p-000017",
    "slug": "mountain-goat-lodge",
    "name": "Mountain Goat Lodge",
@@ -1371,6 +1834,110 @@
      "date": null
     }
    ]
+  },
+  {
+   "id": "co-p-000037",
+   "slug": "palisade-peach-shack",
+   "name": "Palisade Peach Shack",
+   "kind": "orchard",
+   "categories": [
+    "Roadside Market",
+    "U-Pick"
+   ],
+   "products": [
+    "Peaches",
+    "cherries",
+    "apricots",
+    "pears",
+    "melons",
+    "corn",
+    "jams",
+    "peach butter",
+    "salsas",
+    "pies",
+    "coffee",
+    "ice cream"
+   ],
+   "product_groups": [
+    "fruit",
+    "drinks"
+   ],
+   "dropin_visits": true,
+   "dropin_hours": "U-pick orchard tours in summer season",
+   "farm_pickup": true,
+   "visit_basis": {
+    "dropin": "listing",
+    "pickup": "listing"
+   },
+   "visit_note": null,
+   "months_open": [],
+   "hours_text": "U-pick orchard tours in summer season",
+   "website": "https://www.palisadepeachshack.com/",
+   "phone": "(970) 464-2091",
+   "email": "ramcbreen21@gmail.com",
+   "facebook": "https://www.facebook.com/PalisadePeachShackWesternSlope/",
+   "instagram": "https://www.instagram.com/palisadepeachshack/",
+   "sales_channels": [
+    "farm_stand",
+    "u_pick"
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000048",
+     "role": "home_base",
+     "name": null,
+     "address": "757 37 3/10 Rd",
+     "city": "Palisade",
+     "zip": "81526",
+     "county_fips": "08077",
+     "lat": 39.11413,
+     "lon": -108.360267,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [],
+     "hours_text": "U-pick orchard tours in summer season",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000026",
+     "role": "pickup",
+     "name": "Salida Farmers Market",
+     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.533052,
+     "lon": -105.993304,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ],
+   "confirmed_by": []
   },
   {
    "id": "co-p-000019",
@@ -1953,7 +2520,8 @@
     "veggies",
     "beef-meat",
     "flowers",
-    "garlic-herbs"
+    "garlic-herbs",
+    "seeds-plants"
    ],
    "dropin_visits": true,
    "dropin_hours": null,
@@ -2185,6 +2753,97 @@
      "date": null
     }
    ]
+  },
+  {
+   "id": "co-p-000038",
+   "slug": "westcliffe-honey-company",
+   "name": "Westcliffe Honey Company",
+   "kind": "farm",
+   "categories": [],
+   "products": [
+    "Raw",
+    "creamed and infused honey",
+    "comb honey",
+    "beeswax goods"
+   ],
+   "product_groups": [
+    "honey"
+   ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
+   "months_open": [],
+   "hours_text": null,
+   "website": "https://www.westcliffehoneyco.com/",
+   "phone": null,
+   "email": null,
+   "facebook": null,
+   "instagram": null,
+   "sales_channels": [
+    "farmers_market"
+   ],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000049",
+     "role": "home_base",
+     "name": null,
+     "address": null,
+     "city": "Westcliffe",
+     "zip": null,
+     "county_fips": "08015",
+     "lat": null,
+     "lon": null,
+     "precision": "none",
+     "pin": false,
+     "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    },
+    {
+     "id": "co-loc-000026",
+     "role": "pickup",
+     "name": "Salida Farmers Market",
+     "address": "Alpine Park, 404 E Street, Salida, CO 81201",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.533052,
+     "lon": -105.993304,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [
+      "Sat"
+     ],
+     "hours_text": "Sat: 8:00am - 12:00pm (through Oct 24)",
+     "season_start": null,
+     "season_end": null,
+     "status": "listed"
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ],
+   "confirmed_by": []
   },
   {
    "id": "co-p-000031",

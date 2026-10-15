@@ -116,6 +116,25 @@ class BuildTables(unittest.TestCase):
         self.assertEqual([(r["source"], r["verified_by"], r["verified_on"]) for r in fs],
                          [("guidestone", "partner", "2026-10-13")])
         self.assertIn("pickup", {r["basis"] for r in self.table("service_areas")} | {"pickup"})
+    def test_a_business_based_elsewhere_that_sells_here_is_included(self):
+        d = tempfile.mkdtemp()
+        locs, kinds = os.path.join(d, "locations.csv"), os.path.join(d, "kinds.csv")
+        head = "name,city,role,place_name,address,place_city,zip,county,lat,lon,geo_source,hide_address,days,hours_text,season_start,season_end,market_ref,sales_channels,note,source,date".split(",")
+        with open(locs, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(head)
+            w.writerow([{"name": "Far Honey", "role": "pickup", "market_ref": "A Market"}.get(h, "") for h in head])
+        with open(kinds, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(["name", "kind"])
+            w.writerow(["Far Honey", "farm"])
+        self.build([row("Far Honey", "Other", County="Custer", City="Westcliffe", Source="curated"),
+                    row("Other Far Farm", "On-Farm / Ranch Sales", County="Custer", City="Westcliffe", Source="curated"),
+                    row("A Market", "Farmers' Market", Address="Park", City="Salida", Latitude="38.5", Longitude="-106")],
+                   extra=["--locations", locs, "--kinds", kinds])
+        self.assertEqual([r["name"] for r in self.table("producers")], ["Far Honey"])   # sells here, based elsewhere
+        roles = [(p["role"]) for p in self.table("producer_locations")]
+        self.assertEqual(sorted(roles), ["home_base", "pickup"])
 
 
 if __name__ == "__main__":
