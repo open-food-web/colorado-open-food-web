@@ -70,6 +70,12 @@ class Market:
     longitude: Optional[float] = None
 
     # Bookkeeping (not written to the My Maps CSV, but kept in the raw CSV).
+    # "" = open as far as we know. "Closed" = we are confident it once operated and no
+    # longer does: kept in the raw CSV (so it is never re-researched or re-added), left out
+    # of the public directory.
+    status: str = ""
+    # Year the business started; the evidence goes in the override note. Raw CSV only.
+    year_opened: str = ""
     source: str = ""                 # primary source that created this record
     geo_source: str = ""             # "source" | "census-geocoder" | "" (none)
     dup_hint: str = ""               # name of a suspected duplicate, for human review

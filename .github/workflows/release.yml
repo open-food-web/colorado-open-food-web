@@ -1,0 +1,38 @@
+name: Release
+
+# Builds the directory from the committed snapshots and inputs and publishes it as a GitHub Release
+# that apps pin (tag + sha256). Run by hand: Actions -> Release -> Run workflow.
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release tag, like v2026.10.1"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Test
+        run: python -m pip install -q pytest && python -m pytest -q scripts/tests tests
+      - name: Build
+        run: python scripts/scrape/build.py
+      - name: Build the CSA data
+        run: python scripts/csa/build_csa.py
+      - name: Assemble the release
+        run: python scripts/make_release.py --version "${{ inputs.version }}" --out release
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ inputs.version }}" release/*.csv release/*.json \
+            --title "Colorado Open Food Web ${{ inputs.version }}" --notes-file release/RELEASE.md

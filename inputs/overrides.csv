@@ -118,9 +118,6 @@ East Denver Food Hub,Montbello,Category,set,Community Food Hub,"Community food-a
 US Potato Board,Denver Tech Center,,remove,,"A trade association, not a place to get food (2026-10-03 category review)",2026-10-03
 "Borden Farms, LLC",Delta,Business Name,set,Pedro's Farm (formerly Borden Farms),Renamed: its site now reads 'Pedro's Farm ... Formerly Borden Farms' (verified 2026-10-03),2026-10-03
 Platte River Fort,Greeley,,remove,,"Now River Fort Ranch, a barn wedding venue (riverfortranch.com); no farm stand, produce or tours described, so not a food stop (reviewed 2026-10-03)",2026-10-03
-Boulder Creek Winery,Boulder,,remove,,"Closed: Yelp 'CLOSED - Updated January 2026', Foursquare 'Now Closed' (closed-org check 2026-10-03)",2026-10-03
-Spotted Horse Barnyard,Elbert,,remove,,Closed: owner confirmed permanent closure (pumpkinpatchesandmore.org closed-farms page) (closed-org check 2026-10-03),2026-10-03
-Freeman Apple Orchard,Lakewood,,remove,,Closed: pickyourown.org lists it permanently closed; domain gone (closed-org check 2026-10-03),2026-10-03
 Lyons Outdoor Market,Lyons,,remove,,"Removed on review: Tripadvisor 'temporarily closed until 10/04/2026', absent from the town's 2026 events, website gone (closed-org check 2026-10-03)",2026-10-03
 Hugs Farm,Walsenburg,,remove,,"Removed on review: visithugsfarm.com now offers mindfulness/animal-therapy services, no food sales (closed-org check 2026-10-03)",2026-10-03
 Morton's Organic Orchards,Palisade,Website,set,https://mortonsorganicorchards.com/,Site moved; 2026 season updates on the new domain (closed-org check 2026-10-03),2026-10-03
@@ -853,3 +850,191 @@ Berg Harvest LLC dba Berg Harvest Mercantile,Paonia,Certified Organic,set,Yes,Th
 Aragon Farms LLC,Greeley,Hours,set,Sat: 10am - 4pm,Hours from https://aragonfarmsco.com/contact/ (undated page); confidence medium. Farm Store Hours: Saturdays 10 am - 4 pm or by appointment; online orders for on-farm pickup or delivery,2026-10-14
 Lenz Family Farms,Holyoke,Hours,set,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 5pm; Sat: 8am - 12pm,Hours from https://www.lenzfamilyfarms.com (undated page); confidence medium. Hours listed on homepage without label; page does not say whether office or packing shed/public sales; Sunday not listed,2026-10-14
 Farm Runners LLC,Hotchkiss,Hours,set,Wed: 8:30am - 5:30pm; Thu: 8:30am - 5:30pm; Fri: 8:30am - 5:30pm; Sat: 8:30am - 5:30pm; Sun: 10am - 4pm,"Hours from https://FarmRunners.com (undated page); confidence medium. The Station, 235 Hwy 133 Hotchkiss; closed Monday/Tuesday. Year-round not stated on page",2026-10-14
+Boulder Creek Winery,Boulder,Notes,prepend,Closed.,"Closed: Yelp 'CLOSED - Updated January 2026', Foursquare 'Now Closed' (closed-org check 2026-10-03)",2026-10-03
+Spotted Horse Barnyard,Elbert,Notes,prepend,Closed.,Closed: owner confirmed permanent closure (pumpkinpatchesandmore.org closed-farms page) (closed-org check 2026-10-03),2026-10-03
+Freeman Apple Orchard,Lakewood,Notes,prepend,Closed.,Closed: pickyourown.org lists it permanently closed; domain gone (closed-org check 2026-10-03),2026-10-03
+Zephyros Farm and Garden,Paonia,Address,set,11466 3725 Rd,"Real Organic Project directory lists 11466 3725 Rd, Paonia 81428 (checked 2026-10-08)",2026-10-08
+Zephyros Farm and Garden,Paonia,Zip,set,81428,Real Organic Project directory (checked 2026-10-08),2026-10-08
+Zephyros Farm and Garden,Paonia,Phone,set,970-270-2510,Real Organic Project directory (checked 2026-10-08),2026-10-08
+Zephyros Farm and Garden,Paonia,Website,set,https://zephyrosfarmandgarden.com,"Farm's own site, operating in 2026 (checked 2026-10-08)",2026-10-08
+"Borden Farms, LLC",Delta,Phone,set,970-200-6919,pedrosfarm.com (own site) lists 970-200-6919; the directory number was the old Borden Farms line (checked 2026-10-08),2026-10-08
+Parker Pastures,Gunnison,County,set,Gunnison,Town only (no public address); Gunnison is in Gunnison County (checked 2026-10-08),2026-10-08
+LB Specialty Beef,Gunnison,County,set,Gunnison,Town only (no public address); Gunnison is in Gunnison County (checked 2026-10-08),2026-10-08
+Zephyros Farm and Garden,Paonia,County,set,Delta,Paonia is in Delta County; Real Organic Project lists a Paonia address (checked 2026-10-08),2026-10-08
+Topp Fruits,Hotchkiss,Latitude,set,38.79899,"Pinned at the center of Hotchkiss: no street address on its own site/listing (Census gazetteer, 2026-10-08)",2026-10-08
+Topp Fruits,Hotchkiss,Longitude,set,-107.71339,"Pinned at the center of Hotchkiss: no street address on its own site/listing (Census gazetteer, 2026-10-08)",2026-10-08
+Topp Fruits,Hotchkiss,County,set,Delta,Hotchkiss is in Delta County,2026-10-08
+Grand Valley Micro Farms,Grand Junction,Latitude,set,39.08906,"Pinned at the center of Grand Junction: no street address on its own site/listing (Census gazetteer, 2026-10-08)",2026-10-08
+Grand Valley Micro Farms,Grand Junction,Longitude,set,-108.56745,"Pinned at the center of Grand Junction: no street address on its own site/listing (Census gazetteer, 2026-10-08)",2026-10-08
+Grand Valley Micro Farms,Grand Junction,County,set,Mesa,Grand Junction is in Mesa County,2026-10-08
+Peterson Ranch (Double J Cattle & Hay),Gunnison,County,set,Gunnison,Gunnison is in Gunnison County,2026-10-08
+Twin Pines Ranch,Montrose,County,set,Montrose,Montrose is in Montrose County,2026-10-08
+Rockin' J Spear Cattle Co,Loma,County,set,Mesa,Town pin; county from the town (2026-10-08),2026-10-08
+Chamberlain Farms,Delta,County,set,Delta,Town pin; county from the town (2026-10-08),2026-10-08
+Elk Mountain Farmacy,Paonia,County,set,Delta,Town pin; county from the town (2026-10-08),2026-10-08
+Zimmerman Farms,Hotchkiss,County,set,Delta,Town pin; county from the town (2026-10-08),2026-10-08
+Hummin' Bird Farms,Hotchkiss,County,set,Delta,Town pin; county from the town (2026-10-08),2026-10-08
+Smith Family Farm,Hotchkiss,County,set,Delta,Town pin; county from the town (2026-10-08),2026-10-08
+Beet Street Farm,Durango,County,set,La Plata,Town pin; county from the town (2026-10-08),2026-10-08
+DRAM Apothecary,Salida,County,set,Chaffee,Town pin; county from the town (2026-10-08),2026-10-08
+Fields to Plate Produce,Durango,Latitude,set,37.26453,"The street address could not be geocoded, so pinned at the center of Durango (Census gazetteer, 2026-10-08)",2026-10-08
+Fields to Plate Produce,Durango,Longitude,set,-107.87412,"The street address could not be geocoded, so pinned at the center of Durango (Census gazetteer, 2026-10-08)",2026-10-08
+Fields to Plate Produce,Durango,County,set,La Plata,Durango is in La Plata County,2026-10-08
+La Milpa Tortilla Factory,Grand Junction,Latitude,set,39.08906,"The street address could not be geocoded, so pinned at the center of Grand Junction (Census gazetteer, 2026-10-08)",2026-10-08
+La Milpa Tortilla Factory,Grand Junction,Longitude,set,-108.56745,"The street address could not be geocoded, so pinned at the center of Grand Junction (Census gazetteer, 2026-10-08)",2026-10-08
+La Milpa Tortilla Factory,Grand Junction,County,set,Mesa,Grand Junction is in Mesa County,2026-10-08
+Gunnison Gardens,Gunnison,Latitude,set,38.54798,"The street address could not be geocoded, so pinned at the center of Gunnison (Census gazetteer, 2026-10-08)",2026-10-08
+Gunnison Gardens,Gunnison,Longitude,set,-106.9246,"The street address could not be geocoded, so pinned at the center of Gunnison (Census gazetteer, 2026-10-08)",2026-10-08
+Gunnison Gardens,Gunnison,County,set,Gunnison,Gunnison is in Gunnison County,2026-10-08
+Wild Mountain Seeds,Carbondale,County,set,Pitkin,"Sunfire Ranch easement is held by Pitkin County Open Space; no public address, so confirm county",2026-10-08
+Miller Farms,Platteville,County,set,Weld,First pass: county from the town/address (2026-10-08),2026-10-08
+Forte Fruits,Sheridan,County,set,Arapahoe,First pass: county from the town/address (2026-10-08),2026-10-08
+Bjorn's Colorado Honey,Boulder,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Kiowa Valley Organics,Roggen,County,set,Weld,First pass: county from the town/address (2026-10-08),2026-10-08
+Croft Family Farm,Kersey,County,set,Weld,First pass: county from the town/address (2026-10-08),2026-10-08
+Fungus Farm Colorado,Colorado Springs,County,set,El Paso,First pass: county from the town/address (2026-10-08),2026-10-08
+further up Farms,Elizabeth,County,set,Elbert,First pass: county from the town/address (2026-10-08),2026-10-08
+Rocky Mountain Fresh,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Root Rock Farm,Eckert,County,set,Delta,First pass: county from the town/address (2026-10-08),2026-10-08
+The Fresh Herb Company,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Black Cat Farm,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Brown Dog Farm,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Buckner Family Ranch,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Eden Valley Farm,Loveland,County,set,Larimer,First pass: county from the town/address (2026-10-08),2026-10-08
+Folks Farm and Seed,Fort Collins,County,set,Larimer,First pass: county from the town/address (2026-10-08),2026-10-08
+Longmont Dairy,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Mother Mycelium,Broomfield,County,set,Broomfield,First pass: county from the town/address (2026-10-08),2026-10-08
+MycoCosm Mushroom Company,Peyton,County,set,El Paso,First pass: county from the town/address (2026-10-08),2026-10-08
+Summit Roots Farm,Dolores,County,set,Montezuma,First pass: county from the town/address (2026-10-08),2026-10-08
+Wag's World Orchards,Eckert,County,set,Delta,First pass: county from the town/address (2026-10-08),2026-10-08
+Wild Wick's Farm,Lakewood,County,set,Jefferson,First pass: county from the town/address (2026-10-08),2026-10-08
+5K Ranch,Clark,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Afton's Garden Center LLC,Hotchkiss,County,set,Delta,First pass: county from the town/address (2026-10-08),2026-10-08
+Anatolian Farms LLC,Mancos,County,set,Montezuma,First pass: county from the town/address (2026-10-08),2026-10-08
+Anita's Pantry & Produce / Palisade Pies,Palisade,County,set,Mesa,First pass: county from the town/address (2026-10-08),2026-10-08
+Aquarius Gardens LLC,Erie,County,set,Weld,First pass: county from the town/address (2026-10-08),2026-10-08
+Artemis Flower Farm,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Aster Valley Farm,Durango,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Bell Beef,Cortez,County,set,Montezuma,First pass: county from the town/address (2026-10-08),2026-10-08
+"Bella Bolettino Organic Farms, LLC",Palisade,County,set,Mesa,First pass: county from the town/address (2026-10-08),2026-10-08
+Big Ben's Meats,Bayfield,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Botanical Companions,Mancos,County,set,Montezuma,First pass: county from the town/address (2026-10-08),2026-10-08
+Boulder Better Wagyu,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Breen Mesa Farm,Breen,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Climax Jerky Inc.,Dillon,County,set,Summit,First pass: county from the town/address (2026-10-08),2026-10-08
+Crooked Roots Farm,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Cunningham Orchards,Palisade,County,set,Mesa,First pass: county from the town/address (2026-10-08),2026-10-08
+DeLaney Community Farm,Aurora,County,set,Arapahoe,First pass: county from the town/address (2026-10-08),2026-10-08
+Destiny Botanicals,Mancos,County,set,Montezuma,First pass: county from the town/address (2026-10-08),2026-10-08
+Gordanier Ranch,Cortez,County,set,Montezuma,First pass: county from the town/address (2026-10-08),2026-10-08
+GRIGGSTEAD LLC,Hesperus,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Jorbin Acres,Lafayette,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Kelly Jean's Microgreens,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+La Plata Lavender,Bayfield,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Leafcutter Farms Mushrooms,Durango,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Leaning Tree Farms,Durango,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Lilybee Farm,Ignacio,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Little Hollow Flowers,Berthoud,County,set,Larimer,First pass: county from the town/address (2026-10-08),2026-10-08
+Los Miramontes Lavender Farm by Sunrise Ct Gardens LLC,Cortez,County,set,Montezuma,First pass: county from the town/address (2026-10-08),2026-10-08
+MASA Seed Foundation,Boulder,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Memphis Bison Ranch,Carr,County,set,Weld,First pass: county from the town/address (2026-10-08),2026-10-08
+Mesa Lamb & Wool,Durango,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Mesa Verde Lavender,Cortez,County,set,Montezuma,First pass: county from the town/address (2026-10-08),2026-10-08
+Mocking Crow Farm,Durango,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Mycolove,Fort Lupton,County,set,Weld,First pass: county from the town/address (2026-10-08),2026-10-08
+Natural Homestead Beef,La Salle,County,set,Weld,First pass: county from the town/address (2026-10-08),2026-10-08
+Pothook Farms,Palisade,County,set,Mesa,First pass: county from the town/address (2026-10-08),2026-10-08
+Power Greens,Montrose,County,set,Montrose,First pass: county from the town/address (2026-10-08),2026-10-08
+Rabbit Mountain Lavender,Lyons,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Rattlesnake Gulch Farm and Fertilizer,Hesperus,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Rebel Farm,Denver,County,set,Denver,First pass: county from the town/address (2026-10-08),2026-10-08
+Rendezvous Mushroom Co,Palisade,County,set,Mesa,First pass: county from the town/address (2026-10-08),2026-10-08
+River Otter Farms,Durango,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Rockart Guerreros Chile,Bailey,County,set,Park,First pass: county from the town/address (2026-10-08),2026-10-08
+Rohwer's Farm,Pleasant View,County,set,Montezuma,First pass: county from the town/address (2026-10-08),2026-10-08
+Rough and Ready Farm,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Sage Spring Farm,Bayfield,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Speedwell Farm & Gardens,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Stone Free Farm,Arriola,County,set,Montezuma,First pass: county from the town/address (2026-10-08),2026-10-08
+Sweet Pea Farms,Salida,County,set,Chaffee,First pass: county from the town/address (2026-10-08),2026-10-08
+Swiger Family Farms,Palisade,County,set,Mesa,First pass: county from the town/address (2026-10-08),2026-10-08
+Telluride Mushroom Company,Telluride,County,set,San Miguel,First pass: county from the town/address (2026-10-08),2026-10-08
+Terria Madre Herbs,Cortez,County,set,Montezuma,First pass: county from the town/address (2026-10-08),2026-10-08
+Three Leaf Farm,Lafayette,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Topp Fruits/Rancho Durazno,Hotchkiss,County,set,Delta,First pass: county from the town/address (2026-10-08),2026-10-08
+Turtle Lake Refuge,Durango,County,set,La Plata,First pass: county from the town/address (2026-10-08),2026-10-08
+Ultreia Farm & Wellness,Cedaredge,County,set,Delta,First pass: county from the town/address (2026-10-08),2026-10-08
+Wagner Land & Cattle,Fort Lupton,County,set,Weld,First pass: county from the town/address (2026-10-08),2026-10-08
+WeeBee Farms,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Wisdom Natural Poultry,Haxtun,County,set,Phillips,First pass: county from the town/address (2026-10-08),2026-10-08
+Ellen's Flowers,Canon City,County,set,Fremont,First pass: county from the town/address (2026-10-08),2026-10-08
+Snow Creek Ranch,Larkspur,County,set,Douglas,First pass: county from the town/address (2026-10-08),2026-10-08
+Bears Ears Ranch,Hayden,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Bee Grateful Farm,Steamboat Springs,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Big Leap Ranch,Nunn,County,set,Weld,First pass: county from the town/address (2026-10-08),2026-10-08
+Boulder Flower Farm,Longmont,County,set,Boulder,First pass: county from the town/address (2026-10-08),2026-10-08
+Buffalo Pass Farm,Steamboat Springs,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Craig Angus Ranch,Fort Collins,County,set,Larimer,First pass: county from the town/address (2026-10-08),2026-10-08
+Dandelion Farms,Fort Collins,County,set,Larimer,First pass: county from the town/address (2026-10-08),2026-10-08
+"Elkhead Creek Ranch (Yampa Valley Wagyu, Shadow Laine Farm)",Craig,County,set,Moffat,First pass: county from the town/address (2026-10-08),2026-10-08
+Elkstone Farm,Steamboat Springs,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Garden Goddess Creations,Steamboat Springs,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Grey Hawk Greenhouse and Farm Inc,Wellington,County,set,Larimer,First pass: county from the town/address (2026-10-08),2026-10-08
+Gunner Dog Treats / Kathy's Country Honey,Craig,County,set,Moffat,First pass: county from the town/address (2026-10-08),2026-10-08
+Home Ranch Livestock,Clark,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Joan Kinney Flowers,Fort Collins,County,set,Larimer,First pass: county from the town/address (2026-10-08),2026-10-08
+Jolly Ranch,Craig,County,set,Moffat,First pass: county from the town/address (2026-10-08),2026-10-08
+Little Petals Flower Farm,Fort Collins,County,set,Larimer,First pass: county from the town/address (2026-10-08),2026-10-08
+Little Sun Farm,Fort Collins,County,set,Larimer,First pass: county from the town/address (2026-10-08),2026-10-08
+Lucky 8 Ranch,Oak Creek,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Moon Hill Dairy,Steamboat Springs,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Mountain Valley Developmental Services Greenhouse,Glenwood Springs,County,set,Garfield,First pass: county from the town/address (2026-10-08),2026-10-08
+Mushroom Gardens,Golden,County,set,Jefferson,First pass: county from the town/address (2026-10-08),2026-10-08
+Mycocosm Mushrooms,Peyton,County,set,El Paso,First pass: county from the town/address (2026-10-08),2026-10-08
+Okagawa Farms,Grand Junction,County,set,Mesa,First pass: county from the town/address (2026-10-08),2026-10-08
+Papa Joe's Local Honey,Loveland,County,set,Larimer,First pass: county from the town/address (2026-10-08),2026-10-08
+Rainbow Eggs Co,Denver,County,set,Denver,First pass: county from the town/address (2026-10-08),2026-10-08
+Royal Crest Dairy 2020,Denver,County,set,Denver,First pass: county from the town/address (2026-10-08),2026-10-08
+Sage Creations Farm,Palisade,County,set,Mesa,First pass: county from the town/address (2026-10-08),2026-10-08
+Stanko Ranch,Steamboat Springs,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Sugar Boot Farm Co.,Denver,County,set,Denver,First pass: county from the town/address (2026-10-08),2026-10-08
+The Farm at Home Ranch,Clark,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Trout Creek Meats,Oak Creek,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Yampa Valley Ranch,Yampa,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+Mystic Hills Farmstead,Clark,County,set,Routt,First pass: county from the town/address (2026-10-08),2026-10-08
+"Elkhead Creek Ranch (Yampa Valley Wagyu, Shadow Laine Farm)",Craig,Latitude,set,40.51706,"Street address couldn't be geocoded (rural road), so pinned at the center of Craig for now (Census gazetteer, 2026-10-08)",2026-10-08
+"Elkhead Creek Ranch (Yampa Valley Wagyu, Shadow Laine Farm)",Craig,Longitude,set,-107.5554,"Street address couldn't be geocoded (rural road), so pinned at the center of Craig for now (Census gazetteer, 2026-10-08)",2026-10-08
+Craig Angus Ranch,Fort Collins,Latitude,set,40.54822,"Street address couldn't be geocoded (rural road), so pinned at the center of Fort Collins for now (Census gazetteer, 2026-10-08)",2026-10-08
+Craig Angus Ranch,Fort Collins,Longitude,set,-105.06483,"Street address couldn't be geocoded (rural road), so pinned at the center of Fort Collins for now (Census gazetteer, 2026-10-08)",2026-10-08
+Dandelion Farms,Fort Collins,Latitude,set,40.54822,"Street address couldn't be geocoded (rural road), so pinned at the center of Fort Collins for now (Census gazetteer, 2026-10-08)",2026-10-08
+Dandelion Farms,Fort Collins,Longitude,set,-105.06483,"Street address couldn't be geocoded (rural road), so pinned at the center of Fort Collins for now (Census gazetteer, 2026-10-08)",2026-10-08
+Wisdom Natural Poultry,Haxtun,Latitude,set,40.64187,"Street address couldn't be geocoded (rural road), so pinned at the center of Haxtun for now (Census gazetteer, 2026-10-08)",2026-10-08
+Wisdom Natural Poultry,Haxtun,Longitude,set,-102.6297,"Street address couldn't be geocoded (rural road), so pinned at the center of Haxtun for now (Census gazetteer, 2026-10-08)",2026-10-08
+Afton's Garden Center LLC,Hotchkiss,Latitude,set,38.79899,"Street address couldn't be geocoded (rural road), so pinned at the center of Hotchkiss for now (Census gazetteer, 2026-10-08)",2026-10-08
+Afton's Garden Center LLC,Hotchkiss,Longitude,set,-107.71339,"Street address couldn't be geocoded (rural road), so pinned at the center of Hotchkiss for now (Census gazetteer, 2026-10-08)",2026-10-08
+Three Leaf Farm,Lafayette,Latitude,set,39.99481,"Street address couldn't be geocoded (rural road), so pinned at the center of Lafayette for now (Census gazetteer, 2026-10-08)",2026-10-08
+Three Leaf Farm,Lafayette,Longitude,set,-105.09968,"Street address couldn't be geocoded (rural road), so pinned at the center of Lafayette for now (Census gazetteer, 2026-10-08)",2026-10-08
+Rocky Mountain Fresh,Longmont,Latitude,set,40.1682,"Street address couldn't be geocoded (rural road), so pinned at the center of Longmont for now (Census gazetteer, 2026-10-08)",2026-10-08
+Rocky Mountain Fresh,Longmont,Longitude,set,-105.10052,"Street address couldn't be geocoded (rural road), so pinned at the center of Longmont for now (Census gazetteer, 2026-10-08)",2026-10-08
+Eden Valley Farm,Loveland,Latitude,set,40.4169,"Street address couldn't be geocoded (rural road), so pinned at the center of Loveland for now (Census gazetteer, 2026-10-08)",2026-10-08
+Eden Valley Farm,Loveland,Longitude,set,-105.06311,"Street address couldn't be geocoded (rural road), so pinned at the center of Loveland for now (Census gazetteer, 2026-10-08)",2026-10-08
+Lucky 8 Ranch,Oak Creek,Latitude,set,40.27402,"Street address couldn't be geocoded (rural road), so pinned at the center of Oak Creek for now (Census gazetteer, 2026-10-08)",2026-10-08
+Lucky 8 Ranch,Oak Creek,Longitude,set,-106.95764,"Street address couldn't be geocoded (rural road), so pinned at the center of Oak Creek for now (Census gazetteer, 2026-10-08)",2026-10-08
+Grey Hawk Greenhouse and Farm Inc,Wellington,Latitude,set,40.7007,"Street address couldn't be geocoded (rural road), so pinned at the center of Wellington for now (Census gazetteer, 2026-10-08)",2026-10-08
+Grey Hawk Greenhouse and Farm Inc,Wellington,Longitude,set,-105.0057,"Street address couldn't be geocoded (rural road), so pinned at the center of Wellington for now (Census gazetteer, 2026-10-08)",2026-10-08
+Boulder Creek Winery,Boulder,Status,set,Closed,"Closed: Yelp 'CLOSED - Updated January 2026', Foursquare 'Now Closed' (closed-org check 2026-10-03)",2026-10-03
+Spotted Horse Barnyard,Elbert,Status,set,Closed,Closed: owner confirmed permanent closure (pumpkinpatchesandmore.org closed-farms page) (closed-org check 2026-10-03),2026-10-03
+Freeman Apple Orchard,Lakewood,Status,set,Closed,Closed: pickyourown.org lists it permanently closed; domain gone (closed-org check 2026-10-03),2026-10-03
+Thistle Whistle Farm,Hotchkiss,Year Opened,set,2006,Own site: operating since 2006 (checked 2026-10-08),2026-10-08
+Gunnison Gardens,Gunnison,Year Opened,set,2014,MarketSpread profile: established 2014 (checked 2026-10-08),2026-10-08
+Rocking W Cheese,Olathe,Year Opened,set,1965,KVNF/Visit Montrose: family dairy since 1965 (cheese since 2008) (checked 2026-10-08),2026-10-08
+Mountain Bird,Paonia,Year Opened,set,2015,Own site: started 2015 (checked 2026-10-08),2026-10-08
+"Borden Farms, LLC",Delta,Year Opened,set,1996,pedrosfarm.com: farming since 1996 (checked 2026-10-08),2026-10-08
+Homestead Natural Meats,Delta,Year Opened,set,1996,Montrose Business Times / Hotchkiss chamber: founded 1996 (checked 2026-10-08),2026-10-08
+Chamberlain Farms,Delta,Year Opened,set,1978,Facebook and Valley Food Partnership guide: farming since 1978 (checked 2026-10-08),2026-10-08
+Honey Acre Farms,Montrose,Year Opened,set,2006,Valley Food Partnership: roadside stand since 2006 (checked 2026-10-08),2026-10-08
+Grey Owl Garden,Paonia,Year Opened,set,2025,Colorado Secretary of State: LLC formed 2025-05-08 (checked 2026-10-08),2026-10-08
+Flipside Farm,Hotchkiss,Year Opened,set,2012,Mountain Freshies profile: growing since 2012 (checked 2026-10-08),2026-10-08
+Fields to Plate Produce,Durango,Year Opened,set,2013,CCOF/Local Food Marketplace: founded 2013 (checked 2026-10-08),2026-10-08
+First Fruits Organic Farms,Paonia,Year Opened,set,1988,AARP Local / Delta County Tourism: farming since 1988 (checked 2026-10-08),2026-10-08
+Wild Mountain Seeds,Carbondale,Year Opened,set,2013,Founded 2013 per Denver Life Magazine / own history (checked 2026-10-08),2026-10-08

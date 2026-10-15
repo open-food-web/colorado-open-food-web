@@ -1,18 +1,19 @@
 """Validate CSA enrichment results and build the finder dataset.
 
-Reads  source-data/phase2/csa/targets.json + results/*.json
-Writes data-compiled/phase2/csa.json  (only farms with offers_csa == true)
-       data-compiled/phase2/csa_coverage.csv (all targets, one row each, for review)
-Run:   python scripts/csa/build_csa.py
+Reads  inputs/csa/targets.json + results/*.json   (or --src)
+Writes .cache/build/csa.json  (only farms with offers_csa == true)
+       .cache/build/csa_coverage.csv (all targets, one row each, for review)
+Run:   python scripts/csa/build_csa.py [--src DIR] [--out DIR]
 """
 import os
 import csv, json, re, sys
 from pathlib import Path
 
+import argparse
+
 ROOT = Path(__file__).resolve().parents[2]
-SRC_ROOT = Path(os.environ.get("FOODWEB_SOURCES") or (Path(__file__).resolve().parents[2].parent / "colorado-open-food-web-sources"))
-SRC = SRC_ROOT / "source-data/phase2/csa"
-OUT = SRC_ROOT / "data-compiled/phase2"
+SRC = ROOT / "inputs" / "csa"            # facts-only research (the full version, with quoted evidence, is in the sources repo)
+OUT = ROOT / ".cache" / "build"
 STATUSES = {"open", "waitlist", "full", "opens_later", "closed_season", "unknown"}
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -36,6 +37,12 @@ def problems(r):
 
 
 def main():
+    global SRC, OUT
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--src", default=str(SRC))
+    ap.add_argument("--out", default=str(OUT))
+    a = ap.parse_args()
+    SRC, OUT = Path(a.src), Path(a.out)
     targets = json.loads((SRC / "targets.json").read_text(encoding="utf-8"))
     rows, keep, bad, missing = [], [], 0, []
     for t in targets:

@@ -146,6 +146,8 @@ def apply_overrides(markets: List[Market], overrides: List[dict]) -> None:
     A row whose record isn't in this build is reported, not fatal."""
     col_attr = {col: attr for attr, col in ATTR_TO_COLUMN.items()}
     col_attr["Category"] = "category"
+    col_attr["Year Opened"] = "year_opened"
+    col_attr["Status"] = "status"   # "Closed": keep the record, hide it from the public directory
     # Coordinates for places no geocoder can find (rural roads); value is a number.
     col_attr["Latitude"], col_attr["Longitude"] = "latitude", "longitude"
     index = {_rkey(m.business_name, m.city): m for m in markets}
