@@ -14,7 +14,7 @@
    "markets": 2,
    "access_points": 2,
    "market_links": 36,
-   "pins": 29
+   "pins": 28
   }
  },
  "vocab": {
@@ -204,12 +204,12 @@
    ],
    "dropin_visits": null,
    "dropin_hours": null,
-   "farm_pickup": null,
+   "farm_pickup": true,
    "visit_basis": {
     "dropin": null,
-    "pickup": null
+    "pickup": "set"
    },
-   "visit_note": null,
+   "visit_note": "Pickup at the ranch by order; delivery within Chaffee County only; hats and dog treats also ship",
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -219,7 +219,10 @@
    "email": "arrowpointcc@aol.com",
    "facebook": "https://www.facebook.com/arrowpointcattle/?ref=bookmarks",
    "instagram": "https://www.instagram.com/arrowpointprovisions/",
-   "sales_channels": [],
+   "sales_channels": [
+    "delivery",
+    "online"
+   ],
    "sells_at": [
     {
      "market_id": "co-m-000002",
@@ -250,7 +253,7 @@
      "lat": 38.730347,
      "lon": -106.07423,
      "precision": "exact",
-     "pin": true,
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": null,
@@ -2874,12 +2877,12 @@
     "poultry-eggs",
     "honey"
    ],
-   "dropin_visits": null,
+   "dropin_visits": true,
    "dropin_hours": null,
-   "farm_pickup": null,
+   "farm_pickup": true,
    "visit_basis": {
-    "dropin": null,
-    "pickup": null
+    "dropin": "listing",
+    "pickup": "listing"
    },
    "visit_note": null,
    "months_open": [],
@@ -2891,7 +2894,9 @@
    "email": null,
    "facebook": "https://www.facebook.com/SweetPeaFarmHoney",
    "instagram": null,
-   "sales_channels": [],
+   "sales_channels": [
+    "farm_stand"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -2909,11 +2914,11 @@
      "city": "Salida",
      "zip": "81201",
      "county_fips": "08015",
-     "lat": 38.525991,
-     "lon": -106.043072,
+     "lat": 38.526716,
+     "lon": -106.044923,
      "precision": "exact",
      "pin": true,
-     "pin_basis": "unconfirmed",
+     "pin_basis": "confirmed",
      "days": [],
      "hours_text": null,
      "season_start": null,
