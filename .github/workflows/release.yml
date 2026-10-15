@@ -34,5 +34,5 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "${{ inputs.version }}" release/*.csv release/*.json \
+          gh release create "${{ inputs.version }}" release/*.csv release/*.json release/*.zip\
             --title "Colorado Open Food Web ${{ inputs.version }}" --notes-file release/RELEASE.md
