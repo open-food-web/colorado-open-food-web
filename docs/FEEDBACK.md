@@ -66,3 +66,20 @@ pipeline. Their contribution survives every future rebuild, and the next update 
 - Which partners can write `verified` fields directly, and which only propose.
 - Whether form submissions need a human check before a PR is opened (spam).
 - Where partners see their gaps report: a page in this repo, or something private to them.
+
+## Worked example: Guidestone's first review (Oct 13, 2026)
+
+The first round of partner feedback was applied by hand through this process, as a model for the
+rest. See `reports/2026-10-13-guidestone-review.md` for the report that went with it.
+
+1. **Receive.** Alycen's color-coded sheet and a call. Each note was a fact (a phone number, a
+   closure, a pickup place) or a scope choice (what the Chaffee site shows).
+2. **Translate.** Facts become rows in `inputs/`: `overrides.csv` (set, clear, remove) and
+   `curated_records.csv` (new businesses), each noted `partner:guidestone` with the date. Places a
+   producer sells beyond its home base go in `inputs/locations.csv`. Scope choices go in the app's
+   export config, not the data.
+3. **Rebuild.** The build keeps those rows forever, and fields credited to a partner are recorded as
+   partner-verified.
+4. **Report.** `scripts/change_report.py` compares the tables before and after; the written report
+   adds who said what and what is still waiting.
+5. **Review.** The pull request carries the report. Merging it is the approval.

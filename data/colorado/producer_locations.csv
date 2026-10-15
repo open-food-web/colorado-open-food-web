@@ -54,6 +54,9 @@ co-ploc-000080,co-p-000080,co-loc-000103,home_base,,,,,listed
 co-ploc-000081,co-p-000081,co-loc-000104,home_base,,,,,listed
 co-ploc-000082,co-p-000082,co-loc-000105,home_base,,,,,listed
 co-ploc-000002,co-p-000002,co-loc-000002,home_base,,,,,listed
+co-ploc-001230,co-p-000002,co-loc-001493,pickup,Tue,Tue: 4:45pm - 5:00pm,,,listed
+co-ploc-001231,co-p-000002,co-loc-001494,pickup,Tue,Tue: 6:00pm - 6:15pm,,,listed
+co-ploc-001232,co-p-000002,co-loc-001495,pickup,,Pickup by arrangement,,,listed
 co-ploc-000083,co-p-000083,co-loc-000108,home_base,,,,,listed
 co-ploc-000084,co-p-000084,co-loc-000109,home_base,,,,,listed
 co-ploc-000085,co-p-000085,co-loc-000110,home_base,,,,,listed
@@ -444,7 +447,7 @@ co-ploc-000461,co-p-000461,co-loc-000582,home_base,,,,,listed
 co-ploc-000462,co-p-000462,co-loc-000583,home_base,sat,Sat: 9am - 3pm,,,listed
 co-ploc-000463,co-p-000463,co-loc-000584,home_base,,Wed: Boulder - 3:30 p.m. - 6:30 p.m.,,,listed
 co-ploc-000464,co-p-000464,co-loc-000585,home_base,,Wed: Longmont - 4:00 p.m. - 6:00 p.m.,,,listed
-co-ploc-000011,co-p-000011,co-loc-000013,home_base,,,,,listed
+co-ploc-001233,co-p-001230,co-loc-001496,home_base,tue,Tue: 4:00pm - 6:00pm,,,listed
 co-ploc-000465,co-p-000465,co-loc-000586,home_base,,,,,listed
 co-ploc-000466,co-p-000466,co-loc-000587,home_base,,,,,listed
 co-ploc-000467,co-p-000467,co-loc-000589,home_base,,"Gunnison Farmers Market Saturday mornings mid-June to October (IOOF park, Main & Virginia); Crested Butte South Farmers Market Thursdays 4:30-6 pm in summer",,,listed
@@ -668,7 +671,6 @@ co-ploc-000681,co-p-000681,co-loc-000842,home_base,,,,,listed
 co-ploc-000682,co-p-000682,co-loc-000843,home_base,,,,,listed
 co-ploc-000683,co-p-000683,co-loc-000844,home_base,wed;thu;fri;sat;sun,Wed: 4pm - 9pm; Thu: 4pm - 9pm; Fri: 4pm - 9pm; Sat: 12pm - 9pm; Sun: 12pm - 5pm,,,listed
 co-ploc-000684,co-p-000684,co-loc-000845,home_base,wed;thu;fri;sat;sun,Wed: 10am - 5:30pm; Thu: 10am - 5:30pm; Fri: 10am - 5:30pm; Sat: 10am - 4pm; Sun: 10am - 4pm,,,listed
-co-ploc-000015,co-p-000015,co-loc-000018,home_base,,,,,listed
 co-ploc-000685,co-p-000685,co-loc-000846,home_base,,,,,listed
 co-ploc-000686,co-p-000686,co-loc-000848,home_base,,,,,listed
 co-ploc-000687,co-p-000687,co-loc-000849,home_base,,,,,listed
@@ -705,7 +707,6 @@ co-ploc-000717,co-p-000717,co-loc-000887,home_base,,,,,listed
 co-ploc-000718,co-p-000718,co-loc-000888,home_base,mon;tue;wed;thu;fri,Mon: 7am - 4pm; Tue: 7am - 4pm; Wed: 7am - 4pm; Thu: 7am - 4pm; Fri: 7am-4pm,,,listed
 co-ploc-000719,co-p-000719,co-loc-000892,home_base,,,,,listed
 co-ploc-000720,co-p-000720,co-loc-000893,home_base,,,,,listed
-co-ploc-000016,co-p-000016,co-loc-000019,home_base,,,,,listed
 co-ploc-000721,co-p-000721,co-loc-000894,home_base,,,,,listed
 co-ploc-000722,co-p-000722,co-loc-000895,home_base,,,,,listed
 co-ploc-000723,co-p-000723,co-loc-000896,home_base,,,,,listed
@@ -1185,6 +1186,7 @@ co-ploc-001184,co-p-001184,co-loc-001440,home_base,,,,,listed
 co-ploc-001185,co-p-001185,co-loc-001441,home_base,,,,,listed
 co-ploc-001186,co-p-001186,co-loc-001442,home_base,,,,,listed
 co-ploc-001187,co-p-001187,co-loc-001443,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 10 a.m. - 5:45 p.m.; Tue: 10 a.m. - 5:45 p.m.; Wed: 10 a.m. - 5:45 p.m.; Thu: 10 a.m. - 5:45 p.m.; Fri: 10 a.m. - 5:45 p.m.; Sat: 10 a.m. - 5:45 p.m.; Sun: 10 a.m. - 5:45 p.m.,,,listed
+co-ploc-001234,co-p-001231,co-loc-001497,home_base,tue;wed;thu;fri;sat;sun,Tue-Sun: 8:00am - 6:00pm,,,listed
 co-ploc-001188,co-p-001188,co-loc-001444,home_base,,,,,listed
 co-ploc-001189,co-p-001189,co-loc-001445,home_base,fri;sat;sun,Fri: 4pm - 9pm; Sat: 12pm - 9pm; Sun: 12pm - 7pm,,,listed
 co-ploc-001190,co-p-001190,co-loc-001446,home_base,,,,,listed
@@ -1227,3 +1229,5 @@ co-ploc-001226,co-p-001226,co-loc-001489,home_base,,,,,listed
 co-ploc-001227,co-p-001227,co-loc-001490,home_base,,,,,listed
 co-ploc-001228,co-p-001228,co-loc-001491,home_base,,,,,listed
 co-ploc-001229,co-p-001229,co-loc-001492,home_base,,,,,listed
+co-ploc-001235,co-p-000002,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19,,,listed
+co-ploc-001236,co-p-000021,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19,,,listed

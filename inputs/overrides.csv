@@ -1,4 +1,4 @@
-name,city,column,mode,value,note,date
+﻿name,city,column,mode,value,note,date
 Scanga Meat Company,Salida,Category,set,Meat Producer & Packer,"Not a farmers' market: a meat producer and meat packer (user correction). Chaffee Provides files it under its ""Market"" type.",2026-10-03
 Scanga Meat Company,Salida,Notes,prepend,Meat producer and meat packer.,User correction,2026-10-03
 Colorado Mountain Lavender,Buena Vista,Category,set,Farm Products (online),Farm no longer hosts visitors or a farm shop; sells online (co-mtn-lav.com),2026-10-03
@@ -1038,3 +1038,17 @@ Flipside Farm,Hotchkiss,Year Opened,set,2012,Mountain Freshies profile: growing 
 Fields to Plate Produce,Durango,Year Opened,set,2013,CCOF/Local Food Marketplace: founded 2013 (checked 2026-10-08),2026-10-08
 First Fruits Organic Farms,Paonia,Year Opened,set,1988,AARP Local / Delta County Tourism: farming since 1988 (checked 2026-10-08),2026-10-08
 Wild Mountain Seeds,Carbondale,Year Opened,set,2013,Founded 2013 per Denver Life Magazine / own history (checked 2026-10-08),2026-10-08
+Meadows Edge Farm,Buena Vista,,remove,,"partner:guidestone Alycen Quattrocchi, Oct 13 review: no longer in business",2026-10-13
+Moonstone Farm,Salida,,remove,,"partner:guidestone Alycen Quattrocchi, Oct 13 review: no reply; no longer public-facing per Andrea",2026-10-13
+Guidestone Colorado,Salida,,remove,,"partner:guidestone Alycen Quattrocchi, Oct 13 review: replaced by Guidestone Colorado Community and School Farm (one listing, Holman Ave); homestead not listed",2026-10-13
+Chaffee Community Resource Center,,Hours,set,"Tue, Thu: 10:00am - 1:00pm","partner:guidestone Alycen Quattrocchi, Oct 13 review",2026-10-13
+Caring & Sharing � Sanctuary Soup Kitchen,,Facebook,set,https://www.facebook.com/SalidaCaringSharing/,"partner:guidestone Alycen Quattrocchi, Oct 13 review: Facebook is accurate, rarely updated",2026-10-13
+Copper Kettle Apothecary,Salida,Phone,set,(719) 530-7111,"partner:guidestone Alycen Quattrocchi, Oct 13 review: online information correct",2026-10-13
+Everett Ranch Beef,Salida,Phone,set,(719) 530-1597,"partner:guidestone Alycen Quattrocchi, Oct 13 review: confirmed with the ranch",2026-10-13
+Sweet Pea Farm�s Wildflower Honey,Salida,Facebook,set,https://www.facebook.com/SweetPeaFarmHoney,"partner:guidestone Alycen Quattrocchi, Oct 13 review",2026-10-13
+The Grainery Ministries,Salida,Facebook,set,https://www.facebook.com/graineryministries/,"partner:guidestone Alycen Quattrocchi, Oct 13 review",2026-10-13
+Badger Creek Ranch,Cañon City,Address,set,364 County Road 40,"partner:guidestone Alycen Quattrocchi, Oct 13 review: address Chrissy asked us to use (ranch annex)",2026-10-13
+Badger Creek Ranch,Cañon City,Zip,set,81222,"partner:guidestone Alycen Quattrocchi, Oct 13 review",2026-10-13
+Badger Creek Ranch,Cañon City,Latitude,set,38.3655533,"partner:guidestone Alycen Quattrocchi, Oct 13 review: Coaldale town centre; street address not found by any geocoder",2026-10-13
+Badger Creek Ranch,Cañon City,Longitude,set,-105.7577836,"partner:guidestone Alycen Quattrocchi, Oct 13 review",2026-10-13
+Badger Creek Ranch,Cañon City,City,set,Coaldale,"partner:guidestone Alycen Quattrocchi, Oct 13 review",2026-10-13

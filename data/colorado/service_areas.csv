@@ -51,6 +51,7 @@ co-p-000080,08031,home_base,true
 co-p-000081,08021,home_base,true
 co-p-000082,08059,home_base,true
 co-p-000002,08043,home_base,true
+co-p-000002,08015,pickup,true
 co-p-000083,08001,home_base,true
 co-p-000084,08013,home_base,true
 co-p-000085,08013,home_base,true
@@ -416,7 +417,7 @@ co-p-000461,08077,home_base,true
 co-p-000462,08059,home_base,true
 co-p-000463,08013,home_base,true
 co-p-000464,08013,home_base,true
-co-p-000011,08015,home_base,true
+co-p-001230,08015,home_base,true
 co-p-000465,08081,home_base,true
 co-p-000466,08081,home_base,true
 co-p-000467,08051,home_base,true
@@ -628,7 +629,6 @@ co-p-000680,08029,home_base,true
 co-p-000682,08101,home_base,true
 co-p-000683,08069,home_base,true
 co-p-000684,08077,home_base,true
-co-p-000015,08015,home_base,true
 co-p-000685,08001,home_base,true
 co-p-000687,08039,home_base,true
 co-p-000688,08123,home_base,true
@@ -661,7 +661,6 @@ co-p-000717,08121,home_base,true
 co-p-000718,08123,home_base,true
 co-p-000719,08077,home_base,true
 co-p-000720,08107,home_base,true
-co-p-000016,08015,home_base,true
 co-p-000721,08057,home_base,true
 co-p-000722,08069,home_base,true
 co-p-000723,08077,home_base,true
@@ -1108,6 +1107,7 @@ co-p-001184,08023,home_base,true
 co-p-001185,08013,home_base,true
 co-p-001186,08005,home_base,true
 co-p-001187,08077,home_base,true
+co-p-001231,08015,home_base,true
 co-p-001189,08123,home_base,true
 co-p-001190,08073,home_base,true
 co-p-001191,08097,home_base,true
@@ -1145,7 +1145,6 @@ co-p-001226,08029,home_base,true
 co-p-001227,08067,home_base,true
 co-p-001228,08069,home_base,true
 co-p-001229,08013,home_base,true
-co-p-000002,08015,market,true
 co-p-000056,08015,market,true
 co-p-000172,08015,market,true
 co-p-000792,08015,market,true
