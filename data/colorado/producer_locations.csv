@@ -25,7 +25,7 @@ co-ploc-000052,co-p-000052,co-loc-000064,home_base,,,,,listed
 co-ploc-000053,co-p-000053,co-loc-000067,home_base,mon;tue;wed;thu;fri,Mon: 8am - 5pm; Tue: 8am - 5pm; Wed: 8am - 5pm; Thu: 8am - 5pm; Fri: 8am - 2:30pm,,,listed
 co-ploc-000054,co-p-000054,co-loc-000068,home_base,,Winter CSA,,,listed
 co-ploc-000055,co-p-000055,co-loc-000069,home_base,,,,,listed
-co-ploc-000056,co-p-000056,co-loc-000070,home_base,,,,,listed
+co-ploc-001237,co-p-001232,co-loc-001498,home_base,,,,,listed
 co-ploc-000057,co-p-000057,co-loc-000071,home_base,,,,,listed
 co-ploc-000058,co-p-000058,co-loc-000072,home_base,,,,,listed
 co-ploc-000059,co-p-000059,co-loc-000073,home_base,,,,,listed
@@ -343,6 +343,7 @@ co-ploc-000358,co-p-000358,co-loc-000453,home_base,,,,,listed
 co-ploc-000359,co-p-000359,co-loc-000455,home_base,,,,,listed
 co-ploc-000360,co-p-000360,co-loc-000456,home_base,sat,Sat: 9 a.m. - 1 p.m.  Louisville Farmer's market,,,listed
 co-ploc-000361,co-p-000361,co-loc-000457,home_base,,,,,listed
+co-ploc-001238,co-p-001233,co-loc-001499,home_base,,,,,listed
 co-ploc-000362,co-p-000362,co-loc-000458,home_base,,,,,listed
 co-ploc-000363,co-p-000363,co-loc-000459,home_base,fri;sat;sun,Fri: 9am - 4:30pm; Sat: 9am - 4:30pm; Sun: 9am - 4:30pm,,,listed
 co-ploc-000364,co-p-000364,co-loc-000460,home_base,,,,,listed
@@ -377,6 +378,7 @@ co-ploc-000392,co-p-000392,co-loc-000493,home_base,mon;tue;wed;thu;fri;sat;sun,M
 co-ploc-000393,co-p-000393,co-loc-000495,home_base,thu;fri;sat;sun,Thu: 1pm - 6pm; Fri: 1pm - 6pm; Sat: 1pm - 6pm; Sun: 1pm - 6pm,,,listed
 co-ploc-000394,co-p-000394,co-loc-000496,home_base,mon;tue;wed;thu;fri;sat;sun,Mon: 12-6; Tue: 12-6; Wed: 12-6; Thu: 12-6; Fri: 10-7; Sat: 10-7; Sun: 12-5,,,listed
 co-ploc-000395,co-p-000395,co-loc-000497,home_base,,,,,listed
+co-ploc-001239,co-p-001234,co-loc-001500,home_base,,,,,listed
 co-ploc-000396,co-p-000396,co-loc-000500,home_base,,,,,listed
 co-ploc-000397,co-p-000397,co-loc-000501,home_base,,,,,listed
 co-ploc-000398,co-p-000398,co-loc-000502,home_base,mon;tue;wed;thu;fri;sat,Mon: 11am - 5pm; Tue: 11am - 5pm; Wed: 11am - 5pm; Thu: 11am - 5pm; Fri: 11am - 5pm; Sat: 11am - 5pm; Sun: By appointment,,,listed
@@ -439,6 +441,7 @@ co-ploc-000454,co-p-000454,co-loc-000573,home_base,,,,,listed
 co-ploc-000455,co-p-000455,co-loc-000575,home_base,,,,,listed
 co-ploc-000456,co-p-000456,co-loc-000576,home_base,,,,,listed
 co-ploc-000457,co-p-000457,co-loc-000577,home_base,,,,,listed
+co-ploc-001240,co-p-001235,co-loc-001501,home_base,,,,,listed
 co-ploc-000458,co-p-000458,co-loc-000579,home_base,,,,,listed
 co-ploc-000459,co-p-000459,co-loc-000580,home_base,,,,,listed
 co-ploc-000460,co-p-000460,co-loc-000581,home_base,,,,,listed
@@ -681,6 +684,8 @@ co-ploc-000692,co-p-000692,co-loc-000857,home_base,,,,,listed
 co-ploc-000693,co-p-000693,co-loc-000858,home_base,wed;thu;fri;sat;sun,Wed: 4pm - 8pm; Thu: 4pm - 8pm; Fri: 4pm - 8pm; Sat: 4pm - 8pm; Sun: 10am - 2pm,,,listed
 co-ploc-000694,co-p-000694,co-loc-000862,home_base,,,,,listed
 co-ploc-000695,co-p-000695,co-loc-000863,home_base,,,,,listed
+co-ploc-001241,co-p-001236,co-loc-001502,home_base,,,,,listed
+co-ploc-001242,co-p-001236,co-loc-001503,pickup,Sun,Sundays,,,listed
 co-ploc-000696,co-p-000696,co-loc-000864,home_base,,,,,listed
 co-ploc-000697,co-p-000697,co-loc-000865,home_base,,,,,listed
 co-ploc-000698,co-p-000698,co-loc-000866,home_base,,,,,listed
@@ -700,6 +705,7 @@ co-ploc-000711,co-p-000711,co-loc-000880,home_base,,,,,listed
 co-ploc-000712,co-p-000712,co-loc-000881,home_base,,,,,listed
 co-ploc-000713,co-p-000713,co-loc-000883,home_base,,,,,listed
 co-ploc-000714,co-p-000714,co-loc-000884,home_base,,,,,listed
+co-ploc-001243,co-p-001237,co-loc-001504,home_base,,,,,listed
 co-ploc-000715,co-p-000715,co-loc-000885,home_base,,,,,listed
 co-ploc-000716,co-p-000716,co-loc-000886,home_base,mon;tue;wed;thu;fri,Mon: 9am - 6pm; Tue: 9am - 6pm; Wed: 9am - 6pm; Thu: 9am - 6pm; Fri: 9am - 5pm,,,listed
 co-ploc-000717,co-p-000717,co-loc-000887,home_base,,,,,listed
@@ -1150,6 +1156,7 @@ co-ploc-001152,co-p-001152,co-loc-001402,home_base,,,,,listed
 co-ploc-001153,co-p-001153,co-loc-001403,home_base,,,,,listed
 co-ploc-001154,co-p-001154,co-loc-001404,home_base,,,,,listed
 co-ploc-000028,co-p-000028,co-loc-000034,home_base,,,,,listed
+co-ploc-001244,co-p-001238,co-loc-001505,home_base,,,,,listed
 co-ploc-001155,co-p-001155,co-loc-001405,home_base,,,,,listed
 co-ploc-001156,co-p-001156,co-loc-001406,home_base,,,,,listed
 co-ploc-001157,co-p-001157,co-loc-001407,home_base,,,,,listed
@@ -1173,6 +1180,7 @@ co-ploc-001174,co-p-001174,co-loc-001427,home_base,,,,,listed
 co-ploc-001175,co-p-001175,co-loc-001428,home_base,,,,,listed
 co-ploc-001176,co-p-001176,co-loc-001431,home_base,,,,,listed
 co-ploc-001177,co-p-001177,co-loc-001432,home_base,,,,,listed
+co-ploc-001245,co-p-001239,co-loc-001506,home_base,,,,,listed
 co-ploc-001178,co-p-001178,co-loc-001434,home_base,,"Site shows 9am-5pm, open for the season; tours typically Tue/Wed when closed to public; confirm",,,listed
 co-ploc-001179,co-p-001179,co-loc-001435,home_base,,,,,listed
 co-ploc-001180,co-p-001180,co-loc-001436,home_base,,,,,listed
@@ -1226,5 +1234,14 @@ co-ploc-001226,co-p-001226,co-loc-001489,home_base,,,,,listed
 co-ploc-001227,co-p-001227,co-loc-001490,home_base,,,,,listed
 co-ploc-001228,co-p-001228,co-loc-001491,home_base,,,,,listed
 co-ploc-001229,co-p-001229,co-loc-001492,home_base,,,,,listed
+co-ploc-001246,co-p-001232,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
 co-ploc-001235,co-p-000002,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19,,,listed
+co-ploc-001247,co-p-001233,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
+co-ploc-001248,co-p-001234,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
+co-ploc-001249,co-p-001235,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
+co-ploc-001250,co-p-001236,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
+co-ploc-001251,co-p-001237,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
+co-ploc-001252,co-p-000792,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
+co-ploc-001253,co-p-000862,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed
 co-ploc-001236,co-p-000021,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24); winter market Nov 14 - Dec 19,,,listed
+co-ploc-001254,co-p-001239,co-loc-000026,pickup,Sat,Sat: 8:00am - 12:00pm (through Oct 24),,,listed

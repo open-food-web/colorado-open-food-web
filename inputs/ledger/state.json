@@ -1457,19 +1457,19 @@
 },
 "alpine mushrooms valley|saguache": {
 "Address": "319 San Juan Avenue",
-"Category": "On-Farm / Ranch Sales",
+"Category": "Market Vendor, On-Farm / Ranch Sales",
 "County": "Saguache",
 "Email": "",
 "Hours": "",
 "Months Open": "",
-"Phone": "(719) 207-3827",
-"Products": "Mushrooms",
+"Phone": "(303) 916-2691",
+"Products": "Certified organic gourmet mushrooms, fresh and dried; tinctures, extracts",
 "Status": "Open",
-"Website": "",
+"Website": "https://www.alpinevalleymushrooms.com/",
 "Year Opened": "",
 "city": "Saguache",
 "name": "Alpine Valley Mushrooms",
-"source": "colorado_proud_finder"
+"source": "curated+colorado_proud_finder"
 },
 "altitude farm high nursery rhubarb|black forest": {
 "Address": "7275 Wildridge Rd",
@@ -9967,6 +9967,22 @@
 "name": "Pueblo West Honey Company",
 "source": "colorado_proud_finder"
 },
+"company honey westcliffe|westcliffe": {
+"Address": "",
+"Category": "Market Vendor",
+"County": "",
+"Email": "",
+"Hours": "",
+"Months Open": "",
+"Phone": "",
+"Products": "Raw, creamed and infused honey, comb honey, beeswax goods",
+"Status": "Open",
+"Website": "https://www.westcliffehoneyco.com/",
+"Year Opened": "",
+"city": "Westcliffe",
+"name": "Westcliffe Honey Company",
+"source": "curated"
+},
 "company horizon verjus|littleton": {
 "Address": "6723 West Hinsdale Place",
 "Category": "Food Maker",
@@ -10942,6 +10958,22 @@
 "city": "Frederick",
 "name": "Grandpas Garden Creations",
 "source": "colorado_proud_finder"
+},
+"creations microgreen|buena vista": {
+"Address": "",
+"Category": "Market Vendor",
+"County": "",
+"Email": "",
+"Hours": "",
+"Months Open": "",
+"Phone": "",
+"Products": "Micro and baby herbs and greens, mushrooms",
+"Status": "Open",
+"Website": "",
+"Year Opened": "",
+"city": "Buena Vista",
+"name": "Microgreen Creations LLC",
+"source": "curated"
 },
 "creek creek dba douglas douglas enterprises tallow|rangely": {
 "Address": "PO Box 292",
@@ -14383,6 +14415,22 @@
 "name": "Nordic Fox Farm LLC",
 "source": "colorado_proud_finder"
 },
+"farm foxtown|buena vista": {
+"Address": "",
+"Category": "Market Vendor",
+"County": "",
+"Email": "",
+"Hours": "",
+"Months Open": "",
+"Phone": "",
+"Products": "Ginger, turmeric and elderberry honey syrups, fire cider, crystallized ginger",
+"Status": "Open",
+"Website": "https://foxtownfarm.com/",
+"Year Opened": "",
+"city": "Buena Vista",
+"name": "Foxtown Farm",
+"source": "curated"
+},
 "farm free stone|arriola": {
 "Address": "",
 "Category": "On-Farm / Ranch Sales",
@@ -17327,6 +17375,22 @@
 "name": "The Feedery at Grow + Gather",
 "source": "colorado_proud_finder"
 },
+"feedsack flowers|center": {
+"Address": "",
+"Category": "Market Vendor",
+"County": "",
+"Email": "",
+"Hours": "",
+"Months Open": "",
+"Phone": "",
+"Products": "Cut-flower bouquets, dried and pressed flower art",
+"Status": "Open",
+"Website": "",
+"Year Opened": "",
+"city": "Center",
+"name": "Feedsack Flowers",
+"source": "curated"
+},
 "fest harvest pumpkin sale|littleton": {
 "Address": "028 S. Gallup Street",
 "Category": "Agritourism",
@@ -19006,6 +19070,22 @@
 "city": "Longmont",
 "name": "Got The Juice",
 "source": "colorado_proud_finder"
+},
+"gourmet greens greg s|poncha springs": {
+"Address": "",
+"Category": "Market Vendor",
+"County": "",
+"Email": "",
+"Hours": "",
+"Months Open": "",
+"Phone": "",
+"Products": "Microgreens, freeze-dried produce, herbs, mushrooms",
+"Status": "Open",
+"Website": "https://gregsgourmetgreens.com/",
+"Year Opened": "",
+"city": "Poncha Springs",
+"name": "Greg's Gourmet Greens",
+"source": "curated"
 },
 "gourmet marsroom medicinal mushrooms|denver": {
 "Address": "831 East 73rd Avenue",
@@ -21918,6 +21998,22 @@
 "city": "Longmont",
 "name": "Miraflora Wagyu",
 "source": "colorado_proud_finder"
+},
+"miss mountain penn s seeds|westcliffe": {
+"Address": "",
+"Category": "Market Vendor",
+"County": "",
+"Email": "",
+"Hours": "",
+"Months Open": "",
+"Phone": "(719) 783-2917",
+"Products": "Heirloom mountain-adapted seeds (about 250 tomato varieties)",
+"Status": "Open",
+"Website": "https://www.pennandcordsgarden.com/miss-penns-mountain-seeds.html",
+"Year Opened": "",
+"city": "Westcliffe",
+"name": "Miss Penn's Mountain Seeds",
+"source": "curated"
 },
 "monte vista|monte vista": {
 "Address": "947 1st Ave (at 1st Ave & Jefferson St), Monte Vista, CO 81144",

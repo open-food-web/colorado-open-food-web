@@ -15,12 +15,13 @@ PRODUCT_GROUPS = [
     ("fruit", "Fruit", r"fruit|apple|apricot|peach|cherr|berr|melon|plum|\bpears?\b|grape"),
     ("beef-meat", "Beef & meat", r"beef|meat|pork|lamb|bison|sausage|jerky|goat meat|hides?"),
     ("poultry-eggs", "Poultry & eggs", r"poultry|\beggs?\b|chicken|turkey|duck"),
-    ("dairy", "Dairy", r"dairy|milk|cheese|yogurt|butter|kefir|chevre"),
+    ("dairy", "Dairy", r"dairy|milk|cheese|yogurt|(?<!peach )(?<!apple )(?<!nut )(?<!almond )(?<!cocoa )butter|kefir|chevre"),
     ("honey", "Honey", r"honey|\bbees?\b|apiary|beeswax"),
     ("flowers", "Flowers", r"(?<!wild)flower|lavender|bouquet|zinnia"),
     ("garlic-herbs", "Garlic & herbs", r"spice|garlic|herb"),
     ("mushrooms", "Mushrooms", r"mushroom"),
     ("baked-goods", "Baked goods", r"bread|baked|bakery|pastr|sourdough|cookie|pie\b"),
+    ("seeds-plants", "Seeds & plants", r"\bseeds?\b|seedling|plant starts?|\bstarts\b|nursery|houseplant"),
     ("drinks", "Wine & drinks", r"wine|cider|brew|kombucha|juice|coffee"),
 ]
 LABELS = {k: label for k, label, _ in PRODUCT_GROUPS}
@@ -31,7 +32,11 @@ CHAFFEE_OFFERINGS = {"veggies": "veggies", "beef/meat": "beef-meat", "dairy": "d
 
 def from_text(*texts: str) -> list:
     text = " ".join(t or "" for t in texts).lower()
-    return [k for k, _, rx in PRODUCT_GROUPS if re.search(rx, text)]
+    found = [k for k, _, rx in PRODUCT_GROUPS if re.search(rx, text)]
+    # "about 250 tomato varieties" on a seed seller's list is seeds, not vegetables for sale
+    if "seeds-plants" in found and not re.search(r"vegetable|produce|veggie|fruit", text.replace("tomato", "")):
+        found = [k for k in found if k not in ("veggies", "fruit")]
+    return found
 
 
 def union(*lists) -> list:

@@ -242,10 +242,15 @@ def main():
     fips = FIPS[a.county] if a.county else ""
     emails = cp.Table()
 
+    sells_here = set()      # businesses based elsewhere that sell here (a place in inputs/locations.csv)
+    if a.locations and os.path.exists(a.locations):
+        with open(a.locations, encoding="utf-8-sig", newline="") as f:
+            sells_here = {re.sub(r"[^a-z0-9]+", "", (lr["name"] or "").lower()) for lr in csv.DictReader(f)}
     with open(a.raw, encoding="utf-8-sig", newline="") as f:
         raw = [r for r in csv.DictReader(f)
                if not a.county or (r["County"] or "").strip().lower() == a.county.lower()
-               or "chaffee_provides" in (r["Source"] or "")]
+               or "chaffee_provides" in (r["Source"] or "")
+               or re.sub(r"[^a-z0-9]+", "", (r["Business Name"] or "").lower()) in sells_here]
     for path in a.additions:
         with open(path, encoding="utf-8-sig", newline="") as f:
             add = list(csv.DictReader(f))
@@ -273,6 +278,8 @@ def main():
         with open(a.kinds, encoding="utf-8-sig", newline="") as f:
             for kr in csv.DictReader(f):
                 kinds_by_name[nkey(kr["name"])] = kr
+    def kind_groups(name):
+        return [g.strip() for g in ((kinds_by_name.get(nkey(name)) or {}).get("product_groups") or "").split(";") if g.strip()]
     pending_market_pickups = []
     reg = Registry(a.registry)
     out = {k: [] for k in COLS}
@@ -329,6 +336,8 @@ def main():
         hs = parsed.status
         dys = ";".join(sorted({sl.day for sl in parsed.slots}, key=hrs.DAY_ORDER.index))
         typ = classify(cats_main)
+        if typ == "deferred" and (kinds_by_name.get(nkey(name)) or {}).get("kind"):
+            typ = "producer"      # a person has said what it is (a mushroom grower, a honey maker...)
         prov = json.loads(r["Provenance"]) if r["Provenance"] else {}
         srcs = [SOURCE_NAME.get(s, s) for s in (r["Source"] or "").split("+") if s]
         if typ == "deferred":
@@ -384,9 +393,10 @@ def main():
                     "farm_pickup": {"yes": "true", "no": "false"}.get(
                         ((kinds_by_name.get(nkey(name)) or {}).get("farm_pickup") or "").strip().lower(), ""),
                     "visit_note": (kinds_by_name.get(nkey(name)) or {}).get("visit_note") or "",
-                    "product_groups": ";".join(
+                    "product_groups": ";".join(PRODUCTS.union(
                         PRODUCTS.from_text(r["Products"], " ".join(cats_main), name)
-                        or [g for g in ((kinds_by_name.get(nkey(name)) or {}).get("product_groups") or "").split(";") if g]),
+                        or [g for g in kind_groups(name) if not g.startswith("+")],
+                        [g[1:] for g in kind_groups(name) if g.startswith("+")])),     # "+herbs": added to what the text shows
                     "categories": ";".join(c for c in cats if c in PRODUCER_CATS),
                     "products": r["Products"].replace(", ", ";"),
                     "seasonal_months": ";".join(months), "hours_text": r["Hours"], "hours_status": hs, "email": r["Email"],
