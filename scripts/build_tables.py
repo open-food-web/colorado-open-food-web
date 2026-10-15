@@ -278,6 +278,8 @@ def main():
         with open(a.kinds, encoding="utf-8-sig", newline="") as f:
             for kr in csv.DictReader(f):
                 kinds_by_name[nkey(kr["name"])] = kr
+    def kind_groups(name):
+        return [g.strip() for g in ((kinds_by_name.get(nkey(name)) or {}).get("product_groups") or "").split(";") if g.strip()]
     pending_market_pickups = []
     reg = Registry(a.registry)
     out = {k: [] for k in COLS}
@@ -391,9 +393,10 @@ def main():
                     "farm_pickup": {"yes": "true", "no": "false"}.get(
                         ((kinds_by_name.get(nkey(name)) or {}).get("farm_pickup") or "").strip().lower(), ""),
                     "visit_note": (kinds_by_name.get(nkey(name)) or {}).get("visit_note") or "",
-                    "product_groups": ";".join(
+                    "product_groups": ";".join(PRODUCTS.union(
                         PRODUCTS.from_text(r["Products"], " ".join(cats_main), name)
-                        or [g for g in ((kinds_by_name.get(nkey(name)) or {}).get("product_groups") or "").split(";") if g]),
+                        or [g for g in kind_groups(name) if not g.startswith("+")],
+                        [g[1:] for g in kind_groups(name) if g.startswith("+")])),     # "+herbs": added to what the text shows
                     "categories": ";".join(c for c in cats if c in PRODUCER_CATS),
                     "products": r["Products"].replace(", ", ";"),
                     "seasonal_months": ";".join(months), "hours_text": r["Hours"], "hours_status": hs, "email": r["Email"],

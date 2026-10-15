@@ -3,7 +3,7 @@
   "app": "chaffee-provides",
   "format_version": 1,
   "release": "2026-10",
-  "generated": "2026-10-15",
+  "generated": "2026-10-16",
   "source": "Colorado Open Food Web",
   "county_fips": [
    "08015"
@@ -939,7 +939,8 @@
     "dried lavender bouquets"
    ],
    "product_groups": [
-    "flowers"
+    "flowers",
+    "garlic-herbs"
    ],
    "dropin_visits": false,
    "dropin_hours": null,
