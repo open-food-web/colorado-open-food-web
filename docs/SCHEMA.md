@@ -9,6 +9,7 @@
 ```
 producer 1 ──< producer_location >── 1 location ── county (FIPS)
    │                          │
+   ├──< sales_link (one link per way to buy: a farm stand's page, a shop, a CSA sign-up, a market booth)
    ├──< market_vendor >── 1 market ───┤ (each market has one location)
    ├──< outlet_supplier >── 1 outlet ─┘ (each outlet has one location)
                                       access_point ─┘ (each food access point has one location)
@@ -26,6 +27,8 @@ producer 1 ──< producer_location >── 1 location ── county (FIPS)
   every kind of outlet.
 - **location**: a physical location with coordinates (a farm, a stand, a market site, an outlet).
 - **access_point**: a place where people can get food without buying it: a community fridge now, pantries and meal sites later. Not a producer or an outlet: its own record type, tied to one location, kept thin. Apps show it as type "food access".
+- **sales_link**: one row per way to buy from a producer, holding the link for that specific opportunity: the farm
+  stand's own page, an online shop, a CSA sign-up form, a market booth's page. Links only, never copied text.
 - **producer_location**: the link between a producer and a location, with the role (home base, farm stand, CSA drop-off, pickup), days and hours.
 - **market_vendor**: a producer selling at a market in a given year.
 - **service_area**: counties where a producer can be found. Derived from producer locations and market
@@ -97,6 +100,29 @@ Every field has a class that decides whether it appears in the public release.
 | `geo_source` | enum | fact | `source`, `geocoder`, `manual` |
 | `google_place_id` | string | fact | Stored for link-outs and live photo thumbnails. No photos or photo URLs stored |
 | `photo_url`, `photo_credit`, `photo_license` | string | owned | Only when the producer submitted the photo with an open license |
+
+## Table: `sales_links`
+
+A producer's business-wide website and social links live on `producers`. When a particular way of buying has its
+own page (a farm stand with its own Facebook page or Google listing, a Shopify store, a CSA sign-up form, a market
+booth), it gets a row here, so an app can send a shopper straight to the right place. A producer can have many.
+
+| Field | Type | Class | Notes |
+|---|---|---|---|
+| `sales_link_id` | string | fact | Required. Primary key |
+| `producer_id` | string | fact | FK. Required |
+| `channel` | enum | controlled | What is being sold how, using the `sales_channels` values: `farm_stand`, `u_pick`, `csa`, `farmers_market`, `online`, `wholesale`, `pickup`, `delivery` |
+| `link_kind` | enum | controlled | What the link is: `website`, `facebook`, `instagram`, `google_maps`, `online_shop`, `signup`, `menu`, `other` |
+| `url` | url | fact | The page for this opportunity. Required |
+| `label` | string | fact | Short name for a person, for example "Farm stand" or "Order online". Our own words, never copied text |
+| `location_id` | string | fact | FK, optional. The physical place, for a farm stand or pickup point |
+| `market_id` | string | fact | FK, optional. The market, for a booth |
+| `source_url` | url | fact | Where we found this link (usually the producer's own site) |
+| `last_seen` | date | fact | Last time the link worked |
+| `link_status` | enum | fact | `ok`, `redirect`, `dead`, `unchecked` |
+
+A `sales_channels` value on the producer says *that* they sell that way. A `sales_links` row says *where*. Both are
+kept, so a producer can say "we have a farm stand" without a dedicated page.
 
 ## Table: `producer_locations`
 
@@ -228,7 +254,7 @@ Provenance for each populated field. Attribution for the public release is built
 
 | Field | Type | Notes |
 |---|---|---|
-| `record_type` | enum | `producer`, `market`, `outlet`, `access_point`, `location`, `producer_location`, `market_vendor`, `outlet_supplier` |
+| `record_type` | enum | `producer`, `market`, `outlet`, `access_point`, `location`, `producer_location`, `sales_link`, `market_vendor`, `outlet_supplier` |
 | `record_id` | string | |
 | `field` | string | e.g. `phone` |
 | `source` | string | Source name |
