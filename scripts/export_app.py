@@ -49,6 +49,30 @@ BY_LABEL = {"guidestone": "Guidestone Colorado", "producer_site": "the business'
 HIDDEN_STATUS = {"closed", "removed"}
 
 
+DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+
+def compact_hours(text):
+    """'Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; ... Sat: 8 am - 6 pm' -> 'Mon-Sat: 8 am - 6 pm'.
+    Anything that is not a plain list of 'Day: hours' stays as written."""
+    parts = [x.strip() for x in (text or "").split(";") if x.strip()]
+    rows = []
+    for x in parts:
+        day, _, hrs = x.partition(":")
+        if len(day.strip()) != 3 or day.strip() not in DAYS or not hrs.strip():
+            return (text or "").strip()     # already a range ("Tue-Sun: ...") or free text: leave it alone
+        rows.append((DAYS.index(day.strip()[:3]), hrs.strip()))
+    out, i = [], 0
+    while i < len(rows):
+        j = i
+        while j + 1 < len(rows) and rows[j + 1][1] == rows[i][1] and rows[j + 1][0] == rows[j][0] + 1:
+            j += 1
+        a, b = DAYS[rows[i][0]], DAYS[rows[j][0]]
+        out.append("%s: %s" % (a if i == j else ("%s-%s" % (a, b) if j > i + 1 else "%s, %s" % (a, b)), rows[i][1]))
+        i = j + 1
+    return "; ".join(out)
+
+
 def read(path):
     if not os.path.exists(path):
         return []
@@ -204,6 +228,34 @@ def main():
         channels = lst(p["sales_channels"])
         sells_at_farm = bool({"farm_stand", "u_pick"} & set(channels))
         opted = set(lst(p["opted_out_fields"]))
+        # Two different questions. A person's answer (set in inputs/producer_kinds.csv) always wins. Otherwise the
+        # listing itself is the evidence; with none, the answer stays unknown (null), never a guess.
+        #   dropin_visits: can a customer just show up? Yes when a farm stand, roadside market or u-pick is stated.
+        #   farm_pickup: can a customer collect an order at the farm, by arrangement? Yes when the farm is listed as a
+        #   pickup, farm stand or CSA spot, or any visit is advertised: drop-ins, u-pick, farm tours (agritourism).
+        def own(field):
+            v = p.get(field)
+            return None if v in (None, "") else boolish(v)
+        home = next((l for l in locs if l["role"] == "home_base"), None)
+        home_addr = ((locations.get(home["location_id"]) or {}).get("address") or "").strip().lower() if home else ""
+        farm_is_a_spot = any(l["role"] in ("pickup", "farm_stand", "csa_dropoff") and (
+            l["location_id"] == (home or {}).get("location_id")
+            or (home_addr and ((locations.get(l["location_id"]) or {}).get("address") or "").strip().lower() == home_addr))
+            for l in locs)
+        dropin, dropin_basis = own("dropin_visits"), ("set" if own("dropin_visits") is not None else None)
+        if dropin is None and sells_at_farm:
+            dropin, dropin_basis = True, "listing"
+        # When drop-ins are welcome, the farm stand's or store's hours are the drop-in hours (a person can set them
+        # in inputs/producer_kinds.csv). "By appointment" is not drop-in time, so it is never used.
+        dropin_hours = None
+        if dropin is True:
+            stand = next((l["hours_text"] for l in locs if l["role"] in ("farm_stand", "home_base") and l["hours_text"]), "")
+            cand = (p.get("dropin_hours") or stand or p["hours_text"] or "").strip()
+            if cand and not re.search(r"appointment|arrangement|call ahead", cand, re.I):
+                dropin_hours = compact_hours(cand)
+        farm_pickup, pickup_basis = own("farm_pickup"), ("set" if own("farm_pickup") is not None else None)
+        if farm_pickup is None and (farm_is_a_spot or dropin is True or "Agritourism" in lst(p["categories"])):
+            farm_pickup, pickup_basis = True, "listing"
         out_locs = []
         for l in locs:
             if l["role"] == "home_base":
@@ -219,6 +271,8 @@ def main():
             "id": pid, "slug": p["slug"], "name": p["name"], "kind": p["kind"],
             "categories": lst(p["categories"]), "products": lst(p["products"]),
             "product_groups": lst(p.get("product_groups", "")),
+            "dropin_visits": dropin, "dropin_hours": dropin_hours, "farm_pickup": farm_pickup, "visit_basis": {"dropin": dropin_basis, "pickup": pickup_basis},
+            "visit_note": p.get("visit_note") or None,
             "months_open": [MONTHS[int(m) - 1] for m in lst(p["seasonal_months"])],
             "hours_text": p["hours_text"] or None, "hours": hours_by.get(("producer", pid), []),
             "hours_status": p.get("hours_status") or "none",

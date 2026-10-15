@@ -11,6 +11,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from test_build_tables import HEAD, ROOT, row  # noqa: E402
 
 
+sys.path.insert(0, os.path.join(ROOT, "scripts"))
+from export_app import compact_hours as export_app_compact  # noqa: E402
+
+
 class ExportApp(unittest.TestCase):
     def export(self, rows, edit=None, extra=(), build_extra=()):
         d = tempfile.mkdtemp()
@@ -140,6 +144,45 @@ class ExportApp(unittest.TestCase):
         self.assertEqual(conf["Guidestone Colorado"]["date"], "2026-10-13")
         self.assertEqual(conf["the business's Facebook page"]["fields"], ["products"])
         self.assertEqual(conf["the business's Facebook page"]["url"], "https://www.facebook.com/RanchPage/")
+
+    def test_visit_flags_are_separate_and_never_assumed(self):
+        d = tempfile.mkdtemp()
+        kinds = os.path.join(d, "kinds.csv")
+        with open(kinds, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(["name", "kind", "product_groups", "dropin_visits", "farm_pickup", "visit_note"])
+            w.writerow(["Closed Ranch", "ranch", "", "no", "yes", "Pick up at the annex by arrangement"])
+        doc = self.export([row("Closed Ranch", "On-Farm / Ranch Sales", Address="1 Rd", Latitude="38.5", Longitude="-106"),
+                           row("Stand Farm", "Roadside Market", Address="2 Rd", Latitude="38.6", Longitude="-106"),
+                           row("Mystery Farm", "On-Farm / Ranch Sales", Address="3 Rd", Latitude="38.7", Longitude="-106")],
+                          build_extra=["--kinds", kinds])
+        farms = self.by_name(doc)
+        self.assertEqual((farms["Closed Ranch"]["dropin_visits"], farms["Closed Ranch"]["farm_pickup"]), (False, True))
+        self.assertEqual(farms["Closed Ranch"]["visit_note"], "Pick up at the annex by arrangement")
+        self.assertEqual(farms["Stand Farm"]["dropin_visits"], True)    # a stated farm stand means drop-ins
+        self.assertEqual(farms["Stand Farm"]["farm_pickup"], True)      # visits advertised, so farm pickup too
+        self.assertEqual(farms["Stand Farm"]["visit_basis"], {"dropin": "listing", "pickup": "listing"})
+        self.assertEqual(farms["Closed Ranch"]["visit_basis"], {"dropin": "set", "pickup": "set"})
+        self.assertIsNone(farms["Mystery Farm"]["dropin_visits"])      # no evidence stays unknown
+        self.assertIsNone(farms["Mystery Farm"]["farm_pickup"])
+
+    def test_farm_tours_are_evidence_for_farm_pickup_but_not_drop_ins(self):
+        doc = self.export([row("Tour Farm", "On-Farm / Ranch Sales, Agritourism", Address="1 Rd", Latitude="38.5", Longitude="-106")])
+        farm = self.by_name(doc)["Tour Farm"]
+        self.assertEqual(farm["farm_pickup"], True)
+        self.assertIsNone(farm["dropin_visits"])
+
+    def test_dropin_hours_are_the_stand_hours_and_never_appointment_time(self):
+        doc = self.export([
+            row("Stand Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106",
+                Hours="Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; Wed: 8 am - 6 pm; Sat: 9 am - 1 pm"),
+            row("Appointment Farm", "U-Pick", Address="2 Rd", Latitude="38.6", Longitude="-106", Hours="Pick-your-own by appointment, June-October"),
+            row("Quiet Farm", "On-Farm / Ranch Sales", Address="3 Rd", Latitude="38.7", Longitude="-106", Hours="Mon: 9 am - 5 pm")])
+        farms = self.by_name(doc)
+        self.assertEqual(farms["Stand Farm"]["dropin_hours"], "Mon-Wed: 8 am - 6 pm; Sat: 9 am - 1 pm")
+        self.assertIsNone(farms["Appointment Farm"]["dropin_hours"])
+        self.assertEqual(export_app_compact("Tue-Sun: 8:00am - 6:00pm"), "Tue-Sun: 8:00am - 6:00pm")  # already compact
+        self.assertIsNone(farms["Quiet Farm"]["dropin_hours"])     # drop-ins unknown, so no drop-in hours
 
     def test_metadata_counts_match(self):
         doc = self.export([row("A Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106")])
