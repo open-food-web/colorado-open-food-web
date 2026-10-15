@@ -42,6 +42,10 @@ def test_release_strips_notes_and_unverified_emails(tmp_path, monkeypatch):
     for n in ("nodes.csv", "edges.csv"):
         (sup / n).write_text("a,b\n", encoding="utf-8")
     (tmp_path / "places.json").write_text("{}", encoding="utf-8")
+    tabs = tmp_path / "tabs"
+    tabs.mkdir()
+    (tabs / "producers.csv").write_text("producer_id\n", encoding="utf-8")
+    monkeypatch.setattr(mr, "TABLES", str(tabs))
     monkeypatch.setattr(mr, "PLACES", str(tmp_path / "places.json"))
     monkeypatch.setattr(mr, "SUPPLY", str(sup))
     monkeypatch.setattr(mr, "BUILD", str(build))

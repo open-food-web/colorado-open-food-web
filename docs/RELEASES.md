@@ -8,6 +8,8 @@ a tagged, checksummed snapshot published on this repo's Releases page.
 | File | What it is |
 |---|---|
 | `directory.csv` | The public flat directory, one row per listing. The 23 My Maps columns apps already read (name, category labels, address, city, county, phone, website, email, social links, hours, months open, products, organic, SNAP, ADA, where to get it, latitude, longitude). `Notes` is always empty |
+| `tables.zip` | The canonical tables for all of Colorado (`producers`, `markets`, `outlets`, `access_points`, `locations`, `producer_locations`, `service_areas`, `source_links`, `field_sources`), defined in `SCHEMA.md`. Stable IDs, locations and sources |
+| `csa.json`, `places.json`, `supply-network-*.csv` | CSAs, Census town and ZIP points, the supply network |
 | `MANIFEST.json` | Version, date, format version, license and attribution, row counts, counts by source, the columns, and the **sha256** of each file |
 | `RELEASE.md` | The same in words |
 
@@ -38,8 +40,8 @@ The Colorado Farm Trail does this with `scripts/update_foodweb.py`.
 
 Locally: `python scripts/scrape/build.py` then `python scripts/make_release.py --version v2026.10.1 --out release`.
 
-## What is not in a release (yet)
+## Tables and the flat directory
 
-The canonical tables (`producers`, `markets`, `outlets`, `locations` and the link tables, see `SCHEMA.md`) exist for
-Chaffee County in `data/`. A statewide set and app exports built from it come next; the flat directory is the
-bridge so apps can switch to the Food Web now.
+`directory.csv` is one row per listing: the simple file most apps need. `tables.zip` is the same data split into the
+schema's record types, with stable IDs, one location per place, links between them, and the source of every field.
+Regional apps are built from the tables through an app export (`EXPORTS.md`).
