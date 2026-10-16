@@ -226,6 +226,49 @@ def link_markets(out, stated, vendors_path):
     print("market_vendors:", len(rows), by_basis, "| vendor rows not linked:", unmatched)
 
 
+DEAD_MARKET = {"closed", "removed"}
+OWN_PAGE_SOURCES = {"producer_site", "producer_facebook"}
+
+
+def derive_channels(out):
+    """Add `farmers_market` to a producer's sales_channels when a live market's vendor list names them, and say so
+    in field_sources. Only ever adds: an existing channel is kept, and a producer on no list stays as it was."""
+    live = {m["market_id"] for m in out["markets"] if (m["status"] or "").lower() not in DEAD_MARKET}
+    by_pid = {p["producer_id"]: p for p in out["producers"]}
+    sources = {}
+    for v in out["market_vendors"]:
+        if v["market_id"] in live and (v["status"] or "").lower() not in DEAD_MARKET and v["producer_id"] in by_pid:
+            sources.setdefault(v["producer_id"], {}).setdefault((v["list_source"], v["source_url"]), v)
+    added = 0
+    for pid, srcs in sorted(sources.items()):
+        p = by_pid[pid]
+        have = channel_list(p["sales_channels"])
+        if "farmers_market" in have:
+            continue
+        p["sales_channels"] = ";".join(sorted(have | {"farmers_market"}))
+        added += 1
+        for (src, url), v in sorted(srcs.items()):
+            out["field_sources"].append({"record_type": "producer", "record_id": pid, "field": "sales_channels",
+                                         "source": src, "source_url": url, "verified_by": "source", "verified_on": ""})
+    print("farmers_market channel derived from live vendor lists:", added)
+
+
+def derive_last_verified(out):
+    """`last_verified` = the latest dated field_sources row where the business's own page (producer_site,
+    producer_facebook) or a partner confirmed a field. No dated row, no date."""
+    latest = {}
+    for fs in out["field_sources"]:
+        if fs["record_type"] == "producer" and fs["verified_on"] and (
+                fs["verified_by"] == "partner" or fs["source"] in OWN_PAGE_SOURCES):
+            latest[fs["record_id"]] = max(latest.get(fs["record_id"], ""), fs["verified_on"])
+    n = 0
+    for p in out["producers"]:
+        if p["producer_id"] in latest and not p["last_verified"]:
+            p["last_verified"] = latest[p["producer_id"]]
+            n += 1
+    print("producers with last_verified:", n)
+
+
 def confirm_url(x, website):
     """The business's own page that confirms it sells at this place: the `source` of a locations.csv row, when it
     is a link on the business's own website (a market's vendor list or a directory does not count)."""
@@ -505,6 +548,8 @@ def main():
             "confirm_url": confirm_url(x, site)})
 
     link_markets(out, stated, a.vendors)
+    derive_channels(out)
+    derive_last_verified(out)
 
     os.makedirs(a.out, exist_ok=True)
     for name, cols in COLS.items():
