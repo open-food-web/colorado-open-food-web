@@ -437,7 +437,7 @@ def main():
                     xfips = FIPS.get((x.get("county") or "").strip(), rfips)
                     out["locations"].append({
                         "location_id": xloc, "name": x.get("place_name") or "",
-                        "kind": "public_venue" if role == "pickup" else "farm", "address": x.get("address") or "",
+                        "kind": "public_venue" if role == "pickup" else ("outlet_site" if role == "store" else "farm"), "address": x.get("address") or "",
                         "city": x.get("place_city") or "", "zip": x.get("zip") or "", "hide_address": "false",
                         "state": "CO", "county_fips": xfips, "lat": x.get("lat") or "", "lon": x.get("lon") or "",
                         "geo_source": x.get("geo_source") or "manual", "google_place_id": "", "photo_url": "",
@@ -451,7 +451,7 @@ def main():
                     if xfips and not any(sa["producer_id"] == pid and sa["county_fips"] == xfips
                                          for sa in out["service_areas"]):
                         out["service_areas"].append({"producer_id": pid, "county_fips": xfips,
-                                                     "basis": "pickup", "derived": "true"})
+                                                     "basis": "store" if role == "store" else "pickup", "derived": "true"})
             kinds = [OUTLET_KIND[c] for c in cats_main if c in OUTLET_KIND
                      and (typ == "outlet" or c != "Garden Center / Greenhouse")]
             if kinds:
