@@ -1,5 +1,5 @@
 {
-  "_comment": "PROPOSAL for the maintainer to review: scope for the statewide Open Food Web homepage, modeled on exports/chaffee-provides.config.json. Not yet approved. Build with --statewide --unconfirmed-home-pins hide: without 'hide', producers whose sales channels are not confirmed would get a home-base pin, which for many small producers is a private home.",
+  "_comment": "PROPOSAL for the maintainer to review: scope for the statewide Open Food Web homepage, modeled on the Chaffee Provides scope (scripts/scope.json in its repo). Not yet approved. Build with --statewide --unconfirmed-home-pins hide: without 'hide', producers whose sales channels are not confirmed would get a home-base pin, which for many small producers is a private home.",
   "exclude_kinds": {
     "bakery": "Proposal: the homepage is about growers and makers; bakeries stay out until the maintainer decides (as on Chaffee Provides)"
   },

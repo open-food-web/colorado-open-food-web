@@ -10,6 +10,8 @@ Writes, in --out:
                     withheld, descriptions not included, emails only if the business lists them)
   csa.json          confirmed CSAs (season, sign-up link, pickup sites, delivery), facts only
   tables.zip        the canonical tables (producers, markets, outlets, locations and the link tables)
+  open-food-web.json  the statewide app export (docs/EXPORTS.md): the only file an app needs; it filters it to its
+                    own scope (county, categories, outlet kinds, pins) when it syncs
   places.json       Census place and ZIP centre points, for "near a town or ZIP" searches (public domain)
   supply-network-nodes.csv, supply-network-edges.csv   who supplies which restaurant or store, with sources
   MANIFEST.json     version, date, record counts, per-source counts, the sha256 of each file, and the schema
@@ -100,6 +102,15 @@ def main():
                 z.write(os.path.join(TABLES, fn), fn)
     assets["tables.zip"] = tables_zip
 
+    # The one app export: statewide, unscoped, release rules applied (docs/EXPORTS.md). Apps pin this file and
+    # apply their own scope (county, categories, pins) on their side.
+    import subprocess
+    app_json = os.path.join(a.out, "open-food-web.json")
+    subprocess.run([sys.executable, "-I", os.path.join(HERE, "export_app.py"), "--tables", TABLES, "--out", app_json,
+                    "--release", a.version, "--statewide", "--all-outlet-kinds", "--unconfirmed-home-pins", "hide",
+                    "--generated", dt.date.today().isoformat()], check=True, stdout=subprocess.DEVNULL)
+    assets["open-food-web.json"] = app_json
+
     by_source = {}
     for r in read(raw):
         for s in (r.get("Source") or "").split("+"):
@@ -134,7 +145,7 @@ Released {manifest['released']}. Data CC BY 4.0: credit "Colorado Open Food Web"
 
 - `directory.csv`: {len(rows)} listings ({manifest['counts']['with_email']} with a confirmed email,
   {manifest['counts']['with_website']} with a website).
-- `tables.zip` (the canonical tables), `csa.json`, `places.json`, `supply-network-nodes.csv`, `supply-network-edges.csv`.
+- `open-food-web.json` (the statewide app export; apps filter it to their own scope), `tables.zip` (the canonical tables), `csa.json`, `places.json`, `supply-network-nodes.csv`, `supply-network-edges.csv`.
 - `MANIFEST.json`: counts, sources, and the sha256 of each file.
 
 Rules applied: facts only (no descriptions), closed businesses and hidden addresses left out, emails only
