@@ -148,17 +148,27 @@ def producers_in_county(fips: str, repo: str = REPO) -> List[dict]:
     return [p for p in rd("producers.csv") if p["producer_id"] in ids and p["website"].strip()]
 
 
+def all_producers(repo: str = REPO) -> List[dict]:
+    with open(os.path.join(repo, "data", "colorado", "producers.csv"), encoding="utf-8", newline="") as fh:
+        return [p for p in csv.DictReader(fh) if p["website"].strip()]
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--county", required=True, help="county FIPS, e.g. 08013")
+    ap.add_argument("--county", help="county FIPS, e.g. 08013")
+    ap.add_argument("--statewide", action="store_true", help="every producer with a website")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--all", action="store_true", help="include producers that already have sales_channels")
     a = ap.parse_args()
-    prods = [p for p in producers_in_county(a.county) if a.all or not p["sales_channels"].strip()]
+    if bool(a.county) == a.statewide:
+        ap.error("give exactly one of --county or --statewide")
+    tag = "statewide" if a.statewide else a.county
+    base = all_producers() if a.statewide else producers_in_county(a.county)
+    prods = [p for p in base if a.all or not p["sales_channels"].strip()]
     prods = prods[: a.limit] if a.limit else prods
     os.makedirs(OUT_DIR, exist_ok=True)
-    out_p = os.path.join(OUT_DIR, f"site_channels_{a.county}.csv")
-    st_p = os.path.join(OUT_DIR, f"site_channels_{a.county}_status.csv")
+    out_p = os.path.join(OUT_DIR, f"site_channels_{tag}.csv")
+    st_p = os.path.join(OUT_DIR, f"site_channels_{tag}_status.csv")
     with open(out_p, "w", encoding="utf-8", newline="") as fo, open(st_p, "w", encoding="utf-8", newline="") as fs:
         wo = csv.DictWriter(fo, FIELDS, lineterminator="\n")
         wo.writeheader()
