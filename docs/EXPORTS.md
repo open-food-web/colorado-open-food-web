@@ -1,26 +1,28 @@
 # App exports (format version 1)
 
-Apps never read the canonical tables. The Food Web builds one public JSON file per app, and the app
-keeps a copy of it. This document is the contract between the two. Build it with
-`scripts/export_app.py`; the first consumer is the Chaffee Provides site (`exports/chaffee-provides.json`).
+Apps never read the canonical tables. The Food Web publishes **one** statewide export per release,
+`open-food-web.json`, as an asset of the tagged GitHub Release (see `RELEASES.md`). An app pins a release,
+keeps a copy, and applies its own scope on its side (county, categories, shop kinds, which pins to show).
+This document is the contract between the two. `scripts/make_release.py` builds the file with
+`scripts/export_app.py`; the first consumer is the Chaffee Provides site, whose `scripts/sync_data.py`
+slices it down to Chaffee County.
 
 ```
-python scripts/export_app.py --tables data/colorado --out exports/chaffee-provides.json \
-    --release 2026-11 --county-fips 08015 --include-source chaffee_provides
+python scripts/export_app.py --tables data/colorado --out release/open-food-web.json     --release v2026.10.7 --statewide --all-outlet-kinds --unconfirmed-home-pins hide
 ```
 
-Statewide (all 64 counties, Broomfield included), for an Open Food Web homepage:
+The release file is statewide (all 64 counties), carries outlets of every kind, and has no app scope
+applied. **Always build it with `--unconfirmed-home-pins hide`**: otherwise every producer whose sales
+channels are not confirmed gets a home-base pin, and across the state many of those homes are private
+residences. Each home-base location carries `pin_unconfirmed_home`, true when the home would be pinned under
+`show`, so an app that has a reason to show those pins (a county partner who knows its producers) can opt in
+per record without the Food Web publishing them as pins.
 
-```
-python scripts/export_app.py --tables data/colorado --out exports/open-food-web.json     --release 2026-11 --statewide --unconfirmed-home-pins hide --config exports/open-food-web.config.json
-```
-
-`--county-fips all` means the same as `--statewide`. **Always build the statewide app with
-`--unconfirmed-home-pins hide`.** Without it, every producer whose sales channels are not confirmed
-gets a home-base pin, and across the state many of those homes are private residences. The
-generated statewide JSON is not committed; build it where the app is deployed.
+`export_app.py` can still build a county or app slice (`--county-fips`, `--config`) for tests and
+one-off checks, but apps do not get their own releases.
 `exports/open-food-web.config.json` is a proposal for the maintainer: farms, ranches, orchards, makers
 and wineries, plus grocery, farm store, garden center and apothecary outlets, with a reason on every exclusion.
+It is for a statewide homepage app to apply, not a filter on the release.
 
 ## Why an export
 
@@ -48,7 +50,7 @@ and wineries, plus grocery, farm store, garden center and apothecary outlets, wi
 
 | Field | Notes |
 |---|---|
-| `app` | Name of the app (taken from the file name) |
+| `app` | Name of the file (`open-food-web` for the release). An app that slices the release writes its own name |
 | `format_version` | Integer. **Apps must check it and refuse a version they do not know** |
 | `release` | Release label, e.g. `2026-11` |
 | `generated` | Date the file was built |
@@ -56,6 +58,9 @@ and wineries, plus grocery, farm store, garden center and apothecary outlets, wi
 | `county_fips` | Counties the export covers (all 64 for a statewide export) |
 | `attribution` | Text the app must show, once, on its About page or footer |
 | `counts` | `producers`, `markets`, `access_points`, `market_links`, `pins` (a quick sanity check). `pins` counts producers, markets and access points only. With outlets: `outlets` and `outlet_pins` as well. `excluded_no_county` and `excluded_outside_area` count in-scope records left out per type (`producers`, `markets`, `access_points`, and `outlets` when exported): no county on any location or service area, or only in a county the export does not cover. Exported plus excluded always equals the in-scope total; the build stops if it does not |
+
+A producer also has `service_county_fips` (counties it serves, from its areas of operation), so an app can
+include a producer that serves its county but is based elsewhere.
 
 ### `vocab`
 
@@ -141,7 +146,7 @@ An outlet carries no products or descriptions; the Food Web keeps outlets thin.
    the channels are not confirmed yet, the home base is pinned with `pin_basis: unconfirmed` (set
    `--unconfirmed-home-pins hide` to turn this off). A producer that sells only by pickup or delivery
    has no home-base pin once its channels are set, so its pins are the pickup points.
-6. **App scope choices.** (`exclude_kinds` leaves out a whole category, for example `["bakery"]`, until the partner decides.) An app's own decisions about what to show (for example, Guidestone leaving a vacation rental off its site) live in `exports/<app>.config.json` as `exclude_slugs` with a reason. The Food Web keeps the record; only the export leaves it out.
+6. **App scope choices.** (`exclude_kinds` leaves out a whole category, for example `["bakery"]`, until the partner decides.) An app's own decisions about what to show (for example, Guidestone leaving a vacation rental off its site) live in the app's own repo (Chaffee Provides: `scripts/scope.json`, with a reason on each exclusion). The Food Web keeps the record; only the app leaves it out.
 7. **Order is stable.** Lists are sorted by name so a release diff shows only real changes.
 
 ## Changing the format
@@ -154,7 +159,7 @@ An outlet carries no products or descriptions; the Food Web keeps outlets thin.
 
 ## Open questions
 
-1. Where releases are published (a GitHub Release asset, or a committed `exports/` folder) and how the
-   app's repo is notified.
+1. (Settled) The release is published as a GitHub Release asset, `open-food-web.json`, with its sha256 in
+   `MANIFEST.json`. Open: how an app's repo is notified of a new release.
 2. (Settled) Structured `hours` and `sells_at` were added as non-breaking fields; `hours_text` stays.
-3. Whether outlets (restaurants, stores) get their own list when an app wants them. They are not exported now.
+3. (Settled) Outlets of every kind are in the release; an app picks the kinds it shows.
