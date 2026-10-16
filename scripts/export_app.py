@@ -8,6 +8,9 @@ the file (removed ones appear as an ID only). Apps never read the canonical tabl
 Usage:
   python scripts/export_app.py --tables data/colorado --out exports/chaffee-provides.json \
       --release 2026-11 --county-fips 08015 --include-source chaffee_provides
+
+  Statewide (all 64 counties; `--county-fips all` means the same):
+  python scripts/export_app.py --tables data/colorado --out exports/open-food-web.json       --release 2026-11 --statewide --unconfirmed-home-pins hide --config exports/open-food-web.config.json
 """
 from __future__ import annotations
 
@@ -24,6 +27,8 @@ FORMAT_VERSION = 1
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import products as PRODUCTS  # noqa: E402
+from build_tables import FIPS as COUNTY_FIPS  # noqa: E402  (county name -> FIPS, all 64)
+COUNTY_NAMES = {v: k for k, v in COUNTY_FIPS.items()}
 TOWNS = os.path.join(HERE, "..", "data", "towns.csv")
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
@@ -114,7 +119,8 @@ def main():
     ap.add_argument("--tables", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--release", required=True, help="release label, e.g. 2026-11")
-    ap.add_argument("--county-fips", required=True, nargs="+")
+    ap.add_argument("--county-fips", nargs="+", help="county FIPS codes, or `all` for all 64 Colorado counties")
+    ap.add_argument("--statewide", action="store_true", help="same as --county-fips all")
     ap.add_argument("--include-source", nargs="*", default=[],
                     help="also include records that this source lists, even outside the county")
     ap.add_argument("--unconfirmed-home-pins", choices=["show", "hide"], default="show",
@@ -122,6 +128,13 @@ def main():
     ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}, \"include_categories\": {category: reason}, \"exclude_categories\": {category: reason}, \"hide_pin_slugs\": {slug: reason}} for the app's own scope choices")
     ap.add_argument("--generated", default=dt.date.today().isoformat())
     a = ap.parse_args()
+    if a.statewide or (a.county_fips and "all" in a.county_fips):
+        a.county_fips = sorted(COUNTY_NAMES)
+    if not a.county_fips:
+        ap.error("--county-fips (or --statewide) is required")
+    unknown = [c for c in a.county_fips if c not in COUNTY_NAMES]
+    if unknown:
+        ap.error("not Colorado county FIPS codes: %s" % ", ".join(unknown))
     T = lambda n: read(os.path.join(a.tables, n + ".csv"))
     cfg = json.load(open(a.config, encoding="utf-8")) if a.config else {}
     exclude_slugs = set((cfg.get("exclude_slugs") or {}).keys())
@@ -132,7 +145,7 @@ def main():
     exclude_kinds = set(cfg.get("exclude_kinds") or [])   # e.g. ["bakery"]: a whole category left out of a launch
 
     locations = {r["location_id"]: r for r in T("locations")}
-    towns = [(r["name"], float(r["lat"]), float(r["lon"])) for r in read(TOWNS) if r["county_fips"] in a.county_fips]
+    towns = [(r["name"], float(r["lat"]), float(r["lon"]), r["county_fips"]) for r in read(TOWNS) if r["county_fips"] in a.county_fips]
     links = {}
     for r in T("source_links"):
         links.setdefault((r["record_type"], r["record_id"]), []).append(r)
@@ -197,12 +210,27 @@ def main():
                         "url": l["url"] or None})
         return out
 
-    def in_area(rtype, rid, loc_ids):
+    # Records that pass the app's scope but are left out for where they are: no county at all, or another county.
+    # exported + excluded must equal the records that reached this test (checked before writing).
+    reached = {"producers": 0, "markets": 0, "access_points": 0, "outlets": 0}
+    no_county = dict.fromkeys(reached, 0)
+    outside = dict.fromkeys(reached, 0)
+
+    def in_area(rtype, rid, loc_ids, bucket):
+        """True when the record belongs to this export; otherwise counts why it does not."""
+        reached[bucket] += 1
         if any(locations[i]["county_fips"] in a.county_fips for i in loc_ids if i in locations):
             return True
         if areas.get(rid, set()) & set(a.county_fips):
             return True
-        return any(l["source"] in a.include_source for l in links.get((rtype, rid), []))
+        if any(l["source"] in a.include_source for l in links.get((rtype, rid), [])):
+            return True
+        has_county = any((locations.get(i) or {}).get("county_fips") for i in loc_ids) or bool(areas.get(rid))
+        if has_county:
+            outside[bucket] += 1
+        else:
+            no_county[bucket] += 1
+        return False
 
     market_name = {m["location_id"]: m["name"] for m in T("markets")}
 
@@ -213,7 +241,9 @@ def main():
         hidden = boolish(L["hide_address"]) is True
         town = None
         if hidden and lat is not None and towns:
-            town = min(towns, key=lambda t: km((lat, lon), (t[1], t[2])))
+            # prefer a town in the location's own county, so a statewide export does not pull a pin across a county line
+            own = [t for t in towns if t[3] == L["county_fips"]] or towns
+            town = min(own, key=lambda t: km((lat, lon), (t[1], t[2])))
             lat, lon = town[1], town[2]
         street = None if hidden else (L["address"] or None)
         if street and re.match(r"(?i)\s*p\.?\s*o\.?\s*box", street):  # a mailbox is not a place to visit
@@ -243,7 +273,9 @@ def main():
         # an allowlist, when the app has one: a record with categories stays only if one of them is on the list
         if include_categories and lst(p["categories"]) and not (set(lst(p["categories"])) & include_categories):
             continue
-        if p["status"] in HIDDEN_STATUS or not in_area("producer", pid, [l["location_id"] for l in locs]):
+        if p["status"] in HIDDEN_STATUS:
+            continue
+        if not in_area("producer", pid, [l["location_id"] for l in locs], "producers"):
             continue
         channels = lst(p["sales_channels"])
         sells_at_farm = bool({"farm_stand", "u_pick"} & set(channels))
@@ -320,7 +352,9 @@ def main():
     included = {p["id"] for p in producers}
     markets = []
     for m in T("markets"):
-        if m["status"] in HIDDEN_STATUS or not in_area("market", m["market_id"], [m["location_id"]]):
+        if m["status"] in HIDDEN_STATUS:
+            continue
+        if not in_area("market", m["market_id"], [m["location_id"]], "markets"):
             continue
         markets.append({
             "id": m["market_id"], "slug": m["slug"], "name": m["name"], "operator": m["operator"] or None,
@@ -337,7 +371,9 @@ def main():
 
     outlets = []
     for o in (T("outlets") if include_outlet_kinds else []):
-        if o["kind"] not in include_outlet_kinds or o["slug"] in exclude_slugs or o["status"] in HIDDEN_STATUS                 or not in_area("outlet", o["outlet_id"], [o["location_id"]]):
+        if o["kind"] not in include_outlet_kinds or o["slug"] in exclude_slugs or o["status"] in HIDDEN_STATUS:
+            continue
+        if not in_area("outlet", o["outlet_id"], [o["location_id"]], "outlets"):
             continue
         outlets.append({
             "id": o["outlet_id"], "slug": o["slug"], "name": o["name"], "kind": o["kind"],
@@ -352,7 +388,9 @@ def main():
 
     access = []
     for r in T("access_points"):
-        if r["status"] in HIDDEN_STATUS or not in_area("access_point", r["access_point_id"], [r["location_id"]]):
+        if r["status"] in HIDDEN_STATUS:
+            continue
+        if not in_area("access_point", r["access_point_id"], [r["location_id"]], "access_points"):
             continue
         access.append({
             "id": r["access_point_id"], "slug": r["slug"], "name": r["name"], "kind": r["kind"],
@@ -364,6 +402,12 @@ def main():
             "location": public_location(r["location_id"], "access_site", True, "confirmed"),
             "sources": sources("access_point", r["access_point_id"])})
 
+    exported = {"producers": len(producers), "markets": len(markets), "access_points": len(access), "outlets": len(outlets)}
+    for k in reached:   # nothing may vanish unexplained
+        if exported[k] + no_county[k] + outside[k] != reached[k]:
+            sys.exit("count check failed for %s: %d exported + %d no county + %d outside != %d" % (
+                k, exported[k], no_county[k], outside[k], reached[k]))
+
     doc = {
         "export": {
             "app": os.path.splitext(os.path.basename(a.out))[0], "format_version": FORMAT_VERSION,
@@ -374,8 +418,11 @@ def main():
                        "market_links": sum(len(p["sells_at"]) for p in producers),
                        **({"outlets": len(outlets), "outlet_pins": sum(o["location"]["pin"] for o in outlets)} if include_outlet_kinds else {}),
                        "pins": sum(l["pin"] for p in producers for l in p["locations"])
-                       + len(markets) + len(access)}},
-        "vocab": {"sales_channels": CHANNEL_LABELS, "months": MONTHS, "kinds": KIND_LABELS,
+                       + len(markets) + len(access),
+                       # in-scope records left out for having no county (they cannot be placed) or being in another county
+                       "excluded_no_county": {k: v for k, v in no_county.items() if k != "outlets" or include_outlet_kinds},
+                       "excluded_outside_area": {k: v for k, v in outside.items() if k != "outlets" or include_outlet_kinds}}},
+        "vocab": {"counties": {c: COUNTY_NAMES[c] for c in sorted(a.county_fips)}, "sales_channels": CHANNEL_LABELS, "months": MONTHS, "kinds": KIND_LABELS,
                   "product_groups": PRODUCTS.LABELS,
                   **({"outlet_kinds": {k: v for k, v in OUTLET_KIND_LABELS.items() if k in include_outlet_kinds},
                       "outlet_groups": OUTLET_GROUPS} if include_outlet_kinds else {})},

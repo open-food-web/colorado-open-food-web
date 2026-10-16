@@ -79,7 +79,7 @@ Every field has a class that decides whether it appears in the public release.
 | `phone` | string | fact | Public business phone |
 | `email` | string | fact/personal | Only if the business publishes it for customers |
 | `facebook`, `instagram` | url | fact/personal | Business pages only |
-| `sales_channels` | list | controlled | How the public can buy from this producer; check any that apply. `farm_stand` (on-farm sales: a stand, store or open hours at the farm), `u_pick`, `csa`, `farmers_market`, `pickup` (off-farm pickup points), `delivery`, `online`, `wholesale`, `retail_partners`. Blank = not yet confirmed, never assumed none. A producer is mapped at its home base only when `farm_stand` or `u_pick` is checked |
+| `sales_channels` | list | controlled | How the public can buy from this producer; check any that apply. `farm_stand` (on-farm sales: a stand, store or open hours at the farm), `u_pick`, `csa`, `farmers_market`, `pickup` (off-farm pickup points), `delivery`, `online`, `wholesale`, `retail_partners`. Blank = not yet confirmed, never assumed none. `farmers_market` is derived by the build for any producer on the vendor list of a live market (not closed or removed), with the list as its `field_sources` row; the build only adds it. A producer is mapped at its home base only when `farm_stand` or `u_pick` is checked |
 | `certified_organic` | bool/null | fact | Null = unknown, never assumed false |
 | `accepts_snap` | bool/null | fact | |
 | `ada_accessible` | bool/null | fact | |
@@ -88,7 +88,7 @@ Every field has a class that decides whether it appears in the public release.
 | `status` | enum | fact | `active`, `seasonal_closed`, `closed`, `unverified`, `removed` |
 | `claimed` | bool | fact | Producer has confirmed their record |
 | `opted_out_fields` | list | fact | Fields the producer asked to have removed |
-| `first_seen`, `last_verified` | date | fact | |
+| `first_seen`, `last_verified` | date | fact | `last_verified` is derived by the build: the latest dated `field_sources` row for the producer where the business's own page (`producer_site`, `producer_facebook`) or a partner confirmed a field. Blank when no such dated row exists; never filled with a guess |
 
 ## Table: `locations`
 
@@ -227,11 +227,13 @@ The most perishable data in the Food Web: who buys from whom changes with menus 
 | `outlet_id` | string | fact | FK |
 | `producer_id` | string | fact | FK |
 | `featured_item` | string | fact | The item the source names (a dish, drink or product), kept short and factual. Optional |
-| `basis` | enum | fact | `outlet_says`, `producer_says`, `both`, `third_party` |
+| `basis` | enum | fact | `outlet_says`, `producer_says`, `both`, `third_party`. Blank when the source page's owner is not known |
 | `source_url` | url | fact | Page that states it (menu, supplier list, producer page) |
 | `source_dated` | date | fact | The date on the page, if it shows one. Optional |
 | `observed_on` | date | fact | When the claim was seen. Required |
 | `status` | enum | fact | `current`, `unverified`, `ended` |
+
+Built by `scripts/supply_network/build_outlet_suppliers.py` from `inputs/supply-network/edges.csv`. Names are matched exactly (normalized, with the city from `nodes.csv` as tiebreaker); edges whose supplier or buyer is not in `producers`/`outlets`, or matches more than one record, are written to `inputs/supply-network/outlet_suppliers_review.csv` instead of guessed. Edges marked `unconfirmed` become `unverified`.
 
 ## Table: `access_points`
 
