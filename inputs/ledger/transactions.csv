@@ -1845,3 +1845,6 @@ Pollock, Cheese, Eggs",colorado_proud_farm_fresh+colorado_proud_finder,port-from
 2026-10-15,changed,Copper Kettle Apothecary,Salida,Products,Spices/Garlic,"Bulk herbs, honey, lavender",official-site+chaffee_provides,build,
 2026-10-15,changed,Copper Kettle Apothecary,Salida,Category,Food Maker,Apothecary,official-site+chaffee_provides,build,
 2026-10-15,changed,Copper Kettle Apothecary,Salida,Products,"Bulk herbs, honey, lavender","Bulk herbs, honey, lavender, seeds",official-site+chaffee_provides,build,
+2026-10-15,added,Hutchinson Homestead & Learning Center,Salida,,,,curated,build,
+2026-10-15,changed,Hutchinson Ranch,Salida,Category,On-Farm / Ranch Sales,"Agritourism, On-Farm / Ranch Sales",official-site+chaffee_provides,build,
+2026-10-15,removed,Sweet Pea Farms,Salida,,,,curated,build,

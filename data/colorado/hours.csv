@@ -387,6 +387,8 @@ producer,co-p-000509,fri,09:00,13:00,false,false
 producer,co-p-000509,sat,09:00,13:00,false,false
 market,co-m-000077,sat,09:00,13:00,false,false
 market,co-m-000078,sun,10:00,14:00,false,false
+producer,co-p-001243,sat,13:00,16:00,false,false
+producer,co-p-001243,sun,13:00,16:00,false,false
 producer,co-p-000554,fri,09:00,13:00,false,false
 producer,co-p-000554,sat,09:00,13:00,false,false
 producer,co-p-000555,wed,10:00,18:00,false,false

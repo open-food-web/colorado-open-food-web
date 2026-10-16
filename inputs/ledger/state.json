@@ -8687,6 +8687,22 @@
 "name": "Young's Market & Garden Center",
 "source": "colorado_proud_finder"
 },
+"center homestead hutchinson learning|salida": {
+"Address": "8913 W Hwy 50",
+"Category": "Agricultural Education",
+"County": "Chaffee",
+"Email": "info@hutchinsonhomestead.org",
+"Hours": "Sat-Sun: 1:00pm - 4:00pm (June-September; by appointment)",
+"Months Open": "",
+"Phone": "(719) 239-0955",
+"Products": "Beef",
+"Status": "Open",
+"Website": "https://www.hutchinsonhomestead.org/",
+"Year Opened": "",
+"city": "Salida",
+"name": "Hutchinson Homestead & Learning Center",
+"source": "curated"
+},
 "center salida|salida": {
 "Address": "305 F. Street",
 "Category": "Food Bank",
@@ -14989,7 +15005,7 @@
 "Year Opened": "",
 "city": "Salida",
 "name": "Sweet Pea Farm’s Wildflower Honey",
-"source": "official-site+chaffee_provides"
+"source": "official-site+chaffee_provides+curated"
 },
 "farm hoot howl n|boulder": {
 "Address": "033 Jay Road",
@@ -17022,22 +17038,6 @@
 "city": "Littleton",
 "name": "Patchwork Farms",
 "source": "colorado_proud_finder"
-},
-"farms pea sweet|salida": {
-"Address": "",
-"Category": "On-Farm / Ranch Sales",
-"County": "Chaffee",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "",
-"Products": "Honey, eggs, pork, produce, beeswax balms and candles",
-"Status": "Open",
-"Website": "",
-"Year Opened": "",
-"city": "Salida",
-"name": "Sweet Pea Farms",
-"source": "curated"
 },
 "farms pfaltzgraff|haxtun": {
 "Address": "12189 County Road 7",
@@ -20305,7 +20305,7 @@
 },
 "hutchinson ranch|salida": {
 "Address": "6700 Old Corral Road, Salida, CO 81201",
-"Category": "On-Farm / Ranch Sales",
+"Category": "Agritourism, On-Farm / Ranch Sales",
 "County": "Chaffee",
 "Email": "HutchSalida@gmail.com",
 "Hours": "",
