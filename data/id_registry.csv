@@ -1524,6 +1524,9 @@ co-loc|loc|headwaterfarms|pickup|headwaterfarmsbuenavista,co-loc-001520
 co-loc|loc|headwaterfarms|pickup|headwaterfarmsgreenhousenathrop,co-loc-001521
 co-loc|loc|headwaterfarms|pickup|salidapickuplocation,co-loc-001522
 co-loc|loc|headwaterfarms|store|thelettuceheadfoodcompany,co-loc-001523
+co-loc|loc|elkheadcreekranchyampavalleywagyushadowlainefarm|store|yampavalleyfoodscaamarket,co-loc-001524
+co-loc|loc|fitchranch|store|fitchranchmeatsmarketgranby,co-loc-001525
+co-loc|loc|smittyslittlefarmltd|store|thecottageboutiquedelta,co-loc-001526
 co-m|309028,co-m-000001
 co-m|309117,co-m-000002
 co-m|business_profile_176,co-m-000003
@@ -4352,3 +4355,6 @@ co-ploc|loc|headwaterfarms|pickup|headwaterfarmsbuenavista,co-ploc-001267
 co-ploc|loc|headwaterfarms|pickup|headwaterfarmsgreenhousenathrop,co-ploc-001268
 co-ploc|loc|headwaterfarms|pickup|salidapickuplocation,co-ploc-001269
 co-ploc|loc|headwaterfarms|store|thelettuceheadfoodcompany,co-ploc-001270
+co-ploc|loc|elkheadcreekranchyampavalleywagyushadowlainefarm|store|yampavalleyfoodscaamarket,co-ploc-001271
+co-ploc|loc|fitchranch|store|fitchranchmeatsmarketgranby,co-ploc-001272
+co-ploc|loc|smittyslittlefarmltd|store|thecottageboutiquedelta,co-ploc-001273
