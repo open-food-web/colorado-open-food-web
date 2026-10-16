@@ -69,6 +69,7 @@ and wineries, plus grocery, farm store, garden center and apothecary outlets, wi
 | `kind` | string | `farm`, `ranch`, `orchard`, `maker`, `winery`. Labels are in `vocab.kinds` |
 | `categories`, `products` | list | From the Food Web vocabularies |
 | `product_groups` | list | What people search by: honey, beef and meat, eggs, veggies... Labels are in `vocab.product_groups` |
+| `visits` | list | The ways to visit, each `{type, label, detail}` (`detail` is the hours or a short plain note, or null). Types and labels are in `vocab.visit_types`: farm stand, shop, pick your own, farm tours, volunteer days, visits by appointment. Empty when there is nothing to visit. Apps should show these with their titles instead of a "drop-in" flag |
 | `dropin_visits` | bool/null | Can a customer just show up? Null = no evidence; apps say "call first" |
 | `dropin_hours` | string/null | When drop-ins are welcome: the hours, with runs of days shortened ("Mon-Sat: 8 am - 6 pm"). Null when unknown |
 | `farm_pickup` | bool/null | Can a customer collect an order at the farm, by arrangement? A separate question from drop-ins |

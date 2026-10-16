@@ -136,6 +136,25 @@ class ExportApp(unittest.TestCase):
         # the pin count stays producers + markets + access points, so a site that predates outlets still checks out
         self.assertEqual(doc["export"]["counts"]["pins"], plain["export"]["counts"]["pins"])
 
+    def test_visits_are_named_with_their_hours_and_never_guessed(self):
+        import export_app
+        # derived: a farm stand shows its hours only when they contain times; pick-your-own says "by appointment" when it does
+        p = {"visits": "", "hours_text": "Fri: 2 pm - 7 pm"}
+        v = export_app.derive_visits(p, ["farm_stand"], True, "Fri: 2 pm - 7 pm")
+        self.assertEqual([(x["type"], x["label"], x["detail"]) for x in v], [("farm_stand", "Farm stand", "Fri: 2 pm - 7 pm")])
+        v = export_app.derive_visits({"visits": "", "hours_text": "U-pick orchard tours in summer season"}, ["farm_stand", "u_pick"], True, "U-pick orchard tours in summer season")
+        self.assertEqual([x["detail"] for x in v], [None, None])
+        v = export_app.derive_visits({"visits": "", "hours_text": "By appointment only"}, ["u_pick"], True, None)
+        self.assertEqual(v[0]["detail"], "By appointment")
+        # stated by a person: used as written; tours and volunteering exist only when stated
+        v = export_app.derive_visits({"visits": "farm_stand|Tue 4:00pm - 6:00pm;tour|By booking;bogus|x"}, [], True, None)
+        self.assertEqual([x["type"] for x in v], ["farm_stand", "tour"])
+        # 'none' and an explicit no leave nothing to visit, even with a farm stand channel
+        self.assertEqual(export_app.derive_visits({"visits": "none"}, ["farm_stand"], True, "Sat: 9 am - 1 pm"), [])
+        self.assertEqual(export_app.derive_visits({"visits": ""}, ["farm_stand"], False, None), [])
+        # nothing on the listing, nothing guessed
+        self.assertEqual(export_app.derive_visits({"visits": ""}, ["csa"], None, None), [])
+
     def test_po_box_is_not_an_address(self):
         doc = self.export([row("Box Farm", "On-Farm / Ranch Sales", Address="P.O. Box 654", City="Poncha Springs",
                                Latitude="38.51", Longitude="-106.07")])
