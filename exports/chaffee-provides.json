@@ -1101,7 +1101,7 @@
    "hours_status": "none",
    "website": null,
    "phone": "(719) 530-1597",
-   "email": null,
+   "email": "everettranchbeef@gmail.com",
    "facebook": "https://www.facebook.com/everettranchbeef/",
    "instagram": null,
    "sales_channels": [],
@@ -1112,7 +1112,7 @@
    "call_first": null,
    "status": "unverified",
    "claimed": false,
-   "last_verified": "2026-10-13",
+   "last_verified": "2026-10-16",
    "locations": [
     {
      "id": "co-loc-000012",
@@ -1155,6 +1155,14 @@
      ],
      "url": null,
      "date": "2026-10-13"
+    },
+    {
+     "by": "the business's Instagram page",
+     "fields": [
+      "email"
+     ],
+     "url": "https://www.instagram.com/everettranchbeef/",
+     "date": "2026-10-16"
     }
    ]
   },
@@ -4256,7 +4264,7 @@
    "phone": null,
    "facebook": "https://www.facebook.com/pages/category/Farm/The-Triangle-Oasis-219919395410862",
    "instagram": "https://www.instagram.com/thetriangleoasisproject",
-   "status": "unverified",
+   "status": "seasonal_closed",
    "last_verified": null,
    "location": {
     "id": "co-loc-000017",

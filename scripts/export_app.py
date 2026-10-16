@@ -58,7 +58,7 @@ FIELD_LABEL = {"phone": "phone", "email": "email", "website": "website", "facebo
                "city": "town", "zip": "ZIP", "categories": "type", "certified_organic": "organic status",
                "accepts_snap": "SNAP", "ada_accessible": "accessibility"}
 BY_LABEL = {"guidestone": "Guidestone Colorado", "producer_site": "the business's own website",
-            "producer_facebook": "the business's Facebook page"}
+            "producer_facebook": "the business's Facebook page", "producer_instagram": "the business's Instagram page"}
 # Records with these statuses are not published. "removed" is listed by ID only.
 HIDDEN_STATUS = {"closed", "removed"}
 
@@ -222,13 +222,15 @@ def main():
             src = r["source"]
             if src == "producer_site" and "facebook.com" in (r["source_url"] or ""):
                 src = "producer_facebook"   # found on the business's Facebook page, not a website
-            if not (r["verified_by"] == "partner" or src in ("producer_site", "producer_facebook")):
+            elif src == "producer_site" and "instagram.com" in (r["source_url"] or ""):
+                src = "producer_instagram"
+            if not (r["verified_by"] == "partner" or src in ("producer_site", "producer_facebook", "producer_instagram")):
                 continue
             if r["field"] not in FIELD_LABEL:
                 continue
             if src != "guidestone" and r["field"] in ("facebook", "instagram", "website"):
                 continue   # a page "confirming" its own link says nothing
-            url = r["source_url"] if src == "producer_facebook" else (website if src == "producer_site" else "")
+            url = r["source_url"] if src in ("producer_facebook", "producer_instagram") else (website if src == "producer_site" else "")
             g = groups.setdefault((src, url, r["verified_on"] if src != "producer_site" else ""), [])
             g.append(FIELD_LABEL[r["field"]])
         return [{"by": BY_LABEL.get(k[0], k[0]), "fields": sorted(set(v)), "url": k[1] or None, "date": k[2] or None}

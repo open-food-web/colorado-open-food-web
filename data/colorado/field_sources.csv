@@ -3480,6 +3480,7 @@ producer,co-p-000346,city,colorado_proud,,source,
 producer,co-p-000346,zip,colorado_proud,,source,
 producer,co-p-000346,county_fips,census_geocoder,,source,
 producer,co-p-000010,phone,guidestone,,partner,2026-10-13
+producer,co-p-000010,email,producer_instagram,https://www.instagram.com/everettranchbeef/,source,2026-10-16
 producer,co-p-000010,facebook,producer_site,https://www.facebook.com/everettranchbeef/,source,
 producer,co-p-000010,products,chaffee_provides,,source,
 producer,co-p-000010,address,chaffee_provides,,source,
