@@ -385,7 +385,8 @@ def main():
         sid = entity_key(r, name, prefixes_for(classify(cats_main), cats_main))
         if "guidestone_review" not in (r["Source"] or ""):   # a partner file states its own contact details
             r["Email"] = publishable_email(r)
-        status = "closed" if (r.get("Status") or "").strip().lower() == "closed" else "unverified"
+        status = {"closed": "closed", "seasonal closed": "seasonal_closed",
+                  "seasonal_closed": "seasonal_closed"}.get((r.get("Status") or "").strip().lower(), "unverified")
         parsed = hrs.parse(r["Hours"])
         hs = parsed.status
         dys = ";".join(sorted({sl.day for sl in parsed.slots}, key=hrs.DAY_ORDER.index))
