@@ -7536,6 +7536,7 @@ producer,co-p-000018,email,chaffee_provides,,source,
 producer,co-p-000018,website,chaffee_provides,,source,
 producer,co-p-000018,facebook,producer_site,https://www.mushroomloveco.com/,source,
 producer,co-p-000018,products,producer_site,https://www.mushroomloveco.com/,source,
+producer,co-p-000018,city,producer_site,https://www.mushroomloveco.com,source,2026-10-16
 producer,co-p-000018,county_fips,census_geocoder,,source,
 producer,co-p-000743,phone,colorado_proud,,source,
 producer,co-p-000743,facebook,colorado_proud,,source,
@@ -8441,6 +8442,7 @@ producer,co-p-000019,facebook,maintainer,,source,
 producer,co-p-000019,instagram,producer_site,https://www.instagram.com/phytologyflowers/,source,
 producer,co-p-000019,hours_text,producer_site,https://www.phytologyflowers.com,source,
 producer,co-p-000019,products,producer_site,https://www.phytologyflowers.com,source,
+producer,co-p-000019,city,producer_site,https://www.phytologyflowers.com,source,2026-10-16
 producer,co-p-000019,county_fips,census_geocoder,,source,
 producer,co-p-000820,phone,colorado_proud,,source,
 producer,co-p-000820,facebook,colorado_proud,,source,
@@ -11690,6 +11692,9 @@ producer,co-p-000028,phone,producer_site,https://www.valleyrootsfoodhub.com/cont
 producer,co-p-000028,website,chaffee_provides,,source,
 producer,co-p-000028,products,producer_site,https://www.valleyrootsfoodhub.com/,source,
 producer,co-p-000028,address,producer_site,https://www.valleyrootsfoodhub.com/contact,source,
+producer,co-p-000028,city,producer_site,https://www.valleyrootsfoodhub.com,source,2026-10-16
+producer,co-p-000028,zip,producer_site,https://www.valleyrootsfoodhub.com,source,2026-10-16
+producer,co-p-000028,county_fips,maintainer,,source,
 producer,co-p-001238,phone,usda_lfd,,source,
 producer,co-p-001238,website,usda_lfd,,source,
 producer,co-p-001238,facebook,usda_lfd,,source,

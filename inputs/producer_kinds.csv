@@ -4,7 +4,7 @@ Arrowpoint Cattle Company,ranch,beef-meat;poultry-eggs,,,yes,Pickup at the ranch
 Badger Creek Ranch,ranch,beef-meat;poultry-eggs,no,,yes,"Pick up an order at the Coaldale ranch annex by arrangement, or at the Tuesday pickup points, or ask about delivery",Chosen by the provider on the old Chaffee Provides form (type: Ranch) | visit: Guidestone/Chrissy,chaffee_provides,2021-2026,
 Banyan Breads,bakery,baked-goods,yes,"Mornings, until sold out",,,"Bakery | visit: business's own website, Oct 2026",guidestone_review,2026-10-16,"shop|Mornings, until sold out"
 Bristlecone Bakeshop,bakery,baked-goods,,,,,bakery in Alma; sells at the Salida Farmers Market,maintainer,2026-10-16,
-Buck and Bloom Cheese Co,maker,dairy,yes,,,,"Creamery | visit: business's own website, Oct 2026",guidestone_review,2026-10-16,farm_stand|Self-serve farm general store;tour|By booking
+Buck and Bloom Cheese Co,maker,dairy,yes,,,,"Creamery | visit: business's own website, Oct 2026",guidestone_review,2026-10-16,farm_stand|Self-serve farm general store - current hours on Google Maps;tour|Book at buckandbloomcheese.com/tour
 Colorado Farm to Table,farm,veggies,no,,no,Donates its produce to the community; no public sales. Volunteer opportunities are on their website,"Chosen by the provider on the old Chaffee Provides form (type: Farm) | visit: nonprofit farm, produce is donated, no public sales (maintainer, Oct 2026)",maintainer,2026-10-16,
 Colorado Mountain Lavender,farm,+garlic-herbs,no,,no,The farm and shop are closed to the public; online orders only,"Chosen by the provider on the old Chaffee Provides form (type: Farm) | visit: business's own website, Oct 2026",chaffee_provides,2021-2026,
 Cottonwood Spirit Ranch,ranch,veggies;beef-meat;poultry-eggs,,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026,
@@ -20,7 +20,7 @@ Microgreen Creations LLC,farm,,,,,,Salida Farmers Market vendor; markets-only,ma
 Miss Penn's Mountain Seeds,farm,,,,,,Salida Farmers Market vendor,foodshedalliance.com vendor list,2026-10-16,
 Mountain Goat Lodge,farm,dairy,,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026,
 Mushroom Love Co,farm,veggies,no,,,,"Chosen by the provider on the old Chaffee Provides form (type: Farm) | visit: research:own site + social, Oct 2026; https://www.mushroomloveco.com",chaffee_provides,2021-2026,tour|By request
-Palisade Peach Shack,orchard,,,,,,Salida Farmers Market vendor,foodshedalliance.com vendor list,2026-10-16,
+Palisade Peach Shack,orchard,,,,,,Salida Farmers Market vendor,foodshedalliance.com vendor list,2026-10-16,"u_pick|Tours 9:00am - 5:00pm, no tours 12:00pm - 1:00pm, mid-June to mid-September"
 Phytology Flowers Farm,farm,veggies;flowers;garlic-herbs,no,,yes,"Not open to the public. Order online or by phone, or buy bouquets at Salida Garden Supply","Chosen by the provider on the old Chaffee Provides form (type: Farm) | visit: research:own site + social, Oct 2026; https://www.phytologyflowers.com/buy-flowers/",chaffee_provides,2021-2026,by_appointment|By appointment
 Poncha Creek Gardens,farm,,no,,yes,On-farm pickup by arrangement; also delivers in Salida and Poncha Springs,"Chosen by the provider on the old Chaffee Provides form (type: Farm) | visit: research:own site + social, Oct 2026; https://ponchacreekgardens.wordpress.com/how-to-order/",chaffee_provides,2021-2026,by_appointment|By appointment
 Raisin' Rye,bakery,baked-goods,yes,,,Weekday and Saturday hours differ by source,"bakery and coffee shop; Del Norte | visit: research:own site + social, Oct 2026",maintainer,2026-10-16,shop|
@@ -28,7 +28,7 @@ Rocky Mountain Garlic,farm,veggies;garlic-herbs,yes,,,,"Chosen by the provider o
 Salida Cattle Company,ranch,beef-meat,,,,,Chosen by the provider on the old Chaffee Provides form (type: Ranch),chaffee_provides,2021-2026,
 Scanga Meat Company,,,yes,Mon-Sat 8:30am - 5:00pm,,Hours are from a business directory,"Chosen by the provider on the old Chaffee Provides form (type: Market) | visit: research:own site + social, Oct 2026; https://scangameat.com",chaffee_provides,2021-2026,shop|Mon-Sat 8:30am - 5:00pm
 Sweet Pea Farm’s Wildflower Honey,farm,beef-meat;poultry-eggs,,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026,
-The Triangle Oasis,,,yes,,,,"added for visit flag | visit: business's own website, Oct 2026",research,2026-10-16,"shop|;u_pick|By appointment, June-October"
+The Triangle Oasis,,,yes,,,,"added for visit flag | visit: business's own website, Oct 2026",research,2026-10-16,"shop|On-farm store opens in June;u_pick|From July, limited hours, by reservation"
 Trout Creek Farm,farm,veggies;flowers,,,,,Chosen by the provider on the old Chaffee Provides form (type: Farm),chaffee_provides,2021-2026,
 Valley Roots Food Hub,ranch,veggies;beef-meat;poultry-eggs;dairy;garlic-herbs,no,,,Delivery food hub; not a place to visit,"Chosen by the provider on the old Chaffee Provides form (type: Ranch) | visit: research:own site + social, Oct 2026; https://valleyrootsfoodhub.com",chaffee_provides,2021-2026,
 Vino Salida Wine Cellars,winery,drinks,,,,,Winery,guidestone_review,2026-10-16,

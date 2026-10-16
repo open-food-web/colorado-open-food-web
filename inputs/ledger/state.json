@@ -14367,7 +14367,7 @@
 "name": "Flower Street Farm",
 "source": "usda"
 },
-"farm flowers phytology|": {
+"farm flowers phytology|salida": {
 "Address": "",
 "Category": "On-Farm / Ranch Sales",
 "County": "Chaffee",
@@ -14379,7 +14379,7 @@
 "Status": "Open",
 "Website": "https://www.phytologyflowers.com",
 "Year Opened": "",
-"city": "",
+"city": "Salida",
 "name": "Phytology Flowers Farm",
 "source": "official-site+chaffee_provides"
 },
@@ -17822,22 +17822,6 @@
 "city": "Fort Collins",
 "name": "Rekaivery Food Hub",
 "source": "usda+colorado_proud_finder"
-},
-"food hub roots valley|": {
-"Address": "5401 Terry Street, Mosca, CO 81146",
-"Category": "On-Farm / Ranch Sales",
-"County": "",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "(719) 206-2839",
-"Products": "Produce, meat, cheese, eggs",
-"Status": "Open",
-"Website": "https://www.valleyrootsfoodhub.com/",
-"Year Opened": "",
-"city": "",
-"name": "Valley Roots Food Hub",
-"source": "official-site+chaffee_provides"
 },
 "food hub roots valley|mosca": {
 "Address": "5401 Terry St",
@@ -21311,7 +21295,7 @@
 "name": "Louisville Farmers Market",
 "source": "colorado_proud+colorado_proud_farm_fresh+usda"
 },
-"love mushroom|": {
+"love mushroom|buena vista": {
 "Address": "",
 "Category": "On-Farm / Ranch Sales",
 "County": "Chaffee",
@@ -21323,7 +21307,7 @@
 "Status": "Open",
 "Website": "http://www.mushroomloveco.com",
 "Year Opened": "",
-"city": "",
+"city": "Buena Vista",
 "name": "Mushroom Love Co",
 "source": "official-site+chaffee_provides"
 },
