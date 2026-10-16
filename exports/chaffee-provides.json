@@ -1146,7 +1146,7 @@
    "hours_status": "none",
    "website": null,
    "phone": "(719) 530-1597",
-   "email": null,
+   "email": "everettranchbeef@gmail.com",
    "facebook": "https://www.facebook.com/everettranchbeef/",
    "instagram": "https://www.instagram.com/everettranchbeef/",
    "sales_channels": [],
@@ -1157,7 +1157,7 @@
    "call_first": null,
    "status": "unverified",
    "claimed": false,
-   "last_verified": "2026-10-13",
+   "last_verified": "2026-10-16",
    "locations": [
     {
      "id": "co-loc-000012",
@@ -1200,6 +1200,14 @@
      ],
      "url": null,
      "date": "2026-10-13"
+    },
+    {
+     "by": "the business's Instagram page",
+     "fields": [
+      "email"
+     ],
+     "url": "https://www.instagram.com/everettranchbeef/",
+     "date": "2026-10-16"
     }
    ]
   },
