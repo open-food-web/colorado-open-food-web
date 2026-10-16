@@ -227,11 +227,13 @@ The most perishable data in the Food Web: who buys from whom changes with menus 
 | `outlet_id` | string | fact | FK |
 | `producer_id` | string | fact | FK |
 | `featured_item` | string | fact | The item the source names (a dish, drink or product), kept short and factual. Optional |
-| `basis` | enum | fact | `outlet_says`, `producer_says`, `both`, `third_party` |
+| `basis` | enum | fact | `outlet_says`, `producer_says`, `both`, `third_party`. Blank when the source page's owner is not known |
 | `source_url` | url | fact | Page that states it (menu, supplier list, producer page) |
 | `source_dated` | date | fact | The date on the page, if it shows one. Optional |
 | `observed_on` | date | fact | When the claim was seen. Required |
 | `status` | enum | fact | `current`, `unverified`, `ended` |
+
+Built by `scripts/supply_network/build_outlet_suppliers.py` from `inputs/supply-network/edges.csv`. Names are matched exactly (normalized, with the city from `nodes.csv` as tiebreaker); edges whose supplier or buyer is not in `producers`/`outlets`, or matches more than one record, are written to `inputs/supply-network/outlet_suppliers_review.csv` instead of guessed. Edges marked `unconfirmed` become `unverified`.
 
 ## Table: `access_points`
 
