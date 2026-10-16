@@ -1128,3 +1128,8 @@ Westcliffe Honey Company,Westcliffe,County,set,Custer,Filled from city in one co
 Thompson House Museum,Carbondale,,remove,,"A historic house museum with tours, not a food stop (removed on maintainer request 2026-10-15)",2026-10-15
 Gina Marcell,Salida,,remove,,"A person's name with no business address or website, only a phone and a Pinterest link; removed as a personal-information concern (maintainer request 2026-10-15)",2026-10-15
 Market on Main St. (The Triangle Oasis),Salida,Status,set,Seasonal Closed,"Closed for the season; reopening date not known (maintainer report 2026-10-15). Recorded as seasonal_closed because the schema has no dormant status",2026-10-15
+Mushroom Love Co,,City,set,Buena Vista,via:website https://www.mushroomloveco.com Own site gives the town (Buena Vista); no street address published,2026-10-16
+Phytology Flowers Farm,,City,set,Salida,via:website https://www.phytologyflowers.com Own site gives the town (Salida); the farm is not open to the public,2026-10-16
+Valley Roots Food Hub,,City,set,Mosca,"via:website https://www.valleyrootsfoodhub.com Own site: 5401 Terry Street, Mosca (warehouse in Pueblo)",2026-10-16
+Valley Roots Food Hub,,Zip,set,81146,via:website https://www.valleyrootsfoodhub.com Own site address,2026-10-16
+Valley Roots Food Hub,,County,set,Alamosa,Mosca is in Alamosa County (Census places),2026-10-16
