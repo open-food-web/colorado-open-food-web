@@ -49,6 +49,7 @@ def main() -> None:
     with OUT.open(encoding="utf-8", newline="") as f:
         existing = list(csv.DictReader(f))
     seen = {r["name"] for r in existing}
+    curated = {r["county_fips"] for r in existing}   # a county with hand-picked towns (Chaffee) is left as it is
     new = []
     for r in bp.rows("places"):
         if r["USPS"] != "CO":
@@ -60,6 +61,8 @@ def main() -> None:
         lat, lon = float(r["INTPTLAT"]), float(r["INTPTLONG"])
         fips = min(counties, key=lambda c: math.hypot(lat - cent[c][0], (lon - cent[c][1]) * 0.78))
         seen.add(name)
+        if fips in curated:
+            continue
         new.append({"name": name, "county_fips": fips, "lat": f"{lat:.4f}", "lon": f"{lon:.4f}"})
     new.sort(key=lambda r: (r["county_fips"], r["name"]))
     with OUT.open("w", encoding="utf-8", newline="") as f:
