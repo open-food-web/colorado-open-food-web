@@ -85,7 +85,7 @@ FIELD_MAP = {"Phone": "phone", "Email": "email", "Website": "website", "Facebook
              "County": "county_fips", "Category": "categories"}
 
 COLS = {
-    "producers": ["producer_id", "slug", "name", "kind", "categories", "products", "product_groups", "dropin_visits", "dropin_hours", "farm_pickup", "visit_note", "seasonal_months",
+    "producers": ["producer_id", "slug", "name", "kind", "categories", "products", "product_groups", "dropin_visits", "dropin_hours", "farm_pickup", "visit_note", "visits", "seasonal_months",
                   "hours_text", "hours_status", "website", "phone", "email", "facebook", "instagram", "sales_channels",
                   "certified_organic", "accepts_snap", "ada_accessible", "call_first", "status", "claimed",
                   "opted_out_fields", "first_seen", "last_verified"],
@@ -404,6 +404,7 @@ def main():
                     "farm_pickup": {"yes": "true", "no": "false"}.get(
                         ((kinds_by_name.get(nkey(name)) or {}).get("farm_pickup") or "").strip().lower(), ""),
                     "visit_note": (kinds_by_name.get(nkey(name)) or {}).get("visit_note") or "",
+                    "visits": (kinds_by_name.get(nkey(name)) or {}).get("visits") or "",
                     "product_groups": ";".join(PRODUCTS.union(
                         PRODUCTS.from_text(r["Products"], " ".join(cats_main), name)
                         or [g for g in kind_groups(name) if not g.startswith("+")],

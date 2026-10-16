@@ -82,6 +82,40 @@ def compact_hours(text):
     return "; ".join(out)
 
 
+# The ways a person can visit, each with its own hours. "Drop-in" is not one of them: what matters is what the visit is.
+VISIT_LABELS = {"farm_stand": "Farm stand", "shop": "Shop", "u_pick": "Pick your own", "tour": "Farm tours",
+                "volunteer": "Volunteer days", "by_appointment": "Visits by appointment"}
+
+
+def parse_visits(text):
+    """producers.visits is 'type|detail;type|detail', where the detail is the hours or a short plain note. Unknown types are ignored."""
+    out = []
+    for part in (text or "").split(";"):
+        t, _, h = part.strip().partition("|")
+        if t.strip() in VISIT_LABELS:
+            out.append({"type": t.strip(), "label": VISIT_LABELS[t.strip()], "detail": compact_hours(h.strip()) or None})
+    return out
+
+
+def derive_visits(p, channels, dropin, dropin_hours):
+    """What a person can do at the farm. Stated by a person (`visits`, or 'none') when set; otherwise only what the listing
+    shows: a farm stand (with its hours) and pick-your-own. Tours, volunteering and the like are never guessed."""
+    if (p.get("visits") or "").strip().lower() == "none" or dropin is False:
+        return []
+    if (p.get("visits") or "").strip():
+        return parse_visits(p["visits"])
+    out = []
+    if "farm_stand" in channels:
+        out.append({"type": "farm_stand", "label": VISIT_LABELS["farm_stand"],
+                    "detail": dropin_hours if dropin_hours and re.search(r"\d", dropin_hours) else None})
+    if "u_pick" in channels:
+        text = (p.get("hours_text") or "").strip()
+        out.append({"type": "u_pick", "label": VISIT_LABELS["u_pick"],
+                    "detail": ("By appointment" if re.search(r"appointment", text, re.I)
+                               else (compact_hours(text) if re.search(r"\d", text) else "")) or None})
+    return out
+
+
 def read(path):
     if not os.path.exists(path):
         return []
@@ -276,6 +310,7 @@ def main():
         farm_pickup, pickup_basis = own("farm_pickup"), ("set" if own("farm_pickup") is not None else None)
         if farm_pickup is None and (farm_is_a_spot or dropin is True or "Agritourism" in lst(p["categories"])):
             farm_pickup, pickup_basis = True, "listing"
+        visits = derive_visits(p, channels, dropin, dropin_hours)
         out_locs = []
         for l in locs:
             if l["role"] == "home_base":
@@ -299,7 +334,7 @@ def main():
             "id": pid, "slug": p["slug"], "name": p["name"], "kind": p["kind"],
             "categories": lst(p["categories"]), "products": lst(p["products"]),
             "product_groups": lst(p.get("product_groups", "")),
-            "dropin_visits": dropin, "dropin_hours": dropin_hours, "farm_pickup": farm_pickup, "visit_basis": {"dropin": dropin_basis, "pickup": pickup_basis},
+            "visits": visits, "dropin_visits": dropin, "dropin_hours": dropin_hours, "farm_pickup": farm_pickup, "visit_basis": {"dropin": dropin_basis, "pickup": pickup_basis},
             "visit_note": p.get("visit_note") or None,
             "months_open": [MONTHS[int(m) - 1] for m in lst(p["seasonal_months"])],
             "hours_text": p["hours_text"] or None, "hours": hours_by.get(("producer", pid), []),
@@ -376,7 +411,7 @@ def main():
                        "pins": sum(l["pin"] for p in producers for l in p["locations"])
                        + len(markets) + len(access)}},
         "vocab": {"sales_channels": CHANNEL_LABELS, "months": MONTHS, "kinds": KIND_LABELS,
-                  "product_groups": PRODUCTS.LABELS,
+                  "visit_types": VISIT_LABELS, "product_groups": PRODUCTS.LABELS,
                   **({"outlet_kinds": {k: v for k, v in OUTLET_KIND_LABELS.items() if k in include_outlet_kinds},
                       "outlet_groups": OUTLET_GROUPS} if include_outlet_kinds else {})},
         "producers": sorted(producers, key=lambda x: x["name"].lower()),

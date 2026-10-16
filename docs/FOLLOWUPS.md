@@ -46,3 +46,11 @@ roughly 15 pages. Yield was about 10 percent clean matches, plus useful finds: w
 
 Open items are listed at the end of [PIPELINE.md](PIPELINE.md): pull the full Colorado Proud layer, clear
 nine stale overrides, make `build_tables.py` statewide, and ask CFMA about the MarketWurks endpoint.
+
+## Events (later)
+
+Dated events, such as the farm dinners Old Elm Farm hosts, are not visits: they have a date, a booking link and
+often a price, and they belong in their own table (`events`: producer_id, title, starts, ends, url, source_url,
+observed_on), shown on the producer's page and on an events view. Until then a producer that hosts events and
+cannot be visited has `visits` set to `none` and the events are noted in `visit_note`. Old Elm Farm is the first
+example (maintainer, 2026-10-16).

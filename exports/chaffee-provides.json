@@ -55,6 +55,14 @@
    "education": "Agricultural education",
    "winery": "Wineries"
   },
+  "visit_types": {
+   "farm_stand": "Farm stand",
+   "shop": "Shop",
+   "u_pick": "Pick your own",
+   "tour": "Farm tours",
+   "volunteer": "Volunteer days",
+   "by_appointment": "Visits by appointment"
+  },
   "product_groups": {
    "veggies": "Veggies",
    "fruit": "Fruit",
@@ -98,6 +106,7 @@
    "product_groups": [
     "mushrooms"
    ],
+   "visits": [],
    "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": false,
@@ -216,6 +225,7 @@
    "product_groups": [
     "beef-meat"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": true,
@@ -318,6 +328,7 @@
     "beef-meat",
     "poultry-eggs"
    ],
+   "visits": [],
    "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": true,
@@ -523,6 +534,18 @@
     "poultry-eggs",
     "dairy"
    ],
+   "visits": [
+    {
+     "type": "farm_stand",
+     "label": "Farm stand",
+     "detail": "Self-serve farm general store"
+    },
+    {
+     "type": "tour",
+     "label": "Farm tours",
+     "detail": "By booking"
+    }
+   ],
    "dropin_visits": true,
    "dropin_hours": null,
    "farm_pickup": true,
@@ -680,6 +703,7 @@
    "product_groups": [
     "veggies"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -773,6 +797,7 @@
     "flowers",
     "garlic-herbs"
    ],
+   "visits": [],
    "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": false,
@@ -865,6 +890,7 @@
    "product_groups": [
     "mushrooms"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -970,6 +996,7 @@
    "product_groups": [
     "beef-meat"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -1054,6 +1081,7 @@
    "product_groups": [
     "flowers"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -1162,6 +1190,7 @@
     "honey",
     "drinks"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -1417,6 +1446,7 @@
     "garlic-herbs",
     "mushrooms"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -1520,6 +1550,13 @@
    ],
    "products": [],
    "product_groups": [],
+   "visits": [
+    {
+     "type": "farm_stand",
+     "label": "Farm stand",
+     "detail": "Tue 4:00pm - 6:00pm"
+    }
+   ],
    "dropin_visits": true,
    "dropin_hours": "Tue: 4:00pm - 6:00pm (closing for the season soon)",
    "farm_pickup": true,
@@ -1604,6 +1641,7 @@
    "product_groups": [
     "veggies"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -1751,6 +1789,18 @@
    "product_groups": [
     "beef-meat"
    ],
+   "visits": [
+    {
+     "type": "tour",
+     "label": "Farm tours",
+     "detail": "Sat-Sun 1:00pm - 4:00pm, June - September"
+    },
+    {
+     "type": "by_appointment",
+     "label": "Visits by appointment",
+     "detail": "Call or email to schedule"
+    }
+   ],
    "dropin_visits": true,
    "dropin_hours": "Sat-Sun 1:00pm - 4:00pm (June - September)",
    "farm_pickup": true,
@@ -1837,6 +1887,7 @@
    "product_groups": [
     "beef-meat"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": true,
@@ -1925,6 +1976,7 @@
    "product_groups": [
     "beef-meat"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -2005,6 +2057,7 @@
     "garlic-herbs",
     "mushrooms"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -2148,6 +2201,7 @@
    "product_groups": [
     "seeds-plants"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -2266,6 +2320,7 @@
    "product_groups": [
     "mushrooms"
    ],
+   "visits": [],
    "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -2368,6 +2423,18 @@
    "product_groups": [
     "fruit",
     "drinks"
+   ],
+   "visits": [
+    {
+     "type": "farm_stand",
+     "label": "Farm stand",
+     "detail": null
+    },
+    {
+     "type": "u_pick",
+     "label": "Pick your own",
+     "detail": null
+    }
    ],
    "dropin_visits": true,
    "dropin_hours": "U-pick orchard tours in summer season",
@@ -2532,6 +2599,7 @@
    "product_groups": [
     "flowers"
    ],
+   "visits": [],
    "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": true,
@@ -2626,6 +2694,7 @@
     "veggies",
     "flowers"
    ],
+   "visits": [],
    "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": true,
@@ -2721,6 +2790,13 @@
    "product_groups": [
     "veggies",
     "garlic-herbs"
+   ],
+   "visits": [
+    {
+     "type": "farm_stand",
+     "label": "Farm stand",
+     "detail": "Mon-Sat 8:00am - 6:00pm, May-Nov (self-serve)"
+    }
    ],
    "dropin_visits": true,
    "dropin_hours": "Mon-Sat: 8 am - 6 pm",
@@ -2897,6 +2973,13 @@
     "beef-meat",
     "poultry-eggs"
    ],
+   "visits": [
+    {
+     "type": "shop",
+     "label": "Shop",
+     "detail": "Mon-Sat 8:30am - 5:00pm"
+    }
+   ],
    "dropin_visits": true,
    "dropin_hours": "Mon-Sat 8:30am - 5:00pm",
    "farm_pickup": true,
@@ -2990,6 +3073,13 @@
     "beef-meat",
     "poultry-eggs",
     "honey"
+   ],
+   "visits": [
+    {
+     "type": "farm_stand",
+     "label": "Farm stand",
+     "detail": null
+    }
    ],
    "dropin_visits": true,
    "dropin_hours": null,
@@ -3102,6 +3192,13 @@
     "flowers",
     "baked-goods"
    ],
+   "visits": [
+    {
+     "type": "farm_stand",
+     "label": "Farm stand",
+     "detail": null
+    }
+   ],
    "dropin_visits": true,
    "dropin_hours": null,
    "farm_pickup": true,
@@ -3187,6 +3284,18 @@
     "flowers",
     "garlic-herbs",
     "seeds-plants"
+   ],
+   "visits": [
+    {
+     "type": "shop",
+     "label": "Shop",
+     "detail": null
+    },
+    {
+     "type": "u_pick",
+     "label": "Pick your own",
+     "detail": "By appointment, June-October"
+    }
    ],
    "dropin_visits": true,
    "dropin_hours": null,
@@ -3274,6 +3383,7 @@
     "veggies",
     "flowers"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -3371,6 +3481,7 @@
     "poultry-eggs",
     "dairy"
    ],
+   "visits": [],
    "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -3463,6 +3574,7 @@
    "product_groups": [
     "honey"
    ],
+   "visits": [],
    "dropin_visits": null,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -3575,6 +3687,13 @@
     "fruit",
     "beef-meat",
     "poultry-eggs"
+   ],
+   "visits": [
+    {
+     "type": "farm_stand",
+     "label": "Farm stand",
+     "detail": "Tue-Sun 8:00am - 6:00pm"
+    }
    ],
    "dropin_visits": true,
    "dropin_hours": "Tue-Sun: 8:00am - 6:00pm",
