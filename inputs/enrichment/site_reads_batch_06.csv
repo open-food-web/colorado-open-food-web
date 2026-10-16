@@ -1,0 +1,27 @@
+producer_id,url,read_on,site_last_updated,last_updated_basis,channels_found,note
+co-p-000525,https://homesteadmeats.com,2026-10-15,,none_found,online,Shop/cart; wholesale page has no detail
+co-p-000531,http://www.hootnhowlfarm.com,2026-10-15,,none_found,,Page empty when read
+co-p-000540,https://hungenbergproduce.com/,2026-10-15,,none_found,,No sales channel stated
+co-p-000541,https://huntersmoonmeadery.com,2026-10-15,2024-02-26,http_last_modified,,Page empty when read
+co-p-000545,https://drystorageco.com/,2026-10-15,,none_found,online;wholesale,
+co-p-000551,https://jdheirloomseed.weebly.com/,2026-10-15,,none_found,,"Last-Modified was the fetch date, ignored; channels unclear"
+co-p-000555,https://www.jamesranch.net/,2026-10-15,,none_found,farm_stand,
+co-p-000558,https://www.jeffcobeekeepers.org/,2026-10-15,,none_found,,Not clear that it sells
+co-p-000563,https://www.Jodarfarms.com,2026-10-15,,none_found,csa;online;pickup,
+co-p-000564,https://johannas-handcrafted-jams.square.site/,2026-10-15,,none_found,,"Page empty when read; Last-Modified was the fetch date, ignored"
+co-p-000565,https://johnhheermannfarms.squarespace.com/,2026-10-15,,none_found,,HTTP 401
+co-p-000569,https://www.jonathins.com/,2026-10-15,,none_found,,Bakery visits and store finder only; channels unclear
+co-p-000584,https://www.kianacreekranch.com,2026-10-15,,none_found,online,
+co-p-000586,https://Kinikin.com,2026-10-15,,none_found,,Redirects to homesteadmeats.com; not used
+co-p-000587,http://www.kiowac3.com,2026-10-15,,none_found,,"Carriage rentals, no food sales"
+co-p-000594,https://koldprairiemead.com/,2026-10-15,,none_found,online,Buy-in-store page not read
+co-p-000604,https://www.lafayettegardendesign.com/,2026-10-15,,none_found,,"Plants and design services, not food"
+co-p-000607,https://www.larsonfamilyfarms1909.com,2026-10-15,,none_found,,"Shop link only; not stated, left blank"
+co-p-000608,https://latinasalsas.com,2026-10-15,2025-11-18,http_last_modified,online,
+co-p-000609,https://www.laughingbuckfarm.com,2026-10-15,,none_found,,"Services, no farm product sales stated"
+co-p-000611,https://www.ColoradoLavender.org,2026-10-15,,none_found,,Sells merch only; left blank
+co-p-000613,https://www.lazarfamilybakehouse.com,2026-10-15,,none_found,delivery;online;retail_partners;wholesale,
+co-p-000614,https://lazy3xranch.com,2026-10-15,,none_found,online,Shipping/pickup page not read
+co-p-000615,https://shoplazyacrebeef.com/,2026-10-15,,none_found,,Redirects to lazybutcher.com; not read
+co-p-000619,https://www.longmontdairy.com,2026-10-15,2026-08-11,http_last_modified,delivery,
+co-p-000577,https://kalera.com/,2026-10-15,,none_found,,Redirects to 80acresfarms.com; not read

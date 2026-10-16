@@ -1,0 +1,47 @@
+producer_id,url,read_on,site_last_updated,last_updated_basis,channels_found,note
+co-p-000323,https://www.eaglerockbeef.com/,2026-10-15,,none_found,online,
+co-p-000324,https://eaglespringsmeats.com/,2026-10-15,,none_found,,
+co-p-000327,https://ecoburnllc.com,2026-10-15,,none_found,,"Service business, not a seller"
+co-p-000332,https://elevatedmicrogreens.app,2026-10-15,,none_found,csa;delivery;pickup;online,
+co-p-000336,https://www.elkheadcreekranch.com,2026-10-15,,none_found,,
+co-p-000346,https://everrisenbakery.com,2026-10-15,,none_found,online,
+co-p-000347,https://www.evergood.wine,2026-10-15,,none_found,,Redirects to Facebook; not read
+co-p-000348,https://www.evergreen-sweets.com,2026-10-15,,none_found,online,
+co-p-000349,https://www.everittfarms.com,2026-10-15,,none_found,,Frameset; framed page not read (fetch rate-limited)
+co-p-000354,https://thefarmandmarket.com,2026-10-15,2026-05-13,http_last_modified,farm_stand;online,
+co-p-000355,https://farmfreshdirect.com,2026-10-15,,none_found,wholesale,
+co-p-000356,https://farmtosummit.com,2026-10-15,,none_found,online,
+co-p-000370,https://firechiefbeef.com/,2026-10-15,,none_found,farmers_market,
+co-p-000377,http://www.flatacresfarm.com,2026-10-15,,none_found,,Page text empty to reader
+co-p-000381,https://www.flyingbbar.com,2026-10-15,,none_found,,Page text empty to reader
+co-p-000385,https://foresttrailfarm.com/,2026-10-15,,none_found,,"Last-Modified header equals read time (dynamic page), ignored; page did not load text for the reader"
+co-p-000386,https://www.forestdaleranch.com,2026-10-15,,none_found,,
+co-p-000392,https://fourleaveswinery.com/,2026-10-15,,none_found,,
+co-p-000393,http://www.foxfirefarms.com,2026-10-15,,none_found,,
+co-p-000398,https://www.freedomacresranch.com,2026-10-15,,none_found,,
+co-p-000397,https://freerangebeehives.com,2026-10-15,,none_found,,
+co-p-000400,https://www.drinkfrescos.com,2026-10-15,,none_found,online;wholesale,
+co-p-000404,https://www.fritzlerfarmpark.com/,2026-10-15,,none_found,u_pick,
+co-p-000406,https://scratch-farm.com/,2026-10-15,,none_found,,
+co-p-000407,https://www.frontrangemushrooms.com,2026-10-15,,none_found,online;wholesale,
+co-p-000408,https://frontierenaturalmeats.com/,2026-10-15,,none_found,online,
+co-p-000410,https://www.fruitbasketgj.com/,2026-10-15,2026-10-09,last_post,farm_stand;u_pick,"Date is the 'closed for the season' banner (Oct 9), not a post"
+co-p-000414,https://furryfeetbakery.com,2026-10-15,,none_found,,"Redirects to square.site; Last-Modified equals read time (dynamic), ignored; store page not read (fetch rate-limited)"
+co-p-000418,https://app.barn2door.com/5PbR7/all,2026-10-15,,none_found,,Barn2Door shell page did not render
+co-p-000423,https://www.gardensoffire.com,2026-10-15,,none_found,,
+co-p-000363,https://www.happyapplefarm.com,2026-10-15,,none_found,farm_stand,
+co-p-000364,https://fieldsofnaturalhoney.com,2026-10-15,,none_found,online,
+co-p-000367,https://www.figandolivebakeshop.com,2026-10-15,,none_found,online;farmers_market,
+co-p-000350,https://www.facebook.com/fagerbergproduce/,2026-10-15,2026-05-21,last_post,,Only post is a sponsor spotlight by another page; page lists website fagerbergproduce.com (not yet read)
+co-p-000374,https://facebook.com/fitchranch,2026-10-15,2026-07-02,last_post,,Beef producer; no sales method stated on page
+co-p-000413,https://facebook.com/FunnyLilFarm,2026-10-15,2022-11-13,last_post,,"Last post (2022) offered a Winter Greenbox CSA; too old to confirm, left blank"
+co-p-000422,https://www.facebook.com/GardenSweet/,2026-10-15,2026-10-15,last_post,farm_stand;csa;u_pick,"Page intro: Farm Stand, Greenhouse, CSA & Pick-Your-Own"
+co-p-000424,https://facebook.com/gentleearthfarm,2026-10-15,,none_found,,Page unavailable (not shared or deleted)
+co-p-000347,https://www.facebook.com/evergoodadventurewines,2026-10-15,,none_found,,Page unavailable (not shared or deleted)
+co-p-000368,https://www.facebook.com/FillaHoneyCompany/,2026-10-15,2025-09-28,last_post,,Sells honey and beeswax per intro but no sales method stated
+co-p-000333,https://www.facebook.com/elevationmeatmarket,2026-10-15,2025-08-22,last_post,,"Butcher shop with retail and curbside pickup listed in page details; no producer sales channel clearly stated, left blank"
+co-p-000358,https://www.facebook.com/FarmerGavinSistersBakery/,2026-10-15,2026-10-11,last_post,,"Recent post takes whole/half pork orders; not mapped to an allowed channel, left blank"
+co-p-000401,https://www.facebook.com/people/Fresh-Start-Family-Farms/100069372954356/,2026-10-15,2020-01-01,last_post,,Own post (Jan 2020) says they moved out of Colorado; maintainer should review status
+co-p-000356,https://www.facebook.com/FarmtoSummit/,2026-10-15,2026-10-07,last_post,online,Page confirms product business; channel from website
+co-p-000410,https://www.facebook.com/fruitbasketgj,2026-10-15,,none_found,,Page unavailable
+co-p-000381,https://www.facebook.com/FlyingBBar/,2026-10-15,2026-10-14,last_post,,"Recent posts are ranch updates; no sales method visible, left blank"
