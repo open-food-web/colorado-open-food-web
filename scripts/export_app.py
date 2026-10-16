@@ -36,7 +36,7 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July", "Augus
 CHANNEL_LABELS = {
     "farm_stand": "Farm stand / on-farm sales", "u_pick": "U-pick", "csa": "CSA", "farmers_market": "Farmers market",
     "pickup": "Pickup point", "delivery": "Delivery", "online": "Online orders", "wholesale": "Wholesale",
-    "retail_partners": "Sold in stores"}
+    "retail_partners": "Sold in stores", "none": "No public sales"}
 SOURCE_LABELS = {
     "producer_site": "Producer's own website", "chaffee_provides": "Chaffee Provides", "colorado_proud": "Colorado Proud",
     "cfma": "Colorado Farmers Market Association", "usda_lfd": "USDA Local Food Directories",
@@ -105,10 +105,13 @@ def parse_visits(text):
 def derive_visits(p, channels, dropin, dropin_hours):
     """What a person can do at the farm. Stated by a person (`visits`, or 'none') when set; otherwise only what the listing
     shows: a farm stand (with its hours) and pick-your-own. Tours, volunteering and the like are never guessed."""
-    if (p.get("visits") or "").strip().lower() == "none" or dropin is False:
+    stated = (p.get("visits") or "").strip()
+    if stated.lower() == "none":
         return []
-    if (p.get("visits") or "").strip():
-        return parse_visits(p["visits"])
+    if stated:
+        return parse_visits(stated)      # tours and visits by appointment are not drop-ins, so "no drop-in" does not hide them
+    if dropin is False:
+        return []
     out = []
     if "farm_stand" in channels:
         out.append({"type": "farm_stand", "label": VISIT_LABELS["farm_stand"],

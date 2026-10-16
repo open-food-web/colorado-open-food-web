@@ -1127,5 +1127,6 @@ Miss Penn's Mountain Seeds,Westcliffe,County,set,Custer,Filled from city in one 
 Westcliffe Honey Company,Westcliffe,County,set,Custer,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
 Thompson House Museum,Carbondale,,remove,,"A historic house museum with tours, not a food stop (removed on maintainer request 2026-10-15)",2026-10-15
 Gina Marcell,Salida,,remove,,"A person's name with no business address or website, only a phone and a Pinterest link; removed as a personal-information concern (maintainer request 2026-10-15)",2026-10-15
+Everett Ranch Beef,Salida,Instagram,set,https://www.instagram.com/everettranchbeef/,"Business Instagram page, checked by the maintainer 2026-10-16 (bio: 100% grassfed beef, Salida)",2026-10-16
 Market on Main St. (The Triangle Oasis),Salida,Status,set,Seasonal Closed,"Closed for the season; reopening date not known (maintainer report 2026-10-15). Recorded as seasonal_closed because the schema has no dormant status",2026-10-15
 Everett Ranch Beef,Salida,Email,set,everettranchbeef@gmail.com,"via:instagram https://www.instagram.com/everettranchbeef/ Business Instagram page lists this address in its bio (checked by the maintainer 2026-10-16)",2026-10-16
