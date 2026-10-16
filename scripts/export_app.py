@@ -36,7 +36,7 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July", "Augus
 CHANNEL_LABELS = {
     "farm_stand": "Farm stand / on-farm sales", "u_pick": "U-pick", "csa": "CSA", "farmers_market": "Farmers market",
     "pickup": "Pickup point", "delivery": "Delivery", "online": "Online orders", "wholesale": "Wholesale",
-    "retail_partners": "Sold in stores"}
+    "retail_partners": "Sold in stores", "none": "No public sales"}
 SOURCE_LABELS = {
     "producer_site": "Producer's own website", "chaffee_provides": "Chaffee Provides", "colorado_proud": "Colorado Proud",
     "cfma": "Colorado Farmers Market Association", "usda_lfd": "USDA Local Food Directories",
@@ -58,7 +58,7 @@ FIELD_LABEL = {"phone": "phone", "email": "email", "website": "website", "facebo
                "city": "town", "zip": "ZIP", "categories": "type", "certified_organic": "organic status",
                "accepts_snap": "SNAP", "ada_accessible": "accessibility"}
 BY_LABEL = {"guidestone": "Guidestone Colorado", "producer_site": "the business's own website",
-            "producer_facebook": "the business's Facebook page"}
+            "producer_facebook": "the business's Facebook page", "producer_instagram": "the business's Instagram page"}
 # Records with these statuses are not published. "removed" is listed by ID only.
 HIDDEN_STATUS = {"closed", "removed"}
 
@@ -105,10 +105,13 @@ def parse_visits(text):
 def derive_visits(p, channels, dropin, dropin_hours):
     """What a person can do at the farm. Stated by a person (`visits`, or 'none') when set; otherwise only what the listing
     shows: a farm stand (with its hours) and pick-your-own. Tours, volunteering and the like are never guessed."""
-    if (p.get("visits") or "").strip().lower() == "none" or dropin is False:
+    stated = (p.get("visits") or "").strip()
+    if stated.lower() == "none":
         return []
-    if (p.get("visits") or "").strip():
-        return parse_visits(p["visits"])
+    if stated:
+        return parse_visits(stated)      # tours and visits by appointment are not drop-ins, so "no drop-in" does not hide them
+    if dropin is False:
+        return []
     out = []
     if "farm_stand" in channels:
         out.append({"type": "farm_stand", "label": VISIT_LABELS["farm_stand"],
@@ -222,13 +225,15 @@ def main():
             src = r["source"]
             if src == "producer_site" and "facebook.com" in (r["source_url"] or ""):
                 src = "producer_facebook"   # found on the business's Facebook page, not a website
-            if not (r["verified_by"] == "partner" or src in ("producer_site", "producer_facebook")):
+            elif src == "producer_site" and "instagram.com" in (r["source_url"] or ""):
+                src = "producer_instagram"
+            if not (r["verified_by"] == "partner" or src in ("producer_site", "producer_facebook", "producer_instagram")):
                 continue
             if r["field"] not in FIELD_LABEL:
                 continue
             if src != "guidestone" and r["field"] in ("facebook", "instagram", "website"):
                 continue   # a page "confirming" its own link says nothing
-            url = r["source_url"] if src == "producer_facebook" else (website if src == "producer_site" else "")
+            url = r["source_url"] if src in ("producer_facebook", "producer_instagram") else (website if src == "producer_site" else "")
             g = groups.setdefault((src, url, r["verified_on"] if src != "producer_site" else ""), [])
             g.append(FIELD_LABEL[r["field"]])
         return [{"by": BY_LABEL.get(k[0], k[0]), "fields": sorted(set(v)), "url": k[1] or None, "date": k[2] or None}

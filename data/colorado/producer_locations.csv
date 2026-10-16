@@ -26,6 +26,7 @@ co-ploc-000053,co-p-000053,co-loc-000067,home_base,mon;tue;wed;thu;fri,Mon: 8am 
 co-ploc-000054,co-p-000054,co-loc-000068,home_base,,Winter CSA,,,listed,
 co-ploc-000055,co-p-000055,co-loc-000069,home_base,,,,,listed,
 co-ploc-001255,co-p-001240,co-loc-001507,home_base,,,,,listed,
+co-ploc-001265,co-p-001240,co-loc-001518,store,,,,,listed,
 co-ploc-001237,co-p-001232,co-loc-001498,home_base,,,,,listed,
 co-ploc-000057,co-p-000057,co-loc-000071,home_base,,,,,listed,
 co-ploc-000058,co-p-000058,co-loc-000072,home_base,,,,,listed,
@@ -298,6 +299,7 @@ co-ploc-000314,co-p-000314,co-loc-000393,home_base,mon;tue;wed;thu;fri;sat;sun,M
 co-ploc-000315,co-p-000315,co-loc-000394,home_base,,,,,listed,
 co-ploc-000316,co-p-000316,co-loc-000395,home_base,,,,,listed,
 co-ploc-000317,co-p-000317,co-loc-000397,home_base,mon;tue;wed;thu,No storefront; online support Mon-Thu 8-3 MT,,,listed,
+co-ploc-001264,co-p-000317,co-loc-001517,store,,,,,listed,https://www.dramapothecary.com/about/
 co-ploc-000318,co-p-000318,co-loc-000398,home_base,,,,,listed,
 co-ploc-000319,co-p-000319,co-loc-000399,home_base,,,,,listed,
 co-ploc-000320,co-p-000320,co-loc-000400,home_base,,,,,listed,
@@ -820,7 +822,6 @@ co-ploc-000817,co-p-000817,co-loc-001014,home_base,,,,,listed,
 co-ploc-000818,co-p-000818,co-loc-001015,home_base,,,,,listed,
 co-ploc-000819,co-p-000819,co-loc-001016,home_base,,,,,listed,
 co-ploc-000019,co-p-000019,co-loc-000022,home_base,,By appointment,,,listed,
-co-ploc-001264,co-p-000019,co-loc-001517,store,,,,,listed,https://www.phytologyflowers.com/buy-flowers/
 co-ploc-000820,co-p-000820,co-loc-001017,home_base,,,,,listed,
 co-ploc-000821,co-p-000821,co-loc-001018,home_base,,,,,listed,
 co-ploc-000822,co-p-000822,co-loc-001019,home_base,,,,,listed,

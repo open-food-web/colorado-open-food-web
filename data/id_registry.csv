@@ -1517,7 +1517,8 @@ co-loc|loc|foxtownfarm|store|rockpaperscissorssalida,co-loc-001513
 co-loc|loc|foxtownfarm|store|themixingbowl,co-loc-001514
 co-loc|loc|foxtownfarm|store|coolrivercafe,co-loc-001515
 co-loc|producer|https://www.hutchinsonhomestead.org/,co-loc-001516
-co-loc|loc|phytologyflowersfarm|store|salidagardensupply,co-loc-001517
+co-loc|loc|dramapothecary|store|howlmercantile,co-loc-001517
+co-loc|loc|alpenglowhivehoney|store|thefarmstand,co-loc-001518
 co-m|309028,co-m-000001
 co-m|309117,co-m-000002
 co-m|business_profile_176,co-m-000003
@@ -4339,4 +4340,5 @@ co-ploc|loc|foxtownfarm|store|rockpaperscissorssalida,co-ploc-001260
 co-ploc|loc|foxtownfarm|store|themixingbowl,co-ploc-001261
 co-ploc|loc|foxtownfarm|store|coolrivercafe,co-ploc-001262
 co-ploc|https://www.hutchinsonhomestead.org/|home,co-ploc-001263
-co-ploc|loc|phytologyflowersfarm|store|salidagardensupply,co-ploc-001264
+co-ploc|loc|dramapothecary|store|howlmercantile,co-ploc-001264
+co-ploc|loc|alpenglowhivehoney|store|thefarmstand,co-ploc-001265

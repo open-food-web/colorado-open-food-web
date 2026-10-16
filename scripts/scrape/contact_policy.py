@@ -34,7 +34,9 @@ FIELDS = ["email", "email_hash", "host", "status", "found_url", "checked_on"]
 
 VERIFIED = "verified"
 VERIFIED_SOCIAL = "verified_facebook"   # listed on the business's own Facebook page
-CONFIRMED = (VERIFIED, VERIFIED_SOCIAL)
+VERIFIED_INSTAGRAM = "verified_instagram"   # listed on the business's own Instagram page
+CONFIRMED = (VERIFIED, VERIFIED_SOCIAL, VERIFIED_INSTAGRAM)
+SOCIAL_STATUS = {"facebook.com": VERIFIED_SOCIAL, "instagram.com": VERIFIED_INSTAGRAM}
 RECHECK_VERIFIED_DAYS = 180     # a verified address is re-confirmed twice a year
 RECHECK_OTHER_DAYS = 45         # one that was not found gets another look sooner
 MAX_PAGES = 5
@@ -89,6 +91,18 @@ class Table:
             "email": email.strip().lower() if status in CONFIRMED else "",
             "email_hash": ehash(email), "host": host_of(website), "status": status,
             "found_url": found_url if status in CONFIRMED else "", "checked_on": _today()}
+
+    def confirm_on_page(self, email: str, website: str, page_url: str) -> str:
+        """A person has seen `email` on the business's own Facebook or Instagram page (neither can be read by a script).
+        Records it, with that page, as confirmed. Returns the status. Any other page is refused: only the business's
+        own website (checked by a script) or its Facebook or Instagram page counts."""
+        host = (urllib.parse.urlparse(page_url).netloc or "").lower()
+        host = host[4:] if host.startswith("www.") else host
+        status = SOCIAL_STATUS.get(host)
+        if not status or not urllib.parse.urlparse(page_url).path.strip("/"):
+            raise ValueError("expected the business's own page on facebook.com or instagram.com, got %r" % page_url)
+        self.put(email, website, status, page_url)
+        return status
 
     def is_verified(self, email: str, website: str) -> bool:
         r = self.get(email, website)

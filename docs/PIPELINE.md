@@ -82,6 +82,12 @@ publishes an address only if it appears on the business's own website.
   not confirmed. Records with no website cannot be verified, so they publish no email.
 - A test (`test_no_committed_file_holds_an_unverified_email`) fails if any tracked file contains an address
   that is not verified. To fix it: `python scripts/verify_emails.py --from-build`, then `--scrub`.
+- **Instagram and Facebook pages count too.** An address the business lists on its own Instagram or Facebook
+  page is publishable. A script cannot read those pages, so a person confirms it:
+  `python scripts/verify_emails.py --confirm EMAIL --page https://www.instagram.com/HANDLE/` (add `--website`
+  if the business has one). That records status `verified_instagram` or `verified_facebook` with the page. Only
+  the business's own page counts, not a directory or a page about it. Give the override that sets the address the
+  note `via:instagram <page url>` so the "confirmed by" line can say so.
 - Project and partner-neutral addresses (GitHub noreply, `example.*`, the Farm Trail brand address) are exempt.
 
 ## Safety rules in the code
