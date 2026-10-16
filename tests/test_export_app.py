@@ -152,6 +152,9 @@ class ExportApp(unittest.TestCase):
         # 'none' and an explicit no leave nothing to visit, even with a farm stand channel
         self.assertEqual(export_app.derive_visits({"visits": "none"}, ["farm_stand"], True, "Sat: 9 am - 1 pm"), [])
         self.assertEqual(export_app.derive_visits({"visits": ""}, ["farm_stand"], False, None), [])
+        # a person-stated tour or by-appointment visit stays even when the answer to "can you just show up" is no
+        v = export_app.derive_visits({"visits": "tour|By request"}, [], False, None)
+        self.assertEqual([x["type"] for x in v], ["tour"])
         # nothing on the listing, nothing guessed
         self.assertEqual(export_app.derive_visits({"visits": ""}, ["csa"], None, None), [])
 

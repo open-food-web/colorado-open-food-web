@@ -2428,7 +2428,13 @@
    "product_groups": [
     "mushrooms"
    ],
-   "visits": [],
+   "visits": [
+    {
+     "type": "tour",
+     "label": "Farm tours",
+     "detail": "By request"
+    }
+   ],
    "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": null,
@@ -2709,7 +2715,13 @@
    "product_groups": [
     "flowers"
    ],
-   "visits": [],
+   "visits": [
+    {
+     "type": "by_appointment",
+     "label": "Visits by appointment",
+     "detail": "By appointment"
+    }
+   ],
    "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": true,
@@ -2804,7 +2816,13 @@
     "veggies",
     "flowers"
    ],
-   "visits": [],
+   "visits": [
+    {
+     "type": "by_appointment",
+     "label": "Visits by appointment",
+     "detail": "By appointment"
+    }
+   ],
    "dropin_visits": false,
    "dropin_hours": null,
    "farm_pickup": true,
