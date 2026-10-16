@@ -9,6 +9,19 @@ python scripts/export_app.py --tables data/colorado --out exports/chaffee-provid
     --release 2026-11 --county-fips 08015 --include-source chaffee_provides
 ```
 
+Statewide (all 64 counties, Broomfield included), for an Open Food Web homepage:
+
+```
+python scripts/export_app.py --tables data/colorado --out exports/open-food-web.json     --release 2026-11 --statewide --unconfirmed-home-pins hide --config exports/open-food-web.config.json
+```
+
+`--county-fips all` means the same as `--statewide`. **Always build the statewide app with
+`--unconfirmed-home-pins hide`.** Without it, every producer whose sales channels are not confirmed
+gets a home-base pin, and across the state many of those homes are private residences. The
+generated statewide JSON is not committed; build it where the app is deployed.
+`exports/open-food-web.config.json` is a proposal for the maintainer: farms, ranches, orchards, makers
+and wineries, plus grocery, farm store, garden center and apothecary outlets, with a reason on every exclusion.
+
 ## Why an export
 
 - The canonical tables hold fields that must not leave the Food Web. The export is where the public
@@ -40,9 +53,13 @@ python scripts/export_app.py --tables data/colorado --out exports/chaffee-provid
 | `release` | Release label, e.g. `2026-11` |
 | `generated` | Date the file was built |
 | `source` | `Colorado Open Food Web` |
-| `county_fips` | Counties the export covers |
+| `county_fips` | Counties the export covers (all 64 for a statewide export) |
 | `attribution` | Text the app must show, once, on its About page or footer |
-| `counts` | `producers`, `markets`, `access_points`, `market_links`, `pins` (a quick sanity check). `pins` counts producers, markets and access points only. With outlets: `outlets` and `outlet_pins` as well |
+| `counts` | `producers`, `markets`, `access_points`, `market_links`, `pins` (a quick sanity check). `pins` counts producers, markets and access points only. With outlets: `outlets` and `outlet_pins` as well. `excluded_no_county` and `excluded_outside_area` count in-scope records left out per type (`producers`, `markets`, `access_points`, and `outlets` when exported): no county on any location or service area, or only in a county the export does not cover. Exported plus excluded always equals the in-scope total; the build stops if it does not |
+
+### `vocab`
+
+`vocab.counties` maps each covered county's FIPS code to its name (additive; `format_version` stays 1). Other keys: `sales_channels`, `months`, `kinds`, `product_groups`, and `outlet_kinds` / `outlet_groups` when outlets are exported.
 
 ### `producers[]`
 
