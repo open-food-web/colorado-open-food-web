@@ -10,16 +10,31 @@
   ],
   "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
   "counts": {
-   "producers": 31,
+   "producers": 33,
    "markets": 2,
    "access_points": 2,
-   "market_links": 35,
+   "market_links": 37,
    "outlets": 3,
    "outlet_pins": 3,
-   "pins": 34
+   "pins": 34,
+   "excluded_no_county": {
+    "producers": 27,
+    "markets": 1,
+    "access_points": 0,
+    "outlets": 4
+   },
+   "excluded_outside_area": {
+    "producers": 924,
+    "markets": 150,
+    "access_points": 0,
+    "outlets": 79
+   }
   }
  },
  "vocab": {
+  "counties": {
+   "08015": "Chaffee"
+  },
   "sales_channels": {
    "farm_stand": "Farm stand / on-farm sales",
    "u_pick": "U-pick",
@@ -81,6 +96,79 @@
   }
  },
  "producers": [
+  {
+   "id": "co-p-001240",
+   "slug": "alpenglow-hive-and-honey",
+   "name": "Alpenglow Hive & Honey",
+   "kind": "maker",
+   "categories": [
+    "Food Maker"
+   ],
+   "products": [
+    "Raw honey",
+    "propolis",
+    "hive goods"
+   ],
+   "product_groups": [
+    "honey"
+   ],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
+   "months_open": [],
+   "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
+   "website": null,
+   "phone": "(719) 553-9588",
+   "email": null,
+   "facebook": "https://www.facebook.com/p/Alpenglow-Hive-Honey-61586258981365/",
+   "instagram": null,
+   "sales_channels": [],
+   "sells_at": [],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-001507",
+     "role": "home_base",
+     "name": null,
+     "address": null,
+     "city": "Buena Vista",
+     "zip": null,
+     "county_fips": "08015",
+     "lat": null,
+     "lon": null,
+     "precision": "none",
+     "pin": false,
+     "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": null
+    }
+   ],
+   "sources": [
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
+     "url": null
+    }
+   ],
+   "confirmed_by": []
+  },
   {
    "id": "co-p-001232",
    "slug": "alpine-valley-mushrooms",
@@ -235,6 +323,7 @@
    "instagram": "https://www.instagram.com/arrowpointprovisions/",
    "sales_channels": [
     "delivery",
+    "farmers_market",
     "online"
    ],
    "sells_at": [
@@ -358,7 +447,7 @@
    "call_first": null,
    "status": "unverified",
    "claimed": false,
-   "last_verified": null,
+   "last_verified": "2026-10-13",
    "locations": [
     {
      "id": "co-loc-000002",
@@ -995,7 +1084,7 @@
    "call_first": null,
    "status": "unverified",
    "claimed": false,
-   "last_verified": null,
+   "last_verified": "2026-10-13",
    "locations": [
     {
      "id": "co-loc-000012",
@@ -1186,6 +1275,15 @@
    ],
    "sells_at": [
     {
+     "market_id": "co-m-000019",
+     "name": "Breckenridge Farmers Market",
+     "county_fips": "08117",
+     "year": 2026,
+     "season_label": null,
+     "basis": "exact_name",
+     "source_url": "https://breckenridgefarmersmarket.com/#meet"
+    },
+    {
      "market_id": "co-m-000029",
      "name": "City Park Farmers Market",
      "county_fips": "08031",
@@ -1255,7 +1353,7 @@
      "address": null,
      "city": "Buena Vista",
      "zip": null,
-     "county_fips": null,
+     "county_fips": "08015",
      "lat": null,
      "lon": null,
      "precision": "none",
@@ -1401,6 +1499,75 @@
    "confirmed_by": []
   },
   {
+   "id": "co-p-000426",
+   "slug": "gina-marcell",
+   "name": "Gina Marcell",
+   "kind": "farm",
+   "categories": [
+    "CSA Farm"
+   ],
+   "products": [],
+   "product_groups": [],
+   "dropin_visits": null,
+   "dropin_hours": null,
+   "farm_pickup": null,
+   "visit_basis": {
+    "dropin": null,
+    "pickup": null
+   },
+   "visit_note": null,
+   "months_open": [],
+   "hours_text": null,
+   "hours": [],
+   "hours_status": "none",
+   "website": "https://pinterest.com/mountaingoatlodge",
+   "phone": "(206) 218-8201",
+   "email": null,
+   "facebook": null,
+   "instagram": null,
+   "sales_channels": [
+    "csa"
+   ],
+   "sells_at": [],
+   "certified_organic": null,
+   "accepts_snap": null,
+   "ada_accessible": null,
+   "call_first": null,
+   "status": "unverified",
+   "claimed": false,
+   "last_verified": null,
+   "locations": [
+    {
+     "id": "co-loc-000534",
+     "role": "home_base",
+     "name": null,
+     "address": "9582 US Hwy",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": 38.51755,
+     "lon": -106.0559,
+     "precision": "exact",
+     "pin": false,
+     "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": null
+    }
+   ],
+   "sources": [
+    {
+     "source": "usda_lfd",
+     "label": "USDA Local Food Directories",
+     "url": null
+    }
+   ],
+   "confirmed_by": []
+  },
+  {
    "id": "co-p-001235",
    "slug": "gregs-gourmet-greens",
    "name": "Greg's Gourmet Greens",
@@ -1464,7 +1631,7 @@
      "address": null,
      "city": "Poncha Springs",
      "zip": null,
-     "county_fips": null,
+     "county_fips": "08015",
      "lat": null,
      "lon": null,
      "precision": "none",
@@ -2027,6 +2194,15 @@
    ],
    "sells_at": [
     {
+     "market_id": "co-m-000019",
+     "name": "Breckenridge Farmers Market",
+     "county_fips": "08117",
+     "year": 2026,
+     "season_label": null,
+     "basis": "normalized_name",
+     "source_url": "https://breckenridgefarmersmarket.com/#meet"
+    },
+    {
      "market_id": "co-m-000020",
      "name": "Breckenridge Sunday Market",
      "county_fips": "08117",
@@ -2069,7 +2245,7 @@
      "address": null,
      "city": "Buena Vista",
      "zip": null,
-     "county_fips": null,
+     "county_fips": "08015",
      "lat": null,
      "lon": null,
      "precision": "none",
@@ -2203,7 +2379,7 @@
      "address": null,
      "city": "Westcliffe",
      "zip": null,
-     "county_fips": null,
+     "county_fips": "08027",
      "lat": null,
      "lon": null,
      "precision": "none",
@@ -2367,6 +2543,7 @@
    ],
    "product_groups": [
     "fruit",
+    "dairy",
     "drinks"
    ],
    "dropin_visits": true,
@@ -2388,6 +2565,7 @@
    "instagram": "https://www.instagram.com/palisadepeachshack/",
    "sales_channels": [
     "farm_stand",
+    "farmers_market",
     "u_pick"
    ],
    "sells_at": [
@@ -3018,7 +3196,7 @@
    "call_first": null,
    "status": "unverified",
    "claimed": false,
-   "last_verified": null,
+   "last_verified": "2026-10-15",
    "locations": [
     {
      "id": "co-loc-000028",
@@ -3207,6 +3385,7 @@
    "instagram": "https://www.instagram.com/thetriangleoasisproject/",
    "sales_channels": [
     "csa",
+    "farmers_market",
     "u_pick"
    ],
    "sells_at": [
@@ -3509,7 +3688,7 @@
      "address": null,
      "city": "Westcliffe",
      "zip": null,
-     "county_fips": null,
+     "county_fips": "08027",
      "lat": null,
      "lon": null,
      "precision": "none",
