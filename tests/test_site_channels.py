@@ -38,3 +38,10 @@ def test_robots_and_unreachable():
     assert sc.classify_site("f.com", allowed=lambda u: False)[0] == "robots_blocked"
     assert sc.classify_site("f.com", fetch=lambda u: None, allowed=lambda u: True,
                             sleep=lambda s: None)[0] == "unreachable"
+
+
+def test_retailer_list_pages_are_not_evidence():
+    pages = {"http://f.com": '<a href="/pages/retailers">Retailers</a><p>Hello</p>',
+             "http://f.com/pages/retailers": "<p>Aspen Market on Farm Stand (seasonal). Order online at the BCFM store.</p>"}
+    _, _, found = sc.classify_site("f.com", fetch=pages.get, allowed=lambda u: True, sleep=lambda s: None)
+    assert found == {}

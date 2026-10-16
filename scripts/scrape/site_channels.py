@@ -42,6 +42,8 @@ RULES: List[Tuple[str, str, "re.Pattern"]] = [(c, conf, re.compile(rx, re.I)) fo
     ("wholesale", "high", r"wholesale"),
     ("farmers_market", "medium", r"(?:find us|sell|selling|vendors?|booth|sold|available|join us|see us) (?:at|in) (?:the |our |several |local |these )?(?:[\w'’-]+ ){0,3}farmers[’']?\s?markets?|farmers[’']?\s?markets? (?:schedule|vendor|booth)"),
 ]]
+# Pages that list other businesses (stockists, retailers) say nothing about this producer's own sales.
+OTHERS_PAGE = re.compile(r"retailer|stockist|where-to-buy|find-us|locations", re.I)
 NEGATION = re.compile(r"\b(?:no|not|never|without|n['’]t|isn['’]t|don['’]t|doesn['’]t|aren['’]t|longer|closed|cancel(?:l)?ed|sold out|waitlist|full)\b", re.I)
 
 
@@ -116,6 +118,8 @@ def classify_site(website: str, fetch=cp._get, allowed=cp._allowed, sleep=time.s
     pages = 1
 
     def absorb(url: str, page: str) -> None:
+        if OTHERS_PAGE.search(urllib.parse.urlparse(url).path):
+            return
         for ch, (conf, phrase) in find_evidence(to_text(page)).items():
             if ch not in found or (found[ch][0] == "medium" and conf == "high"):
                 found[ch] = (conf, url, phrase)
