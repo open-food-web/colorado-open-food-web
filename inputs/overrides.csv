@@ -1071,3 +1071,56 @@ Berthoud Farmers' Market,Berthoud,Months Open,set,"June, July, August, September
 Edwards Corner Farmers' Market,Edwards,Website,set,https://edwardsmetro.specialdistrict.org/farmer-s-market,Edwards Metro District page for the market (200 on 2026-10-15); replaces the compromised link cleared earlier,2026-10-15
 Highlands Ranch Farmers' Market,Highlands Ranch,Website,set,https://denverfarmersmarket.com,"Operator (Metro Denver Farmers' Market) site, loads 2026-10-15; the old /index.html link was the dead one",2026-10-15
 Metro Denver Farmers' Market-Littleton,Littleton,Website,set,https://denverfarmersmarket.com,"Operator site, loads 2026-10-15; the old /index.html link was the dead one. Latest dated listing found for this location is 2019, so season is unconfirmed",2026-10-15
+Green Mountain Ranch,,County,set,El Paso,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Happy Day Ranch,Basalt,County,set,Eagle,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Homegrown Farm,Bayfield,County,set,La Plata,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Peak & Petal,Bayfield,County,set,La Plata,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Golden Hollow Farms,Berthoud,County,set,Larimer,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Sweet Awakening Farm,Black Forest,County,set,El Paso,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Fifer Farm,Boulder,County,set,Boulder,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Miraflora Farm,Boulder,County,set,Boulder,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Veggiescapes,Boulder,County,set,Boulder,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Sun Catcher Farms Ldt.,Brighton,County,set,Adams,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Alpenglow Hive & Honey,Buena Vista,County,set,Chaffee,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Foxtown Farm,Buena Vista,County,set,Chaffee,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Microgreen Creations LLC,Buena Vista,County,set,Chaffee,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+SongHaven Farm,Cahone,County,set,Dolores,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Dooley Creek Farm,Carbondale,County,set,Garfield,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Thompson House Museum,Carbondale,County,set,Garfield,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Uncle Johnnys U-pick,Cedaredge,County,set,Delta,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Keelor Family Ranch,Colorado Springs,County,set,El Paso,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Sunshine Greens Farm,Colorado Springs,County,set,El Paso,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Esperanza Farmstead,Cortez,County,set,Montezuma,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Living Water Fibers and Alpacas,Craig,County,set,Moffat,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+"The One Acre Farm, LLC",Craig,County,set,Moffat,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Sunshine Beef,Crawford,County,set,Delta,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Furst Class Fungi,Denver,County,set,Denver,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Piper's Lane Flowers,Denver,County,set,Denver,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Bountiful Ridge Farm,Dolores,County,set,Montezuma,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Farm-i,Durango,County,set,La Plata,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+RK Creations Farm,Elizabeth,County,set,Elbert,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Blue Barrel Farm,Fort Collins,County,set,Larimer,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Golden Pastures Regenerative Farms,Fort Lupton,County,set,Weld,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Heckman Hollow,Fowler,County,set,Otero,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Scarecrow Gardens,Greeley,County,set,Weld,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Forty Mile Feed,Kiowa,County,set,Elbert,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+All Natural Homestead Beef,La Salle,County,set,Weld,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Fritzler Farms Inc,Lasalle,County,set,Weld,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Sunrise Ranch Beef,Loveland,County,set,Larimer,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Calkins Greens,Mead,County,set,Weld,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Becker's Produce,Merino,County,set,Logan,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Down Valley Flowers,Montrose,County,set,Montrose,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Sandy Seed Farm,Montrose,County,set,Montrose,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Indian Ridge Farm,Norwood,County,set,San Miguel,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+L Bar Bell Ranch,Norwood,County,set,San Miguel,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Bennett Rock Ranch,Nunn,County,set,Weld,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Berry Fungi Farms,Paonia,County,set,Delta,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Pollywog Station Lavender Farm,Parker,County,set,Douglas,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Greg's Gourmet Greens,Poncha Springs,County,set,Chaffee,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Virgil Produce,Pueblo,County,set,Pueblo,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Mills Bros Farm Market,Rocky Ford,County,set,Otero,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Gina Marcell,Salida,County,set,Chaffee,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Highwater Farm,Silt,County,set,Garfield,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Snowden Meats,Toponas,County,set,Routt,Filled from coordinates (FCC Area API); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Miss Penn's Mountain Seeds,Westcliffe,County,set,Custer,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
+Westcliffe Honey Company,Westcliffe,County,set,Custer,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
