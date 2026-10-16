@@ -12,7 +12,7 @@ from test_build_tables import HEAD, ROOT, row  # noqa: E402
 
 
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
-from export_app import compact_hours as export_app_compact  # noqa: E402
+from export_app import compact_hours as export_app_compact, clean_city  # noqa: E402
 
 
 class ExportApp(unittest.TestCase):
@@ -307,6 +307,13 @@ class ExportApp(unittest.TestCase):
         self.assertEqual(doc["export"]["format_version"], 1)
         self.assertEqual(doc["export"]["counts"]["producers"], len(doc["producers"]))
         self.assertEqual(doc["export"]["counts"]["pins"], 1)
+
+    def test_city_names_are_tidied(self):
+        for raw, want in [("LONGMONT", "Longmont"), ("Fort collins", "Fort Collins"), ("Rocky Ford, CO", "Rocky Ford"),
+                          ("Carbondale 81623", "Carbondale"), ("McCoy", "McCoy"), ("DeBeque", "DeBeque"), ("", "")]:
+            self.assertEqual(clean_city(raw), want)
+        doc = self.export([row("A Farm", "Roadside Market", Address="1 Rd", City="FORT COLLINS", Latitude="38.5", Longitude="-106")])
+        self.assertEqual(doc["producers"][0]["locations"][0]["city"], "Fort Collins")
 
 
 if __name__ == "__main__":
