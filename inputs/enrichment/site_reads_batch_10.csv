@@ -1,0 +1,32 @@
+producer_id,url,read_on,site_last_updated,last_updated_basis,channels_found,note
+co-p-00000942,https://www.sangresbest.com,2026-10-15,,none_found,delivery;online;pickup,
+co-p-00000943,https://www.sauerdoughbakes.com,2026-10-15,,none_found,online,
+co-p-00000944,https://sauvagespectrum.com,2026-10-15,2026-10-15,http_last_modified,online,Last-Modified header; may reflect page render time
+co-p-00000949,https://www.scratchdough.co,2026-10-15,,none_found,online,
+co-p-00000950,https://searleranch.com,2026-10-15,2026-10-16,http_last_modified,,"Last-Modified header; may reflect page render time; no clear sales channel stated, left blank"
+co-p-00000955,https://www.smfcolorado.com/smf-farm,2026-10-15,,none_found,online,
+co-p-00000963,https://www.slashjbeef.com,2026-10-15,,none_found,delivery;online,
+co-p-00000967,https://smithserenity.com/,2026-10-15,,none_found,pickup,
+co-p-00000968,https://www.smittyslittlefarm.com,2026-10-15,,none_found,delivery;farmers_market;online,
+co-p-00000972,https://brinkercreekranch.com/,2026-10-15,,none_found,delivery;online,
+co-p-00000974,https://www.SomethingCuteCo.com,2026-10-15,,none_found,,"no clear sales channel stated, left blank"
+co-p-00000975,https://somethingfromthefarm.com/,2026-10-15,2026-09-28,http_last_modified,,"Last-Modified header; may reflect page render time; no clear sales channel stated, left blank"
+co-p-00000979,https://sourdoughbytori.com/,2026-10-15,,none_found,online,
+co-p-00000987,https://www.springcreekmeatsllc.com,2026-10-15,,none_found,,"no clear sales channel stated, left blank"
+co-p-00000988,https://www.springcreeksranch.com,2026-10-15,,none_found,,"no clear sales channel stated, left blank"
+co-p-00000994,https://www.square-foot-gardens.com/,2026-10-15,,none_found,,"no clear sales channel stated, left blank"
+co-p-00000995,https://stmichaelsfarms.com,2026-10-15,,none_found,,"no clear sales channel stated, left blank"
+co-p-00000996,https://stvraincidery.com,2026-10-15,,none_found,,"no clear sales channel stated, left blank"
+co-p-00000997,https://www.stagecoachmeatcompany.com,2026-10-15,,none_found,online,
+co-p-00001005,https://studtfarms.com/,2026-10-15,2026-10-16,http_last_modified,,"Last-Modified header; may reflect page render time; no clear sales channel stated, left blank"
+co-p-00001015,https://www.hotplate.com/sunflowersourdoughltd,2026-10-15,,none_found,,"no clear sales channel stated, left blank"
+co-p-00001021,https://Superior-Sweets.com,2026-10-15,,none_found,,"no clear sales channel stated, left blank"
+co-p-00001026,https://sweetbeeandco.com/greens/,2026-10-15,,none_found,delivery,
+co-p-00001028,https://www.sweetdiplomacy.com/,2026-10-15,2026-10-16,http_last_modified,,"Last-Modified header; may reflect page render time; no clear sales channel stated, left blank"
+co-p-00001029,https://www.mycustombakes.com/sweetflowercookieco,2026-10-15,2026-09-29,http_last_modified,,"Last-Modified header; may reflect page render time; no clear sales channel stated, left blank"
+co-p-00001032,https://239sweetstreet.square.site/,2026-10-15,2026-10-16,http_last_modified,,"Last-Modified header; may reflect page render time; no clear sales channel stated, left blank"
+co-p-00001041,https://www.talonwines.com/,2026-10-15,2026-10-16,http_last_modified,online,Last-Modified header; may reflect page render time
+co-p-00001024,https://suarezwines.com,2026-10-15,,none_found,farm_stand;online;pickup,
+co-p-00000940,http://www.boomtownbreakfastco.com,2026-10-15,,none_found,,"no clear sales channel stated, left blank"
+co-p-00001016,https://sunriseranch.org/,2026-10-15,,none_found,,"no clear sales channel stated, left blank"
+co-p-00001003,https://www.krstreetag.com/,2026-10-15,,none_found,,"no clear sales channel stated, left blank"
