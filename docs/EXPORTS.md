@@ -9,6 +9,8 @@ python scripts/export_app.py --tables data/colorado --out exports/chaffee-provid
     --release 2026-11 --county-fips 08015 --include-source chaffee_provides
 ```
 
+The Colorado Farm Trail's statewide export ships with every release as `colorado-farm-trail.json` (built by `scripts/make_release.py` with `exports/colorado-farm-trail.config.json`, no category exclusions, restaurants and caterers included). `directory.csv` carries each listing's `Food Web ID` so the app can join the two.
+
 Statewide (all 64 counties, Broomfield included), for an Open Food Web homepage:
 
 ```

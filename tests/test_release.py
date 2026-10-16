@@ -65,3 +65,20 @@ def test_version_must_look_like_a_calendar_release(tmp_path, monkeypatch):
     monkeypatch.setattr(sys, "argv", ["make_release.py", "--version", "latest", "--out", str(tmp_path)])
     with pytest.raises(SystemExit):
         mr.main()
+
+
+def test_attach_ids_settles_repeated_names_by_town_then_place_then_producer():
+    export = {"producers": [
+        {"id": "co-p-1", "name": "Roasted Chili", "locations": [{"city": "Pueblo", "lat": 38.2, "lon": -104.6}]},
+        {"id": "co-p-2", "name": "Roasted Chili", "locations": [{"city": "Salida", "lat": 38.5, "lon": -106.0}]},
+        {"id": "co-p-3", "name": "Hidy Honey", "locations": []},
+        {"id": "co-p-4", "name": "Solo Farm’s", "locations": []}],
+        "outlets": [{"id": "co-o-1", "name": "Hidy Honey", "locations": [], "location": None}]}
+    base = {"City": "", "Latitude": "", "Longitude": ""}
+    rows = [dict(base, **{"Business Name": "Roasted Chili", "City": "Salida"}),
+            dict(base, **{"Business Name": "Roasted Chili", "Latitude": "38.2", "Longitude": "-104.6"}),
+            dict(base, **{"Business Name": "Roasted Chili"}),
+            dict(base, **{"Business Name": "Hidy Honey"}),
+            dict(base, **{"Business Name": "Solo Farm�s"})]
+    mr.attach_ids(rows, export)
+    assert [r["Food Web ID"] for r in rows] == ["co-p-2", "co-p-1", "", "co-p-3", "co-p-4"]

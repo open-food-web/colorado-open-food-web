@@ -9,6 +9,8 @@ Writes, in --out:
                     read, with the release rules applied (closed businesses left out, hidden addresses
                     withheld, descriptions not included, emails only if the business lists them)
   csa.json          confirmed CSAs (season, sign-up link, pickup sites, delivery), facts only
+  colorado-farm-trail.json   the statewide app export for the Colorado Farm Trail (format: docs/EXPORTS.md): visits,
+                    hours, sales channels and producer detail, with the release rules applied
   tables.zip        the canonical tables (producers, markets, outlets, locations and the link tables)
   places.json       Census place and ZIP centre points, for "near a town or ZIP" searches (public domain)
   supply-network-nodes.csv, supply-network-edges.csv   who supplies which restaurant or store, with sources
@@ -26,6 +28,7 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -54,6 +57,39 @@ def read(path):
         return list(csv.DictReader(fh))
 
 
+def nkey(s):
+    return re.sub(r"[^a-z0-9]+", " ", (s or "").lower().replace("’", "'").replace("�", "'").replace("'", "")).strip()
+
+
+def attach_ids(rows, export):
+    """Add a `Food Web ID` column: the stable ID of the producer, market or outlet each listing is, so an app can
+    join the flat directory to the export. A name that appears once gets its record; a repeated name is settled by
+    town, then by distance to one of the record's places; anything still ambiguous is left blank."""
+    recs = {}
+    for kind in ("producers", "markets", "outlets", "access_points"):
+        for e in export.get(kind, []):
+            locs = e.get("locations") or ([e["location"]] if e.get("location") else [])
+            recs.setdefault(nkey(e["name"]), []).append((e["id"], locs))
+    for r in rows:
+        cands = recs.get(nkey(r["Business Name"]), [])
+        pick = cands[0][0] if len(cands) == 1 else ""
+        if len(cands) > 1:
+            by_town = [c for c in cands if any(nkey(l.get("city")) == nkey(r["City"]) and r["City"] for l in c[1])]
+            if len(by_town) == 1:
+                pick = by_town[0][0]
+            elif r["Latitude"] and r["Longitude"]:
+                lat, lon = float(r["Latitude"]), float(r["Longitude"])
+                near = [c for c in cands if any(l.get("lat") is not None and abs(l["lat"] - lat) < 0.01
+                                                and abs(l["lon"] - lon) < 0.01 for l in c[1])]
+                if len(near) == 1:
+                    pick = near[0][0]
+        if not pick:      # the same business as a producer and an outlet (a farm with a shop): the producer
+            prod = [c for c in cands if c[0].startswith("co-p-")]
+            if len(prod) == 1:
+                pick = prod[0][0]
+        r["Food Web ID"] = pick
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--version", required=True, help="release tag, e.g. v2026.10.1")
@@ -76,6 +112,15 @@ def main():
         r["Email"] = "; ".join(kept)
 
     os.makedirs(a.out, exist_ok=True)
+    # The statewide export for the Colorado Farm Trail, built from the same tables (docs/EXPORTS.md). Unconfirmed
+    # farm homes are not pinned: many are private residences.
+    export_path = os.path.join(a.out, "colorado-farm-trail.json")
+    subprocess.run([sys.executable, "-I", os.path.join(HERE, "export_app.py"), "--tables", TABLES, "--out", export_path,
+                    "--release", a.version.lstrip("v"), "--statewide", "--unconfirmed-home-pins", "hide",
+                    "--config", os.path.join(REPO, "exports", "colorado-farm-trail.config.json")],
+                   check=True, stdout=subprocess.DEVNULL)
+    with open(export_path, encoding="utf-8") as fh:
+        attach_ids(rows, json.load(fh))
     out_csv = os.path.join(a.out, "directory.csv")
     with open(out_csv, "w", encoding="utf-8", newline="\n") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()), lineterminator="\n")
@@ -99,6 +144,7 @@ def main():
             if fn.endswith(".csv"):
                 z.write(os.path.join(TABLES, fn), fn)
     assets["tables.zip"] = tables_zip
+    assets["colorado-farm-trail.json"] = export_path
 
     by_source = {}
     for r in read(raw):
@@ -134,7 +180,7 @@ Released {manifest['released']}. Data CC BY 4.0: credit "Colorado Open Food Web"
 
 - `directory.csv`: {len(rows)} listings ({manifest['counts']['with_email']} with a confirmed email,
   {manifest['counts']['with_website']} with a website).
-- `tables.zip` (the canonical tables), `csa.json`, `places.json`, `supply-network-nodes.csv`, `supply-network-edges.csv`.
+- `colorado-farm-trail.json` (statewide app export), `tables.zip` (the canonical tables), `csa.json`, `places.json`, `supply-network-nodes.csv`, `supply-network-edges.csv`.
 - `MANIFEST.json`: counts, sources, and the sha256 of each file.
 
 Rules applied: facts only (no descriptions), closed businesses and hidden addresses left out, emails only

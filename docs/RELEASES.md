@@ -7,7 +7,8 @@ a tagged, checksummed snapshot published on this repo's Releases page.
 
 | File | What it is |
 |---|---|
-| `directory.csv` | The public flat directory, one row per listing. The 23 My Maps columns apps already read (name, category labels, address, city, county, phone, website, email, social links, hours, months open, products, organic, SNAP, ADA, where to get it, latitude, longitude). `Notes` is always empty |
+| `directory.csv` | The public flat directory, one row per listing. The 23 My Maps columns apps already read, plus a final `Food Web ID` column (the ID of the producer, market or outlet in the export and tables; blank for food banks, organizations and records with no county) (name, category labels, address, city, county, phone, website, email, social links, hours, months open, products, organic, SNAP, ADA, where to get it, latitude, longitude). `Notes` is always empty |
+| `colorado-farm-trail.json` | The statewide app export for the Colorado Farm Trail (format in `EXPORTS.md`): visits with their hours, sales channels, structured hours, sources and who confirmed what, with the release rules applied. Scope: `exports/colorado-farm-trail.config.json` (no category exclusions; shops, grocers, restaurants and caterers included). Unconfirmed farm homes are not pinned |
 | `tables.zip` | The canonical tables for all of Colorado (`producers`, `markets`, `outlets`, `access_points`, `locations`, `producer_locations`, `service_areas`, `source_links`, `field_sources`), defined in `SCHEMA.md`. Stable IDs, locations and sources |
 | `csa.json`, `places.json`, `supply-network-*.csv` | CSAs, Census town and ZIP points, the supply network |
 | `MANIFEST.json` | Version, date, format version, license and attribution, row counts, counts by source, the columns, and the **sha256** of each file |

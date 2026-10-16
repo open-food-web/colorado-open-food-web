@@ -1,0 +1,4 @@
+{
+  "_comment": "Scope for the statewide Colorado Farm Trail map. The Farm Trail shows everything the Food Web lists that people can visit or buy from, so there are no category exclusions here: scope choices are the app's, and the Food Web keeps all records. Outlets (shops, grocers, restaurants, caterers) are included because the map has shown them. Build with --statewide --unconfirmed-home-pins hide so a farm home is only pinned once a way to visit or buy there is confirmed.",
+  "include_outlet_kinds": ["apothecary", "farm_store", "garden_center", "grocery", "restaurant", "caterer"]
+}
