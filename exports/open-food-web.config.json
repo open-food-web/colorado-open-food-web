@@ -1,0 +1,13 @@
+{
+  "_comment": "PROPOSAL for the maintainer to review: scope for the statewide Open Food Web homepage, modeled on exports/chaffee-provides.config.json. Not yet approved. Build with --statewide --unconfirmed-home-pins hide: without 'hide', producers whose sales channels are not confirmed would get a home-base pin, which for many small producers is a private home.",
+  "exclude_kinds": {
+    "bakery": "Proposal: the homepage is about growers and makers; bakeries stay out until the maintainer decides (as on Chaffee Provides)"
+  },
+  "exclude_categories": {
+    "Agritourism": "Proposal: not a way to buy food; matches the Chaffee Provides scope",
+    "Bakery": "Proposal: not part of the farms/ranches/orchards/makers/wineries scope",
+    "Restaurant": "Proposal: dining outlets are not exported (kinds are not in include_outlet_kinds)",
+    "Caterer": "Proposal: dining outlets are not exported (kinds are not in include_outlet_kinds)"
+  },
+  "include_outlet_kinds": ["apothecary", "farm_store", "garden_center", "grocery"]
+}

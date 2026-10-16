@@ -754,7 +754,7 @@
 "acre farm one|craig": {
 "Address": "25 CR 105",
 "Category": "Food Maker",
-"County": "",
+"County": "Moffat",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -1346,7 +1346,7 @@
 "all beef homestead natural|la salle": {
 "Address": "18494 County Road 39, La Salle, CO",
 "Category": "Meat Producer & Packer",
-"County": "",
+"County": "Weld",
 "Email": "",
 "Hours": "Winter CSA",
 "Months Open": "",
@@ -1378,7 +1378,7 @@
 "alpacas and fibers living water|craig": {
 "Address": "3208 CR 18 North",
 "Category": "Agritourism",
-"County": "",
+"County": "Moffat",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -1426,7 +1426,7 @@
 "alpenglow hive honey|buena vista": {
 "Address": "",
 "Category": "Food Maker",
-"County": "",
+"County": "Chaffee",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -3474,7 +3474,7 @@
 "awakening farm sweet|black forest": {
 "Address": "",
 "Category": "Market Vendor",
-"County": "",
+"County": "El Paso",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -4482,7 +4482,7 @@
 "bar bell l ranch|norwood": {
 "Address": "",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "San Miguel",
 "Email": "lbarbellranch@gmail.com",
 "Hours": "",
 "Months Open": "",
@@ -4674,7 +4674,7 @@
 "barrel blue farm|fort collins": {
 "Address": "40907 County Road15",
 "Category": "CSA Farm",
-"County": "",
+"County": "Larimer",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -5026,7 +5026,7 @@
 "becker produce s|merino": {
 "Address": "CR 18",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Logan",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -5474,7 +5474,7 @@
 "beef ranch sunrise|loveland": {
 "Address": "100 Sunrise Ranch Rd, Loveland, CO 80538",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Larimer",
 "Email": "frontdesk@sunriseranch.org",
 "Hours": "",
 "Months Open": "",
@@ -5522,7 +5522,7 @@
 "beef sunshine|crawford": {
 "Address": "",
 "Category": "Meat Producer & Packer",
-"County": "",
+"County": "Delta",
 "Email": "tony@sunshinebeef.com",
 "Hours": "",
 "Months Open": "",
@@ -5826,7 +5826,7 @@
 "bennett ranch rock|nunn": {
 "Address": "16717 County Road 102",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Weld",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -5874,7 +5874,7 @@
 "berry farms fungi|paonia": {
 "Address": "Minnesota Creek Rd, Paonia, CO 81428",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Delta",
 "Email": "",
 "Hours": "11am-3am MST Mon-Sat (as stated)",
 "Months Open": "",
@@ -5904,16 +5904,16 @@
 "source": "colorado_proud_farm_fresh+colorado_proud_finder+usda"
 },
 "berthoud|berthoud": {
-"Address": "1201 Lake Ave.",
+"Address": "200 N 7th Street",
 "Category": "Farmers' Market",
 "County": "Larimer",
 "Email": "",
-"Hours": "",
-"Months Open": "",
+"Hours": "Sat: 9:00am - 1:00pm",
+"Months Open": "June, July, August, September",
 "Phone": "",
 "Products": "",
 "Status": "Open",
-"Website": "",
+"Website": "https://berthoud.org/1430/The-Berthoud-Market",
 "Year Opened": "",
 "city": "Berthoud",
 "name": "Berthoud Farmers' Market",
@@ -7026,7 +7026,7 @@
 "bountiful farm ridge|dolores": {
 "Address": "",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Montezuma",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -7378,7 +7378,7 @@
 "bros farm mills|rocky ford": {
 "Address": "Hwy. 50",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Otero",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -7986,7 +7986,7 @@
 "calkins greens|mead": {
 "Address": "",
 "Category": "Market Vendor",
-"County": "",
+"County": "Weld",
 "Email": "calkinsgreens@gmail.com",
 "Hours": "Year-round",
 "Months Open": "",
@@ -8242,7 +8242,7 @@
 "catcher farms ldt sun|brighton": {
 "Address": "",
 "Category": "CSA Farm",
-"County": "",
+"County": "Adams",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -9250,7 +9250,7 @@
 "class fungi furst|denver": {
 "Address": "",
 "Category": "Food Maker",
-"County": "",
+"County": "Denver",
 "Email": "",
 "Hours": "Winter CSA January-April",
 "Months Open": "",
@@ -9986,7 +9986,7 @@
 "company honey westcliffe|westcliffe": {
 "Address": "",
 "Category": "Market Vendor",
-"County": "",
+"County": "Custer",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -10553,7 +10553,7 @@
 "Phone": "(414) 975-5952",
 "Products": "Fresh, local and organic foods, crafts and other products from more than 30 vendors",
 "Status": "Open",
-"Website": "",
+"Website": "https://edwardsmetro.specialdistrict.org/farmer-s-market",
 "Year Opened": "",
 "city": "Edwards",
 "name": "Edwards Corner Farmers' Market",
@@ -10914,7 +10914,7 @@
 "creations farm rk|elizabeth": {
 "Address": "33784 County Road 21",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Elbert",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -10978,7 +10978,7 @@
 "creations microgreen|buena vista": {
 "Address": "",
 "Category": "Market Vendor",
-"County": "",
+"County": "Chaffee",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -11010,7 +11010,7 @@
 "creek dooley farm|carbondale": {
 "Address": "349 Dooley Lane",
 "Category": "CSA Farm",
-"County": "",
+"County": "Garfield",
 "Email": "dooleycreekfarm@gmail.com",
 "Hours": "",
 "Months Open": "",
@@ -11938,7 +11938,7 @@
 "day happy ranch|basalt": {
 "Address": "201 Lester Lane",
 "Category": "Agritourism",
-"County": "",
+"County": "Eagle",
 "Email": "happydayranchevents@gmail.com",
 "Hours": "",
 "Months Open": "",
@@ -12217,7 +12217,7 @@
 "Phone": "(303) 887-3276",
 "Products": "",
 "Status": "Open",
-"Website": "",
+"Website": "https://denverfarmersmarket.com",
 "Year Opened": "",
 "city": "Littleton",
 "name": "Metro Denver Farmers' Market-Littleton",
@@ -12642,7 +12642,7 @@
 "down flowers valley|montrose": {
 "Address": "",
 "Category": "Flower Farm",
-"County": "",
+"County": "Montrose",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -13618,7 +13618,7 @@
 "esperanza farmstead|cortez": {
 "Address": "",
 "Category": "Cottage Food",
-"County": "",
+"County": "Montezuma",
 "Email": "esperanzafarmstead@gmail.com",
 "Hours": "Cortez market Saturday 7:30-11:30",
 "Months Open": "",
@@ -14178,7 +14178,7 @@
 "family keelor ranch|colorado springs": {
 "Address": "Sagebrush Ln",
 "Category": "On-Farm / Ranch Sales, CSA Farm, Agritourism",
-"County": "",
+"County": "El Paso",
 "Email": "keelorfamilyranch@gmail.com",
 "Hours": "",
 "Months Open": "",
@@ -14290,7 +14290,7 @@
 "farm fifer|boulder": {
 "Address": "",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Boulder",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -14450,7 +14450,7 @@
 "farm foxtown|buena vista": {
 "Address": "",
 "Category": "Market Vendor",
-"County": "",
+"County": "Chaffee",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -14722,7 +14722,7 @@
 "farm greens sunshine|colorado springs": {
 "Address": "",
 "Category": "CSA Farm",
-"County": "",
+"County": "El Paso",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -14898,7 +14898,7 @@
 "farm highwater|silt": {
 "Address": "7001 County Road 346",
 "Category": "CSA Farm",
-"County": "",
+"County": "Garfield",
 "Email": "anna@highwaterfarm.org",
 "Hours": "",
 "Months Open": "",
@@ -14978,7 +14978,7 @@
 "farm homegrown|bayfield": {
 "Address": "",
 "Category": "CSA Farm",
-"County": "",
+"County": "La Plata",
 "Email": "homegrownbiodynamics@gmail.com",
 "Hours": "",
 "Months Open": "",
@@ -15026,7 +15026,7 @@
 "farm indian ridge|norwood": {
 "Address": "1401 CR 43ZN",
 "Category": "CSA Farm",
-"County": "",
+"County": "San Miguel",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -15042,7 +15042,7 @@
 "farm i|durango": {
 "Address": "2997 County Road 215",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "La Plata",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -15186,7 +15186,7 @@
 "farm lavender pollywog station|parker": {
 "Address": "8717 Hilltop Rd.",
 "Category": "On-Farm / Ranch Sales, Agritourism",
-"County": "",
+"County": "Douglas",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -15442,7 +15442,7 @@
 "farm miraflora|boulder": {
 "Address": "",
 "Category": "CSA Farm",
-"County": "",
+"County": "Boulder",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -15858,7 +15858,7 @@
 "farm sandy seed|montrose": {
 "Address": "",
 "Category": "Market Vendor",
-"County": "",
+"County": "Montrose",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -15890,7 +15890,7 @@
 "farm songhaven|cahone": {
 "Address": "",
 "Category": "CSA Farm",
-"County": "",
+"County": "Dolores",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -16242,7 +16242,7 @@
 "farms fritzler|lasalle": {
 "Address": "County Road 33",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Weld",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -16322,7 +16322,7 @@
 "farms golden hollow|berthoud": {
 "Address": "2029 S County Road 21",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Larimer",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -16338,7 +16338,7 @@
 "farms golden pastures regenerative|fort lupton": {
 "Address": "",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Weld",
 "Email": "Goldenpasturesfarms@gmail.com",
 "Hours": "Farmstand Monday-Saturday, daylight hours",
 "Months Open": "",
@@ -17378,7 +17378,7 @@
 "feed forty mile|kiowa": {
 "Address": "10240 Highway 86",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Elbert",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -17778,7 +17778,7 @@
 "flowers lane piper s|denver": {
 "Address": "",
 "Category": "Flower Farm",
-"County": "",
+"County": "Denver",
 "Email": "piperslaneflowers@gmail.com",
 "Hours": "throughout the growing season",
 "Months Open": "",
@@ -18770,7 +18770,7 @@
 "gardens scarecrow|greeley": {
 "Address": "North 47th Avenue",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Weld",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -18894,22 +18894,6 @@
 "city": "Pagosa Springs",
 "name": "Tooth & Gill Mushroom Co.",
 "source": "colorado_proud_finder"
-},
-"gina marcell|salida": {
-"Address": "9582 US Hwy",
-"Category": "CSA Farm",
-"County": "",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "(206) 218-8201",
-"Products": "",
-"Status": "Open",
-"Website": "https://pinterest.com/mountaingoatlodge",
-"Year Opened": "",
-"city": "Salida",
-"name": "Gina Marcell",
-"source": "usda"
 },
 "girl grow organics|arvada": {
 "Address": "12229 W. 80th Avenue, Unit B",
@@ -19106,7 +19090,7 @@
 "gourmet greens greg s|poncha springs": {
 "Address": "",
 "Category": "Market Vendor",
-"County": "",
+"County": "Chaffee",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -19266,7 +19250,7 @@
 "green mountain ranch|": {
 "Address": "",
 "Category": "Agritourism",
-"County": "",
+"County": "El Paso",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -19602,7 +19586,7 @@
 "heckman hollow|fowler": {
 "Address": "Highway 50",
 "Category": "Agritourism",
-"County": "",
+"County": "Otero",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -19817,7 +19801,7 @@
 "Phone": "(303) 809-2865",
 "Products": "Fresh produce and locally-grown items",
 "Status": "Open",
-"Website": "",
+"Website": "https://denverfarmersmarket.com",
 "Year Opened": "",
 "city": "Highlands Ranch",
 "name": "Highlands Ranch Farmers' Market",
@@ -20255,22 +20239,6 @@
 "name": "Raj Hot sauce & more",
 "source": "colorado_proud_finder"
 },
-"house museum thompson|carbondale": {
-"Address": "301 Lewies Ln",
-"Category": "Agritourism",
-"County": "",
-"Email": "board@carbondalehistory.org",
-"Hours": "Tours by appointment",
-"Months Open": "",
-"Phone": "",
-"Products": "Historic 1880s homestead house tours",
-"Status": "Open",
-"Website": "https://www.carbondalehistory.org/thompson-house",
-"Year Opened": "",
-"city": "Carbondale",
-"name": "Thompson House Museum",
-"source": "curated"
-},
 "hungenberg produce|greeley": {
 "Address": "31466 CR 39 1/2",
 "Category": "On-Farm / Ranch Sales",
@@ -20594,7 +20562,7 @@
 "johnnys pick u uncle|cedaredge": {
 "Address": "Surface Creek Road",
 "Category": "Agritourism",
-"County": "",
+"County": "Delta",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -21858,7 +21826,7 @@
 "meats snowden|toponas": {
 "Address": "Rcr 5",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Routt",
 "Email": "info@snowdenmeats.com",
 "Hours": "",
 "Months Open": "",
@@ -22034,7 +22002,7 @@
 "miss mountain penn s seeds|westcliffe": {
 "Address": "",
 "Category": "Market Vendor",
-"County": "",
+"County": "Custer",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -22946,7 +22914,7 @@
 "peak petal|bayfield": {
 "Address": "",
 "Category": "Bakery",
-"County": "",
+"County": "La Plata",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -23298,7 +23266,7 @@
 "produce virgil|pueblo": {
 "Address": "41st Lane",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Pueblo",
 "Email": "",
 "Hours": "",
 "Months Open": "",
@@ -24306,7 +24274,7 @@
 "veggiescapes|boulder": {
 "Address": "Oxford Road",
 "Category": "On-Farm / Ranch Sales",
-"County": "",
+"County": "Boulder",
 "Email": "",
 "Hours": "",
 "Months Open": "",

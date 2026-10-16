@@ -52,6 +52,71 @@ class ExportApp(unittest.TestCase):
         self.assertEqual(loc["city"], "Buena Vista")
         self.assertEqual((loc["lat"], loc["lon"]), (38.8422, -106.1311))
 
+    def test_statewide_covers_all_64_counties_and_counts_records_with_no_county(self):
+        rows = [row("Hidden Farm", "On-Farm / Ranch Sales", Latitude="38.80", Longitude="-106.10")]
+        doc = self.export(rows, extra=("--statewide",))
+        self.assertEqual(len(doc["export"]["county_fips"]), 64)
+        self.assertIn("08014", doc["export"]["county_fips"])
+        self.assertEqual(doc["vocab"]["counties"]["08015"], "Chaffee")
+        self.assertEqual(doc["vocab"]["counties"]["08014"], "Broomfield")
+        self.assertEqual(len(doc["vocab"]["counties"]), 64)
+        self.assertEqual(doc["export"]["format_version"], 1)
+        self.assertEqual(self.export(rows, extra=("--county-fips", "all"))["export"]["county_fips"], doc["export"]["county_fips"])
+        c = doc["export"]["counts"]
+        self.assertEqual(c["excluded_no_county"]["producers"], 0)
+        self.assertEqual(c["excluded_outside_area"]["producers"], 0)
+
+    def test_records_without_a_county_are_counted_not_lost(self):
+        rows = [row("Placed Farm", "On-Farm / Ranch Sales", Latitude="38.80", Longitude="-106.10"),
+                row("Nowhere Farm", "On-Farm / Ranch Sales")]
+        def strip_locations(tables, pid):
+            for name in ("producer_locations", "service_areas"):
+                path = os.path.join(tables, name + ".csv")
+                with open(path, encoding="utf-8", newline="") as f:
+                    r = list(csv.DictReader(f))
+                with open(path, "w", encoding="utf-8", newline="") as f:
+                    w = csv.DictWriter(f, fieldnames=list(r[0].keys()), lineterminator="\n")
+                    w.writeheader()
+                    w.writerows(x for x in r if x["producer_id"] != pid)
+        d = tempfile.mkdtemp()
+        raw, tables, out = os.path.join(d, "raw.csv"), os.path.join(d, "tables"), os.path.join(d, "app.json")
+        with open(raw, "w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=HEAD)
+            w.writeheader()
+            w.writerows(rows)
+        subprocess.run([sys.executable, "-I", os.path.join(ROOT, "scripts", "build_tables.py"), "--raw", raw,
+                        "--county", "Chaffee", "--out", tables, "--registry", os.path.join(d, "reg.csv")],
+                       check=True, capture_output=True)
+        with open(os.path.join(tables, "producers.csv"), encoding="utf-8", newline="") as f:
+            self._prod = list(csv.DictReader(f))
+        total = len(self._prod)
+        strip_locations(tables, next(p["producer_id"] for p in self._prod if p["name"] == "Nowhere Farm"))
+        res = subprocess.run([sys.executable, "-I", os.path.join(ROOT, "scripts", "export_app.py"), "--tables", tables,
+                              "--out", out, "--release", "2026-11", "--statewide"], check=True, capture_output=True, text=True)
+        with open(out, encoding="utf-8") as f:
+            c = json.load(f)["export"]["counts"]
+        self.assertEqual(c["excluded_no_county"]["producers"], 1)
+        self.assertEqual(c["producers"] + c["excluded_no_county"]["producers"] + c["excluded_outside_area"]["producers"], total)
+        self.assertIn("excluded_no_county", res.stdout)
+
+    def test_county_export_counts_other_counties_as_outside_area(self):
+        doc = self.export([row("Hidden Farm", "On-Farm / Ranch Sales", Latitude="38.80", Longitude="-106.10")])
+        self.assertEqual(doc["vocab"]["counties"], {"08015": "Chaffee"})
+        self.assertEqual(doc["export"]["counts"]["excluded_no_county"]["producers"], 0)
+
+    def test_unknown_county_fips_is_refused(self):
+        with self.assertRaises(subprocess.CalledProcessError):
+            self.export([row("Hidden Farm", "On-Farm / Ranch Sales")], extra=("--county-fips", "08999"))
+
+    def test_statewide_config_is_valid_and_every_exclusion_has_a_reason(self):
+        with open(os.path.join(ROOT, "exports", "open-food-web.config.json"), encoding="utf-8") as f:
+            cfg = json.load(f)
+        for key in ("exclude_kinds", "exclude_categories"):
+            for k, reason in cfg[key].items():
+                self.assertTrue(reason.strip(), "%s %s needs a reason" % (key, k))
+        self.assertEqual(sorted(cfg["include_outlet_kinds"]), ["apothecary", "farm_store", "garden_center", "grocery"])
+        self.assertIn("PROPOSAL", cfg["_comment"])
+
     def test_outlets_are_exported_only_when_the_app_asks_for_them(self):
         rows = [row("Herb Shop", "Apothecary", Address="138 W 1st St", City="Salida", Latitude="38.53", Longitude="-105.99"),
                 row("Hidden Farm", "On-Farm / Ranch Sales", Latitude="38.80", Longitude="-106.10")]

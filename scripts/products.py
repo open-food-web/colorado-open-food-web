@@ -12,17 +12,17 @@ import re
 PRODUCT_GROUPS = [
     ("veggies", "Veggies", r"veggie|vegetable|\bproduce\b|greens|lettuce|tomato|squash|potato|beet|carrot|\bpeppers?\b|kale|"
                            r"broccoli|asparagus|chile|onion|pumpkin|cucumber|spinach|microgreen|sprouts"),
-    ("fruit", "Fruit", r"fruit|apple|apricot|peach|cherr|berr|melon|plum|\bpears?\b|grape"),
+    ("fruit", "Fruit", r"fruit|\bfigs?\b|apple|apricot|peach|cherr|berr|melon|plum|\bpears?\b|grape"),
     ("beef-meat", "Beef & meat", r"beef|meat|pork|lamb|bison|sausage|jerky|goat meat|hides?"),
-    ("poultry-eggs", "Poultry & eggs", r"poultry|\beggs?\b|chicken|turkey|duck"),
-    ("dairy", "Dairy", r"dairy|milk|cheese|yogurt|(?<!peach )(?<!apple )(?<!nut )(?<!almond )(?<!cocoa )butter|kefir|chevre"),
+    ("poultry-eggs", "Poultry & eggs", r"poultry|\beggs?\b|chicken|turkey|duck|quail"),
+    ("dairy", "Dairy", r"dairy|milk|cheese|yogurt|ice cream|(?<!peach )(?<!apple )(?<!nut )(?<!almond )(?<!cocoa )butter|kefir|chevre"),
     ("honey", "Honey", r"honey|\bbees?\b|apiary|beeswax"),
     ("flowers", "Flowers", r"(?<!wild)flower|lavender|bouquet|zinnia"),
     ("garlic-herbs", "Garlic & herbs", r"spice|garlic|herb"),
     ("mushrooms", "Mushrooms", r"mushroom"),
     ("baked-goods", "Baked goods", r"bread|baked|bakery|pastr|sourdough|cookie|pie\b"),
     ("seeds-plants", "Seeds & plants", r"\bseeds?\b|seedling|plant starts?|\bstarts\b|nursery|houseplant"),
-    ("drinks", "Wine & drinks", r"wine|cider|brew|kombucha|juice|coffee"),
+    ("drinks", "Wine & drinks", r"wine|cider|brew|\bbeer|\bhops?\b|kombucha|juice|coffee|\bteas?\b|soft drinks?|beverage|verjus"),
 ]
 LABELS = {k: label for k, label, _ in PRODUCT_GROUPS}
 # Chaffee Provides' own offering names -> our groups

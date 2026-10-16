@@ -73,6 +73,7 @@ producer,co-p-000114,sat,11:00,03:00,true,false
 producer,co-p-000115,tue,08:00,13:00,false,false
 producer,co-p-000115,thu,08:00,13:00,false,false
 producer,co-p-000115,sat,08:00,16:00,false,false
+market,co-m-000015,sat,09:00,13:00,false,false
 producer,co-p-000119,mon,10:00,20:00,false,false
 producer,co-p-000119,tue,10:00,20:00,false,false
 producer,co-p-000119,wed,10:00,20:00,false,false

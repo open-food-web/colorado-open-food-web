@@ -504,7 +504,7 @@ outlet,co-o-000001,producer_site,https://eddylinebrewery.com/pages/restaurant-me
 outlet,co-o-000001,chaffee_provides,,eddyline-restaurant-at-southmain,,unchecked
 producer,co-p-000328,curated,,,,unchecked
 outlet,co-o-000046,colorado_proud,,,,unchecked
-market,co-m-000049,producer_site,,,,unchecked
+market,co-m-000049,producer_site,https://edwardsmetro.specialdistrict.org/farmer-s-market,,,unchecked
 market,co-m-000049,usda_lfd,,,,unchecked
 producer,co-p-000329,colorado_proud,,,,unchecked
 producer,co-p-000329,colorado_proud,,,,unchecked
@@ -670,7 +670,6 @@ producer,co-p-000423,colorado_proud,,,,unchecked
 producer,co-p-000424,colorado_proud,,,,unchecked
 outlet,co-o-000061,colorado_proud,,,,unchecked
 producer,co-p-000425,colorado_proud,,,,unchecked
-producer,co-p-000426,usda_lfd,,,,unchecked
 market,co-m-000066,usda_lfd,,,,unchecked
 market,co-m-000067,producer_site,https://www.glenwoodspringsdda.com/market-on-7th/,,,unchecked
 market,co-m-000067,cfma,,,,unchecked
@@ -816,7 +815,7 @@ producer,co-p-000511,colorado_proud,,,,unchecked
 producer,co-p-000512,colorado_proud,,,,unchecked
 market,co-m-000077,producer_site,https://www.hobnobevents.com/,,,unchecked
 market,co-m-000077,usda_lfd,,,,unchecked
-market,co-m-000078,producer_site,,,,unchecked
+market,co-m-000078,producer_site,https://denverfarmersmarket.com,,,unchecked
 market,co-m-000078,cfma,,,,unchecked
 market,co-m-000078,usda_lfd,,,,unchecked
 producer,co-p-000513,usda_lfd,,,,unchecked
@@ -1736,7 +1735,6 @@ outlet,co-o-000145,colorado_proud,,,,unchecked
 producer,co-p-001100,usda_lfd,,,,unchecked
 producer,co-p-001101,colorado_proud,,,,unchecked
 producer,co-p-001102,curated,,,,unchecked
-producer,co-p-001103,curated,,,,unchecked
 producer,co-p-001104,colorado_proud,,,,unchecked
 producer,co-p-001105,colorado_proud,,,,unchecked
 producer,co-p-001106,curated,,,,unchecked
