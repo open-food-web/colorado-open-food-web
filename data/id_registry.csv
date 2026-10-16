@@ -1520,6 +1520,10 @@ co-loc|producer|https://www.hutchinsonhomestead.org/,co-loc-001516
 co-loc|loc|dramapothecary|store|howlmercantile,co-loc-001517
 co-loc|loc|alpenglowhivehoney|store|thefarmstand,co-loc-001518
 co-loc|loc|phytologyflowersfarm|store|salidagardensupply,co-loc-001519
+co-loc|loc|headwaterfarms|pickup|headwaterfarmsbuenavista,co-loc-001520
+co-loc|loc|headwaterfarms|pickup|headwaterfarmsgreenhousenathrop,co-loc-001521
+co-loc|loc|headwaterfarms|pickup|salidapickuplocation,co-loc-001522
+co-loc|loc|headwaterfarms|store|thelettuceheadfoodcompany,co-loc-001523
 co-m|309028,co-m-000001
 co-m|309117,co-m-000002
 co-m|business_profile_176,co-m-000003
@@ -4344,3 +4348,7 @@ co-ploc|https://www.hutchinsonhomestead.org/|home,co-ploc-001263
 co-ploc|loc|dramapothecary|store|howlmercantile,co-ploc-001264
 co-ploc|loc|alpenglowhivehoney|store|thefarmstand,co-ploc-001265
 co-ploc|loc|phytologyflowersfarm|store|salidagardensupply,co-ploc-001266
+co-ploc|loc|headwaterfarms|pickup|headwaterfarmsbuenavista,co-ploc-001267
+co-ploc|loc|headwaterfarms|pickup|headwaterfarmsgreenhousenathrop,co-ploc-001268
+co-ploc|loc|headwaterfarms|pickup|salidapickuplocation,co-ploc-001269
+co-ploc|loc|headwaterfarms|store|thelettuceheadfoodcompany,co-ploc-001270
