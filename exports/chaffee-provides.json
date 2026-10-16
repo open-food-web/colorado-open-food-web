@@ -553,7 +553,7 @@
     "dropin": "set",
     "pickup": "listing"
    },
-   "visit_note": "Self-serve farm general store; farm tours by booking",
+   "visit_note": null,
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -1564,7 +1564,7 @@
     "dropin": "set",
     "pickup": "listing"
    },
-   "visit_note": "Farm stand every Tuesday 4-6 (season ending soon)",
+   "visit_note": "Season ending soon",
    "months_open": [],
    "hours_text": "Tue: 4:00pm - 6:00pm",
    "hours": [
@@ -1808,7 +1808,7 @@
     "dropin": "set",
     "pickup": "listing"
    },
-   "visit_note": "Guided tours and a visitor center; beef from Hutchinson Ranch is sometimes sold here. Ask first",
+   "visit_note": "Beef from Hutchinson Ranch is sometimes sold here. Ask first",
    "months_open": [],
    "hours_text": "Sat-Sun: 1:00pm - 4:00pm (June-September; by appointment)",
    "hours": [
@@ -2328,7 +2328,7 @@
     "dropin": "set",
     "pickup": null
    },
-   "visit_note": "No farm stand; farm tours by request",
+   "visit_note": null,
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -2607,7 +2607,7 @@
     "dropin": "set",
     "pickup": "set"
    },
-   "visit_note": "Not open to the public; visits by appointment. Order online or by phone, or buy bouquets at Salida Garden Supply",
+   "visit_note": "Not open to the public. Order online or by phone, or buy bouquets at Salida Garden Supply",
    "months_open": [],
    "hours_text": "By appointment",
    "hours": [],
@@ -2702,7 +2702,7 @@
     "dropin": "set",
     "pickup": "set"
    },
-   "visit_note": "On-farm pickup by arrangement; visits by appointment; also delivers in Salida and Poncha Springs",
+   "visit_note": "On-farm pickup by arrangement; also delivers in Salida and Poncha Springs",
    "months_open": [],
    "hours_text": "By appointment",
    "hours": [],
@@ -2805,7 +2805,7 @@
     "dropin": "set",
     "pickup": "listing"
    },
-   "visit_note": "Self-serve honor-system farm stand, Mon-Sat 8-6, May-Nov",
+   "visit_note": null,
    "months_open": [
     "May",
     "June",
@@ -2987,7 +2987,7 @@
     "dropin": "set",
     "pickup": "listing"
    },
-   "visit_note": "Retail meat shop at the plant, open Mon-Sat (hours from a business directory)",
+   "visit_note": "Hours are from a business directory",
    "months_open": [],
    "hours_text": null,
    "hours": [],
@@ -3304,7 +3304,7 @@
     "dropin": "set",
     "pickup": "listing"
    },
-   "visit_note": "On-farm store; pick-your-own flowers by appointment, June-October",
+   "visit_note": null,
    "months_open": [],
    "hours_text": "Pick-your-own flowers by appointment, June–October",
    "hours": [],
@@ -3702,7 +3702,7 @@
     "dropin": "set",
     "pickup": "listing"
    },
-   "visit_note": "Farm stand, Tue-Sun",
+   "visit_note": null,
    "months_open": [],
    "hours_text": "Tue-Sun: 8:00am - 6:00pm",
    "hours": [
