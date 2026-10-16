@@ -310,7 +310,7 @@ class ExportApp(unittest.TestCase):
 
     def test_city_names_are_tidied(self):
         for raw, want in [("LONGMONT", "Longmont"), ("Fort collins", "Fort Collins"), ("Rocky Ford, CO", "Rocky Ford"),
-                          ("Carbondale 81623", "Carbondale"), ("McCoy", "McCoy"), ("DeBeque", "DeBeque"), ("", "")]:
+                          ("Carbondale 81623", "Carbondale"), ("McCoy", "McCoy"), ("Bennett,", "Bennett"), ("Ft. Collins", "Fort Collins"), ("CANON CITY", "Cañon City"), ("Ca�on City", "Cañon City"), ("DeBeque", "DeBeque"), ("", "")]:
             self.assertEqual(clean_city(raw), want)
         doc = self.export([row("A Farm", "Roadside Market", Address="1 Rd", City="FORT COLLINS", Latitude="38.5", Longitude="-106")])
         self.assertEqual(doc["producers"][0]["locations"][0]["city"], "Fort Collins")

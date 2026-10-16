@@ -33,10 +33,14 @@ TOWNS = os.path.join(HERE, "..", "data", "towns.csv")
 
 def clean_city(name):
     """Tidy a town name for display: drop a trailing ", CO" or ZIP, and capitalize words typed all in
-    upper or lower case ("LONGMONT", "Fort collins"). Mixed-case words (McCoy, DeBeque) are left alone."""
+    upper or lower case ("LONGMONT", "Fort collins"). "Ft." becomes "Fort" and Cañon City is spelled one way. Mixed-case words (McCoy, DeBeque) are left alone."""
     if not name:
         return name
     name = re.sub(r"(?i)[,\s]+(co|colo\.?|colorado)?[\s,]*\d{5}(-\d{4})?\s*$|,\s*(co|colo\.?|colorado)\s*$", "", name.strip())
+    name = re.sub(r"[,\s]+$", "", name)
+    name = re.sub(r"(?i)^ft\.?\s+", "Fort ", name)
+    if re.fullmatch(r"(?i)ca.on city", name):  # Canon City, or its accent lost to a bad character
+        return "Cañon City"
     words = [w if (w != w.upper() and w != w.lower()) else w.capitalize() for w in re.split(r"(?<=[\s-])|(?=[\s-])", name) if w]
     return re.sub(r"\s+", " ", "".join(words)).strip() or None
 
