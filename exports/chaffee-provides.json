@@ -44,7 +44,8 @@
    "delivery": "Delivery",
    "online": "Online orders",
    "wholesale": "Wholesale",
-   "retail_partners": "Sold in stores"
+   "retail_partners": "Sold in stores",
+   "none": "No public sales"
   },
   "months": [
    "January",
@@ -138,7 +139,9 @@
    "email": null,
    "facebook": "https://www.facebook.com/p/Alpenglow-Hive-Honey-61586258981365/",
    "instagram": null,
-   "sales_channels": [],
+   "sales_channels": [
+    "retail_partners"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -161,6 +164,26 @@
      "precision": "none",
      "pin": false,
      "pin_basis": "unconfirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": null
+    },
+    {
+     "id": "co-loc-001518",
+     "role": "store",
+     "name": "The Farmstand",
+     "address": "County Road 306",
+     "city": "Buena Vista",
+     "zip": "81211",
+     "county_fips": "08015",
+     "lat": 38.81435,
+     "lon": -106.276176,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
      "days": [],
      "hours_text": null,
      "season_start": null,
@@ -811,7 +834,9 @@
    "email": "info@coloradofarmtotable.org",
    "facebook": "https://www.facebook.com/nonprofitfarm/",
    "instagram": "https://www.instagram.com/colorado_farm_to_table/",
-   "sales_channels": [],
+   "sales_channels": [
+    "none"
+   ],
    "sells_at": [],
    "certified_organic": null,
    "accepts_snap": null,
@@ -832,7 +857,7 @@
      "lat": 38.553956,
      "lon": -106.019829,
      "precision": "exact",
-     "pin": true,
+     "pin": false,
      "pin_basis": "unconfirmed",
      "days": [],
      "hours_text": null,
@@ -1061,6 +1086,26 @@
      "season_end": null,
      "status": "listed",
      "confirm_url": null
+    },
+    {
+     "id": "co-loc-001517",
+     "role": "store",
+     "name": "Howl Mercantile",
+     "address": "130 W 1st St",
+     "city": "Salida",
+     "zip": "81201",
+     "county_fips": "08015",
+     "lat": null,
+     "lon": null,
+     "precision": "none",
+     "pin": false,
+     "pin_basis": "confirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": "https://www.dramapothecary.com/about/"
     }
    ],
    "sources": [
@@ -1103,7 +1148,7 @@
    "phone": "(719) 530-1597",
    "email": null,
    "facebook": "https://www.facebook.com/everettranchbeef/",
-   "instagram": null,
+   "instagram": "https://www.instagram.com/everettranchbeef/",
    "sales_channels": [],
    "sells_at": [],
    "certified_organic": null,
