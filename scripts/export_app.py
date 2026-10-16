@@ -132,7 +132,7 @@ def main():
     exclude_kinds = set(cfg.get("exclude_kinds") or [])   # e.g. ["bakery"]: a whole category left out of a launch
 
     locations = {r["location_id"]: r for r in T("locations")}
-    towns = [(r["name"], float(r["lat"]), float(r["lon"])) for r in read(TOWNS) if r["county_fips"] in a.county_fips]
+    towns = [(r["name"], float(r["lat"]), float(r["lon"]), r["county_fips"]) for r in read(TOWNS) if r["county_fips"] in a.county_fips]
     links = {}
     for r in T("source_links"):
         links.setdefault((r["record_type"], r["record_id"]), []).append(r)
@@ -213,7 +213,9 @@ def main():
         hidden = boolish(L["hide_address"]) is True
         town = None
         if hidden and lat is not None and towns:
-            town = min(towns, key=lambda t: km((lat, lon), (t[1], t[2])))
+            # prefer a town in the location's own county, so a statewide export does not pull a pin across a county line
+            own = [t for t in towns if t[3] == L["county_fips"]] or towns
+            town = min(own, key=lambda t: km((lat, lon), (t[1], t[2])))
             lat, lon = town[1], town[2]
         street = None if hidden else (L["address"] or None)
         if street and re.match(r"(?i)\s*p\.?\s*o\.?\s*box", street):  # a mailbox is not a place to visit
