@@ -1064,3 +1064,10 @@ Copper Kettle Apothecary,Salida,Products,set,"Bulk herbs, honey, lavender, seeds
 Sweet Pea Farm’s Wildflower Honey,Salida,Latitude,set,38.5267157,"Farm stand at this address, confirmed by the maintainer (2026-10-15); coordinates given by the maintainer",2026-10-15
 Sweet Pea Farm’s Wildflower Honey,Salida,Longitude,set,-106.0449229,"Farm stand at this address, confirmed by the maintainer (2026-10-15); coordinates given by the maintainer",2026-10-15
 Hutchinson Ranch,Salida,Category,set,"Agritourism, On-Farm / Ranch Sales","Now mostly an agritourism, wedding and events venue with on-site lodging, so not a working ranch (kind agritourism); it still sells beef (maintainer, 2026-10-15)",2026-10-15
+Berthoud Farmers' Market,Berthoud,Website,set,https://berthoud.org/1430/The-Berthoud-Market,Town of Berthoud page for The Berthoud Market (200 on 2026-10-15); replaces the dead link cleared earlier,2026-10-15
+Berthoud Farmers' Market,Berthoud,Address,set,200 N 7th Street,"Town page gives Town Park, 200 N 7th St; the old 1201 Lake Ave address is stale",2026-10-15
+Berthoud Farmers' Market,Berthoud,Hours,set,Sat: 9:00am - 1:00pm,"berthoud.org The Berthoud Market page: Saturdays 9am-1pm, June 13 - Sept 26 2026",2026-10-15
+Berthoud Farmers' Market,Berthoud,Months Open,set,"June, July, August, September",berthoud.org The Berthoud Market page (2026 season),2026-10-15
+Edwards Corner Farmers' Market,Edwards,Website,set,https://edwardsmetro.specialdistrict.org/farmer-s-market,Edwards Metro District page for the market (200 on 2026-10-15); replaces the compromised link cleared earlier,2026-10-15
+Highlands Ranch Farmers' Market,Highlands Ranch,Website,set,https://denverfarmersmarket.com,"Operator (Metro Denver Farmers' Market) site, loads 2026-10-15; the old /index.html link was the dead one",2026-10-15
+Metro Denver Farmers' Market-Littleton,Littleton,Website,set,https://denverfarmersmarket.com,"Operator site, loads 2026-10-15; the old /index.html link was the dead one. Latest dated listing found for this location is 2019, so season is unconfirmed",2026-10-15
