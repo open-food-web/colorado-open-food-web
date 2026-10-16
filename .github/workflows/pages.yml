@@ -35,6 +35,10 @@ jobs:
         run: gh release download --repo "${{ github.repository }}" --pattern "*" -D release
       - name: Build the site data
         run: python scripts/build_site.py --release-dir release
+      # The supply network page is not released yet (it will return as the Open Food Web Producer Network):
+      # keep its data out of the published site.
+      - name: Keep the unreleased supply network data out of the site
+        run: rm -f site/data/web.json
       - name: Build the map and directory data (statewide export)
         run: >
           python scripts/export_app.py --tables data/colorado --out site/data/food-web.json

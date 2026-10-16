@@ -29,7 +29,7 @@
     <div class="callout" id="stats">Loading directory stats…</div>
 
     <h2>Many listings are not on the map</h2>
-    <p>Most Colorado producers sell by CSA, online, at markets or from a home that is not open to visitors. A listing only gets a map pin when a source confirms a place where people can buy or visit, so a sparse map means missing confirmed places, not missing farms. Counties differ a lot in how much is mapped so far. The <a href="directory.html">directory</a> lists everything, mapped or not. The <a href="network.html">supply network</a> shows how producers, shops and restaurants connect.</p>
+    <p>Most Colorado producers sell by CSA, online, at markets or from a home that is not open to visitors. A listing only gets a map pin when a source confirms a place where people can buy or visit, so a sparse map means missing confirmed places, not missing farms. Counties differ a lot in how much is mapped so far. The <a href="directory.html">directory</a> lists everything, mapped or not.</p>
 
     <h2>Get the data</h2>
     <p>Free to use with credit: “Colorado Open Food Web”. <span id="rel"></span></p>
@@ -54,7 +54,7 @@ fetch("data/MANIFEST.json").then(function(r){ return r.json(); }).then(function(
   var base = "https://github.com/open-food-web/colorado-open-food-web/releases/download/" + m.version + "/";
   var labels = { "directory.csv":"Directory: every listing, one row each", "csa.json":"CSAs: confirmed farm shares", "places.json":"Places: town and ZIP centre points",
     "supply-network-nodes.csv":"Supply network: businesses", "supply-network-edges.csv":"Supply network: connections, with sources", "MANIFEST.json":"Manifest: counts and checksums" };
-  document.getElementById("files").innerHTML = Object.keys(m.files).concat(["MANIFEST.json"]).map(function(n){
+  document.getElementById("files").innerHTML = Object.keys(m.files).filter(function(n){ return !/^supply-network/.test(n); }).concat(["MANIFEST.json"]).map(function(n){
     return '<li><a href="' + base + n + '">' + CP.esc(labels[n] || n) + '</a> <span class="muted">· ' + CP.esc(n) + '</span></li>'; }).join("");
   document.getElementById("rel").textContent = "Release " + m.version + ", " + m.released + ".";
 }).catch(function(){ document.getElementById("files").innerHTML = '<li class="muted">The file list is unavailable right now. See the GitHub repository.</li>'; });
