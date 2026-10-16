@@ -3,5 +3,7 @@ __pycache__/
 .cache/
 .env
 release/
-site/data/
+site/data/web.json
+site/data/MANIFEST.json
+site/data/food-web.json
 .claude/

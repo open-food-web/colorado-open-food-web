@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" data-root=".">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Directory · Colorado Open Food Web </title>
+<meta name="description" content="Every farm, ranch, maker, farmers market, shop and free-food site in the Colorado Open Food Web, in one scrolling list you can search by what you want to buy.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="directory.html">
+<div id="site-header"></div>
+<main id="main" class="wrap">
+  <div class="dir-head">
+    <h1 style="margin:0">Directory</h1>
+    <p class="muted" style="max-width:62ch;margin:6px 0 0">Farms, ranches, farmers markets and free-food sites across Colorado. Prefer a map? <a href="index.html">Open the map →</a></p>
+  </div>
+  <div class="dir-tools">
+    <label class="sr-only" for="q">Search</label>
+    <input type="search" id="q" placeholder="Search honey, beef, eggs, a farm or a town…" autocomplete="off" list="suggest">
+    <datalist id="suggest"></datalist>
+    <div class="chips" id="products" role="group" aria-label="What are you looking for?"></div>
+    <div class="chips" id="cats" role="group" aria-label="Kind of place"></div>
+    <div class="row">
+      <label class="sr-only" for="town">Town</label>
+      <select id="town" style="max-width:260px"><option value="">All towns</option></select>
+      <label><input type="checkbox" id="snap"> Accepts SNAP</label>
+      <label><input type="checkbox" id="dropin"> Has a place to visit</label>
+      <span class="muted" id="count" aria-live="polite"></span>
+      <button id="reset" class="chip" type="button">Reset</button>
+    </div>
+  </div>
+  <div class="grid cols-3" id="cards"></div>
+  <p class="muted" style="margin:28px 0 56px">Something missing or out of date? <a href="list-your-business.html">Add a listing</a>, or use "Suggest an update" on any listing.</p>
+</main>
+<div id="site-footer"></div>
+<script src="assets/app.js"></script>
+<script>
+(function(){
+  "use strict";
+  var esc = CP.esc;
+  var state = { q:"", cat:"", product:"", town:"", snap:false, dropin:false };
+  var els = { q:document.getElementById("q"), cats:document.getElementById("cats"), products:document.getElementById("products"),
+    town:document.getElementById("town"), snap:document.getElementById("snap"), dropin:document.getElementById("dropin"), count:document.getElementById("count"),
+    cards:document.getElementById("cards"), suggest:document.getElementById("suggest") };
+  var ALL = [];
+
+  function readUrl(){
+    var p = new URLSearchParams(location.search);
+    ["q","cat","product","town"].forEach(function(k){ state[k] = p.get(k) || ""; });
+    state.snap = p.get("snap") === "1"; state.dropin = p.get("dropin") === "1";
+  }
+  function writeUrl(){
+    var p = new URLSearchParams();
+    ["q","cat","product","town"].forEach(function(k){ if(state[k]) p.set(k, state[k]); });
+    if(state.snap) p.set("snap","1");
+    if(state.dropin) p.set("dropin","1");
+    var s = p.toString();
+    history.replaceState(null, "", location.pathname + (s ? "?"+s : ""));
+  }
+  function chip(group, key, label, dot){
+    var b = document.createElement("button");
+    b.className = "chip"; b.type = "button"; b.dataset.key = key;
+    b.innerHTML = (dot ? '<span class="dot" style="background:'+dot+'"></span>' : "") + esc(label);
+    b.addEventListener("click", function(){ state[group] = state[group] === key ? "" : key; sync(); apply(); });
+    return b;
+  }
+  function sync(){
+    els.q.value = state.q; els.town.value = state.town; els.snap.checked = state.snap; els.dropin.checked = state.dropin;
+    [["cat",els.cats],["product",els.products]].forEach(function(g){
+      g[1].querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed", c.dataset.key === state[g[0]] ? "true" : "false"); });
+    });
+  }
+  function passes(r){
+    if(state.cat && r.cat !== state.cat) return false;
+    if(state.product && r.productGroups.indexOf(state.product) === -1) return false;
+    if(state.town && r.towns.indexOf(state.town) === -1) return false;
+    if(state.snap && r.raw.accepts_snap !== true) return false;
+    if(state.dropin && r.canVisit !== true) return false;
+    if(state.q){
+      var words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+      for(var i=0;i<words.length;i++) if(r.search.indexOf(words[i]) === -1) return false;
+    }
+    return true;
+  }
+  function card(r){
+    var st = CP.typeStyle(r.cat);
+    var line = r.group === "access" ? (r.hours || "") : "";
+    return '<a class="biz" href="'+CP.recUrl(r)+'">'+CP.photoHtml(r, "photo", true)
+      + '<div class="body"><span class="tag" style="color:'+st.color+'">'+esc(CP.catLabel(r.cat))+'</span>'+CP.visitBadge(r)
+      + '<h3>'+esc(r.name)+'</h3>'
+      + '<div class="meta">'+esc(r.towns.slice(0,3).join(", "))+'</div>'
+      + (r.productText.length ? '<div class="chipline">'+r.productText.map(function(c){ return '<span class="mini-chip">'+esc(c)+'</span>'; }).join("")+'</div>' : '')
+      + (line ? '<div class="meta">'+esc(line.length > 70 ? line.slice(0,67)+"…" : line)+'</div>' : '')
+      + '</div></a>';
+  }
+  function apply(){
+    writeUrl();
+    var shown = ALL.filter(passes);
+    CP.browse.save(shown.map(function(r){ return r.slug; }));
+    els.cards.innerHTML = shown.map(card).join("") || '<p class="muted">Nothing matches those filters.</p>';
+    els.count.textContent = shown.length + " of " + ALL.length + " listings";
+  }
+  function reset(){ state = { q:"", cat:"", product:"", town:"", snap:false, dropin:false }; sync(); apply(); }
+  var t;
+  els.q.addEventListener("input", function(){ clearTimeout(t); t = setTimeout(function(){ state.q = els.q.value.trim(); apply(); }, 150); });
+  els.town.addEventListener("change", function(){ state.town = els.town.value; apply(); });
+  els.snap.addEventListener("change", function(){ state.snap = els.snap.checked; apply(); });
+  els.dropin.addEventListener("change", function(){ state.dropin = els.dropin.checked; apply(); });
+  document.getElementById("reset").addEventListener("click", reset);
+
+  CP.loadModel().then(function(M){
+    ALL = M.recs.slice().sort(function(a, b){ return a.name.localeCompare(b.name); });
+    var usedP = {}; ALL.forEach(function(r){ r.productGroups.forEach(function(g){ usedP[g] = 1; }); });
+    Object.keys(M.vocab.product_groups).filter(function(k){ return usedP[k]; }).forEach(function(k){ els.products.appendChild(chip("product", k, M.vocab.product_groups[k])); });
+    Object.keys(CP.GROUPS).filter(function(k){ return ALL.some(function(r){ return r.cat === k; }); }).forEach(function(k){
+      els.cats.appendChild(chip("cat", k, CP.GROUPS[k].label, CP.typeStyle(k).hex));
+    });
+    var towns = {}; ALL.forEach(function(r){ r.towns.forEach(function(t){ towns[t] = (towns[t]||0) + 1; }); });
+    Object.keys(towns).sort().forEach(function(t){ var o = document.createElement("option"); o.value = t; o.textContent = t+" ("+towns[t]+")"; els.town.appendChild(o); });
+    var names = {}; ALL.forEach(function(r){ names[r.name] = 1; r.towns.forEach(function(t){ names[t] = 1; }); });
+    Object.keys(M.vocab.product_groups).forEach(function(k){ if(usedP[k]) names[M.vocab.product_groups[k]] = 1; });
+    els.suggest.innerHTML = Object.keys(names).sort().map(function(n){ return '<option value="'+esc(n)+'">'; }).join("");
+    readUrl(); sync(); apply();
+  }).catch(function(e){ els.cards.innerHTML = '<p>Could not load the listings ('+esc(e.message)+').</p>'; });
+})();
+</script>
+</body>
+</html>

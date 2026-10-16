@@ -1,103 +1,295 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-root=".">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Colorado Open Food Web</title>
-<meta name="description" content="An open, shared dataset of how Colorado's food connects: the producers, markets, and the restaurants and stores that carry their food.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='4' fill='%232f6b3f'/%3E%3Ccircle cx='6' cy='8' r='3' fill='%23c9892b'/%3E%3Ccircle cx='26' cy='9' r='3' fill='%23c4553a'/%3E%3Ccircle cx='8' cy='26' r='3' fill='%23247a79'/%3E%3Cpath d='M16 16L6 8M16 16L26 9M16 16L8 26' stroke='%232f6b3f' stroke-width='1.5'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
+<meta name="robots" content="noindex, nofollow">
+<title>Find Local Food · Colorado Open Food Web</title>
+<meta name="description" content="Map of Colorado farms, ranches, makers, farm stands, farmers markets, shops and free-food sites. Search by what you want to buy.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css">
+<link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
-<a class="skip" href="#web">Skip to the food web</a>
-
-<header class="top">
-  <a class="brand" href="#top" aria-label="Colorado Open Food Web">
-    <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path d="M16 16L6 8M16 16L26 9M16 16L8 26" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="16" cy="16" r="4" fill="var(--farm)"/><circle cx="6" cy="8" r="3" fill="var(--maker)"/><circle cx="26" cy="9" r="3" fill="var(--restaurant)"/><circle cx="8" cy="26" r="3" fill="var(--retail)"/></svg>
-    Colorado Open Food Web
-  </a>
-  <nav aria-label="Main">
-    <a href="#web">The web</a>
-    <a href="#data">Get the data</a>
-    <a href="#fix">Fix something</a>
-    <a href="https://github.com/open-food-web/colorado-open-food-web">GitHub</a>
-  </nav>
-</header>
-
-<main id="top">
-  <section class="hero">
-    <p class="eyebrow">Open data · CC BY 4.0</p>
-    <h1>Who grows, sells and serves Colorado's food, and how they connect.</h1>
-    <p class="lede">The Colorado Open Food Web is a free, shared dataset of Colorado's producers, markets, and the restaurants and stores that carry their food. It is built from public sources, checked, and kept accurate in the open, so every project that helps people find local food can start from the same list.</p>
-    <p class="cta">
-      <a class="btn primary" href="#web">Explore the web</a>
-      <a class="btn" href="#data">Get the data</a>
-      <a class="btn" href="https://github.com/open-food-web/colorado-open-food-web/blob/main/docs/PARTNERS.md">Partner with us</a>
-    </p>
-    <dl class="stats" id="stats" aria-label="The data at a glance"></dl>
-  </section>
-
-  <section id="web" class="web" aria-labelledby="web-h">
-    <div class="sec-head">
-      <h2 id="web-h">The food web</h2>
-      <p>Each dot is a business; each line says one supplies the other, with the source behind the claim. Hover to see who is connected, click for details, drag to move things around.</p>
-    </div>
-    <div class="explorer">
-      <aside class="controls" aria-label="Filter the web">
-        <label class="search"><span>Find a business</span>
-          <input id="q" type="search" placeholder="Name or town" autocomplete="off" aria-controls="results">
-        </label>
-        <ul id="results" class="results" role="listbox" aria-label="Matches"></ul>
-        <fieldset class="legend">
-          <legend>Show</legend>
-          <div id="chips"></div>
-        </fieldset>
-        <p class="key"><svg width="34" height="8" aria-hidden="true"><line x1="0" y1="4" x2="34" y2="4" stroke="currentColor" stroke-width="2"/></svg> sourced
-          <svg width="34" height="8" aria-hidden="true"><line x1="0" y1="4" x2="34" y2="4" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/></svg> not yet confirmed</p>
-      </aside>
-      <div class="stage">
-        <svg id="graph" role="img" aria-label="Network of Colorado food businesses and who supplies whom. Use the search box and the detail panel to browse it as text."></svg>
-        <div class="hint" id="hint">Loading the web…</div>
+<body data-page="index.html">
+<script>
+// ?embed=1 shows the map alone (no header, filters or footer), for embedding on another page.
+if (new URLSearchParams(location.search).get("embed") === "1") document.documentElement.classList.add("embed");
+</script>
+<div id="site-header"></div>
+<main id="main" class="finder" data-view="list">
+  <aside aria-label="Filters and results">
+    <div class="filters">
+      <h1 style="font-size:1.6rem;margin:0">Find local food in Colorado</h1>
+      <p id="overview" class="overview" aria-live="polite"></p>
+      <label class="sr-only" for="q">Search</label>
+      <input type="search" id="q" placeholder="Search honey, beef, eggs, a farm or a town…" autocomplete="off" list="suggest">
+      <datalist id="suggest"></datalist>
+      <div class="chips" id="products" role="group" aria-label="What are you looking for?"></div>
+      <div class="row">
+        <label for="county" class="sr-only">County</label>
+        <select id="county" style="flex:1"><option value="">All of Colorado</option></select>
       </div>
-      <aside class="detail" id="detail" aria-live="polite">
-        <p class="empty">Select a business to see who it buys from and who it supplies.</p>
-      </aside>
+      <div class="row">
+        <label for="town" class="sr-only">Town</label>
+        <select id="town" style="flex:1"><option value="">All towns</option></select>
+        <label><input type="checkbox" id="snap"> Accepts SNAP</label>
+      </div>
+      <div class="row"><label><input type="checkbox" id="dropin"> Has a place to visit</label></div>
+      <div class="mobile-toggle" role="group" aria-label="View">
+        <button class="chip" data-view="list" aria-pressed="true">List</button>
+        <button class="chip" data-view="map" aria-pressed="false">Map</button>
+      </div>
     </div>
-  </section>
-
-  <section class="how" aria-labelledby="how-h">
-    <h2 id="how-h">How it stays accurate</h2>
-    <ol class="steps">
-      <li><b>Sources are pulled on a schedule.</b> USDA's Local Food Directories, Colorado Proud, the Colorado Farmers Market Association, and hand research. Every field records where it came from.</li>
-      <li><b>Every change is reviewed.</b> A refresh opens a pull request that shows exactly what is new, changed or gone. Nothing is applied until a person approves it.</li>
-      <li><b>Contact details are checked.</b> An email appears only if the business lists it on its own website or Facebook page.</li>
-      <li><b>Releases are versioned.</b> Apps pin a release and check its checksum, so an update never surprises them.</li>
-    </ol>
-    <p class="note">Facts only: no copied descriptions or photos. Records link to their sources instead.</p>
-  </section>
-
-  <section id="data" class="data" aria-labelledby="data-h">
-    <h2 id="data-h">Get the data</h2>
-    <p>Free to use with credit: "Colorado Open Food Web". <span id="rel"></span></p>
-    <ul class="files" id="files"></ul>
-    <p class="note">Each file's sha256 is in <a href="data/MANIFEST.json">the manifest</a>. How apps pin and use releases: <a href="https://github.com/open-food-web/colorado-open-food-web/blob/main/docs/RELEASES.md">docs/RELEASES.md</a>.</p>
-  </section>
-
-  <section id="fix" class="fix" aria-labelledby="fix-h">
-    <h2 id="fix-h">See something wrong? Fix it.</h2>
-    <p>Every business in the web has a <b>Flag a change</b> button. It opens a short form on GitHub, already filled in with the business's name. A free GitHub account is the only sign-in; your report is public, reviewed by a person, and credited to you. Producers can also ask to correct or remove their own record.</p>
-    <p class="cta">
-      <a class="btn" href="https://github.com/open-food-web/colorado-open-food-web/issues/new?template=correction.yml">Report a correction</a>
-      <a class="btn" href="https://github.com/open-food-web/colorado-open-food-web/issues/new?template=new-listing.yml">Add a missing listing</a>
-    </p>
-  </section>
+    <div class="count"><span id="count" aria-live="polite"></span><button id="reset" class="chip" style="padding:2px 10px">Reset</button></div>
+    <div class="list" id="list"></div>
+  </aside>
+  <div class="mapbox"><div id="map" role="region" aria-label="Map of places to buy local food"></div></div>
 </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+<script src="assets/app.js"></script>
+<script>
+(function(){
+  "use strict";
+  var esc = CP.esc;
+  var state = { q:"", cat:"", product:"", county:"", town:"", snap:false, dropin:false };
+  var els = { q:document.getElementById("q"), products:document.getElementById("products"),
+    county:document.getElementById("county"), town:document.getElementById("town"), snap:document.getElementById("snap"), dropin:document.getElementById("dropin"), list:document.getElementById("list"),
+    overview:document.getElementById("overview"), count:document.getElementById("count"), suggest:document.getElementById("suggest") };
 
-<footer>
-  <p>Colorado Open Food Web · data <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code MIT · <a href="https://github.com/open-food-web/colorado-open-food-web/blob/main/docs/CHARTER.md">Charter</a> · <a href="https://github.com/open-food-web/colorado-open-food-web/blob/main/docs/SCHEMA.md">Schema</a> · <a href="https://coloradofarmtrail.com">See it in an app: the Colorado Farm Trail</a></p>
-</footer>
+  var map = L.map("map", { zoomControl:false, scrollWheelZoom:true }).setView([39.0, -105.55], 7);
+  L.control.zoom({ position:"bottomright" }).addTo(map);
+  CP.basemap(map);
+  var COLORADO = L.latLngBounds([[36.95,-109.1],[41.05,-102.0]]), BOXES = {};
+  // Pins cluster so 300+ places stay readable; a cluster's number is the places under the current filters.
+  var layer = L.markerClusterGroup({ maxClusterRadius:48, showCoverageOnHover:false, spiderfyOnMaxZoom:true, disableClusteringAtZoom:14, chunkedLoading:true,
+    iconCreateFunction:function(c){
+      var n = c.getChildCount();
+      return L.divIcon({ className:"", iconSize:[40,40], html:'<div class="cluster"><span>'+n+'</span></div>' });
+    } }).addTo(map);
+  var MODEL = null, ALL = [];
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
-<script src="app.js"></script>
+  // URL <-> state, so any filtered view can be shared or bookmarked.
+  function readUrl(){
+    var p = new URLSearchParams(location.search);
+    state.q = p.get("q") || ""; state.cat = p.get("cat") || ""; state.product = p.get("product") || "";
+    state.county = p.get("county") || ""; state.town = p.get("town") || ""; state.snap = p.get("snap") === "1"; state.dropin = p.get("dropin") === "1";
+  }
+  function writeUrl(){
+    var p = new URLSearchParams(), cur = new URLSearchParams(location.search);
+    ["embed","basemap"].forEach(function(k){ if(cur.get(k)) p.set(k, cur.get(k)); });
+    ["q","cat","product","county","town"].forEach(function(k){ if(state[k]) p.set(k, state[k]); });
+    if(state.snap) p.set("snap","1");
+    if(state.dropin) p.set("dropin","1");
+    var s = p.toString();
+    history.replaceState(null, "", location.pathname + (s ? "?"+s : ""));
+  }
+
+  function chip(group, key, label, dot){
+    var b = document.createElement("button");
+    b.className = "chip"; b.type = "button"; b.dataset.key = key;
+    b.innerHTML = (dot ? '<span class="dot" style="background:'+dot+'"></span>' : "") + esc(label);
+    b.addEventListener("click", function(){ state[group] = state[group] === key ? "" : key; sync(); apply(); });
+    return b;
+  }
+  // Map key: pin color = kind of place. Each entry also filters. A 📍 pin is a pickup point of that color.
+  function addLegend(){
+    var Legend = L.Control.extend({ options:{ position:"bottomleft" }, onAdd:function(){
+      var div = L.DomUtil.create("div", "map-legend");
+      var cats = Object.keys(CP.GROUPS).filter(function(k){ return ALL.some(function(r){ return r.cat === k; }); });
+      div.innerHTML = '<div class="map-legend-title">Map key</div>' + cats.map(function(k){
+        return '<button type="button" data-key="'+k+'"><span class="pin-swatch" style="background:'+CP.typeStyle(k).hex+'"><span aria-hidden="true">'+CP.typeStyle(k).emoji+'</span></span>'+esc(CP.GROUPS[k].label)+'</button>';
+      }).join("") + '<div class="map-legend-note"><span class="pin-swatch" style="background:#7a7a72"><span aria-hidden="true">📍</span></span>Pickup point</div><div class="map-legend-note"><span class="pin-swatch" style="background:#7a7a72"><span aria-hidden="true">' + CP.typeStyle("market").emoji + '</span></span>Sells at a farmers market</div>'
+        + '<div class="map-legend-note"><span class="pin-swatch faded" style="background:#7a7a72"><span aria-hidden="true"></span></span>Faded: not confirmed yet</div>';
+      L.DomEvent.disableClickPropagation(div);
+      // 15 kinds make a tall key: fold it away on small screens, and let the title open and close it.
+      var title = div.querySelector(".map-legend-title");
+      title.setAttribute("role", "button"); title.setAttribute("tabindex", "0"); title.style.cursor = "pointer";
+      function fold(on){ div.classList.toggle("folded", on); title.textContent = on ? "Map key ▸" : "Map key ▾"; title.setAttribute("aria-expanded", on ? "false" : "true"); }
+      title.addEventListener("click", function(){ fold(!div.classList.contains("folded")); });
+      title.addEventListener("keydown", function(e){ if(e.key === "Enter" || e.key === " "){ e.preventDefault(); fold(!div.classList.contains("folded")); } });
+      fold(window.innerWidth < 800 || window.innerHeight < 900);
+      div.querySelectorAll("button").forEach(function(b){
+        b.addEventListener("click", function(){ state.cat = state.cat === b.dataset.key ? "" : b.dataset.key; sync(); apply(); });
+      });
+      return div;
+    }});
+    new Legend().addTo(map);
+  }
+  function sync(){
+    els.q.value = state.q; els.county.value = state.county; els.town.value = state.town; els.snap.checked = state.snap; els.dropin.checked = state.dropin;
+    [["product",els.products]].forEach(function(g){
+      g[1].querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed", c.dataset.key === state[g[0]] ? "true" : "false"); });
+    });
+    document.querySelectorAll(".map-legend button").forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.key === state.cat ? "true" : "false"); });
+  }
+
+  // Which of a record's places are shown under the current filters (the record shows if any are).
+  function shownPlaces(r){
+    if(state.cat && r.cat !== state.cat) return null;
+    if(state.product && r.productGroups.indexOf(state.product) === -1) return null;
+    if(state.snap && r.raw.accepts_snap !== true) return null;
+    if(state.dropin && r.canVisit !== true) return null;
+    if(state.q){
+      var words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+      for(var i=0;i<words.length;i++) if(r.search.indexOf(words[i]) === -1) return null;
+    }
+    var ps = r.places.filter(function(p){ return (!state.county || p.loc.county_fips === state.county) && (!state.town || p.loc.city === state.town); });
+    if(ps.length) return ps;
+    // A listing with no place of its own (kept off the map on purpose) still belongs to its county and town.
+    if(!r.places.length && (!state.county || r.counties.indexOf(state.county) !== -1) && (!state.town || r.towns.indexOf(state.town) !== -1)) return [];
+    return null;
+  }
+
+  function catTag(r){ var st = CP.typeStyle(r.cat); return '<span class="tag" style="color:'+st.color+'">'+esc(CP.catLabel(r.cat))+'</span>'; }
+  function popup(p){
+    var r = p.rec;
+    var where = CP.placeLabel(p);
+    var visitsHere = p.role === "home_base" && r.visits.length;   // named ways to visit, each with its own hours
+    var title = p.title !== p.loc.address && p.title !== p.loc.city && p.title !== r.name ? p.title : "";
+    var addr = p.loc.address ? esc(p.loc.address) + (p.loc.city && p.loc.address.toLowerCase().indexOf(p.loc.city.toLowerCase()) === -1 ? ", " + esc(p.loc.city) : "") : (p.loc.city ? esc(p.loc.city) : "");
+    return '<h4>'+esc(r.name)+'</h4><div style="margin:2px 0 6px"><a href="'+CP.recUrl(r)+'">Details →</a></div><div style="margin-bottom:6px">'+catTag(r)+'</div>'
+      + '<div style="font-size:.9rem">'+(visitsHere ? r.visits.map(function(v){ return '<div><strong>'+esc(v.label)+'</strong>'+(v.detail ? ' · '+esc(v.detail) : '')+'</div>'; }).join("") : '<strong>'+esc(where)+(title ? ": "+esc(title) : "")+'</strong>')+(addr ? '<br>'+addr : '')+(p.hours && !visitsHere ? '<br>'+esc(p.hours) : '')+'</div>'
+      + (r.productText.length ? '<div class="muted" style="font-size:.85rem;margin-top:6px">'+esc(r.productText.join(" · "))+'</div>' : '')
+      + (p.unconfirmed ? '<div class="muted" style="font-size:.84rem;margin-top:6px">Not confirmed yet that they sell here.</div>' : '')
+      + (r.raw.phone || r.raw.website ? '<div style="margin-top:6px;font-size:.9rem">'
+        + [r.raw.phone ? '<a href="tel:'+esc(r.raw.phone.replace(/[^0-9+]/g,""))+'">'+esc(r.raw.phone)+'</a>' : "", r.raw.website ? CP.safeLink(r.raw.website, "Website") : ""].filter(Boolean).join(' · ') + '</div>' : '')
+      + '<div style="margin-top:8px"><a href="'+CP.directions(p)+'" target="_blank" rel="noopener">Directions</a></div>';
+  }
+
+  // Several businesses can sell at one spot (a farmers market, a pickup lot). One pin per place, listing who is there.
+  function groupPopup(g){
+    var lead = g.ps.filter(function(p){ return p.role === "market_site" || p.role === "access_site"; })[0] || g.ps[0];
+    var L0 = lead.loc, isMarket = lead.role === "market_site";
+    var title = isMarket ? lead.rec.name : (L0.name || L0.address || L0.city || "This spot");
+    var others = g.ps.filter(function(p){ return p !== lead || !isMarket; });
+    var addr = L0.address ? esc(L0.address) + (L0.city && L0.address.toLowerCase().indexOf(L0.city.toLowerCase()) === -1 ? ", " + esc(L0.city) : "") : esc(L0.city || "");
+    var items = others.map(function(p){
+      return '<li><a href="'+CP.recUrl(p.rec)+'">'+esc(p.rec.name)+'</a>'+(p.rec.productText.length ? ' <span class="muted">· '+esc(p.rec.productText.slice(0,3).join(", "))+'</span>' : '')+'</li>';
+    }).join("");
+    return '<h4>'+esc(title)+'</h4>'+(isMarket ? '<div style="margin:2px 0 6px"><a href="'+CP.recUrl(lead.rec)+'">Market details →</a></div>' : '')+'<div style="font-size:.9rem">'+addr+(lead.hours ? '<br>'+esc(lead.hours) : '')+'</div>'
+      + '<div class="muted" style="margin-top:8px;font-size:.85rem">'+(isMarket ? "Vendors here (" + others.length + "):" : "Businesses here:")+'</div>'
+      + '<ul class="plain" style="max-height:170px;overflow:auto;font-size:.9rem">'+items+'</ul>'
+      + '<div style="margin-top:8px"><a href="'+CP.directions(lead)+'" target="_blank" rel="noopener">Directions</a></div>';
+  }
+
+  function apply(){
+    writeUrl();
+    var stamp = apply.n = (apply.n || 0) + 1;
+    var rows = ALL.map(function(r){ return { r:r, ps:shownPlaces(r) }; }).filter(function(x){ return x.ps; });
+    CP.browse.save(rows.map(function(x){ return x.r.slug; }));
+    layer.clearLayers();
+    els.list.innerHTML = rows.map(function(x){
+      var r = x.r, pins = x.ps.filter(function(p){ return p.pin; }).length;
+      var sub = [r.towns.slice(0,3).join(", "), r.productText.slice(0,4).join(" · ") || (r.group === "access" ? (r.hours || "") : "")].filter(Boolean).join(" · ");
+      return '<a class="result" href="'+CP.recUrl(r)+'" data-id="'+esc(r.id)+'"><strong>'+esc(r.name)+'</strong>'
+        + '<div class="types">'+catTag(r)+CP.visitBadge(r)+'</div><div class="sub">'+esc(sub)+(pins > 1 ? ' · '+pins+' places' : '')+'</div></a>';
+    }).join("") || '<p style="padding:16px" class="muted">Nothing matches those filters. <button class="chip" id="reset2">Clear filters</button></p>';
+    var r2 = document.getElementById("reset2"); if(r2) r2.addEventListener("click", reset);
+
+    var pins = [];
+    rows.forEach(function(x){ x.ps.forEach(function(p){ if(p.pin) pins.push(p); }); });
+    var byLoc = {};
+    pins.forEach(function(p){ (byLoc[p.loc.id] = byLoc[p.loc.id] || []).push(p); });
+    var markers = [];
+    var groups = Object.keys(byLoc).map(function(k){ return { id:k, ps:byLoc[k], lat:byLoc[k][0].lat, lng:byLoc[k][0].lng }; });
+    var offs = CP.fanOut(groups);
+    var bounds = [];
+    groups.forEach(function(g){
+      var lead = g.ps.filter(function(p){ return p.role === "market_site" || p.role === "access_site"; })[0] || g.ps[0];
+      var many = g.ps.length > 1;
+      var unconf = g.ps.every(function(p){ return p.unconfirmed; });
+      var m = L.marker([g.lat, g.lng], { icon:CP.pinIcon(lead.kind, offs[g.id], unconf, !many && lead.pickup, !many && lead.market), title:many ? (lead.role === "market_site" ? lead.rec.name : "Several businesses") : lead.rec.name })
+        .bindPopup(many ? groupPopup(g) : popup(lead), { maxWidth:300 });
+      g.ps.forEach(function(p){
+        m.on("mouseover", function(){ hl(p.rec.id, true); }); m.on("mouseout", function(){ hl(p.rec.id, false); });
+        if(p.rec._stamp !== stamp){ p.rec._m = m; p.rec._stamp = stamp; }
+      });
+      markers.push(m); bounds.push([g.lat, g.lng]);
+    });
+    layer.addLayers(markers);
+    var offMap = rows.filter(function(x){ return !x.ps.some(function(p){ return p.pin; }); }).length;
+    els.count.textContent = rows.length + " of " + ALL.length + " listings · " + groups.length + " places on the map" + (offMap ? " ("+offMap+" not on the map)" : "");
+    overview();
+    var filtered = state.q || state.cat || state.product || state.town || state.snap || state.dropin;
+    var fit = bounds.length ? L.latLngBounds(bounds) : null;
+    if(!filtered && !state.county) fit = COLORADO;                                         // the first screen is the whole state
+    else if(state.county && !state.town && !filtered && BOXES[state.county]) fit = L.latLngBounds([[BOXES[state.county][0], BOXES[state.county][1]], [BOXES[state.county][2], BOXES[state.county][3]]]);
+    else if(!fit && state.county && BOXES[state.county]) fit = L.latLngBounds([[BOXES[state.county][0], BOXES[state.county][1]], [BOXES[state.county][2], BOXES[state.county][3]]]);
+    if(fit) map.fitBounds(fit, { padding:[24,24], maxZoom:12 });
+  }
+  // One honest line about the chosen county (or the state): how many listings, how many can be placed on the map.
+  function overview(){
+    var inArea = ALL.filter(function(r){ return !state.county || r.counties.indexOf(state.county) !== -1; });
+    var mapped = inArea.filter(function(r){ return r.places.some(function(p){ return p.pin && (!state.county || p.loc.county_fips === state.county); }); }).length;
+    var name = state.county ? ((MODEL.vocab.counties || {})[state.county] || "This county") + " County" : "Colorado";
+    var n = inArea.length, miss = n - mapped;
+    els.overview.innerHTML = '<strong>' + name + ':</strong> ' + n + ' listing' + (n === 1 ? "" : "s") + ', ' + mapped + ' with a place we can show on the map.'
+      + (miss > 0 ? ' <details><summary>Why are ' + miss + ' not on the map?</summary>They have no confirmed place to visit yet (they may sell online, at markets, or from a home we do not publish), so they appear in the list but not on the map.</details>' : '');
+    var open = els.overview.querySelector("details");
+  }
+  function hl(id, on){
+    var el = els.list.querySelector('[data-id="'+CSS.escape(id)+'"]');
+    if(el) el.classList.toggle("hl", on);
+  }
+  els.list.addEventListener("mouseover", function(e){
+    var a = e.target.closest(".result"); if(!a) return;
+    var r = ALL.find(function(x){ return x.id === a.dataset.id; });
+    if(r && r._m && layer.hasLayer(r._m) && layer.getVisibleParent(r._m) === r._m) r._m.openPopup();   // only when its pin is not inside a cluster
+  });
+  function reset(){ state = { q:"", cat:"", product:"", county:"", town:"", snap:false, dropin:false }; sync(); apply(); }
+
+  var t;
+  els.q.addEventListener("input", function(){ clearTimeout(t); t = setTimeout(function(){ state.q = els.q.value.trim(); apply(); }, 150); });
+  els.town.addEventListener("change", function(){ state.town = els.town.value; apply(); });
+  els.snap.addEventListener("change", function(){ state.snap = els.snap.checked; apply(); });
+  els.dropin.addEventListener("change", function(){ state.dropin = els.dropin.checked; apply(); });
+  document.getElementById("reset").addEventListener("click", reset);
+  document.querySelectorAll(".mobile-toggle .chip").forEach(function(b){
+    b.addEventListener("click", function(){
+      document.getElementById("main").dataset.view = b.dataset.view;
+      document.querySelectorAll(".mobile-toggle .chip").forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+      if(b.dataset.view === "map") setTimeout(function(){ map.invalidateSize(); apply(); }, 50);
+    });
+  });
+
+  Promise.all([CP.loadModel(), CP.load("county-boxes").catch(function(){ return {}; })]).then(function(r){
+    BOXES = r[1] || {};
+    MODEL = r[0]; ALL = MODEL.recs;
+    var usedP = {}; ALL.forEach(function(x){ x.productGroups.forEach(function(g){ usedP[g] = (usedP[g]||0) + 1; }); });
+    Object.keys(MODEL.vocab.product_groups).filter(function(k){ return usedP[k]; }).forEach(function(k){
+      els.products.appendChild(chip("product", k, MODEL.vocab.product_groups[k]));
+    });
+    // Kinds of place are not quick filters here: the map key (bottom left) already lists them and filters by them.
+    // Counties (with how many mapped places), and towns scoped to the chosen county.
+    var cn = MODEL.vocab.counties || {}, cc = {};
+    ALL.forEach(function(x){ x.counties.forEach(function(f){ cc[f] = (cc[f]||0) + 1; }); });
+    Object.keys(cc).sort(function(a, b){ return (cn[a] || a).localeCompare(cn[b] || b); }).forEach(function(f){
+      var o = document.createElement("option"); o.value = f; o.textContent = (cn[f] || f) + " ("+cc[f]+")"; els.county.appendChild(o);
+    });
+    function fillTowns(){
+      var towns = {}; ALL.forEach(function(x){ x.places.forEach(function(p){ if(p.pin && p.loc.city && (!state.county || p.loc.county_fips === state.county)) towns[p.loc.city] = (towns[p.loc.city]||0) + 1; }); });
+      els.town.innerHTML = '<option value="">All towns</option>';
+      Object.keys(towns).sort().forEach(function(t){
+        var o = document.createElement("option"); o.value = t; o.textContent = t + " ("+towns[t]+")"; els.town.appendChild(o);
+      });
+      els.town.value = state.town;
+    }
+    fillTowns();
+    els.county.addEventListener("change", function(){ state.county = els.county.value; state.town = ""; fillTowns(); apply(); });
+    // Search suggestions: product names, businesses and towns, so typing "ho" offers Honey and the farms that sell it.
+    var names = {}; ALL.forEach(function(x){ names[x.name] = 1; x.towns.forEach(function(t){ names[t] = 1; }); });
+    Object.keys(MODEL.vocab.product_groups).forEach(function(k){ if(usedP[k]) names[MODEL.vocab.product_groups[k]] = 1; });
+    els.suggest.innerHTML = Object.keys(names).sort().map(function(n){ return '<option value="'+esc(n)+'">'; }).join("");
+    addLegend();
+    readUrl(); sync(); apply();
+  }).catch(function(e){
+    els.list.innerHTML = '<p style="padding:16px">Could not load the listings ('+esc(e.message)+').</p>';
+  });
+})();
+</script>
+<div id="site-footer" hidden></div>
 </body>
 </html>
