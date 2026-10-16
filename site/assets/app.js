@@ -229,7 +229,7 @@
   }
   // Full photo on a listing page; a small square thumbnail on cards (cls "photo" with thumb true).
   function photoHtml(rec, cls, thumb){
-    if(!rec.photo) return '<div class="'+cls+' ph" aria-hidden="true"><span>'+typeStyle(rec.group === "outlet" ? rec.cat : rec.group).emoji+'</span></div>';
+    if(!rec.photo) return '<div class="'+cls+' ph" aria-hidden="true"><span>'+typeStyle(rec.cat).emoji+'</span></div>';
     if(thumb && rec.photo.thumb) return '<img class="'+cls+'" src="'+url(rec.photo.thumb)+'" alt="" loading="lazy" width="160" height="160">';
     return '<img class="'+cls+'" src="'+url(rec.photo.file)+'" alt="'+esc(rec.photo.alt)+'" loading="lazy" width="'+rec.photo.width+'" height="'+rec.photo.height+'">';
   }
