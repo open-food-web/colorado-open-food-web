@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-root=".">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Supply network · Colorado Open Food Web</title>
+<meta name="description" content="Who supplies whom: a network of Colorado producers, makers, shops, markets and restaurants, each connection tied to a public source.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/network.css">
+</head>
+<body data-page="network.html">
+<div id="site-header"></div>
+<main id="main" class="net">
+  <h1>Supply network</h1>
+  <div class="sec-head">
+    <p>Each dot is a business; each line says one supplies the other, with the public source behind the claim. <span id="net-count"></span> This is a pilot, started from restaurant and shop supplier lists and growing: most producers are not in it yet. Hover to see who is connected, click for details, drag to move things around.</p>
+  </div>
+  <div class="explorer">
+    <aside class="controls" aria-label="Filter the network">
+      <label class="search"><span>Find a business</span>
+        <input id="q" type="search" placeholder="Name or town" autocomplete="off" aria-controls="results">
+      </label>
+      <ul id="results" class="results" role="listbox" aria-label="Matches"></ul>
+      <fieldset class="legend">
+        <legend>Show</legend>
+        <div id="chips"></div>
+      </fieldset>
+      <p class="key"><svg width="34" height="8" aria-hidden="true"><line x1="0" y1="4" x2="34" y2="4" stroke="currentColor" stroke-width="2"/></svg> sourced
+        <svg width="34" height="8" aria-hidden="true"><line x1="0" y1="4" x2="34" y2="4" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/></svg> not yet confirmed</p>
+    </aside>
+    <div class="stage">
+      <svg id="graph" role="img" aria-label="Network of Colorado food businesses and who supplies whom. Use the search box and the detail panel to browse it as text."></svg>
+      <div class="hint" id="hint">Loading the network…</div>
+    </div>
+    <aside class="detail" id="detail" aria-live="polite">
+      <p class="empty">Select a business to see who it buys from and who it supplies.</p>
+    </aside>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/network.js"></script>
+</body>
+</html>

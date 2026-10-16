@@ -1,0 +1,49 @@
+/* Supply-network page (the d3 graph). Everything is scoped under .net so it does not touch the rest of the site. */
+.net{ --surface:var(--card); --accent:var(--green); --farm:var(--t-farm); --maker:#c9892b; --restaurant:#c4553a; --retail:#247a79; --distributor:#5b6b8c; --market:#7a4fa3; --edge:#8a9a8e;  }
+@media (prefers-color-scheme: dark){ .net{ --maker:#e0a84f; --restaurant:#e07a62; --retail:#4db8b6; --distributor:#94a4c6; --market:#b48ae0; --edge:#5f7366; } }
+.net .sec-head p{ color:var(--muted); max-width:70ch; margin:0 0 16px; }
+.net{ max-width:var(--max); margin:0 auto; padding:24px 16px 56px; }
+.net h1{ font-family:var(--serif); font-size:1.9rem; margin:0 0 8px; }
+.net .stage{ min-height:520px; }
+.net .explorer {display: grid; grid-template-columns: 230px minmax(0, 1fr) 310px; gap: 14px; align-items: start;}
+.net .controls,.net .detail,.net .stage {background: var(--surface); border: 1px solid var(--line); border-radius: 14px;}
+.net .controls {padding: 14px;}
+.net .stage {position: relative; height: 680px; overflow: hidden;}
+.net .detail {padding: 16px; min-height: 200px; max-height: 680px; overflow: auto;}
+.net .search span {display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px;}
+.net input[type="search"] {width: 100%; padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); font: inherit;}
+.net .results {list-style: none; margin: 6px 0 12px; padding: 0;}
+.net .results li button {width: 100%; text-align: left; border: 0; background: none; padding: 6px 8px; border-radius: 6px; color: var(--ink); font: inherit; cursor: pointer;}
+.net .results li button:hover,.net .results li button:focus-visible {background: var(--bg);}
+.net .results small {color: var(--muted);}
+.net .legend {border: 0; padding: 0; margin: 12px 0 0;}
+.net .legend legend {font-size: 13px; color: var(--muted); padding: 0; margin-bottom: 6px;}
+.net .chip {display: flex; align-items: center; gap: 8px; width: 100%; padding: 6px 8px; margin: 2px 0; border: 1px solid transparent; border-radius: 8px; background: none; color: var(--ink); font: inherit; cursor: pointer; text-align: left;}
+.net .chip:hover {background: var(--bg);}
+.net .chip[aria-pressed="false"] {opacity: .45;}
+.net .chip i {width: 12px; height: 12px; border-radius: 50%; flex: none;}
+.net .chip span {margin-left: auto; color: var(--muted); font-size: 13px;}
+.net .key {color: var(--muted); font-size: 13px; margin: 14px 0 0; display: flex; align-items: center; gap: 6px; flex-wrap: wrap;}
+.net #graph {width: 100%; height: 100%; display: block; cursor: grab; touch-action: none;}
+.net #graph:active {cursor: grabbing;}
+.net .hint {position: absolute; left: 12px; bottom: 10px; font-size: 13px; color: var(--muted); background: color-mix(in srgb, var(--surface) 88%, transparent); padding: 3px 8px; border-radius: 6px; pointer-events: none;}
+.net .link {stroke: var(--edge); stroke-opacity: .5; stroke-width: 1.2;}
+.net .link.soft {stroke-dasharray: 4 3;}
+.net .link.hot {stroke: var(--ink); stroke-opacity: .9; stroke-width: 2;}
+.net .link.dim {stroke-opacity: .07;}
+.net .node {stroke: var(--surface); stroke-width: 1.5; cursor: pointer;}
+.net .node.dim {opacity: .15;}
+.net .node.sel {stroke: var(--ink); stroke-width: 3;}
+.net .lab {font-size: 11px; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; pointer-events: none;}
+.net .lab.dim {opacity: .1;}
+.net .detail h3 {font-family: var(--serif); font-size: 1.35rem; margin: 0 0 2px;}
+.net .detail .meta {color: var(--muted); font-size: 14px; margin: 0 0 12px; display: flex; align-items: center; gap: 8px;}
+.net .detail .meta i {width: 11px; height: 11px; border-radius: 50%; display: inline-block;}
+.net .detail h4 {margin: 14px 0 4px; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted);}
+.net .detail ul {list-style: none; margin: 0; padding: 0;}
+.net .detail li {display: flex; gap: 6px; align-items: baseline; padding: 2px 0;}
+.net .detail li button {background: none; border: 0; padding: 0; color: var(--accent); font: inherit; cursor: pointer; text-align: left; text-decoration: underline; text-underline-offset: 2px;}
+.net .detail li a.src {font-size: 12px; color: var(--muted);}
+.net .detail .actions {display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;}
+.net .detail .empty {color: var(--muted); margin: 0;}
+@media (max-width: 1000px){ .net .explorer{ grid-template-columns:1fr; } .net .stage{ height:520px; } .net .detail{ max-height:none; } }

@@ -6,30 +6,10 @@
     { id: "restaurant", label: "Restaurants" }, { id: "retail", label: "Shops & grocers" },
     { id: "distributor", label: "Distributors" }, { id: "market", label: "Markets" }
   ];
-  var color = function (t) { return getComputedStyle(document.documentElement).getPropertyValue("--" + t).trim() || "#888"; };
+  var color = function (t) { return getComputedStyle(document.querySelector(".net")).getPropertyValue("--" + t).trim() || "#888"; };
   var el = function (id) { return document.getElementById(id); };
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
   var safeUrl = function (u) { return /^https?:\/\//i.test(u || "") ? u : ""; };
-
-  function stats(m, web) {
-    var f = m.files && m.files["directory.csv"];
-    var items = [
-      [m.counts.listings.toLocaleString(), "listings in the directory"],
-      [web.nodes.length.toLocaleString(), "businesses in the web"],
-      [web.edges.length.toLocaleString(), "sourced connections"],
-      [Object.keys(m.counts.by_source).length, "sources combined"],
-      [m.version, "latest release · " + m.released]
-    ];
-    el("stats").innerHTML = items.map(function (i) { return "<div><dd>" + esc(i[0]) + "</dd><dt>" + esc(i[1]) + "</dt></div>"; }).join("");
-    var base = REPO + "/releases/download/" + m.version + "/";
-    var labels = { "directory.csv": ["Directory", "every listing, one row each"], "csa.json": ["CSAs", "confirmed farm shares"], "places.json": ["Places", "town and ZIP centre points"], "supply-network-nodes.csv": ["Web: businesses", "the dots"], "supply-network-edges.csv": ["Web: connections", "the lines, with sources"], "MANIFEST.json": ["Manifest", "counts and checksums"] };
-    var names = Object.keys(m.files).concat(["MANIFEST.json"]);
-    el("files").innerHTML = names.map(function (n) {
-      var l = labels[n] || [n, ""];
-      return '<li><a href="' + base + n + '"><b>' + esc(l[0]) + "</b><small>" + esc(l[1]) + " · " + esc(n) + "</small></a></li>";
-    }).join("");
-    el("rel").textContent = "Release " + m.version + ", " + m.released + ".";
-  }
 
   function build(web) {
     var nodes = web.nodes.map(function (n) { return Object.assign({}, n); });
@@ -132,7 +112,10 @@
     });
   }
 
-  Promise.all([fetch("data/MANIFEST.json").then(function (r) { return r.json(); }), fetch("data/web.json").then(function (r) { return r.json(); })])
-    .then(function (a) { stats(a[0], a[1]); build(a[1]); })
-    .catch(function () { el("hint").textContent = "The data could not be loaded. Try again, or get the files below."; });
+  fetch("data/web.json").then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function (web) {
+      el("net-count").textContent = web.nodes.length.toLocaleString() + " businesses and " + web.edges.length.toLocaleString() + " sourced connections.";
+      build(web);
+    })
+    .catch(function () { el("hint").textContent = "The network data could not be loaded. Try again later."; });
 })();

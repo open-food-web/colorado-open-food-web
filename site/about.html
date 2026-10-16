@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-root=".">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>About · Colorado Open Food Web</title>
+<meta name="description" content="The Colorado Open Food Web is an open data project that keeps an accurate, up-to-date listing of Colorado's food producers and their sales channels, sourced from publicly available web sources.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="about.html">
+<div id="site-header"></div>
+<main id="main">
+  <article class="article">
+    <h1>About the Colorado Open Food Web</h1>
+    <p style="font-size:1.15rem">The Colorado Open Food Web is an open source data project. It keeps an accurate, up-to-date listing of Colorado's food producers (farms, ranches, orchards, food makers and wineries) and of their sales channels: where and how you can buy from them, such as farm stands, farmers markets, CSAs, pickup points, delivery, online orders, and the shops and grocers that carry their food.</p>
+    <p>Everything here is sourced from publicly available web sources. Nothing is guessed: a detail appears only if a source states it, and every record keeps a pointer to where it came from.</p>
+
+    <h2>How it works</h2>
+    <ul>
+      <li><strong>Public sources, combined.</strong> Listings are pulled on a schedule from public directories (such as <a href="https://coloradoproud.com/">Colorado Proud</a>, the <a href="https://www.cofarmersmarkets.org/">Colorado Farmers Market Association</a> and the <a href="https://www.usdalocalfoodportal.com/">USDA Local Food Portal</a>) and from each business's own website and public social pages. Records from different sources for the same business are merged into one listing.</li>
+      <li><strong>Kept current.</strong> Sources are re-checked regularly. Every refresh is a reviewed change that shows exactly what is new, changed or gone, so the listing stays accurate over time rather than going stale.</li>
+      <li><strong>Reviewed by people.</strong> Nothing is applied until a person approves it. Details a reviewer or the business has confirmed are never overwritten by an automatic check.</li>
+      <li><strong>Privacy first.</strong> An email address appears only if the business publishes it itself. Where a business asked us not to share its street address, the map shows only the town.</li>
+      <li><strong>Open and versioned.</strong> The data is free to use with credit under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and published in numbered releases, so other projects can build on the same list. The code and the full history are in the <a href="https://github.com/open-food-web/colorado-open-food-web">GitHub repository</a>.</li>
+    </ul>
+    <div class="callout" id="stats">Loading directory stats…</div>
+
+    <h2>Many listings are not on the map</h2>
+    <p>Most Colorado producers sell by CSA, online, at markets or from a home that is not open to visitors. A listing only gets a map pin when a source confirms a place where people can buy or visit, so a sparse map means missing confirmed places, not missing farms. Counties differ a lot in how much is mapped so far. The <a href="directory.html">directory</a> lists everything, mapped or not. The <a href="network.html">supply network</a> shows how producers, shops and restaurants connect.</p>
+
+    <h2>Get the data</h2>
+    <p>Free to use with credit: “Colorado Open Food Web”. <span id="rel"></span></p>
+    <ul class="plain" id="files"></ul>
+    <p class="muted">Each file’s checksum is in <a href="data/MANIFEST.json">the manifest</a>. How other projects pin and use releases: <a href="https://github.com/open-food-web/colorado-open-food-web/blob/main/docs/RELEASES.md">docs/RELEASES.md</a>.</p>
+
+    <h2>Fix something or add a listing</h2>
+    <p>Spot a mistake, a closed business or a missing producer? Every listing has <em>Suggest an update</em> and <em>Remove this listing</em> buttons, and you can <a href="list-your-business.html">add a listing</a>. Reports are public, reviewed by a person and credited to you. Producers can ask to correct or remove their own record, and removal requests are honored first.</p>
+  </article>
+</main>
+<div id="site-footer"></div>
+<script src="assets/app.js"></script>
+<script>
+CP.loadModel().then(function(M){
+  var by = { farm:0, market:0, access:0, outlet:0 }; M.recs.forEach(function(r){ by[r.group]++; });
+  var pins = M.meta.counts.pins + (M.meta.counts.outlet_pins || 0);
+  document.getElementById("stats").innerHTML = "<strong>The directory today:</strong> " + M.recs.length + " listings ("
+    + by.farm + " farms, ranches and makers, " + by.market + " farmers markets, " + by.access + " free-food sites" + (by.outlet ? ", " + by.outlet + " shops and grocers" : "") + ") and " + pins
+    + " places on the map. Data release " + CP.esc(M.meta.release) + ", built " + CP.esc(CP.fmtDate(M.meta.generated)) + ".";
+}).catch(function(e){ document.getElementById("stats").textContent = "Directory numbers are unavailable (" + e.message + ")."; });
+fetch("data/MANIFEST.json").then(function(r){ return r.json(); }).then(function(m){
+  var base = "https://github.com/open-food-web/colorado-open-food-web/releases/download/" + m.version + "/";
+  var labels = { "directory.csv":"Directory: every listing, one row each", "csa.json":"CSAs: confirmed farm shares", "places.json":"Places: town and ZIP centre points",
+    "supply-network-nodes.csv":"Supply network: businesses", "supply-network-edges.csv":"Supply network: connections, with sources", "MANIFEST.json":"Manifest: counts and checksums" };
+  document.getElementById("files").innerHTML = Object.keys(m.files).concat(["MANIFEST.json"]).map(function(n){
+    return '<li><a href="' + base + n + '">' + CP.esc(labels[n] || n) + '</a> <span class="muted">· ' + CP.esc(n) + '</span></li>'; }).join("");
+  document.getElementById("rel").textContent = "Release " + m.version + ", " + m.released + ".";
+}).catch(function(){ document.getElementById("files").innerHTML = '<li class="muted">The file list is unavailable right now. See the GitHub repository.</li>'; });
+</script>
+</body>
+</html>

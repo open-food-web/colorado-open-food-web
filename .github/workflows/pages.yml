@@ -1,12 +1,13 @@
 name: Project site
 
-# Publishes site/ to GitHub Pages. The data it shows comes from the latest release, downloaded at build time,
-# so a new release refreshes the site on its own.
+# Publishes site/ to GitHub Pages (map, directory, supply network, about). The supply network and the downloads come
+# from the latest release, downloaded at build time; the map and directory come from the statewide app export built
+# from the tables in this repo (docs/EXPORTS.md), so a new release or a merged data change refreshes the site.
 
 on:
   push:
     branches: [main]
-    paths: ["site/**", "scripts/build_site.py", ".github/workflows/pages.yml"]
+    paths: ["site/**", "scripts/build_site.py", "scripts/export_app.py", "exports/open-food-web.config.json", "data/colorado/**", ".github/workflows/pages.yml"]
   release:
     types: [published]
   workflow_dispatch:
@@ -34,6 +35,11 @@ jobs:
         run: gh release download --repo "${{ github.repository }}" --pattern "*" -D release
       - name: Build the site data
         run: python scripts/build_site.py --release-dir release
+      - name: Build the map and directory data (statewide export)
+        run: >
+          python scripts/export_app.py --tables data/colorado --out site/data/food-web.json
+          --release "$(date +%Y-%m)" --statewide --unconfirmed-home-pins hide
+          --config exports/open-food-web.config.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
