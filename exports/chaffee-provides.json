@@ -10,13 +10,13 @@
   ],
   "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
   "counts": {
-   "producers": 32,
+   "producers": 31,
    "markets": 2,
    "access_points": 2,
-   "market_links": 36,
+   "market_links": 35,
    "outlets": 3,
    "outlet_pins": 3,
-   "pins": 29
+   "pins": 34
   }
  },
  "vocab": {
@@ -1180,7 +1180,9 @@
    "facebook": null,
    "instagram": "https://www.instagram.com/foxtownfarm/",
    "sales_channels": [
-    "farmers_market"
+    "farmers_market",
+    "online",
+    "retail_partners"
    ],
    "sells_at": [
     {
@@ -1265,6 +1267,106 @@
      "season_end": null,
      "status": "listed",
      "confirm_url": null
+    },
+    {
+     "id": "co-loc-001511",
+     "role": "store",
+     "name": "The Lettucehead Food Company",
+     "address": "545 US Highway 24 N",
+     "city": "Buena Vista",
+     "zip": null,
+     "county_fips": "08015",
+     "lat": 38.846739,
+     "lon": -106.135068,
+     "precision": "exact",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": "https://foxtownfarm.com/pages/find-a-store"
+    },
+    {
+     "id": "co-loc-001512",
+     "role": "store",
+     "name": "Rock Paper Scissors (Buena Vista)",
+     "address": null,
+     "city": "Buena Vista",
+     "zip": null,
+     "county_fips": "08015",
+     "lat": 38.842749,
+     "lon": -106.128913,
+     "precision": "approximate",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": "https://foxtownfarm.com/pages/find-a-store"
+    },
+    {
+     "id": "co-loc-001513",
+     "role": "store",
+     "name": "Rock Paper Scissors (Salida)",
+     "address": null,
+     "city": "Salida",
+     "zip": null,
+     "county_fips": "08015",
+     "lat": 38.535854,
+     "lon": -105.992413,
+     "precision": "approximate",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": "https://foxtownfarm.com/pages/find-a-store"
+    },
+    {
+     "id": "co-loc-001514",
+     "role": "store",
+     "name": "The Mixing Bowl",
+     "address": null,
+     "city": "Salida",
+     "zip": null,
+     "county_fips": "08015",
+     "lat": 38.535677,
+     "lon": -105.992642,
+     "precision": "approximate",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": "https://foxtownfarm.com/pages/find-a-store"
+    },
+    {
+     "id": "co-loc-001515",
+     "role": "store",
+     "name": "Cool River Cafe",
+     "address": null,
+     "city": "Buena Vista",
+     "zip": null,
+     "county_fips": "08015",
+     "lat": 38.843154,
+     "lon": -106.127542,
+     "precision": "approximate",
+     "pin": true,
+     "pin_basis": "confirmed",
+     "days": [],
+     "hours_text": null,
+     "season_start": null,
+     "season_end": null,
+     "status": "listed",
+     "confirm_url": "https://foxtownfarm.com/pages/find-a-store"
     },
     {
      "id": "co-loc-000026",
@@ -1688,7 +1790,7 @@
    "last_verified": null,
    "locations": [
     {
-     "id": "co-loc-001511",
+     "id": "co-loc-001516",
      "role": "home_base",
      "name": null,
      "address": "8913 W Hwy 50",
@@ -2871,94 +2973,6 @@
    ]
   },
   {
-   "id": "co-p-001031",
-   "slug": "sweet-pea-farms",
-   "name": "Sweet Pea Farms",
-   "kind": "farm",
-   "categories": [
-    "On-Farm / Ranch Sales"
-   ],
-   "products": [
-    "Honey",
-    "eggs",
-    "pork",
-    "produce",
-    "beeswax balms and candles"
-   ],
-   "product_groups": [
-    "veggies",
-    "beef-meat",
-    "poultry-eggs",
-    "honey"
-   ],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": null,
-   "phone": null,
-   "email": null,
-   "facebook": null,
-   "instagram": null,
-   "sales_channels": [],
-   "sells_at": [
-    {
-     "market_id": "co-m-000002",
-     "name": "Salida Farmers Market",
-     "county_fips": "08015",
-     "year": 2026,
-     "season_label": null,
-     "basis": "exact_name",
-     "source_url": "https://www.foodshedalliance.com/meet-our-vendors"
-    }
-   ],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-001263",
-     "role": "home_base",
-     "name": null,
-     "address": null,
-     "city": "Salida",
-     "zip": null,
-     "county_fips": "08015",
-     "lat": null,
-     "lon": null,
-     "precision": "none",
-     "pin": false,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed",
-     "confirm_url": null
-    }
-   ],
-   "sources": [
-    {
-     "source": "curated",
-     "label": "Farmers market vendor lists, checked by hand",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
-  },
-  {
    "id": "co-p-000024",
    "slug": "sweet-pea-farms-wildflower-honey",
    "name": "Sweet Pea Farm’s Wildflower Honey",
@@ -3036,6 +3050,11 @@
     {
      "source": "chaffee_provides",
      "label": "Chaffee Provides",
+     "url": null
+    },
+    {
+     "source": "curated",
+     "label": "Farmers market vendor lists, checked by hand",
      "url": null
     }
    ],
@@ -3740,7 +3759,6 @@
     "co-p-000021",
     "co-p-000026",
     "co-p-000792",
-    "co-p-001031",
     "co-p-001232",
     "co-p-001233",
     "co-p-001234",

@@ -355,6 +355,7 @@ co-p-000392,08067,home_base,true
 co-p-000393,08067,home_base,true
 co-p-000394,08031,home_base,true
 co-p-000395,08041,home_base,true
+co-p-001234,08015,store,true
 co-p-000396,08101,home_base,true
 co-p-000397,08031,home_base,true
 co-p-000398,08001,home_base,true
@@ -960,7 +961,6 @@ co-p-001027,08081,home_base,true
 co-p-001028,08013,home_base,true
 co-p-001029,08001,home_base,true
 co-p-001030,08043,home_base,true
-co-p-001031,08015,home_base,true
 co-p-000024,08015,home_base,true
 co-p-001032,08059,home_base,true
 co-p-001033,08089,home_base,true
@@ -1149,7 +1149,6 @@ co-p-000792,08015,market,true
 co-p-000862,08015,market,true
 co-p-001232,08015,market,true
 co-p-001233,08015,market,true
-co-p-001234,08015,market,true
 co-p-001235,08015,market,true
 co-p-001236,08015,market,true
 co-p-001237,08015,market,true

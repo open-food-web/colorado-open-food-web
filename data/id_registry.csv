@@ -1511,7 +1511,12 @@ co-loc|producer|https://www.facebook.com/p/Alpenglow-Hive-Honey-61586258981365/,
 co-loc|outlet|copper-kettle-apothecary,co-loc-001508
 co-loc|producer|https://www.mountainessentialsllc.com/,co-loc-001509
 co-loc|producer|https://www.facebook.com/p/the-farmstand-61576733552283/,co-loc-001510
-co-loc|producer|https://www.hutchinsonhomestead.org/,co-loc-001511
+co-loc|loc|foxtownfarm|store|thelettuceheadfoodcompany,co-loc-001511
+co-loc|loc|foxtownfarm|store|rockpaperscissorsbuenavista,co-loc-001512
+co-loc|loc|foxtownfarm|store|rockpaperscissorssalida,co-loc-001513
+co-loc|loc|foxtownfarm|store|themixingbowl,co-loc-001514
+co-loc|loc|foxtownfarm|store|coolrivercafe,co-loc-001515
+co-loc|producer|https://www.hutchinsonhomestead.org/,co-loc-001516
 co-m|309028,co-m-000001
 co-m|309117,co-m-000002
 co-m|business_profile_176,co-m-000003
@@ -4327,4 +4332,9 @@ co-ploc|loc|westcliffehoneycompany|pickup|market|salidafarmersmarket,co-ploc-001
 co-ploc|https://www.facebook.com/p/Alpenglow-Hive-Honey-61586258981365/|home,co-ploc-001255
 co-ploc|https://www.mountainessentialsllc.com/|home,co-ploc-001256
 co-ploc|https://www.facebook.com/p/the-farmstand-61576733552283/|home,co-ploc-001257
-co-ploc|https://www.hutchinsonhomestead.org/|home,co-ploc-001258
+co-ploc|loc|foxtownfarm|store|thelettuceheadfoodcompany,co-ploc-001258
+co-ploc|loc|foxtownfarm|store|rockpaperscissorsbuenavista,co-ploc-001259
+co-ploc|loc|foxtownfarm|store|rockpaperscissorssalida,co-ploc-001260
+co-ploc|loc|foxtownfarm|store|themixingbowl,co-ploc-001261
+co-ploc|loc|foxtownfarm|store|coolrivercafe,co-ploc-001262
+co-ploc|https://www.hutchinsonhomestead.org/|home,co-ploc-001263

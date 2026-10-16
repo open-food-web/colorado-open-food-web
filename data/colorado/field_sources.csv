@@ -10416,9 +10416,6 @@ producer,co-p-001030,address,colorado_proud,,source,
 producer,co-p-001030,city,colorado_proud,,source,
 producer,co-p-001030,zip,colorado_proud,,source,
 producer,co-p-001030,county_fips,census_geocoder,,source,
-producer,co-p-001031,products,curated,,source,
-producer,co-p-001031,city,curated,,source,
-producer,co-p-001031,county_fips,maintainer,,source,
 producer,co-p-000024,phone,chaffee_provides,,source,
 producer,co-p-000024,facebook,guidestone,,partner,2026-10-13
 producer,co-p-000024,products,producer_facebook,https://www.facebook.com/SweetPeaFarmHoney/,source,2026-10-15
