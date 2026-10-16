@@ -37,6 +37,7 @@ def test_food_system_labels_roll_up_without_moving_existing_ones():
     assert categories.groups_for("Brewery / Distillery") == ["drinks"]
     assert categories.groups_for("Ag Input Supplier") == ["inputs"]
     assert categories.groups_for("Market Vendor") == ["vendors"]
+    assert categories.groups_for("Agricultural Education") == ["education"]
     assert categories.groups_for("Cottage Food, Food Truck") == ["shops", "dining"]
     # existing mappings are unchanged
     assert categories.groups_for("Food Maker") == ["shops"]
@@ -49,7 +50,7 @@ def test_public_groups_exclude_the_newer_groups_and_cover_the_original_ones():
                 "wineries", "shops", "dining", "wholesale", "assistance"}
     assert categories.PUBLIC_GROUPS == original
     assert {k for k, *_ in categories.GROUPS} >= categories.PUBLIC_GROUPS
-    for newer in ("plants", "makers", "drinks", "inputs", "vendors"):
+    for newer in ("plants", "makers", "drinks", "inputs", "vendors", "education"):
         assert newer not in categories.PUBLIC_GROUPS
 
 

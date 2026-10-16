@@ -8687,6 +8687,22 @@
 "name": "Young's Market & Garden Center",
 "source": "colorado_proud_finder"
 },
+"center homestead hutchinson learning|salida": {
+"Address": "8913 W Hwy 50",
+"Category": "Agricultural Education",
+"County": "Chaffee",
+"Email": "info@hutchinsonhomestead.org",
+"Hours": "Sat-Sun: 1:00pm - 4:00pm (June-September; by appointment)",
+"Months Open": "",
+"Phone": "(719) 239-0955",
+"Products": "Beef",
+"Status": "Open",
+"Website": "https://www.hutchinsonhomestead.org/",
+"Year Opened": "",
+"city": "Salida",
+"name": "Hutchinson Homestead & Learning Center",
+"source": "curated"
+},
 "center salida|salida": {
 "Address": "305 F. Street",
 "Category": "Food Bank",
@@ -20305,7 +20321,7 @@
 },
 "hutchinson ranch|salida": {
 "Address": "6700 Old Corral Road, Salida, CO 81201",
-"Category": "On-Farm / Ranch Sales",
+"Category": "Agritourism, On-Farm / Ranch Sales",
 "County": "Chaffee",
 "Email": "HutchSalida@gmail.com",
 "Hours": "",

@@ -38,7 +38,7 @@ SOURCE_LABELS = {
     "curated": "Farmers market vendor lists, checked by hand", "guidestone": "Guidestone Colorado review",
     "census_geocoder": "US Census geocoder", "reviewed": "Reviewed by hand", "maintainer": "Maintainer"}
 # What a producer calls itself (producers.kind). Farms and ranches are different things to a shopper.
-KIND_LABELS = {"farm": "Farms", "ranch": "Ranches", "orchard": "Orchards", "bakery": "Bakeries", "maker": "Food makers",
+KIND_LABELS = {"farm": "Farms", "ranch": "Ranches", "orchard": "Orchards", "bakery": "Bakeries", "maker": "Food makers", "agritourism": "Agritourism", "education": "Agricultural education",
                "winery": "Wineries"}
 # Outlets (retailers and dining) an app can opt into with "include_outlet_kinds". The group is derived from the kind.
 OUTLET_KIND_LABELS = {"grocery": "Grocery stores", "farm_store": "Farm stores", "garden_center": "Garden centers",

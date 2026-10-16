@@ -35,6 +35,7 @@ GROUPS = [
     ("drinks", "Breweries & Distilleries", "🍺", {"Brewery / Distillery"}),
     ("inputs", "Farm Inputs & Services", "🌾", {"Ag Input Supplier"}),
     ("vendors", "Market Vendors", "🧑‍🌾", {"Market Vendor"}),
+    ("education", "Agricultural Education", "🎓", {"Agricultural Education"}),   # added 2026-10-15; not on the public map until enabled
 ]
 
 # Groups the public map shows today (the ones index.html styles). Groups added later

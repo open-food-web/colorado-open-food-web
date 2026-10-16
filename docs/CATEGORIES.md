@@ -28,6 +28,7 @@ by `scripts/tests/test_categories.py`. A record can carry several labels, primar
 | Sell / serve | Farmers' Market, Farm Store, Grocery Store, Restaurant, Caterer | existing |
 | Sell / serve | **Apothecary** *(new)* | herb and apothecary shops that sell herbs, honey, seeds and the like (Copper Kettle Apothecary). An outlet, filed under Shops & Grocers |
 | Sell / serve | **Food Truck**, **Cafe / Coffee Shop** *(new)* | mobile and counter-service food businesses |
+| Support | **Agricultural Education** *(new)* | sites whose main work is teaching about farming and ranching: learning centers, working-farm schools, demonstration farms (Hutchinson Homestead & Learning Center). A record may also sell, and then carries its sales channels |
 | Support | Food Bank, Organization | existing |
 | Support | **Ag Input Supplier** *(new)* | feed, soil, compost, worm castings, equipment |
 
