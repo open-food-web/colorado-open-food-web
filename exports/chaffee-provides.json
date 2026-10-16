@@ -10,7 +10,7 @@
   ],
   "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
   "counts": {
-   "producers": 33,
+   "producers": 32,
    "markets": 2,
    "access_points": 2,
    "market_links": 37,
@@ -1493,75 +1493,6 @@
     {
      "source": "curated",
      "label": "Farmers market vendor lists, checked by hand",
-     "url": null
-    }
-   ],
-   "confirmed_by": []
-  },
-  {
-   "id": "co-p-000426",
-   "slug": "gina-marcell",
-   "name": "Gina Marcell",
-   "kind": "farm",
-   "categories": [
-    "CSA Farm"
-   ],
-   "products": [],
-   "product_groups": [],
-   "dropin_visits": null,
-   "dropin_hours": null,
-   "farm_pickup": null,
-   "visit_basis": {
-    "dropin": null,
-    "pickup": null
-   },
-   "visit_note": null,
-   "months_open": [],
-   "hours_text": null,
-   "hours": [],
-   "hours_status": "none",
-   "website": "https://pinterest.com/mountaingoatlodge",
-   "phone": "(206) 218-8201",
-   "email": null,
-   "facebook": null,
-   "instagram": null,
-   "sales_channels": [
-    "csa"
-   ],
-   "sells_at": [],
-   "certified_organic": null,
-   "accepts_snap": null,
-   "ada_accessible": null,
-   "call_first": null,
-   "status": "unverified",
-   "claimed": false,
-   "last_verified": null,
-   "locations": [
-    {
-     "id": "co-loc-000534",
-     "role": "home_base",
-     "name": null,
-     "address": "9582 US Hwy",
-     "city": "Salida",
-     "zip": "81201",
-     "county_fips": "08015",
-     "lat": 38.51755,
-     "lon": -106.0559,
-     "precision": "exact",
-     "pin": false,
-     "pin_basis": "unconfirmed",
-     "days": [],
-     "hours_text": null,
-     "season_start": null,
-     "season_end": null,
-     "status": "listed",
-     "confirm_url": null
-    }
-   ],
-   "sources": [
-    {
-     "source": "usda_lfd",
-     "label": "USDA Local Food Directories",
      "url": null
     }
    ],
