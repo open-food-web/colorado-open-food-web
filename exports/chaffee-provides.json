@@ -794,14 +794,14 @@
     "veggies"
    ],
    "visits": [],
-   "dropin_visits": null,
+   "dropin_visits": false,
    "dropin_hours": null,
-   "farm_pickup": null,
+   "farm_pickup": false,
    "visit_basis": {
-    "dropin": null,
-    "pickup": null
+    "dropin": "set",
+    "pickup": "set"
    },
-   "visit_note": null,
+   "visit_note": "Donates its produce to the community; no public sales. Volunteer opportunities are on their website",
    "months_open": [],
    "hours_text": null,
    "hours": [],
