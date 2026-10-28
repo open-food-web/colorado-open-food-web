@@ -30,7 +30,9 @@ Read `docs/CHARTER.md` (what and why) and `docs/SCHEMA.md` (tables and fields) b
 
 ## Where things are
 
-- GitHub: `open-food-web/colorado-open-food-web` (private for now). Org `open-food-web` is owned by
+- GitHub: `open-food-web/colorado-open-food-web` (public). The project site (map, directory, provider pages)
+  deploys to GitHub Pages at `open-food-web.github.io/colorado-open-food-web/` from `site/`, using the latest
+  release's data, so merging a change to `site/` publishes it and a new release refreshes it. Org `open-food-web` is owned by
   the `dbrown-code` account (renamed from `dbrown-creator` on 2026-10-15).
 - The Colorado Farm Trail (`dbrown-code/colorado-farm-trail`, local `../colorado-farm-trail`) is the
   first app built on this data. The source-update pipeline now lives here (`scripts/scrape/`,
@@ -50,6 +52,17 @@ Read `docs/CHARTER.md` (what and why) and `docs/SCHEMA.md` (tables and fields) b
   repo, so use your own branch or worktree and check `git status` before committing.
 - Work on short-lived branches and open a PR; the maintainer reviews and merges. Do not push to `main`
   directly once the repo is in use.
+- CI (`.github/workflows/tests.yml`) runs `pytest tests scripts/tests` on pull requests that touch data, inputs,
+  snapshots, scripts, tests or the site (about 30 seconds). It includes `tests/test_committed_data.py` (unique
+  namespaced IDs, links resolve, Colorado FIPS, no stored photos) and the unverified-email test. PRs opened by the
+  scheduled refresh workflows use the default token and do not trigger it, so run the tests locally before merging
+  those. Never merge on a failing test.
+- Rebuilding the tables after snapshots or inputs change: `python scripts/scrape/build.py`, then
+  `python scripts/build_tables.py --raw .cache/build/co_farmers_markets_all_raw.csv --out data/colorado
+  --additions data/partner-additions/guidestone_2026-10-13.csv --locations inputs/locations.csv
+  --overrides inputs/overrides.csv --producer-types inputs/producer_types.csv`. Commit the changes to `data/` and
+  the ledger as a PR. Existing IDs in `data/id_registry.csv` never change; when two branches both add IDs, keep
+  main's registry and rebuild so the new records get the next free IDs.
 - Stage explicit paths. End commits with the Claude `Co-Authored-By` trailer and PR bodies with the
   Claude Code line.
 
@@ -57,14 +70,13 @@ Read `docs/CHARTER.md` (what and why) and `docs/SCHEMA.md` (tables and fields) b
 
 1. Source terms: Colorado Proud, CFMA/MarketWurks and Chaffee Provides state no data license; USDA's
    data.gov listing is CC BY but the API terms are unverified.
-2. Full CC BY 4.0 `LICENSE` text (needs the maintainer's OK to download from creativecommons.org).
-3. Governance document (decision-making, partner voice, removals), modeled partly on the Open Food
+2. Governance document (decision-making, partner voice, removals), modeled partly on the Open Food
    Network handbook.
-4. Facts-only export: `scripts/build_tables.py` is county-scoped today (Chaffee). Make it statewide,
-   with prose and personal-field filters, and run it after a snapshot PR merges.
+3. Facts-only export: `scripts/build_tables.py` now runs statewide; the prose and personal-field filters and
+   running it automatically after a snapshot PR merges are still to do.
    Also: pull the full Colorado Proud layer (about 500 records still come from a frozen Phase 1
    file) and clear nine stale overrides (see `docs/PIPELINE.md`).
-5. Partner outreach: regional projects like Chaffee Provides, after the README and two worked examples
+4. Partner outreach: regional projects like Chaffee Provides, after the README and two worked examples
    (Farm Trail, CSA finder) are ready.
-6. Domain: `coloradofoodweb.org` looked unregistered in a rough DNS check; confirm at a registrar.
+5. Domain: `coloradofoodweb.org` looked unregistered in a rough DNS check; confirm at a registrar.
    `openfoodweb.org` is taken by an unrelated site.
