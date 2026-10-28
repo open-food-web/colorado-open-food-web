@@ -1,6 +1,31 @@
 change,key,business_name,city,field,old,new
-changed,301387,Greeley Farmers Market,Greeley,facebook,,https://facebook.com/greeleyfarmersmarket
-changed,701236,Pitts Family Ranch,Cortez,facebook,,https://facebook.com/PittsFamilyRanchGrassfedMilk
-changed,701547,DELYAKS,Montrose,facebook,,https://facebook.com/DELYAKS
-changed,200544,Busy Bee Farm,Larkspur,facebook,,https://facebook.com/BusyBeeFarm-Larkspur
-changed,500213,Valley Roots Food Hub,Mosca,facebook,,https://facebook.com/valleyrootsfoodhub
+changed,300627,Durango Farmers Market,Durango,email,,dfmmanager@durangofarmersmarket.com
+changed,309012,Aspen Farmers' Market,Aspen,email,,info@aspenchamber.org
+changed,309016,Arvada Five Parks Farmers Market,Arvada,email,*,
+changed,309023,Boulder County Farmers' Market,Boulder,email,,foodaccess@bcfm.org
+changed,309024,Boulter's 5280 Urban Market,Castle Pines,email,*,
+changed,309028,Buena Vista Farmers' Market,Buena Vista,email,info@FoodshedAlliance.com*,info@foodshedalliance.com; admin@foodshedalliance.com
+changed,309036,City Park Esplanade Fresh Market,Denver,email,*,
+changed,309081,Littleton Farmers' Market,Littleton,email,****in,
+changed,309092,Memorial Park Farmers' Market,Colorado Springs,email,Email not found,
+changed,309095,Metro Denver Farmers' Market-Lakewood,Lakewood,email,****in,
+changed,309096,Metro Denver Farmers' Market-Littleton,Littleton,email,****in,
+changed,309097,Metro Denver Farmers' Market-Wheat Ridge,Wheat Ridge,email,****in,
+changed,309101,Noco Virtual Farmers Market,Fort Collins,email,*,
+changed,309117,Salida Farmers Market,Salida,email,info@FoodshedAlliance.com*,info@foodshedalliance.com; admin@foodshedalliance.com
+changed,309123,Stapleton Farmers' Market,Denver,email,*,
+changed,309132,Urban Farmers' Market,Denver,email,Email not found,
+changed,309136,Westcliffe Farmers Market,Westcliffe,email,WestcliffeFarmersMarket@gmail.com,westcliffefarmersmarket@gmail.com
+changed,700324,Feed Denver: Sunnyside Farm & Market,Denver,email,,info@feeddenver.com
+changed,700684,Bartels Land and Livestock Upick and Pumpkin Patch,Ft. Collins,website,https://,https://
+changed,700465,Fresh Start Family Farms LLC.,Aurora,email,tcobosco@freshstartfamilyfarms.com,
+changed,700845,"Desert Weyr, LLC",Paonia,email,Sales@desertweyr.com,sales@desertweyr.com
+changed,200731,Ela Family Farms CSA,Hotchkiss,email,,jeni@elafamilyfarms.com
+changed,500004,LoCo Food Distribution,Fort Collins,email,info@LoCoFoodDistribution.com,info@locofooddistribution.com
+changed,1286,Fritzler Farms Inc dba Fritzler Corn Maze and Scream Acres,La Salle,email,getlost@fritzlermaze.com,
+changed,1603,Something From the Farm,Fort Collins,email,somethingfromthefarm@gmail.com,
+changed,1946,Anderson Farms,Erie,email,info@andersonfarms.com,
+changed,2144,Bee Family Centennial Farm Museum,Fort Collins,email,info@beefamilyfarm.com,
+changed,2215,Berry Patch Farms,Brighton,email,bpf@qwestoffice.net,
+changed,8180,Fresh Start Family Farms LLC.,Aurora,email,tcobosco@freshstartfamilyfarms.com,
+changed,9306,Delicious Orchards,Hotchkiss,email,info@bigbs.com,
