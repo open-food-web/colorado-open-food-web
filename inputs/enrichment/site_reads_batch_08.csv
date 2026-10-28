@@ -1,0 +1,25 @@
+producer_id,url,read_on,site_last_updated,last_updated_basis,channels_found,note
+co-p-000731,https://www.mountainoven.com,2026-10-15,,none_found,pickup;online;wholesale,
+co-p-000732,https://www.mountainriverbeefco.com,2026-10-15,,none_found,,Fetch failed: expired certificate
+co-p-000735,https://www.MVmeatsFC.com,2026-10-15,,none_found,online,Farm Store and Seasonal Market pages linked but not read
+co-p-000736,https://mountainsidebakery.com,2026-10-15,,none_found,online;pickup,
+co-p-000739,https://mulays.com/,2026-10-15,,none_found,online;retail_partners,
+co-p-000741,https://www.macgregorranch.org,2026-10-15,,none_found,,Page content empty to fetcher
+co-p-000757,https://www.nelmsfarm.com/,2026-10-15,2026-08-12,http_last_modified,,Page did not state how to buy
+co-p-000759,https://www.nexthorizoncattle.com,2026-10-15,,none_found,,"Only ""Cattle for Sale"" title seen"
+co-p-000777,https://orchardcreekranch.com/,2026-10-15,,none_found,,Site says permanently closed; u-pick ended; status review needed
+co-p-000783,https://ottemans.com,2026-10-15,,none_found,,Page content empty to fetcher
+co-p-000785,https://Ourredbarnranch.com,2026-10-15,,none_found,farm_stand;online,
+co-p-000786,https://outlawmeats.net,2026-10-15,2026-10-16,http_last_modified,farm_stand;online,Last-Modified 2026-10-16 00:26 GMT
+co-p-000787,https://www.outsidethebreadbox.com,2026-10-15,,none_found,delivery;online;pickup;retail_partners,
+co-p-000788,https://ovenspringkitchen.com/,2026-10-15,,none_found,online,
+co-p-000799,https://www.pastureprovisionsco.com,2026-10-15,,none_found,delivery;online,
+co-p-000801,https://pattersonpastures.com,2026-10-15,2026-10-13,http_last_modified,online,Last-Modified 2026-10-13 22:52 GMT
+co-p-000806,https://peakandpetalco.com/,2026-10-15,,none_found,farmers_market,Site names markets where sold
+co-p-000808,https://www.peakbees.com/,2026-10-15,,none_found,,No way to buy listed
+co-p-000811,https://www.peakviewranch.com,2026-10-15,,none_found,,Contact by phone/email only; unclear
+co-p-000818,https://phoodboards.com,2026-10-15,,none_found,delivery;pickup,
+co-p-000822,https://pincheesalsa.com,2026-10-15,,none_found,online;retail_partners,
+co-p-000832,http://polidorisausage.com/,2026-10-15,,none_found,,Page content empty to fetcher
+co-p-000823,https://hotplate.com/pineneedlehomestead,2026-10-15,,none_found,,Page content empty to fetcher
+co-p-000782,https://www.oswaldgrassfedbeef.com,2026-10-15,,none_found,online,

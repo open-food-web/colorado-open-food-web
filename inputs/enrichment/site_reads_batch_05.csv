@@ -1,0 +1,23 @@
+producer_id,url,read_on,site_last_updated,last_updated_basis,channels_found,note
+co-p-000434,https://goldenprairie.com/,2026-10-15,,none_found,retail_partners;wholesale,"Fetched via reader; direct HTTP 406, no headers"
+co-p-000439,https://www.goudycharcuterie.com,2026-10-15,,none_found,,No sales info; Last-Modified equalled fetch time so not used
+co-p-000444,https://granderivervineyards.com,2026-10-15,,none_found,farm_stand;online,"Direct HTTP 403, no headers"
+co-p-000448,https://www.greatharvest.com/locations/greenwoodvillageco,2026-10-15,2026-10-09,http_last_modified,delivery;online;pickup,Own domain redirects to corporate location page
+co-p-000460,https://groawayllc.com,2026-10-15,,none_found,wholesale,Retail described as future
+co-p-000466,http://gunnerdogtreats.com,2026-10-15,,none_found,,No sales info; Last-Modified equalled fetch time so not used
+co-p-000469,https://halfsectionplus.com,2026-10-15,2024-04-01,http_last_modified,,Egg sources unnamed; left blank
+co-p-000471,https://www.hanaganfarms.com,2026-10-15,,none_found,farm_stand,
+co-p-000472,https://hankinsfarms.com/,2026-10-15,,none_found,u_pick,Pumpkin patch pick-your-own
+co-p-000473,https://Hansenfamilybarnyard.com,2026-10-15,,none_found,,Connection failed
+co-p-000475,https://happydayranchevents.wixsite.com/my-site,2026-10-15,,none_found,,"Event venue, no food sales"
+co-p-000488,https://haydenfresh.com,2026-10-15,,none_found,,Page returned no content
+co-p-000490,https://hearthandcrunch.com/,2026-10-15,,none_found,delivery;farmers_market;online,
+co-p-000493,http://HempFarmColorado.com,2026-10-15,,none_found,online,
+co-p-000494,https://www.hempwardfarms.com/,2026-10-15,,none_found,online,
+co-p-000501,https://carissadewaele.wixsite.com/my-site,2026-10-15,,none_found,online,"Upcoming markets listed, not clearly farmers markets"
+co-p-000504,https://www.highalpinegenetics.com,2026-10-15,,none_found,online,
+co-p-000505,https://www.highaltituderhubarb.com,2026-10-15,,none_found,,Page returned no content
+co-p-000511,https://www.highplainscattleandmeatco.com/,2026-10-15,,none_found,,Site under construction
+co-p-000512,https://www.highprairiemeats.com,2026-10-15,,none_found,online,
+co-p-000515,https://hillisfamilyfarms.com,2026-10-15,,none_found,,Page returned no content
+co-p-000516,https://hilltopbeef.com/,2026-10-15,,none_found,online,

@@ -1,0 +1,46 @@
+producer_id,url,read_on,site_last_updated,last_updated_basis,channels_found,note
+co-p-000833,https://polkadotsandcurry.com,2026-10-15,2026-09-05,sitemap_lastmod,,"home page read; no clear channel statement, left blank"
+co-p-000834,https://www.pollywogstationlavenderfarm.com/,2026-10-15,2026-10-16,http_last_modified,,"home page read; no clear channel statement, left blank"
+co-p-000835,https://ponderosaplains.square.site,2026-10-15,2026-10-16,http_last_modified,,"home page read; no clear channel statement, left blank"
+co-p-000840,https://www.potterfarms.net,2026-10-15,2022-03-17,http_last_modified,wholesale,home page read; resolved
+co-p-000842,https://atost.co,2026-10-15,,none_found,online,home page read; resolved
+co-p-000843,https://princessbeef.com,2026-10-15,,none_found,,"home page read; no clear channel statement, left blank"
+co-p-000849,https://www.purgatorycellarscolorado.com,2026-10-15,,none_found,online,home page read; resolved
+co-p-000850,https://www.quackpatchhomestead.com,2026-10-15,,none_found,,"home page read; no clear channel statement, left blank"
+co-p-000852,https://quartercirclekunes.com/,2026-10-15,2023-09-16,sitemap_lastmod,,"home page read; no clear channel statement, left blank"
+co-p-000858,https://www.radacres.com,2026-10-15,2024-06-07,sitemap_lastmod,delivery;online,home page read; resolved
+co-p-000859,http://rafterwranch.net,2026-10-15,,none_found,,"home page read; no clear channel statement, left blank"
+co-p-000863,http://rampartbakehouse.com,2026-10-15,2026-10-16,sitemap_lastmod,online;pickup,home page read; resolved
+co-p-000864,https://ranchfoodsdirect.com/,2026-10-15,2026-10-16,http_last_modified,delivery;online;pickup,home page read; resolved
+co-p-000867,https://rancholargo.com,2026-10-15,2026-10-09,sitemap_lastmod,delivery;online;pickup,home page read; resolved
+co-p-000870,https://www.ravensthree.com/,2026-10-15,,none_found,,"home page read; no clear channel statement, left blank"
+co-p-000875,https://www.thegardenrebels.com/,2026-10-15,2025-11-28,sitemap_lastmod,,"home page read; no clear channel statement, left blank"
+co-p-000883,http://www.renewedrootsranch.com,2026-10-15,2026-08-21,sitemap_lastmod,,"home page read; no clear channel statement, left blank"
+co-p-000884,https://www.restinpeasdenver.com,2026-10-15,,none_found,delivery;online,home page read; resolved
+co-p-000885,https://RestorationVineyards.com,2026-10-15,2026-10-16,http_last_modified,,"home page read; no clear channel statement, left blank"
+co-p-000888,https://www.risenshineranch.com,2026-10-15,2026-10-14,http_last_modified,,"home page read; no clear channel statement, left blank"
+co-p-000889,https://www.risingmoonranch.net,2026-10-15,,none_found,online,home page read; resolved
+co-p-000890,https://www.riverbearmeats.com,2026-10-15,2026-04-23,sitemap_lastmod,wholesale,home page read; resolved
+co-p-000895,https://www.rkymtnblends.com,2026-10-15,2026-09-29,http_last_modified,,"home page read; no clear channel statement, left blank"
+co-p-000903,https://www.rockcanyoncoffee.com,2026-10-15,,none_found,online;wholesale,home page read; resolved
+co-p-000904,https://www.rockcreekfarm.com,2026-10-15,,none_found,u_pick,home page read; resolved
+co-p-000905,https://rockriverbison.com/,2026-10-15,2026-10-16,http_last_modified,,"home page read; no clear channel statement, left blank"
+co-p-000907,https://www.rockinjspearcattleco.com/,2026-10-15,2026-10-16,http_last_modified,,"home page read; no clear channel statement, left blank"
+co-p-000913,https://greatrangebison.com/,2026-10-15,2026-10-15,http_last_modified,,"home page read; no clear channel statement, left blank"
+co-p-000916,https://www.romesausage.com,2026-10-15,2021-01-07,http_last_modified,,"home page read; no clear channel statement, left blank"
+co-p-000917,https://romerocookies.com/,2026-10-15,,none_found,delivery;online;pickup;wholesale,home page read; resolved
+co-p-000919,https://rootedbroth.co,2026-10-15,,none_found,online;wholesale,home page read; resolved
+co-p-000921,https://rootslocalgoods.com,2026-10-15,,none_found,,unreachable
+co-p-000925,https://royalcrestdairy.com,2026-10-15,2026-10-16,http_last_modified,delivery;online;pickup,home page read; resolved
+co-p-000926,https://www.ruckmanfamilypalisadepeaches.com/,2026-10-15,2026-07-09,sitemap_lastmod,,"home page read; no clear channel statement, left blank"
+co-p-000927,https://rudisbakery.com/,2026-10-15,2026-10-16,http_last_modified,,"home page read; no clear channel statement, left blank"
+co-p-000931,https://ryeresurgence.com/,2026-10-15,2026-09-15,sitemap_lastmod,,"home page read; no clear channel statement, left blank"
+co-p-000938,https://www.saltmeatmarket.com/,2026-10-15,2026-10-14,sitemap_lastmod,,"home page read; no clear channel statement, left blank"
+co-p-000834,https://www.facebook.com/pollywogstationlavenderfarm/,2026-10-15,,none_found,,Facebook page read; no channel stated; last post date not recorded
+co-p-000835,https://www.facebook.com/PonderosaPlains,2026-10-15,,none_found,online,Facebook page read; about text and a post state an online store; resolved; last post date not recorded
+co-p-000843,https://www.facebook.com/Princess-Beef-100964300025627,2026-10-15,,none_found,,Facebook page read; no channel stated; last post date not recorded
+co-p-000852,https://www.facebook.com/quartercirclekunes/,2026-10-15,,none_found,,Facebook page read; no channel stated; last post date not recorded
+co-p-000926,https://www.facebook.com/RuckmanFamilyOrchards/,2026-10-15,,none_found,,Facebook page read; no channel stated; last post date not recorded
+co-p-000934,https://www.facebook.com/sacredsongfarm,2026-10-15,,none_found,,Facebook page read; no channel stated; last post date not recorded
+co-p-000938,https://www.facebook.com/saltmeatmarket,2026-10-15,,none_found,,"Facebook page read; butcher shop, no mapped channel stated; last post date not recorded"
+co-p-000855,https://www.facebook.com/qcgreensdenver,2026-10-15,,none_found,,Facebook page unavailable; last post date not recorded

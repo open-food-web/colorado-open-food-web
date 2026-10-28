@@ -1215,38 +1215,6 @@
 "name": "Schenck Ag LLC",
 "source": "colorado_proud_finder"
 },
-"agritourism association|delta": {
-"Address": "655 Grand Avenue",
-"Category": "Agritourism",
-"County": "Delta",
-"Email": "director@coloradoagritourismassociation.org",
-"Hours": "",
-"Months Open": "",
-"Phone": "(970) 471-9621",
-"Products": "Cultural Events & Activities, Events, Marketing",
-"Status": "Open",
-"Website": "https://www.coloradoagritourismassociation.org/",
-"Year Opened": "",
-"city": "Delta",
-"name": "Colorado Agritourism Association",
-"source": "colorado_proud_finder"
-},
-"agritourism grand junction|grand junction": {
-"Address": "740 Horizon Drive",
-"Category": "Agritourism",
-"County": "Mesa",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "",
-"Products": "",
-"Status": "Open",
-"Website": "https://www.visitgrandjunction.com",
-"Year Opened": "",
-"city": "Grand Junction",
-"name": "Grand Junction Agritourism",
-"source": "usda"
-},
 "agritours county delta|delta": {
 "Address": "501 Palmer Street",
 "Category": "Agritourism",
@@ -2991,22 +2959,6 @@
 "name": "The Arbol Farmers Market",
 "source": "colorado_proud+colorado_proud_farm_fresh+cfma+colorado_proud_finder"
 },
-"arborscape|sheridan": {
-"Address": "3295 S Zuni St",
-"Category": "Food Maker",
-"County": "Arapahoe",
-"Email": "contact@arborscapeservices.com",
-"Hours": "",
-"Months Open": "",
-"Phone": "(303) 806-8733",
-"Products": "Crops & Agricultural Products, Firewood, Nursery & Horticulture Products, Value-Added Non-Food Products",
-"Status": "Open",
-"Website": "https://www.arborscapeservices.com/",
-"Year Opened": "",
-"city": "Sheridan",
-"name": "ArborScape Inc",
-"source": "colorado_proud_finder"
-},
 "arkansas christian mission valley|": {
 "Address": "122 Cottonwood Ave, Buena Vista, CO 81211",
 "Category": "Food Bank",
@@ -3949,22 +3901,6 @@
 "Year Opened": "",
 "city": "Fort Collins",
 "name": "Bread Truck Bakery",
-"source": "colorado_proud_finder"
-},
-"bakery cattle craft queen|centennial": {
-"Address": "19385 East Prentice Lane",
-"Category": "Bakery",
-"County": "Arapahoe",
-"Email": "cheryl@cqofmt.com",
-"Hours": "",
-"Months Open": "",
-"Phone": "(303) 332-7772",
-"Products": "Baked Goods",
-"Status": "Open",
-"Website": "https://www.cqofmt.com",
-"Year Opened": "",
-"city": "Centennial",
-"name": "Cattle Queen Craft Bakery",
 "source": "colorado_proud_finder"
 },
 "bakery cottage mimi place s|englewood": {
@@ -5534,22 +5470,6 @@
 "city": "Crawford",
 "name": "Sunshine Beef",
 "source": "curated"
-},
-"beehives free range|denver": {
-"Address": "617 North Gaylord Street",
-"Category": "On-Farm / Ranch Sales",
-"County": "Denver",
-"Email": "info@freerangebeehives.com",
-"Hours": "",
-"Months Open": "",
-"Phone": "(720) 320-5517",
-"Products": "Services - Food & Agricultural",
-"Status": "Open",
-"Website": "https://freerangebeehives.com",
-"Year Opened": "",
-"city": "Denver",
-"name": "Free Range Beehives, LLC",
-"source": "colorado_proud_finder"
 },
 "bees burley|cañon city": {
 "Address": "1381 Illinois Avenue",
@@ -7965,22 +7885,6 @@
 "Year Opened": "",
 "city": "Aurora",
 "name": "Nathy’s Cake Shop",
-"source": "colorado_proud_finder"
-},
-"cakes snakes|alamosa": {
-"Address": "5450 Co Rd S 112.6",
-"Category": "Food Maker",
-"County": "Alamosa",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "(720) 227-5143",
-"Products": "Baked Goods",
-"Status": "Open",
-"Website": "https://linktr.ee/JzsReptiles",
-"Year Opened": "",
-"city": "Alamosa",
-"name": "Snakes & Cakes",
 "source": "colorado_proud_finder"
 },
 "calkins greens|mead": {
@@ -10431,22 +10335,6 @@
 "name": "High Plains Food Cooperative",
 "source": "usda"
 },
-"coops|black hawk": {
-"Address": "",
-"Category": "On-Farm / Ranch Sales",
-"County": "Gilpin",
-"Email": "contact@coloradocoops.com",
-"Hours": "",
-"Months Open": "",
-"Phone": "(720) 702-0105",
-"Products": "Animal & Pet Food, Chicken, Chicks, Duck, Eggs, Livestock Production Services, Meat, Poultry & Game",
-"Status": "Open",
-"Website": "https://www.coloradocoops.com/",
-"Year Opened": "",
-"city": "Black Hawk",
-"name": "Colorado Coops",
-"source": "colorado_proud_finder"
-},
 "copoco honey s|fort collins": {
 "Address": "2020 North College Avenue",
 "Category": "On-Farm / Ranch Sales, Grocery Store",
@@ -11245,22 +11133,6 @@
 "Year Opened": "",
 "city": "Larkspur",
 "name": "Snow Creek Ranch",
-"source": "curated"
-},
-"creeks ranch spring|carbondale": {
-"Address": "644 Cowen Drive",
-"Category": "Agritourism",
-"County": "Garfield",
-"Email": "info@springcreeksranch.com",
-"Hours": "Events typically May–October",
-"Months Open": "",
-"Phone": "(970) 379-8905",
-"Products": "Event barn and weddings, private fly fishing, horse boarding",
-"Status": "Open",
-"Website": "https://www.springcreeksranch.com",
-"Year Opened": "",
-"city": "Carbondale",
-"name": "Spring Creeks Ranch",
 "source": "curated"
 },
 "crescendum farm flower|arvada": {
@@ -12303,22 +12175,6 @@
 "name": "Simply Natural at Desiderata Ranch",
 "source": "usda"
 },
-"design garden lafayette|denver": {
-"Address": "455 N. Lafayette Street",
-"Category": "On-Farm / Ranch Sales",
-"County": "Denver",
-"Email": "jenniferbolger@comcast.net",
-"Hours": "",
-"Months Open": "",
-"Phone": "(503) 880-7424",
-"Products": "Flowers",
-"Status": "Open",
-"Website": "https://www.lafayettegardendesign.com/",
-"Year Opened": "",
-"city": "Denver",
-"name": "Lafayette Garden Design",
-"source": "colorado_proud_finder"
-},
 "designs farms j2|ordway": {
 "Address": "603 Downey Drive",
 "Category": "On-Farm / Ranch Sales, Bakery, Food Maker",
@@ -13087,22 +12943,6 @@
 "name": "Pueblo Farmers Market Eastside Pop-ups",
 "source": "colorado_proud+colorado_proud_farm_fresh"
 },
-"ecoburn|mack": {
-"Address": "781 R Rd",
-"Category": "Food Maker",
-"County": "Mesa",
-"Email": "ecoburnllc@gmail.com",
-"Hours": "",
-"Months Open": "",
-"Phone": "(970) 260-2130",
-"Products": "Processing, Production & Manufacturing, Risk Management",
-"Status": "Open",
-"Website": "https://ecoburnllc.com",
-"Year Opened": "",
-"city": "Mack",
-"name": "ECOburn, LLC",
-"source": "colorado_proud_finder"
-},
 "eddyline restaurant southmain|buena vista": {
 "Address": "926 Southmain, Buena Vista, CO 81211",
 "Category": "Restaurant",
@@ -13853,22 +13693,6 @@
 "Year Opened": "",
 "city": "Durango",
 "name": "Falfa Pumpkin Patch",
-"source": "usda"
-},
-"fall festival firestone|firestone": {
-"Address": "969 Firestone Blvd",
-"Category": "Agritourism",
-"County": "Weld",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "(303) 833-3291",
-"Products": "",
-"Status": "Open",
-"Website": "",
-"Year Opened": "",
-"city": "Firestone",
-"name": "Firestone Fall Festival",
 "source": "usda"
 },
 "familia pupusas|boulder": {
@@ -15230,22 +15054,6 @@
 "city": "",
 "name": "Smittys Little Farm LTD",
 "source": "colorado_proud_finder"
-},
-"farm little mueller s|littleton": {
-"Address": "190 W Bowles Ave",
-"Category": "Agritourism",
-"County": "Arapahoe",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "(303) 810-1466",
-"Products": "",
-"Status": "Open",
-"Website": "",
-"Year Opened": "",
-"city": "Littleton",
-"name": "Mueller's Little Farm",
-"source": "usda"
 },
 "farm little stone|berthoud": {
 "Address": "4025 Arleigh Dr",
@@ -18862,22 +18670,6 @@
 "city": "Glenwood Spgs",
 "name": "Glenwood Farmers Market",
 "source": "usda"
-},
-"goat lodge mountain|salida": {
-"Address": "9582 US Highway 285",
-"Category": "Agritourism",
-"County": "Chaffee",
-"Email": "mtglodge@gmail.com",
-"Hours": "",
-"Months Open": "",
-"Phone": "(206) 218-8201",
-"Products": "Dairy",
-"Status": "Open",
-"Website": "https://mountaingoatlodge.com",
-"Year Opened": "",
-"city": "Salida",
-"name": "Mountain Goat Lodge",
-"source": "official-site+chaffee_provides"
 },
 "golden microgreens|golden": {
 "Address": "18886 West 59th Drive",
@@ -23119,22 +22911,6 @@
 "name": "POP Colorado",
 "source": "colorado_proud_finder"
 },
-"pork|lucerne": {
-"Address": "PO BOX 116",
-"Category": "Food Maker",
-"County": "Weld",
-"Email": "jrkelly@copork.org",
-"Hours": "",
-"Months Open": "",
-"Phone": "(970) 346-4964",
-"Products": "Pork",
-"Status": "Open",
-"Website": "https://copork.org",
-"Year Opened": "",
-"city": "Lucerne",
-"name": "COLORADO PORK",
-"source": "colorado_proud_finder"
-},
 "pressman wines|golden": {
 "Address": "15810 West 6th Avenue",
 "Category": "Winery",
@@ -23438,22 +23214,6 @@
 "city": "Littleton",
 "name": "Sterling Ranch Farmers' Market",
 "source": "official-site+cfma"
-},
-"ranch sunrise|loveland": {
-"Address": "100 Sunrise Ranch Road",
-"Category": "On-Farm / Ranch Sales",
-"County": "Larimer",
-"Email": "frontdesk@sunriseranch.org",
-"Hours": "Mon: 8:30am - 6pm; Tue: 8:30am - 6pm; Wed: 8:30am - 6pm; Thu: 8:30am - 6pm; Fri: 8:30am - 6pm; Sat: 8:30am - 6pm; Sun: 8:30am - 6pm",
-"Months Open": "",
-"Phone": "(303) 638-3341",
-"Products": "Asparagus, Basil, Beans, Beef, Bok Choy, Broccoli, Cabbage, Cauliflower, Celery, Chard, Cilantro, Corn, Cucumbers, Eggs, Fruit, Garlic, Greens, Herbs, Hot Peppers (Chili Peppers), Kohlrabi, Lamb, Off-Premise Catering, Onions, Parsley, Peas, Peas, Peppers, Prepared Food, Pumpkins, Radishes, Raspberries, Rosemary, Spinach, Strawberries, Summer Squash, Thyme, Tomatoes, Tours, Vegetables, Watermelon, Winter Squash, Zucchini",
-"Status": "Open",
-"Website": "https://sunriseranch.org/",
-"Year Opened": "",
-"city": "Loveland",
-"name": "Sunrise Ranch",
-"source": "colorado_proud_finder"
 },
 "ranch valley yampa|yampa": {
 "Address": "",
