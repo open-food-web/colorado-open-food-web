@@ -18,7 +18,7 @@ import os
 import sys
 
 FIELDS = ["address", "city", "zip", "phone", "email", "website", "facebook", "instagram", "hours_text",
-          "categories", "sales_channels", "status"]
+          "producer_type", "source_categories", "sales_channels", "status"]
 
 
 def read(d, name):
@@ -32,6 +32,11 @@ def read(d, name):
 def load(d):
     loc = {r["location_id"]: r for r in read(d, "locations")}
     prod = {r["producer_id"]: r for r in read(d, "producers")}
+    for r in prod.values():   # tables from before format 2 call these kind and categories
+        if "producer_type" not in r:
+            r["producer_type"] = r.get("kind", "")
+        if "source_categories" not in r:
+            r["source_categories"] = r.get("categories", "")
     pls = {}
     for r in read(d, "producer_locations"):
         pls.setdefault(r["producer_id"], []).append(r)
@@ -92,7 +97,7 @@ def main():
     if added:
         lines += ["### Added", ""]
         for p in sorted(added, key=lambda x: x["name"]):
-            lines.append("- **%s** (%s). %s" % (p["name"], p["kind"], "; ".join(where(A, p["producer_id"])) or "no location"))
+            lines.append("- **%s** (%s). %s" % (p["name"], p["producer_type"], "; ".join(where(A, p["producer_id"])) or "no location"))
         lines.append("")
     if gone:
         lines += ["### Removed", ""]

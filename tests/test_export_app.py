@@ -60,7 +60,7 @@ class ExportApp(unittest.TestCase):
         self.assertEqual(doc["vocab"]["counties"]["08015"], "Chaffee")
         self.assertEqual(doc["vocab"]["counties"]["08014"], "Broomfield")
         self.assertEqual(len(doc["vocab"]["counties"]), 64)
-        self.assertEqual(doc["export"]["format_version"], 1)
+        self.assertEqual(doc["export"]["format_version"], 2)
         self.assertEqual(self.export(rows, extra=("--county-fips", "all"))["export"]["county_fips"], doc["export"]["county_fips"])
         c = doc["export"]["counts"]
         self.assertEqual(c["excluded_no_county"]["producers"], 0)
@@ -108,12 +108,21 @@ class ExportApp(unittest.TestCase):
         with self.assertRaises(subprocess.CalledProcessError):
             self.export([row("Hidden Farm", "On-Farm / Ranch Sales")], extra=("--county-fips", "08999"))
 
+    def test_removed_config_keys_are_refused(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            cfg = os.path.join(d, "old.json")
+            with open(cfg, "w", encoding="utf-8") as f:
+                json.dump({"exclude_categories": {"Bakery": "x"}}, f)
+            with self.assertRaises(subprocess.CalledProcessError):
+                self.export([row("A Farm", "On-Farm / Ranch Sales")], extra=("--config", cfg))
+
     def test_statewide_config_is_valid_and_every_exclusion_has_a_reason(self):
         with open(os.path.join(ROOT, "exports", "open-food-web.config.json"), encoding="utf-8") as f:
             cfg = json.load(f)
-        for key in ("exclude_kinds", "exclude_categories"):
-            for k, reason in cfg[key].items():
-                self.assertTrue(reason.strip(), "%s %s needs a reason" % (key, k))
+        self.assertEqual(sorted(cfg["exclude_producer_types"]), ["bakery"])
+        self.assertEqual(cfg["exclude_only_source_categories"], ["Agritourism"])   # a farm that also sells at the farm stays
+        self.assertNotIn("exclude_categories", cfg)   # categories are gone from the model: scope is by producer type
         self.assertEqual(sorted(cfg["include_outlet_kinds"]), ["apothecary", "farm_store", "garden_center", "grocery"])
         self.assertIn("PROPOSAL", cfg["_comment"])
 
@@ -200,15 +209,15 @@ class ExportApp(unittest.TestCase):
         self.assertIn("08015", self.by_name(doc)["Plain Farm"]["service_county_fips"])
         self.assertEqual([o["name"] for o in doc["outlets"]], ["Herb Shop"])
 
-    def test_app_config_scopes_by_category_and_hides_a_pin(self):
+    def test_app_config_scopes_by_producer_type_and_hides_a_pin(self):
         rows = [row("Plain Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106"),
                 row("Bread Shop", "Bakery", Address="3 Rd", Latitude="38.6", Longitude="-106"),
                 row("Goat Stay", "Agritourism", Address="4 Rd", Latitude="38.6", Longitude="-106"),
                 row("Social Ranch", "On-Farm / Ranch Sales", Address="5 Rd", Latitude="38.6", Longitude="-106")]
         cfg = os.path.join(tempfile.mkdtemp(), "cfg.json")
         with open(cfg, "w", encoding="utf-8") as f:
-            json.dump({"include_categories": {"On-Farm / Ranch Sales": "x"},
-                       "exclude_categories": {"Agritourism": "x"},
+            json.dump({"include_producer_types": ["farm", "ranch"],
+                       "exclude_only_source_categories": ["Agritourism"],
                        "hide_pin_slugs": {"social-ranch": "x"}}, f)
         names = self.by_name(self.export(rows, extra=["--config", cfg]))
         self.assertEqual(set(names), {"Plain Farm", "Social Ranch"})
@@ -247,25 +256,25 @@ class ExportApp(unittest.TestCase):
         pickup = [l for l in self.by_name(doc)["Ranch"]["locations"] if l["role"] == "pickup"][0]
         self.assertEqual(pickup["name"], "Salida Market")
 
-    def test_kind_and_product_groups(self):
+    def test_producer_type_and_product_groups(self):
         d = tempfile.mkdtemp()
         kinds = os.path.join(d, "kinds.csv")
         with open(kinds, "w", encoding="utf-8", newline="") as f:
             w = csv.writer(f, lineterminator=chr(10))
-            w.writerow(["name", "kind", "product_groups", "note", "source", "date"])
+            w.writerow(["name", "producer_type", "product_groups", "note", "source", "date"])
             w.writerow(["Sunny Place", "ranch", "", "", "", ""])
             w.writerow(["Quiet Place", "farm", "veggies", "", "", ""])
         doc = self.export([row("Sunny Place", "On-Farm / Ranch Sales", Products="Grass-fed beef, wildflower honey", Address="1 Rd", Latitude="38.5", Longitude="-106"),
                            row("Quiet Place", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106"),
                            row("Meat Producer Co", "Meat Producer & Packer", Address="3 Rd", Latitude="38.7", Longitude="-106")],
-                          build_extra=["--kinds", kinds])
+                          build_extra=["--producer-types", kinds])
         farms = self.by_name(doc)
-        self.assertEqual(farms["Sunny Place"]["kind"], "ranch")
+        self.assertEqual(farms["Sunny Place"]["producer_type"], "ranch")
         self.assertEqual(farms["Sunny Place"]["product_groups"], ["beef-meat", "honey"])
         self.assertEqual(farms["Quiet Place"]["product_groups"], ["veggies"])   # falls back to what the business ticked
         self.assertNotIn("veggies", farms["Meat Producer Co"]["product_groups"])  # "Producer" is not "produce"
         self.assertIn("honey", doc["vocab"]["product_groups"])
-        self.assertEqual(doc["vocab"]["kinds"]["ranch"], "Ranches")
+        self.assertEqual(doc["vocab"]["producer_types"]["ranch"], "Ranches")
 
     def test_confirmed_by_names_the_partner_or_the_business_page(self):
         d = tempfile.mkdtemp()
@@ -289,12 +298,12 @@ class ExportApp(unittest.TestCase):
         kinds = os.path.join(d, "kinds.csv")
         with open(kinds, "w", encoding="utf-8", newline="") as f:
             w = csv.writer(f, lineterminator=chr(10))
-            w.writerow(["name", "kind", "product_groups", "dropin_visits", "farm_pickup", "visit_note"])
+            w.writerow(["name", "producer_type", "product_groups", "dropin_visits", "farm_pickup", "visit_note"])
             w.writerow(["Closed Ranch", "ranch", "", "no", "yes", "Pick up at the annex by arrangement"])
         doc = self.export([row("Closed Ranch", "On-Farm / Ranch Sales", Address="1 Rd", Latitude="38.5", Longitude="-106"),
                            row("Stand Farm", "Roadside Market", Address="2 Rd", Latitude="38.6", Longitude="-106"),
                            row("Mystery Farm", "On-Farm / Ranch Sales", Address="3 Rd", Latitude="38.7", Longitude="-106")],
-                          build_extra=["--kinds", kinds])
+                          build_extra=["--producer-types", kinds])
         farms = self.by_name(doc)
         self.assertEqual((farms["Closed Ranch"]["dropin_visits"], farms["Closed Ranch"]["farm_pickup"]), (False, True))
         self.assertEqual(farms["Closed Ranch"]["visit_note"], "Pick up at the annex by arrangement")
@@ -325,7 +334,7 @@ class ExportApp(unittest.TestCase):
 
     def test_metadata_counts_match(self):
         doc = self.export([row("A Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106")])
-        self.assertEqual(doc["export"]["format_version"], 1)
+        self.assertEqual(doc["export"]["format_version"], 2)
         self.assertEqual(doc["export"]["counts"]["producers"], len(doc["producers"]))
         self.assertEqual(doc["export"]["counts"]["pins"], 1)
 

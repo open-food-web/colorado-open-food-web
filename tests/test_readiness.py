@@ -10,7 +10,7 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import readiness  # noqa: E402
 
-PROD = ["producer_id", "slug", "name", "kind", "categories", "products", "product_groups", "dropin_visits", "farm_pickup",
+PROD = ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "dropin_visits", "farm_pickup",
         "website", "phone", "email", "facebook", "instagram", "sales_channels", "status", "claimed", "last_verified"]
 LOC = ["location_id", "address", "city", "hide_address", "county_fips", "lat", "lon"]
 PL = ["producer_id", "location_id", "role"]
@@ -40,7 +40,7 @@ class Readiness(unittest.TestCase):
         return {r["id"]: r for r in readiness.producer_rows(self.tables(*a, **k))}
 
     def base(self, pid, **kw):
-        r = {"producer_id": pid, "slug": pid, "name": pid, "kind": "farm", "product_groups": "eggs", "phone": "555",
+        r = {"producer_id": pid, "slug": pid, "name": pid, "producer_type": "farm", "product_groups": "eggs", "phone": "555",
              "status": "unverified"}
         r.update(kw)
         return r

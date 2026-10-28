@@ -9,7 +9,7 @@
   var CONFIG = {
     draft: true,                      // true shows the "beta" banner; set false at launch (and drop the noindex tags)
     repo: "https://github.com/open-food-web/colorado-open-food-web",
-    supportedFormat: 1                // export format_version this site understands
+    supportedFormat: 2                // export format_version this site understands
   };
 
   // What a pin or card is: the business's own category. Colors come from site.css (--t-*).
@@ -22,7 +22,6 @@
     maker:   { label:"Food makers", single:"Food maker",     emoji:"🍞", color:"var(--t-dining)",     hex:"#5b6b8c" },
     winery:  { label:"Wineries", single:"Winery",        emoji:"🍷", color:"var(--t-dining)",     hex:"#5b6b8c" },
     market:  { label:"Farmers markets", single:"Farmers market", emoji:"🧺", color:"var(--t-market)",     hex:"#a8761d" },
-    agritourism: { label:"Agritourism", single:"Agritourism",       emoji:"🐴", color:"var(--t-ranch)",      hex:"#8a5a3c" },
     education:   { label:"Agricultural education", single:"Agricultural education", emoji:"🎓", color:"var(--t-community)", hex:"#3f7f9c" },
     access:  { label:"Free food", single:"Free food",       emoji:"🥫", color:"var(--t-assistance)", hex:"#a94f28" },
     // Shops and grocers come from the Food Web's outlets (export "outlets"); the key is the outlet kind.
@@ -111,7 +110,7 @@
   }
   function catOf(raw, group){
     if(group === "outlet") return GROUPS[raw.kind] && GROUPS[raw.kind].shop ? raw.kind : "other_retail";
-    return group === "farm" ? (GROUPS[raw.kind] ? raw.kind : "farm") : group;
+    return group === "farm" ? (GROUPS[raw.producer_type] ? raw.producer_type : "farm") : group;
   }
   function makeRec(raw, group, photos, channelLabels, productLabels){
     var cat = catOf(raw, group), places = [];
@@ -145,7 +144,7 @@
       town:towns[0] || "", channels:channels, channelText:channels.map(function(c){ return channelLabels[c] || c; }),
       homeTown:homeCity,
       photo:photos[raw.slug] || null,
-      hours:raw.hours_text || "", products:(raw.products || []).join(", "), categories:raw.categories || [] };
+      hours:raw.hours_text || "", products:(raw.products || []).join(", ") };
     places.forEach(function(p){ p.rec = rec; });
     rec.search = [raw.name, towns.join(" "), rec.products, rec.productText.join(" "), GROUPS[cat].label,
       places.map(function(p){ return [p.title, p.loc.address].join(" "); }).join(" ")].join(" ").toLowerCase();
@@ -243,7 +242,7 @@
 
   // "Visit the farm" for a farm, "Visit the shop" for an apothecary or store, and so on, by what kind of business it is.
   var VISIT_WORD = { bakery:"bakery", winery:"winery", apothecary:"shop", shop:"shop", store:"shop", grocer:"shop", market:"market" };
-  function visitWord(r){ return VISIT_WORD[r && r.raw && r.raw.kind] || "farm"; }
+  function visitWord(r){ return VISIT_WORD[r && r.raw && (r.raw.producer_type || r.raw.kind)] || "farm"; }
   function placeLabel(p){ return p.market ? "Sells at the farmers market" : (p.pickup ? "Pickup point" : (p.role === "home_base" && p.rec ? "At the " + visitWord(p.rec) : (ROLE_LABEL[p.role] || ""))); }
 
   // The list a visitor was last browsing (directory or map results), so a listing page can step to the next one.

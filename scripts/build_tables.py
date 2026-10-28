@@ -66,10 +66,10 @@ BADGES = {"Sells to Schools"}
 # it to every farm or ranch, including ones that do not sell on site, so it says what the business
 # is, not how it sells. Blank sales_channels means unconfirmed.
 CHANNEL = {"Roadside Market": "farm_stand", "U-Pick": "u_pick", "CSA Farm": "csa",
-           "Farm Products (online)": "online", "Wholesale Grower": "wholesale"}
+           "Farm Products (online)": "online", "Wholesale Grower": "wholesale", "Agritourism": "agritourism"}
 RAW_CHANNEL = {"on_farm": "farm_stand", "farm_stand": "farm_stand", "farmers_market": "farmers_market", "csa": "csa",
                "delivery": "delivery", "wholesale": "wholesale", "retail_partners": "retail_partners",
-               "online": "online", "u_pick": "u_pick", "pickup": "pickup"}
+               "online": "online", "u_pick": "u_pick", "pickup": "pickup", "agritourism": "agritourism"}
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
           "October", "November", "December"]
 SOURCE_NAME = {"chaffee_provides": "chaffee_provides", "colorado_proud": "colorado_proud",
@@ -82,10 +82,10 @@ FIELD_MAP = {"Phone": "phone", "Email": "email", "Website": "website", "Facebook
              "Instagram": "instagram", "Hours": "hours_text", "Months Open": "seasonal_months",
              "Products": "products", "Certified Organic": "certified_organic", "SNAP": "accepts_snap",
              "ADA Accessible": "ada_accessible", "Address": "address", "City": "city", "Zip": "zip",
-             "County": "county_fips", "Category": "categories"}
+             "County": "county_fips", "Category": "source_categories"}
 
 COLS = {
-    "producers": ["producer_id", "slug", "name", "kind", "categories", "products", "product_groups", "dropin_visits", "dropin_hours", "farm_pickup", "visit_note", "visits", "seasonal_months",
+    "producers": ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "dropin_visits", "dropin_hours", "farm_pickup", "visit_note", "visits", "seasonal_months",
                   "hours_text", "hours_status", "website", "phone", "email", "facebook", "instagram", "sales_channels",
                   "certified_organic", "accepts_snap", "ada_accessible", "call_first", "status", "claimed",
                   "opted_out_fields", "first_seen", "last_verified"],
@@ -122,7 +122,7 @@ def nkey(s: str) -> str:
 
 CHANNEL_ALIAS = {"on_farm": "farm_stand"}
 CHANNEL_VALUES = {"farm_stand", "u_pick", "csa", "farmers_market", "pickup", "delivery", "online", "wholesale",
-                  "retail_partners", "none"}   # "none": confirmed, no public sales (not the same as blank = unknown)
+                  "retail_partners", "agritourism", "none"}   # "none": confirmed, no public sales (not the same as blank = unknown)
 
 
 def channel_list(text: str) -> set:
@@ -188,11 +188,24 @@ def classify(cats):
     return "deferred"
 
 
-def producer_kind(name, cats):
+# What a producer IS: one producer type (docs/PROPOSAL_PRODUCER_TYPE.md). How it sells is `sales_channels` (CHANNEL above) and what it
+# makes is `product_groups`; the source directory labels are kept only as `source_categories`.
+PRODUCER_TYPES = ("farm", "ranch", "orchard", "maker", "bakery", "winery", "education")
+# Labels that say how a farm sells, not what it is.
+SELLING_ONLY = {"On-Farm / Ranch Sales", "Farm Products (online)", "CSA Farm", "Roadside Market", "U-Pick", "Wholesale Grower"}
+
+
+def producer_type(name, cats):
+    cats = set(cats)
     if "Winery" in cats:
         return "winery"
-    if any(c in ("Bakery", "Food Maker") for c in cats) and "On-Farm / Ranch Sales" not in cats:
-        return "maker"
+    if "Agricultural Education" in cats and not cats & SELLING_ONLY:
+        return "education"
+    if not cats & {"On-Farm / Ranch Sales", "Meat Producer & Packer"}:
+        if "Bakery" in cats:
+            return "bakery"
+        if "Food Maker" in cats:
+            return "maker"
     if "Meat Producer & Packer" in cats or re.search(r"\b(ranch|cattle|beef)\b", name, re.I):
         return "ranch"
     return "farm"
@@ -290,7 +303,7 @@ def main():
                     help="partner CSVs in the raw layout; a row replaces the raw row with the same Source ID")
     ap.add_argument("--locations", help="inputs/locations.csv: extra places to buy (pickup points, markets) per producer")
     ap.add_argument("--overrides", help="inputs/overrides.csv, read only to credit partner-confirmed fields")
-    ap.add_argument("--kinds", help="inputs/producer_kinds.csv: how a producer labels itself (farm, ranch, maker...) and what it offers")
+    ap.add_argument("--producer-types", help="inputs/producer_types.csv: a producer's type (farm, ranch, maker...) and what it offers")
     ap.add_argument("--registry", default=REGISTRY, help="ID registry CSV (default: data/id_registry.csv)")
     a = ap.parse_args()
     fips = FIPS[a.county] if a.county else ""
@@ -327,13 +340,15 @@ def main():
                 elif v:    # confirmed from the business's own Facebook page or website
                     partner_fields[key] = ({"facebook": "producer_facebook", "instagram": "producer_instagram", "website": "producer_site"}[v.group(1)],
                                            "source", orow.get("date") or "", v.group(2) or "")
-    kinds_by_name = {}
-    if a.kinds and os.path.exists(a.kinds):
-        with open(a.kinds, encoding="utf-8-sig", newline="") as f:
+    types_by_name = {}
+    if a.producer_types and os.path.exists(a.producer_types):
+        with open(a.producer_types, encoding="utf-8-sig", newline="") as f:
             for kr in csv.DictReader(f):
-                kinds_by_name[nkey(kr["name"])] = kr
-    def kind_groups(name):
-        return [g.strip() for g in ((kinds_by_name.get(nkey(name)) or {}).get("product_groups") or "").split(";") if g.strip()]
+                if kr.get("producer_type") and kr["producer_type"] not in PRODUCER_TYPES:
+                    sys.exit("%s: %r is not a producer type (%s)" % (a.producer_types, kr["producer_type"], ", ".join(PRODUCER_TYPES)))
+                types_by_name[nkey(kr["name"])] = kr
+    def type_groups(name):
+        return [g.strip() for g in ((types_by_name.get(nkey(name)) or {}).get("product_groups") or "").split(";") if g.strip()]
     pending_market_pickups = []
     reg = Registry(a.registry)
     out = {k: [] for k in COLS}
@@ -391,7 +406,7 @@ def main():
         hs = parsed.status
         dys = ";".join(sorted({sl.day for sl in parsed.slots}, key=hrs.DAY_ORDER.index))
         typ = classify(cats_main)
-        if typ == "deferred" and (kinds_by_name.get(nkey(name)) or {}).get("kind"):
+        if typ == "deferred" and (types_by_name.get(nkey(name)) or {}).get("producer_type"):
             typ = "producer"      # a person has said what it is (a mushroom grower, a honey maker...)
         prov = json.loads(r["Provenance"]) if r["Provenance"] else {}
         srcs = [SOURCE_NAME.get(s, s) for s in (r["Source"] or "").split("+") if s]
@@ -441,19 +456,19 @@ def main():
                 pid = reg.get("co-p", sid)
                 out["producers"].append({
                     "producer_id": pid, "slug": new_slug(name), "name": name,
-                    "kind": (kinds_by_name.get(nkey(name)) or {}).get("kind") or producer_kind(name, cats_main),
+                    "producer_type": (types_by_name.get(nkey(name)) or {}).get("producer_type") or producer_type(name, cats_main),
                     "dropin_visits": {"yes": "true", "no": "false"}.get(
-                        ((kinds_by_name.get(nkey(name)) or {}).get("dropin_visits") or "").strip().lower(), ""),
-                    "dropin_hours": (kinds_by_name.get(nkey(name)) or {}).get("dropin_hours") or "",
+                        ((types_by_name.get(nkey(name)) or {}).get("dropin_visits") or "").strip().lower(), ""),
+                    "dropin_hours": (types_by_name.get(nkey(name)) or {}).get("dropin_hours") or "",
                     "farm_pickup": {"yes": "true", "no": "false"}.get(
-                        ((kinds_by_name.get(nkey(name)) or {}).get("farm_pickup") or "").strip().lower(), ""),
-                    "visit_note": (kinds_by_name.get(nkey(name)) or {}).get("visit_note") or "",
-                    "visits": (kinds_by_name.get(nkey(name)) or {}).get("visits") or "",
+                        ((types_by_name.get(nkey(name)) or {}).get("farm_pickup") or "").strip().lower(), ""),
+                    "visit_note": (types_by_name.get(nkey(name)) or {}).get("visit_note") or "",
+                    "visits": (types_by_name.get(nkey(name)) or {}).get("visits") or "",
                     "product_groups": ";".join(PRODUCTS.union(
                         PRODUCTS.from_text(r["Products"], " ".join(cats_main), name)
-                        or [g for g in kind_groups(name) if not g.startswith("+")],
-                        [g[1:] for g in kind_groups(name) if g.startswith("+")])),     # "+herbs": added to what the text shows
-                    "categories": ";".join(c for c in cats if c in PRODUCER_CATS),
+                        or [g for g in type_groups(name) if not g.startswith("+")],
+                        [g[1:] for g in type_groups(name) if g.startswith("+")])),     # "+herbs": added to what the text shows
+                    "source_categories": ";".join(c for c in cats if c in PRODUCER_CATS),
                     "products": r["Products"].replace(", ", ";"),
                     "seasonal_months": ";".join(months), "hours_text": r["Hours"], "hours_status": hs, "email": r["Email"],
                     "sales_channels": ";".join(sorted(set(filter(None, channels(r, cats).split(";")))

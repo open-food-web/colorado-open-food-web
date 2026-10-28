@@ -2,6 +2,11 @@
 
 # Categories
 
+> **Producer categories are now source labels only.** For producers, what a business *is* is `kind`, how it sells is
+> `sales_channels` and what it makes is `product_groups` (see `PROPOSAL_PRODUCER_TYPE.md` and `SCHEMA.md`). The labels below stay
+> as the vocabulary the sources use and as `producers.source_categories`; they also still decide the record type
+> (producer, market, outlet, access point). Markets, outlets and access points keep their own `kind`.
+
 The data set covers the local food system: anything that produces, makes, distributes,
 sells or serves food, or supplies the people who do. No entity is too large or too small
 if a category fits it, and if none fits we add one. What a *public* application shows is

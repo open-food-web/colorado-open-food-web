@@ -92,7 +92,7 @@ COUNTY_NAMES = {
 }
 # Fields export_app.py will list under "confirmed by" (FIELD_LABEL there)
 CONFIRMABLE = {"phone", "email", "website", "facebook", "instagram", "hours_text", "seasonal_months", "products", "address",
-               "city", "zip", "categories", "certified_organic", "accepts_snap", "ada_accessible"}
+               "city", "zip", "source_categories", "certified_organic", "accepts_snap", "ada_accessible"}
 NEEDS = ["town", "product_group", "channel", "place_to_find", "contact"]
 
 
@@ -148,7 +148,7 @@ def producer_rows(T):
         pid = p["producer_id"]
         locs = plocs.get(pid, [])
         home = next((T["loc"].get(l["location_id"]) for l in locs if l["role"] == "home_base"), None) or {}
-        channels = set(lst(p["sales_channels"]))
+        channels = set(lst(p["sales_channels"])) - {"agritourism"}   # not a way to buy food
         sells_at_farm = bool(PIN_CHANNELS & channels)
         others = [T["loc"].get(l["location_id"]) or {} for l in locs if l["role"] != "home_base"]
         pinned_other = any(o.get("lat") and o.get("lon") for o in others)
@@ -168,9 +168,9 @@ def producer_rows(T):
             for l in locs)
         dropin_set, pickup_set = p["dropin_visits"] != "", p["farm_pickup"] != ""
         dropin_known = dropin_set or sells_at_farm
-        pickup_known = pickup_set or farm_is_a_spot or dropin_known or "Agritourism" in lst(p["categories"])
+        pickup_known = pickup_set or farm_is_a_spot or dropin_known or "Agritourism" in lst(p["source_categories"])
         row = {
-            "id": pid, "kind": p["kind"] or "(none)", "county": home.get("county_fips") or "(none)",
+            "id": pid, "producer_type": p["producer_type"] or "(none)", "county": home.get("county_fips") or "(none)",
             "town": bool(home.get("city")), "product_group": bool(p["product_groups"]), "products_text": bool(p["products"]),
             "channel": bool(channels), "place_to_find": place, "contact": contact,
             "pin": pinned_home or pinned_other, "pin_unconfirmed": pin_unconfirmed, "market": pid in in_market,
@@ -228,10 +228,10 @@ def report(T, county=None):
     near = collections.Counter(r["missing"][0] for r in rows if r["tier"] == "near")
     for k, c in near.most_common():
         L.append("| %s | %d |" % (k, c))
-    L += ["", "## By kind", "", "| Kind | Producers | Ready | Near | Gap |", "|---|---|---|---|---|"]
+    L += ["", "## By producer type", "", "| Producer type | Producers | Ready | Near | Gap |", "|---|---|---|---|---|"]
     by = collections.defaultdict(collections.Counter)
     for r in rows:
-        by[r["kind"]][r["tier"]] += 1
+        by[r["producer_type"]][r["tier"]] += 1
     for k, c in sorted(by.items(), key=lambda kv: -sum(kv[1].values())):
         L.append("| %s | %d | %d | %d | %d |" % (k, sum(c.values()), c["ready"], c["near"], c["gap"]))
     if not county:
