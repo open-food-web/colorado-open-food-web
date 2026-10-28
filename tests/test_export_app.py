@@ -12,7 +12,7 @@ from test_build_tables import HEAD, ROOT, row  # noqa: E402
 
 
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
-from export_app import compact_hours as export_app_compact  # noqa: E402
+from export_app import compact_hours as export_app_compact, clean_city  # noqa: E402
 
 
 class ExportApp(unittest.TestCase):
@@ -182,6 +182,24 @@ class ExportApp(unittest.TestCase):
                           extra=["--unconfirmed-home-pins", "hide"])
         self.assertFalse(self.by_name(doc)["Unknown Farm"]["locations"][0]["pin"])
 
+    def test_hidden_home_pin_is_offered_to_apps_that_choose_to_show_it(self):
+        rows = [row("Unknown Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106"),
+                row("Stand Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106")]
+        doc = self.export(rows, extra=["--unconfirmed-home-pins", "hide"])
+        farms = self.by_name(doc)
+        self.assertFalse(farms["Unknown Farm"]["locations"][0]["pin"])
+        self.assertTrue(farms["Unknown Farm"]["locations"][0]["pin_unconfirmed_home"])
+        self.assertFalse(farms["Stand Farm"]["locations"][0]["pin_unconfirmed_home"])  # already pinned for real
+        shown = self.by_name(self.export(rows))
+        self.assertFalse(shown["Unknown Farm"]["locations"][0]["pin_unconfirmed_home"])
+
+    def test_producers_carry_service_counties_and_all_outlet_kinds_can_be_exported(self):
+        rows = [row("Herb Shop", "Apothecary", Address="138 W 1st St", City="Salida", Latitude="38.53", Longitude="-105.99"),
+                row("Plain Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106")]
+        doc = self.export(rows, extra=["--all-outlet-kinds"])
+        self.assertIn("08015", self.by_name(doc)["Plain Farm"]["service_county_fips"])
+        self.assertEqual([o["name"] for o in doc["outlets"]], ["Herb Shop"])
+
     def test_app_config_scopes_by_category_and_hides_a_pin(self):
         rows = [row("Plain Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106"),
                 row("Bread Shop", "Bakery", Address="3 Rd", Latitude="38.6", Longitude="-106"),
@@ -310,6 +328,13 @@ class ExportApp(unittest.TestCase):
         self.assertEqual(doc["export"]["format_version"], 1)
         self.assertEqual(doc["export"]["counts"]["producers"], len(doc["producers"]))
         self.assertEqual(doc["export"]["counts"]["pins"], 1)
+
+    def test_city_names_are_tidied(self):
+        for raw, want in [("LONGMONT", "Longmont"), ("Fort collins", "Fort Collins"), ("Rocky Ford, CO", "Rocky Ford"),
+                          ("Carbondale 81623", "Carbondale"), ("McCoy", "McCoy"), ("Bennett,", "Bennett"), ("Ft. Collins", "Fort Collins"), ("CANON CITY", "Cañon City"), ("Ca�on City", "Cañon City"), ("DeBeque", "DeBeque"), ("", "")]:
+            self.assertEqual(clean_city(raw), want)
+        doc = self.export([row("A Farm", "Roadside Market", Address="1 Rd", City="FORT COLLINS", Latitude="38.5", Longitude="-106")])
+        self.assertEqual(doc["producers"][0]["locations"][0]["city"], "Fort Collins")
 
 
 if __name__ == "__main__":

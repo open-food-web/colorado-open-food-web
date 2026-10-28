@@ -31,6 +31,20 @@ from build_tables import FIPS as COUNTY_FIPS  # noqa: E402  (county name -> FIPS
 COUNTY_NAMES = {v: k for k, v in COUNTY_FIPS.items()}
 TOWNS = os.path.join(HERE, "..", "data", "towns.csv")
 
+def clean_city(name):
+    """Tidy a town name for display: drop a trailing ", CO" or ZIP, and capitalize words typed all in
+    upper or lower case ("LONGMONT", "Fort collins"). "Ft." becomes "Fort" and Cañon City is spelled one way. Mixed-case words (McCoy, DeBeque) are left alone."""
+    if not name:
+        return name
+    name = re.sub(r"(?i)[,\s]+(co|colo\.?|colorado)?[\s,]*\d{5}(-\d{4})?\s*$|,\s*(co|colo\.?|colorado)\s*$", "", name.strip())
+    name = re.sub(r"[,\s]+$", "", name)
+    name = re.sub(r"(?i)^ft\.?\s+", "Fort ", name)
+    if re.fullmatch(r"(?i)ca.on city", name):  # Canon City, or its accent lost to a bad character
+        return "Cañon City"
+    words = [w if (w != w.upper() and w != w.lower()) else w.capitalize() for w in re.split(r"(?<=[\s-])|(?=[\s-])", name) if w]
+    return re.sub(r"\s+", " ", "".join(words)).strip() or None
+
+
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
           "October", "November", "December"]
 CHANNEL_LABELS = {
@@ -162,6 +176,8 @@ def main():
                     help="also include records that this source lists, even outside the county")
     ap.add_argument("--unconfirmed-home-pins", choices=["show", "hide"], default="show",
                     help="draw a home-base pin for producers whose sales channels are not confirmed yet")
+    ap.add_argument("--all-outlet-kinds", action="store_true",
+                    help="export outlets of every kind (the shared statewide release; an app scopes them itself)")
     ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}, \"include_categories\": {category: reason}, \"exclude_categories\": {category: reason}, \"hide_pin_slugs\": {slug: reason}} for the app's own scope choices")
     ap.add_argument("--generated", default=dt.date.today().isoformat())
     a = ap.parse_args()
@@ -179,6 +195,8 @@ def main():
     include_categories = set((cfg.get("include_categories") or {}).keys())
     exclude_categories = set((cfg.get("exclude_categories") or {}).keys())
     include_outlet_kinds = set(cfg.get("include_outlet_kinds") or [])   # outlets are exported only when the app asks for them
+    if a.all_outlet_kinds:
+        include_outlet_kinds = set(OUTLET_KIND_LABELS)
     exclude_kinds = set(cfg.get("exclude_kinds") or [])   # e.g. ["bakery"]: a whole category left out of a launch
 
     locations = {r["location_id"]: r for r in T("locations")}
@@ -289,7 +307,7 @@ def main():
             street = None
         out = {"id": loc_id, "role": role, "name": L["name"] or (market_name.get(loc_id) if use_market_name else None) or None,
                "address": street,
-               "city": L["city"] or (town[0] if town else None), "zip": None if hidden else (L["zip"] or None),
+               "city": clean_city(L["city"]) or (town[0] if town else None), "zip": None if hidden else (L["zip"] or None),
                "county_fips": L["county_fips"] or None,
                "lat": None if lat is None else round(lat, 6), "lon": None if lon is None else round(lon, 6),
                "precision": "none" if lat is None else ("town" if hidden else ("exact" if street and L["geo_source"] != "town_centre" else "approximate")),
@@ -350,8 +368,10 @@ def main():
         visits = derive_visits(p, channels, dropin, dropin_hours)
         out_locs = []
         for l in locs:
+            home_pin_if_shown = False
             if l["role"] == "home_base":
                 pin = sells_at_farm or (not channels and a.unconfirmed_home_pins == "show")
+                home_pin_if_shown = not sells_at_farm and not channels
                 basis = "confirmed" if sells_at_farm else "unconfirmed"
                 if p["slug"] in hide_pin_slugs and not sells_at_farm:
                     pin = False
@@ -363,12 +383,19 @@ def main():
             lcf = (locations.get(l["location_id"]) or {}).get("county_fips")
             if lcf and lcf not in a.county_fips:
                 pin = False       # a place outside this county is not a place to buy on this county's map
+                home_pin_if_shown = False
+            if not (locations.get(l["location_id"]) or {}).get("address")                     and (locations.get(l["location_id"]) or {}).get("hide_address") != "true":
+                home_pin_if_shown = False
             out_locs.append(public_location(l["location_id"], l["role"], pin, basis, {
+                # True when the home base would be pinned if an app chose to show unconfirmed home pins (see
+                # --unconfirmed-home-pins). The file's own `pin` stays the safe default; an app opts in per record.
+                "pin_unconfirmed_home": bool(home_pin_if_shown and not pin and num(locations[l["location_id"]]["lat"]) is not None),
                 "days": lst(l["days"]), "hours_text": l["hours_text"] or None,
                 "season_start": l["season_start"] or None, "season_end": l["season_end"] or None,
                 "status": l["status"], "confirm_url": l.get("confirm_url") or None}, use_market_name=True))
         rec = {
             "id": pid, "slug": p["slug"], "name": p["name"], "kind": p["kind"],
+            "service_county_fips": sorted(areas.get(pid, set())),
             "categories": lst(p["categories"]), "products": lst(p["products"]),
             "product_groups": lst(p.get("product_groups", "")),
             "visits": visits, "dropin_visits": dropin, "dropin_hours": dropin_hours, "farm_pickup": farm_pickup, "visit_basis": {"dropin": dropin_basis, "pickup": pickup_basis},
