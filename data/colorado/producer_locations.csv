@@ -26,7 +26,8 @@ co-ploc-000053,co-p-000053,co-loc-000067,home_base,mon;tue;wed;thu;fri,Mon: 8am 
 co-ploc-000054,co-p-000054,co-loc-000068,home_base,,Winter CSA,,,listed,
 co-ploc-000055,co-p-000055,co-loc-000069,home_base,,,,,listed,
 co-ploc-001255,co-p-001240,co-loc-001507,home_base,,,,,listed,
-co-ploc-001271,co-p-001240,co-loc-001524,farm_stand,,,,,listed,
+co-ploc-001265,co-p-001240,co-loc-001518,store,,,,,listed,
+co-ploc-001274,co-p-001240,co-loc-001527,farm_stand,,,,,listed,
 co-ploc-001237,co-p-001232,co-loc-001498,home_base,,,,,listed,
 co-ploc-000057,co-p-000057,co-loc-000071,home_base,,,,,listed,
 co-ploc-000058,co-p-000058,co-loc-000072,home_base,,,,,listed,
@@ -42,7 +43,7 @@ co-ploc-000067,co-p-000067,co-loc-000083,home_base,sat,Sat: 10am - 4pm,,,listed,
 co-ploc-000068,co-p-000068,co-loc-000084,home_base,,,,,listed,
 co-ploc-000069,co-p-000069,co-loc-000085,home_base,sat,Sat: 9AM-4PM,,,listed,
 co-ploc-000001,co-p-000001,co-loc-000001,home_base,,,,,listed,
-co-ploc-001272,co-p-000001,co-loc-001525,farm_stand,,Open 24/7 (QR code at the door),,,listed,
+co-ploc-001275,co-p-000001,co-loc-001528,farm_stand,,Open 24/7 (QR code at the door),,,listed,
 co-ploc-000070,co-p-000070,co-loc-000086,home_base,,,,,listed,
 co-ploc-000071,co-p-000071,co-loc-000089,home_base,,,,,listed,
 co-ploc-000072,co-p-000072,co-loc-000091,home_base,,,,,listed,
@@ -320,6 +321,7 @@ co-ploc-000333,co-p-000333,co-loc-000419,home_base,,,,,listed,
 co-ploc-000334,co-p-000334,co-loc-000420,home_base,mon;tue;wed;thu;fri;sat,Mon: 8:30-12:30; Tue: 8:30-12:30; Wed: 8:30-12:30; Thu: 8:30-12:30; Fri: 8:30-12:30; Sat: 8:30-12:30,,,listed,
 co-ploc-000335,co-p-000335,co-loc-000421,home_base,,Website: always open / local pickup by order; Aspen Saturday Market and Crested Butte Market end of May to early October,,,listed,
 co-ploc-000336,co-p-000336,co-loc-000422,home_base,,,,,listed,
+co-ploc-001271,co-p-000336,co-loc-001524,store,Mon;Tue;Wed;Thu;Fri;Sat,Mon-Fri 10am-5:30pm; Sat 10am-4pm,,,listed,https://www.elkheadcreekranch.com/wagyu
 co-ploc-000337,co-p-000337,co-loc-000423,home_base,,,,,listed,
 co-ploc-000338,co-p-000338,co-loc-000424,home_base,,,,,listed,
 co-ploc-000339,co-p-000339,co-loc-000425,home_base,,,,,listed,
@@ -359,6 +361,7 @@ co-ploc-000371,co-p-000371,co-loc-000467,home_base,,,,,listed,
 co-ploc-000372,co-p-000372,co-loc-000468,home_base,,,,,listed,
 co-ploc-000373,co-p-000373,co-loc-000469,home_base,tue;wed;thu;fri,Tue: 8:00 am - 4 p.m.; Wed: 8:00 a.m. - 4:00 p.m.; Thu: 8:00 a.m. - 4:00 p.m.; Fri: 8:00 a.m. - 4:00 p.m.,,,listed,
 co-ploc-000374,co-p-000374,co-loc-000470,home_base,,,,,listed,
+co-ploc-001272,co-p-000374,co-loc-001525,store,,,,,listed,https://fitchranchartisanmeats.com/granby/
 co-ploc-000375,co-p-000375,co-loc-000471,home_base,,,,,listed,
 co-ploc-000376,co-p-000376,co-loc-000472,home_base,,,,,listed,
 co-ploc-000377,co-p-000377,co-loc-000473,home_base,,,,,listed,
@@ -382,6 +385,8 @@ co-ploc-000394,co-p-000394,co-loc-000496,home_base,mon;tue;wed;thu;fri;sat;sun,M
 co-ploc-000395,co-p-000395,co-loc-000497,home_base,,,,,listed,
 co-ploc-001239,co-p-001234,co-loc-001500,home_base,,,,,listed,
 co-ploc-001258,co-p-001234,co-loc-001511,store,,,,,listed,https://foxtownfarm.com/pages/find-a-store
+co-ploc-001259,co-p-001234,co-loc-001512,store,,,,,listed,https://foxtownfarm.com/pages/find-a-store
+co-ploc-001260,co-p-001234,co-loc-001513,store,,,,,listed,https://foxtownfarm.com/pages/find-a-store
 co-ploc-001261,co-p-001234,co-loc-001514,store,,,,,listed,https://foxtownfarm.com/pages/find-a-store
 co-ploc-001262,co-p-001234,co-loc-001515,store,,,,,listed,https://foxtownfarm.com/pages/find-a-store
 co-ploc-000396,co-p-000396,co-loc-000500,home_base,,,,,listed,
@@ -484,7 +489,7 @@ co-ploc-001267,co-p-000012,co-loc-001520,pickup,,Pickup for online orders and CS
 co-ploc-001268,co-p-000012,co-loc-001521,pickup,,Pickup for online orders and CSA shares; address not published (ask the farm),,,listed,https://www.headwaterfarmco.com/purchase
 co-ploc-001269,co-p-000012,co-loc-001522,pickup,,Pickup for online orders and CSA shares; address not published (ask the farm),,,listed,https://www.headwaterfarmco.com/purchase
 co-ploc-001270,co-p-000012,co-loc-001523,store,,,,,listed,https://www.headwaterfarmco.com/purchase
-co-ploc-001273,co-p-000012,co-loc-001527,farm_stand,,Open 24/7 (QR code at the door),,,listed,
+co-ploc-001276,co-p-000012,co-loc-001530,farm_stand,,Open 24/7 (QR code at the door),,,listed,
 co-ploc-000490,co-p-000490,co-loc-000615,home_base,,,,,listed,
 co-ploc-000491,co-p-000491,co-loc-000616,home_base,,,,,listed,
 co-ploc-000492,co-p-000492,co-loc-000617,home_base,,,,,listed,
@@ -976,6 +981,7 @@ co-ploc-000965,co-p-000965,co-loc-001184,home_base,,,,,listed,
 co-ploc-000966,co-p-000966,co-loc-001185,home_base,thu;fri;sat;sun,Thu: 10am - 4pm; Fri: 10am - 4pm; Sat: 10am - 4pm; Sun: 10am - 3pm,,,listed,
 co-ploc-000967,co-p-000967,co-loc-001186,home_base,,,,,listed,
 co-ploc-000968,co-p-000968,co-loc-001187,home_base,,,,,listed,
+co-ploc-001273,co-p-000968,co-loc-001526,store,,,,,listed,https://www.smittyslittlefarm.com/
 co-ploc-000969,co-p-000969,co-loc-001189,home_base,,,,,listed,
 co-ploc-000970,co-p-000970,co-loc-001190,home_base,,,,,listed,
 co-ploc-000971,co-p-000971,co-loc-001191,home_base,,,,,listed,
