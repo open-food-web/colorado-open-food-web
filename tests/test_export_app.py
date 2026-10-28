@@ -108,6 +108,15 @@ class ExportApp(unittest.TestCase):
         with self.assertRaises(subprocess.CalledProcessError):
             self.export([row("Hidden Farm", "On-Farm / Ranch Sales")], extra=("--county-fips", "08999"))
 
+    def test_removed_config_keys_are_refused(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            cfg = os.path.join(d, "old.json")
+            with open(cfg, "w", encoding="utf-8") as f:
+                json.dump({"exclude_categories": {"Bakery": "x"}}, f)
+            with self.assertRaises(subprocess.CalledProcessError):
+                self.export([row("A Farm", "On-Farm / Ranch Sales")], extra=("--config", cfg))
+
     def test_statewide_config_is_valid_and_every_exclusion_has_a_reason(self):
         with open(os.path.join(ROOT, "exports", "open-food-web.config.json"), encoding="utf-8") as f:
             cfg = json.load(f)

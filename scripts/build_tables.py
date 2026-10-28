@@ -344,6 +344,8 @@ def main():
     if a.producer_types and os.path.exists(a.producer_types):
         with open(a.producer_types, encoding="utf-8-sig", newline="") as f:
             for kr in csv.DictReader(f):
+                if kr.get("producer_type") and kr["producer_type"] not in PRODUCER_TYPES:
+                    sys.exit("%s: %r is not a producer type (%s)" % (a.producer_types, kr["producer_type"], ", ".join(PRODUCER_TYPES)))
                 types_by_name[nkey(kr["name"])] = kr
     def type_groups(name):
         return [g.strip() for g in ((types_by_name.get(nkey(name)) or {}).get("product_groups") or "").split(";") if g.strip()]

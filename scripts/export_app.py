@@ -190,6 +190,11 @@ def main():
         ap.error("not Colorado county FIPS codes: %s" % ", ".join(unknown))
     T = lambda n: read(os.path.join(a.tables, n + ".csv"))
     cfg = json.load(open(a.config, encoding="utf-8")) if a.config else {}
+    removed = {"exclude_kinds": "exclude_producer_types", "include_categories": "include_producer_types",
+               "exclude_categories": "exclude_only_source_categories or exclude_producer_types"}
+    stale = [k for k in removed if k in cfg]
+    if stale:
+        ap.error("config keys removed in export format 2: %s" % ", ".join("%s (use %s)" % (k, removed[k]) for k in stale))
     exclude_slugs = set((cfg.get("exclude_slugs") or {}).keys())
     hide_pin_slugs = set((cfg.get("hide_pin_slugs") or {}).keys())
     include_producer_types = set(cfg.get("include_producer_types") or [])   # an allowlist, when the app has one

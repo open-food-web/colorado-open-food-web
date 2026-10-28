@@ -32,6 +32,11 @@ def read(d, name):
 def load(d):
     loc = {r["location_id"]: r for r in read(d, "locations")}
     prod = {r["producer_id"]: r for r in read(d, "producers")}
+    for r in prod.values():   # tables from before format 2 call these kind and categories
+        if "producer_type" not in r:
+            r["producer_type"] = r.get("kind", "")
+        if "source_categories" not in r:
+            r["source_categories"] = r.get("categories", "")
     pls = {}
     for r in read(d, "producer_locations"):
         pls.setdefault(r["producer_id"], []).append(r)

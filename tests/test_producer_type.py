@@ -21,6 +21,10 @@ class ProducerType(unittest.TestCase):
             says_what_it_is = ptype != "farm" or label in bt.SELLING_ONLY
             self.assertTrue(says_how_it_sells or says_what_it_is, "%s says neither what it is nor how it sells" % label)
 
+    def test_meat_producer_with_a_food_label_is_a_ranch(self):
+        self.assertEqual(bt.producer_type("Some Butcher", ["Bakery", "Meat Producer & Packer"]), "ranch")
+        self.assertEqual(bt.producer_type("Some Bakery", ["Bakery"]), "bakery")
+
     def test_selling_labels_become_channels(self):
         self.assertEqual(bt.channels({}, ["Roadside Market"]), "farm_stand")
         self.assertEqual(bt.channels({}, ["U-Pick"]), "u_pick")
