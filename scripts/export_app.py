@@ -31,6 +31,20 @@ from build_tables import FIPS as COUNTY_FIPS  # noqa: E402  (county name -> FIPS
 COUNTY_NAMES = {v: k for k, v in COUNTY_FIPS.items()}
 TOWNS = os.path.join(HERE, "..", "data", "towns.csv")
 
+def clean_city(name):
+    """Tidy a town name for display: drop a trailing ", CO" or ZIP, and capitalize words typed all in
+    upper or lower case ("LONGMONT", "Fort collins"). "Ft." becomes "Fort" and Cañon City is spelled one way. Mixed-case words (McCoy, DeBeque) are left alone."""
+    if not name:
+        return name
+    name = re.sub(r"(?i)[,\s]+(co|colo\.?|colorado)?[\s,]*\d{5}(-\d{4})?\s*$|,\s*(co|colo\.?|colorado)\s*$", "", name.strip())
+    name = re.sub(r"[,\s]+$", "", name)
+    name = re.sub(r"(?i)^ft\.?\s+", "Fort ", name)
+    if re.fullmatch(r"(?i)ca.on city", name):  # Canon City, or its accent lost to a bad character
+        return "Cañon City"
+    words = [w if (w != w.upper() and w != w.lower()) else w.capitalize() for w in re.split(r"(?<=[\s-])|(?=[\s-])", name) if w]
+    return re.sub(r"\s+", " ", "".join(words)).strip() or None
+
+
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
           "October", "November", "December"]
 CHANNEL_LABELS = {
@@ -293,7 +307,7 @@ def main():
             street = None
         out = {"id": loc_id, "role": role, "name": L["name"] or (market_name.get(loc_id) if use_market_name else None) or None,
                "address": street,
-               "city": L["city"] or (town[0] if town else None), "zip": None if hidden else (L["zip"] or None),
+               "city": clean_city(L["city"]) or (town[0] if town else None), "zip": None if hidden else (L["zip"] or None),
                "county_fips": L["county_fips"] or None,
                "lat": None if lat is None else round(lat, 6), "lon": None if lon is None else round(lon, 6),
                "precision": "none" if lat is None else ("town" if hidden else ("exact" if street and L["geo_source"] != "town_centre" else "approximate")),
