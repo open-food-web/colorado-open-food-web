@@ -1,0 +1,35 @@
+producer_id,url,read_on,site_last_updated,last_updated_basis,channels_found,note
+co-p-000227,https://www.coloradocellars.com,2026-10-15,,none_found,,read; sales method not stated
+co-p-000228,https://www.coloradocoops.com/,2026-10-15,2026-08-31,sitemap_lastmod,,read; sales method not stated
+co-p-000229,https://coloradocraftbeef.com/,2026-10-15,,none_found,online,resolved
+co-p-000230,https://www.coloradocustommeatco.com/,2026-10-15,2026-10-06,sitemap_lastmod,,read; sales method not stated
+co-p-000231,http://www.coloradoedibleforest.com,2026-10-15,2026-08-31,sitemap_lastmod,farm_stand;wholesale,resolved
+co-p-000232,https://ColoradoGators.com,2026-10-15,2026-10-15,http_last_modified,,read; sales method not stated
+co-p-000233,https://www.cojuice.co,2026-10-15,2026-05-21,sitemap_lastmod,retail_partners,resolved
+co-p-000234,https://coloradokidsranch.com/,2026-10-15,2026-08-31,sitemap_lastmod,,read; sales method not stated
+co-p-000236,https://copork.org,2026-10-15,,none_found,,fetch failed: HTTP Error 406: Not Acceptable
+co-p-000237,https://www.coprimebeef.com,2026-10-15,2026-10-06,sitemap_lastmod,delivery;online;pickup,resolved
+co-p-000238,https://www.coloradosoy.com,2026-10-15,,none_found,retail_partners,resolved
+co-p-000239,https://coloradostroopwafels.com/,2026-10-15,,none_found,online,resolved
+co-p-000241,https://www.naturalbeef.com,2026-10-15,,none_found,,read; sales method not stated
+co-p-000243,https://conditionalgardens.com,2026-10-15,,none_found,delivery;online;wholesale,resolved
+co-p-000244,https://www.confectionsbycharlee.com/,2026-10-15,2026-10-16,http_last_modified,,read; sales method not stated
+co-p-000247,https://coombsfarmscolorado.com/,2026-10-15,,none_found,online,resolved
+co-p-000248,https://copocoshoney.com/,2026-10-15,2026-10-16,http_last_modified,,read; sales method not stated
+co-p-000249,https://www.thecopperbarranch.com/,2026-10-15,2026-10-13,sitemap_lastmod,pickup,resolved
+co-p-000251,https://www.cortezcreamery.com,2026-10-15,2026-09-15,sitemap_lastmod,delivery,resolved
+co-p-000253,https://www.cottonblossomcaramel.com,2026-10-15,2026-10-16,http_last_modified,,read; sales method not stated
+co-p-000255,https://cottonwoodfarms.com,2026-10-15,,none_found,farm_stand,resolved
+co-p-000256,https://countryroadwines.com,2026-10-15,2026-10-14,sitemap_lastmod,,read; sales method not stated
+co-p-000263,https://craftycrowpopcorn.com,2026-10-15,,none_found,delivery,resolved
+co-p-000265,https://cranorcharolais.com/,2026-10-15,,none_found,online,resolved
+co-p-000273,https://crossraftercranch.com/,2026-10-15,,none_found,online,resolved
+co-p-000275,https://app.simply-bread.co/crustybatchsourdough/,2026-10-15,,none_found,,read; sales method not stated
+co-p-000279,https://www.curtisranch.net,2026-10-15,2023-04-05,sitemap_lastmod,,read; sales method not stated
+co-p-000283,https://dailygrains.co,2026-10-15,,none_found,online;pickup,resolved
+co-p-000285,https://dannycash.com/,2026-10-15,,none_found,,read; sales method not stated
+co-p-000292,https://www.deltacountycolorado.com,2026-10-15,,none_found,,read; sales method not stated
+co-p-000293,https://www.yakmeat.us,2026-10-15,,none_found,,fetch failed: HTTP Error 406: Not Acceptable
+co-p-000297,https://www.desertweyr.com,2026-10-15,,none_found,online,resolved
+co-p-000302,https://Www.diedefamilyfarm.com,2026-10-15,2026-07-17,sitemap_lastmod,,read; sales method not stated
+co-p-000320,https://www.duckberryfarm.com,2026-10-15,,none_found,,read; sales method not stated

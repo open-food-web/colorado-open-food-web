@@ -7,7 +7,7 @@ app exports, and prints Markdown.
 
 Usage:
   python scripts/change_report.py --before <old tables dir> --after data/colorado \
-      [--export-before old.json --export-after exports/chaffee-provides.json]
+      [--export-before old.json --export-after a Chaffee slice built from the release]
 """
 from __future__ import annotations
 

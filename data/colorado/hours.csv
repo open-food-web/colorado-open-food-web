@@ -135,6 +135,7 @@ producer,co-p-000179,sat,14:00,19:00,false,false
 market,co-m-000001,sun,09:00,13:00,false,false
 market,co-m-000025,sat,08:00,12:30,false,false
 market,co-m-000026,wed,16:00,19:00,false,false
+market,co-m-000154,sat,10:00,13:00,false,false
 market,co-m-000027,sat,09:00,14:00,false,false
 producer,co-p-000212,mon,08:00,16:00,false,false
 producer,co-p-000212,tue,08:00,16:00,false,false
@@ -745,13 +746,6 @@ producer,co-p-001002,sat,10:00,16:00,false,false
 producer,co-p-001013,wed,12:30,16:30,false,true
 producer,co-p-001013,thu,09:00,16:30,false,true
 producer,co-p-001013,fri,09:00,16:30,false,true
-producer,co-p-001016,mon,08:30,18:00,false,false
-producer,co-p-001016,tue,08:30,18:00,false,false
-producer,co-p-001016,wed,08:30,18:00,false,false
-producer,co-p-001016,thu,08:30,18:00,false,false
-producer,co-p-001016,fri,08:30,18:00,false,false
-producer,co-p-001016,sat,08:30,18:00,false,false
-producer,co-p-001016,sun,08:30,18:00,false,false
 producer,co-p-001023,wed,11:00,16:00,false,false
 producer,co-p-001023,sat,11:00,16:00,false,false
 producer,co-p-001037,sat,08:00,13:00,false,false

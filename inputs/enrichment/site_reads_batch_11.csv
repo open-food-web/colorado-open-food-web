@@ -1,0 +1,35 @@
+producer_id,url,read_on,site_last_updated,last_updated_basis,channels_found,note
+co-p-001048,https://tealvelvetbakery.com/,2026-10-15,,none_found,pickup;online,
+co-p-001051,http://tenbearswinery.com,2026-10-15,,none_found,farm_stand,
+co-p-001056,https://thebesthoney.com/,2026-10-15,2026-10-07,http_last_modified,,"cart link only, nothing clear"
+co-p-001058,https://thecockeyedcoop.com/,2026-10-15,,none_found,online,
+co-p-001060,https://www.thecookiecoven.com/,2026-10-15,,none_found,online,
+co-p-001063,https://www.findthecrumbkeeper.com,2026-10-15,,none_found,,"page returned no readable content; Last-Modified header was the fetch time (dynamic page), not a content date"
+co-p-001070,http://www.farmersmarket.store,2026-10-15,,none_found,delivery;online,
+co-p-001071,https://www.Feedery.com,2026-10-15,2026-09-23,http_last_modified,,"public market/cafe, left blank as ambiguous"
+co-p-001074,https://www.thegrasshoppercollective.com,2026-10-15,,none_found,online,
+co-p-001079,https://thelivingfarm.org,2026-10-15,,none_found,online,"Last-Modified header was the fetch time (dynamic page), not a content date"
+co-p-001080,https://themillpueblo.com,2026-10-15,,none_found,delivery;online,
+co-p-001086,https://perryranch.org,2026-10-15,,none_found,csa;farm_stand;online;pickup,
+co-p-001087,https://peruviancookie.com/,2026-10-15,,none_found,online,
+co-p-001091,https://www.thespicemakers.com/,2026-10-15,,none_found,,page returned no readable content
+co-p-001093,https://stormcellarwine.com,2026-10-15,,none_found,farm_stand;online,
+co-p-001094,https://www.thesweetestbean.com/,2026-10-15,,none_found,online;retail_partners;wholesale,
+co-p-001096,https://the-twisted-shed.square.site,2026-10-15,,none_found,,"page returned no readable content; Last-Modified header was the fetch time (dynamic page), not a content date"
+co-p-001097,https://www.TheUrbanFarmhouseCo.com,2026-10-15,,none_found,,password-protected opening-soon page
+co-p-001098,https://www.abbeywinery.com,2026-10-15,,none_found,farm_stand;online,
+co-p-001110,https://www.brushhollowwinery.com/,2026-10-15,,none_found,farm_stand;online,
+co-p-001112,https://www.thetincupranch.com/,2026-10-15,,none_found,online,
+co-p-001121,http://www.saxtongenetics.com/trifectanaturalporkllc.html,2026-10-15,2026-07-07,http_last_modified,,on-farm purchase only implied
+co-p-001122,https://www.trinity-acres.farm/,2026-10-15,,none_found,farm_stand,
+co-p-001123,https://triplecfarmcolorado.com,2026-10-15,,none_found,delivery;online;pickup,
+co-p-001126,https://www.trujillofamilyfarmCO.com,2026-10-15,,none_found,csa;farmers_market,
+co-p-001128,https://www.TuffsRanch.com,2026-10-15,,none_found,,no channel clearly stated
+co-p-001129,http://www.tumbleweedbread.com,2026-10-15,,none_found,,page returned no readable content
+co-p-001131,https://tuxedocorn.com,2026-10-15,,none_found,,page returned no readable content
+co-p-001135,https://twomeangoats.com,2026-10-15,,none_found,,"page returned no readable content; Last-Modified header was the fetch time (dynamic page), not a content date"
+co-p-001139,https://www.uanhollow.com,2026-10-15,,none_found,online,
+co-p-001140,https://www.uffdawaffles.com,2026-10-15,,none_found,,site failed to load (certificate error)
+co-p-001141,https://ullrsgarden.com,2026-10-15,,none_found,delivery;online;retail_partners,
+co-p-001146,https://www.underhillwormfarm.com/,2026-10-15,,none_found,online,
+co-p-001147,https://www.unlikelyfarms.com,2026-10-15,,none_found,delivery;online,

@@ -152,6 +152,9 @@ class ExportApp(unittest.TestCase):
         # 'none' and an explicit no leave nothing to visit, even with a farm stand channel
         self.assertEqual(export_app.derive_visits({"visits": "none"}, ["farm_stand"], True, "Sat: 9 am - 1 pm"), [])
         self.assertEqual(export_app.derive_visits({"visits": ""}, ["farm_stand"], False, None), [])
+        # a person-stated tour or by-appointment visit stays even when the answer to "can you just show up" is no
+        v = export_app.derive_visits({"visits": "tour|By request"}, [], False, None)
+        self.assertEqual([x["type"] for x in v], ["tour"])
         # nothing on the listing, nothing guessed
         self.assertEqual(export_app.derive_visits({"visits": ""}, ["csa"], None, None), [])
 
@@ -178,6 +181,24 @@ class ExportApp(unittest.TestCase):
         doc = self.export([row("Unknown Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106")],
                           extra=["--unconfirmed-home-pins", "hide"])
         self.assertFalse(self.by_name(doc)["Unknown Farm"]["locations"][0]["pin"])
+
+    def test_hidden_home_pin_is_offered_to_apps_that_choose_to_show_it(self):
+        rows = [row("Unknown Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106"),
+                row("Stand Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106")]
+        doc = self.export(rows, extra=["--unconfirmed-home-pins", "hide"])
+        farms = self.by_name(doc)
+        self.assertFalse(farms["Unknown Farm"]["locations"][0]["pin"])
+        self.assertTrue(farms["Unknown Farm"]["locations"][0]["pin_unconfirmed_home"])
+        self.assertFalse(farms["Stand Farm"]["locations"][0]["pin_unconfirmed_home"])  # already pinned for real
+        shown = self.by_name(self.export(rows))
+        self.assertFalse(shown["Unknown Farm"]["locations"][0]["pin_unconfirmed_home"])
+
+    def test_producers_carry_service_counties_and_all_outlet_kinds_can_be_exported(self):
+        rows = [row("Herb Shop", "Apothecary", Address="138 W 1st St", City="Salida", Latitude="38.53", Longitude="-105.99"),
+                row("Plain Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106")]
+        doc = self.export(rows, extra=["--all-outlet-kinds"])
+        self.assertIn("08015", self.by_name(doc)["Plain Farm"]["service_county_fips"])
+        self.assertEqual([o["name"] for o in doc["outlets"]], ["Herb Shop"])
 
     def test_app_config_scopes_by_category_and_hides_a_pin(self):
         rows = [row("Plain Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106"),

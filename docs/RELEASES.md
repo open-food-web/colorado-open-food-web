@@ -8,6 +8,7 @@ a tagged, checksummed snapshot published on this repo's Releases page.
 | File | What it is |
 |---|---|
 | `directory.csv` | The public flat directory, one row per listing. The 23 My Maps columns apps already read (name, category labels, address, city, county, phone, website, email, social links, hours, months open, products, organic, SNAP, ADA, where to get it, latitude, longitude). `Notes` is always empty |
+| `open-food-web.json` | The statewide app export (`EXPORTS.md`), all 64 counties, outlets of every kind, release rules applied, no app scope. **Apps that want JSON read this**, and filter it to their own scope; the Food Web does not publish per-app files |
 | `tables.zip` | The canonical tables for all of Colorado (`producers`, `markets`, `outlets`, `access_points`, `locations`, `producer_locations`, `service_areas`, `source_links`, `field_sources`), defined in `SCHEMA.md`. Stable IDs, locations and sources |
 | `csa.json`, `places.json`, `supply-network-*.csv` | CSAs, Census town and ZIP points, the supply network |
 | `MANIFEST.json` | Version, date, format version, license and attribution, row counts, counts by source, the columns, and the **sha256** of each file |
@@ -30,7 +31,7 @@ and upgrade deliberately. A new release never changes an old one.
 3. Commit both into the app (for example `data/foodweb/`), and read `directory.csv` in the app's build.
 4. To upgrade, repeat with the new version and review the diff.
 
-The Colorado Farm Trail does this with `scripts/update_foodweb.py`.
+The Colorado Farm Trail does this with `scripts/update_foodweb.py`. Chaffee Provides pins `open-food-web.json` instead and runs `scripts/sync_data.py <file> <sha256>`, which checks the file and applies the site's scope (`scripts/scope.json`: Chaffee County, its categories, shop kinds and pin choices).
 
 ## Making a release
 

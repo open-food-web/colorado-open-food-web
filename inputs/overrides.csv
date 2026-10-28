@@ -1127,4 +1127,109 @@ Miss Penn's Mountain Seeds,Westcliffe,County,set,Custer,Filled from city in one 
 Westcliffe Honey Company,Westcliffe,County,set,Custer,Filled from city in one county (Census places); blank county dropped the record from county exports (statewide readiness check),2026-10-15
 Thompson House Museum,Carbondale,,remove,,"A historic house museum with tours, not a food stop (removed on maintainer request 2026-10-15)",2026-10-15
 Gina Marcell,Salida,,remove,,"A person's name with no business address or website, only a phone and a Pinterest link; removed as a personal-information concern (maintainer request 2026-10-15)",2026-10-15
-Market on Main St. (The Triangle Oasis),Salida,Status,set,Seasonal Closed,"Closed for the season; reopening date not known (maintainer report 2026-10-15). Recorded as seasonal_closed because the schema has no dormant status",2026-10-15
+Everett Ranch Beef,Salida,Instagram,set,https://www.instagram.com/everettranchbeef/,"Business Instagram page, checked by the maintainer 2026-10-16 (bio: 100% grassfed beef, Salida)",2026-10-16
+Market on Main St. (The Triangle Oasis),Salida,Status,set,Seasonal Closed,Closed for the season; reopening date not known (maintainer report 2026-10-15). Recorded as seasonal_closed because the schema has no dormant status,2026-10-15
+Mushroom Love Co,,City,set,Buena Vista,via:website https://www.mushroomloveco.com Own site gives the town (Buena Vista); no street address published,2026-10-16
+Phytology Flowers Farm,,City,set,Salida,via:website https://www.phytologyflowers.com Own site gives the town (Salida); the farm is not open to the public,2026-10-16
+Valley Roots Food Hub,,City,set,Mosca,"via:website https://www.valleyrootsfoodhub.com Own site: 5401 Terry Street, Mosca (warehouse in Pueblo)",2026-10-16
+Valley Roots Food Hub,,Zip,set,81146,via:website https://www.valleyrootsfoodhub.com Own site address,2026-10-16
+Valley Roots Food Hub,,County,set,Alamosa,Mosca is in Alamosa County (Census places),2026-10-16
+Everett Ranch Beef,Salida,Email,set,everettranchbeef@gmail.com,via:instagram https://www.instagram.com/everettranchbeef/ Business Instagram page lists this address in its bio (checked by the maintainer 2026-10-16),2026-10-16
+Patton Peak,Lake George,Website,set,https://www.pattonpeak.com,via:facebook https://www.facebook.com/pattonpeak/ The business Facebook page links its own website (seen 2026-10-15),2026-10-15
+Fitch Ranch,Parshall,Website,set,https://fitchranchartisanmeats.com,via:facebook https://www.facebook.com/fitchranch The business Facebook page links to its meats and market site (seen 2026-10-15),2026-10-15
+Sandy's Way Microfarm,Sedalia,Email,set,cale@sandyswayfarm.com; sandyswaymicrofarm@gmail.com,Found on the business's own website https://sandyswayfarm.com (crawled 2026-10-14); also listed on the business Facebook page https://www.facebook.com/SandysWayCSA (seen 2026-10-15),2026-10-14
+Highwater Farm,Silt,Email,set,anna@highwaterfarm.org; sara@highwaterfarm.org,Found on the business's own website http://www.highwaterfarm.org (crawled 2026-10-14); also listed on the business Facebook page https://www.facebook.com/highwaterfarmco (seen 2026-10-15),2026-10-14
+Mountain Market & Supply,Eagle,Email,set,mountainmarketeagle@gmail.com,via:facebook https://www.facebook.com/profile.php?id=61563573157184 Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Estes Park Farmers Market,Estes Park,Email,set,vickieden3@yahoo.com,via:facebook https://www.facebook.com/EstesValleyFarmersMarket/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Florence Farmers Market,Florence,Email,set,florencecofarmersmarket@gmail.com,via:facebook https://www.facebook.com/MarketinFlorence/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Garden Sweet,Fort Collins,Email,set,info@gardensweet.com,via:facebook https://www.facebook.com/gardensweet Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Larimer County Farmers' Market,Fort Collins,Email,set,larimercountyfm@gmail.com,via:facebook https://www.facebook.com/larimercountyfm Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Slash J Beef Co LLC,Fort Morgan,Email,set,slashjbeef@outlook.com,via:facebook https://www.facebook.com/profile.php?id=61557976180805 Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Vine Abiding Farms,Fowler,Email,set,vineabidingfarms@gmail.com,via:facebook https://www.facebook.com/vineabidingfarms Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Orchard Creek Ranch,Glenwood Springs,Email,set,ocreekrmls@gmail.com,via:facebook https://www.facebook.com/orchardcreekranchco/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Bolton's Orchards,Grand Junction,Email,set,fortbolton@gmail.com,via:facebook https://www.facebook.com/pages/Boltons-Orchards-and-Farm-Market/342817158274 Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Downtown Grand Junction Market on Main,Grand Junction,Email,set,info@downtowngj.org,via:facebook https://www.facebook.com/downtowngj Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Highlands Ranch Farmers' Market,Highlands Ranch,Email,set,1977mdfm@gmail.com,via:facebook https://www.facebook.com/denverfarmersmarket Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Jones Farms Organics,Hooper,Email,set,jonesfarms1925@gmail.com,via:facebook https://www.facebook.com/JonesFarmsOrganics Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Ela Family Farms,Hotchkiss,Email,set,info@elafamilyfarms.com,via:facebook https://www.facebook.com/elafamilyfarms Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Princess Beef,Hotchkiss,Email,set,cynthranch@gmail.com,via:facebook https://www.facebook.com/Princess-Beef-100964300025627 Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Fox Fire Farms,Ignacio,Email,set,info@foxfirefarms.com,via:facebook https://www.facebook.com/people/Fox-Fire-Farms-Winery-and-Events/100063713644172 Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Lafayette Colorado Farmers Market,Lafayette,Email,set,info@lafayettefm.com,via:facebook https://www.facebook.com/p/Lafayette-Farmers-Market-61571202432615/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Southwest Farm Fresh Harvest Shares,Mancos,Email,set,buylocal@southwestfarmfresh.com,via:facebook https://www.facebook.com/SouthwestFarmFresh/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Minturn Market,Minturn,Email,set,market@minturn.org,via:facebook https://www.facebook.com/minturnmarket/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Monte Vista Farmers Market,Monte Vista,Email,set,montefarmersmarket@gmail.com,via:facebook https://www.facebook.com/MonteVistaFarmersMarket Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Uncompahgre Farms,Montrose,Email,set,uncofarm@gmail.com,via:facebook https://www.facebook.com/uncofarm Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Valley Roots Food Hub,Mosca,Email,set,marketsmanager@valleyrootsfoodhub.com,via:facebook https://www.facebook.com/valleyrootsfoodhub Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Nederland Farmers Market,Nederland,Email,set,nederlandfarmersmarket@gmail.com,via:facebook https://www.facebook.com/NederlandFarmersMarket Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Palisade Sunday Farmers' Market,Palisade,Email,set,market@townofpalisade.org,via:facebook https://www.facebook.com/PalisadeFarmersMarket Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Ruckman Family Orchards,Palisade,Email,set,ruckmanfamilyorchards@gmail.com,via:facebook https://www.facebook.com/RuckmanFamilyOrchards/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+The Arbol Farmers Market,Paonia,Email,set,arbolfarmersmarket@thelearningcouncil.org,via:facebook https://www.facebook.com/arbolfarmersmarket Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+DiSanti Farms,Pueblo,Email,set,disantifarms@gmail.com,via:facebook https://www.facebook.com/DiSantiFarms/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Pantaleo Farms The Great Pumpkin Patch by Moonlight,Pueblo,Email,set,gpantaleo@aacos.com,via:facebook https://www.facebook.com/profile.php?id=100069402337060 Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Pueblo Farmers Market,Pueblo,Email,set,pueblofarmersmarket@gmail.com,via:facebook https://www.facebook.com/PuebloFarmerMarket Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Pueblo Farmers Market Eastside Pop-ups,Pueblo,Email,set,pueblofarmersmarket@gmail.com,via:facebook https://www.facebook.com/pueblofarmermarket Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Two Springs Ranch/ Harvest Days,Pueblo,Email,set,twospringsranch@yahoo.com,via:facebook https://www.facebook.com/harvestdays/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+McWiggly Worm Farm LLC,Pueblo West,Email,set,mcwiggly719@gmail.com,via:facebook https://www.facebook.com/profile.php?id=61558386928695 Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Copper Kettle Apothecary,Salida,Email,set,copperkettleapothecary4@gmail.com,via:facebook https://www.facebook.com/copperkettleapothecary/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Lewis Lazy L Ranch,Salida,Email,set,kate.dvm93@gmail.com,via:facebook https://www.facebook.com/myredcows/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Rocky Mountain Garlic,Salida,Email,set,rockymountaingarlicllc@gmail.com,via:facebook https://www.facebook.com/RockyMountainGarlic Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Salida Community Center,Salida,Email,set,salidacommunitycenter@yahoo.com,via:facebook https://www.facebook.com/SalidaCommunityCenter Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+"Colorado Prime Beef, LLC",Stoneham,Email,set,sales@coprimebeef.com,via:facebook https://www.facebook.com/coloradoprimebeef/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Wolf Creek Fresh,Strasburg,Email,set,charlie@wolfcreekfresh.com,via:facebook https://www.facebook.com/wolfcreekfresh Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Vail Farmers' Market,Vail,Email,set,vailfarmersmarket@gmail.com,via:facebook https://www.facebook.com/VailFarmersMarket Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Christensen Ranch,Weldona,Email,set,naturalbeef@christensenranch.com,via:facebook https://www.facebook.com/ChristensenRanchBeef Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Metro Denver Farmers' Market at Wheat Ridge,Wheat Ridge,Email,set,1977mdfm@gmail.com,via:facebook https://www.facebook.com/denverfarmersmarket Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Antelope Creek Ranch Wagyu,Wiggins,Email,set,antelopecreekranch@yahoo.com,via:facebook https://www.facebook.com/antelopecreekranchwagyu Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Harvest Moon Produce LLC,Dolores,Website,set,https://harvestmoonproduce.farm,via:facebook https://www.facebook.com/harvestmoonproduce Business Facebook page links this site (seen 2026-10-15),2026-10-15
+James Ranch,Durango,Phone,set,(970) 764-4222,via:facebook https://www.facebook.com/thejamesranch Business Facebook page lists this phone (seen 2026-10-15),2026-10-15
+Dao House,Estes Park,Facebook,clear,,Facebook link links to a different organization or a personal profile (checked 2026-10-15),2026-10-15
+Estes Park Farmers Market,Estes Park,Phone,set,(303) 775-9058,via:facebook https://www.facebook.com/EstesValleyFarmersMarket/ Business Facebook page lists this phone (seen 2026-10-15),2026-10-15
+Bartels Land and Livestock; U-pick and Pumpkin Patch,Fort Collins,Website,set,https://thebartelspumpkinpatch.com,via:facebook https://www.facebook.com/the-bartels-pumpkin-patch-137755902661/ Business Facebook page links this site (seen 2026-10-15),2026-10-15
+On the Vine at Richmond Farms Urban Market,Fort Collins,Website,set,https://onthevineatrichmondfarms.com,via:facebook https://www.facebook.com/onthevinefarm Business Facebook page links this site (seen 2026-10-15),2026-10-15
+Orchard Creek Ranch,Glenwood Springs,Phone,set,(970) 945-2224,via:facebook https://www.facebook.com/orchardcreekranchco/ Business Facebook page lists this phone (seen 2026-10-15),2026-10-15
+Jack-A-Lope Acres,Ignacio,Website,set,https://jackalopeacresfarm.com,via:facebook https://www.facebook.com/jackalopeacresfarm Business Facebook page links this site (seen 2026-10-15),2026-10-15
+Sambrito Creek Farm,Ignacio,Facebook,clear,,Facebook link links to a different organization or a personal profile (checked 2026-10-15),2026-10-15
+Legacy Meats,Kersey,Facebook,clear,,"Facebook link holds a website or photo link, not a Facebook page (checked 2026-10-15)",2026-10-15
+Busy Bee Farm,Larkspur,Website,set,https://busybeefarm.online,via:facebook https://www.facebook.com/busybeefarm.online/ Business Facebook page links this site (seen 2026-10-15),2026-10-15
+Downtown Littleton Farmers Market,Littleton,Facebook,clear,,Facebook link links to a different organization or a personal profile (checked 2026-10-15),2026-10-15
+Plowshares Community Farm,Longmont,Facebook,clear,,Facebook link links to a different organization or a personal profile (checked 2026-10-15),2026-10-15
+Southwest Farm Fresh Harvest Shares,Mancos,Phone,set,(970) 560-1028,via:facebook https://www.facebook.com/SouthwestFarmFresh/ Business Facebook page lists this phone (seen 2026-10-15),2026-10-15
+Southwest Farm Fresh Harvest Shares,Mancos,Website,set,https://southwestfarmfresh.com,via:facebook https://www.facebook.com/SouthwestFarmFresh/ Business Facebook page links this site (seen 2026-10-15),2026-10-15
+Avant Vineyards,Palisade,Facebook,clear,,"Facebook link holds a website or photo link, not a Facebook page (checked 2026-10-15)",2026-10-15
+McClure Orchards - ORGANIC,Paonia,Facebook,clear,,Facebook link links to a different organization or a personal profile (checked 2026-10-15),2026-10-15
+Jenkin's Farms and Western Skies Winery,Penrose,Website,set,https://penroseapples.com,via:facebook https://www.facebook.com/jenkins-farms-western-skies-winery-144841218865336/ Business Facebook page links this site (seen 2026-10-15),2026-10-15
+Third Street Apples,Penrose,Website,set,https://thirdstreetapples.com,via:facebook https://www.facebook.com/third-street-apples-323916597777060/ Business Facebook page links this site (seen 2026-10-15),2026-10-15
+Davis Family Livestock,Platteville,Facebook,clear,,"Facebook link holds a website or photo link, not a Facebook page (checked 2026-10-15)",2026-10-15
+DiSanti Farms,Pueblo,Website,set,https://disantifarms.com,via:facebook https://www.facebook.com/DiSantiFarms/ Business Facebook page links this site (seen 2026-10-15),2026-10-15
+Hanagan Farms,Rocky Ford,Facebook,clear,,Facebook link links to a different organization or a personal profile (checked 2026-10-15),2026-10-15
+"Boulder Couny Fair, Livestock Show & Rodeo",Ste 200,Phone,set,(720) 864-6460,via:facebook https://www.facebook.com/BoulderCountyFair Business Facebook page lists this phone (seen 2026-10-15),2026-10-15
+Breckenridge Sunday Market,Breckenridge,Email,set,info@rockymountainevents.com,via:facebook https://www.facebook.com/breckenridgesundaymarket/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Blaine's Farm Store,Clifton,Facebook,clear,,"Facebook field held the website blainesfarmstore.com, not a Facebook page (checked 2026-10-15)",2026-10-15
+Downtown Sunday Market,Colorado Springs,Email,set,coloradospringssundaymarket@gmail.com,via:facebook https://www.facebook.com/profile.php?id=61574759233647 Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Cottonwood Spirit Ranch,,Email,set,cottonwoodspiritranch@gmail.com,via:facebook https://www.facebook.com/CottonwoodSpiritRanch/ Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Rio Grande Organic Growers COOP,Alamosa,Email,set,riograndeorganicgrowerscoop@gmail.com,via:facebook https://www.facebook.com/RioGrandeOrganicGrowersCoop Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+DeLaney Community Farm - by Project Worthmore,Aurora,Email,set,frank@projectworthmore.org,via:facebook https://www.facebook.com/projectworthmore Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Southlands Farmers' Market,Aurora,Email,set,info@thelocalcolorado.com,via:facebook https://www.facebook.com/pages/Southlands-Farmers-Market/285277572341 Business Facebook page lists this address (seen 2026-10-15),2026-10-15
+Burley Bees,Cañon City,Facebook,clear,,"Facebook field held the Facebook home page, not a business page (checked 2026-10-15)",2026-10-15
+Trout Creek Farm,Buena Vista,,remove,,"partner:guidestone Alycen Quattrocchi, Oct 20 2026 check-in: last year of production; no longer selling",2026-10-27
+Poncha Creek Gardens,Poncha Springs,,remove,,"partner:guidestone Alycen Quattrocchi, Oct 20 2026 check-in: closed",2026-10-27
+Feedsack Flowers,Center,,remove,,"partner:guidestone Alycen Quattrocchi, Oct 20 2026 check-in: closed (the Facebook page on file was for a different business)",2026-10-27
+The Farmstand,Buena Vista,,remove,,"partner:guidestone Alycen Quattrocchi, Oct 20 2026 check-in: combined with Alpenglow Hive & Honey as ""Alpenglow Hive & Honey Farmstand"" (a place of that producer)",2026-10-27
+Scanga Meat Company,Salida,Category,set,Grocery Store,"partner:guidestone Alycen Quattrocchi, Oct 20 2026 check-in: about 98% of what it sells is not its own production, so it is a grocery, not a ranch. Replaces the 2026-10-03 Meat Producer & Packer category",2026-10-27
+Chaffee County Winter Farmers Market,Salida,SNAP,set,Yes,"Accepts SNAP/EBT and Double Up Food Bucks (foodshedalliance.com/discover-the-market, checked 2026-10-27)",2026-10-27
+ArborScape Inc,Sheridan,,remove,,"Not a food business: tree removal and mulch service (logged-in social review 2026-10-16, co-p-000068)",2026-10-16
+"Boulder Couny Fair, Livestock Show & Rodeo",,,remove,,"Not a food business: county fair event (logged-in social review 2026-10-16, co-p-000162)",2026-10-16
+Cattle Queen Craft Bakery,Centennial,,remove,,"Not a food business: art page (drawings) (logged-in social review 2026-10-16, co-p-000201)",2026-10-16
+Colorado Agritourism Association,Delta,,remove,,"Not a food business: agritourism trade association (logged-in social review 2026-10-16, co-p-000224)",2026-10-16
+Colorado Coops,Black Hawk,,remove,,"Not a food business: chicken coop builder (logged-in social review 2026-10-16, co-p-000228)",2026-10-16
+COLORADO PORK,Lucerne,,remove,,"Not a food business: pork producers nonprofit council (logged-in social review 2026-10-16, co-p-000236)",2026-10-16
+"ECOburn, LLC",Mack,,remove,,"Not a food business: wildfire/prescribed burn service (logged-in social review 2026-10-16, co-p-000327)",2026-10-16
+Firestone Fall Festival,Firestone,,remove,,"Not a food business: fall festival event page (logged-in social review 2026-10-16, co-p-000371)",2026-10-16
+"Free Range Beehives, LLC",Denver,,remove,,"Not a food business: corporate beekeeping service (logged-in social review 2026-10-16, co-p-000397)",2026-10-16
+Grand Junction Agritourism,Grand Junction,,remove,,"Not a food business: tourism board website (logged-in social review 2026-10-16, co-p-000442)",2026-10-16
+Lafayette Garden Design,Denver,,remove,,"Not a food business: native plant nursery (plants only) (logged-in social review 2026-10-16, co-p-000604)",2026-10-16
+Mountain Goat Lodge,Salida,,remove,,"Not a food business: bed and breakfast farm stay (logged-in social review 2026-10-16, co-p-000017)",2026-10-16
+Mueller's Little Farm,Littleton,,remove,,"Not a food business: short-term rental / real estate page (logged-in social review 2026-10-16, co-p-000738)",2026-10-16
+Snakes & Cakes,Alamosa,,remove,,"Not a food business: reptile breeder (logged-in social review 2026-10-16, co-p-000970)",2026-10-16
+Spring Creeks Ranch,Carbondale,,remove,,"Not a food business: wedding and event venue (logged-in social review 2026-10-16, co-p-000988)",2026-10-16
+Sunrise Ranch,Loveland,,remove,,"Not a food business: retreat and event center (logged-in social review 2026-10-16, co-p-001016)",2026-10-16

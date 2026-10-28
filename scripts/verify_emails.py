@@ -86,8 +86,16 @@ def main():
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--scrub", action="store_true")
+    ap.add_argument("--confirm", metavar="EMAIL", help="record an address a person saw on the business's own Facebook or Instagram page (needs --page)")
+    ap.add_argument("--page", help="that page's URL, for --confirm")
+    ap.add_argument("--website", default="", help="the business's website, if it has one, for --confirm")
     a = ap.parse_args()
     table = cp.Table()
+    if a.confirm:
+        if not a.page:
+            ap.error("--confirm needs --page (the business's own Facebook or Instagram page)")
+        print("confirmed:", a.confirm, "->", table.confirm_on_page(a.confirm, a.website, a.page))
+        table.save()
     if a.from_build:
         pairs = pairs_from_build(a.from_build)
         if a.limit:

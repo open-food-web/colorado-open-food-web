@@ -67,3 +67,19 @@ def test_a_cell_with_several_addresses_is_judged_per_address(tmp_path):
     assert cp.apply([m], t, verify=False) == 1
     assert m.email == "a@farm.com"
     assert cp.split_emails("x@y.org; z@y.org/ x@y.org") == ["x@y.org", "z@y.org"]
+
+
+def test_an_address_on_the_businesses_own_instagram_or_facebook_page_counts(tmp_path):
+    import pytest
+    t = cp.Table(str(tmp_path / "v.csv"))
+    # a business with no website: the address is listed on its own Instagram page, seen by a person
+    assert t.confirm_on_page("Ranch@Example.com", "", "https://www.instagram.com/someranch/") == "verified_instagram"
+    assert cp.publishable("ranch@example.com", "", t)
+    assert t.confirm_on_page("a@farm.org", "", "https://www.facebook.com/somefarm") == "verified_facebook"
+    # anything else is refused: a directory, the bare site root, or no path at all
+    for bad in ("https://directory.example.com/farm", "https://www.instagram.com/", "https://twitter.com/farm"):
+        with pytest.raises(ValueError):
+            t.confirm_on_page("b@farm.org", "", bad)
+    assert not cp.publishable("b@farm.org", "", t)
+    t.save()
+    assert cp.Table(str(tmp_path / "v.csv")).is_verified("ranch@example.com", "")

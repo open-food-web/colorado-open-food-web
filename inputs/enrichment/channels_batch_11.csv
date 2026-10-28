@@ -1,0 +1,23 @@
+producer_id,sales_channels,evidence_url,checked_on,note
+co-p-001048,pickup;online,https://tealvelvetbakery.com/,2026-10-15,Preorders are ordered online and picked up at a designated location
+co-p-001051,farm_stand,http://tenbearswinery.com,2026-10-15,Tasting room and sales with posted public hours
+co-p-001058,online,https://thecockeyedcoop.com/,2026-10-15,Online shop and pre-order page
+co-p-001060,online,https://www.thecookiecoven.com/,2026-10-15,Online order form
+co-p-001070,delivery;online,http://www.farmersmarket.store,2026-10-15,Online store; weekly delivery to the door
+co-p-001074,online,https://www.thegrasshoppercollective.com,2026-10-15,Online store with shipping
+co-p-001079,online,https://thelivingfarm.org,2026-10-15,Online store for meat products
+co-p-001080,delivery;online,https://themillpueblo.com,2026-10-15,Online ordering; bread delivered to the door
+co-p-001086,csa;farm_stand;online;pickup,https://perryranch.org,2026-10-15,"Farm stand hours, CSA memberships, online store with local pickup"
+co-p-001087,online,https://peruviancookie.com/,2026-10-15,Online shop with nationwide shipping
+co-p-001093,farm_stand;online,https://stormcellarwine.com,2026-10-15,Outdoor tasting room with posted hours; online wine shop
+co-p-001094,online;retail_partners;wholesale,https://www.thesweetestbean.com/,2026-10-15,Online shop; Wholesale and Find Us in Stores menu items
+co-p-001098,farm_stand;online,https://www.abbeywinery.com,2026-10-15,Tasting room with public hours; online shop
+co-p-001110,farm_stand;online,https://www.brushhollowwinery.com/,2026-10-15,Winery and tasting room with public hours; wine store link
+co-p-001112,online,https://www.thetincupranch.com/,2026-10-15,"Beef ordered directly from the website, shipped nationwide"
+co-p-001122,farm_stand,https://www.trinity-acres.farm/,2026-10-15,Pumpkins and gourds sold on site
+co-p-001123,delivery;online;pickup,https://triplecfarmcolorado.com,2026-10-15,Shop Beef and Pick up and Delivery pages
+co-p-001126,csa;farmers_market,https://www.trujillofamilyfarmCO.com,2026-10-15,Weekly Produce Box CSA enrollment and Farmers Markets listed
+co-p-001139,online,https://www.uanhollow.com,2026-10-15,Online store with add-to-cart
+co-p-001141,delivery;online;retail_partners,https://ullrsgarden.com,2026-10-15,"Local delivery within 5 miles, online checkout, names a retail partner"
+co-p-001146,online,https://www.underhillwormfarm.com/,2026-10-15,Online shop with shipping policy
+co-p-001147,delivery;online,https://www.unlikelyfarms.com,2026-10-15,"Produce delivered weekly, ordered online"

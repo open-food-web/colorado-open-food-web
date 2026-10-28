@@ -50,7 +50,7 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July", "Augus
 CHANNEL_LABELS = {
     "farm_stand": "Farm stand / on-farm sales", "u_pick": "U-pick", "csa": "CSA", "farmers_market": "Farmers market",
     "pickup": "Pickup point", "delivery": "Delivery", "online": "Online orders", "wholesale": "Wholesale",
-    "retail_partners": "Sold in stores"}
+    "retail_partners": "Sold in stores", "none": "No public sales"}
 SOURCE_LABELS = {
     "producer_site": "Producer's own website", "chaffee_provides": "Chaffee Provides", "colorado_proud": "Colorado Proud",
     "cfma": "Colorado Farmers Market Association", "usda_lfd": "USDA Local Food Directories",
@@ -72,7 +72,7 @@ FIELD_LABEL = {"phone": "phone", "email": "email", "website": "website", "facebo
                "city": "town", "zip": "ZIP", "categories": "type", "certified_organic": "organic status",
                "accepts_snap": "SNAP", "ada_accessible": "accessibility"}
 BY_LABEL = {"guidestone": "Guidestone Colorado", "producer_site": "the business's own website",
-            "producer_facebook": "the business's Facebook page"}
+            "producer_facebook": "the business's Facebook page", "producer_instagram": "the business's Instagram page"}
 # Records with these statuses are not published. "removed" is listed by ID only.
 HIDDEN_STATUS = {"closed", "removed"}
 
@@ -119,10 +119,13 @@ def parse_visits(text):
 def derive_visits(p, channels, dropin, dropin_hours):
     """What a person can do at the farm. Stated by a person (`visits`, or 'none') when set; otherwise only what the listing
     shows: a farm stand (with its hours) and pick-your-own. Tours, volunteering and the like are never guessed."""
-    if (p.get("visits") or "").strip().lower() == "none" or dropin is False:
+    stated = (p.get("visits") or "").strip()
+    if stated.lower() == "none":
         return []
-    if (p.get("visits") or "").strip():
-        return parse_visits(p["visits"])
+    if stated:
+        return parse_visits(stated)      # tours and visits by appointment are not drop-ins, so "no drop-in" does not hide them
+    if dropin is False:
+        return []
     out = []
     if "farm_stand" in channels:
         out.append({"type": "farm_stand", "label": VISIT_LABELS["farm_stand"],
@@ -173,6 +176,8 @@ def main():
                     help="also include records that this source lists, even outside the county")
     ap.add_argument("--unconfirmed-home-pins", choices=["show", "hide"], default="show",
                     help="draw a home-base pin for producers whose sales channels are not confirmed yet")
+    ap.add_argument("--all-outlet-kinds", action="store_true",
+                    help="export outlets of every kind (the shared statewide release; an app scopes them itself)")
     ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}, \"include_categories\": {category: reason}, \"exclude_categories\": {category: reason}, \"hide_pin_slugs\": {slug: reason}} for the app's own scope choices")
     ap.add_argument("--generated", default=dt.date.today().isoformat())
     a = ap.parse_args()
@@ -190,6 +195,8 @@ def main():
     include_categories = set((cfg.get("include_categories") or {}).keys())
     exclude_categories = set((cfg.get("exclude_categories") or {}).keys())
     include_outlet_kinds = set(cfg.get("include_outlet_kinds") or [])   # outlets are exported only when the app asks for them
+    if a.all_outlet_kinds:
+        include_outlet_kinds = set(OUTLET_KIND_LABELS)
     exclude_kinds = set(cfg.get("exclude_kinds") or [])   # e.g. ["bakery"]: a whole category left out of a launch
 
     locations = {r["location_id"]: r for r in T("locations")}
@@ -236,13 +243,15 @@ def main():
             src = r["source"]
             if src == "producer_site" and "facebook.com" in (r["source_url"] or ""):
                 src = "producer_facebook"   # found on the business's Facebook page, not a website
-            if not (r["verified_by"] == "partner" or src in ("producer_site", "producer_facebook")):
+            elif src == "producer_site" and "instagram.com" in (r["source_url"] or ""):
+                src = "producer_instagram"
+            if not (r["verified_by"] == "partner" or src in ("producer_site", "producer_facebook", "producer_instagram")):
                 continue
             if r["field"] not in FIELD_LABEL:
                 continue
             if src != "guidestone" and r["field"] in ("facebook", "instagram", "website"):
                 continue   # a page "confirming" its own link says nothing
-            url = r["source_url"] if src == "producer_facebook" else (website if src == "producer_site" else "")
+            url = r["source_url"] if src in ("producer_facebook", "producer_instagram") else (website if src == "producer_site" else "")
             g = groups.setdefault((src, url, r["verified_on"] if src != "producer_site" else ""), [])
             g.append(FIELD_LABEL[r["field"]])
         return [{"by": BY_LABEL.get(k[0], k[0]), "fields": sorted(set(v)), "url": k[1] or None, "date": k[2] or None}
@@ -359,8 +368,10 @@ def main():
         visits = derive_visits(p, channels, dropin, dropin_hours)
         out_locs = []
         for l in locs:
+            home_pin_if_shown = False
             if l["role"] == "home_base":
                 pin = sells_at_farm or (not channels and a.unconfirmed_home_pins == "show")
+                home_pin_if_shown = not sells_at_farm and not channels
                 basis = "confirmed" if sells_at_farm else "unconfirmed"
                 if p["slug"] in hide_pin_slugs and not sells_at_farm:
                     pin = False
@@ -372,12 +383,19 @@ def main():
             lcf = (locations.get(l["location_id"]) or {}).get("county_fips")
             if lcf and lcf not in a.county_fips:
                 pin = False       # a place outside this county is not a place to buy on this county's map
+                home_pin_if_shown = False
+            if not (locations.get(l["location_id"]) or {}).get("address")                     and (locations.get(l["location_id"]) or {}).get("hide_address") != "true":
+                home_pin_if_shown = False
             out_locs.append(public_location(l["location_id"], l["role"], pin, basis, {
+                # True when the home base would be pinned if an app chose to show unconfirmed home pins (see
+                # --unconfirmed-home-pins). The file's own `pin` stays the safe default; an app opts in per record.
+                "pin_unconfirmed_home": bool(home_pin_if_shown and not pin and num(locations[l["location_id"]]["lat"]) is not None),
                 "days": lst(l["days"]), "hours_text": l["hours_text"] or None,
                 "season_start": l["season_start"] or None, "season_end": l["season_end"] or None,
                 "status": l["status"], "confirm_url": l.get("confirm_url") or None}, use_market_name=True))
         rec = {
             "id": pid, "slug": p["slug"], "name": p["name"], "kind": p["kind"],
+            "service_county_fips": sorted(areas.get(pid, set())),
             "categories": lst(p["categories"]), "products": lst(p["products"]),
             "product_groups": lst(p.get("product_groups", "")),
             "visits": visits, "dropin_visits": dropin, "dropin_hours": dropin_hours, "farm_pickup": farm_pickup, "visit_basis": {"dropin": dropin_basis, "pickup": pickup_basis},
