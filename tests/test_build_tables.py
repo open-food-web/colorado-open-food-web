@@ -126,12 +126,12 @@ class BuildTables(unittest.TestCase):
             w.writerow([{"name": "Far Honey", "role": "pickup", "market_ref": "A Market"}.get(h, "") for h in head])
         with open(kinds, "w", encoding="utf-8", newline="") as f:
             w = csv.writer(f, lineterminator=chr(10))
-            w.writerow(["name", "kind"])
+            w.writerow(["name", "producer_type"])
             w.writerow(["Far Honey", "farm"])
         self.build([row("Far Honey", "Other", County="Custer", City="Westcliffe", Source="curated"),
                     row("Other Far Farm", "On-Farm / Ranch Sales", County="Custer", City="Westcliffe", Source="curated"),
                     row("A Market", "Farmers' Market", Address="Park", City="Salida", Latitude="38.5", Longitude="-106")],
-                   extra=["--locations", locs, "--kinds", kinds])
+                   extra=["--locations", locs, "--producer-types", kinds])
         self.assertEqual([r["name"] for r in self.table("producers")], ["Far Honey"])   # sells here, based elsewhere
         roles = [(p["role"]) for p in self.table("producer_locations")]
         self.assertEqual(sorted(roles), ["home_base", "pickup"])

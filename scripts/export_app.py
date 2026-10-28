@@ -23,7 +23,7 @@ import os
 import re
 import sys
 
-FORMAT_VERSION = 1
+FORMAT_VERSION = 2
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import products as PRODUCTS  # noqa: E402
@@ -50,14 +50,14 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July", "Augus
 CHANNEL_LABELS = {
     "farm_stand": "Farm stand / on-farm sales", "u_pick": "U-pick", "csa": "CSA", "farmers_market": "Farmers market",
     "pickup": "Pickup point", "delivery": "Delivery", "online": "Online orders", "wholesale": "Wholesale",
-    "retail_partners": "Sold in stores", "none": "No public sales"}
+    "retail_partners": "Sold in stores", "agritourism": "Agritourism (visits, lodging, events)", "none": "No public sales"}
 SOURCE_LABELS = {
     "producer_site": "Producer's own website", "chaffee_provides": "Chaffee Provides", "colorado_proud": "Colorado Proud",
     "cfma": "Colorado Farmers Market Association", "usda_lfd": "USDA Local Food Directories",
     "curated": "Farmers market vendor lists, checked by hand", "guidestone": "Guidestone Colorado review",
     "census_geocoder": "US Census geocoder", "reviewed": "Reviewed by hand", "maintainer": "Maintainer"}
-# What a producer calls itself (producers.kind). Farms and ranches are different things to a shopper.
-KIND_LABELS = {"farm": "Farms", "ranch": "Ranches", "orchard": "Orchards", "bakery": "Bakeries", "maker": "Food makers", "agritourism": "Agritourism", "education": "Agricultural education",
+# What a producer is (producers.producer_type). Farms and ranches are different things to a shopper.
+PRODUCER_TYPE_LABELS = {"farm": "Farms", "ranch": "Ranches", "orchard": "Orchards", "bakery": "Bakeries", "maker": "Food makers", "education": "Agricultural education",
                "winery": "Wineries"}
 # Outlets (retailers and dining) an app can opt into with "include_outlet_kinds". The group is derived from the kind.
 OUTLET_KIND_LABELS = {"grocery": "Grocery stores", "farm_store": "Farm stores", "garden_center": "Garden centers",
@@ -69,7 +69,7 @@ OUTLET_GROUP_OF = {k: ("shops" if k in ("grocery", "farm_store", "garden_center"
                    for k in OUTLET_KIND_LABELS}
 FIELD_LABEL = {"phone": "phone", "email": "email", "website": "website", "facebook": "Facebook", "instagram": "Instagram",
                "hours_text": "hours", "seasonal_months": "season", "products": "products", "address": "address",
-               "city": "town", "zip": "ZIP", "categories": "type", "certified_organic": "organic status",
+               "city": "town", "zip": "ZIP", "source_categories": "type", "certified_organic": "organic status",
                "accepts_snap": "SNAP", "ada_accessible": "accessibility"}
 BY_LABEL = {"guidestone": "Guidestone Colorado", "producer_site": "the business's own website",
             "producer_facebook": "the business's Facebook page", "producer_instagram": "the business's Instagram page"}
@@ -178,7 +178,7 @@ def main():
                     help="draw a home-base pin for producers whose sales channels are not confirmed yet")
     ap.add_argument("--all-outlet-kinds", action="store_true",
                     help="export outlets of every kind (the shared statewide release; an app scopes them itself)")
-    ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}, \"include_categories\": {category: reason}, \"exclude_categories\": {category: reason}, \"hide_pin_slugs\": {slug: reason}} for the app's own scope choices")
+    ap.add_argument("--config", help="app config JSON: {\"exclude_slugs\": {slug: reason}, \"include_producer_types\": [type], \"exclude_producer_types\": [type], \"exclude_only_channels\": [channel], \"exclude_only_source_categories\": [label], \"hide_pin_slugs\": {slug: reason}} for the app's own scope choices")
     ap.add_argument("--generated", default=dt.date.today().isoformat())
     a = ap.parse_args()
     if a.statewide or (a.county_fips and "all" in a.county_fips):
@@ -192,12 +192,13 @@ def main():
     cfg = json.load(open(a.config, encoding="utf-8")) if a.config else {}
     exclude_slugs = set((cfg.get("exclude_slugs") or {}).keys())
     hide_pin_slugs = set((cfg.get("hide_pin_slugs") or {}).keys())
-    include_categories = set((cfg.get("include_categories") or {}).keys())
-    exclude_categories = set((cfg.get("exclude_categories") or {}).keys())
+    include_producer_types = set(cfg.get("include_producer_types") or [])   # an allowlist, when the app has one
+    exclude_only_channels = set(cfg.get("exclude_only_channels") or [])   # drop a producer whose only channels are these
+    exclude_only_source_categories = set(cfg.get("exclude_only_source_categories") or [])   # same, by the directory labels the sources gave (provenance)
     include_outlet_kinds = set(cfg.get("include_outlet_kinds") or [])   # outlets are exported only when the app asks for them
     if a.all_outlet_kinds:
         include_outlet_kinds = set(OUTLET_KIND_LABELS)
-    exclude_kinds = set(cfg.get("exclude_kinds") or [])   # e.g. ["bakery"]: a whole category left out of a launch
+    exclude_producer_types = set(cfg.get("exclude_producer_types") or [])   # e.g. ["bakery"]: a whole type left out of a launch
 
     locations = {r["location_id"]: r for r in T("locations")}
     towns = [(r["name"], float(r["lat"]), float(r["lon"]), r["county_fips"]) for r in read(TOWNS) if r["county_fips"] in a.county_fips]
@@ -322,22 +323,23 @@ def main():
             removed.append(pid)
             continue
         locs = plocs.get(pid, [])
-        if p["slug"] in exclude_slugs or p["kind"] in exclude_kinds:
+        if p["slug"] in exclude_slugs or p["producer_type"] in exclude_producer_types:
             continue
-        # excluded only when every category the record has is one the app leaves out
-        if exclude_categories and lst(p["categories"]) and set(lst(p["categories"])) <= exclude_categories:
+        if include_producer_types and p["producer_type"] not in include_producer_types:
             continue
-        # an allowlist, when the app has one: a record with categories stays only if one of them is on the list
-        if include_categories and lst(p["categories"]) and not (set(lst(p["categories"])) & include_categories):
+        if exclude_only_channels and lst(p["sales_channels"]) and set(lst(p["sales_channels"])) <= exclude_only_channels:
+            continue
+        if exclude_only_source_categories and lst(p["source_categories"]) and set(lst(p["source_categories"])) <= exclude_only_source_categories:
             continue
         if p["status"] in HIDDEN_STATUS:
             continue
         if not in_area("producer", pid, [l["location_id"] for l in locs], "producers"):
             continue
         channels = lst(p["sales_channels"])
+        buy_channels = [c for c in channels if c != "agritourism"]   # agritourism is not a way to buy food: it does not settle where to find them
         sells_at_farm = bool({"farm_stand", "u_pick"} & set(channels))
         opted = set(lst(p["opted_out_fields"]))
-        # Two different questions. A person's answer (set in inputs/producer_kinds.csv) always wins. Otherwise the
+        # Two different questions. A person's answer (set in inputs/producer_types.csv) always wins. Otherwise the
         # listing itself is the evidence; with none, the answer stays unknown (null), never a guess.
         #   dropin_visits: can a customer just show up? Yes when a farm stand, roadside market or u-pick is stated.
         #   farm_pickup: can a customer collect an order at the farm, by arrangement? Yes when the farm is listed as a
@@ -355,7 +357,7 @@ def main():
         if dropin is None and sells_at_farm:
             dropin, dropin_basis = True, "listing"
         # When drop-ins are welcome, the farm stand's or store's hours are the drop-in hours (a person can set them
-        # in inputs/producer_kinds.csv). "By appointment" is not drop-in time, so it is never used.
+        # in inputs/producer_types.csv). "By appointment" is not drop-in time, so it is never used.
         dropin_hours = None
         if dropin is True:
             stand = next((l["hours_text"] for l in locs if l["role"] in ("farm_stand", "home_base") and l["hours_text"]), "")
@@ -363,15 +365,15 @@ def main():
             if cand and not re.search(r"appointment|arrangement|call ahead", cand, re.I):
                 dropin_hours = compact_hours(cand)
         farm_pickup, pickup_basis = own("farm_pickup"), ("set" if own("farm_pickup") is not None else None)
-        if farm_pickup is None and (farm_is_a_spot or dropin is True or "Agritourism" in lst(p["categories"])):
+        if farm_pickup is None and (farm_is_a_spot or dropin is True or "Agritourism" in lst(p["source_categories"])):
             farm_pickup, pickup_basis = True, "listing"
         visits = derive_visits(p, channels, dropin, dropin_hours)
         out_locs = []
         for l in locs:
             home_pin_if_shown = False
             if l["role"] == "home_base":
-                pin = sells_at_farm or (not channels and a.unconfirmed_home_pins == "show")
-                home_pin_if_shown = not sells_at_farm and not channels
+                pin = sells_at_farm or (not buy_channels and a.unconfirmed_home_pins == "show")
+                home_pin_if_shown = not sells_at_farm and not buy_channels
                 basis = "confirmed" if sells_at_farm else "unconfirmed"
                 if p["slug"] in hide_pin_slugs and not sells_at_farm:
                     pin = False
@@ -394,9 +396,9 @@ def main():
                 "season_start": l["season_start"] or None, "season_end": l["season_end"] or None,
                 "status": l["status"], "confirm_url": l.get("confirm_url") or None}, use_market_name=True))
         rec = {
-            "id": pid, "slug": p["slug"], "name": p["name"], "kind": p["kind"],
+            "id": pid, "slug": p["slug"], "name": p["name"], "producer_type": p["producer_type"],
             "service_county_fips": sorted(areas.get(pid, set())),
-            "categories": lst(p["categories"]), "products": lst(p["products"]),
+            "products": lst(p["products"]),
             "product_groups": lst(p.get("product_groups", "")),
             "visits": visits, "dropin_visits": dropin, "dropin_hours": dropin_hours, "farm_pickup": farm_pickup, "visit_basis": {"dropin": dropin_basis, "pickup": pickup_basis},
             "visit_note": p.get("visit_note") or None,
@@ -489,7 +491,7 @@ def main():
                        # in-scope records left out for having no county (they cannot be placed) or being in another county
                        "excluded_no_county": {k: v for k, v in no_county.items() if k != "outlets" or include_outlet_kinds},
                        "excluded_outside_area": {k: v for k, v in outside.items() if k != "outlets" or include_outlet_kinds}}},
-        "vocab": {"counties": {c: COUNTY_NAMES[c] for c in sorted(a.county_fips)}, "sales_channels": CHANNEL_LABELS, "months": MONTHS, "kinds": KIND_LABELS,
+        "vocab": {"counties": {c: COUNTY_NAMES[c] for c in sorted(a.county_fips)}, "sales_channels": CHANNEL_LABELS, "months": MONTHS, "producer_types": PRODUCER_TYPE_LABELS,
                   "visit_types": VISIT_LABELS, "product_groups": PRODUCTS.LABELS,
                   **({"outlet_kinds": {k: v for k, v in OUTLET_KIND_LABELS.items() if k in include_outlet_kinds},
                       "outlet_groups": OUTLET_GROUPS} if include_outlet_kinds else {})},

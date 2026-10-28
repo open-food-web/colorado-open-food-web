@@ -2,7 +2,7 @@
 
 Apps never read the canonical tables. The Food Web publishes **one** statewide export per release,
 `open-food-web.json`, as an asset of the tagged GitHub Release (see `RELEASES.md`). An app pins a release,
-keeps a copy, and applies its own scope on its side (county, categories, shop kinds, which pins to show).
+keeps a copy, and applies its own scope on its side (county, producer types, shop kinds, which pins to show).
 This document is the contract between the two. `scripts/make_release.py` builds the file with
 `scripts/export_app.py`; the first consumer is the Chaffee Provides site, whose `scripts/sync_data.py`
 slices it down to Chaffee County.
@@ -71,8 +71,8 @@ include a producer that serves its county but is based elsewhere.
 | Field | Type | Notes |
 |---|---|---|
 | `id`, `slug`, `name` | string | IDs are permanent; slugs may change |
-| `kind` | string | `farm`, `ranch`, `orchard`, `maker`, `winery`. Labels are in `vocab.kinds` |
-| `categories`, `products` | list | From the Food Web vocabularies |
+| `producer_type` | string | What the business is: `farm`, `ranch`, `orchard`, `maker`, `bakery`, `winery`, `education`. Labels are in `vocab.producer_types` |
+| `products` | list | From the Food Web vocabularies. (`categories` was removed in format 2: use `producer_type`, `sales_channels` and `product_groups`) |
 | `product_groups` | list | What people search by: honey, beef and meat, eggs, veggies... Labels are in `vocab.product_groups` |
 | `visits` | list | The ways to visit, each `{type, label, detail}` (`detail` is the hours or a short plain note, or null). Types and labels are in `vocab.visit_types`: farm stand, shop, pick your own, farm tours, volunteer days, visits by appointment. Empty when there is nothing to visit. Apps should show these with their titles instead of a "drop-in" flag |
 | `dropin_visits` | bool/null | Can a customer just show up? Null = no evidence; apps say "call first" |
@@ -146,12 +146,14 @@ An outlet carries no products or descriptions; the Food Web keeps outlets thin.
    the channels are not confirmed yet, the home base is pinned with `pin_basis: unconfirmed` (set
    `--unconfirmed-home-pins hide` to turn this off). A producer that sells only by pickup or delivery
    has no home-base pin once its channels are set, so its pins are the pickup points.
-6. **App scope choices.** (`exclude_kinds` leaves out a whole category, for example `["bakery"]`, until the partner decides.) An app's own decisions about what to show (for example, Guidestone leaving a vacation rental off its site) live in the app's own repo (Chaffee Provides: `scripts/scope.json`, with a reason on each exclusion). The Food Web keeps the record; only the app leaves it out.
+6. **App scope choices.** (`exclude_producer_types` leaves out a whole producer type, for example `["bakery"]`, until the partner decides.) An app's own decisions about what to show (for example, Guidestone leaving a vacation rental off its site) live in the app's own repo (Chaffee Provides: `scripts/scope.json`, with a reason on each exclusion). The Food Web keeps the record; only the app leaves it out.
 7. **Order is stable.** Lists are sorted by name so a release diff shows only real changes.
 
 ## Changing the format
 
 - Adding a field is not a breaking change: apps ignore fields they do not know.
+- **Format 2** (Oct 2026) removed `categories` from producers and replaced the scope keys `include_categories` / `exclude_categories`
+  with `include_producer_types` / `exclude_producer_types`, and renamed the producer `kind` field to `producer_type` (and `vocab.kinds` to `vocab.producer_types`). Outlets, markets and access points keep `kind`. No app was live, so there was no overlap period.
 - Renaming or removing a field, or changing what a value means, bumps `format_version`. The Food Web
   keeps building the old version until the app has moved.
 - The app's sync script should fail loudly, not silently, when `format_version` is unknown or `counts`

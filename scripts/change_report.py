@@ -18,7 +18,7 @@ import os
 import sys
 
 FIELDS = ["address", "city", "zip", "phone", "email", "website", "facebook", "instagram", "hours_text",
-          "categories", "sales_channels", "status"]
+          "producer_type", "source_categories", "sales_channels", "status"]
 
 
 def read(d, name):
@@ -92,7 +92,7 @@ def main():
     if added:
         lines += ["### Added", ""]
         for p in sorted(added, key=lambda x: x["name"]):
-            lines.append("- **%s** (%s). %s" % (p["name"], p["kind"], "; ".join(where(A, p["producer_id"])) or "no location"))
+            lines.append("- **%s** (%s). %s" % (p["name"], p["producer_type"], "; ".join(where(A, p["producer_id"])) or "no location"))
         lines.append("")
     if gone:
         lines += ["### Removed", ""]

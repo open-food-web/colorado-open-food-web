@@ -11,7 +11,7 @@ Writes, in --out:
   csa.json          confirmed CSAs (season, sign-up link, pickup sites, delivery), facts only
   tables.zip        the canonical tables (producers, markets, outlets, locations and the link tables)
   open-food-web.json  the statewide app export (docs/EXPORTS.md): the only file an app needs; it filters it to its
-                    own scope (county, categories, outlet kinds, pins) when it syncs
+                    own scope (county, producer types, outlet kinds, pins) when it syncs
   places.json       Census place and ZIP centre points, for "near a town or ZIP" searches (public domain)
   supply-network-nodes.csv, supply-network-edges.csv   who supplies which restaurant or store, with sources
   MANIFEST.json     version, date, record counts, per-source counts, the sha256 of each file, and the schema
@@ -37,7 +37,7 @@ from scrape import contact_policy as cp  # noqa: E402
 
 REPO = os.path.normpath(os.path.join(HERE, ".."))
 BUILD = os.path.join(REPO, ".cache", "build")
-FORMAT_VERSION = 1
+FORMAT_VERSION = 2
 PLACES = os.path.join(REPO, "inputs", "places", "co_places.json")
 TABLES = os.path.join(REPO, "data", "colorado")
 SUPPLY = os.path.join(REPO, "inputs", "supply-network")
@@ -103,7 +103,7 @@ def main():
     assets["tables.zip"] = tables_zip
 
     # The one app export: statewide, unscoped, release rules applied (docs/EXPORTS.md). Apps pin this file and
-    # apply their own scope (county, categories, pins) on their side.
+    # apply their own scope (county, producer types, pins) on their side.
     import subprocess
     app_json = os.path.join(a.out, "open-food-web.json")
     subprocess.run([sys.executable, "-I", os.path.join(HERE, "export_app.py"), "--tables", TABLES, "--out", app_json,
