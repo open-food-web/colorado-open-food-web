@@ -280,6 +280,7 @@ producer,co-p-000203,colorado_proud,,,,unchecked
 producer,co-p-000204,colorado_proud,,,,unchecked
 producer,co-p-000205,colorado_proud,,,,unchecked
 outlet,co-o-000026,colorado_proud,,,,unchecked
+market,co-m-000154,curated,,,,unchecked
 producer,co-p-000206,colorado_proud,,,,unchecked
 producer,co-p-000207,curated,,,,unchecked
 producer,co-p-000208,colorado_proud,,,,unchecked
@@ -567,7 +568,6 @@ market,co-m-000057,usda_lfd,,,,unchecked
 producer,co-p-000359,usda_lfd,,,,unchecked
 producer,co-p-000360,colorado_proud,,,,unchecked
 producer,co-p-000361,colorado_proud,,,,unchecked
-producer,co-p-001233,curated,,,,unchecked
 producer,co-p-000362,usda_lfd,,,,unchecked
 producer,co-p-000363,usda_lfd,,,,unchecked
 producer,co-p-000364,colorado_proud,,,,unchecked
@@ -1329,8 +1329,6 @@ producer,co-p-000831,colorado_proud,,,,unchecked
 producer,co-p-000832,colorado_proud,,,,unchecked
 producer,co-p-000833,colorado_proud,,,,unchecked
 producer,co-p-000834,colorado_proud,,,,unchecked
-producer,co-p-000020,producer_site,https://ponchacreekgardens.wordpress.com/our-products/,,,unchecked
-producer,co-p-000020,chaffee_provides,,poncha-creek-gardens,,unchecked
 producer,co-p-000835,usda_lfd,,,,unchecked
 producer,co-p-000836,colorado_proud,,,,unchecked
 producer,co-p-000837,colorado_proud,,,,unchecked
@@ -1497,8 +1495,8 @@ producer,co-p-000941,usda_lfd,,,,unchecked
 producer,co-p-000942,colorado_proud,,,,unchecked
 producer,co-p-000943,colorado_proud,,,,unchecked
 producer,co-p-000944,colorado_proud,,,,unchecked
-producer,co-p-000023,producer_site,http://www.scangameat.com/,,,unchecked
-producer,co-p-000023,chaffee_provides,,scanga-meat-company,,unchecked
+outlet,co-o-000161,producer_site,http://www.scangameat.com/,,,unchecked
+outlet,co-o-000161,chaffee_provides,,scanga-meat-company,,unchecked
 producer,co-p-000945,usda_lfd,,,,unchecked
 producer,co-p-000946,usda_lfd,,,,unchecked
 producer,co-p-000947,colorado_proud,,,,unchecked
@@ -1688,7 +1686,6 @@ producer,co-p-001068,usda_lfd,,,,unchecked
 producer,co-p-001069,colorado_proud,,,,unchecked
 producer,co-p-001070,colorado_proud,,,,unchecked
 outlet,co-o-000139,colorado_proud,,,,unchecked
-producer,co-p-001242,curated,,,,unchecked
 producer,co-p-001071,colorado_proud,,,,unchecked
 outlet,co-o-000140,colorado_proud,,,,unchecked
 producer,co-p-001072,colorado_proud,,,,unchecked
@@ -1762,8 +1759,6 @@ market,co-m-000146,usda_lfd,,,,unchecked
 producer,co-p-001122,colorado_proud,,,,unchecked
 producer,co-p-001123,colorado_proud,,,,unchecked
 producer,co-p-001124,colorado_proud,,,,unchecked
-producer,co-p-000027,producer_site,https://www.troutcreekfarm.com,,,unchecked
-producer,co-p-000027,chaffee_provides,,trout-creek-farm,,unchecked
 producer,co-p-001125,curated,,,,unchecked
 producer,co-p-001126,colorado_proud,,,,unchecked
 producer,co-p-001127,colorado_proud,,,,unchecked

@@ -8735,6 +8735,22 @@
 "name": "Ch'il indigenous foods",
 "source": "colorado_proud_finder"
 },
+"chaffee county winter|salida": {
+"Address": "10165 County Road 120",
+"Category": "Farmers' Market",
+"County": "Chaffee",
+"Email": "",
+"Hours": "Sat: 10:00am - 1:00pm (Nov 14 - Dec 19)",
+"Months Open": "",
+"Phone": "(719) 207-5787",
+"Products": "Winter produce (squash, greens, potatoes, apples), artisan goods, holiday gifts",
+"Status": "Open",
+"Website": "https://www.foodshedalliance.com/discover-the-market",
+"Year Opened": "",
+"city": "Salida",
+"name": "Chaffee County Winter Farmers Market",
+"source": "curated"
+},
 "chai yatri|denver": {
 "Address": "201 Milwaukee St Ste 200",
 "Category": "Grocery Store",
@@ -10081,7 +10097,7 @@
 },
 "company meat scanga|salida": {
 "Address": "9250 County Road 156, Salida, CO",
-"Category": "Meat Producer & Packer",
+"Category": "Grocery Store",
 "County": "Chaffee",
 "Email": "",
 "Hours": "",
@@ -11087,22 +11103,6 @@
 "name": "Sambrito Creek Farm",
 "source": "colorado_proud_farm_fresh+colorado_proud_finder"
 },
-"creek farm trout|buena vista": {
-"Address": "28872 CR 330, Buena Vista, CO 81211",
-"Category": "On-Farm / Ranch Sales",
-"County": "Chaffee",
-"Email": "Beth@TroutCreekFarm.com",
-"Hours": "",
-"Months Open": "",
-"Phone": "(719) 207-0230",
-"Products": "Specialty cut flowers, produce",
-"Status": "Open",
-"Website": "https://www.troutcreekfarm.com",
-"Year Opened": "",
-"city": "Buena Vista",
-"name": "Trout Creek Farm",
-"source": "official-site+chaffee_provides"
-},
 "creek foods leroux|hotchkiss": {
 "Address": "9754 3100 Road",
 "Category": "Food Maker",
@@ -11134,22 +11134,6 @@
 "city": "Strasburg",
 "name": "Wolf Creek Fresh",
 "source": "colorado_proud+colorado_proud_farm_fresh"
-},
-"creek gardens poncha|poncha springs": {
-"Address": "P.O. Box 654",
-"Category": "On-Farm / Ranch Sales",
-"County": "Chaffee",
-"Email": "ponchacreekgardens@gmail.com",
-"Hours": "By appointment",
-"Months Open": "",
-"Phone": "(720) 380-2121",
-"Products": "Microgreens, sunflower shoots, pea shoots",
-"Status": "Open",
-"Website": "https://ponchacreekgardens.wordpress.com/our-products/",
-"Year Opened": "",
-"city": "Poncha Springs",
-"name": "Poncha Creek Gardens",
-"source": "official-site+chaffee_provides"
 },
 "creek gardens side|littleton": {
 "Address": "5730 West Coal Mine Avenue",
@@ -17279,22 +17263,6 @@
 "name": "Zion Farms, LLC",
 "source": "colorado_proud_finder"
 },
-"farmstand|buena vista": {
-"Address": "County Road 306",
-"Category": "Roadside Market",
-"County": "Chaffee",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "",
-"Products": "Eggs, honey, flowers, produce, baked goods, jams, tallow balms, soaps",
-"Status": "Open",
-"Website": "",
-"Year Opened": "",
-"city": "Buena Vista",
-"name": "The Farmstand",
-"source": "curated"
-},
 "farmstead green junction|clifton": {
 "Address": "3449 Front St",
 "Category": "CSA Farm, Roadside Market",
@@ -17406,22 +17374,6 @@
 "city": "Englewood",
 "name": "The Feedery at Grow + Gather",
 "source": "colorado_proud_finder"
-},
-"feedsack flowers|center": {
-"Address": "",
-"Category": "Market Vendor",
-"County": "",
-"Email": "",
-"Hours": "",
-"Months Open": "",
-"Phone": "",
-"Products": "Cut-flower bouquets, dried and pressed flower art",
-"Status": "Open",
-"Website": "",
-"Year Opened": "",
-"city": "Center",
-"name": "Feedsack Flowers",
-"source": "curated"
 },
 "fest harvest pumpkin sale|littleton": {
 "Address": "028 S. Gallup Street",

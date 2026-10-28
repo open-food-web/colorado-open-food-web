@@ -1527,6 +1527,11 @@ co-loc|loc|headwaterfarms|store|thelettuceheadfoodcompany,co-loc-001523
 co-loc|loc|elkheadcreekranchyampavalleywagyushadowlainefarm|store|yampavalleyfoodscaamarket,co-loc-001524
 co-loc|loc|fitchranch|store|fitchranchmeatsmarketgranby,co-loc-001525
 co-loc|loc|smittyslittlefarmltd|store|thecottageboutiquedelta,co-loc-001526
+co-loc|loc|alpenglowhivehoney|farm_stand|alpenglowhivehoneyfarmstand,co-loc-001527
+co-loc|loc|arrowpointcattlecompany|farm_stand|thefarmstandonsouthmain,co-loc-001528
+co-loc|market|https://www.foodshedalliance.com/discover-the-market,co-loc-001529
+co-loc|loc|headwaterfarms|farm_stand|thefarmstandonsouthmain,co-loc-001530
+co-loc|outlet|scanga-meat-company,co-loc-001531
 co-m|309028,co-m-000001
 co-m|309117,co-m-000002
 co-m|business_profile_176,co-m-000003
@@ -1680,6 +1685,7 @@ co-m|309135,co-m-000150
 co-m|309136,co-m-000151
 co-m|windsor-farmers-market|windsor,co-m-000152
 co-m|309138,co-m-000153
+co-m|https://www.foodshedalliance.com/discover-the-market,co-m-000154
 co-o|eddyline-restaurant-at-southmain,co-o-000001
 co-o|https://www.thetriangleoasis.com/markets,co-o-000002
 co-o|the-asian-palate-marketplace-catering,co-o-000003
@@ -1840,6 +1846,7 @@ co-o|business_profile_911,co-o-000157
 co-o|business_profile_942,co-o-000158
 co-o|copper-kettle-apothecary,co-o-000159
 co-o|https://www.mountainessentialsllc.com/,co-o-000160
+co-o|scanga-meat-company,co-o-000161
 co-p|arrowpoint-cattle-company,co-p-000001
 co-p|badger-creek-ranch,co-p-000002
 co-p|https://banyanbreads.com/,co-p-000003
@@ -4358,3 +4365,6 @@ co-ploc|loc|headwaterfarms|store|thelettuceheadfoodcompany,co-ploc-001270
 co-ploc|loc|elkheadcreekranchyampavalleywagyushadowlainefarm|store|yampavalleyfoodscaamarket,co-ploc-001271
 co-ploc|loc|fitchranch|store|fitchranchmeatsmarketgranby,co-ploc-001272
 co-ploc|loc|smittyslittlefarmltd|store|thecottageboutiquedelta,co-ploc-001273
+co-ploc|loc|alpenglowhivehoney|farm_stand|alpenglowhivehoneyfarmstand,co-ploc-001274
+co-ploc|loc|arrowpointcattlecompany|farm_stand|thefarmstandonsouthmain,co-ploc-001275
+co-ploc|loc|headwaterfarms|farm_stand|thefarmstandonsouthmain,co-ploc-001276
