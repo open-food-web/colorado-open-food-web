@@ -37,10 +37,8 @@
     if(a && c && a.toLowerCase().indexOf(c.toLowerCase()) === -1) return a + ", " + c;
     return a || c || "";
   }
-  // A farm that doesn't take visitors isn't "a place to find them": only list its home if it has a pin or welcomes drop-ins.
-  // We know they don't take visitors: they said so, or we looked for drop-in visits and found only other ways to buy.
-  function noVisits(r){ return r.group === "farm" && !(r.visits && r.visits.length) && r.dropin !== true && (r.dropin === false || (r.dropin == null && r.channels.length > 0)); }
-  function isVisitable(p){ return p.role !== "home_base" || (p.rec.visits && p.rec.visits.length) || p.rec.dropin === true || (!noVisits(p.rec) && p.pin); }
+  // A home base is a place to list when it is pinned or the business states a way to visit; we never say that anyone may not drop in.
+  function isVisitable(p){ return p.role !== "home_base" || (p.rec.visits && p.rec.visits.length) || p.rec.dropin === true || p.pin; }
   function isMarket(p){ return /market/i.test(p.title || "") || /market/i.test(p.loc.name || ""); }
   var used = {};   // places a "way" already shows, so the list under the map does not repeat them
   function line(p, label, noHours){
@@ -53,31 +51,18 @@
   // The business's own page that says it sells here, so a visitor can check it for themselves.
   function ownPage(p, label){ return p.loc.confirm_url ? ' <span class="muted">· ' + CP.safeLink(p.loc.confirm_url, label || (p.pickup ? "Pickup info" : "More info")) + '</span>' : ""; }
 
-  // Plain answers to "can I show up?" and "how do I get it?"
-  // Two separate answers: can I just show up, and can I pick up an order at the farm?
-  function vrow(v, yes, no, unknown){
-    var cls = v === true ? "yes" : (v === false ? "no" : "unk"), mark = v === true ? "✔" : (v === false ? "✖" : "?");
-    return '<div class="vrow '+cls+'"><span class="vmark" aria-hidden="true">'+mark+'</span><span>'+(v === true ? yes : (v === false ? no : unknown))+'</span></div>';
-  }
-  function visit(r){
-    if(r.group === "outlet") return { none:true };   // a shop: no "open to everyone" banner, and no hours to point to
-    if(r.group !== "farm") return { tone:"ok", html:'<div class="vrow yes"><span class="vmark" aria-hidden="true">✔</span><span><strong>Open to everyone.</strong> Come at the times shown below.</span></div>' };
-    // A farm that isn't open to visitors gets one plain note under "All the places to find them", never a banner up top.
-    var site = r.raw.website ? CP.safeLink(r.raw.website) : "";
-    if(!noVisits(r)) return { none:true, html:"" };
-    return { tone:"no", compact:true, html:'<div class="vrow no"><span class="vmark" aria-hidden="true">✖</span><span><strong>' + (r.dropin === false ? "Not open for visits." : "Not open for visits at this time.") + '</strong>'
-      + (r.dropin === false ? " Please don't show up unannounced." : "") + (site ? " Their website has the details: " + site : "") + '</span></div>'
-      + (r.farmPickup === true && r.channels.indexOf("online") !== -1 ? '<div class="vrow yes"><span class="vmark" aria-hidden="true">✔</span><span><strong>Farm pickup.</strong> You can pick up an order at the farm, by arrangement.</span></div>' : "") };
-  }
   function ways(r){
     var raw = r.raw, ch = r.channels, out = [];
+    // A note about pickup, delivery or shipping belongs with how to order, not under the farm stand.
+    var noteIsOrder = /pick ?up|deliver|ship/i.test(raw.visit_note || "") && (ch.indexOf("online") !== -1 || ch.indexOf("pickup") !== -1);
+    var orderNote = noteIsOrder ? '<div class="muted">' + esc(raw.visit_note) + '</div>' : "";
     function add(title, html){ out.push('<li><strong>'+esc(title)+'</strong>'+'<div>'+html+'</div></li>'); }
     // One line under the visit: their own note, unless it only repeats the hours.
     function visitExtra(hasHours){
       var note = raw.visit_note || "";
       var restates = hasHours && /\d\s*[-–]\s*\d|\d\s*(am|pm)/i.test(note);
       var bits = [];
-      if(note && !restates) bits.push(esc(note));
+      if(note && !restates && !noteIsOrder) bits.push(esc(note));
       return bits.length ? '<div class="muted">' + bits.join(" ") + '</div>' : "";
     }
     var markets = r.places.filter(function(p){ return p.pickup && isMarket(p); });
@@ -85,21 +70,23 @@
     var site = raw.website ? CP.safeLink(raw.website) : "";
     // Each way to visit, titled, with its own hours; the address and links appear once, on the first.
     if(r.group === "farm" && r.visits.length){
-      var vp = r.places.filter(function(p){ return p.pin && (p.role === "home_base" || p.role === "farm_stand"); })[0];
+      var vp = r.places.filter(function(p){ return p.pin && p.role === "farm_stand"; })[0] || r.places.filter(function(p){ return p.pin && p.role === "home_base"; })[0];
       r.visits.forEach(function(v, k){
-        add(v.label, (v.detail ? esc(v.detail) : "") + (k === 0 && vp ? '<div>' + line(vp, "More info", true) + '</div>' : "") + (k === 0 ? visitExtra(false) : ""));
+        add(v.label, (v.detail ? esc(v.detail) : "") + (k === 0 && vp ? '<div>' + line(vp, "More info", !!v.detail) + '</div>' : "") + (k === 0 ? visitExtra(false) : ""));
       });
     } else if(r.group === "farm" && r.dropin === true){
       var h = r.places.filter(function(p){ return p.pin && p.role === "home_base"; })[0];
       add("Visit the " + CP.visitWord(r), (h ? line(h, "Farm info") : "Ask them for the address.") + (raw.dropin_hours && !(h && h.hours) ? ' <span class="muted">· ' + esc(raw.dropin_hours.replace(/\s*\((season ending soon|closing for the season soon)\)/i, "")) + '</span>' : "") + visitExtra(h && h.hours));
     }
     if(ch.indexOf("csa") !== -1) add("Join their CSA", "A weekly share of the harvest. " + (site ? "Sign up on " + site + "." : "Contact them to sign up."));
-    if(ch.indexOf("farmers_market") !== -1 || markets.length) add("At the farmers market", markets.length ? '<ul class="plain">' + markets.map(function(p){ return '<li>' + line(p) + '</li>'; }).join("") + '</ul>' : "They sell at local farmers markets. Check their page for dates.");
-    var pickupList = pickups.length ? '<ul class="plain">' + pickups.map(function(p){ return '<li>' + line(p) + '</li>'; }).join("") + '</ul>' : "";
-    var orderOnline = ch.indexOf("online") !== -1, canPickUp = ch.indexOf("pickup") !== -1 || pickups.length;
-    if(orderOnline && canPickUp) add("Order online", (site ? "Order at " + site : "Order online") + ", then pick it up at one of these places:" + (pickupList || " ask them where."));   // one entry: order first, then pick up
-    else if(canPickUp) add("Pick up an order", "Pick up at one of these places:" + (pickupList || " Ask them where."));
-    if(orderOnline && !canPickUp) add("Order online", site ? "Order at " + site + "." : "Ask them how to order.");
+    if(ch.indexOf("farmers_market") !== -1 || markets.length) add("At the farmers market", markets.length ? '<ul class="plain">' + markets.map(function(p){ return '<li>' + line(p) + '</li>'; }).join("") + '</ul>' : "They sell at local farmers markets.");
+    var farmHome = r.group === "farm" && r.farmPickup === true && ch.indexOf("online") !== -1 && !pickups.length ? (r.places.filter(function(p){ return p.role === "home_base"; })[0] || {}) : null;
+    var farmHomeLi = farmHome ? '<li>Pick up at the ' + CP.visitWord(r) + ', by arrangement' + (farmHome.loc && isVisitable(farmHome) && addr(farmHome) ? ': ' + line(farmHome) : "") + '</li>' : "";
+    var pickupList = pickups.length ? '<ul class="plain">' + pickups.map(function(p){ return '<li>' + line(p) + '</li>'; }).join("") + '</ul>' : (farmHome ? '<ul class="plain">' + farmHomeLi + '</ul>' : "");
+    var orderOnline = ch.indexOf("online") !== -1, canPickUp = ch.indexOf("pickup") !== -1 || pickups.length || farmHome;
+    if(orderOnline && canPickUp) add("Order online", (site ? "Order at " + site : "Order online") + ", then pick it up at one of these places:" + (pickupList || " ask them where.") + orderNote);   // one entry: order first, then pick up
+    else if(canPickUp) add("Pick up an order", "Pick up at one of these places:" + (pickupList || " Ask them where.") + orderNote);
+    if(orderOnline && !canPickUp) add("Order online", (site ? "Order at " + site + "." : "Ask them how to order.") + orderNote);
     var stores = r.places.filter(function(p){ return p.role === "store"; });
     if(stores.length) add("In local stores", '<ul class="plain">' + stores.map(function(p){ return '<li>' + line(p, "Their store list") + '</li>'; }).join("") + '</ul>');
     else if(ch.indexOf("retail_partners") !== -1) add("In local stores", "You can find their products in some local stores.");
@@ -144,10 +131,10 @@
     var prodChips = r.productGroups.map(function(g, i){
       return '<a class="chip" href="directory.html?product='+encodeURIComponent(g)+'">'+esc(r.productText[i])+'</a>';
     }).join(" ");
-    var v = visit(r), wl = ways(r);
-    var notes = /^not open to the public/i.test(raw.hours_text || "") ? '<div class="notice-box"><strong>Not open to the public.</strong> Please don\'t visit in person; use the website to order.</div>' : "";
+    var wl = ways(r);
+    var notes = /^not open to the public/i.test(raw.hours_text || "") ? '<div class="notice-box"><strong>Not open to the public.</strong> Use the website to order.</div>' : "";
     var pins = r.places.filter(function(p){ return p.pin; });
-    var verified = raw.last_verified ? '<span class="pill ok">Checked '+esc(CP.fmtDate(raw.last_verified))+'</span>'
+    var verified = raw.last_verified ? '<p class="muted" style="font-size:.85rem;font-style:italic;margin:12px 0 0">Data last checked '+esc(CP.fmtDate(raw.last_verified))+'</p>'
       : '';
 
     var facts = "";
@@ -173,12 +160,10 @@
     var unified = r.group === "farm" || r.group === "outlet";
     // A home base with no pin is not somewhere to go (the business has not published it): do not list it as a place.
     var rest = r.places.filter(function(p){ return !used[p.id] && isVisitable(p); });
-    var visitHtml = v.none ? "" : '<div class="visit'+(v.compact ? ' compact ' : ' ')+v.tone+'" role="note">'+v.html+'</div>';
     var placesSection = '<h2 style="font-size:1.25rem;margin-top:22px">Places to find them</h2>'
       + (pins.length ? '<div id="mini" class="mini-map" role="img" aria-label="Map showing where to find '+esc(r.name)+'"></div>' : '')
       + '<ul class="ways">'+wl.join("")+'</ul>'
-      + (rest.length ? '<ul class="places">'+rest.map(placeItem).join("")+'</ul>' : '')
-      + visitHtml;      // the drop-in note comes last, at the bottom of this section
+      + (rest.length ? '<ul class="places">'+rest.map(placeItem).join("")+'</ul>' : '');
     // Previous / next: the list the visitor was browsing (directory or map results) when this listing is in it, else everything A to Z.
     var order = (CP.browse.get() || []).filter(function(s){ return M.bySlug[s]; });
     if(order.indexOf(slug) === -1) order = M.recs.map(function(x){ return x.slug; }).sort(function(a, b){ return M.bySlug[a].name.localeCompare(M.bySlug[b].name); });
@@ -192,18 +177,16 @@
       '<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Map</a> › <a href="directory.html">Directory</a> › '+esc(r.name)+'</nav>' + pager
       + '<div class="provider"><div>'
       +   '<h1>'+esc(r.name)+'</h1><div>'+tag+(r.group === "farm" && r.homeTown ? ' <span class="muted">· Based in '+esc(r.homeTown)+'</span>' : '')+'</div>'
-      +   '<div style="margin-top:12px">'+verified+'</div>'+notes
+      +   notes
       +   (r.photo ? CP.photoHtml(r, "hero-photo") : "")
       +   (r.description ? '<div class="about">' + r.description.split("\n").map(function(t){ return '<p>' + esc(t) + '</p>'; }).join("") + '</div>' : "")
-      +   (unified || v.compact || v.none ? '' : '<div class="visit '+v.tone+'" role="note">'+v.html+'</div>')
       +   (unified ? placesSection : (wl.length ? '<h2 style="font-size:1.25rem;margin-top:22px">How to get it</h2><ul class="ways">'+wl.join("")+'</ul>' : ''))
-      +   (!unified && v.compact ? '<div class="visit compact '+v.tone+'" role="note">'+v.html+'</div>' : '')
       +   (prodChips || r.products ? '<h2 style="font-size:1.25rem;margin-top:24px">What they offer</h2>' + (prodChips ? '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">'+prodChips+'</div>' : '') + (r.products ? '<p>'+esc(r.products)+'</p>' : '') : '')
       +   (!unified && r.places.length ? '<h2 style="font-size:1.25rem;margin-top:24px">Location</h2>'
       +   (pins.length ? '<div id="mini" class="mini-map" role="img" aria-label="Map showing where to find '+esc(r.name)+'"></div>' : '')
       +   '<ul class="places">'+r.places.filter(isVisitable).map(placeItem).join("")+'</ul>' : '')
       +   vendorsHtml
-      +   '<div class="facts">'+facts+'</div>'
+      +   '<div class="facts">'+facts+'</div>'+verified
       +   '<p style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-ghost" href="'+CP.suggestUrl(r, "Listing update")+'">Suggest an update</a>'
       +   '<a class="btn btn-ghost" href="'+CP.suggestUrl(r, "Remove my listing")+'">Remove this listing</a></p>'
       + '</div></div>';
