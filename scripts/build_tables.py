@@ -85,7 +85,7 @@ FIELD_MAP = {"Phone": "phone", "Email": "email", "Website": "website", "Facebook
              "County": "county_fips", "Category": "source_categories"}
 
 COLS = {
-    "producers": ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "farm_pickup", "visit_note", "visits", "seasonal_months",
+    "producers": ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "farm_pickup", "visit_note", "channel_details", "seasonal_months",
                   "hours_text", "hours_status", "website", "phone", "email", "facebook", "instagram", "sales_channels",
                   "certified_organic", "accepts_snap", "ada_accessible", "call_first", "status", "claimed",
                   "opted_out_fields", "first_seen", "last_verified"],
@@ -122,8 +122,13 @@ def nkey(s: str) -> str:
 
 CHANNEL_ALIAS = {"on_farm": "farm_stand"}
 CHANNEL_VALUES = {"farm_stand", "u_pick", "csa", "farmers_market", "pickup", "delivery", "online", "wholesale",
-                  "retail_partners", "agritourism", "food_access", "none"}   # "none": confirmed, no public sales (not the same as blank = unknown)
+                  "retail_partners", "agritourism", "food_access", "tour", "stay", "volunteer", "farm_visit", "none"}   # "none": confirmed, no public sales (not the same as blank = unknown)
 # "food_access": grown for food access programs, not sold to the public; still a way to find them
+
+
+def detail_channels(text: str) -> set:
+    """The channels a producer's channel_details name ('channel|text;channel|text'): naming one adds it to sales_channels."""
+    return {c for part in (text or "").split(";") for c in channel_list(part.partition("|")[0])}
 
 
 def channel_list(text: str) -> set:
@@ -461,7 +466,7 @@ def main():
                     "farm_pickup": {"yes": "true", "no": "false"}.get(
                         ((types_by_name.get(nkey(name)) or {}).get("farm_pickup") or "").strip().lower(), ""),
                     "visit_note": (types_by_name.get(nkey(name)) or {}).get("visit_note") or "",
-                    "visits": (types_by_name.get(nkey(name)) or {}).get("visits") or "",
+                    "channel_details": (types_by_name.get(nkey(name)) or {}).get("channel_details") or "",
                     "product_groups": ";".join(PRODUCTS.union(
                         PRODUCTS.from_text(r["Products"], " ".join(cats_main), name)
                         or [g for g in type_groups(name) if not g.startswith("+")],
@@ -470,7 +475,8 @@ def main():
                     "products": r["Products"].replace(", ", ";"),
                     "seasonal_months": ";".join(months), "hours_text": r["Hours"], "hours_status": hs, "email": r["Email"],
                     "sales_channels": ";".join(sorted(set(filter(None, channels(r, cats).split(";")))
-                                                      | set().union(*[channel_list(x.get("sales_channels")) for x in home_rows]))),
+                                                      | set().union(*[channel_list(x.get("sales_channels")) for x in home_rows])
+                                                      | detail_channels((types_by_name.get(nkey(name)) or {}).get("channel_details")))),
                     "certified_organic": tri(r["Certified Organic"]), "accepts_snap": tri(r["SNAP"]),
                     "ada_accessible": tri(r["ADA Accessible"]), "call_first": tri(r["Call first?"]),
                     "status": status, "claimed": "false", "opted_out_fields": "",

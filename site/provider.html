@@ -38,7 +38,7 @@
     return a || c || "";
   }
   // A home base is a place to list when it is pinned or the business states a way to visit; we never say that anyone may not drop in.
-  function isVisitable(p){ return p.role !== "home_base" || (p.loc.address && ((p.rec.visits && p.rec.visits.length) || p.pin)); }
+  function isVisitable(p){ return p.role !== "home_base" || (p.loc.address && ((p.rec.onFarm && p.rec.onFarm.length) || p.pin)); }
   // The markets a producer sells at, one each, that are not already one of its own places. Each is a link to the market's
   // own page: its days and hours are the market's, not the producer's. Where the export carries the market's location it
   // can also be put on the producer's own map.
@@ -97,13 +97,14 @@
     var forOnline = r.places.filter(function(p){ return serves(p, "online") && (p.pin || addr(p)); });
     var pickups = forOnline.length ? forOnline : r.places.filter(function(p){ return p.pickup && !isMarket(p) && !serves(p, "farmers_market") && (p.pin || addr(p)); });
     var site = raw.website ? CP.safeLink(raw.website) : "";
-    // Each way to visit, titled, with its own hours; the address and links appear once, on the first.
-    if(r.group === "farm" && r.visits.length){
+    // Each on-farm way to find them (a channel), titled, with its own text; the address and links appear once, on the first.
+    if(r.group === "farm" && r.onFarm.length){
       var vp = r.places.filter(function(p){ return p.pin && p.role === "farm_stand"; })[0] || r.places.filter(function(p){ return p.pin && p.role === "home_base"; })[0];
       // A home base that is only a town, next to a farm stand with its own address, is the same place: do not list it again.
       if(vp && vp.role === "farm_stand") r.places.forEach(function(p){ if(p.role === "home_base" && !p.pin && !p.loc.address) used[p.id] = true; });
-      r.visits.forEach(function(v, k){
-        add(v.label, (v.detail ? linkify(v.detail) : "") + (k === 0 && vp ? '<div>' + line(vp, "More info", !!v.detail) + '</div>' : "") + (k === 0 ? visitExtra(false) : ""));
+      r.onFarm.forEach(function(c, k){
+        var t = r.details[c];
+        add(CP.ON_FARM_TITLE[c], (t ? linkify(t) : "") + (k === 0 && vp ? '<div>' + line(vp, "More info", !!t) + '</div>' : "") + (k === 0 ? visitExtra(false) : ""));
       });
     }
     if(ch.indexOf("food_access") !== -1) add("Food access programs", noteIsFood ? linkify(raw.visit_note) : "They grow food for local food access programs.");
@@ -180,7 +181,6 @@
       return '<a class="chip" href="directory.html?product='+encodeURIComponent(g)+'">'+esc(r.productText[i])+'</a>';
     }).join(" ");
     var wl = ways(r);
-    var notes = /^not open to the public/i.test(raw.hours_text || "") ? '<div class="notice-box"><strong>Not open to the public.</strong> Use the website to order.</div>' : "";
     var pins = r.places.filter(function(p){ return p.pin; });
     var stops = otherMarkets(r).filter(function(s){ return s.lat != null && s.lon != null; });   // markets it sells at, for its own map only
     var haveMap = pins.length || stops.length;
@@ -227,7 +227,6 @@
       '<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Map</a> › <a href="directory.html">Directory</a> › '+esc(r.name)+'</nav>' + pager
       + '<div class="provider"><div>'
       +   '<h1>'+esc(r.name)+'</h1><div>'+tag+(r.group === "farm" && r.homeTown ? ' <span class="muted">· Based in '+esc(r.homeTown)+'</span>' : '')+'</div>'
-      +   notes
       +   (r.photo ? CP.photoHtml(r, "hero-photo") : "")
       +   (r.description ? '<div class="about">' + r.description.split("\n").map(function(t){ return '<p>' + esc(t) + '</p>'; }).join("") + '</div>' : "")
       +   (unified ? placesSection : (wl.length ? '<h2 style="font-size:1.25rem;margin-top:22px">How to get it</h2><ul class="ways">'+wl.join("")+'</ul>' : ''))

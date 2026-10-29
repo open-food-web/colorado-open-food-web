@@ -51,6 +51,7 @@ CHANNEL_LABELS = {
     "farm_stand": "Farm stand / on-farm sales", "u_pick": "U-pick", "csa": "CSA", "farmers_market": "Farmers market",
     "pickup": "Pickup point", "delivery": "Delivery", "online": "Online orders", "wholesale": "Wholesale",
     "retail_partners": "Sold in stores", "agritourism": "Agritourism (visits, lodging, events)", "food_access": "Food access programs (grown for, not sold)",
+    "farm_visit": "Visit the farm", "tour": "Farm tours", "stay": "Farm stay", "volunteer": "Volunteer days",
     "none": "No public sales"}
 SOURCE_LABELS = {
     "producer_site": "Producer's own website", "chaffee_provides": "Chaffee Provides", "colorado_proud": "Colorado Proud",
@@ -102,39 +103,20 @@ def compact_hours(text):
     return "; ".join(out)
 
 
-# The ways a person can visit, each with its own hours. We do not label places by whether people may drop in: a visit is
-# described by what it is and when ("farm" is a plain 'visit the farm' with its hours).
-VISIT_LABELS = {"farm": "Visit the farm", "farm_stand": "Farm stand", "shop": "Shop", "u_pick": "Pick your own", "tour": "Farm tours",
-                "volunteer": "Volunteer days", "stay": "Farm stay"}
+# Ways to find a producer on the farm are sales channels too (a farm stand, a visit, u-pick, a tour, a stay, volunteer days); text for
+# one (its hours, a booking link) is kept in channel_details, keyed by channel. We never label a place by whether people may drop in.
+ON_FARM = ("farm_stand", "farm_visit", "u_pick", "tour", "stay", "volunteer")
+NOT_BUYING = {"agritourism", "farm_visit", "tour", "stay", "volunteer"}   # visits and events are not a way to buy food
 
 
-def parse_visits(text):
-    """producers.visits is 'type|detail;type|detail', where the detail is the hours or a short plain note. Unknown types are ignored."""
-    out = []
+def parse_details(text):
+    """producers.channel_details is 'channel|text;channel|text', where the text is the hours or a short plain note.
+    Channels we do not know are ignored."""
+    out = {}
     for part in (text or "").split(";"):
         t, _, h = part.strip().partition("|")
-        if t.strip() in VISIT_LABELS:
-            out.append({"type": t.strip(), "label": VISIT_LABELS[t.strip()], "detail": compact_hours(h.strip()) or None})
-    return out
-
-
-def derive_visits(p, channels, stand_hours):
-    """What a person can do at the farm. Stated by a person (`visits`, or 'none') when set; otherwise only what the listing
-    shows: a farm stand (with its hours) and pick-your-own. Tours, volunteering and the like are never guessed."""
-    stated = (p.get("visits") or "").strip()
-    if stated.lower() == "none":
-        return []
-    if stated:
-        return parse_visits(stated)
-    out = []
-    if "farm_stand" in channels:
-        out.append({"type": "farm_stand", "label": VISIT_LABELS["farm_stand"],
-                    "detail": stand_hours if stand_hours and re.search(r"\d", stand_hours) else None})
-    if "u_pick" in channels:
-        text = (p.get("hours_text") or "").strip()
-        out.append({"type": "u_pick", "label": VISIT_LABELS["u_pick"],
-                    "detail": ("By appointment" if re.search(r"appointment", text, re.I)
-                               else (compact_hours(text) if re.search(r"\d", text) else "")) or None})
+        if t.strip() in CHANNEL_LABELS:
+            out[t.strip()] = compact_hours(h.strip()) or None
     return out
 
 
@@ -346,7 +328,7 @@ def main():
         if not in_area("producer", pid, [l["location_id"] for l in locs], "producers"):
             continue
         channels = lst(p["sales_channels"])
-        buy_channels = [c for c in channels if c != "agritourism"]   # agritourism is not a way to buy food: it does not settle where to find them
+        buy_channels = [c for c in channels if c not in NOT_BUYING]   # a visit, tour or stay is not a way to buy food: it does not settle where to find them
         sells_at_farm = bool({"farm_stand", "u_pick"} & set(channels))
         opted = set(lst(p["opted_out_fields"]))
         # farm_pickup: can a customer collect an order at the farm, by arrangement? A person's answer (set in
@@ -362,7 +344,7 @@ def main():
             l["location_id"] == (home or {}).get("location_id")
             or (home_addr and ((locations.get(l["location_id"]) or {}).get("address") or "").strip().lower() == home_addr))
             for l in locs)
-        # A farm stand's visit carries its hours: the stand's or home's own hours, else the listing's. "By appointment" is
+        # A farm stand's text is its hours: the stand's or home's own hours, else the listing's. "By appointment" is
         # not hours, so it is never used.
         stand_hours = None
         if "farm_stand" in channels:
@@ -373,12 +355,22 @@ def main():
         farm_pickup, pickup_basis = own("farm_pickup"), ("set" if own("farm_pickup") is not None else None)
         if farm_pickup is None and (farm_is_a_spot or sells_at_farm or "Agritourism" in lst(p["source_categories"])):
             farm_pickup, pickup_basis = True, "listing"
-        visits = derive_visits(p, channels, stand_hours)
-        # The farm is a confirmed place to go when a farm stand or u-pick is stated, when a person has said customers
-        # collect orders there (an online-order ranch with pickup at the ranch has no stand, but the pin is real), or when a
-        # person has stated a way to visit (a learning center with hours).
-        person_visits = (p.get("visits") or "").strip().lower() not in ("", "none")
-        farm_is_confirmed = sells_at_farm or (farm_pickup is True and pickup_basis == "set") or person_visits
+        # Text for a channel. A farm stand's or u-pick's hours come from the listing; a person's text wins. A channel with no text has no entry.
+        details = {}
+        if "farm_stand" in channels and stand_hours and re.search(r"\d", stand_hours):
+            details["farm_stand"] = stand_hours
+        if "u_pick" in channels:
+            text = (p.get("hours_text") or "").strip()
+            d = "By appointment" if re.search(r"appointment", text, re.I) else (compact_hours(text) if re.search(r"\d", text) else "")
+            if d:
+                details["u_pick"] = d
+        details.update({k: v for k, v in parse_details(p.get("channel_details")).items() if v})
+        details = {k: details[k] for k in channels if k in details}
+        # The farm is a confirmed place to go when an on-farm channel is stated (a farm stand, u-pick, a visit, a tour, a stay or
+        # volunteer days), or when a person has said customers collect orders there (an online-order ranch with pickup at the ranch
+        # has no stand, but the pin is real).
+        on_farm = bool(set(ON_FARM) & set(channels))
+        farm_is_confirmed = on_farm or (farm_pickup is True and pickup_basis == "set")
         out_locs = []
         for l in locs:
             home_pin_if_shown = False
@@ -415,7 +407,7 @@ def main():
             "service_county_fips": sorted(areas.get(pid, set())),
             "products": lst(p["products"]),
             "product_groups": lst(p.get("product_groups", "")),
-            "visits": visits, "farm_pickup": farm_pickup, "visit_basis": {"pickup": pickup_basis},
+            "channel_details": details, "farm_pickup": farm_pickup, "visit_basis": {"pickup": pickup_basis},
             "visit_note": p.get("visit_note") or None,
             "months_open": [MONTHS[int(m) - 1] for m in lst(p["seasonal_months"])],
             "hours_text": p["hours_text"] or None, "hours": hours_by.get(("producer", pid), []),
@@ -507,7 +499,7 @@ def main():
                        "excluded_no_county": {k: v for k, v in no_county.items() if k != "outlets" or include_outlet_kinds},
                        "excluded_outside_area": {k: v for k, v in outside.items() if k != "outlets" or include_outlet_kinds}}},
         "vocab": {"counties": {c: COUNTY_NAMES[c] for c in sorted(a.county_fips)}, "sales_channels": CHANNEL_LABELS, "months": MONTHS, "producer_types": PRODUCER_TYPE_LABELS,
-                  "visit_types": VISIT_LABELS, "product_groups": PRODUCTS.LABELS,
+                  "product_groups": PRODUCTS.LABELS,
                   **({"outlet_kinds": {k: v for k, v in OUTLET_KIND_LABELS.items() if k in include_outlet_kinds},
                       "outlet_groups": OUTLET_GROUPS} if include_outlet_kinds else {})},
         "producers": sorted(producers, key=lambda x: x["name"].lower()),

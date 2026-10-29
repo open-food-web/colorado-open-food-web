@@ -74,7 +74,7 @@ include a producer that serves its county but is based elsewhere.
 | `producer_type` | string | What the business is: `farm`, `ranch`, `orchard`, `maker`, `bakery`, `winery`, `education`. Labels are in `vocab.producer_types` |
 | `products` | list | From the Food Web vocabularies. (`categories` was removed in format 2: use `producer_type`, `sales_channels` and `product_groups`. `dropin_visits`, `dropin_hours` and `visit_basis.dropin` were removed in format 3: places are described by their sales channels and named visits, not by whether people may drop in) |
 | `product_groups` | list | What people search by: honey, beef and meat, eggs, veggies... Labels are in `vocab.product_groups` |
-| `visits` | list | The ways to visit, each `{type, label, detail}` (`detail` is the hours or a short plain note, or null; it may contain a link written `[words](https://...)`). Types and labels are in `vocab.visit_types`: visit the farm, farm stand, shop, pick your own, farm tours, volunteer days, farm stay. Empty when there is nothing to visit. The Food Web does not label a place by whether people may drop in; show these with their titles |
+| `channel_details` | object | Text for a sales channel, keyed by channel: its hours or a short plain note (it may contain a link written `[words](https://...)`). Only channels that have text appear. Farm stand and u-pick hours are taken from the listing when no one has written text. The on-farm ways to find a producer are sales channels (`farm_stand`, `farm_visit`, `u_pick`, `tour`, `stay`, `volunteer`); the Food Web does not label a place by whether people may drop in |
 | `farm_pickup` | bool/null | Can a customer collect an order at the farm, by arrangement?  |
 | `visit_basis` | object | `{pickup}`: `set` (a person's answer), `listing` (inferred from the listing, e.g. a farm stand or tours) or null |
 | `visit_note` | string/null | One plain sentence about visiting or pickup |
@@ -84,7 +84,7 @@ include a producer that serves its county but is based elsewhere.
 | `hours_status` | string | `parsed`, `partial`, `appointment`, `text_only`, `none`. Show `hours_text` unless `parsed` |
 | `sells_at` | list | Markets the producer sells at: `{market_id, name, county_fips, year, season_label, basis, source_url}` |
 | `website`, `phone`, `email`, `facebook`, `instagram` | string/null | Public business contact only |
-| `sales_channels` | list | `farm_stand`, `u_pick`, `csa`, `farmers_market`, `pickup`, `delivery`, `online`, `wholesale`, `retail_partners`, `agritourism`, `food_access` (grown for food access programs, not sold to the public), `none` (confirmed no public sales). Empty = not confirmed yet |
+| `sales_channels` | list | `farm_stand`, `farm_visit` (a plain visit to the farm), `u_pick`, `tour`, `stay`, `volunteer`, `csa`, `farmers_market`, `pickup`, `delivery`, `online`, `wholesale`, `retail_partners`, `agritourism`, `food_access` (grown for food access programs, not sold to the public), `none` (confirmed no public sales). Empty = not confirmed yet. Labels are in `vocab.sales_channels` |
 | `certified_organic`, `accepts_snap`, `ada_accessible`, `call_first` | bool/null | Null = unknown, never false |
 | `status` | string | `active`, `seasonal_closed`, `unverified` |
 | `claimed` | bool | The producer has confirmed the record |

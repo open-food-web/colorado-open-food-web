@@ -44,7 +44,7 @@ label. Counts are producers in the Oct 2026 statewide tables (1,209). Details an
 | What is this business? | `producer_type` | One value, from the list below |
 | How can the public buy from it? | `sales_channels` | Any that apply |
 | What does it make or grow? | `product_groups` | Any that apply |
-| What can a visitor do there? | `visits` | Any that apply (farm stand, tour, u-pick, volunteer, by appointment) |
+| What can a visitor do there? | `sales_channels` and `channel_details` | Any that apply (`farm_stand`, `farm_visit`, `u_pick`, `tour`, `stay`, `volunteer`), with their hours or booking links |
 
 ### Producer types
 

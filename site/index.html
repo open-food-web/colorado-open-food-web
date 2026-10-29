@@ -147,11 +147,11 @@ if (new URLSearchParams(location.search).get("embed") === "1") document.document
   function popup(p){
     var r = p.rec;
     var where = CP.placeLabel(p);
-    var visitsHere = p.role === "home_base" && r.visits.length;   // named ways to visit, each with its own hours
+    var visitsHere = p.role === "home_base" && r.onFarm.length;   // named ways to visit, each with its own hours
     var title = p.title !== p.loc.address && p.title !== p.loc.city && p.title !== r.name ? p.title : "";
     var addr = p.loc.address ? esc(p.loc.address) + (p.loc.city && p.loc.address.toLowerCase().indexOf(p.loc.city.toLowerCase()) === -1 ? ", " + esc(p.loc.city) : "") : (p.loc.city ? esc(p.loc.city) : "");
     return '<h4>'+esc(r.name)+'</h4><div style="margin:2px 0 6px"><a href="'+CP.recUrl(r)+'">Details →</a></div><div style="margin-bottom:6px">'+catTag(r)+'</div>'
-      + '<div style="font-size:.9rem">'+(visitsHere ? r.visits.map(function(v){ return '<div><strong>'+esc(v.label)+'</strong>'+(v.detail ? ' · '+esc(v.detail) : '')+'</div>'; }).join("") : '<strong>'+esc(where)+(title ? ": "+esc(title) : "")+'</strong>')+(addr ? '<br>'+addr : '')+(p.hours && !visitsHere ? '<br>'+esc(p.hours) : '')+'</div>'
+      + '<div style="font-size:.9rem">'+(visitsHere ? r.onFarm.map(function(c){ var t = (r.details[c] || "").replace(/\[([^\]]+)\]\(https?:\/\/[^)\s]+\)/g, "$1"); return '<div><strong>'+esc(CP.ON_FARM_TITLE[c])+'</strong>'+(t ? ' · '+esc(t) : '')+'</div>'; }).join("") : '<strong>'+esc(where)+(title ? ": "+esc(title) : "")+'</strong>')+(addr ? '<br>'+addr : '')+(p.hours && !visitsHere ? '<br>'+esc(p.hours) : '')+'</div>'
       + (r.productText.length ? '<div class="muted" style="font-size:.85rem;margin-top:6px">'+esc(r.productText.join(" · "))+'</div>' : '')
       + (p.unconfirmed ? '<div class="muted" style="font-size:.84rem;margin-top:6px">Not confirmed yet that they sell here.</div>' : '')
       + (r.raw.phone || r.raw.website ? '<div style="margin-top:6px;font-size:.9rem">'

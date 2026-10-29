@@ -2,7 +2,7 @@
 Scanga Meat Company,Salida,Category,set,Meat Producer & Packer,"Not a farmers' market: a meat producer and meat packer (user correction). Chaffee Provides files it under its ""Market"" type.",2026-10-03
 Scanga Meat Company,Salida,Notes,prepend,Meat producer and meat packer.,User correction,2026-10-03
 Colorado Mountain Lavender,Buena Vista,Category,set,Farm Products (online),Farm no longer hosts visitors or a farm shop; sells online (co-mtn-lav.com),2026-10-03
-Colorado Mountain Lavender,Buena Vista,Hours,set,Not open to the public. Order online.,co-mtn-lav.com says the farm and farm shop are no longer open to the public (checked 2026-10-03),2026-10-03
+Colorado Mountain Lavender,Buena Vista,Hours,clear,,"co-mtn-lav.com says the farm and farm shop are no longer open to the public (checked 2026-10-03). The hours are cleared rather than stating a visitor status; its listing shows how to order (user, 2026-10-29)",2026-10-29
 Colorado Mountain Lavender,Buena Vista,Notes,prepend,"Not open to the public: the farm and farm shop no longer host visitors. Its lavender products are sold online at co-mtn-lav.com/farmshop, by subscription (co-mtn-lav.com/subscribe), and wholesale to shops that want to carry them (co-mtn-lav.com/wholesale).","Purchase channels per co-mtn-lav.com, checked 2026-10-03; the site names no retail stockists",2026-10-03
 The Asian Palate Marketplace & Catering,Buena Vista,Category,set,Caterer,No longer a restaurant or market: catering and private-chef business per theasianpalate.com (user correction),2026-10-03
 The Asian Palate Marketplace & Catering,Buena Vista,Hours,set,By booking (catering and private chef),theasianpalate.com: booking via its contact form,2026-10-03

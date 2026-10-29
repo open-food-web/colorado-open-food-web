@@ -100,7 +100,7 @@ review of the PR; "Person" means a maintainer or partner has to decide or confir
 | 13 | **Stamp `last_verified`** whenever the pipeline or a person checks the business's own site | "Checked on" pill, trust | S | Auto | Today 0 producers have it. Define it as "a person or the pipeline confirmed at least one field from the business's own page on this date" |
 | 14 | **Hours**: parse `hours_text` where it exists; read hours from own sites for pinned places only | Hours on the page | M | Auto (parse), person (review) | 12% structured. Only pinned places need them to be useful |
 | 15 | **Market vendor lists** for the 114 markets with no vendors linked | Vendors on each market page; more market links | M per batch of ~20 markets | Auto fetch, person review | `inputs/market_vendor_lists.csv` and `scripts/phase3` exist. Match basis is recorded (`match_basis`) |
-| 16 | **Named visits and farm-pickup answers** | Visit rows | M, ongoing | Person | Set in `inputs/producer_types.csv`. Not needed for launch: an unknown shows nothing |
+| 16 | **On-farm channels with their text, and farm-pickup answers** | Channel details | M, ongoing | Person | Set in `inputs/producer_types.csv`. Not needed for launch: an unknown shows nothing |
 | 17 | **Photos** via `google_place_id` | Photo on cards and pages | L (project, key, hard spending cap, terms confirmation) | Person sets up; script does the lookups | Launch with the placeholder and a "See photos on Google Maps" link. Never store photo URLs. Confirm Google's terms for storing the id first |
 | 18 | **Claims and the confirmed-by line** | Trust line, `claimed` | L, ongoing | Person | Needs the intake form ([BUSINESS_SUBMISSIONS.md](BUSINESS_SUBMISSIONS.md)) live and a few regional partners |
 
