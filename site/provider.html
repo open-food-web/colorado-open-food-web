@@ -172,7 +172,7 @@
     var pins = r.places.filter(function(p){ return p.pin; });
     var stops = otherMarkets(r).filter(function(s){ return s.lat != null && s.lon != null; });   // markets it sells at, for its own map only
     var haveMap = pins.length || stops.length;
-    var verified = raw.last_verified ? '<p class="muted" style="font-size:.85rem;font-style:italic;margin:12px 0 0">Data last checked '+esc(CP.fmtDate(raw.last_verified))+'</p>'
+    var verified = raw.last_verified ? '<p class="muted" style="font-size:.85rem;font-style:italic;margin:12px 0 0">Last verified '+esc(CP.fmtDate(raw.last_verified))+'</p>'
       : '';
 
     var facts = "";
