@@ -9,11 +9,15 @@
   var CONFIG = {
     draft: true,                      // true shows the "beta" banner; set false at launch (and drop the noindex tags)
     repo: "https://github.com/open-food-web/colorado-open-food-web",
-    supportedFormat: 2                // export format_version this site understands
+    supportedFormat: 3                // export format_version this site understands
   };
 
   // What a pin or card is: the business's own category. Colors come from site.css (--t-*).
   // Pickup points use the owner's color with a 📍 symbol, so they are never a separate "type" to filter by.
+  // The on-farm ways to find a producer are sales channels; this is their order and the title shown for each.
+  var ON_FARM_TITLE = { farm_stand:"Farm stand", farm_visit:"Visit the farm", u_pick:"Pick your own", tour:"Farm tours", stay:"Farm stay", volunteer:"Volunteer days" };
+  var ON_FARM = Object.keys(ON_FARM_TITLE);
+  function onFarmOf(raw){ return ON_FARM.filter(function(c){ return (raw.sales_channels || []).indexOf(c) !== -1; }); }
   var GROUPS = {
     farm:    { label:"Farms", single:"Farm",           emoji:"🥬", color:"var(--t-farm)",       hex:"#2f6b3c" },
     ranch:   { label:"Ranches", single:"Ranch",         emoji:"🐄", color:"var(--t-ranch)",      hex:"#8a5a3c" },
@@ -97,7 +101,8 @@
   var cache = {};
   function load(name){
     if(!cache[name]){
-      cache[name] = fetch(url("data/"+name+".json")).then(function(r){
+      // no-cache: revalidate, so a visitor never pairs an older data file with a newer script (or sees yesterday's listing).
+      cache[name] = fetch(url("data/"+name+".json"), { cache:"no-cache" }).then(function(r){
         if(!r.ok) throw new Error(name+".json: HTTP "+r.status);
         return r.json();
       });
@@ -123,11 +128,11 @@
         title:placeTitle(l), hours:l.hours_text || (group === "farm" ? "" : raw.hours_text) || "", days:l.days || [],
         pin:!!l.pin && l.lat != null, unconfirmed:l.pin_basis === "unconfirmed", lat:l.lat, lng:l.lon });
     });
-    // A farm that welcomes neither drop-in visits nor pickup at the farm is not somewhere to find them: keep the town, drop the place.
+    // A farm with no stated way to visit and no pickup at the farm is not somewhere to find them: keep the town, drop the place.
     var counties = [];
     locs.forEach(function(l){ if(l && l.county_fips && counties.indexOf(l.county_fips) === -1) counties.push(l.county_fips); });
     var homeCity = ((places.filter(function(p){ return p.role === "home_base"; })[0] || { loc:{} }).loc.city || "");
-    if(group === "farm" && raw.farm_pickup !== true && raw.dropin_visits !== true && !(raw.visits && raw.visits.length) && (raw.dropin_visits === false || raw.farm_pickup === false))
+    if(group === "farm" && raw.farm_pickup === false && !onFarmOf(raw).length)
       places = places.filter(function(p){ return p.role !== "home_base"; });
     var towns = [];
     places.forEach(function(p){ if(p.pin && p.loc.city && towns.indexOf(p.loc.city) === -1) towns.push(p.loc.city); });
@@ -137,9 +142,9 @@
     var groups = raw.product_groups || [];
     var rec = { id:raw.id, slug:raw.slug, name:raw.name, group:group, cat:cat, raw:raw, productGroups:groups,
       productText:groups.map(function(g){ return productLabels[g] || g; }),
-      visits:(group === "farm" ? (raw.visits || []) : []),
-      canVisit:(group === "farm" ? (raw.visits || []).length > 0 : true),   // farms: only if there is a named way to visit
-      dropin:(group === "farm" ? (raw.dropin_visits == null ? null : raw.dropin_visits) : true),
+      onFarm:(group === "farm" ? onFarmOf(raw) : []),   // the on-farm ways to find them, in display order
+      details:raw.channel_details || {},                // text for a channel: its hours, a booking link
+      canVisit:(group === "farm" ? onFarmOf(raw).length > 0 : true),   // farms: only if there is an on-farm way to find them
       farmPickup:(raw.farm_pickup == null ? null : raw.farm_pickup), visitNote:raw.visit_note || "", places:places, towns:towns, counties:counties,
       town:towns[0] || "", channels:channels, channelText:channels.map(function(c){ return channelLabels[c] || c; }),
       homeTown:homeCity,
@@ -236,7 +241,7 @@
   // Small flag for lists and popups. Only a confirmed yes is shown; a no or unknown says nothing (the producer page still says it).
   function visitBadge(r){
     if(r.group !== "farm") return "";
-    if(r.visits && r.visits.length) return ' <span class="vflag yes">' + r.visits.map(function(v){ return esc(v.label); }).join(" · ") + '</span>';
+    if(r.onFarm && r.onFarm.length) return ' <span class="vflag yes">' + r.onFarm.map(function(c){ return esc(ON_FARM_TITLE[c]); }).join(" · ") + '</span>';
     return "";
   }
 
@@ -251,7 +256,7 @@
     get: function(){ try{ return JSON.parse(sessionStorage.getItem("cp-browse") || "null"); }catch(e){ return null; } }
   };
 
-  window.CP = { visitWord:visitWord, browse:browse, placeLabel:placeLabel, visitBadge:visitBadge, esc:esc, url:url, load:load, loadModel:loadModel, CONFIG:CONFIG, GROUPS:GROUPS, catLabel:catLabel, ROLE_LABEL:ROLE_LABEL, MONTHS:MONTHS,
+  window.CP = { ON_FARM_TITLE:ON_FARM_TITLE, visitWord:visitWord, browse:browse, placeLabel:placeLabel, visitBadge:visitBadge, esc:esc, url:url, load:load, loadModel:loadModel, CONFIG:CONFIG, GROUPS:GROUPS, catLabel:catLabel, ROLE_LABEL:ROLE_LABEL, MONTHS:MONTHS,
     fanOut:fanOut, thisMonth:thisMonth, typeStyle:typeStyle, pinIcon:pinIcon, basemap:basemap, countyOutline:countyOutline,
     fmtDate:fmtDate, directions:directions, recUrl:recUrl, safeLink:safeLink, photoHtml:photoHtml, suggestUrl:suggestUrl };
 

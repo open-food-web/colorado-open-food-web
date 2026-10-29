@@ -51,6 +51,8 @@ class ExportApp(unittest.TestCase):
         self.assertIsNone(loc["address"])
         self.assertEqual(loc["city"], "Buena Vista")
         self.assertEqual((loc["lat"], loc["lon"]), (38.8422, -106.1311))
+        self.assertFalse(loc["pin"])      # a town is not a place: it is listed by its town, never drawn on a map
+        self.assertFalse(loc["pin_unconfirmed_home"])
 
     def test_statewide_covers_all_64_counties_and_counts_records_with_no_county(self):
         rows = [row("Hidden Farm", "On-Farm / Ranch Sales", Latitude="38.80", Longitude="-106.10")]
@@ -60,7 +62,7 @@ class ExportApp(unittest.TestCase):
         self.assertEqual(doc["vocab"]["counties"]["08015"], "Chaffee")
         self.assertEqual(doc["vocab"]["counties"]["08014"], "Broomfield")
         self.assertEqual(len(doc["vocab"]["counties"]), 64)
-        self.assertEqual(doc["export"]["format_version"], 2)
+        self.assertEqual(doc["export"]["format_version"], 3)
         self.assertEqual(self.export(rows, extra=("--county-fips", "all"))["export"]["county_fips"], doc["export"]["county_fips"])
         c = doc["export"]["counts"]
         self.assertEqual(c["excluded_no_county"]["producers"], 0)
@@ -145,28 +147,36 @@ class ExportApp(unittest.TestCase):
         # the pin count stays producers + markets + access points, so a site that predates outlets still checks out
         self.assertEqual(doc["export"]["counts"]["pins"], plain["export"]["counts"]["pins"])
 
-    def test_visits_are_named_with_their_hours_and_never_guessed(self):
+    def test_on_farm_channels_carry_their_text_and_nothing_is_guessed(self):
         import export_app
-        # derived: a farm stand shows its hours only when they contain times; pick-your-own says "by appointment" when it does
-        p = {"visits": "", "hours_text": "Fri: 2 pm - 7 pm"}
-        v = export_app.derive_visits(p, ["farm_stand"], True, "Fri: 2 pm - 7 pm")
-        self.assertEqual([(x["type"], x["label"], x["detail"]) for x in v], [("farm_stand", "Farm stand", "Fri: 2 pm - 7 pm")])
-        v = export_app.derive_visits({"visits": "", "hours_text": "U-pick orchard tours in summer season"}, ["farm_stand", "u_pick"], True, "U-pick orchard tours in summer season")
-        self.assertEqual([x["detail"] for x in v], [None, None])
-        v = export_app.derive_visits({"visits": "", "hours_text": "By appointment only"}, ["u_pick"], True, None)
-        self.assertEqual(v[0]["detail"], "By appointment")
-        # stated by a person: used as written; tours and volunteering exist only when stated
-        v = export_app.derive_visits({"visits": "farm_stand|Tue 4:00pm - 6:00pm;tour|By booking;bogus|x"}, [], True, None)
-        self.assertEqual([x["type"] for x in v], ["farm_stand", "tour"])
-        # 'none' and an explicit no leave nothing to visit, even with a farm stand channel
-        self.assertEqual(export_app.derive_visits({"visits": "none"}, ["farm_stand"], True, "Sat: 9 am - 1 pm"), [])
-        self.assertEqual(export_app.derive_visits({"visits": ""}, ["farm_stand"], False, None), [])
-        # a person-stated tour or by-appointment visit stays even when the answer to "can you just show up" is no
-        v = export_app.derive_visits({"visits": "tour|By request"}, [], False, None)
-        self.assertEqual([x["type"] for x in v], ["tour"])
-        # nothing on the listing, nothing guessed
-        self.assertEqual(export_app.derive_visits({"visits": ""}, ["csa"], None, None), [])
-
+        # parse: a channel and its text; channels we do not know are ignored
+        self.assertEqual(export_app.parse_details("farm_stand|Tue 4:00pm - 6:00pm;tour|By booking;bogus|x;by_appointment|y"),
+                         {"farm_stand": "Tue 4:00pm - 6:00pm", "tour": "By booking"})
+        self.assertEqual(export_app.parse_details("farm_visit|Sat-Sun 1:00pm - 4:00pm"), {"farm_visit": "Sat-Sun 1:00pm - 4:00pm"})
+        self.assertEqual(export_app.parse_details(""), {})
+        # derived from the listing: a farm stand shows its hours only when they contain times; pick-your-own says "by appointment" when it does
+        d = tempfile.mkdtemp()
+        kinds = os.path.join(d, "kinds.csv")
+        with open(kinds, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(["name", "producer_type", "product_groups", "farm_pickup", "visit_note", "channel_details"])
+            w.writerow(["Booked Farm", "farm", "", "", "", "tour|Book at https://example.org/tour"])
+        doc = self.export([
+            row("Stand Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106", Hours="Fri: 2 pm - 7 pm"),
+            row("Pick Farm", "U-Pick", Address="2 Rd", Latitude="38.6", Longitude="-106", Hours="By appointment only"),
+            row("Booked Farm", "On-Farm / Ranch Sales", Address="3 Rd", Latitude="38.7", Longitude="-106"),
+            row("Quiet Farm", "On-Farm / Ranch Sales", Address="4 Rd", Latitude="38.8", Longitude="-106", Hours="Mon: 9 am - 5 pm")],
+            build_extra=["--producer-types", kinds])
+        farms = self.by_name(doc)
+        self.assertEqual(farms["Stand Farm"]["channel_details"], {"farm_stand": "Fri: 2 pm - 7 pm"})
+        self.assertEqual(farms["Pick Farm"]["channel_details"], {"u_pick": "By appointment"})
+        self.assertIn("tour", farms["Booked Farm"]["sales_channels"])                  # naming a channel in channel_details adds it
+        self.assertEqual(farms["Booked Farm"]["channel_details"], {"tour": "Book at https://example.org/tour"})
+        self.assertEqual(farms["Quiet Farm"]["channel_details"], {})                   # no channel, so nothing is guessed
+        self.assertNotIn("visits", farms["Stand Farm"])
+        self.assertNotIn("visit_types", doc["vocab"])
+        for c in ("farm_visit", "tour", "stay", "volunteer"):
+            self.assertIn(c, doc["vocab"]["sales_channels"])
     def test_po_box_is_not_an_address(self):
         doc = self.export([row("Box Farm", "On-Farm / Ranch Sales", Address="P.O. Box 654", City="Poncha Springs",
                                Latitude="38.51", Longitude="-106.07")])
@@ -186,6 +196,36 @@ class ExportApp(unittest.TestCase):
                          (True, "unconfirmed"))
         self.assertFalse(farms["Online Farm"]["locations"][0]["pin"])  # channels known, none is selling at the farm
 
+    def test_an_online_ranch_with_a_stated_farm_pickup_has_a_confirmed_pin(self):
+        d = tempfile.mkdtemp()
+        kinds = os.path.join(d, "kinds.csv")
+        with open(kinds, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(["name", "producer_type", "product_groups", "farm_pickup", "visit_note"])
+            w.writerow(["Pickup Ranch", "ranch", "", "yes", "Pick up at the ranch by arrangement"])
+        doc = self.export([row("Pickup Ranch", "Farm Products (online)", Address="1 Rd", Latitude="38.5", Longitude="-106"),
+                           row("Online Farm", "Farm Products (online)", Address="3 Rd", Latitude="38.7", Longitude="-106")],
+                          build_extra=["--producer-types", kinds])
+        farms = self.by_name(doc)
+        home = farms["Pickup Ranch"]["locations"][0]
+        self.assertEqual((home["pin"], home["pin_basis"]), (True, "confirmed"))    # a person said orders are collected here
+        self.assertFalse(farms["Online Farm"]["locations"][0]["pin"])             # an unstated pickup stays unpinned
+    def test_an_on_farm_channel_confirms_the_home_pin(self):
+        d = tempfile.mkdtemp()
+        kinds = os.path.join(d, "kinds.csv")
+        with open(kinds, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(["name", "producer_type", "product_groups", "farm_pickup", "visit_note", "channel_details"])
+            w.writerow(["Learning Center", "education", "", "no", "", "farm_visit|Sat-Sun 1:00pm - 4:00pm"])
+        doc = self.export([row("Learning Center", "On-Farm / Ranch Sales", Address="1 Rd", Latitude="38.5", Longitude="-106"),
+                           row("Unknown Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106")],
+                          build_extra=["--producer-types", kinds])
+        farms = self.by_name(doc)
+        home = farms["Learning Center"]["locations"][0]
+        self.assertEqual((home["pin"], home["pin_basis"]), (True, "confirmed"))    # a person stated an on-farm channel
+        self.assertEqual(farms["Learning Center"]["sales_channels"], ["farm_visit"])
+        self.assertEqual(farms["Learning Center"]["channel_details"], {"farm_visit": "Sat-Sun 1:00pm - 4:00pm"})
+        self.assertEqual(farms["Unknown Farm"]["locations"][0]["pin_basis"], "unconfirmed")   # nothing stated
     def test_unconfirmed_home_pins_can_be_hidden(self):
         doc = self.export([row("Unknown Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106")],
                           extra=["--unconfirmed-home-pins", "hide"])
@@ -242,7 +282,7 @@ class ExportApp(unittest.TestCase):
         self.assertIsNone(farm["phone"])
         self.assertIsNone(farm["email"])
 
-    def test_a_producer_pickup_at_a_market_is_named_for_the_market(self):
+    def test_a_market_the_producer_sells_at_is_an_offering_with_the_market(self):
         d = tempfile.mkdtemp()
         locs = os.path.join(d, "locations.csv")
         head = "name,city,role,place_name,address,place_city,zip,county,lat,lon,geo_source,hide_address,days,hours_text,season_start,season_end,market_ref,sales_channels,note,source,date".split(",")
@@ -253,8 +293,46 @@ class ExportApp(unittest.TestCase):
         rows = [row("Ranch", "On-Farm / Ranch Sales", Address="9 Rd", Latitude="38.6", Longitude="-106.1"),
                 row("Salida Market", "Farmers' Market", Address="Alpine Park, 404 E St", City="Salida", Latitude="38.5", Longitude="-106.0")]
         doc = self.export(rows, build_extra=["--locations", locs])
-        pickup = [l for l in self.by_name(doc)["Ranch"]["locations"] if l["role"] == "pickup"][0]
-        self.assertEqual(pickup["name"], "Salida Market")
+        ranch = self.by_name(doc)["Ranch"]
+        stops = [o for o in ranch["offerings"] if o.get("market")]
+        self.assertEqual([(o["channel"], o["market"]["name"], o["link"]["state"]) for o in stops],
+                         [("farmers_market", "Salida Market", "producer_only")])
+        self.assertEqual((stops[0]["market"]["lat"], stops[0]["market"]["lon"]), (38.5, -106.0))   # enough to map it
+        self.assertNotIn("pickup", [l["role"] for l in ranch["locations"]])     # not a place of the producer's own
+        self.assertIn("farmers_market", ranch["sales_channels"])
+    def test_a_pickup_place_says_which_sales_channel_it_serves(self):
+        d = tempfile.mkdtemp()
+        locs = os.path.join(d, "locations.csv")
+        head = "name,city,role,place_name,address,place_city,zip,county,lat,lon,geo_source,hide_address,days,hours_text,season_start,season_end,market_ref,sales_channels,note,source,date".split(",")
+        with open(locs, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(head)
+            w.writerow([{"name": "Ranch", "role": "pickup", "place_name": "Church lot", "address": "1 Main St", "place_city": "Salida",
+                         "zip": "81201", "county": "Chaffee", "lat": "38.53", "lon": "-105.99", "geo_source": "source",
+                         "sales_channels": "online"}.get(h, "") for h in head])
+        rows = [row("Ranch", "On-Farm / Ranch Sales", Address="9 Rd", Latitude="38.6", Longitude="-106.1")]
+        doc = self.export(rows, build_extra=["--locations", locs])
+        places = {l["name"]: l for l in self.by_name(doc)["Ranch"]["locations"] if l["role"] == "pickup"}
+        self.assertEqual(places["Church lot"]["channels"], ["online"])            # pickup point for online orders, as a person said
+        offers = [(o["channel"], o["basis"]) for o in self.by_name(doc)["Ranch"]["offerings"] if o["location_id"] == places["Church lot"]["id"]]
+        self.assertEqual(offers, [("online", "stated")])
+        home = [l for l in self.by_name(doc)["Ranch"]["locations"] if l["role"] == "home_base"][0]
+        self.assertEqual(home["channels"], [])                                   # nothing stated, nothing guessed
+
+    def test_food_access_is_a_channel_that_is_not_a_sale(self):
+        d = tempfile.mkdtemp()
+        locs = os.path.join(d, "locations.csv")
+        head = "name,city,role,place_name,address,place_city,zip,county,lat,lon,geo_source,hide_address,days,hours_text,season_start,season_end,market_ref,sales_channels,note,source,date".split(",")
+        with open(locs, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(head)
+            w.writerow([{"name": "Donation Farm", "role": "home_base", "sales_channels": "food_access"}.get(h, "") for h in head])
+        doc = self.export([row("Donation Farm", "On-Farm / Ranch Sales", Address="1 Rd", Latitude="38.5", Longitude="-106")],
+                          build_extra=["--locations", locs])
+        farm = self.by_name(doc)["Donation Farm"]
+        self.assertEqual(farm["sales_channels"], ["food_access"])
+        self.assertIn("food_access", doc["vocab"]["sales_channels"])
+        self.assertFalse(farm["locations"][0]["pin"])      # nothing is sold to the public, so no home pin
 
     def test_producer_type_and_product_groups(self):
         d = tempfile.mkdtemp()
@@ -293,48 +371,43 @@ class ExportApp(unittest.TestCase):
         self.assertEqual(conf["the business's Facebook page"]["fields"], ["products"])
         self.assertEqual(conf["the business's Facebook page"]["url"], "https://www.facebook.com/RanchPage/")
 
-    def test_visit_flags_are_separate_and_never_assumed(self):
+    def test_farm_pickup_is_a_persons_answer_else_the_listing_else_unknown(self):
         d = tempfile.mkdtemp()
         kinds = os.path.join(d, "kinds.csv")
         with open(kinds, "w", encoding="utf-8", newline="") as f:
             w = csv.writer(f, lineterminator=chr(10))
-            w.writerow(["name", "producer_type", "product_groups", "dropin_visits", "farm_pickup", "visit_note"])
-            w.writerow(["Closed Ranch", "ranch", "", "no", "yes", "Pick up at the annex by arrangement"])
+            w.writerow(["name", "producer_type", "product_groups", "farm_pickup", "visit_note"])
+            w.writerow(["Closed Ranch", "ranch", "", "yes", "Pick up at the annex by arrangement"])
         doc = self.export([row("Closed Ranch", "On-Farm / Ranch Sales", Address="1 Rd", Latitude="38.5", Longitude="-106"),
                            row("Stand Farm", "Roadside Market", Address="2 Rd", Latitude="38.6", Longitude="-106"),
                            row("Mystery Farm", "On-Farm / Ranch Sales", Address="3 Rd", Latitude="38.7", Longitude="-106")],
                           build_extra=["--producer-types", kinds])
         farms = self.by_name(doc)
-        self.assertEqual((farms["Closed Ranch"]["dropin_visits"], farms["Closed Ranch"]["farm_pickup"]), (False, True))
+        self.assertEqual(farms["Closed Ranch"]["farm_pickup"], True)
         self.assertEqual(farms["Closed Ranch"]["visit_note"], "Pick up at the annex by arrangement")
-        self.assertEqual(farms["Stand Farm"]["dropin_visits"], True)    # a stated farm stand means drop-ins
-        self.assertEqual(farms["Stand Farm"]["farm_pickup"], True)      # visits advertised, so farm pickup too
-        self.assertEqual(farms["Stand Farm"]["visit_basis"], {"dropin": "listing", "pickup": "listing"})
-        self.assertEqual(farms["Closed Ranch"]["visit_basis"], {"dropin": "set", "pickup": "set"})
-        self.assertIsNone(farms["Mystery Farm"]["dropin_visits"])      # no evidence stays unknown
-        self.assertIsNone(farms["Mystery Farm"]["farm_pickup"])
-
-    def test_farm_tours_are_evidence_for_farm_pickup_but_not_drop_ins(self):
+        self.assertEqual(farms["Stand Farm"]["farm_pickup"], True)      # a farm stand is a place to collect an order too
+        self.assertEqual(farms["Stand Farm"]["visit_basis"], {"pickup": "listing"})
+        self.assertEqual(farms["Closed Ranch"]["visit_basis"], {"pickup": "set"})
+        self.assertIsNone(farms["Mystery Farm"]["farm_pickup"])         # no evidence stays unknown
+        self.assertNotIn("dropin_visits", farms["Stand Farm"])         # we do not label farms by whether people may drop in
+    def test_farm_tours_are_evidence_for_farm_pickup(self):
         doc = self.export([row("Tour Farm", "On-Farm / Ranch Sales, Agritourism", Address="1 Rd", Latitude="38.5", Longitude="-106")])
         farm = self.by_name(doc)["Tour Farm"]
         self.assertEqual(farm["farm_pickup"], True)
-        self.assertIsNone(farm["dropin_visits"])
-
-    def test_dropin_hours_are_the_stand_hours_and_never_appointment_time(self):
+    def test_a_farm_stand_carries_its_hours_never_appointment_time(self):
         doc = self.export([
             row("Stand Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106",
                 Hours="Mon: 8 am - 6 pm; Tue: 8 am - 6 pm; Wed: 8 am - 6 pm; Sat: 9 am - 1 pm"),
             row("Appointment Farm", "U-Pick", Address="2 Rd", Latitude="38.6", Longitude="-106", Hours="Pick-your-own by appointment, June-October"),
             row("Quiet Farm", "On-Farm / Ranch Sales", Address="3 Rd", Latitude="38.7", Longitude="-106", Hours="Mon: 9 am - 5 pm")])
         farms = self.by_name(doc)
-        self.assertEqual(farms["Stand Farm"]["dropin_hours"], "Mon-Wed: 8 am - 6 pm; Sat: 9 am - 1 pm")
-        self.assertIsNone(farms["Appointment Farm"]["dropin_hours"])
+        self.assertEqual(farms["Stand Farm"]["channel_details"]["farm_stand"], "Mon-Wed: 8 am - 6 pm; Sat: 9 am - 1 pm")
+        self.assertEqual(farms["Appointment Farm"]["channel_details"]["u_pick"], "By appointment")
         self.assertEqual(export_app_compact("Tue-Sun: 8:00am - 6:00pm"), "Tue-Sun: 8:00am - 6:00pm")  # already compact
-        self.assertIsNone(farms["Quiet Farm"]["dropin_hours"])     # drop-ins unknown, so no drop-in hours
-
+        self.assertEqual(farms["Quiet Farm"]["channel_details"], {})        # no stand channel, so nothing is guessed
     def test_metadata_counts_match(self):
         doc = self.export([row("A Farm", "Roadside Market", Address="1 Rd", Latitude="38.5", Longitude="-106")])
-        self.assertEqual(doc["export"]["format_version"], 2)
+        self.assertEqual(doc["export"]["format_version"], 3)
         self.assertEqual(doc["export"]["counts"]["producers"], len(doc["producers"]))
         self.assertEqual(doc["export"]["counts"]["pins"], 1)
 

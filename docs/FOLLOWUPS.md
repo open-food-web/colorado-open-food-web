@@ -58,8 +58,8 @@ nine stale overrides, make `build_tables.py` statewide, and ask CFMA about the M
 
 ## Events (later)
 
-Dated events, such as the farm dinners Old Elm Farm hosts, are not visits: they have a date, a booking link and
+Dated events, such as the farm dinners Old Elm Farm hosts, are not on-farm channels: they have a date, a booking link and
 often a price, and they belong in their own table (`events`: producer_id, title, starts, ends, url, source_url,
 observed_on), shown on the producer's page and on an events view. Until then a producer that hosts events and
-cannot be visited has `visits` set to `none` and the events are noted in `visit_note`. Old Elm Farm is the first
+cannot be visited has only the `agritourism` channel and the events are noted in `visit_note`. Old Elm Farm is the first
 example (maintainer, 2026-10-16).

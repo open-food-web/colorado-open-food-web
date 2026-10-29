@@ -104,14 +104,14 @@ class BuildTables(unittest.TestCase):
                     row("A Market", "Farmers' Market", Address="Park", City="Salida")],
                    extra=["--locations", locs, "--overrides", ovr])
         prod = self.table("producers")[0]
-        self.assertEqual(prod["sales_channels"], "delivery;pickup")
+        self.assertEqual(prod["sales_channels"], "delivery;farmers_market;pickup")   # a market the producer lists adds farmers_market
         locations = {r["location_id"]: r for r in self.table("locations")}
         home = [r for r in locations.values() if r["kind"] == "farm"][0]
         self.assertEqual(home["hide_address"], "true")
         roles = sorted(p["role"] for p in self.table("producer_locations"))
-        self.assertEqual(roles, ["home_base", "pickup", "pickup"])
-        market_loc = self.table("markets")[0]["location_id"]
-        self.assertIn(market_loc, [p["location_id"] for p in self.table("producer_locations")])
+        self.assertEqual(roles, ["home_base", "pickup"])      # the market stop is a link (an offering with a market), not a place
+        market_id = self.table("markets")[0]["market_id"]
+        self.assertIn(market_id, [o["market_id"] for o in self.table("offerings")])
         fs = [r for r in self.table("field_sources") if r["record_type"] == "producer" and r["field"] == "phone"]
         self.assertEqual([(r["source"], r["verified_by"], r["verified_on"]) for r in fs],
                          [("guidestone", "partner", "2026-10-13")])
@@ -134,7 +134,9 @@ class BuildTables(unittest.TestCase):
                    extra=["--locations", locs, "--producer-types", kinds])
         self.assertEqual([r["name"] for r in self.table("producers")], ["Far Honey"])   # sells here, based elsewhere
         roles = [(p["role"]) for p in self.table("producer_locations")]
-        self.assertEqual(sorted(roles), ["home_base", "pickup"])
+        self.assertEqual(sorted(roles), ["home_base"])        # a market stop is a link to the market, not a place of the producer's own
+        market_offers = [o for o in self.table("offerings") if o["market_id"]]
+        self.assertEqual([(o["channel"], o["shown"]) for o in market_offers], [("farmers_market", "true")])
 
 
 if __name__ == "__main__":

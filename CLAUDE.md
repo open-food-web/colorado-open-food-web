@@ -60,7 +60,8 @@ Read `docs/CHARTER.md` (what and why) and `docs/SCHEMA.md` (tables and fields) b
 - Rebuilding the tables after snapshots or inputs change: `python scripts/scrape/build.py`, then
   `python scripts/build_tables.py --raw .cache/build/co_farmers_markets_all_raw.csv --out data/colorado
   --additions data/partner-additions/guidestone_2026-10-13.csv --locations inputs/locations.csv
-  --overrides inputs/overrides.csv --producer-types inputs/producer_types.csv`. Commit the changes to `data/` and
+  --overrides inputs/overrides.csv --producer-types inputs/producer_types.csv
+  --link-report reports/market-link-conflicts.md`. Commit the changes to `data/` and
   the ledger as a PR. Existing IDs in `data/id_registry.csv` never change; when two branches both add IDs, keep
   main's registry and rebuild so the new records get the next free IDs.
 - Stage explicit paths. End commits with the Claude `Co-Authored-By` trailer and PR bodies with the

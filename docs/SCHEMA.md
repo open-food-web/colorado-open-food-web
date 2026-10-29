@@ -68,10 +68,8 @@ Every field has a class that decides whether it appears in the public release.
 | `source_categories` | list | controlled | The directory labels the sources gave (see the category vocabulary below). Provenance only: apps use `producer_type`, `sales_channels` and `product_groups`, and the public export does not carry it. Replaces `categories` |
 | `products` | list | controlled | From the product vocabulary |
 | `product_groups` | list | controlled | The short list people search by: `veggies`, `fruit`, `beef-meat`, `poultry-eggs`, `dairy`, `honey`, `flowers`, `garlic-herbs`, `mushrooms`, `baked-goods`, `drinks`. Found from the products text, categories and name, plus what the business itself ticked (`inputs/producer_types.csv`). `products` keeps the source's own words |
-| `dropin_visits` | bool/null | fact | Can a customer just show up? A person's answer (`inputs/producer_types.csv`) wins; otherwise the export infers yes from a stated farm stand, roadside market or u-pick. Null = no evidence, never guessed |
-| `dropin_hours` | string | fact | When drop-ins are welcome: the hours. Taken from the farm stand or store hours unless a person sets them. "By appointment" is never drop-in time |
-| `visits` | list | fact | The ways a person can visit, each with what it is and when: `farm_stand`, `shop`, `u_pick`, `tour`, `volunteer`, `by_appointment`, written `type|detail` (the detail is the hours or a short plain note), or `none` when a person says there is nothing to visit. Set in `inputs/producer_types.csv`; blank means the export shows only what the listing proves (a farm stand with its hours, pick-your-own). Tours, volunteering and the rest are never guessed. Replaces "drop-in visits" as what the page shows |
-| `farm_pickup` | bool/null | fact | Can a customer collect an order at the farm, by arrangement? A person's answer wins; otherwise the export infers yes when the farm is listed as a pickup, farm stand or CSA spot, or any visit is advertised (drop-ins, u-pick, farm tours). A ranch can refuse drop-ins and still hand over pre-ordered beef |
+| `channel_details` | map | fact | Text for a sales channel: its hours or a booking link, written `channel|text` and separated by `;` (a link is written `[words](https://...)`). Set in `inputs/producer_types.csv`; naming a channel here also adds it to `sales_channels`. A farm stand's or u-pick's hours are taken from the listing when no text is given. The on-farm ways to find a producer are channels (`farm_stand`, `farm_visit`, `u_pick`, `tour`, `stay`, `volunteer`), not a separate list |
+| `farm_pickup` | bool/null | fact | Can a customer collect an order at the farm, by arrangement? A person's answer wins; otherwise the export infers yes when the farm is listed as a pickup, farm stand or CSA spot, or sells at the farm (farm stand, u-pick) or advertises farm tours. A ranch can hand over pre-ordered beef without any visit |
 | `visit_note` | string | owned | One plain sentence about visiting or pickup, written by us or the business |
 | `seasonal_months` | list | fact | Months operating, 1–12. Empty if unknown |
 | `hours_text` | string | fact | The hours as the business states them. Verbatim and short; always kept |
@@ -80,7 +78,7 @@ Every field has a class that decides whether it appears in the public release.
 | `phone` | string | fact | Public business phone |
 | `email` | string | fact/personal | Only if the business publishes it for customers |
 | `facebook`, `instagram` | url | fact/personal | Business pages only |
-| `sales_channels` | list | controlled | How the public can buy from this producer; check any that apply. `farm_stand` (on-farm sales: a stand, store or open hours at the farm), `u_pick`, `csa`, `farmers_market`, `pickup` (off-farm pickup points), `delivery`, `online`, `wholesale`, `retail_partners`, `agritourism` (visits, lodging, events or classes; not a way to buy food, so it does not settle where to find them). Blank = not yet confirmed, never assumed none. `none` (used alone) = confirmed that there are no public sales, for example a farm that donates its produce. `farmers_market` is derived by the build for any producer on the vendor list of a live market (not closed or removed), with the list as its `field_sources` row; the build only adds it. A producer is mapped at its home base only when `farm_stand` or `u_pick` is checked |
+| `sales_channels` | list | controlled | How the public can buy from this producer; check any that apply. `farm_stand` (on-farm sales: a stand, store or open hours at the farm), `u_pick`, `csa`, `farmers_market`, `pickup` (off-farm pickup points), `delivery`, `online`, `wholesale`, `retail_partners`, `agritourism` (visits, lodging, events or classes; not a way to buy food, so it does not settle where to find them), `food_access` (grown for food access programs and not sold to the public: not a sale, but still a way to find them). The on-farm ways to find a producer are channels too: `farm_stand` (a stand, store or open hours at the farm), `farm_visit` (a plain visit to the farm, with its hours), `u_pick`, `tour`, `stay` (a farm stay) and `volunteer` (volunteer days); a channel's text (hours, a booking link) is in `channel_details`. Blank = not yet confirmed, never assumed none. `none` (used alone) = confirmed that there are no public sales and nothing else to list. `farmers_market` is derived by the build for any producer on the vendor list of a live market (not closed or removed), with the list as its `field_sources` row; the build only adds it. A producer is mapped at its home base only when `farm_stand` or `u_pick` is checked |
 | `certified_organic` | bool/null | fact | Null = unknown, never assumed false |
 | `accepts_snap` | bool/null | fact | |
 | `ada_accessible` | bool/null | fact | |
@@ -99,7 +97,7 @@ Every field has a class that decides whether it appears in the public release.
 | `name` | string | fact | Location name if different from the producer |
 | `kind` | enum | controlled | What the spot is: `farm`, `market_site`, `outlet_site`, `access_site`, `public_venue` (a parking lot, church or park used by several producers), `other`. What a producer does there is the role on `producer_locations` |
 | `address`, `city`, `zip` | string | fact/personal | Honors `hide_address` |
-| `hide_address` | bool | fact | When true, public release keeps city and county only, and coordinates are rounded to the town |
+| `hide_address` | bool | fact | When true, public release keeps city and county only, coordinates are rounded to the town, and the home is not pinned |
 | `state` | string | fact | `CO`. A field, not a constant |
 | `county_fips` | string | fact | 5-digit FIPS (e.g. `08117`). County name is derived |
 | `lat`, `lon` | number | fact | Null if not known |
@@ -165,7 +163,39 @@ a market that moves between sites is one record per site, linked by `network_nam
 | `status` | enum | fact | `active`, `seasonal_closed`, `closed`, `unverified` |
 | `first_seen`, `last_verified` | date | fact | |
 
+## Table: `offerings`
+
+Every way to find a producer, in one place. An offering is a channel (`farm_stand`, `online`, `farmers_market`, `retail_partners`...), optionally
+at a place or at a market, with its own text. It is where a place is tied to the channel it serves, and where "this producer sells at that
+market" lives, once. Built by `scripts/build_tables.py` (`scripts/offerings.py`); never edited by hand.
+
+| Field | Type | Class | Notes |
+|---|---|---|---|
+| `offering_id` | string | fact | Primary key (`co-off-...`), stable through the ID registry |
+| `producer_id` | string | fact | FK |
+| `channel` | enum | controlled | A sales channel (see `producers.sales_channels`) |
+| `location_id` | string | fact | FK, blank when the channel has no place (online orders, wholesale) |
+| `market_id` | string | fact | FK, only on a `farmers_market` offering: the market |
+| `text` | string | fact | Text for the offering (its hours, a booking link), from `producers.channel_details` |
+| `confirm_url` | url | fact | The business's own page that says it sells at this place |
+| `basis` | enum | controlled | How the offering came to be. `stated`: a person said which channel a place serves (the `sales_channels` column of a pickup row in `inputs/locations.csv`). `role`: no one said, so it goes by the place's role. `derived`: an on-farm channel at the farm stand or home. `channel`: a channel with no place. `link`: a market link |
+| `status` | enum | fact | `listed` |
+| `shown` | bool | fact | False for a market link that is hidden (a conflict no one has kept, a link someone dropped, or a closed market) |
+| `confirmed_by_market`, `confirmed_by_producer` | bool | fact | Market links only. Whether a market's vendor list names the producer, and whether the producer's own page (or a partner who spoke with them) does |
+| `market_list_years`, `market_list_url` | list/url | fact | Which vendor lists name the producer, and one list page |
+| `producer_page_url`, `producer_checked_on` | url/date | fact | The producer's own page that was read, and when |
+| `link_state` | enum | derived | `confirmed_both`, `producer_only`, `market_only` (the producer's page was not checked, or names no markets), `conflict` (the market lists the producer, the producer's page names markets and omits this one), `unconfirmed` |
+| `resolution` | enum | fact | `keep` or `drop`, set by a person in `inputs/market_links.csv`. Blank = the default: the producer's page wins, so a conflict is hidden |
+| `link_note` | string | fact | The conflict and how it was resolved |
+
+Market links have two sides that must agree: a market's vendor list (`market_vendors`, from `inputs/market_vendor_lists.csv`) and the producer's
+own page (`inputs/market_links.csv`: one row per page checked, `on_producer_page` = `lists_markets`, `no_markets` or `unreadable`, and one row per market
+the page lists). They are reconciled into one offering per producer and market. A conflict is written to `reports/market-link-conflicts.md` for a
+person to resolve, and the market's own record is the only place its days and hours live.
+
 ## Table: `market_vendors`
+
+The market side of a market link: what the vendor lists say. The reconciled link is in `offerings`.
 
 | Field | Type | Class | Notes |
 |---|---|---|---|
@@ -173,7 +203,6 @@ a market that moves between sites is one record per site, linked by `network_nam
 | `producer_id` | string | fact | FK |
 | `year` | integer | fact | Vendor lists change yearly. Empty when the link is stated by the producer with no year |
 | `season_label` | string | fact | When the list covers a season such as "2025-26 winter" |
-| `days`, `season_start`, `season_end` | list/date | fact | If narrower than the market's own |
 | `status` | enum | fact | `confirmed`, `listed`, `unverified` |
 | `list_source` | string | fact | Which vendor list said so |
 | `source_url` | url | fact | The vendor list page |
@@ -305,7 +334,7 @@ Provenance for each populated field. Attribution for the public release is built
 
 ## What a producer homepage reads
 
-One producer row, its locations via producer locations (home base pin), its markets via `market_vendors`
+One producer row, its locations via producer locations (home base pin), its ways to be found (and the markets it sells at) via `offerings`
 (market pins), its outlets via `outlet_suppliers` ("where to buy" and "where to eat"), service areas for
 the county list, `source_links` for the "More from the source" links, and `google_place_id` for
 the Maps directions link and optional live photos.

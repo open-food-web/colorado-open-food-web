@@ -23,7 +23,7 @@ import os
 import re
 import sys
 
-FORMAT_VERSION = 2
+FORMAT_VERSION = 3
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import products as PRODUCTS  # noqa: E402
@@ -50,7 +50,9 @@ MONTHS = ["January", "February", "March", "April", "May", "June", "July", "Augus
 CHANNEL_LABELS = {
     "farm_stand": "Farm stand / on-farm sales", "u_pick": "U-pick", "csa": "CSA", "farmers_market": "Farmers market",
     "pickup": "Pickup point", "delivery": "Delivery", "online": "Online orders", "wholesale": "Wholesale",
-    "retail_partners": "Sold in stores", "agritourism": "Agritourism (visits, lodging, events)", "none": "No public sales"}
+    "retail_partners": "Sold in stores", "agritourism": "Agritourism (visits, lodging, events)", "food_access": "Food access programs (grown for, not sold)",
+    "farm_visit": "Visit the farm", "tour": "Farm tours", "stay": "Farm stay", "volunteer": "Volunteer days",
+    "none": "No public sales"}
 SOURCE_LABELS = {
     "producer_site": "Producer's own website", "chaffee_provides": "Chaffee Provides", "colorado_proud": "Colorado Proud",
     "cfma": "Colorado Farmers Market Association", "usda_lfd": "USDA Local Food Directories",
@@ -101,40 +103,20 @@ def compact_hours(text):
     return "; ".join(out)
 
 
-# The ways a person can visit, each with its own hours. "Drop-in" is not one of them: what matters is what the visit is.
-VISIT_LABELS = {"farm_stand": "Farm stand", "shop": "Shop", "u_pick": "Pick your own", "tour": "Farm tours",
-                "volunteer": "Volunteer days", "by_appointment": "Visits by appointment"}
+# Ways to find a producer on the farm are sales channels too (a farm stand, a visit, u-pick, a tour, a stay, volunteer days); text for
+# one (its hours, a booking link) is kept in channel_details, keyed by channel. We never label a place by whether people may drop in.
+ON_FARM = ("farm_stand", "farm_visit", "u_pick", "tour", "stay", "volunteer")
+NOT_BUYING = {"agritourism", "farm_visit", "tour", "stay", "volunteer"}   # visits and events are not a way to buy food
 
 
-def parse_visits(text):
-    """producers.visits is 'type|detail;type|detail', where the detail is the hours or a short plain note. Unknown types are ignored."""
-    out = []
+def parse_details(text):
+    """producers.channel_details is 'channel|text;channel|text', where the text is the hours or a short plain note.
+    Channels we do not know are ignored."""
+    out = {}
     for part in (text or "").split(";"):
         t, _, h = part.strip().partition("|")
-        if t.strip() in VISIT_LABELS:
-            out.append({"type": t.strip(), "label": VISIT_LABELS[t.strip()], "detail": compact_hours(h.strip()) or None})
-    return out
-
-
-def derive_visits(p, channels, dropin, dropin_hours):
-    """What a person can do at the farm. Stated by a person (`visits`, or 'none') when set; otherwise only what the listing
-    shows: a farm stand (with its hours) and pick-your-own. Tours, volunteering and the like are never guessed."""
-    stated = (p.get("visits") or "").strip()
-    if stated.lower() == "none":
-        return []
-    if stated:
-        return parse_visits(stated)      # tours and visits by appointment are not drop-ins, so "no drop-in" does not hide them
-    if dropin is False:
-        return []
-    out = []
-    if "farm_stand" in channels:
-        out.append({"type": "farm_stand", "label": VISIT_LABELS["farm_stand"],
-                    "detail": dropin_hours if dropin_hours and re.search(r"\d", dropin_hours) else None})
-    if "u_pick" in channels:
-        text = (p.get("hours_text") or "").strip()
-        out.append({"type": "u_pick", "label": VISIT_LABELS["u_pick"],
-                    "detail": ("By appointment" if re.search(r"appointment", text, re.I)
-                               else (compact_hours(text) if re.search(r"\d", text) else "")) or None})
+        if t.strip() in CHANNEL_LABELS:
+            out[t.strip()] = compact_hours(h.strip()) or None
     return out
 
 
@@ -216,7 +198,8 @@ def main():
     plocs = {}
     for r in T("producer_locations"):
         plocs.setdefault(r["producer_id"], []).append(r)
-    # structured hours, and which markets each producer sells at (both are additive fields; see EXPORTS.md)
+    market_rows = {m["market_id"]: m for m in T("markets")}
+    # structured hours (an additive field; see EXPORTS.md)
     hours_by = {}
     for r in T("hours"):
         h = {"day": r["day"], "opens": r["opens"], "closes": r["closes"]}
@@ -225,18 +208,34 @@ def main():
         if r["inferred"] == "true":
             h["inferred"] = True
         hours_by.setdefault((r["record_type"], r["record_id"]), []).append(h)
-    market_rows = {m["market_id"]: m for m in T("markets")}
-    sells, vendors_of = {}, {}
-    for r in T("market_vendors"):
-        m = market_rows.get(r["market_id"])
-        if not m:
+    # Offerings: every way to find a producer (a channel, optionally at a place or at a market). A market link is shown when its two sides
+    # agree or only one has been checked; a conflict is hidden unless a person kept it (see scripts/offerings.py).
+    offers, vendors_of, loc_channels = {}, {}, {}
+    for r in T("offerings"):
+        if r["shown"] != "true":
             continue
-        sells.setdefault(r["producer_id"], {})[(r["market_id"], r["year"])] = {
-            "market_id": r["market_id"], "name": m["name"],
-            "county_fips": (locations.get(m["location_id"]) or {}).get("county_fips") or None,
-            "year": int(r["year"]) if r["year"] else None, "season_label": r["season_label"] or None,
-            "basis": r["match_basis"], "source_url": r["source_url"] or None}
-        vendors_of.setdefault(r["market_id"], set()).add(r["producer_id"])
+        offers.setdefault(r["producer_id"], []).append(r)
+        if r["market_id"]:
+            vendors_of.setdefault(r["market_id"], set()).add(r["producer_id"])
+        elif r["location_id"]:
+            loc_channels.setdefault((r["producer_id"], r["location_id"]), set()).add(r["channel"])
+
+    def public_offering(r):
+        o = {"id": r["offering_id"], "channel": r["channel"], "location_id": r["location_id"] or None,
+             "text": r["text"] or None, "confirm_url": r["confirm_url"] or None, "basis": r["basis"]}
+        if r["market_id"]:
+            m = market_rows[r["market_id"]]
+            mloc = locations.get(m["location_id"]) or {}
+            o["market"] = {"id": m["market_id"], "name": m["name"], "slug": m.get("slug") or None, "city": mloc.get("city") or None,
+                           "lat": None if num(mloc.get("lat")) is None else round(num(mloc.get("lat")), 6),
+                           "lon": None if num(mloc.get("lon")) is None else round(num(mloc.get("lon")), 6),
+                           "county_fips": mloc.get("county_fips") or None}
+            o["link"] = {"state": r["link_state"], "confirmed_by_market": r["confirmed_by_market"] == "true",
+                         "confirmed_by_producer": r["confirmed_by_producer"] == "true", "market_list_years": lst(r["market_list_years"]),
+                         "market_list_url": r["market_list_url"] or None, "producer_page_url": r["producer_page_url"] or None,
+                         "producer_checked_on": r["producer_checked_on"] or None, "resolution": r["resolution"] or None,
+                         "note": r["link_note"] or None}
+        return o
 
     fsrc = {}
     for r in T("field_sources"):
@@ -341,14 +340,13 @@ def main():
         if not in_area("producer", pid, [l["location_id"] for l in locs], "producers"):
             continue
         channels = lst(p["sales_channels"])
-        buy_channels = [c for c in channels if c != "agritourism"]   # agritourism is not a way to buy food: it does not settle where to find them
+        buy_channels = [c for c in channels if c not in NOT_BUYING]   # a visit, tour or stay is not a way to buy food: it does not settle where to find them
         sells_at_farm = bool({"farm_stand", "u_pick"} & set(channels))
         opted = set(lst(p["opted_out_fields"]))
-        # Two different questions. A person's answer (set in inputs/producer_types.csv) always wins. Otherwise the
-        # listing itself is the evidence; with none, the answer stays unknown (null), never a guess.
-        #   dropin_visits: can a customer just show up? Yes when a farm stand, roadside market or u-pick is stated.
-        #   farm_pickup: can a customer collect an order at the farm, by arrangement? Yes when the farm is listed as a
-        #   pickup, farm stand or CSA spot, or any visit is advertised: drop-ins, u-pick, farm tours (agritourism).
+        # farm_pickup: can a customer collect an order at the farm, by arrangement? A person's answer (set in
+        # inputs/producer_types.csv) always wins. Otherwise the listing itself is the evidence: yes when the farm is listed
+        # as a pickup, farm stand or CSA spot, or sells at the farm (farm stand, u-pick) or advertises farm tours
+        # (agritourism); with none, the answer stays unknown (null), never a guess.
         def own(field):
             v = p.get(field)
             return None if v in (None, "") else boolish(v)
@@ -358,29 +356,41 @@ def main():
             l["location_id"] == (home or {}).get("location_id")
             or (home_addr and ((locations.get(l["location_id"]) or {}).get("address") or "").strip().lower() == home_addr))
             for l in locs)
-        dropin, dropin_basis = own("dropin_visits"), ("set" if own("dropin_visits") is not None else None)
-        if dropin is None and sells_at_farm:
-            dropin, dropin_basis = True, "listing"
-        # When drop-ins are welcome, the farm stand's or store's hours are the drop-in hours (a person can set them
-        # in inputs/producer_types.csv). "By appointment" is not drop-in time, so it is never used.
-        dropin_hours = None
-        if dropin is True:
+        # A farm stand's text is its hours: the stand's or home's own hours, else the listing's. "By appointment" is
+        # not hours, so it is never used.
+        stand_hours = None
+        if "farm_stand" in channels:
             stand = next((l["hours_text"] for l in locs if l["role"] in ("farm_stand", "home_base") and l["hours_text"]), "")
-            cand = (p.get("dropin_hours") or stand or p["hours_text"] or "").strip()
+            cand = (stand or p["hours_text"] or "").strip()
             if cand and not re.search(r"appointment|arrangement|call ahead", cand, re.I):
-                dropin_hours = compact_hours(cand)
+                stand_hours = compact_hours(cand)
         farm_pickup, pickup_basis = own("farm_pickup"), ("set" if own("farm_pickup") is not None else None)
-        if farm_pickup is None and (farm_is_a_spot or dropin is True or "Agritourism" in lst(p["source_categories"])):
+        if farm_pickup is None and (farm_is_a_spot or sells_at_farm or "Agritourism" in lst(p["source_categories"])):
             farm_pickup, pickup_basis = True, "listing"
-        visits = derive_visits(p, channels, dropin, dropin_hours)
+        # Text for a channel. A farm stand's or u-pick's hours come from the listing; a person's text wins. A channel with no text has no entry.
+        details = {}
+        if "farm_stand" in channels and stand_hours and re.search(r"\d", stand_hours):
+            details["farm_stand"] = stand_hours
+        if "u_pick" in channels:
+            text = (p.get("hours_text") or "").strip()
+            d = "By appointment" if re.search(r"appointment", text, re.I) else (compact_hours(text) if re.search(r"\d", text) else "")
+            if d:
+                details["u_pick"] = d
+        details.update({k: v for k, v in parse_details(p.get("channel_details")).items() if v})
+        details = {k: details[k] for k in channels if k in details}
+        # The farm is a confirmed place to go when an on-farm channel is stated (a farm stand, u-pick, a visit, a tour, a stay or
+        # volunteer days), or when a person has said customers collect orders there (an online-order ranch with pickup at the ranch
+        # has no stand, but the pin is real).
+        on_farm = bool(set(ON_FARM) & set(channels))
+        farm_is_confirmed = on_farm or (farm_pickup is True and pickup_basis == "set")
         out_locs = []
         for l in locs:
             home_pin_if_shown = False
             if l["role"] == "home_base":
-                pin = sells_at_farm or (not buy_channels and a.unconfirmed_home_pins == "show")
-                home_pin_if_shown = not sells_at_farm and not buy_channels
-                basis = "confirmed" if sells_at_farm else "unconfirmed"
-                if p["slug"] in hide_pin_slugs and not sells_at_farm:
+                pin = farm_is_confirmed or (not buy_channels and a.unconfirmed_home_pins == "show")
+                home_pin_if_shown = not farm_is_confirmed and not buy_channels
+                basis = "confirmed" if farm_is_confirmed else "unconfirmed"
+                if p["slug"] in hide_pin_slugs and not farm_is_confirmed:
                     pin = False
             else:
                 pin, basis = True, "confirmed"
@@ -393,19 +403,23 @@ def main():
                 home_pin_if_shown = False
             if not (locations.get(l["location_id"]) or {}).get("address")                     and (locations.get(l["location_id"]) or {}).get("hide_address") != "true":
                 home_pin_if_shown = False
+            if l["role"] == "home_base" and (locations.get(l["location_id"]) or {}).get("hide_address") == "true":
+                pin = False       # a town is not a place: a home with a hidden or missing address is listed by its town, not drawn on a map
+                home_pin_if_shown = False
             out_locs.append(public_location(l["location_id"], l["role"], pin, basis, {
                 # True when the home base would be pinned if an app chose to show unconfirmed home pins (see
                 # --unconfirmed-home-pins). The file's own `pin` stays the safe default; an app opts in per record.
                 "pin_unconfirmed_home": bool(home_pin_if_shown and not pin and num(locations[l["location_id"]]["lat"]) is not None),
                 "days": lst(l["days"]), "hours_text": l["hours_text"] or None,
                 "season_start": l["season_start"] or None, "season_end": l["season_end"] or None,
-                "status": l["status"], "confirm_url": l.get("confirm_url") or None}, use_market_name=True))
+                "status": l["status"], "confirm_url": l.get("confirm_url") or None,
+                "channels": sorted(loc_channels.get((pid, l["location_id"]), set()))}, use_market_name=True))
         rec = {
             "id": pid, "slug": p["slug"], "name": p["name"], "producer_type": p["producer_type"],
             "service_county_fips": sorted(areas.get(pid, set())),
             "products": lst(p["products"]),
             "product_groups": lst(p.get("product_groups", "")),
-            "visits": visits, "dropin_visits": dropin, "dropin_hours": dropin_hours, "farm_pickup": farm_pickup, "visit_basis": {"dropin": dropin_basis, "pickup": pickup_basis},
+            "channel_details": details, "farm_pickup": farm_pickup, "visit_basis": {"pickup": pickup_basis},
             "visit_note": p.get("visit_note") or None,
             "months_open": [MONTHS[int(m) - 1] for m in lst(p["seasonal_months"])],
             "hours_text": p["hours_text"] or None, "hours": hours_by.get(("producer", pid), []),
@@ -413,7 +427,8 @@ def main():
             "website": p["website"] or None, "phone": p["phone"] or None,
             "email": p["email"] or None, "facebook": p["facebook"] or None, "instagram": p["instagram"] or None,
             "sales_channels": channels,
-            "sells_at": sorted(sells.get(pid, {}).values(), key=lambda x: (x["name"].lower(), x["year"] or 0)), "certified_organic": boolish(p["certified_organic"]),
+            "offerings": [public_offering(r) for r in sorted(offers.get(pid, []), key=lambda r: (r["channel"], r["offering_id"]))],
+            "certified_organic": boolish(p["certified_organic"]),
             "accepts_snap": boolish(p["accepts_snap"]), "ada_accessible": boolish(p["ada_accessible"]),
             "call_first": boolish(p["call_first"]), "status": p["status"], "claimed": boolish(p["claimed"]) is True,
             "last_verified": p["last_verified"] or None, "locations": out_locs,
@@ -489,7 +504,7 @@ def main():
             "county_fips": a.county_fips,
             "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
             "counts": {"producers": len(producers), "markets": len(markets), "access_points": len(access),
-                       "market_links": sum(len(p["sells_at"]) for p in producers),
+                       "market_links": sum(1 for p in producers for o in p["offerings"] if o.get("market")),
                        **({"outlets": len(outlets), "outlet_pins": sum(o["location"]["pin"] for o in outlets)} if include_outlet_kinds else {}),
                        "pins": sum(l["pin"] for p in producers for l in p["locations"])
                        + len(markets) + len(access),
@@ -497,7 +512,7 @@ def main():
                        "excluded_no_county": {k: v for k, v in no_county.items() if k != "outlets" or include_outlet_kinds},
                        "excluded_outside_area": {k: v for k, v in outside.items() if k != "outlets" or include_outlet_kinds}}},
         "vocab": {"counties": {c: COUNTY_NAMES[c] for c in sorted(a.county_fips)}, "sales_channels": CHANNEL_LABELS, "months": MONTHS, "producer_types": PRODUCER_TYPE_LABELS,
-                  "visit_types": VISIT_LABELS, "product_groups": PRODUCTS.LABELS,
+                  "product_groups": PRODUCTS.LABELS,
                   **({"outlet_kinds": {k: v for k, v in OUTLET_KIND_LABELS.items() if k in include_outlet_kinds},
                       "outlet_groups": OUTLET_GROUPS} if include_outlet_kinds else {})},
         "producers": sorted(producers, key=lambda x: x["name"].lower()),

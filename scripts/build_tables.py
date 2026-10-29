@@ -31,6 +31,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from scrape import contact_policy as cp  # noqa: E402
 from scrape import hours as hrs  # noqa: E402
+import offerings as off  # noqa: E402
 from scrape import vendors as vnd  # noqa: E402
 import products as PRODUCTS  # noqa: E402
 REGISTRY = os.path.join(HERE, "..", "data", "id_registry.csv")
@@ -85,7 +86,7 @@ FIELD_MAP = {"Phone": "phone", "Email": "email", "Website": "website", "Facebook
              "County": "county_fips", "Category": "source_categories"}
 
 COLS = {
-    "producers": ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "dropin_visits", "dropin_hours", "farm_pickup", "visit_note", "visits", "seasonal_months",
+    "producers": ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "farm_pickup", "visit_note", "channel_details", "seasonal_months",
                   "hours_text", "hours_status", "website", "phone", "email", "facebook", "instagram", "sales_channels",
                   "certified_organic", "accepts_snap", "ada_accessible", "call_first", "status", "claimed",
                   "opted_out_fields", "first_seen", "last_verified"],
@@ -102,8 +103,8 @@ COLS = {
                       "email", "facebook", "instagram", "status", "first_seen", "last_verified"],
     "service_areas": ["producer_id", "county_fips", "basis", "derived"],
     "hours": ["record_type", "record_id", "day", "opens", "closes", "closes_next_day", "inferred"],
-    "market_vendors": ["market_id", "producer_id", "year", "season_label", "days", "season_start", "season_end", "status",
-                       "list_source", "source_url", "match_basis"],
+    "market_vendors": ["market_id", "producer_id", "year", "season_label", "status", "list_source", "source_url", "match_basis"],
+    "offerings": off.OFFERING_COLS,
     "source_links": ["record_type", "record_id", "source", "url", "source_record_id", "last_seen", "link_status"],
     "field_sources": ["record_type", "record_id", "field", "source", "source_url", "verified_by", "verified_on"],
 }
@@ -122,7 +123,23 @@ def nkey(s: str) -> str:
 
 CHANNEL_ALIAS = {"on_farm": "farm_stand"}
 CHANNEL_VALUES = {"farm_stand", "u_pick", "csa", "farmers_market", "pickup", "delivery", "online", "wholesale",
-                  "retail_partners", "agritourism", "none"}   # "none": confirmed, no public sales (not the same as blank = unknown)
+                  "retail_partners", "agritourism", "food_access", "tour", "stay", "volunteer", "farm_visit", "none"}   # "none": confirmed, no public sales (not the same as blank = unknown)
+# "food_access": grown for food access programs, not sold to the public; still a way to find them
+
+
+def detail_channels(text: str) -> set:
+    """The channels a producer's channel_details name ('channel|text;channel|text'): naming one adds it to sales_channels."""
+    return {c for part in (text or "").split(";") for c in channel_list(part.partition("|")[0])}
+
+
+def details_of(text: str) -> dict:
+    """producers.channel_details as {channel: text}: 'channel|text;channel|text'. Channels we do not know are ignored."""
+    out = {}
+    for part in (text or "").split(";"):
+        t, _, h = part.strip().partition("|")
+        if t.strip() in CHANNEL_VALUES:
+            out[t.strip()] = h.strip()
+    return out
 
 
 def channel_list(text: str) -> set:
@@ -304,6 +321,9 @@ def main():
     ap.add_argument("--locations", help="inputs/locations.csv: extra places to buy (pickup points, markets) per producer")
     ap.add_argument("--overrides", help="inputs/overrides.csv, read only to credit partner-confirmed fields")
     ap.add_argument("--producer-types", help="inputs/producer_types.csv: a producer's type (farm, ranch, maker...) and what it offers")
+    ap.add_argument("--market-links", default=os.path.join(HERE, "..", "inputs", "market_links.csv"),
+                    help="inputs/market_links.csv: what producers' own pages say about the markets they sell at, and manual resolutions")
+    ap.add_argument("--link-report", default=None, help="write the market links to review (conflicts) to this Markdown file")
     ap.add_argument("--registry", default=REGISTRY, help="ID registry CSV (default: data/id_registry.csv)")
     a = ap.parse_args()
     fips = FIPS[a.county] if a.county else ""
@@ -457,13 +477,10 @@ def main():
                 out["producers"].append({
                     "producer_id": pid, "slug": new_slug(name), "name": name,
                     "producer_type": (types_by_name.get(nkey(name)) or {}).get("producer_type") or producer_type(name, cats_main),
-                    "dropin_visits": {"yes": "true", "no": "false"}.get(
-                        ((types_by_name.get(nkey(name)) or {}).get("dropin_visits") or "").strip().lower(), ""),
-                    "dropin_hours": (types_by_name.get(nkey(name)) or {}).get("dropin_hours") or "",
                     "farm_pickup": {"yes": "true", "no": "false"}.get(
                         ((types_by_name.get(nkey(name)) or {}).get("farm_pickup") or "").strip().lower(), ""),
                     "visit_note": (types_by_name.get(nkey(name)) or {}).get("visit_note") or "",
-                    "visits": (types_by_name.get(nkey(name)) or {}).get("visits") or "",
+                    "channel_details": (types_by_name.get(nkey(name)) or {}).get("channel_details") or "",
                     "product_groups": ";".join(PRODUCTS.union(
                         PRODUCTS.from_text(r["Products"], " ".join(cats_main), name)
                         or [g for g in type_groups(name) if not g.startswith("+")],
@@ -472,7 +489,8 @@ def main():
                     "products": r["Products"].replace(", ", ";"),
                     "seasonal_months": ";".join(months), "hours_text": r["Hours"], "hours_status": hs, "email": r["Email"],
                     "sales_channels": ";".join(sorted(set(filter(None, channels(r, cats).split(";")))
-                                                      | set().union(*[channel_list(x.get("sales_channels")) for x in home_rows]))),
+                                                      | set().union(*[channel_list(x.get("sales_channels")) for x in home_rows])
+                                                      | detail_channels((types_by_name.get(nkey(name)) or {}).get("channel_details")))),
                     "certified_organic": tri(r["Certified Organic"]), "accepts_snap": tri(r["SNAP"]),
                     "ada_accessible": tri(r["ADA Accessible"]), "call_first": tri(r["Call first?"]),
                     "status": status, "claimed": "false", "opted_out_fields": "",
@@ -507,7 +525,8 @@ def main():
                         "role": role, "days": (x.get("days") or "").replace(", ", ";"),
                         "hours_text": x.get("hours_text") or "",
                         "season_start": x.get("season_start") or "", "season_end": x.get("season_end") or "",
-                        "status": "listed", "confirm_url": confirm_url(x, r["Website"])})
+                        "status": "listed", "confirm_url": confirm_url(x, r["Website"]),
+                        "channels": ";".join(sorted(channel_list(x.get("sales_channels"))))})
                     if xfips and not any(sa["producer_id"] == pid and sa["county_fips"] == xfips
                                          for sa in out["service_areas"]):
                         out["service_areas"].append({"producer_id": pid, "county_fips": xfips,
@@ -551,27 +570,30 @@ def main():
                                                  "source": SOURCE_NAME.get(src, src), "source_url": url,
                                                  "verified_by": who, "verified_on": when})
 
-    market_loc = {nkey(m["name"]): m["location_id"] for m in out["markets"]}
-    for pid, sid, x, site in pending_market_pickups:
-        mloc = market_loc.get(nkey(x["market_ref"]))
-        if not mloc:
-            print("  location not applied (market not in this build): %s -> %s" % (x["name"], x["market_ref"]))
-            continue
-        out["producer_locations"].append({
-            "producer_location_id": reg.get("co-ploc", "loc|%s|pickup|market|%s" % (nkey(x["name"]), nkey(x["market_ref"]))),
-            "producer_id": pid, "location_id": mloc, "role": (x.get("role") or "pickup").strip(),
-            "days": (x.get("days") or "").replace(", ", ";"), "hours_text": x.get("hours_text") or "",
-            "season_start": x.get("season_start") or "", "season_end": x.get("season_end") or "", "status": "listed",
-            "confirm_url": confirm_url(x, site)})
-
+    # A market stop is a link between a producer and a market (reconciled from both sides), not a place of its own.
+    legacy_links = [{"producer": x["name"], "market": x["market_ref"].strip(), "on_producer_page": "yes",
+                     "producer_page_url": x.get("source") or "", "checked_on": x.get("date") or "",
+                     "note": "from a market_ref row in inputs/locations.csv (retired: use inputs/market_links.csv)"}
+                    for pid, sid, x, site in pending_market_pickups]
     link_markets(out, stated, a.vendors)
     derive_channels(out)
+    links = off.reconcile(out, off.read_links(a.market_links) + legacy_links, nkey)
+    by_pid = {p["producer_id"]: p for p in out["producers"]}
+    for (pid, mid), l in links.items():      # a market the producer's own page lists makes farmers_market one of its channels
+        if l["shown"] == "true" and l["confirmed_by_producer"] == "true":
+            p = by_pid[pid]
+            have = channel_list(p["sales_channels"])
+            if "farmers_market" not in have:
+                p["sales_channels"] = ";".join(sorted(have | {"farmers_market"}))
+    off.build(out, links, reg, channel_list, details_of)
+    if a.link_report:
+        off.write_report(a.link_report, out, links, nkey)
     derive_last_verified(out)
 
     os.makedirs(a.out, exist_ok=True)
     for name, cols in COLS.items():
         with open(os.path.join(a.out, name + ".csv"), "w", encoding="utf-8", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=cols, lineterminator="\n")
+            w = csv.DictWriter(f, fieldnames=cols, lineterminator="\n", extrasaction="ignore")
             w.writeheader()
             w.writerows(out[name])
     dcols = ["name", "categories", "address", "city", "phone", "website", "lat", "lon", "source"]

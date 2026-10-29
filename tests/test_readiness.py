@@ -10,7 +10,7 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import readiness  # noqa: E402
 
-PROD = ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "dropin_visits", "farm_pickup",
+PROD = ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "farm_pickup",
         "website", "phone", "email", "facebook", "instagram", "sales_channels", "status", "claimed", "last_verified"]
 LOC = ["location_id", "address", "city", "hide_address", "county_fips", "lat", "lon"]
 PL = ["producer_id", "location_id", "role"]
@@ -55,7 +55,6 @@ class Readiness(unittest.TestCase):
         r = self.rows([self.base("a", sales_channels="farm_stand")], [loc], [pl])["a"]
         self.assertEqual(r["tier"], "ready")
         self.assertTrue(r["pin"])
-        self.assertTrue(r["dropin_known"])      # a farm stand implies drop-ins, as in export_app.py
 
     def test_csa_only_has_no_home_pin_and_nowhere_to_find_them(self):
         loc, pl = self.home("a")
@@ -72,12 +71,12 @@ class Readiness(unittest.TestCase):
         self.assertEqual(sorted(r["missing"]), ["channel", "place_to_find"])
         self.assertEqual(r["tier"], "gap")
 
-    def test_hidden_address_still_pins_but_a_missing_one_does_not(self):
+    def test_a_hidden_or_missing_address_is_not_pinned(self):
         h1, p1 = self.home("a", address="", hide_address="true")
         h2, p2 = self.home("b", address="")
         rows = self.rows([self.base("a", sales_channels="farm_stand"), self.base("b", sales_channels="farm_stand")],
                          [h1, h2], [p1, p2])
-        self.assertTrue(rows["a"]["pin"])
+        self.assertFalse(rows["a"]["pin"])
         self.assertFalse(rows["b"]["pin"])
 
     def test_market_link_counts_only_for_a_live_market(self):
@@ -111,7 +110,6 @@ class Readiness(unittest.TestCase):
             r = rows[p["id"]]
             confirmed = any(l["pin"] and l["pin_basis"] == "confirmed" for l in p["locations"])
             self.assertEqual(confirmed, r["pin"], p["name"])
-            self.assertEqual(p["dropin_visits"] is not None, r["dropin_known"], p["name"])
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@
 Scanga Meat Company,Salida,Category,set,Meat Producer & Packer,"Not a farmers' market: a meat producer and meat packer (user correction). Chaffee Provides files it under its ""Market"" type.",2026-10-03
 Scanga Meat Company,Salida,Notes,prepend,Meat producer and meat packer.,User correction,2026-10-03
 Colorado Mountain Lavender,Buena Vista,Category,set,Farm Products (online),Farm no longer hosts visitors or a farm shop; sells online (co-mtn-lav.com),2026-10-03
-Colorado Mountain Lavender,Buena Vista,Hours,set,Not open to the public. Order online.,co-mtn-lav.com says the farm and farm shop are no longer open to the public (checked 2026-10-03),2026-10-03
+Colorado Mountain Lavender,Buena Vista,Hours,clear,,"co-mtn-lav.com says the farm and farm shop are no longer open to the public (checked 2026-10-03). The hours are cleared rather than stating a visitor status; its listing shows how to order (user, 2026-10-29)",2026-10-29
 Colorado Mountain Lavender,Buena Vista,Notes,prepend,"Not open to the public: the farm and farm shop no longer host visitors. Its lavender products are sold online at co-mtn-lav.com/farmshop, by subscription (co-mtn-lav.com/subscribe), and wholesale to shops that want to carry them (co-mtn-lav.com/wholesale).","Purchase channels per co-mtn-lav.com, checked 2026-10-03; the site names no retail stockists",2026-10-03
 The Asian Palate Marketplace & Catering,Buena Vista,Category,set,Caterer,No longer a restaurant or market: catering and private-chef business per theasianpalate.com (user correction),2026-10-03
 The Asian Palate Marketplace & Catering,Buena Vista,Hours,set,By booking (catering and private chef),theasianpalate.com: booking via its contact form,2026-10-03
@@ -1233,3 +1233,7 @@ Mueller's Little Farm,Littleton,,remove,,"Not a food business: short-term rental
 Snakes & Cakes,Alamosa,,remove,,"Not a food business: reptile breeder (logged-in social review 2026-10-16, co-p-000970)",2026-10-16
 Spring Creeks Ranch,Carbondale,,remove,,"Not a food business: wedding and event venue (logged-in social review 2026-10-16, co-p-000988)",2026-10-16
 Sunrise Ranch,Loveland,,remove,,"Not a food business: retreat and event center (logged-in social review 2026-10-16, co-p-001016)",2026-10-16
+Hutchinson Homestead & Learning Center,Salida,Hours,set,Sat-Sun: 1:00pm - 4:00pm (June-September),"The page should say only when to visit: no ""by appointment"" (Guidestone review, user 2026-10-29)",2026-10-29
+Cottonwood Spirit Ranch,,Address,set,16115 County Road 306,"Address from the business's Google listing (user, 2026-10-29): 16115 Co Rd 306, Buena Vista, CO 81211, phone (719) 966-7711. Same address as its Facebook page and same phone as its Colorado beef page",2026-10-29
+Cottonwood Spirit Ranch,,City,set,Buena Vista,"Address from the business's Google listing (user, 2026-10-29): 16115 Co Rd 306, Buena Vista, CO 81211, phone (719) 966-7711. Same address as its Facebook page and same phone as its Colorado beef page",2026-10-29
+Cottonwood Spirit Ranch,,Zip,set,81211,"Address from the business's Google listing (user, 2026-10-29): 16115 Co Rd 306, Buena Vista, CO 81211, phone (719) 966-7711. Same address as its Facebook page and same phone as its Colorado beef page",2026-10-29

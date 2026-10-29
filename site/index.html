@@ -36,7 +36,7 @@ if (new URLSearchParams(location.search).get("embed") === "1") document.document
         <select id="town" style="flex:1"><option value="">All towns</option></select>
         <label><input type="checkbox" id="snap"> Accepts SNAP</label>
       </div>
-      <div class="row"><label><input type="checkbox" id="dropin"> Has a place to visit</label></div>
+      <div class="row"><label><input type="checkbox" id="visitable"> Has a place to visit</label></div>
       <div class="mobile-toggle" role="group" aria-label="View">
         <button class="chip" data-view="list" aria-pressed="true">List</button>
         <button class="chip" data-view="map" aria-pressed="false">Map</button>
@@ -54,9 +54,9 @@ if (new URLSearchParams(location.search).get("embed") === "1") document.document
 (function(){
   "use strict";
   var esc = CP.esc;
-  var state = { q:"", cat:"", product:"", county:"", town:"", snap:false, dropin:false };
+  var state = { q:"", cat:"", product:"", county:"", town:"", snap:false, visitable:false };
   var els = { q:document.getElementById("q"), products:document.getElementById("products"),
-    county:document.getElementById("county"), town:document.getElementById("town"), snap:document.getElementById("snap"), dropin:document.getElementById("dropin"), list:document.getElementById("list"),
+    county:document.getElementById("county"), town:document.getElementById("town"), snap:document.getElementById("snap"), visitable:document.getElementById("visitable"), list:document.getElementById("list"),
     overview:document.getElementById("overview"), count:document.getElementById("count"), suggest:document.getElementById("suggest") };
 
   var map = L.map("map", { zoomControl:false, scrollWheelZoom:true }).setView([39.0, -105.55], 7);
@@ -75,14 +75,14 @@ if (new URLSearchParams(location.search).get("embed") === "1") document.document
   function readUrl(){
     var p = new URLSearchParams(location.search);
     state.q = p.get("q") || ""; state.cat = p.get("cat") || ""; state.product = p.get("product") || "";
-    state.county = p.get("county") || ""; state.town = p.get("town") || ""; state.snap = p.get("snap") === "1"; state.dropin = p.get("dropin") === "1";
+    state.county = p.get("county") || ""; state.town = p.get("town") || ""; state.snap = p.get("snap") === "1"; state.visitable = p.get("visitable") === "1";
   }
   function writeUrl(){
     var p = new URLSearchParams(), cur = new URLSearchParams(location.search);
     ["embed","basemap"].forEach(function(k){ if(cur.get(k)) p.set(k, cur.get(k)); });
     ["q","cat","product","county","town"].forEach(function(k){ if(state[k]) p.set(k, state[k]); });
     if(state.snap) p.set("snap","1");
-    if(state.dropin) p.set("dropin","1");
+    if(state.visitable) p.set("visitable","1");
     var s = p.toString();
     history.replaceState(null, "", location.pathname + (s ? "?"+s : ""));
   }
@@ -119,7 +119,7 @@ if (new URLSearchParams(location.search).get("embed") === "1") document.document
     new Legend().addTo(map);
   }
   function sync(){
-    els.q.value = state.q; els.county.value = state.county; els.town.value = state.town; els.snap.checked = state.snap; els.dropin.checked = state.dropin;
+    els.q.value = state.q; els.county.value = state.county; els.town.value = state.town; els.snap.checked = state.snap; els.visitable.checked = state.visitable;
     [["product",els.products]].forEach(function(g){
       g[1].querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed", c.dataset.key === state[g[0]] ? "true" : "false"); });
     });
@@ -131,7 +131,7 @@ if (new URLSearchParams(location.search).get("embed") === "1") document.document
     if(state.cat && r.cat !== state.cat) return null;
     if(state.product && r.productGroups.indexOf(state.product) === -1) return null;
     if(state.snap && r.raw.accepts_snap !== true) return null;
-    if(state.dropin && r.canVisit !== true) return null;
+    if(state.visitable && r.canVisit !== true) return null;
     if(state.q){
       var words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
       for(var i=0;i<words.length;i++) if(r.search.indexOf(words[i]) === -1) return null;
@@ -147,11 +147,11 @@ if (new URLSearchParams(location.search).get("embed") === "1") document.document
   function popup(p){
     var r = p.rec;
     var where = CP.placeLabel(p);
-    var visitsHere = p.role === "home_base" && r.visits.length;   // named ways to visit, each with its own hours
+    var visitsHere = p.role === "home_base" && r.onFarm.length;   // named ways to visit, each with its own hours
     var title = p.title !== p.loc.address && p.title !== p.loc.city && p.title !== r.name ? p.title : "";
     var addr = p.loc.address ? esc(p.loc.address) + (p.loc.city && p.loc.address.toLowerCase().indexOf(p.loc.city.toLowerCase()) === -1 ? ", " + esc(p.loc.city) : "") : (p.loc.city ? esc(p.loc.city) : "");
     return '<h4>'+esc(r.name)+'</h4><div style="margin:2px 0 6px"><a href="'+CP.recUrl(r)+'">Details →</a></div><div style="margin-bottom:6px">'+catTag(r)+'</div>'
-      + '<div style="font-size:.9rem">'+(visitsHere ? r.visits.map(function(v){ return '<div><strong>'+esc(v.label)+'</strong>'+(v.detail ? ' · '+esc(v.detail) : '')+'</div>'; }).join("") : '<strong>'+esc(where)+(title ? ": "+esc(title) : "")+'</strong>')+(addr ? '<br>'+addr : '')+(p.hours && !visitsHere ? '<br>'+esc(p.hours) : '')+'</div>'
+      + '<div style="font-size:.9rem">'+(visitsHere ? r.onFarm.map(function(c){ var t = (r.details[c] || "").replace(/\[([^\]]+)\]\(https?:\/\/[^)\s]+\)/g, "$1"); return '<div><strong>'+esc(CP.ON_FARM_TITLE[c])+'</strong>'+(t ? ' · '+esc(t) : '')+'</div>'; }).join("") : '<strong>'+esc(where)+(title ? ": "+esc(title) : "")+'</strong>')+(addr ? '<br>'+addr : '')+(p.hours && !visitsHere ? '<br>'+esc(p.hours) : '')+'</div>'
       + (r.productText.length ? '<div class="muted" style="font-size:.85rem;margin-top:6px">'+esc(r.productText.join(" · "))+'</div>' : '')
       + (p.unconfirmed ? '<div class="muted" style="font-size:.84rem;margin-top:6px">Not confirmed yet that they sell here.</div>' : '')
       + (r.raw.phone || r.raw.website ? '<div style="margin-top:6px;font-size:.9rem">'
@@ -213,7 +213,7 @@ if (new URLSearchParams(location.search).get("embed") === "1") document.document
     var offMap = rows.filter(function(x){ return !x.ps.some(function(p){ return p.pin; }); }).length;
     els.count.textContent = rows.length + " of " + ALL.length + " listings · " + groups.length + " places on the map" + (offMap ? " ("+offMap+" not on the map)" : "");
     overview();
-    var filtered = state.q || state.cat || state.product || state.town || state.snap || state.dropin;
+    var filtered = state.q || state.cat || state.product || state.town || state.snap || state.visitable;
     var fit = bounds.length ? L.latLngBounds(bounds) : null;
     if(!filtered && !state.county) fit = COLORADO;                                         // the first screen is the whole state
     else if(state.county && !state.town && !filtered && BOXES[state.county]) fit = L.latLngBounds([[BOXES[state.county][0], BOXES[state.county][1]], [BOXES[state.county][2], BOXES[state.county][3]]]);
@@ -239,13 +239,13 @@ if (new URLSearchParams(location.search).get("embed") === "1") document.document
     var r = ALL.find(function(x){ return x.id === a.dataset.id; });
     if(r && r._m && layer.hasLayer(r._m) && layer.getVisibleParent(r._m) === r._m) r._m.openPopup();   // only when its pin is not inside a cluster
   });
-  function reset(){ state = { q:"", cat:"", product:"", county:"", town:"", snap:false, dropin:false }; sync(); apply(); }
+  function reset(){ state = { q:"", cat:"", product:"", county:"", town:"", snap:false, visitable:false }; sync(); apply(); }
 
   var t;
   els.q.addEventListener("input", function(){ clearTimeout(t); t = setTimeout(function(){ state.q = els.q.value.trim(); apply(); }, 150); });
   els.town.addEventListener("change", function(){ state.town = els.town.value; apply(); });
   els.snap.addEventListener("change", function(){ state.snap = els.snap.checked; apply(); });
-  els.dropin.addEventListener("change", function(){ state.dropin = els.dropin.checked; apply(); });
+  els.visitable.addEventListener("change", function(){ state.visitable = els.visitable.checked; apply(); });
   document.getElementById("reset").addEventListener("click", reset);
   document.querySelectorAll(".mobile-toggle .chip").forEach(function(b){
     b.addEventListener("click", function(){
