@@ -152,10 +152,11 @@ def producer_rows(T):
         sells_at_farm = bool(PIN_CHANNELS & channels)
         others = [T["loc"].get(l["location_id"]) or {} for l in locs if l["role"] != "home_base"]
         pinned_other = any(o.get("lat") and o.get("lon") for o in others)
-        # export_app.py: the home base is pinned for farm_stand/u_pick (confirmed), or, while no channel is set, as an
+        # export_app.py: the home base is pinned for farm_stand/u_pick or a stated farm pickup (confirmed), or, while no channel is set, as an
         # unconfirmed pin; it needs coordinates and either a street address or a hidden one (pinned at the town).
         home_ok = bool(home.get("lat") and home.get("lon")) and (bool(home.get("address")) or true(home.get("hide_address")))
-        pinned_home = home_ok and sells_at_farm
+        # a person's "customers collect orders at the farm" also confirms the home pin (same rule as export_app.py)
+        pinned_home = home_ok and (sells_at_farm or true(p["farm_pickup"]))
         pin_unconfirmed = home_ok and not channels
         place = pinned_home or pinned_other or pid in in_market or bool(REMOTE_CHANNELS & channels)
         contact = any(p[k] for k in ("website", "phone", "email", "facebook", "instagram"))
