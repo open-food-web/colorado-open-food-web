@@ -38,7 +38,7 @@
     return a || c || "";
   }
   // A home base is a place to list when it is pinned or the business states a way to visit; we never say that anyone may not drop in.
-  function isVisitable(p){ return p.role !== "home_base" || (p.rec.visits && p.rec.visits.length) || p.rec.dropin === true || p.pin; }
+  function isVisitable(p){ return p.role !== "home_base" || (p.loc.address && ((p.rec.visits && p.rec.visits.length) || p.rec.dropin === true || p.pin)); }
   function isMarket(p){ return /market/i.test(p.title || "") || /market/i.test(p.loc.name || ""); }
   var used = {};   // places a "way" already shows, so the list under the map does not repeat them
   function line(p, label, noHours){
@@ -55,14 +55,16 @@
     var raw = r.raw, ch = r.channels, out = [];
     // A note about pickup, delivery or shipping belongs with how to order, not under the farm stand.
     var noteIsOrder = /pick ?up|deliver|ship/i.test(raw.visit_note || "") && (ch.indexOf("online") !== -1 || ch.indexOf("pickup") !== -1);
-    var orderNote = noteIsOrder ? '<div class="muted">' + esc(raw.visit_note) + '</div>' : "";
+    // A visit note is plain text; web addresses in it become links and nothing else is treated as HTML.
+    function linkify(t){ return String(t).split(/(https?:\/\/[^\s)]+)/).map(function(part, i){ return i % 2 ? CP.safeLink(part, /facebook\.com/i.test(part) ? "Facebook page" : part.replace(/^https?:\/\/(www\.)?/, "")) : esc(part); }).join(""); }
+    var orderNote = noteIsOrder ? '<div class="muted">' + linkify(raw.visit_note) + '</div>' : "";
     function add(title, html){ out.push('<li><strong>'+esc(title)+'</strong>'+'<div>'+html+'</div></li>'); }
     // One line under the visit: their own note, unless it only repeats the hours.
     function visitExtra(hasHours){
       var note = raw.visit_note || "";
       var restates = hasHours && /\d\s*[-–]\s*\d|\d\s*(am|pm)/i.test(note);
       var bits = [];
-      if(note && !restates && !noteIsOrder) bits.push(esc(note));
+      if(note && !restates && !noteIsOrder) bits.push(linkify(note));
       return bits.length ? '<div class="muted">' + bits.join(" ") + '</div>' : "";
     }
     var markets = r.places.filter(function(p){ return p.pickup && isMarket(p); });
@@ -71,6 +73,8 @@
     // Each way to visit, titled, with its own hours; the address and links appear once, on the first.
     if(r.group === "farm" && r.visits.length){
       var vp = r.places.filter(function(p){ return p.pin && p.role === "farm_stand"; })[0] || r.places.filter(function(p){ return p.pin && p.role === "home_base"; })[0];
+      // A home base that is only a town, next to a farm stand with its own address, is the same place: do not list it again.
+      if(vp && vp.role === "farm_stand") r.places.forEach(function(p){ if(p.role === "home_base" && !p.pin && !p.loc.address) used[p.id] = true; });
       r.visits.forEach(function(v, k){
         add(v.label, (v.detail ? esc(v.detail) : "") + (k === 0 && vp ? '<div>' + line(vp, "More info", !!v.detail) + '</div>' : "") + (k === 0 ? visitExtra(false) : ""));
       });
