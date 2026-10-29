@@ -156,7 +156,7 @@ def producer_rows(T):
         # unconfirmed pin; it needs coordinates and either a street address or a hidden one (pinned at the town).
         home_ok = bool(home.get("lat") and home.get("lon")) and (bool(home.get("address")) or true(home.get("hide_address")))
         # a person's "customers collect orders at the farm" or a stated visit also confirms the home pin (same rule as export_app.py)
-        pinned_home = home_ok and (sells_at_farm or true(p["farm_pickup"]) or (p.get("visits") or "").strip().lower() not in ("", "none"))
+        pinned_home = home_ok and (sells_at_farm or true(p["farm_pickup"]) or (p.get("visits") or "").strip().lower() not in ("", "none") or true(p.get("dropin_visits", "")))
         pin_unconfirmed = home_ok and not channels
         place = pinned_home or pinned_other or pid in in_market or bool(REMOTE_CHANNELS & channels)
         contact = any(p[k] for k in ("website", "phone", "email", "facebook", "instagram"))

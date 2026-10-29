@@ -208,12 +208,15 @@ class ExportApp(unittest.TestCase):
             w = csv.writer(f, lineterminator=chr(10))
             w.writerow(["name", "producer_type", "product_groups", "dropin_visits", "farm_pickup", "visit_note", "visits"])
             w.writerow(["Learning Center", "education", "", "yes", "no", "", "tour|Sat-Sun 1:00pm - 4:00pm"])
+            w.writerow(["Walk-in Farm", "farm", "", "yes", "", "", ""])
         doc = self.export([row("Learning Center", "On-Farm / Ranch Sales", Address="1 Rd", Latitude="38.5", Longitude="-106"),
+                           row("Walk-in Farm", "On-Farm / Ranch Sales", Address="3 Rd", Latitude="38.7", Longitude="-106"),
                            row("Unknown Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106")],
                           build_extra=["--producer-types", kinds])
         farms = self.by_name(doc)
         home = farms["Learning Center"]["locations"][0]
         self.assertEqual((home["pin"], home["pin_basis"]), (True, "confirmed"))    # a person stated how to visit
+        self.assertEqual(farms["Walk-in Farm"]["locations"][0]["pin_basis"], "confirmed")     # a person said visitors are welcome
         self.assertEqual(farms["Unknown Farm"]["locations"][0]["pin_basis"], "unconfirmed")   # nothing stated
 
     def test_unconfirmed_home_pins_can_be_hidden(self):
