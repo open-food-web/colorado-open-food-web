@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Listing demo · Colorado Open Food Web</title>
 <meta name="description" content="Paste a producer's website and see a Food Web style listing derived from it, with changes detected on the next check.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 <style>
   .demo-wrap { max-width: 760px; margin: 0 auto; }
@@ -30,6 +32,32 @@
   .demo-changes .gone .demo-tag { background: color-mix(in srgb, var(--restaurant) 25%, transparent); }
   .demo-changes .changed .demo-tag { background: color-mix(in srgb, var(--maker) 30%, transparent); }
   .demo-note, .demo-small { color: var(--muted); font-size: 14px; }
+  .demo-tabs { display: flex; gap: 4px; margin: 8px 0 0; }
+  .demo-tabs button { font: inherit; padding: 9px 18px; border: 1px solid var(--line); border-bottom: 0; border-radius: 10px 10px 0 0; background: var(--bg); color: var(--muted); cursor: pointer; }
+  .demo-tabs button[aria-selected="true"] { background: var(--surface); color: var(--ink); font-weight: 600; }
+  .demo-json { background: #0f1a13; color: #d7e6da; padding: 14px 16px; border-radius: 10px; overflow: auto; max-height: 560px; font: 12.5px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  /* The end product: a producer listing in the style of Chaffee Provides (light, Merriweather). Colors fixed so it reads the same in dark mode. */
+  .cp { --ink:#323232; --muted:#6b6b66; --line:#d3dedb; --chip:#e0e8e5; --green:#507468; --wheat:#b8862f; --farm:#2f6b3c;
+        background:#fff; color:var(--ink); border:1px solid #d3dedb; border-radius: 0 10px 10px 10px; padding: 24px 28px 28px; font: 16px/1.7 "Merriweather", Georgia, serif; }
+  .cp a { color: var(--green); text-underline-offset: 2px; }
+  .cp h1 { font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin: 6px 0 8px; max-width: none; letter-spacing: 0; }
+  .cp h2 { font-weight: 300; font-size: 1.25rem; margin: 24px 0 6px; letter-spacing: 0; }
+  .cp-crumbs { font-size: .85rem; color: var(--muted); margin: 0; }
+  .cp-muted { color: var(--muted); }
+  .cp-faint { font-size: .85rem; color: var(--muted); }
+  .cp-tag { font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--farm); }
+  .cp-pill { display: inline-block; font-size: .78rem; font-weight: 600; padding: 1px 8px; border-radius: 2px; background: var(--chip); color: var(--muted); }
+  .cp-pill.warn { background: #f5ecd6; color: #8a6420; }
+  .cp-ways { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 10px; }
+  .cp-ways > li { border-top: 1px solid var(--line); padding-top: 10px; }
+  .cp-ways > li > strong { display: block; }
+  .cp-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+  .cp-chip { padding: 6px 12px; border-radius: 2px; background: var(--chip); font-size: .9rem; }
+  .cp-facts { display: grid; gap: 12px; margin: 18px 0; }
+  .cp-fact { display: grid; grid-template-columns: 84px 1fr; gap: 12px; align-items: baseline; border-top: 1px solid var(--line); padding-top: 10px; overflow-wrap: anywhere; }
+  .cp-ic { font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .cp-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cp-btn { font: 600 .8rem "Merriweather", Georgia, serif; letter-spacing: .08em; text-transform: uppercase; padding: 11px 20px; border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 2px; opacity: .55; cursor: not-allowed; }
   .demo-how { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 32px; padding-top: 16px; }
 </style>
 </head>
@@ -49,7 +77,7 @@
         <input id="url" type="text" inputmode="url" autocomplete="off" placeholder="https://examplefarm.com" aria-label="Producer website address">
         <button class="btn" id="go" type="submit">Build listing</button>
       </form>
-      <p class="demo-examples">Try: <button type="button" data-example="https://andersonfarms.com/">Anderson Farms</button></p>
+      <p class="demo-examples"><a href="market.html">Watch a farmers market change its hours →</a><br>Try: <button type="button" data-example="https://andersonfarms.com/">Anderson Farms</button></p>
       <div id="status" role="status" aria-live="polite"></div>
     </section>
     <div id="result" hidden></div>

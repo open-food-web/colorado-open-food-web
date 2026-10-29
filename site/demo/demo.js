@@ -256,10 +256,12 @@
   }
 
   async function derive(url, onStatus) {
+    const t0 = Date.now(), pagesRead = [], fieldSources = [];
     onStatus("Checking robots.txt…");
     if (!(await robotsAllows(url))) throw new Error("This site's robots.txt asks automated tools not to read that page, so the demo stops here.");
     onStatus("Reading the home page…");
     const homeHtml = await viaProxy(url);
+    pagesRead.push(url);
     const doc = docOf(homeHtml), text = visibleText(doc), ld = jsonld(doc), own = host(url);
 
     const biz = ld.find((d) => isBusiness(d) && d.name);
@@ -276,10 +278,10 @@
       phone = m ? fmtPhone(m) : "";
     }
 
-    let address = "";
+    let address = "", town = "", addrParts = {};
     const a = ld.map((d) => d.address).find((x) => x && typeof x === "object" && x.streetAddress);
-    if (a) address = [a.streetAddress, a.addressLocality, a.addressRegion, a.postalCode].filter(Boolean).join(", ");
-    else { const m = text.match(ADDR_RE); if (m) address = m[1].trim() + ", " + m[2].trim() + ", CO " + m[3]; }
+    if (a) { address = [a.streetAddress, a.addressLocality, a.addressRegion, a.postalCode].filter(Boolean).join(", "); town = a.addressLocality || ""; addrParts = { street: a.streetAddress, zip: a.postalCode }; }
+    else { const m = text.match(ADDR_RE); if (m) { address = m[1].trim() + ", " + m[2].trim() + ", CO " + m[3]; town = m[2].trim(); addrParts = { street: m[1].trim(), zip: m[3] }; } }
 
     const hours = findHours(text, ld);
     const soc = socials(doc);
@@ -296,15 +298,28 @@
       if (OTHERS_PAGE.test(new URL(pages[i]).pathname)) continue;
       onStatus("Reading page " + (i + 2) + " of " + (pages.length + 1) + "…");
       await sleep(DELAY_MS);
-      try { absorb(pages[i], visibleText(docOf(await viaProxy(pages[i])))); } catch (e) { /* skip unreadable page */ }
+      try { absorb(pages[i], visibleText(docOf(await viaProxy(pages[i])))); pagesRead.push(pages[i]); } catch (e) { /* skip unreadable page */ }
     }
+    const lower = (name + " " + text).toLowerCase();
+    const kind = /winery|vineyard/.test(lower) ? "winery" : /orchard/.test(lower) ? "orchard" : /ranch/.test(lower) ? "ranch" : /farm/.test(lower) ? "farm" : "";
+    const email = emailFrom(doc, homeHtml, own);
+    const from = (field, value, method, page) => { if (!(value === "" || (Array.isArray(value) && !value.length))) fieldSources.push({ field, source_url: page || url, method }); };
+    from("name", name, biz ? "json-ld" : og ? "og:site_name" : "page title");
+    from("phone", phone, bizPhone ? "json-ld" : "tel link or page text");
+    from("email", email, "printed on the business's own page");
+    from("address", address, a ? "json-ld" : "page text pattern");
+    from("hours_text", hours.text, "page text, parsed with the hours parser");
+    from("facebook", soc.facebook, "link on page"); from("instagram", soc.instagram, "link on page");
+    for (const [ch, ev] of Object.entries(evidence)) fieldSources.push({ field: "sales_channels:" + ch, source_url: ev.page, method: "phrase match (" + ev.confidence + ")" });
+    const textHash = Array.from(new TextEncoder().encode(text)).reduce((h, b) => ((h * 31 + b) >>> 0), 7).toString(16);
 
     return {
-      name, website: url, phone, email: emailFrom(doc, homeHtml, own), address,
-      hours_text: hours.text, hours: hours.slots, facebook: soc.facebook || "", instagram: soc.instagram || "",
+      name, website: url, phone, email, address, town, address_parts: addrParts, kind,
+      hours_text: hours.text, hours: hours.slots, hours_status: hours.slots.length ? "parsed" : (hours.text ? "text_only" : "none"), facebook: soc.facebook || "", instagram: soc.instagram || "",
       sales_channels: Object.keys(evidence).sort(), channel_evidence: evidence,
       product_groups: PRODUCT_GROUPS.filter(([, rx]) => rx.test(text.toLowerCase())).map(([k]) => k),
       status: "unverified",
+      _derive: { pages_read: pagesRead, field_sources: fieldSources, elapsed_ms: Date.now() - t0, text_hash: textHash },
     };
   }
 
@@ -333,41 +348,129 @@
   const show = (v) => (Array.isArray(v) ? v.join(", ") : v) || "—";
   const link = (u) => (u ? `<a href="${esc(u)}" rel="noopener">${esc(u)}</a>` : "—");
 
-  function render(listing, prev, checked) {
-    const rows = FIELDS.filter(([f]) => f !== "name").map(([f, label]) => {
-      const v = f === "facebook" || f === "instagram" ? link(listing[f]) : esc(show(listing[f]));
-      return `<tr><th scope="row">${label}</th><td>${v}</td></tr>`;
-    }).join("");
-    const ev = Object.entries(listing.channel_evidence).map(([ch, e]) =>
-      `<li><b>${esc(ch.replace("_", " "))}</b>: &ldquo;${esc(e.phrase)}&rdquo; <a href="${esc(e.page)}" rel="noopener">source page</a></li>`).join("");
-    let changes;
-    if (!prev) changes = `<p class="demo-note">First look at this site. A snapshot is saved in this browser; check again later, or use the button below to simulate an update.</p>`;
+  const LABELS = {
+    "veggies": "Veggies", "fruit": "Fruit", "beef-meat": "Beef & meat", "poultry-eggs": "Poultry & eggs", "dairy": "Dairy",
+    "honey": "Honey", "flowers": "Flowers", "garlic-herbs": "Garlic & herbs", "mushrooms": "Mushrooms",
+    "baked-goods": "Baked goods", "seeds-plants": "Seeds & plants", "drinks": "Wine & drinks",
+  };
+  const KIND_LABEL = { farm: "Farm", ranch: "Ranch", orchard: "Orchard", winery: "Winery", maker: "Maker" };
+  const mapsLink = (l) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent([l.name, l.address].filter(Boolean).join(", "));
+  const fmtDate = (ms) => new Date(ms).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+  const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return u; } };
+
+  // ----- the end product: a producer listing page in the style of Chaffee Provides -----
+  function listingPage(l, checked) {
+    const site = l.website ? `<a href="${esc(l.website)}" rel="noopener">${esc(hostOf(l.website))}</a>` : "";
+    const src = (ch) => (l.channel_evidence[ch] ? ` <span class="cp-muted">·</span> <a href="${esc(l.channel_evidence[ch].page)}" rel="noopener">Where they say so</a>` : "");
+    const has = (ch) => l.sales_channels.includes(ch);
+    const dir = l.address ? ` <span class="cp-muted">·</span> <a href="${esc(mapsLink(l))}" target="_blank" rel="noopener">Directions</a>` : "";
+    const ways = [];
+    const add = (title, html) => ways.push(`<li><strong>${esc(title)}</strong><div>${html}</div></li>`);
+    if (has("farm_stand")) add("Visit the farm stand", (l.address ? esc(l.address) : "Ask them for the address.") + (l.hours_text ? ` <span class="cp-muted">· ${esc(l.hours_text)}</span>` : "") + dir + src("farm_stand"));
+    if (has("u_pick")) add("Pick your own", esc(l.hours_text || "Ask them when you can come pick.") + src("u_pick"));
+    if (has("csa")) add("Join their CSA", "A weekly share of the harvest. " + (site ? `Sign up on ${site}.` : "Contact them to sign up.") + src("csa"));
+    if (has("farmers_market")) add("At the farmers market", "They sell at local farmers markets. Check their website for the schedule." + src("farmers_market"));
+    if (has("online")) add("Order online", (site ? `Order at ${site}.` : "Order online.") + src("online"));
+    if (has("pickup")) add("Pick up an order", "They offer order pickup. Ask them where and when." + src("pickup"));
+    if (has("delivery")) add("Delivery", "They deliver. Ask them about their delivery area." + src("delivery"));
+    if (has("wholesale")) add("Wholesale", (l.sales_channels.length === 1 ? "They sell to restaurants and stores, not to the public." : "They also sell wholesale to restaurants and stores.") + src("wholesale"));
+    if (!ways.length) add("How to buy", "We haven't confirmed how to buy from them yet. " + (l.phone ? `Call <a href="tel:${esc(l.phone.replace(/[^0-9+]/g, ""))}">${esc(l.phone)}</a>. ` : "") + (site ? `Or see ${site}.` : ""));
+
+    const chips = l.product_groups.map((g) => `<span class="cp-chip">${esc(LABELS[g] || g)}</span>`).join(" ");
+    const fact = (label, html) => (html ? `<div class="cp-fact"><span class="cp-ic">${label}</span><div>${html}</div></div>` : "");
+    const social = [l.facebook && `<a href="${esc(l.facebook)}" rel="noopener">Facebook</a>`, l.instagram && `<a href="${esc(l.instagram)}" rel="noopener">Instagram</a>`].filter(Boolean).join(" · ");
+    const facts = fact("Phone", l.phone && `<a href="tel:${esc(l.phone.replace(/[^0-9+]/g, ""))}">${esc(l.phone)}</a>`)
+      + fact("Email", l.email && `<a href="mailto:${esc(l.email)}">${esc(l.email)}</a>`)
+      + fact("Website", site) + fact("Social", social)
+      + fact("Hours", !has("farm_stand") && esc(l.hours_text || ""));
+    return `<div class="cp">
+      <p class="cp-crumbs">Directory › ${esc(l.name)}</p>
+      <h1>${esc(l.name)}</h1>
+      <div><span class="cp-tag">${esc(KIND_LABEL[l.kind] || "Producer")}</span>${l.town ? ` <span class="cp-muted">· Based in ${esc(l.town)}</span>` : ""}</div>
+      <p><span class="cp-pill warn">Auto-derived, not yet checked by a person</span></p>
+      <h2>Places to find them</h2>
+      <ul class="cp-ways">${ways.join("")}</ul>
+      ${chips ? `<h2>What they offer</h2><div class="cp-chips">${chips}</div>` : ""}
+      <div class="cp-facts">${facts}</div>
+      <p class="cp-faint"><i>Data last checked ${esc(fmtDate(checked))}</i></p>
+      <p class="cp-actions"><button class="cp-btn" type="button" disabled title="Not active in the demo">Suggest an update</button>
+        <button class="cp-btn" type="button" disabled title="Not active in the demo">Remove this listing</button></p>
+    </div>`;
+  }
+
+  // ----- the raw data: the record as the schema would hold it, with where each value came from -----
+  function rawRecord(l, checked, d) {
+    const iso = new Date(checked).toISOString();
+    const slug = (l.name || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    const addr = l.address_parts || {};
+    return {
+      generated_by: "Colorado Open Food Web listing demo (prototype)",
+      checked_at: iso,
+      read: { url: l.website, pages_read: d.pages_read, via: OWN_PROXY ? "foodweb-demo-proxy (robots.txt checked, ColoradoOpenFoodWeb user agent)" : "public CORS proxy", elapsed_ms: d.elapsed_ms, page_text_hash: d.text_hash },
+      tables: {
+        producers: [{
+          producer_id: null, slug, name: l.name, kind: l.kind || "", categories: [], products: [], product_groups: l.product_groups,
+          website: l.website, phone: l.phone, email: l.email, facebook: l.facebook, instagram: l.instagram,
+          sales_channels: l.sales_channels, hours_text: l.hours_text, hours_status: l.hours_status,
+          status: "unverified", claimed: false, first_seen: iso.slice(0, 10), last_verified: "",
+        }],
+        locations: l.address ? [{ location_id: null, address: addr.street || l.address, city: l.town || "", state: "CO", postal_code: addr.zip || "", lat: null, lng: null, county_fips: null }] : [],
+        hours: l.hours.map((h) => ({ record_type: "producer", record_id: null, day: h.day, opens: h.opens, closes: h.closes, closes_next_day: false, inferred: false })),
+        field_sources: d.field_sources.map((s) => ({ record_type: "producer", record_id: null, ...s, retrieved: iso.slice(0, 10) })),
+      },
+      channel_evidence: l.channel_evidence,
+      not_derived: ["producer_id", "categories", "products", "lat/lng", "county_fips", "certified_organic", "accepts_snap", "visits", "seasonal_months"],
+      notes: ["kind is guessed from the name and page text", "empty means not found on the page, never 'none'", "hours rows are only what the text states"],
+      changes_since_last_check: d.changes,
+    };
+  }
+
+  function render(listing, prev, checked, d) {
+    let changes = [], changesHtml;
+    if (!prev) changesHtml = `<p class="demo-note">First look at this site. A snapshot is saved in this browser; check again later, or use the button below to simulate an update.</p>`;
     else {
-      const d = diff(prev.listing, listing);
-      changes = `<p class="demo-note">Compared with the snapshot from ${esc(new Date(prev.checked).toLocaleString())}:</p>` +
-        (d.length ? "<ul class=\"demo-changes\">" + d.map((c) => {
+      changes = diff(prev.listing, listing);
+      changesHtml = `<p class="demo-note">Compared with the snapshot from ${esc(new Date(prev.checked).toLocaleString())}:</p>` +
+        (changes.length ? "<ul class=\"demo-changes\">" + changes.map((c) => {
           const tag = c.kind === "gone" ? "gone — needs review" : c.kind;
           const body = c.added ? `added ${esc(c.added.join(", ") || "nothing")}; removed ${esc(c.removed.join(", ") || "nothing")}`
             : `${esc(show(c.old))} &rarr; ${esc(show(c.new))}`;
           return `<li class="${c.kind}"><b>${esc(c.label)}</b> <span class="demo-tag">${tag}</span><br>${body}</li>`;
         }).join("") + "</ul>" : "<p><b>No listing fields changed.</b></p>");
     }
+    d.changes = changes;
+    const json = JSON.stringify(rawRecord(listing, checked, d), null, 2);
     $("result").hidden = false;
     $("result").innerHTML = `
-      <article class="demo-card">
-        <p class="eyebrow">Auto-derived &middot; unverified</p>
-        <h2>${esc(listing.name)}</h2>
-        <p>${link(listing.website)}</p>
-        <table class="demo-table"><tbody>${rows}</tbody></table>
-        <h3>Where the sales channels come from</h3>
-        <ul>${ev || "<li>No channel evidence found. Unknown never means none.</li>"}</ul>
-      </article>
-      <section class="demo-card demo-diff"><h3>Changes since last check</h3>${changes}
+      <div class="demo-tabs" role="tablist" aria-label="Output">
+        <button role="tab" id="tab-page" aria-selected="true" aria-controls="pane-page" type="button">Listing page</button>
+        <button role="tab" id="tab-raw" aria-selected="false" aria-controls="pane-raw" type="button">Raw data</button>
+      </div>
+      <div id="pane-page" role="tabpanel" aria-labelledby="tab-page">${listingPage(listing, checked)}</div>
+      <div id="pane-raw" role="tabpanel" aria-labelledby="tab-raw" hidden>
+        <div class="demo-card">
+          <p class="demo-note">The same result as rows for the schema tables (<code>producers</code>, <code>locations</code>, <code>hours</code>, <code>field_sources</code>), plus the evidence behind each value. Fields the demo can't derive are listed under <code>not_derived</code>.</p>
+          <div class="cta"><button class="btn" id="copy-json" type="button">Copy JSON</button><button class="btn" id="dl-json" type="button">Download JSON</button></div>
+          <pre class="demo-json" tabindex="0">${esc(json)}</pre>
+        </div>
+      </div>
+      <section class="demo-card demo-diff"><h3>Changes since last check</h3>${changesHtml}
         <div class="cta"><button class="btn" id="recheck" type="button">Check again</button>
         <button class="btn" id="simulate" type="button">Simulate a site update</button>
         <button class="btn" id="forget" type="button">Forget this site</button></div>
         <p class="demo-small">Simulating edits the saved snapshot (not the website) so the next check shows how a real change would look.</p>
       </section>`;
+    const pick = (which) => {
+      for (const k of ["page", "raw"]) { $("tab-" + k).setAttribute("aria-selected", String(k === which)); $("pane-" + k).hidden = k !== which; }
+    };
+    $("tab-page").onclick = () => pick("page");
+    $("tab-raw").onclick = () => pick("raw");
+    $("copy-json").onclick = async () => { try { await navigator.clipboard.writeText(json); $("copy-json").textContent = "Copied"; } catch (e) { $("copy-json").textContent = "Copy failed"; } };
+    $("dl-json").onclick = () => {
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob([json], { type: "application/json" }));
+      a.download = hostOf(listing.website) + "-listing.json"; a.click(); URL.revokeObjectURL(a.href);
+    };
     const url = listing.website;
     $("recheck").onclick = () => run(url);
     $("forget").onclick = () => { const all = load(); delete all[url]; save(all); $("result").hidden = true; setStatus("Snapshot removed."); };
@@ -391,9 +494,10 @@
     $("go").disabled = true;
     try {
       const listing = await derive(url, setStatus);
+      const d = listing._derive; delete listing._derive;
       const all = load(), prev = all[url] || null;
       const checked = Date.now();
-      render(listing, prev, checked);
+      render(listing, prev, checked, d);
       all[url] = { listing, checked };
       save(all);
       setStatus("Done.");
@@ -404,6 +508,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    if (!$("form")) return;     // loaded by another demo page for its parsers only
     $("form").addEventListener("submit", (e) => { e.preventDefault(); const v = $("url").value; if (v.trim()) run(v); });
     document.querySelectorAll("[data-example]").forEach((b) => b.addEventListener("click", () => { $("url").value = b.dataset.example; run(b.dataset.example); }));
   });
