@@ -47,7 +47,6 @@ Producers counted: 1,227 live (closed and removed records excluded). Percentages
 | 4 | Ways to get it (farm stand, u-pick, CSA, market, pickup, online, wholesale, stores) | `sales_channels` | 298 (24%) | **929** | Blank means unknown, never "none" |
 | 5 | Pin on the map | home pin for `farm_stand`/`u_pick`; any pickup point | 128 confirmed (10%) | see below | 821 more would get a lighter *unconfirmed* pin because no channel is set |
 | 6 | A place to find them (pin, market link, or online/delivery) | derived | 348 (28%) | 879 | Of the 298 with a channel, 70 have none of these (67 are CSA, wholesale, pickup, store-only) |
-| 7 | Drop-in answer ("Drop-in visits welcome") | `dropin_visits`, implied by a farm stand or u-pick | 140 (11%) | 1,087 | Only 16 are set by a person. Chaffee shows only a yes, so an unknown costs little |
 | 8 | Farm-pickup answer | `farm_pickup` | 304 (25%) | 923 | Only 6 set by a person; the rest implied |
 | 9 | Hours | structured `hours` | 145 (12%) | 1,082 | `hours_text` exists for more; 1,047 producers have `hours_status` none |
 | 10 | Contact (phone, website, social, email) | any of five | 1,136 (93%) | 91 | Phone 83%, website 57%, social 66%, email 23% (verified-only) |
@@ -101,7 +100,7 @@ review of the PR; "Person" means a maintainer or partner has to decide or confir
 | 13 | **Stamp `last_verified`** whenever the pipeline or a person checks the business's own site | "Checked on" pill, trust | S | Auto | Today 0 producers have it. Define it as "a person or the pipeline confirmed at least one field from the business's own page on this date" |
 | 14 | **Hours**: parse `hours_text` where it exists; read hours from own sites for pinned places only | Hours on the page | M | Auto (parse), person (review) | 12% structured. Only pinned places need them to be useful |
 | 15 | **Market vendor lists** for the 114 markets with no vendors linked | Vendors on each market page; more market links | M per batch of ~20 markets | Auto fetch, person review | `inputs/market_vendor_lists.csv` and `scripts/phase3` exist. Match basis is recorded (`match_basis`) |
-| 16 | **Drop-in and farm-pickup answers** | Visit rows | M, ongoing | Person | Set in `inputs/producer_types.csv`. Not needed for launch: an unknown shows nothing |
+| 16 | **Named visits and farm-pickup answers** | Visit rows | M, ongoing | Person | Set in `inputs/producer_types.csv`. Not needed for launch: an unknown shows nothing |
 | 17 | **Photos** via `google_place_id` | Photo on cards and pages | L (project, key, hard spending cap, terms confirmation) | Person sets up; script does the lookups | Launch with the placeholder and a "See photos on Google Maps" link. Never store photo URLs. Confirm Google's terms for storing the id first |
 | 18 | **Claims and the confirmed-by line** | Trust line, `claimed` | L, ongoing | Person | Needs the intake form ([BUSINESS_SUBMISSIONS.md](BUSINESS_SUBMISSIONS.md)) live and a few regional partners |
 
@@ -184,7 +183,7 @@ A statewide page differs from Chaffee's in a few ways.
 | Outlets | Shops and grocers; "stores that carry" planned | Same sections, county-filtered. Supplier links are sparse (about 400 across the state, pilot data): show the section only where links exist |
 | Photos | Local files, kept in the Chaffee repo | Placeholder and a "See photos on Google Maps" link at launch |
 | Descriptions | The business's submitted text | None; "What they offer" is built from product groups and `products` |
-| Provider page | Map on top, ways to get it with addresses and links, drop-in note, previous/next arrows | **Reuse as is.** The page already works from one record; the previous/next arrows should follow the active filter |
+| Provider page | Map on top, ways to get it with addresses and links, previous/next arrows | **Reuse as is.** The page already works from one record; the previous/next arrows should follow the active filter |
 | Home | The map | A homepage: state map and counts by county, top product chips, "Find food near you", then links to county pages as partners come on board (Chaffee Provides stays a partner site that reads its own export) |
 
 Reuse is the point: `assets/app.js`, `provider.html` and `find-food.html` in the Chaffee repo are the

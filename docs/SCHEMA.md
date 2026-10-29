@@ -68,10 +68,8 @@ Every field has a class that decides whether it appears in the public release.
 | `source_categories` | list | controlled | The directory labels the sources gave (see the category vocabulary below). Provenance only: apps use `producer_type`, `sales_channels` and `product_groups`, and the public export does not carry it. Replaces `categories` |
 | `products` | list | controlled | From the product vocabulary |
 | `product_groups` | list | controlled | The short list people search by: `veggies`, `fruit`, `beef-meat`, `poultry-eggs`, `dairy`, `honey`, `flowers`, `garlic-herbs`, `mushrooms`, `baked-goods`, `drinks`. Found from the products text, categories and name, plus what the business itself ticked (`inputs/producer_types.csv`). `products` keeps the source's own words |
-| `dropin_visits` | bool/null | fact | Can a customer just show up? A person's answer (`inputs/producer_types.csv`) wins; otherwise the export infers yes from a stated farm stand, roadside market or u-pick. Null = no evidence, never guessed |
-| `dropin_hours` | string | fact | When drop-ins are welcome: the hours. Taken from the farm stand or store hours unless a person sets them. "By appointment" is never drop-in time |
-| `visits` | list | fact | The ways a person can visit, each with what it is and when: `farm_stand`, `shop`, `u_pick`, `tour`, `volunteer`, `by_appointment`, written `type|detail` (the detail is the hours or a short plain note), or `none` when a person says there is nothing to visit. Set in `inputs/producer_types.csv`; blank means the export shows only what the listing proves (a farm stand with its hours, pick-your-own). Tours, volunteering and the rest are never guessed. Replaces "drop-in visits" as what the page shows |
-| `farm_pickup` | bool/null | fact | Can a customer collect an order at the farm, by arrangement? A person's answer wins; otherwise the export infers yes when the farm is listed as a pickup, farm stand or CSA spot, or any visit is advertised (drop-ins, u-pick, farm tours). A ranch can refuse drop-ins and still hand over pre-ordered beef |
+| `visits` | list | fact | The ways a person can visit, each with what it is and when: `farm` (a plain visit to the farm, with its hours), `farm_stand`, `shop`, `u_pick`, `tour`, `volunteer`, `by_appointment`, written `type|detail` (the detail is the hours or a short plain note), or `none` when a person says there is nothing to visit. Set in `inputs/producer_types.csv`; blank means the export shows only what the listing proves (a farm stand with its hours, pick-your-own). Tours, volunteering and the rest are never guessed. Replaces "drop-in visits" as what the page shows |
+| `farm_pickup` | bool/null | fact | Can a customer collect an order at the farm, by arrangement? A person's answer wins; otherwise the export infers yes when the farm is listed as a pickup, farm stand or CSA spot, or sells at the farm (farm stand, u-pick) or advertises farm tours. A ranch can hand over pre-ordered beef without any visit |
 | `visit_note` | string | owned | One plain sentence about visiting or pickup, written by us or the business |
 | `seasonal_months` | list | fact | Months operating, 1–12. Empty if unknown |
 | `hours_text` | string | fact | The hours as the business states them. Verbatim and short; always kept |
@@ -143,6 +141,7 @@ A producer can have several locations (a farm plus three pickup points). Each is
 | `days`, `hours_text` | list/string | fact | When they are at that location |
 | `season_start`, `season_end` | date/month | fact | Months or dates |
 | `confirm_url` | url | fact | The business's own page that says it sells at this place (a farmers market page on its site, say). Blank when it has none |
+| `channels` | list | fact | The sales channels this place serves (`online`, `csa`, `farmers_market`...), set in the `sales_channels` column of `inputs/locations.csv` on a pickup row. Blank when nothing is stated |
 | `status` | enum | fact | `confirmed`, `listed`, `unverified` |
 
 ## Table: `markets`

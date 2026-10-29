@@ -27,7 +27,7 @@
       <label class="sr-only" for="town">Town</label>
       <select id="town" style="max-width:260px"><option value="">All towns</option></select>
       <label><input type="checkbox" id="snap"> Accepts SNAP</label>
-      <label><input type="checkbox" id="dropin"> Has a place to visit</label>
+      <label><input type="checkbox" id="visitable"> Has a place to visit</label>
       <span class="muted" id="count" aria-live="polite"></span>
       <button id="reset" class="chip" type="button">Reset</button>
     </div>
@@ -41,22 +41,22 @@
 (function(){
   "use strict";
   var esc = CP.esc;
-  var state = { q:"", cat:"", product:"", town:"", snap:false, dropin:false };
+  var state = { q:"", cat:"", product:"", town:"", snap:false, visitable:false };
   var els = { q:document.getElementById("q"), cats:document.getElementById("cats"), products:document.getElementById("products"),
-    town:document.getElementById("town"), snap:document.getElementById("snap"), dropin:document.getElementById("dropin"), count:document.getElementById("count"),
+    town:document.getElementById("town"), snap:document.getElementById("snap"), visitable:document.getElementById("visitable"), count:document.getElementById("count"),
     cards:document.getElementById("cards"), suggest:document.getElementById("suggest") };
   var ALL = [];
 
   function readUrl(){
     var p = new URLSearchParams(location.search);
     ["q","cat","product","town"].forEach(function(k){ state[k] = p.get(k) || ""; });
-    state.snap = p.get("snap") === "1"; state.dropin = p.get("dropin") === "1";
+    state.snap = p.get("snap") === "1"; state.visitable = p.get("visitable") === "1";
   }
   function writeUrl(){
     var p = new URLSearchParams();
     ["q","cat","product","town"].forEach(function(k){ if(state[k]) p.set(k, state[k]); });
     if(state.snap) p.set("snap","1");
-    if(state.dropin) p.set("dropin","1");
+    if(state.visitable) p.set("visitable","1");
     var s = p.toString();
     history.replaceState(null, "", location.pathname + (s ? "?"+s : ""));
   }
@@ -68,7 +68,7 @@
     return b;
   }
   function sync(){
-    els.q.value = state.q; els.town.value = state.town; els.snap.checked = state.snap; els.dropin.checked = state.dropin;
+    els.q.value = state.q; els.town.value = state.town; els.snap.checked = state.snap; els.visitable.checked = state.visitable;
     [["cat",els.cats],["product",els.products]].forEach(function(g){
       g[1].querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed", c.dataset.key === state[g[0]] ? "true" : "false"); });
     });
@@ -78,7 +78,7 @@
     if(state.product && r.productGroups.indexOf(state.product) === -1) return false;
     if(state.town && r.towns.indexOf(state.town) === -1) return false;
     if(state.snap && r.raw.accepts_snap !== true) return false;
-    if(state.dropin && r.canVisit !== true) return false;
+    if(state.visitable && r.canVisit !== true) return false;
     if(state.q){
       var words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
       for(var i=0;i<words.length;i++) if(r.search.indexOf(words[i]) === -1) return false;
@@ -103,12 +103,12 @@
     els.cards.innerHTML = shown.map(card).join("") || '<p class="muted">Nothing matches those filters.</p>';
     els.count.textContent = shown.length + " of " + ALL.length + " listings";
   }
-  function reset(){ state = { q:"", cat:"", product:"", town:"", snap:false, dropin:false }; sync(); apply(); }
+  function reset(){ state = { q:"", cat:"", product:"", town:"", snap:false, visitable:false }; sync(); apply(); }
   var t;
   els.q.addEventListener("input", function(){ clearTimeout(t); t = setTimeout(function(){ state.q = els.q.value.trim(); apply(); }, 150); });
   els.town.addEventListener("change", function(){ state.town = els.town.value; apply(); });
   els.snap.addEventListener("change", function(){ state.snap = els.snap.checked; apply(); });
-  els.dropin.addEventListener("change", function(){ state.dropin = els.dropin.checked; apply(); });
+  els.visitable.addEventListener("change", function(){ state.visitable = els.visitable.checked; apply(); });
   document.getElementById("reset").addEventListener("click", reset);
 
   CP.loadModel().then(function(M){

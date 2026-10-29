@@ -72,13 +72,11 @@ include a producer that serves its county but is based elsewhere.
 |---|---|---|
 | `id`, `slug`, `name` | string | IDs are permanent; slugs may change |
 | `producer_type` | string | What the business is: `farm`, `ranch`, `orchard`, `maker`, `bakery`, `winery`, `education`. Labels are in `vocab.producer_types` |
-| `products` | list | From the Food Web vocabularies. (`categories` was removed in format 2: use `producer_type`, `sales_channels` and `product_groups`) |
+| `products` | list | From the Food Web vocabularies. (`categories` was removed in format 2: use `producer_type`, `sales_channels` and `product_groups`. `dropin_visits`, `dropin_hours` and `visit_basis.dropin` were removed in format 3: places are described by their sales channels and named visits, not by whether people may drop in) |
 | `product_groups` | list | What people search by: honey, beef and meat, eggs, veggies... Labels are in `vocab.product_groups` |
-| `visits` | list | The ways to visit, each `{type, label, detail}` (`detail` is the hours or a short plain note, or null). Types and labels are in `vocab.visit_types`: farm stand, shop, pick your own, farm tours, volunteer days, visits by appointment. Empty when there is nothing to visit. Apps should show these with their titles instead of a "drop-in" flag |
-| `dropin_visits` | bool/null | Can a customer just show up? Null = no evidence; apps say "call first" |
-| `dropin_hours` | string/null | When drop-ins are welcome: the hours, with runs of days shortened ("Mon-Sat: 8 am - 6 pm"). Null when unknown |
-| `farm_pickup` | bool/null | Can a customer collect an order at the farm, by arrangement? A separate question from drop-ins |
-| `visit_basis` | object | `{dropin, pickup}`, each `set` (a person's answer), `listing` (inferred from the listing, e.g. a farm stand or tours) or null |
+| `visits` | list | The ways to visit, each `{type, label, detail}` (`detail` is the hours or a short plain note, or null). Types and labels are in `vocab.visit_types`: visit the farm, farm stand, shop, pick your own, farm tours, volunteer days, visits by appointment. Empty when there is nothing to visit. The Food Web does not label a place by whether people may drop in; show these with their titles |
+| `farm_pickup` | bool/null | Can a customer collect an order at the farm, by arrangement?  |
+| `visit_basis` | object | `{pickup}`: `set` (a person's answer), `listing` (inferred from the listing, e.g. a farm stand or tours) or null |
 | `visit_note` | string/null | One plain sentence about visiting or pickup |
 | `months_open` | list | Month names. Empty = unknown |
 | `hours_text` | string/null | Free text, always kept |
@@ -108,6 +106,7 @@ include a producer that serves its county but is based elsewhere.
 | `pin_basis` | `confirmed` or `unconfirmed` (see below). An app may style unconfirmed pins, e.g. "call first" |
 | `days`, `hours_text`, `season_start`, `season_end`, `status` | When the producer is at this location (producer locations only) |
 | `confirm_url` | The business's own page that confirms it sells here, so an app can link to it (producer locations only; null when none) |
+| `channels` | The sales channels this place serves, from `sales_channels` (for example a pickup point for `online` orders, or a stop at a `farmers_market`). Empty when nothing is stated. The link between a place and a way to buy is stated here, not inferred from the place's role |
 
 ### `markets[]` and `access_points[]`
 

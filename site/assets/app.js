@@ -9,7 +9,7 @@
   var CONFIG = {
     draft: true,                      // true shows the "beta" banner; set false at launch (and drop the noindex tags)
     repo: "https://github.com/open-food-web/colorado-open-food-web",
-    supportedFormat: 2                // export format_version this site understands
+    supportedFormat: 3                // export format_version this site understands
   };
 
   // What a pin or card is: the business's own category. Colors come from site.css (--t-*).
@@ -123,11 +123,11 @@
         title:placeTitle(l), hours:l.hours_text || (group === "farm" ? "" : raw.hours_text) || "", days:l.days || [],
         pin:!!l.pin && l.lat != null, unconfirmed:l.pin_basis === "unconfirmed", lat:l.lat, lng:l.lon });
     });
-    // A farm that welcomes neither drop-in visits nor pickup at the farm is not somewhere to find them: keep the town, drop the place.
+    // A farm with no stated way to visit and no pickup at the farm is not somewhere to find them: keep the town, drop the place.
     var counties = [];
     locs.forEach(function(l){ if(l && l.county_fips && counties.indexOf(l.county_fips) === -1) counties.push(l.county_fips); });
     var homeCity = ((places.filter(function(p){ return p.role === "home_base"; })[0] || { loc:{} }).loc.city || "");
-    if(group === "farm" && raw.farm_pickup !== true && raw.dropin_visits !== true && !(raw.visits && raw.visits.length) && (raw.dropin_visits === false || raw.farm_pickup === false))
+    if(group === "farm" && raw.farm_pickup === false && !(raw.visits && raw.visits.length))
       places = places.filter(function(p){ return p.role !== "home_base"; });
     var towns = [];
     places.forEach(function(p){ if(p.pin && p.loc.city && towns.indexOf(p.loc.city) === -1) towns.push(p.loc.city); });
@@ -139,7 +139,6 @@
       productText:groups.map(function(g){ return productLabels[g] || g; }),
       visits:(group === "farm" ? (raw.visits || []) : []),
       canVisit:(group === "farm" ? (raw.visits || []).length > 0 : true),   // farms: only if there is a named way to visit
-      dropin:(group === "farm" ? (raw.dropin_visits == null ? null : raw.dropin_visits) : true),
       farmPickup:(raw.farm_pickup == null ? null : raw.farm_pickup), visitNote:raw.visit_note || "", places:places, towns:towns, counties:counties,
       town:towns[0] || "", channels:channels, channelText:channels.map(function(c){ return channelLabels[c] || c; }),
       homeTown:homeCity,

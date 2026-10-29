@@ -85,14 +85,14 @@ FIELD_MAP = {"Phone": "phone", "Email": "email", "Website": "website", "Facebook
              "County": "county_fips", "Category": "source_categories"}
 
 COLS = {
-    "producers": ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "dropin_visits", "dropin_hours", "farm_pickup", "visit_note", "visits", "seasonal_months",
+    "producers": ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "farm_pickup", "visit_note", "visits", "seasonal_months",
                   "hours_text", "hours_status", "website", "phone", "email", "facebook", "instagram", "sales_channels",
                   "certified_organic", "accepts_snap", "ada_accessible", "call_first", "status", "claimed",
                   "opted_out_fields", "first_seen", "last_verified"],
     "locations": ["location_id", "name", "kind", "address", "city", "zip", "hide_address", "state", "county_fips",
                "lat", "lon", "geo_source", "google_place_id", "photo_url", "photo_credit", "photo_license"],
     "producer_locations": ["producer_location_id", "producer_id", "location_id", "role", "days", "hours_text", "season_start",
-                  "season_end", "status", "confirm_url"],
+                  "season_end", "status", "confirm_url", "channels"],
     "markets": ["market_id", "slug", "name", "location_id", "operator", "days", "hours_text", "hours_status", "website", "phone",
                 "email", "facebook", "instagram", "accepts_snap", "ada_accessible", "status", "first_seen",
                 "last_verified"],
@@ -457,9 +457,6 @@ def main():
                 out["producers"].append({
                     "producer_id": pid, "slug": new_slug(name), "name": name,
                     "producer_type": (types_by_name.get(nkey(name)) or {}).get("producer_type") or producer_type(name, cats_main),
-                    "dropin_visits": {"yes": "true", "no": "false"}.get(
-                        ((types_by_name.get(nkey(name)) or {}).get("dropin_visits") or "").strip().lower(), ""),
-                    "dropin_hours": (types_by_name.get(nkey(name)) or {}).get("dropin_hours") or "",
                     "farm_pickup": {"yes": "true", "no": "false"}.get(
                         ((types_by_name.get(nkey(name)) or {}).get("farm_pickup") or "").strip().lower(), ""),
                     "visit_note": (types_by_name.get(nkey(name)) or {}).get("visit_note") or "",
@@ -507,7 +504,8 @@ def main():
                         "role": role, "days": (x.get("days") or "").replace(", ", ";"),
                         "hours_text": x.get("hours_text") or "",
                         "season_start": x.get("season_start") or "", "season_end": x.get("season_end") or "",
-                        "status": "listed", "confirm_url": confirm_url(x, r["Website"])})
+                        "status": "listed", "confirm_url": confirm_url(x, r["Website"]),
+                        "channels": ";".join(sorted(channel_list(x.get("sales_channels"))))})
                     if xfips and not any(sa["producer_id"] == pid and sa["county_fips"] == xfips
                                          for sa in out["service_areas"]):
                         out["service_areas"].append({"producer_id": pid, "county_fips": xfips,
@@ -562,7 +560,7 @@ def main():
             "producer_id": pid, "location_id": mloc, "role": (x.get("role") or "pickup").strip(),
             "days": (x.get("days") or "").replace(", ", ";"), "hours_text": x.get("hours_text") or "",
             "season_start": x.get("season_start") or "", "season_end": x.get("season_end") or "", "status": "listed",
-            "confirm_url": confirm_url(x, site)})
+            "confirm_url": confirm_url(x, site), "channels": ";".join(sorted(channel_list(x.get("sales_channels"))))})
 
     link_markets(out, stated, a.vendors)
     derive_channels(out)

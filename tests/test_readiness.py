@@ -10,7 +10,7 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import readiness  # noqa: E402
 
-PROD = ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "dropin_visits", "farm_pickup",
+PROD = ["producer_id", "slug", "name", "producer_type", "source_categories", "products", "product_groups", "farm_pickup",
         "website", "phone", "email", "facebook", "instagram", "sales_channels", "status", "claimed", "last_verified"]
 LOC = ["location_id", "address", "city", "hide_address", "county_fips", "lat", "lon"]
 PL = ["producer_id", "location_id", "role"]
@@ -55,7 +55,6 @@ class Readiness(unittest.TestCase):
         r = self.rows([self.base("a", sales_channels="farm_stand")], [loc], [pl])["a"]
         self.assertEqual(r["tier"], "ready")
         self.assertTrue(r["pin"])
-        self.assertTrue(r["dropin_known"])      # a farm stand implies drop-ins, as in export_app.py
 
     def test_csa_only_has_no_home_pin_and_nowhere_to_find_them(self):
         loc, pl = self.home("a")
@@ -111,7 +110,6 @@ class Readiness(unittest.TestCase):
             r = rows[p["id"]]
             confirmed = any(l["pin"] and l["pin_basis"] == "confirmed" for l in p["locations"])
             self.assertEqual(confirmed, r["pin"], p["name"])
-            self.assertEqual(p["dropin_visits"] is not None, r["dropin_known"], p["name"])
 
 
 if __name__ == "__main__":

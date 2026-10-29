@@ -37,7 +37,7 @@ from scrape import contact_policy as cp  # noqa: E402
 
 REPO = os.path.normpath(os.path.join(HERE, ".."))
 BUILD = os.path.join(REPO, ".cache", "build")
-FORMAT_VERSION = 2
+FORMAT_VERSION = 3
 PLACES = os.path.join(REPO, "inputs", "places", "co_places.json")
 TABLES = os.path.join(REPO, "data", "colorado")
 SUPPLY = os.path.join(REPO, "inputs", "supply-network")

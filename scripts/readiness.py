@@ -156,7 +156,7 @@ def producer_rows(T):
         # unconfirmed pin; it needs coordinates and either a street address or a hidden one (pinned at the town).
         home_ok = bool(home.get("lat") and home.get("lon")) and (bool(home.get("address")) or true(home.get("hide_address")))
         # a person's "customers collect orders at the farm" or a stated visit also confirms the home pin (same rule as export_app.py)
-        pinned_home = home_ok and (sells_at_farm or true(p["farm_pickup"]) or (p.get("visits") or "").strip().lower() not in ("", "none") or true(p.get("dropin_visits", "")))
+        pinned_home = home_ok and (sells_at_farm or true(p["farm_pickup"]) or (p.get("visits") or "").strip().lower() not in ("", "none"))
         pin_unconfirmed = home_ok and not channels
         place = pinned_home or pinned_other or pid in in_market or bool(REMOTE_CHANNELS & channels)
         contact = any(p[k] for k in ("website", "phone", "email", "facebook", "instagram"))
@@ -167,9 +167,8 @@ def producer_rows(T):
             l["location_id"] == home_id
             or (home_addr and ((T["loc"].get(l["location_id"]) or {}).get("address") or "").strip().lower() == home_addr))
             for l in locs)
-        dropin_set, pickup_set = p["dropin_visits"] != "", p["farm_pickup"] != ""
-        dropin_known = dropin_set or sells_at_farm
-        pickup_known = pickup_set or farm_is_a_spot or dropin_known or "Agritourism" in lst(p["source_categories"])
+        pickup_set = p["farm_pickup"] != ""
+        pickup_known = pickup_set or farm_is_a_spot or sells_at_farm or "Agritourism" in lst(p["source_categories"])
         row = {
             "id": pid, "producer_type": p["producer_type"] or "(none)", "county": home.get("county_fips") or "(none)",
             "town": bool(home.get("city")), "product_group": bool(p["product_groups"]), "products_text": bool(p["products"]),
@@ -177,7 +176,7 @@ def producer_rows(T):
             "pin": pinned_home or pinned_other, "pin_unconfirmed": pin_unconfirmed, "market": pid in in_market,
             "website": bool(p["website"]), "phone": bool(p["phone"]), "email": bool(p["email"]),
             "social": bool(p["facebook"] or p["instagram"]),
-            "hours": pid in has_hours, "dropin_set": dropin_set, "dropin_known": dropin_known,
+            "hours": pid in has_hours, 
             "pickup_set": pickup_set, "pickup_known": pickup_known,
             "confirmed": pid in confirmed, "verified_date": bool(p["last_verified"]),
             "home_geocoded": bool(home.get("lat") and home.get("lon")), "home_address": bool(home.get("address")),
@@ -215,7 +214,7 @@ def report(T, county=None):
            ("pin_unconfirmed", "Home pin with no channel set yet (drawn lighter)"), ("market", "Linked to a farmers market page"), ("contact", "Any way to reach them"),
            ("website", "Website link"), ("phone", "Phone"), ("email", "Email (only if the business lists it)"),
            ("social", "Facebook or Instagram"), ("hours", "Structured hours"),
-           ("dropin_set", "Drop-in answer set by a person"), ("dropin_known", "Drop-in answer set or implied by a farm stand or u-pick"),
+           
            ("pickup_set", "Farm pickup answer set by a person"), ("pickup_known", "Farm pickup answer set or implied"),
            ("claimed", "Claimed by the business"), ("hidden_address", "Address withheld (pin at the nearest town)"),
            ("home_county", "County known (needed for the county filter)"),
