@@ -110,10 +110,22 @@
     if(ch.indexOf("csa") !== -1) add("Join their CSA", "A weekly share of the harvest. " + (site ? "Sign up on " + site + "." : "Contact them to sign up."));
     var marketLinks = otherMarkets(r);
     if(ch.indexOf("farmers_market") !== -1 || markets.length || marketLinks.length){
-      var marketItems = markets.map(function(p){ return '<li>' + line(p) + '</li>'; }).concat(marketLinks.map(function(s){
-        return '<li>' + (s.slug ? '<a href="' + CP.url("provider.html?slug=" + encodeURIComponent(s.slug)) + '">' + esc(s.name) + '</a>' : esc(s.name))
-          + (s.city ? ' <span class="muted">· ' + esc(s.city) + '</span>' : "") + '</li>';
-      }));
+      // One entry per market: its name (a link to the market's own page), where it is, and the market's own days and hours.
+      // Days and hours come from the market's record, not from the producer's.
+      function marketEntry(mr, p, st){
+        var mp = mr && mr.places[0];
+        var name = mr ? mr.name : (st ? st.name : p.title);
+        var where = mp ? addr(mp) : (st && st.city) || (p ? addr(p) : "");
+        var hours = (mp && mp.hours) || (p && p.hours) || "";
+        var dir = mp && mp.pin ? mapLinks(mp) : (p && p.pin ? mapLinks(p) : (st && st.lat != null ? '<a href="https://www.google.com/maps/dir/?api=1&destination=' + st.lat + ',' + st.lon + '" target="_blank" rel="noopener">Directions</a>' : ""));
+        return '<li>' + (mr ? '<a href="' + CP.recUrl(mr) + '">' + esc(name) + '</a>' : esc(name)) + (where ? ', ' + esc(where) : "")
+          + (hours ? ' <span class="muted">· ' + esc(hours) + '</span>' : "") + (dir ? ' <span class="muted">·</span> ' + dir : "") + '</li>';
+      }
+      var marketItems = markets.map(function(p){
+        used[p.id] = true;
+        var mr = MODEL.recs.filter(function(x){ return x.group === "market" && x.places.some(function(q){ return q.loc.id === p.loc.id; }); })[0];
+        return marketEntry(mr, p, null);
+      }).concat(marketLinks.map(function(st){ return marketEntry(st.slug && MODEL.bySlug[st.slug], null, st); }));
       add("At the farmers market", marketItems.length ? '<ul class="plain">' + marketItems.join("") + '</ul>' : "They sell at local farmers markets.");
     }
     var farmHome = r.group === "farm" && r.farmPickup === true && ch.indexOf("online") !== -1 && !pickups.length ? (r.places.filter(function(p){ return p.role === "home_base"; })[0] || {}) : null;
