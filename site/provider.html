@@ -117,7 +117,7 @@
       add("At the farmers market", marketItems.length ? '<ul class="plain">' + marketItems.join("") + '</ul>' : "They sell at local farmers markets.");
     }
     var farmHome = r.group === "farm" && r.farmPickup === true && ch.indexOf("online") !== -1 && !pickups.length ? (r.places.filter(function(p){ return p.role === "home_base"; })[0] || {}) : null;
-    var farmHomeLi = farmHome ? '<li>Pick up at the ' + CP.visitWord(r) + ', by arrangement' + (farmHome.loc && isVisitable(farmHome) && addr(farmHome) ? ': ' + line(farmHome) : "") + '</li>' : "";
+    var farmHomeLi = farmHome ? '<li>Pick up at the ' + CP.visitWord(r) + ', by arrangement' + (farmHome.loc && isVisitable(farmHome) && addr(farmHome) ? ': ' + line(farmHome, undefined, /appointment|arrangement/i.test(farmHome.hours || "")) : "") + '</li>' : "";
     var pickupList = pickups.length ? '<ul class="plain">' + pickups.map(function(p){ return '<li>' + line(p) + '</li>'; }).join("") + '</ul>' : (farmHome ? '<ul class="plain">' + farmHomeLi + '</ul>' : "");
     var orderOnline = ch.indexOf("online") !== -1, canPickUp = ch.indexOf("pickup") !== -1 || pickups.length || farmHome;
     if(orderOnline && canPickUp) add("Order online", (site ? "Order at " + site : "Order online") + ", then pick it up at one of these places:" + (pickupList || " ask them where.") + orderNote);   // one entry: order first, then pick up
