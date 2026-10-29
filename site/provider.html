@@ -39,6 +39,19 @@
   }
   // A home base is a place to list when it is pinned or the business states a way to visit; we never say that anyone may not drop in.
   function isVisitable(p){ return p.role !== "home_base" || (p.loc.address && ((p.rec.visits && p.rec.visits.length) || p.pin)); }
+  // The markets a producer sells at, one each, that are not already one of its own places. Each is a link to the market's
+  // own page: its days and hours are the market's, not the producer's. Where the export carries the market's location it
+  // can also be put on the producer's own map.
+  function otherMarkets(r){
+    var shown = {}, seen = {};
+    r.places.forEach(function(p){ shown[p.loc.id] = true; });
+    return (r.raw.sells_at || []).filter(function(s){
+      if(seen[s.market_id]) return false;
+      seen[s.market_id] = true;
+      var mr = s.slug && MODEL && MODEL.bySlug[s.slug];
+      return !(mr && mr.places.some(function(p){ return shown[p.loc.id]; }));
+    });
+  }
   function isMarket(p){ return /market/i.test(p.title || "") || /market/i.test(p.loc.name || ""); }
   var used = {};   // places a "way" already shows, so the list under the map does not repeat them
   function line(p, label, noHours){
@@ -56,7 +69,15 @@
     // A note about pickup, delivery or shipping belongs with how to order, not under the farm stand.
     var noteIsOrder = /pick ?up|deliver|ship/i.test(raw.visit_note || "") && (ch.indexOf("online") !== -1 || ch.indexOf("pickup") !== -1);
     // A visit note is plain text; web addresses in it become links and nothing else is treated as HTML.
-    function linkify(t){ return String(t).split(/(https?:\/\/[^\s)]+)/).map(function(part, i){ return i % 2 ? CP.safeLink(part, /facebook\.com/i.test(part) ? "Facebook page" : part.replace(/^https?:\/\/(www\.)?/, "")) : esc(part); }).join(""); }
+    // `[words](https://...)` makes those words the link; a bare web address links under a short name.
+    function linkify(t){
+      return String(t).split(/(\[[^\]]+\]\(https?:\/\/[^\s)]+\)|https?:\/\/[^\s)]+)/).map(function(part, i){
+        if(!(i % 2)) return esc(part);
+        var md = part.match(/^\[([^\]]+)\]\((.+)\)$/);
+        if(md) return CP.safeLink(md[2], md[1]);
+        return CP.safeLink(part, /facebook\.com/i.test(part) ? "Facebook page" : part.replace(/^https?:\/\/(www\.)?/, ""));
+      }).join("");
+    }
     var orderNote = noteIsOrder ? '<div class="muted">' + linkify(raw.visit_note) + '</div>' : "";
     function add(title, html){ out.push('<li><strong>'+esc(title)+'</strong>'+'<div>'+html+'</div></li>'); }
     // One line under the visit: their own note, unless it only repeats the hours.
@@ -80,11 +101,18 @@
       // A home base that is only a town, next to a farm stand with its own address, is the same place: do not list it again.
       if(vp && vp.role === "farm_stand") r.places.forEach(function(p){ if(p.role === "home_base" && !p.pin && !p.loc.address) used[p.id] = true; });
       r.visits.forEach(function(v, k){
-        add(v.label, (v.detail ? esc(v.detail) : "") + (k === 0 && vp ? '<div>' + line(vp, "More info", !!v.detail) + '</div>' : "") + (k === 0 ? visitExtra(false) : ""));
+        add(v.label, (v.detail ? linkify(v.detail) : "") + (k === 0 && vp ? '<div>' + line(vp, "More info", !!v.detail) + '</div>' : "") + (k === 0 ? visitExtra(false) : ""));
       });
     }
     if(ch.indexOf("csa") !== -1) add("Join their CSA", "A weekly share of the harvest. " + (site ? "Sign up on " + site + "." : "Contact them to sign up."));
-    if(ch.indexOf("farmers_market") !== -1 || markets.length) add("At the farmers market", markets.length ? '<ul class="plain">' + markets.map(function(p){ return '<li>' + line(p) + '</li>'; }).join("") + '</ul>' : "They sell at local farmers markets.");
+    var marketLinks = otherMarkets(r);
+    if(ch.indexOf("farmers_market") !== -1 || markets.length || marketLinks.length){
+      var marketItems = markets.map(function(p){ return '<li>' + line(p) + '</li>'; }).concat(marketLinks.map(function(s){
+        return '<li>' + (s.slug ? '<a href="' + CP.url("provider.html?slug=" + encodeURIComponent(s.slug)) + '">' + esc(s.name) + '</a>' : esc(s.name))
+          + (s.city ? ' <span class="muted">· ' + esc(s.city) + '</span>' : "") + '</li>';
+      }));
+      add("At the farmers market", marketItems.length ? '<ul class="plain">' + marketItems.join("") + '</ul>' : "They sell at local farmers markets.");
+    }
     var farmHome = r.group === "farm" && r.farmPickup === true && ch.indexOf("online") !== -1 && !pickups.length ? (r.places.filter(function(p){ return p.role === "home_base"; })[0] || {}) : null;
     var farmHomeLi = farmHome ? '<li>Pick up at the ' + CP.visitWord(r) + ', by arrangement' + (farmHome.loc && isVisitable(farmHome) && addr(farmHome) ? ': ' + line(farmHome) : "") + '</li>' : "";
     var pickupList = pickups.length ? '<ul class="plain">' + pickups.map(function(p){ return '<li>' + line(p) + '</li>'; }).join("") + '</ul>' : (farmHome ? '<ul class="plain">' + farmHomeLi + '</ul>' : "");
@@ -139,6 +167,8 @@
     var wl = ways(r);
     var notes = /^not open to the public/i.test(raw.hours_text || "") ? '<div class="notice-box"><strong>Not open to the public.</strong> Use the website to order.</div>' : "";
     var pins = r.places.filter(function(p){ return p.pin; });
+    var stops = otherMarkets(r).filter(function(s){ return s.lat != null && s.lon != null; });   // markets it sells at, for its own map only
+    var haveMap = pins.length || stops.length;
     var verified = raw.last_verified ? '<p class="muted" style="font-size:.85rem;font-style:italic;margin:12px 0 0">Data last checked '+esc(CP.fmtDate(raw.last_verified))+'</p>'
       : '';
 
@@ -166,7 +196,7 @@
     // A home base with no pin is not somewhere to go (the business has not published it): do not list it as a place.
     var rest = r.places.filter(function(p){ return !used[p.id] && isVisitable(p); });
     var placesSection = '<h2 style="font-size:1.25rem;margin-top:22px">Places to find them</h2>'
-      + (pins.length ? '<div id="mini" class="mini-map" role="img" aria-label="Map showing where to find '+esc(r.name)+'"></div>' : '')
+      + (haveMap ? '<div id="mini" class="mini-map" role="img" aria-label="Map showing where to find '+esc(r.name)+'"></div>' : '')
       + '<ul class="ways">'+wl.join("")+'</ul>'
       + (rest.length ? '<ul class="places">'+rest.map(placeItem).join("")+'</ul>' : '');
     // Previous / next: the list the visitor was browsing (directory or map results) when this listing is in it, else everything A to Z.
@@ -188,7 +218,7 @@
       +   (unified ? placesSection : (wl.length ? '<h2 style="font-size:1.25rem;margin-top:22px">How to get it</h2><ul class="ways">'+wl.join("")+'</ul>' : ''))
       +   (prodChips || r.products ? '<h2 style="font-size:1.25rem;margin-top:24px">What they offer</h2>' + (prodChips ? '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">'+prodChips+'</div>' : '') + (r.products ? '<p>'+esc(r.products)+'</p>' : '') : '')
       +   (!unified && r.places.length ? '<h2 style="font-size:1.25rem;margin-top:24px">Location</h2>'
-      +   (pins.length ? '<div id="mini" class="mini-map" role="img" aria-label="Map showing where to find '+esc(r.name)+'"></div>' : '')
+      +   (haveMap ? '<div id="mini" class="mini-map" role="img" aria-label="Map showing where to find '+esc(r.name)+'"></div>' : '')
       +   '<ul class="places">'+r.places.filter(isVisitable).map(placeItem).join("")+'</ul>' : '')
       +   vendorsHtml
       +   '<div class="facts">'+facts+'</div>'+verified
@@ -196,7 +226,7 @@
       +   '<a class="btn btn-ghost" href="'+CP.suggestUrl(r, "Remove my listing")+'">Remove this listing</a></p>'
       + '</div></div>';
 
-    if(pins.length){
+    if(haveMap){
       var m = L.map("mini", { scrollWheelZoom:false, zoomControl:true });
       CP.basemap(m); CP.countyOutline(m);
       var offs = CP.fanOut(pins), b = [];
@@ -204,6 +234,12 @@
         L.marker([p.lat, p.lng], { icon:CP.pinIcon(p.role === "home_base" && p.kind === "maker" ? "farm" : p.kind, offs[p.id], p.unconfirmed, p.pickup, p.market), title:p.title }).addTo(m)
           .bindPopup('<strong>'+esc(CP.placeLabel(p))+'</strong><br>'+esc(p.title)+(p.hours ? '<br>'+esc(p.hours) : ''));
         b.push([p.lat, p.lng]);
+      });
+      stops.forEach(function(s){
+        L.marker([s.lat, s.lon], { icon:CP.pinIcon("market", [0, 0], false, false, true), title:s.name }).addTo(m)
+          .bindPopup('<strong>' + esc(s.name) + '</strong>' + (s.city ? '<br>' + esc(s.city) : "")
+            + (s.slug ? '<br><a href="' + CP.url("provider.html?slug=" + encodeURIComponent(s.slug)) + '">Market page</a>' : ""));
+        b.push([s.lat, s.lon]);
       });
       if(b.length === 1) m.setView(b[0], 12); else m.fitBounds(b, { padding:[30,30], maxZoom:12 });
     }

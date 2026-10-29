@@ -104,7 +104,7 @@ def compact_hours(text):
 # The ways a person can visit, each with its own hours. We do not label places by whether people may drop in: a visit is
 # described by what it is and when ("farm" is a plain 'visit the farm' with its hours).
 VISIT_LABELS = {"farm": "Visit the farm", "farm_stand": "Farm stand", "shop": "Shop", "u_pick": "Pick your own", "tour": "Farm tours",
-                "volunteer": "Volunteer days", "by_appointment": "Visits by appointment"}
+                "volunteer": "Volunteer days", "stay": "Farm stay", "by_appointment": "Visits by appointment"}
 
 
 def parse_visits(text):
@@ -230,8 +230,13 @@ def main():
         m = market_rows.get(r["market_id"])
         if not m:
             continue
+        mloc = locations.get(m["location_id"]) or {}
         sells.setdefault(r["producer_id"], {})[(r["market_id"], r["year"])] = {
             "market_id": r["market_id"], "name": m["name"],
+            # enough to link to the market's own page and to put it on a map, for an app whose export leaves the market out
+            "slug": m.get("slug") or None, "city": mloc.get("city") or None,
+            "lat": None if num(mloc.get("lat")) is None else round(num(mloc.get("lat")), 6),
+            "lon": None if num(mloc.get("lon")) is None else round(num(mloc.get("lon")), 6),
             "county_fips": (locations.get(m["location_id"]) or {}).get("county_fips") or None,
             "year": int(r["year"]) if r["year"] else None, "season_label": r["season_label"] or None,
             "basis": r["match_basis"], "source_url": r["source_url"] or None}
