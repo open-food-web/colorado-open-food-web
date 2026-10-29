@@ -62,7 +62,7 @@
       + (p.unconfirmed && p.pin ? '<div class="faint">We haven\'t confirmed that they sell here yet.</div>' : "");
   }
   // The business's own page that says it sells here, so a visitor can check it for themselves.
-  function ownPage(p, label){ return p.loc.confirm_url ? ' <span class="muted">· ' + CP.safeLink(p.loc.confirm_url, label || (p.pickup ? "Pickup info" : "More info")) + '</span>' : ""; }
+  function ownPage(p, label){ return p.loc.confirm_url && label !== null ? ' <span class="muted">· ' + CP.safeLink(p.loc.confirm_url, label || (p.pickup ? "Pickup info" : "More info")) + '</span>' : ""; }
 
   function ways(r){
     var raw = r.raw, ch = r.channels, out = [];
@@ -124,7 +124,7 @@
     else if(canPickUp) add("Pick up an order", "Pick up at one of these places:" + (pickupList || " Ask them where.") + orderNote);
     if(orderOnline && !canPickUp) add("Order online", (site ? "Order at " + site + "." : "Ask them how to order.") + orderNote);
     var stores = r.places.filter(function(p){ return p.role === "store"; });
-    if(stores.length) add("In local stores", '<ul class="plain">' + stores.map(function(p){ return '<li>' + line(p, "Their store list") + '</li>'; }).join("") + '</ul>');
+    if(stores.length) add("In local stores", '<ul class="plain">' + stores.map(function(p){ return '<li>' + line(p, null) + '</li>'; }).join("") + '</ul>');
     else if(ch.indexOf("retail_partners") !== -1) add("In local stores", "You can find their products in some local stores.");
     if(ch.indexOf("wholesale") !== -1) add("Wholesale", ch.length === 1 ? "They sell to restaurants and stores, not to the public." : "They also sell wholesale to restaurants and stores.");
     if(r.group === "outlet"){
