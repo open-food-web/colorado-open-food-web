@@ -122,7 +122,8 @@ def nkey(s: str) -> str:
 
 CHANNEL_ALIAS = {"on_farm": "farm_stand"}
 CHANNEL_VALUES = {"farm_stand", "u_pick", "csa", "farmers_market", "pickup", "delivery", "online", "wholesale",
-                  "retail_partners", "agritourism", "none"}   # "none": confirmed, no public sales (not the same as blank = unknown)
+                  "retail_partners", "agritourism", "food_access", "none"}   # "none": confirmed, no public sales (not the same as blank = unknown)
+# "food_access": grown for food access programs, not sold to the public; still a way to find them
 
 
 def channel_list(text: str) -> set:

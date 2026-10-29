@@ -84,7 +84,7 @@ include a producer that serves its county but is based elsewhere.
 | `hours_status` | string | `parsed`, `partial`, `appointment`, `text_only`, `none`. Show `hours_text` unless `parsed` |
 | `sells_at` | list | Markets the producer sells at: `{market_id, name, county_fips, year, season_label, basis, source_url}` |
 | `website`, `phone`, `email`, `facebook`, `instagram` | string/null | Public business contact only |
-| `sales_channels` | list | `farm_stand`, `u_pick`, `csa`, `farmers_market`, `pickup`, `delivery`, `online`, `wholesale`, `retail_partners`. Empty = not confirmed yet |
+| `sales_channels` | list | `farm_stand`, `u_pick`, `csa`, `farmers_market`, `pickup`, `delivery`, `online`, `wholesale`, `retail_partners`, `agritourism`, `food_access` (grown for food access programs, not sold to the public), `none` (confirmed no public sales). Empty = not confirmed yet |
 | `certified_organic`, `accepts_snap`, `ada_accessible`, `call_first` | bool/null | Null = unknown, never false |
 | `status` | string | `active`, `seasonal_closed`, `unverified` |
 | `claimed` | bool | The producer has confirmed the record |

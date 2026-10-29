@@ -303,6 +303,21 @@ class ExportApp(unittest.TestCase):
         home = [l for l in self.by_name(doc)["Ranch"]["locations"] if l["role"] == "home_base"][0]
         self.assertEqual(home["channels"], [])                                   # nothing stated, nothing guessed
 
+    def test_food_access_is_a_channel_that_is_not_a_sale(self):
+        d = tempfile.mkdtemp()
+        locs = os.path.join(d, "locations.csv")
+        head = "name,city,role,place_name,address,place_city,zip,county,lat,lon,geo_source,hide_address,days,hours_text,season_start,season_end,market_ref,sales_channels,note,source,date".split(",")
+        with open(locs, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(head)
+            w.writerow([{"name": "Donation Farm", "role": "home_base", "sales_channels": "food_access"}.get(h, "") for h in head])
+        doc = self.export([row("Donation Farm", "On-Farm / Ranch Sales", Address="1 Rd", Latitude="38.5", Longitude="-106")],
+                          build_extra=["--locations", locs])
+        farm = self.by_name(doc)["Donation Farm"]
+        self.assertEqual(farm["sales_channels"], ["food_access"])
+        self.assertIn("food_access", doc["vocab"]["sales_channels"])
+        self.assertFalse(farm["locations"][0]["pin"])      # nothing is sold to the public, so no home pin
+
     def test_producer_type_and_product_groups(self):
         d = tempfile.mkdtemp()
         kinds = os.path.join(d, "kinds.csv")

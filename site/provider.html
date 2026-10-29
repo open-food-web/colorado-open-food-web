@@ -68,6 +68,8 @@
     var raw = r.raw, ch = r.channels, out = [];
     // A note about pickup, delivery or shipping belongs with how to order, not under the farm stand.
     var noteIsOrder = /pick ?up|deliver|ship/i.test(raw.visit_note || "") && (ch.indexOf("online") !== -1 || ch.indexOf("pickup") !== -1);
+    // Growing for food access programs is not a sale, but it is a way to find them: the producer's note says how.
+    var noteIsFood = ch.indexOf("food_access") !== -1 && !!raw.visit_note;
     // A visit note is plain text; web addresses in it become links and nothing else is treated as HTML.
     // `[words](https://...)` makes those words the link; a bare web address links under a short name.
     function linkify(t){
@@ -85,7 +87,7 @@
       var note = raw.visit_note || "";
       var restates = hasHours && /\d\s*[-–]\s*\d|\d\s*(am|pm)/i.test(note);
       var bits = [];
-      if(note && !restates && !noteIsOrder) bits.push(linkify(note));
+      if(note && !restates && !noteIsOrder && !noteIsFood) bits.push(linkify(note));
       return bits.length ? '<div class="muted">' + bits.join(" ") + '</div>' : "";
     }
     // A place says which sales channels it serves (locations[].channels). Use that where it is stated; otherwise go by the
@@ -104,6 +106,7 @@
         add(v.label, (v.detail ? linkify(v.detail) : "") + (k === 0 && vp ? '<div>' + line(vp, "More info", !!v.detail) + '</div>' : "") + (k === 0 ? visitExtra(false) : ""));
       });
     }
+    if(ch.indexOf("food_access") !== -1) add("Food access programs", noteIsFood ? linkify(raw.visit_note) : "They grow food for local food access programs.");
     if(ch.indexOf("csa") !== -1) add("Join their CSA", "A weekly share of the harvest. " + (site ? "Sign up on " + site + "." : "Contact them to sign up."));
     var marketLinks = otherMarkets(r);
     if(ch.indexOf("farmers_market") !== -1 || markets.length || marketLinks.length){
