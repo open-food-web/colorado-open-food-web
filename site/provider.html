@@ -45,7 +45,10 @@
   function otherMarkets(r){
     var shown = {}, seen = {};
     r.places.forEach(function(p){ shown[p.loc.id] = true; });
-    return (r.raw.sells_at || []).filter(function(s){
+    var ms = (r.raw.offerings || []).filter(function(o){ return o.market; }).map(function(o){
+      return { market_id:o.market.id, name:o.market.name, slug:o.market.slug, city:o.market.city, lat:o.market.lat, lon:o.market.lon };
+    });
+    return ms.filter(function(s){
       if(seen[s.market_id]) return false;
       seen[s.market_id] = true;
       var mr = s.slug && MODEL && MODEL.bySlug[s.slug];

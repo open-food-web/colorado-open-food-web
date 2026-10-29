@@ -141,7 +141,6 @@ A producer can have several locations (a farm plus three pickup points). Each is
 | `days`, `hours_text` | list/string | fact | When they are at that location |
 | `season_start`, `season_end` | date/month | fact | Months or dates |
 | `confirm_url` | url | fact | The business's own page that says it sells at this place (a farmers market page on its site, say). Blank when it has none |
-| `channels` | list | fact | The sales channels this place serves (`online`, `csa`, `farmers_market`...), set in the `sales_channels` column of `inputs/locations.csv` on a pickup row. Blank when nothing is stated |
 | `status` | enum | fact | `confirmed`, `listed`, `unverified` |
 
 ## Table: `markets`
@@ -164,7 +163,39 @@ a market that moves between sites is one record per site, linked by `network_nam
 | `status` | enum | fact | `active`, `seasonal_closed`, `closed`, `unverified` |
 | `first_seen`, `last_verified` | date | fact | |
 
+## Table: `offerings`
+
+Every way to find a producer, in one place. An offering is a channel (`farm_stand`, `online`, `farmers_market`, `retail_partners`...), optionally
+at a place or at a market, with its own text. It is where a place is tied to the channel it serves, and where "this producer sells at that
+market" lives, once. Built by `scripts/build_tables.py` (`scripts/offerings.py`); never edited by hand.
+
+| Field | Type | Class | Notes |
+|---|---|---|---|
+| `offering_id` | string | fact | Primary key (`co-off-...`), stable through the ID registry |
+| `producer_id` | string | fact | FK |
+| `channel` | enum | controlled | A sales channel (see `producers.sales_channels`) |
+| `location_id` | string | fact | FK, blank when the channel has no place (online orders, wholesale) |
+| `market_id` | string | fact | FK, only on a `farmers_market` offering: the market |
+| `text` | string | fact | Text for the offering (its hours, a booking link), from `producers.channel_details` |
+| `confirm_url` | url | fact | The business's own page that says it sells at this place |
+| `basis` | enum | controlled | How the offering came to be. `stated`: a person said which channel a place serves (the `sales_channels` column of a pickup row in `inputs/locations.csv`). `role`: no one said, so it goes by the place's role. `derived`: an on-farm channel at the farm stand or home. `channel`: a channel with no place. `link`: a market link |
+| `status` | enum | fact | `listed` |
+| `shown` | bool | fact | False for a market link that is hidden (a conflict no one has kept, a link someone dropped, or a closed market) |
+| `confirmed_by_market`, `confirmed_by_producer` | bool | fact | Market links only. Whether a market's vendor list names the producer, and whether the producer's own page (or a partner who spoke with them) does |
+| `market_list_years`, `market_list_url` | list/url | fact | Which vendor lists name the producer, and one list page |
+| `producer_page_url`, `producer_checked_on` | url/date | fact | The producer's own page that was read, and when |
+| `link_state` | enum | derived | `confirmed_both`, `producer_only`, `market_only` (the producer's page was not checked, or names no markets), `conflict` (the market lists the producer, the producer's page names markets and omits this one), `unconfirmed` |
+| `resolution` | enum | fact | `keep` or `drop`, set by a person in `inputs/market_links.csv`. Blank = the default: the producer's page wins, so a conflict is hidden |
+| `link_note` | string | fact | The conflict and how it was resolved |
+
+Market links have two sides that must agree: a market's vendor list (`market_vendors`, from `inputs/market_vendor_lists.csv`) and the producer's
+own page (`inputs/market_links.csv`: one row per page checked, `on_producer_page` = `lists_markets`, `no_markets` or `unreadable`, and one row per market
+the page lists). They are reconciled into one offering per producer and market. A conflict is written to `reports/market-link-conflicts.md` for a
+person to resolve, and the market's own record is the only place its days and hours live.
+
 ## Table: `market_vendors`
+
+The market side of a market link: what the vendor lists say. The reconciled link is in `offerings`.
 
 | Field | Type | Class | Notes |
 |---|---|---|---|
@@ -172,7 +203,6 @@ a market that moves between sites is one record per site, linked by `network_nam
 | `producer_id` | string | fact | FK |
 | `year` | integer | fact | Vendor lists change yearly. Empty when the link is stated by the producer with no year |
 | `season_label` | string | fact | When the list covers a season such as "2025-26 winter" |
-| `days`, `season_start`, `season_end` | list/date | fact | If narrower than the market's own |
 | `status` | enum | fact | `confirmed`, `listed`, `unverified` |
 | `list_source` | string | fact | Which vendor list said so |
 | `source_url` | url | fact | The vendor list page |
@@ -304,7 +334,7 @@ Provenance for each populated field. Attribution for the public release is built
 
 ## What a producer homepage reads
 
-One producer row, its locations via producer locations (home base pin), its markets via `market_vendors`
+One producer row, its locations via producer locations (home base pin), its ways to be found (and the markets it sells at) via `offerings`
 (market pins), its outlets via `outlet_suppliers` ("where to buy" and "where to eat"), service areas for
 the county list, `source_links` for the "More from the source" links, and `google_place_id` for
 the Maps directions link and optional live photos.

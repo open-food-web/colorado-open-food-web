@@ -282,7 +282,7 @@ class ExportApp(unittest.TestCase):
         self.assertIsNone(farm["phone"])
         self.assertIsNone(farm["email"])
 
-    def test_a_producer_pickup_at_a_market_is_named_for_the_market(self):
+    def test_a_market_the_producer_sells_at_is_an_offering_with_the_market(self):
         d = tempfile.mkdtemp()
         locs = os.path.join(d, "locations.csv")
         head = "name,city,role,place_name,address,place_city,zip,county,lat,lon,geo_source,hide_address,days,hours_text,season_start,season_end,market_ref,sales_channels,note,source,date".split(",")
@@ -293,9 +293,13 @@ class ExportApp(unittest.TestCase):
         rows = [row("Ranch", "On-Farm / Ranch Sales", Address="9 Rd", Latitude="38.6", Longitude="-106.1"),
                 row("Salida Market", "Farmers' Market", Address="Alpine Park, 404 E St", City="Salida", Latitude="38.5", Longitude="-106.0")]
         doc = self.export(rows, build_extra=["--locations", locs])
-        pickup = [l for l in self.by_name(doc)["Ranch"]["locations"] if l["role"] == "pickup"][0]
-        self.assertEqual(pickup["name"], "Salida Market")
-
+        ranch = self.by_name(doc)["Ranch"]
+        stops = [o for o in ranch["offerings"] if o.get("market")]
+        self.assertEqual([(o["channel"], o["market"]["name"], o["link"]["state"]) for o in stops],
+                         [("farmers_market", "Salida Market", "producer_only")])
+        self.assertEqual((stops[0]["market"]["lat"], stops[0]["market"]["lon"]), (38.5, -106.0))   # enough to map it
+        self.assertNotIn("pickup", [l["role"] for l in ranch["locations"]])     # not a place of the producer's own
+        self.assertIn("farmers_market", ranch["sales_channels"])
     def test_a_pickup_place_says_which_sales_channel_it_serves(self):
         d = tempfile.mkdtemp()
         locs = os.path.join(d, "locations.csv")
@@ -306,13 +310,12 @@ class ExportApp(unittest.TestCase):
             w.writerow([{"name": "Ranch", "role": "pickup", "place_name": "Church lot", "address": "1 Main St", "place_city": "Salida",
                          "zip": "81201", "county": "Chaffee", "lat": "38.53", "lon": "-105.99", "geo_source": "source",
                          "sales_channels": "online"}.get(h, "") for h in head])
-            w.writerow([{"name": "Ranch", "role": "pickup", "market_ref": "Salida Market", "sales_channels": "farmers_market"}.get(h, "") for h in head])
-        rows = [row("Ranch", "On-Farm / Ranch Sales", Address="9 Rd", Latitude="38.6", Longitude="-106.1"),
-                row("Salida Market", "Farmers' Market", Address="Alpine Park, 404 E St", City="Salida", Latitude="38.5", Longitude="-106.0")]
+        rows = [row("Ranch", "On-Farm / Ranch Sales", Address="9 Rd", Latitude="38.6", Longitude="-106.1")]
         doc = self.export(rows, build_extra=["--locations", locs])
         places = {l["name"]: l for l in self.by_name(doc)["Ranch"]["locations"] if l["role"] == "pickup"}
-        self.assertEqual(places["Church lot"]["channels"], ["online"])            # pickup point for online orders
-        self.assertEqual(places["Salida Market"]["channels"], ["farmers_market"])  # a stop at the market
+        self.assertEqual(places["Church lot"]["channels"], ["online"])            # pickup point for online orders, as a person said
+        offers = [(o["channel"], o["basis"]) for o in self.by_name(doc)["Ranch"]["offerings"] if o["location_id"] == places["Church lot"]["id"]]
+        self.assertEqual(offers, [("online", "stated")])
         home = [l for l in self.by_name(doc)["Ranch"]["locations"] if l["role"] == "home_base"][0]
         self.assertEqual(home["channels"], [])                                   # nothing stated, nothing guessed
 

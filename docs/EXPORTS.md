@@ -82,7 +82,7 @@ include a producer that serves its county but is based elsewhere.
 | `hours_text` | string/null | Free text, always kept |
 | `hours` | list | Structured: `{day, opens, closes, closes_next_day?, inferred?}`, `day` is `mon`..`sun`, times are 24-hour `HH:MM`. Empty when not readable |
 | `hours_status` | string | `parsed`, `partial`, `appointment`, `text_only`, `none`. Show `hours_text` unless `parsed` |
-| `sells_at` | list | Markets the producer sells at: `{market_id, name, county_fips, year, season_label, basis, source_url}` |
+| `offerings` | list | Every way to find the producer: `{id, channel, location_id, text, confirm_url, basis}`. A `farmers_market` offering also has `market` (`{id, name, slug, city, lat, lon, county_fips}`: enough to link to the market's own page and map it even when an app's export leaves the market out) and `link` (`{state, confirmed_by_market, confirmed_by_producer, market_list_years, market_list_url, producer_page_url, producer_checked_on, resolution, note}`). Hidden market links (conflicts, dropped links) are not exported. The market's days and hours are the market's own record, not the producer's |
 | `website`, `phone`, `email`, `facebook`, `instagram` | string/null | Public business contact only |
 | `sales_channels` | list | `farm_stand`, `farm_visit` (a plain visit to the farm), `u_pick`, `tour`, `stay`, `volunteer`, `csa`, `farmers_market`, `pickup`, `delivery`, `online`, `wholesale`, `retail_partners`, `agritourism`, `food_access` (grown for food access programs, not sold to the public), `none` (confirmed no public sales). Empty = not confirmed yet. Labels are in `vocab.sales_channels` |
 | `certified_organic`, `accepts_snap`, `ada_accessible`, `call_first` | bool/null | Null = unknown, never false |
@@ -106,7 +106,7 @@ include a producer that serves its county but is based elsewhere.
 | `pin_basis` | `confirmed` or `unconfirmed` (see below). An app may style unconfirmed pins, e.g. "call first" |
 | `days`, `hours_text`, `season_start`, `season_end`, `status` | When the producer is at this location (producer locations only) |
 | `confirm_url` | The business's own page that confirms it sells here, so an app can link to it (producer locations only; null when none) |
-| `channels` | The sales channels this place serves, from `sales_channels` (for example a pickup point for `online` orders, or a stop at a `farmers_market`). Empty when nothing is stated. The link between a place and a way to buy is stated here, not inferred from the place's role |
+| `channels` | The sales channels this place serves, taken from the producer's `offerings` at this place (a pickup point for `online` orders, say). Where no one has said which channel a place serves, it goes by the place's role, and the offering's `basis` is `role` |
 
 ### `markets[]` and `access_points[]`
 
@@ -162,5 +162,5 @@ An outlet carries no products or descriptions; the Food Web keeps outlets thin.
 
 1. (Settled) The release is published as a GitHub Release asset, `open-food-web.json`, with its sha256 in
    `MANIFEST.json`. Open: how an app's repo is notified of a new release.
-2. (Settled) Structured `hours` and `sells_at` were added as non-breaking fields; `hours_text` stays.
+2. (Settled) Structured `hours` were added as a non-breaking field; `hours_text` stays. `sells_at` was replaced by `offerings` in format 3.
 3. (Settled) Outlets of every kind are in the release; an app picks the kinds it shows.

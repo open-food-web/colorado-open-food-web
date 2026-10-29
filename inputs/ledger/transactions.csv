@@ -2016,3 +2016,6 @@ Pollock, Cheese, Eggs",colorado_proud_farm_fresh+colorado_proud_finder,port-from
 2026-10-28,changed,Noco Virtual Farmers Market,Fort Collins,Email,*,,usda,build,
 2026-10-28,changed,Stapleton Farmers' Market,Denver,Email,*,,official-site+usda,build,
 2026-10-29,changed,Hutchinson Homestead & Learning Center,Salida,Hours,Sat-Sun: 1:00pm - 4:00pm (June-September; by appointment),Sat-Sun: 1:00pm - 4:00pm (June-September),curated,build,
+2026-10-29,added,Cottonwood Spirit Ranch,Buena Vista,,,,official-site+chaffee_provides,build,
+2026-10-29,removed,Cottonwood Spirit Ranch,,,,,official-site+chaffee_provides,build,
+2026-10-29,changed,Colorado Mountain Lavender,Buena Vista,Hours,Not open to the public. Order online.,,official-site+chaffee_provides,build,

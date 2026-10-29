@@ -1,0 +1,51 @@
+producer,producer_city,market,market_city,on_producer_page,producer_page_url,checked_on,resolution,note
+Badger Creek Ranch,,,,lists_markets,https://store.badgercreekranch.com/delivery_locations.php,2026-10-29,,"Online store lists the Salida market as a stop, but dated to the 2025 season with no future dates scheduled"
+Buck and Bloom Cheese Co,,,,lists_markets,https://www.buckandbloomcheese.com/#markets,2026-10-29,,Eight farmers markets with dates; the page also says more markets are on its Instagram
+Foxtown Farm,,,,lists_markets,https://foxtownfarm.com/pages/markets,2026-10-29,,"Markets come from the embedded Google Calendar on its Markets page; holiday markets, fairs and one-off events on it are not farmers markets in our table"
+Headwater Farms,,,,lists_markets,https://www.headwaterfarmco.com/purchase,2026-10-29,,Find Us page
+Mushroom Love Co,,,,lists_markets,http://www.mushroomloveco.com,2026-10-29,,Homepage
+Rocky Mountain Garlic,,,,lists_markets,https://www.rockymountaingarlic.net,2026-10-29,,Only a nav link labeled 'Salida Market'
+Guidestone Colorado Community and School Farm,,,,lists_markets,https://guidestonecolorado.org/local-food-production/,2026-10-29,,"Lists a fall pop-up Youth Farmer Market at the Salida Boys & Girls Club, which is not a market in our table"
+Alpine Valley Mushrooms,,,,no_markets,https://www.alpinevalleymushrooms.com/,2026-10-29,,Lists retail partners; names no market
+Arrowpoint Cattle Company,,,,no_markets,https://www.arrowpointcattle.com,2026-10-29,,Online shop and contact; names no market
+Colorado Farm to Table,,,,no_markets,http://coloradofarmtotable.org/,2026-10-29,,Donation nonprofit; no where-to-buy content
+Colorado Mountain Lavender,,,,no_markets,https://co-mtn-lav.com/,2026-10-29,,Online shop only
+DRAM Apothecary,,,,no_markets,https://dramapothecary.com,2026-10-29,,"Store locator (dynamic, unread); names no market"
+Greg's Gourmet Greens,,,,no_markets,https://gregsgourmetgreens.com/,2026-10-29,,Online ordering and weekly delivery; names no market
+Hutchinson Homestead & Learning Center,,,,no_markets,https://www.hutchinsonhomestead.org/,2026-10-29,,Home page only
+Hutchinson Ranch,,,,no_markets,https://www.hutchranchsalida.com,2026-10-29,,Four pages read
+Miss Penn's Mountain Seeds,,,,no_markets,https://www.pennandcordsgarden.com/miss-penns-mountain-seeds.html,2026-10-29,,Mail-order and online store; names no market
+Palisade Peach Shack,,,,no_markets,https://www.palisadepeachshack.com,2026-10-29,,Describes its own market at the Palisade I-70 exit; names no outside farmers market
+Phytology Flowers Farm,,,,no_markets,https://www.phytologyflowers.com,2026-10-29,,Homepage only; names no market
+The Triangle Oasis,,,,no_markets,https://www.thetriangleoasis.com/,2026-10-29,,Lists its own Market on Main St. only; does not mention the Salida Farmers Market
+Valley Roots Food Hub,,,,no_markets,https://www.valleyrootsfoodhub.com/,2026-10-29,,Wholesale hub
+Westcliffe Honey Company,,,,no_markets,https://www.westcliffehoneyco.com/,2026-10-29,,One-page site; names no market
+Who Knows? Farms,,,,no_markets,https://www.whoknowsfarms.com,2026-10-29,,Names no market
+Alpenglow Hive & Honey,,,,unreadable,https://www.facebook.com/p/Alpenglow-Hive-Honey-61586258981365/,2026-10-29,,Facebook page unreadable without a login
+Everett Ranch Beef,,,,unreadable,https://www.instagram.com/everettranchbeef/,2026-10-29,,No website; Instagram bio unreadable
+Lewis Lazy L Ranch,,,,unreadable,https://www.facebook.com/myredcows/,2026-10-29,,Facebook page unreadable without a login
+Microgreen Creations LLC,,,,unreadable,https://www.facebook.com/61578591597809/,2026-10-29,,Facebook page unreadable without a login
+Sweet Pea Farm’s Wildflower Honey,,,,unreadable,https://www.facebook.com/SweetPeaFarmHoney,2026-10-29,,Facebook page unreadable without a login
+Badger Creek Ranch,,Salida Farmers Market,,yes,https://store.badgercreekranch.com/delivery_location/salida-farmers-market,2026-10-29,,"2025 season on its store page, no 2026 dates yet; also confirmed by the Guidestone review of Oct 13 (Alycen Quattrocchi)"
+Buck and Bloom Cheese Co,,Salida Farmers Market,,yes,https://www.buckandbloomcheese.com/#markets,2026-10-29,,
+Buck and Bloom Cheese Co,,Crested Butte Farmers Market,,yes,https://www.buckandbloomcheese.com/#markets,2026-10-29,,
+Buck and Bloom Cheese Co,,Vail Farmers' Market,,yes,https://www.buckandbloomcheese.com/#markets,2026-10-29,,
+Buck and Bloom Cheese Co,,Boulder Farmers Market,,yes,https://www.buckandbloomcheese.com/#markets,2026-10-29,,
+Buck and Bloom Cheese Co,,Longmont Farmers Market,,yes,https://www.buckandbloomcheese.com/#markets,2026-10-29,,
+Buck and Bloom Cheese Co,,Harvey Park Farmers Market,,yes,https://www.buckandbloomcheese.com/#markets,2026-10-29,,
+Buck and Bloom Cheese Co,,Old South Pearl Street Association - Farmers Market,,yes,https://www.buckandbloomcheese.com/#markets,2026-10-29,,
+Buck and Bloom Cheese Co,,Farmers' Market at Highlands Square,,yes,https://www.buckandbloomcheese.com/#markets,2026-10-29,,
+Foxtown Farm,,Lafayette Colorado Farmers Market,,yes,https://foxtownfarm.com/pages/markets,2026-10-29,,
+Foxtown Farm,,City Park Farmers Market,,yes,https://foxtownfarm.com/pages/markets,2026-10-29,,
+Foxtown Farm,,Breckenridge Farmers Market,,yes,https://foxtownfarm.com/pages/markets,2026-10-29,,
+Foxtown Farm,,Golden Farmers Market,,yes,https://foxtownfarm.com/pages/markets,2026-10-29,,
+Foxtown Farm,,Louisville Farmers Market,,yes,https://foxtownfarm.com/pages/markets,2026-10-29,,
+Foxtown Farm,,Salida Farmers Market,,yes,https://foxtownfarm.com/pages/markets,2026-10-29,,
+Foxtown Farm,,Old South Pearl Street Association - Farmers Market,,yes,https://foxtownfarm.com/pages/markets,2026-10-29,,
+Foxtown Farm,,Farmers' Market at Highlands Square,,yes,https://foxtownfarm.com/pages/markets,2026-10-29,,
+Foxtown Farm,,Chaffee County Winter Farmers Market,,yes,https://foxtownfarm.com/pages/markets,2026-10-29,,"Saturdays, Nov 14 to Nov 28 2026 on its calendar"
+Headwater Farms,,Salida Farmers Market,,yes,https://www.headwaterfarmco.com/purchase,2026-10-29,,"Page says every Saturday, June to October"
+Headwater Farms,,Buena Vista Farmers' Market,,yes,https://www.headwaterfarmco.com/purchase,2026-10-29,,"Page says every Saturday, June to October, but the market's own record says Sundays (May 31 to Oct 25): the market's schedule is the one shown"
+Mushroom Love Co,,Buena Vista Farmers' Market,,yes,http://www.mushroomloveco.com,2026-10-29,,"Its homepage lists this as its only market, sold through Headwaters Farm"
+Rocky Mountain Garlic,,Salida Farmers Market,,yes,https://www.rockymountaingarlic.net,2026-10-29,,Its homepage only has a nav link labeled 'Salida Market'; also confirmed by the Guidestone review of Oct 13 (Alycen Quattrocchi)
+Rocky Mountain Garlic,,Chaffee County Winter Farmers Market,,yes,,2026-10-29,,Confirmed by the Guidestone review of Oct 13 (Alycen Quattrocchi): also sells at the winter Chaffee County market

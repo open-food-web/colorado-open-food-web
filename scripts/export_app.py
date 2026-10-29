@@ -198,7 +198,8 @@ def main():
     plocs = {}
     for r in T("producer_locations"):
         plocs.setdefault(r["producer_id"], []).append(r)
-    # structured hours, and which markets each producer sells at (both are additive fields; see EXPORTS.md)
+    market_rows = {m["market_id"]: m for m in T("markets")}
+    # structured hours (an additive field; see EXPORTS.md)
     hours_by = {}
     for r in T("hours"):
         h = {"day": r["day"], "opens": r["opens"], "closes": r["closes"]}
@@ -207,23 +208,34 @@ def main():
         if r["inferred"] == "true":
             h["inferred"] = True
         hours_by.setdefault((r["record_type"], r["record_id"]), []).append(h)
-    market_rows = {m["market_id"]: m for m in T("markets")}
-    sells, vendors_of = {}, {}
-    for r in T("market_vendors"):
-        m = market_rows.get(r["market_id"])
-        if not m:
+    # Offerings: every way to find a producer (a channel, optionally at a place or at a market). A market link is shown when its two sides
+    # agree or only one has been checked; a conflict is hidden unless a person kept it (see scripts/offerings.py).
+    offers, vendors_of, loc_channels = {}, {}, {}
+    for r in T("offerings"):
+        if r["shown"] != "true":
             continue
-        mloc = locations.get(m["location_id"]) or {}
-        sells.setdefault(r["producer_id"], {})[(r["market_id"], r["year"])] = {
-            "market_id": r["market_id"], "name": m["name"],
-            # enough to link to the market's own page and to put it on a map, for an app whose export leaves the market out
-            "slug": m.get("slug") or None, "city": mloc.get("city") or None,
-            "lat": None if num(mloc.get("lat")) is None else round(num(mloc.get("lat")), 6),
-            "lon": None if num(mloc.get("lon")) is None else round(num(mloc.get("lon")), 6),
-            "county_fips": (locations.get(m["location_id"]) or {}).get("county_fips") or None,
-            "year": int(r["year"]) if r["year"] else None, "season_label": r["season_label"] or None,
-            "basis": r["match_basis"], "source_url": r["source_url"] or None}
-        vendors_of.setdefault(r["market_id"], set()).add(r["producer_id"])
+        offers.setdefault(r["producer_id"], []).append(r)
+        if r["market_id"]:
+            vendors_of.setdefault(r["market_id"], set()).add(r["producer_id"])
+        elif r["location_id"]:
+            loc_channels.setdefault((r["producer_id"], r["location_id"]), set()).add(r["channel"])
+
+    def public_offering(r):
+        o = {"id": r["offering_id"], "channel": r["channel"], "location_id": r["location_id"] or None,
+             "text": r["text"] or None, "confirm_url": r["confirm_url"] or None, "basis": r["basis"]}
+        if r["market_id"]:
+            m = market_rows[r["market_id"]]
+            mloc = locations.get(m["location_id"]) or {}
+            o["market"] = {"id": m["market_id"], "name": m["name"], "slug": m.get("slug") or None, "city": mloc.get("city") or None,
+                           "lat": None if num(mloc.get("lat")) is None else round(num(mloc.get("lat")), 6),
+                           "lon": None if num(mloc.get("lon")) is None else round(num(mloc.get("lon")), 6),
+                           "county_fips": mloc.get("county_fips") or None}
+            o["link"] = {"state": r["link_state"], "confirmed_by_market": r["confirmed_by_market"] == "true",
+                         "confirmed_by_producer": r["confirmed_by_producer"] == "true", "market_list_years": lst(r["market_list_years"]),
+                         "market_list_url": r["market_list_url"] or None, "producer_page_url": r["producer_page_url"] or None,
+                         "producer_checked_on": r["producer_checked_on"] or None, "resolution": r["resolution"] or None,
+                         "note": r["link_note"] or None}
+        return o
 
     fsrc = {}
     for r in T("field_sources"):
@@ -401,7 +413,7 @@ def main():
                 "days": lst(l["days"]), "hours_text": l["hours_text"] or None,
                 "season_start": l["season_start"] or None, "season_end": l["season_end"] or None,
                 "status": l["status"], "confirm_url": l.get("confirm_url") or None,
-                "channels": lst(l.get("channels", ""))}, use_market_name=True))
+                "channels": sorted(loc_channels.get((pid, l["location_id"]), set()))}, use_market_name=True))
         rec = {
             "id": pid, "slug": p["slug"], "name": p["name"], "producer_type": p["producer_type"],
             "service_county_fips": sorted(areas.get(pid, set())),
@@ -415,7 +427,8 @@ def main():
             "website": p["website"] or None, "phone": p["phone"] or None,
             "email": p["email"] or None, "facebook": p["facebook"] or None, "instagram": p["instagram"] or None,
             "sales_channels": channels,
-            "sells_at": sorted(sells.get(pid, {}).values(), key=lambda x: (x["name"].lower(), x["year"] or 0)), "certified_organic": boolish(p["certified_organic"]),
+            "offerings": [public_offering(r) for r in sorted(offers.get(pid, []), key=lambda r: (r["channel"], r["offering_id"]))],
+            "certified_organic": boolish(p["certified_organic"]),
             "accepts_snap": boolish(p["accepts_snap"]), "ada_accessible": boolish(p["ada_accessible"]),
             "call_first": boolish(p["call_first"]), "status": p["status"], "claimed": boolish(p["claimed"]) is True,
             "last_verified": p["last_verified"] or None, "locations": out_locs,
@@ -491,7 +504,7 @@ def main():
             "county_fips": a.county_fips,
             "attribution": "Colorado Open Food Web, CC BY 4.0. Partner data from Guidestone Colorado.",
             "counts": {"producers": len(producers), "markets": len(markets), "access_points": len(access),
-                       "market_links": sum(len(p["sells_at"]) for p in producers),
+                       "market_links": sum(1 for p in producers for o in p["offerings"] if o.get("market")),
                        **({"outlets": len(outlets), "outlet_pins": sum(o["location"]["pin"] for o in outlets)} if include_outlet_kinds else {}),
                        "pins": sum(l["pin"] for p in producers for l in p["locations"])
                        + len(markets) + len(access),

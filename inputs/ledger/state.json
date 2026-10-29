@@ -10623,8 +10623,8 @@
 "name": "Cottonwood Farm",
 "source": "colorado_proud_farm_fresh"
 },
-"cottonwood ranch spirit|": {
-"Address": "",
+"cottonwood ranch spirit|buena vista": {
+"Address": "16115 County Road 306",
 "Category": "On-Farm / Ranch Sales",
 "County": "Chaffee",
 "Email": "cottonwoodspiritranch@gmail.com",
@@ -10635,7 +10635,7 @@
 "Status": "Open",
 "Website": "https://cottonwoodspiritranch.com",
 "Year Opened": "",
-"city": "",
+"city": "Buena Vista",
 "name": "Cottonwood Spirit Ranch",
 "source": "official-site+chaffee_provides"
 },
@@ -20772,7 +20772,7 @@
 "Category": "Farm Products (online)",
 "County": "Fremont",
 "Email": "connect@co-mtn-lav.com",
-"Hours": "Not open to the public. Order online.",
+"Hours": "",
 "Months Open": "",
 "Phone": "(719) 371-2828",
 "Products": "Lavender essential oil, skin care, bath salts, hydrosol, culinary vinegars, dried lavender bouquets",
