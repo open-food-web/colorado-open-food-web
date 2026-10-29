@@ -74,7 +74,7 @@ include a producer that serves its county but is based elsewhere.
 | `producer_type` | string | What the business is: `farm`, `ranch`, `orchard`, `maker`, `bakery`, `winery`, `education`. Labels are in `vocab.producer_types` |
 | `products` | list | From the Food Web vocabularies. (`categories` was removed in format 2: use `producer_type`, `sales_channels` and `product_groups`. `dropin_visits`, `dropin_hours` and `visit_basis.dropin` were removed in format 3: places are described by their sales channels and named visits, not by whether people may drop in) |
 | `product_groups` | list | What people search by: honey, beef and meat, eggs, veggies... Labels are in `vocab.product_groups` |
-| `visits` | list | The ways to visit, each `{type, label, detail}` (`detail` is the hours or a short plain note, or null; it may contain a link written `[words](https://...)`). Types and labels are in `vocab.visit_types`: visit the farm, farm stand, shop, pick your own, farm tours, volunteer days, farm stay, visits by appointment. Empty when there is nothing to visit. The Food Web does not label a place by whether people may drop in; show these with their titles |
+| `visits` | list | The ways to visit, each `{type, label, detail}` (`detail` is the hours or a short plain note, or null; it may contain a link written `[words](https://...)`). Types and labels are in `vocab.visit_types`: visit the farm, farm stand, shop, pick your own, farm tours, volunteer days, farm stay. Empty when there is nothing to visit. The Food Web does not label a place by whether people may drop in; show these with their titles |
 | `farm_pickup` | bool/null | Can a customer collect an order at the farm, by arrangement?  |
 | `visit_basis` | object | `{pickup}`: `set` (a person's answer), `listing` (inferred from the listing, e.g. a farm stand or tours) or null |
 | `visit_note` | string/null | One plain sentence about visiting or pickup |
@@ -133,8 +133,8 @@ An outlet carries no products or descriptions; the Food Web keeps outlets thin.
 
 ## Rules the export applies
 
-1. **Hidden addresses.** `hide_address` withholds `address` and `zip`, and moves the pin to the nearest
-   town in `data/towns.csv`. A PO box is never published as an address.
+1. **Hidden addresses.** `hide_address` withholds `address` and `zip`, and rounds the location to the nearest
+   town in `data/towns.csv`; a home with a hidden address is listed by its town and is never pinned (`pin` false), because a town is not a place. A PO box is never published as an address.
 2. **Opt-outs.** Fields in a producer's `opted_out_fields` are blanked. A `removed` producer is not in
    `producers`; its ID is in `removed_ids`.
 3. **Closed records leave.** `closed` and `removed` records are not exported.

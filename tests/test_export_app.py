@@ -51,6 +51,8 @@ class ExportApp(unittest.TestCase):
         self.assertIsNone(loc["address"])
         self.assertEqual(loc["city"], "Buena Vista")
         self.assertEqual((loc["lat"], loc["lon"]), (38.8422, -106.1311))
+        self.assertFalse(loc["pin"])      # a town is not a place: it is listed by its town, never drawn on a map
+        self.assertFalse(loc["pin_unconfirmed_home"])
 
     def test_statewide_covers_all_64_counties_and_counts_records_with_no_county(self):
         rows = [row("Hidden Farm", "On-Farm / Ranch Sales", Latitude="38.80", Longitude="-106.10")]
@@ -161,6 +163,8 @@ class ExportApp(unittest.TestCase):
         # a plain visit to the farm with its hours is a type of its own
         v = export_app.derive_visits({"visits": "farm|Sat-Sun 1:00pm - 4:00pm"}, [], None)
         self.assertEqual([(x["type"], x["label"], x["detail"]) for x in v], [("farm", "Visit the farm", "Sat-Sun 1:00pm - 4:00pm")])
+        # "by appointment" is not a visit type: such an entry is ignored
+        self.assertEqual(export_app.derive_visits({"visits": "by_appointment|By appointment"}, [], None), [])
         # 'none' leaves nothing to visit, even with a farm stand channel
         self.assertEqual(export_app.derive_visits({"visits": "none"}, ["farm_stand"], "Sat: 9 am - 1 pm"), [])
         # nothing on the listing, nothing guessed

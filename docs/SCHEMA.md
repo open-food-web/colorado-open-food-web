@@ -68,7 +68,7 @@ Every field has a class that decides whether it appears in the public release.
 | `source_categories` | list | controlled | The directory labels the sources gave (see the category vocabulary below). Provenance only: apps use `producer_type`, `sales_channels` and `product_groups`, and the public export does not carry it. Replaces `categories` |
 | `products` | list | controlled | From the product vocabulary |
 | `product_groups` | list | controlled | The short list people search by: `veggies`, `fruit`, `beef-meat`, `poultry-eggs`, `dairy`, `honey`, `flowers`, `garlic-herbs`, `mushrooms`, `baked-goods`, `drinks`. Found from the products text, categories and name, plus what the business itself ticked (`inputs/producer_types.csv`). `products` keeps the source's own words |
-| `visits` | list | fact | The ways a person can visit, each with what it is and when: `farm` (a plain visit to the farm, with its hours), `farm_stand`, `shop`, `u_pick`, `tour`, `volunteer`, `stay` (a farm stay), `by_appointment`, written `type|detail` (the detail is the hours or a short plain note; a link is written `[words](https://...)`), or `none` when a person says there is nothing to visit. Set in `inputs/producer_types.csv`; blank means the export shows only what the listing proves (a farm stand with its hours, pick-your-own). Tours, volunteering and the rest are never guessed. Replaces "drop-in visits" as what the page shows |
+| `visits` | list | fact | The ways a person can visit, each with what it is and when: `farm` (a plain visit to the farm, with its hours), `farm_stand`, `shop`, `u_pick`, `tour`, `volunteer`, `stay` (a farm stay), written `type|detail` (the detail is the hours or a short plain note; a link is written `[words](https://...)`), or `none` when a person says there is nothing to visit. Set in `inputs/producer_types.csv`; blank means the export shows only what the listing proves (a farm stand with its hours, pick-your-own). Tours, volunteering and the rest are never guessed. Replaces "drop-in visits" as what the page shows |
 | `farm_pickup` | bool/null | fact | Can a customer collect an order at the farm, by arrangement? A person's answer wins; otherwise the export infers yes when the farm is listed as a pickup, farm stand or CSA spot, or sells at the farm (farm stand, u-pick) or advertises farm tours. A ranch can hand over pre-ordered beef without any visit |
 | `visit_note` | string | owned | One plain sentence about visiting or pickup, written by us or the business |
 | `seasonal_months` | list | fact | Months operating, 1–12. Empty if unknown |
@@ -97,7 +97,7 @@ Every field has a class that decides whether it appears in the public release.
 | `name` | string | fact | Location name if different from the producer |
 | `kind` | enum | controlled | What the spot is: `farm`, `market_site`, `outlet_site`, `access_site`, `public_venue` (a parking lot, church or park used by several producers), `other`. What a producer does there is the role on `producer_locations` |
 | `address`, `city`, `zip` | string | fact/personal | Honors `hide_address` |
-| `hide_address` | bool | fact | When true, public release keeps city and county only, and coordinates are rounded to the town |
+| `hide_address` | bool | fact | When true, public release keeps city and county only, coordinates are rounded to the town, and the home is not pinned |
 | `state` | string | fact | `CO`. A field, not a constant |
 | `county_fips` | string | fact | 5-digit FIPS (e.g. `08117`). County name is derived |
 | `lat`, `lon` | number | fact | Null if not known |

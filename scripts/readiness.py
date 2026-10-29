@@ -154,7 +154,7 @@ def producer_rows(T):
         pinned_other = any(o.get("lat") and o.get("lon") for o in others)
         # export_app.py: the home base is pinned for farm_stand/u_pick or a stated farm pickup (confirmed), or, while no channel is set, as an
         # unconfirmed pin; it needs coordinates and either a street address or a hidden one (pinned at the town).
-        home_ok = bool(home.get("lat") and home.get("lon")) and (bool(home.get("address")) or true(home.get("hide_address")))
+        home_ok = bool(home.get("lat") and home.get("lon")) and bool(home.get("address"))   # a hidden address is a town, not a place to pin
         # a person's "customers collect orders at the farm" or a stated visit also confirms the home pin (same rule as export_app.py)
         pinned_home = home_ok and (sells_at_farm or true(p["farm_pickup"]) or (p.get("visits") or "").strip().lower() not in ("", "none"))
         pin_unconfirmed = home_ok and not channels

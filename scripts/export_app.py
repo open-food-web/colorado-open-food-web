@@ -105,7 +105,7 @@ def compact_hours(text):
 # The ways a person can visit, each with its own hours. We do not label places by whether people may drop in: a visit is
 # described by what it is and when ("farm" is a plain 'visit the farm' with its hours).
 VISIT_LABELS = {"farm": "Visit the farm", "farm_stand": "Farm stand", "shop": "Shop", "u_pick": "Pick your own", "tour": "Farm tours",
-                "volunteer": "Volunteer days", "stay": "Farm stay", "by_appointment": "Visits by appointment"}
+                "volunteer": "Volunteer days", "stay": "Farm stay"}
 
 
 def parse_visits(text):
@@ -398,6 +398,9 @@ def main():
                 pin = False       # a place outside this county is not a place to buy on this county's map
                 home_pin_if_shown = False
             if not (locations.get(l["location_id"]) or {}).get("address")                     and (locations.get(l["location_id"]) or {}).get("hide_address") != "true":
+                home_pin_if_shown = False
+            if l["role"] == "home_base" and (locations.get(l["location_id"]) or {}).get("hide_address") == "true":
+                pin = False       # a town is not a place: a home with a hidden or missing address is listed by its town, not drawn on a map
                 home_pin_if_shown = False
             out_locs.append(public_location(l["location_id"], l["role"], pin, basis, {
                 # True when the home base would be pinned if an app chose to show unconfirmed home pins (see

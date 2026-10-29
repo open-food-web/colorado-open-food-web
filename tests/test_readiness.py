@@ -71,12 +71,12 @@ class Readiness(unittest.TestCase):
         self.assertEqual(sorted(r["missing"]), ["channel", "place_to_find"])
         self.assertEqual(r["tier"], "gap")
 
-    def test_hidden_address_still_pins_but_a_missing_one_does_not(self):
+    def test_a_hidden_or_missing_address_is_not_pinned(self):
         h1, p1 = self.home("a", address="", hide_address="true")
         h2, p2 = self.home("b", address="")
         rows = self.rows([self.base("a", sales_channels="farm_stand"), self.base("b", sales_channels="farm_stand")],
                          [h1, h2], [p1, p2])
-        self.assertTrue(rows["a"]["pin"])
+        self.assertFalse(rows["a"]["pin"])
         self.assertFalse(rows["b"]["pin"])
 
     def test_market_link_counts_only_for_a_live_market(self):
