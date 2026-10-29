@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listing demo · Colorado Open Food Web</title>
+<meta name="description" content="Paste a producer's website and see a Food Web style listing derived from it, with changes detected on the next check.">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .demo-wrap { max-width: 760px; margin: 0 auto; }
+  .demo-form { display: flex; gap: 8px; flex-wrap: wrap; margin: 20px 0 8px; }
+  .demo-form input { flex: 1 1 280px; padding: 11px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; }
+  .demo-form .btn { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); cursor: pointer; font: inherit; font-weight: 500; }
+  .demo-form .btn:disabled { opacity: .6; cursor: progress; }
+  button.btn { cursor: pointer; font: inherit; font-weight: 500; }
+  .demo-examples { color: var(--muted); font-size: 14px; margin: 4px 0 0; }
+  .demo-examples button { background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; }
+  #status { min-height: 1.6em; color: var(--muted); margin: 12px 0; }
+  #status.demo-error { color: var(--restaurant); }
+  .demo-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); padding: 20px 24px; margin: 16px 0; }
+  .demo-card h2 { margin-bottom: 4px; }
+  .demo-card h3 { font-size: 1rem; margin: 18px 0 6px; }
+  .demo-table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+  .demo-table th { text-align: left; color: var(--muted); font-weight: 500; width: 7.5rem; vertical-align: top; padding: 6px 12px 6px 0; }
+  .demo-table td { padding: 6px 0; overflow-wrap: anywhere; }
+  .demo-changes { padding-left: 1.1rem; }
+  .demo-changes li { margin: 8px 0; }
+  .demo-tag { font-size: 12px; padding: 1px 8px; border-radius: 999px; background: var(--line); color: var(--ink); }
+  .demo-changes .new .demo-tag { background: color-mix(in srgb, var(--farm) 25%, transparent); }
+  .demo-changes .gone .demo-tag { background: color-mix(in srgb, var(--restaurant) 25%, transparent); }
+  .demo-changes .changed .demo-tag { background: color-mix(in srgb, var(--maker) 30%, transparent); }
+  .demo-note, .demo-small { color: var(--muted); font-size: 14px; }
+  .demo-how { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 32px; padding-top: 16px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../">Colorado Open Food Web</a>
+  <nav aria-label="Main"><a href="../">Home</a>
+    <a href="https://github.com/open-food-web/colorado-open-food-web">GitHub</a></nav>
+</header>
+<main>
+  <div class="demo-wrap">
+    <section class="hero" style="padding-top:40px">
+      <p class="eyebrow">Prototype</p>
+      <h1>From a website to a listing, and notice when it changes.</h1>
+      <p class="lede">Paste a farm, ranch or maker's web address. The demo reads the public site and fills in a Food Web style listing: contact details, hours, how to buy, and what they sell. Check the same site again later and it shows what changed.</p>
+      <form id="form" class="demo-form">
+        <input id="url" type="text" inputmode="url" autocomplete="off" placeholder="https://examplefarm.com" aria-label="Producer website address">
+        <button class="btn" id="go" type="submit">Build listing</button>
+      </form>
+      <p class="demo-examples">Try: <button type="button" data-example="https://andersonfarms.com/">Anderson Farms</button></p>
+      <div id="status" role="status" aria-live="polite"></div>
+    </section>
+    <div id="result" hidden></div>
+    <p class="demo-how"><b>How it works.</b> Facts only: names, phone, address, hours, links, and a short pointer to the page that mentions each way to buy. Nothing is copied from the site, and results are marked unverified until a person checks them. A field that disappears is flagged for review, never deleted. Pages are read through a free public proxy because browsers can't read other sites directly; the proxy checks the site's robots.txt and identifies itself as ColoradoOpenFoodWeb. Snapshots stay in this browser only. This is a demo, separate from the dataset: nothing here is added to the Food Web.</p>
+  </div>
+</main>
+<script src="config.js"></script>
+<script src="demo.js"></script>
+</body>
+</html>
