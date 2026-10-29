@@ -201,6 +201,21 @@ class ExportApp(unittest.TestCase):
         self.assertEqual((home["pin"], home["pin_basis"]), (True, "confirmed"))    # a person said orders are collected here
         self.assertFalse(farms["Online Farm"]["locations"][0]["pin"])             # an unstated pickup stays unpinned
 
+    def test_a_stated_visit_confirms_the_home_pin(self):
+        d = tempfile.mkdtemp()
+        kinds = os.path.join(d, "kinds.csv")
+        with open(kinds, "w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f, lineterminator=chr(10))
+            w.writerow(["name", "producer_type", "product_groups", "dropin_visits", "farm_pickup", "visit_note", "visits"])
+            w.writerow(["Learning Center", "education", "", "yes", "no", "", "tour|Sat-Sun 1:00pm - 4:00pm"])
+        doc = self.export([row("Learning Center", "On-Farm / Ranch Sales", Address="1 Rd", Latitude="38.5", Longitude="-106"),
+                           row("Unknown Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106")],
+                          build_extra=["--producer-types", kinds])
+        farms = self.by_name(doc)
+        home = farms["Learning Center"]["locations"][0]
+        self.assertEqual((home["pin"], home["pin_basis"]), (True, "confirmed"))    # a person stated how to visit
+        self.assertEqual(farms["Unknown Farm"]["locations"][0]["pin_basis"], "unconfirmed")   # nothing stated
+
     def test_unconfirmed_home_pins_can_be_hidden(self):
         doc = self.export([row("Unknown Farm", "On-Farm / Ranch Sales", Address="2 Rd", Latitude="38.6", Longitude="-106")],
                           extra=["--unconfirmed-home-pins", "hide"])

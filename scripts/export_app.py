@@ -373,9 +373,11 @@ def main():
         if farm_pickup is None and (farm_is_a_spot or dropin is True or "Agritourism" in lst(p["source_categories"])):
             farm_pickup, pickup_basis = True, "listing"
         visits = derive_visits(p, channels, dropin, dropin_hours)
-        # The farm is a confirmed place to go when a farm stand or u-pick is stated, or when a person has said customers
-        # collect orders there (an online-order ranch with pickup at the ranch has no stand, but the pin is real).
-        farm_is_confirmed = sells_at_farm or (farm_pickup is True and pickup_basis == "set")
+        # The farm is a confirmed place to go when a farm stand or u-pick is stated, when a person has said customers
+        # collect orders there (an online-order ranch with pickup at the ranch has no stand, but the pin is real), or when a
+        # person has stated a way to visit (a learning center with tours and hours).
+        person_visits = (p.get("visits") or "").strip().lower() not in ("", "none")
+        farm_is_confirmed = sells_at_farm or (farm_pickup is True and pickup_basis == "set") or person_visits
         out_locs = []
         for l in locs:
             home_pin_if_shown = False
