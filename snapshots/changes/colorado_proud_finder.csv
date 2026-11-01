@@ -1,7 +1,3 @@
 change,key,business_name,city,field,old,new
-new,business_profile_1653,"Carey's Cottage, LLC",Longmont,,,
-new,business_profile_1650,JC ranch and livestock llc,Sterling,,,
-new,business_profile_1652,Peak & Petal,Bayfield,,,
-changed,business_profile_1606,Wildcraft Markets,Fort Collins,business_name,Wildcraft Farmers Markets,Wildcraft Markets
-changed,business_profile_1606,Wildcraft Markets,Fort Collins,latitude,40.5423483,
-changed,business_profile_1606,Wildcraft Markets,Fort Collins,longitude,-105.0725465,
+changed,business_profile_1606,Wildcraft Markets,Fort Collins,products,"Animal & Pet Food, Bagels, Baked Goods, Body Care Products, Butter, Candy & Confections, Cheese, Coffee, Condiments & Sauces, Distilled Spirits, Dog Treats, Eggs, Essential Oils, Fruit, Jam, Jam, Jelly & Preserves, Mushrooms, Pickles & Pickled Products, Salsa, Vegetables, Winter Events & Activities","Animal & Pet Food, Bagels, Baked Goods, Beans, Beef, Beverage Products, Body Care Products, Butter, Candy & Confections, Carrots, Cauliflower, Chard, Cheese, Cilantro, Coffee, Coffee Beans, Condiments & Sauces, Crab, Distilled Spirits, Dog Treats, Eggs, Essential Oils, Fruit, Jam, Jam, Jelly & Preserves, Mushrooms, Pickles & Pickled Products, Salmon, Salsa, Soups & Stews, Tomatoes, Tortillas, Turnips, Vegetables, Winter Events & Activities, Winter Squash, Zucchini"
+changed,business_profile_1606,Wildcraft Markets,Fort Collins,snap,,Yes
