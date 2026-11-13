@@ -3,6 +3,8 @@
 A free, open, community-maintained dataset of how Colorado's food connects: producers, markets and
 outlets (restaurants, grocers, farm stores), the places they are at, and the counties they reach.
 Read `docs/CHARTER.md` (what and why) and `docs/SCHEMA.md` (tables and fields) before changing anything.
+Read `docs/MESSAGING.md` before describing the project to anyone outside it (partner emails, call
+prep, summaries), and update it when the maintainer approves or changes wording.
 
 ## Decisions already made
 
