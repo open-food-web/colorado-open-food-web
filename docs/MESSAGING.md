@@ -38,6 +38,17 @@ little as the sentence around them requires.
 > accurate data. By combining those efforts, my hope is that we might all end up with a better,
 > more reliable dataset to power our applications.
 
+**Opt-out, not opt-in** (sent 2026-11-13; written against an opt-in directory, so adapt the
+first two sentences to the partner):
+
+> One difference from the Farm Fresh Directory is worth naming. Where the directory is opt-in, the
+> Food Web is opt-out. A producer is included by default when we find they are actively promoting
+> their sales channels online, and comes off the list if that website goes away, so we never point
+> people to dead links. Any producer can opt out at any time, and can choose whether their location
+> is shown publicly, which matters most to those who sell through other channels and not from where
+> they grow. Those choices are recorded in the dataset itself, so every application built on it
+> carries them.
+
 ## The ideas behind the wording
 
 When none of the lines above fits, build the sentence from these points.
@@ -101,3 +112,4 @@ maintainer has not seen, and do not add partner names, contacts or negotiation d
 | Date | Change | From |
 |---|---|---|
 | 2026-11-12 | File started from the reply sent to Colorado Open Lands. | Conserved Colorado session |
+| 2026-11-13 | Added the opt-out wording from the reply sent to the Farm Fresh Directory. | Conserved Colorado session |
